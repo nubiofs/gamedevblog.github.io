@@ -1,0 +1,244 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK">
+    <meta property="og:description" content="O TexturePack é um software utilizado para gerar sprite sheets compatíveis com diversos frameworks, como Cocos2d e Corona SDK. Ele possui diversas opções de otimização, e um recurso bem interessante é o de gerar sprite sheets para varias resoluções. Sprite...">
+    <meta property="og:url" content="http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2013/09/tp.png">
+    <meta property="article:published_time" content="2013-09-17T09:56:09.000Z">
+    <meta property="article:modified_time" content="2016-02-16T15:01:01.070Z">
+    <meta property="article:tag" content="programação">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK">
+    <meta name="twitter:description" content="O TexturePack é um software utilizado para gerar sprite sheets compatíveis com diversos frameworks, como Cocos2d e Corona SDK. Ele possui diversas opções de otimização, e um recurso bem interessante é o de gerar sprite sheets para varias resoluções. Sprite...">
+    <meta name="twitter:url" content="http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2013/09/tp.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK",
+    "url": "http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/",
+    "datePublished": "2013-09-17T09:56:09.000Z",
+    "dateModified": "2016-02-16T15:01:01.070Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2013/09/tp.png",
+    "keywords": "programação",
+    "description": "O TexturePack é um software utilizado para gerar sprite sheets compatíveis com diversos frameworks, como Cocos2d e Corona SDK. Ele possui diversas opções de otimização, e um recurso bem interessante é o de gerar sprite sheets para varias resoluções. Sprite..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-programacao nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/09/tp.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-programacao">
+
+        <header class="post-header">
+            <h1 class="post-title">Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-09-17">17 September 2013</time>  on <a href="../tag/programacao/">programação</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>O TexturePack é um software utilizado para gerar sprite sheets compatíveis com diversos frameworks, como Cocos2d e Corona SDK. Ele possui diversas opções de otimização, e um recurso bem interessante é o de gerar sprite sheets para varias resoluções.</p>
+
+<p>Sprite sheet é, basicamente, uma imagem que contem diversas outras imagens menores, podendo ser frames de uma animação ou apenas imagens isoladas. Este tipo de recurso é muito usado em jogos para otimizar o consumo de memória, pois manter uma imagem na memória custa menos para o hardware do que diversas menos, além de ser mais pratico de usar.</p>
+
+<p>Posso definir o <a href="http://www.codeandweb.com/texturepacker" title="TexturePacker">TexturePacker</a> como essencial e incrível, pois ele não somente junta imagens para formar a sprite sheet como também faz isso da maneira mais otimizada possível. Algumas vezes ele até girar as imagens para agrupar melhor, mas isso não influencia na hora de usar, você não precisa girar a imagem de volta. O TexturePacker possui suporte para vários frameworks 2D.</p>
+
+<p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/frameworks.png%20" texturepacker alt=""></p>
+
+<p>Ao publicar uma sprite sheet, a imagem com todos sprites é gerada junto com um arquivo de configuração, que pode ser desde um XML ou plist, até um script Lua (no caso do Corona). Basta importar ambos no código e usar. Cada frameworks possui sua maneira de carregar estes arquivos, aqui vou mostrar como é feito no <a href="http://www.coronalabs.com/" title="Corona">Corona SDK</a>.</p>
+
+<p>O primeiro passo é importar as imagens para o TexturePacker. Você pode selecionar uma ou mais imagens, ou uma pasta inteira. Neste caso eu selecionei as imagens em “Add Folder”. Depois selecionamos o framework que iremos utilizar. O Corona possui duas opções, mas eu sinceramente não sei a diferenças, pois testei com ambos e o resultados é o mesmo. Eu geralmente seleciono a opção “Corona TM SDK”.</p>
+
+<p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-16.57.32.png%20" texturepacker alt=""></p>
+
+<p>Agora vamos a parte mais legal, que é gerar para múltiplas resoluções a partir de um sprite sheet. Para ter o melhor resultado, sempre gere a partir da maior resolução. Neste exemplo usei imagens para iPad Retina, que é a maior tela com iOS, e vou gerar para iPad 2 e iPhone a partir dele. Embora eu esteja fazendo este exemplo para iOS, você pode gerar para qualquer dispositivo móvel ou desktop, o importante é partir da maior resolução que você vai suportar no seu jogo.</p>
+
+<p>Clicando em “AutoSD”, a janela abaixo é apresentada. Nela, selecionamos a opção “corona @4X/@2X”  para gerar as imagens para iPad Retina (4X), iPad 2 (2X) e iPhone.</p>
+
+<p><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-16.57.49.png%20" texturepacker alt=""></p>
+
+<p>Após selecionar esta opção, clique em Apply e os dois grupos abaixo serão criados. Neste post não irei alterar os valores default apresentados, mas algumas melhorias podem ser feitas aqui, como selecionar um nome padrão para as imagens (se você não gostar de @4X e @2X) e modificar o tamanho da spritesheet máximo.</p>
+
+<p><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-17.00.01.png%20" texturepacker alt=""></p>
+
+<p>Depois de fechar esta janela (você clicar fora dela para fechar, ou clicar em Apply), é necessário renomear os arquivos que serão gerados, como mostrado na imagem abaixo. No final do nome, antes da extensão, adicione “@4X” ou o nome que você colocou na imagem anterior para o iPad Retina.</p>
+
+<p><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/Screen-Shot-2013-09-17-at-17.02.53.png%20" texturepacker alt=""></p>
+
+<p>Com isso pronto, clique no botão “Publish”. Serão gerados dois arquivos, um PNG com todos sprites juntos (que é a sprite sheet) e um arquivo LUA (por que selecionamos Corona SDK) para cada tamanho (normal, 2X e 4X). Copie estes dois arquivos para dentro do seu projeto feito no Corona SDK, pode colocar no mesmo lugar que está o seu “main.lua” se tiver dúvidas. Para exibir um sprite, basta executar o código abaixo. <strong>Estou considerando que o nome da sprite sheet de tamanho normal é “firefox”</strong>.</p>
+
+<p>-- aqui carregamos o arquivo LUA local sheetInfo = require ("firefox") --normal local sheetInfo2x = require ("firefox@2x") --ipad 2 local sheetInfo4x = require ("firefox@4x") --ipad retina -- aqui carregamos o arquivo PNG local imagesSheet = graphics.newImageSheet("firefox.png", sheetInfo:getSheet()) --normal local imagesSheet2x = graphics.newImageSheet("firefox@2x.png", sheetInfo2x:getSheet()) --ipad 2 local imagesSheet4x = graphics.newImageSheet("firefox@4x.png", sheetInfo4x:getSheet()) --ipad retina -- aqui carregamos a imagem chamada firefox00.png, mas sem a extensão local image = display.newSprite(imagesSheet,  {frames={sheetInfo:getFrameIndex("firefox00")}}) --normal local image2x = display.newSprite(imagesSheet2x, {frames={sheetInfo2x:getFrameIndex("firefox00")}}) --ipad 2 local image4x = display.newSprite(imagesSheet4x, {frames={sheetInfo4x:getFrameIndex("firefox00")}}) --ipad retina</p>
+
+<p>Note que para carregar a imagem, procuramos pelo nome do frame adicionado no TexturePacker, ou seja, o nome da imagem individual. Este exemplo acima é apenas para mostrar como podemos carregar cada tamanho, você deve usar isso de maneira mais otimizada, como carregar apenas o que for utilizar ao invés de todos tamanhos de imagem.</p>
+
+<p>Espero que tenham gostando deste tutorial do uso do TexturePacker com Corona SDK, qualquer dúvida deixe um comentário! Conheça também as outras features legais do <a href="http://www.codeandweb.com/texturepacker/features" title="Features">TexturePacker clicando aqui</a>.</p>
+
+<p>Você pode baixar a versão <a href="http://www.codeandweb.com/texturepacker" title="TexturePacker">trial do TexturePacker aqui</a>, que possui versões para Windows, Mac e Linux. Eu recomendo comprar, pois é uma ferramenta incrível para desenvolver jogos, principalmente mobile. Muito obrigado ao Andreas Leow, da <a href="http://www.codeandweb.com/" title="CodeAndWeb">CodeAndWeb</a>, que me enviou a licença para testar o TexturePacker. Em breve postarei outro sobre outro produto deles, o <a href="http://www.codeandweb.com/physicseditor" title="Physics Editor">PhysicsEditor</a>.</p>
+
+<p>As imagens utilizadas aqui são do jogo open source <a href="http://browserquest.mozilla.org/" title="BrowserQuest">BrowserQuest</a>, disponível no <a href="https://github.com/mozilla/BrowserQuest" title="BrowserQuest">GitHub do Mozilla</a>.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Sprite%20sheets%20em%20m%C3%BAltiplas%20resolu%C3%A7%C3%B5es%20com%20TexturePacker%20e%20Corona%20SDK&amp;url=http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/sprite-sheets-texturepacker-corona-sdk/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/09/post06.png)" href="../como-ser-um-programador-de-jogos-livros/">
+        <section class="post">
+            <h2>Como ser um programador de jogos: Livros</h2>
+            <p>Livros sobre desenvolvimento de jogos são, na minha opinião, uma das melhores fontes de aprendizado disponíveis para iniciantes. Neste…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../desenhando-mapas-isometricos/">
+        <section class="post">
+            <h2>Desenhando mapas isométricos</h2>
+            <p>Eu não sou artista, mas achei este tutorial muito bom do artista torstan, postado no devianart. Ele ensina a…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

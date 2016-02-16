@@ -1,0 +1,295 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: Teharth Prologue - The Resources Dissolution</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/postmortem-teharth-prologue/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: Teharth Prologue - The Resources Dissolution">
+    <meta property="og:description" content="Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. Teharth Prologue – The Resources Dissolution é o terceiro jogo do Maurílio Eudes Okamoto, que já publicou os jogos Sou Sustentável e Manual do Skate, e o...">
+    <meta property="og:url" content="http://localhost:2368/postmortem-teharth-prologue/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2015/12/08.jpg">
+    <meta property="article:published_time" content="2015-12-30T08:08:20.000Z">
+    <meta property="article:modified_time" content="2016-02-16T03:35:31.445Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Postmortem: Teharth Prologue - The Resources Dissolution">
+    <meta name="twitter:description" content="Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. Teharth Prologue – The Resources Dissolution é o terceiro jogo do Maurílio Eudes Okamoto, que já publicou os jogos Sou Sustentável e Manual do Skate, e o...">
+    <meta name="twitter:url" content="http://localhost:2368/postmortem-teharth-prologue/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2015/12/08.jpg">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: Teharth Prologue - The Resources Dissolution",
+    "url": "http://localhost:2368/postmortem-teharth-prologue/",
+    "datePublished": "2015-12-30T08:08:20.000Z",
+    "dateModified": "2016-02-16T03:35:31.445Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2015/12/08.jpg",
+    "keywords": "postmortem",
+    "description": "Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. Teharth Prologue – The Resources Dissolution é o terceiro jogo do Maurílio Eudes Okamoto, que já publicou os jogos Sou Sustentável e Manual do Skate, e o..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2015/12/08.jpg)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: Teharth Prologue - The Resources Dissolution</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-12-30">30 December 2015</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. <a href="http://www.souking.com.br/teharth-resources-dissolution">Teharth Prologue – The Resources Dissolution</a> é o terceiro jogo do <a href="http://okamotoprojects.wix.com/site" title="Okamoto">Maurílio Eudes Okamoto</a>, que já publicou os jogos <a href="http://gamedeveloper.com.br/postmortem-sou-sustentavel/">Sou Sustentável</a> e <a href="http://gamedeveloper.com.br/postmortem-manual-do-skate/">Manual do Skate</a>, e o primeiro do <a href="http://teharthstudios.wix.com/home">Teharth Studios</a>. Confira aqui um resumo de como foi o desenvolvimento deste projeto as dificuldades que a equipe encontrou para terminar e publicar o jogo e <a href="http://www.souking.com.br/teharth-resources-dissolution">clique aqui</a> para fazer o download do jogo.</p>
+
+<ol>
+<li><strong>Descrição do jogo</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">O jogo tem como gênero um RPG de ação 2D, com bastante uso de metaficção (quebra da quarta parede), um pouco de humor com paródias e <em>non-sense</em>. E trata-se de apenas um Prólogo do que está por vir futuramente, possui cerca de 1 hora de jogo.
+
+
+<iframe allowfullscreen="" frameborder="0" height="371" src="https://www.youtube.com/embed/w_9YOWUg7tg?feature=oembed" width="660"></iframe>
+
+<p>A história se passa em Baghdah, um país localizado no extremo leste do continente. Gray um aventureiro iniciante, decide explorar todo o mundo de Teharth. Sua primeira parada foi nas Misteriosas Ruínas de Abyadh, onde ele encontra um ser lendário chamado Azazil. Esse ser tem o poder de dissolver os recursos do jogo, como a aparência física, os sons e os mecanismos de seres e objetos de Teharth.</p>
+
+<p><img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/10-1024x576.jpg" alt="Teharth Prologue"></p>
+
+<p>O jogador possui o poder de evoluir de volta os recursos do jogo, auxiliando assim o Gray a conseguir atingir seus objetos e a resolver os quebra-cabeças. Pois Gray não consegue fazer muita coisa sem os recursos dele e o jogador não pode interagir diretamente com os elementos de Teharth. O jogador está participando do jogo como entidade jogador e não personificando o protagonista.</p>
+
+<p></p></div></div></div> <br>
+2. <strong>Postmortem</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">Dessa vez fiz o postmortem um pouco diferente, em vez de separar em pontos positivos e negativos, vou citar pontos “importantes” que acreditamos que podem ser interessantes. O motivo de não fazer essa separação é porque nesse projeto tivemos muitos pontos que são tanto positivos quanto negativos.
+
+<p><img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/01-1024x576.jpg" alt="Teharth Prologue"></p>
+
+<p></p></div></div></div>1. <strong>O Projeto Nasceu de Um Problema</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">No Teharth Studios, até poucas semanas atrás, nosso maior problema era falta de artistas, para fazer a parte gráfica/arte dos jogos. Na época, em março, pensamos em tentar fazer um projeto um pouco mais simples e que pesasse menos em arte.
+
+<p>Foi então que nasceu a ideia de evoluir o jogo de protótipo para final durante a jogada. Como gostamos de tentar inovar e colocar metaficção, colocamos o poder de evoluir o jogo no jogador, sendo um co-protagonista do jogo.</p>
+
+<p>Desse modo, conseguimos dar um tempo maior para os artistas, pois as artes mesmo só seriam usadas na segunda metade do projeto. E também tivemos mais tempo para recrutar novos artistas.</p>
+
+<p>Então de um problema, conseguimos um projeto e novos membros. Porém isso também gerou um outro problema. No começo do ano estávamos desenvolvendo outro projeto e tivemos que pausar ele, pois manter dois projetos seria um pouco complicado.</p>
+
+<p><img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/06-1024x576.jpg" alt="Teharth Prologue"></p>
+
+<p></p></div></div></div> <br>
+2. <strong>Inexperiência da Equipe Gerou Experiência</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">Começamos projetar algumas coisas em 2014, porém só conseguimos começar algo efetivamente em janeiro de 2015. Ao longo de 2015 começamos estabilizar a equipe. Porém o grande problema era que a maioria não havia criado nenhum outro jogo completo anteriormente, por mais simples e curto que seja. Então decidimos fazer 1 ou outro prólogo, seriam projetos não necessariamente simples, mas curtos para a equipe começar ganhar mais experiência prática.
+
+<div class="page" title="Page 2"><div class="layoutArea"><div class="column">O problema de alguns era falta de conhecimento em áreas específicas, outros tinham conhecimento, mas não sabiam direito como aplicar em jogos. Então vimos que um prólogo poderia ser perfeito para iniciar as coisas, mesmo porque a maioria dos membros não se conheciam entre si, seria um bom jeito de aumentar o engajamento e o trabalho em equipe.
+
+Como é geralmente comum em equipes pequenas, muitas pessoas acabam tendo que participar de várias áreas diferentes. Por um lado ruim isso diminui o foco, por outro lado melhora a comunicação entre os membros. Ao aprender e entender mesmo que bem pouco uma outra área de desenvolvimento. Faz você entender melhor o que os outros membros passam, que não é tão fácil ou não é tão difícil fazer tal tarefa daquela área.
+
+Então a inexperiência gera experiência, de certa forma isso é meio óbvio, porém somente é verdade quando a pessoa corre atrás para evoluir.
+
+<img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/03-1024x576.jpg" alt="Teharth Prologue">
+
+</div></div></div></div></div></div>  
+
+<ol>
+<li><strong>Objetivo do Projeto: Velocidade X Qualidade</strong><div class="page" title="Page 2"><div class="layoutArea"><div class="column">Colocamos em mente que nosso objetivo principal seria o ganho de experiência e o projeto deveria ser algo breve. Como citado no item 1, existe outro prólogo que estava em desenvolvimento. Então a ideia era terminar logo esse projeto para continuar o “prólogo de verdade”.
+
+
+<p>O lado ruim disso é que o jogo não foi lapidado até o final, poderíamos ter melhorado muitas coisas, como deixar a mecânica ainda mais divertida, melhorar o roteiro que foi feito as pressas, criar animações melhores, algumas delas estão meio estranhas. Muitos desses problemas são consequências de a gente não ter sentado para fazer o GDD do projeto direito, já saímos desenvolvendo sem uma planejamento bem definido.</p>
+
+<p>Porém de forma positiva esse objetivo manteve melhor o nosso foco e conseguimos concluir o projeto e o objetivo dele. Com uma qualidade final razoável e uma ideia de jogo bacana, com potencial a ser explorado.</p>
+
+<p>Basicamente o desenvolvimento desse jogo foi um treino para fazer o próximo. Absorver os feedbacks positivos e negativos para fazer melhor futuramente.</p>
+
+<p><img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/04-1024x576.jpg" alt="Teharth Prologue"></p>
+
+<p></p></div></div></div> <br>
+4. <strong>Mudanças</strong><div class="page" title="Page 2"><div class="layoutArea"><div class="column">Este item é consequência dos outros três anteriores. Começamos o projeto “do nada”, nós acreditávamos que a ideia era boa, mas precisávamos ver como aplicar isso. Sabemos que muitas mudanças geram diversos problemas, como retrabalho, frustração, conflitos, entre outros. Porém pode deixar o projeto ainda melhor. Abaixo segue um breve histórico do projeto.
+
+<p><strong>Abril de 2015:</strong> Pelo nosso foco em velocidade, decidimos fazer um jogo 2D do gênero plataforma. Arte 100% minimalista, com evolução do jogo apenas em mecânicas. Chegamos a criar um GDD simplificado as pressas e um protótipo. Porém pensamos depois, que poderíamos evoluir arte e áudio também, temos artistas (mesmo que pouco) e músicos. O gênero plataforma é um dos mais usados em jogos indies, tanto brasileiro quanto de fora. O feedback que mais recebemos na época foi que parece muito com Evoland ou DLC Quest. Mas a gente não achava isso, não estávamos apresentando a ideia de jeito certo. Como gostamos de tentar fazer diferente, cancelamos o projeto.</p>
+
+<div class="page" title="Page 3"><div class="layoutArea"><div class="column">**Maio de 2015:** Mas como a gente achou a ideia da evolução muito bacana e queríamos testar como o público iria reagir. Então pensamos em outro projeto usando essa ideia. Aqui o jogo passou a ser um RPG de ação 2D, com evolução de arte e áudio além da mecânica, deixando o projeto 5 vezes mais complexo que o anterior, indo contra o objetivo inicial. Porém o foco do grupo Teharth Studios é fazer RPG ou pelo menos híbridos com RPG, mais especificamente JRPGs. Após criar um novo GDD simplificado e um protótipo dele, vimos que o jogo não ficaria muito bom, com o tempo e equipe que temos. Aí cancelamos o projeto novamente. Pois, só o fato de ter RPG na descrição do projeto já fazia tudo ficar mais complexo.
+
+(Em junho e julho o responsável da equipe e projeto, teve que mudar de casa, que demorou muito para terminar e teve a perda de um irmão. Com isso o projeto acabou ficando de lado, sem ele a equipe não se sustenta direito.)
+
+**Agosto de 2015:** Decidimos então fazer algo ainda usando a ideia da evolução, mas seria um jogo de puzzles (quebra-cabeças), sem batalha e roteiro.. Algo por fases em vez de contínuo, algo bem mais casual e possivelmente para mobile. Ficamos o mês todo rabiscando algo, mas o projeto não dava aquela motivação de querer desenvolver ele.
+
+**Setembro de 2015:** Ficamos na dúvida e basicamente não fizemos nada em setembro. Somente no final do mês, decidimos voltar na ideia de maio, era ela que a gente achava gostava, decidimos tentar mesmo sabendo que poderia dar errado. Podemos dizer que o projeto começou efetivamente no final desse mês.
+
+**Outubro de 2015:** O velho problema da falta de artistas pesou novamente. Porém decidimos fazer o projeto mesmo assim, qualquer coisa ficaria com menos evoluções de arte. Porém no final do mês conseguimos ajuda de 3 novos artistas e conseguimos fazer tudo que estava dentro do planejado. Nessa época um dos músicos teve que sair, ele que faria a orquestração das músicas, com isso as músicas ficaram um pouco menos lapidadas, mas ainda ficaram bacanas. Depois disso o projeto finalmente fluiu bem.
+
+**Dezembro de 2015:** Tivemos alguns atrasos aqui, pois a maioria dos membros fazem faculdade e estavam em final de semestre com provas e tudo mais. Aí a fase final do projeto que era testar e lapidar o projeto, durou bem menos tempo que o previsto. Mas conseguimos corrigir os problemas que encontramos e melhorar algumas coisas.
+
+<img src="http://gamedeveloper.com.br/wp-content/uploads/2015/12/09-1024x576.jpg" alt="Teharth Prologue">
+
+</div></div></div></div></div></div>  
+
+<ol>
+<li><strong>Conclusão</strong><div class="page" title="Page 3"><div class="layoutArea"><div class="column">Apesar de o projeto não ter ficado tão bom quanto queríamos, cumprimos os objetivos com ele. Observamos que temos conhecimento para fazer algo bem melhor, se fizermos com calma e um melhor planejamento. Até agora já recebemos bastante feedback e em sua grande maioria foram positivos, então foi bastante gratificante desenvolver esse jogo.
+
+
+<p>Para terminar, agradeço novamente ao Bruno Cicanci, pelo espaço e oportunidade de postagem de um postmortem por aqui, no Game Developer. E obrigado a todos que leram, aguardem que em 2016 quando atingirmos nossa meta iremos dobrá-la. Hahaha.</p>
+
+<p></p></div></div></div>
+
+<div class="page" title="Page 3"><div class="layoutArea"><div class="column">**Acompanhe-nos:**
+
+– Site: [http://teharthstudios.wix.com/home](http://teharthstudios.wix.com/home)  
+ – Facebook: [https://www.facebook.com/teharth.studios](https://www.facebook.com/teharth.studios)  
+ – Twitter: [https://twitter.com/teharthstudios](https://twitter.com/teharthstudios)
+
+</div></div></div>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </li></ol></li></ol></li></ol></section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20Teharth%20Prologue%20-%20The%20Resources%20Dissolution&amp;url=http://localhost:2368/postmortem-teharth-prologue/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/postmortem-teharth-prologue/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/postmortem-teharth-prologue/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2016/01/livro-pygame-capa.jpg)" href="../introducao-jogos-python-pygame/">
+        <section class="post">
+            <h2>Introdução ao Desenvolvimento de Jogos em Python com PyGame</h2>
+            <p>A Editora Novatec trouxe para o Brasil um excelente livro de Harrison Kinsley e Will McGugan: Introdução ao Desenvolvimento…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2015/09/manual_producao.jpg)" href="../manual-de-producao-de-jogos-digitais/">
+        <section class="post">
+            <h2>Manual de Produção de Jogos Digitais</h2>
+            <p>Existem alguns livros que são tão únicos na abordagem de seus assuntos que se tornam referência e sempre são…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

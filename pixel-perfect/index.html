@@ -1,0 +1,234 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Como ser um programador de jogos: Pixel Perfect</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/pixel-perfect/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Como ser um programador de jogos: Pixel Perfect">
+    <meta property="og:description" content="Uma das dúvidas mais comuns no desenvolvimento de jogos para dispositivos móveis é qual a melhor maneira para que o jogo se adapte em várias resoluções, e uma das técnicas mais usadas é a chamada Pixel Perfect, que consiste em...">
+    <meta property="og:url" content="http://localhost:2368/pixel-perfect/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2014/02/post22.png">
+    <meta property="article:published_time" content="2014-02-26T10:00:45.000Z">
+    <meta property="article:modified_time" content="2016-02-16T04:16:26.808Z">
+    <meta property="article:tag" content="como começar">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Como ser um programador de jogos: Pixel Perfect">
+    <meta name="twitter:description" content="Uma das dúvidas mais comuns no desenvolvimento de jogos para dispositivos móveis é qual a melhor maneira para que o jogo se adapte em várias resoluções, e uma das técnicas mais usadas é a chamada Pixel Perfect, que consiste em...">
+    <meta name="twitter:url" content="http://localhost:2368/pixel-perfect/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2014/02/post22.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Como ser um programador de jogos: Pixel Perfect",
+    "url": "http://localhost:2368/pixel-perfect/",
+    "datePublished": "2014-02-26T10:00:45.000Z",
+    "dateModified": "2016-02-16T04:16:26.808Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2014/02/post22.png",
+    "keywords": "como começar",
+    "description": "Uma das dúvidas mais comuns no desenvolvimento de jogos para dispositivos móveis é qual a melhor maneira para que o jogo se adapte em várias resoluções, e uma das técnicas mais usadas é a chamada Pixel Perfect, que consiste em..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-como-programar-jogos nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/02/post22.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-como-programar-jogos">
+
+        <header class="post-header">
+            <h1 class="post-title">Como ser um programador de jogos: Pixel Perfect</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-02-26">26 February 2014</time>  on <a href="../tag/como-programar-jogos/">como começar</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Uma das dúvidas mais comuns no desenvolvimento de jogos para dispositivos móveis é qual a melhor maneira para que o jogo se adapte em várias resoluções, e uma das técnicas mais usadas é a chamada Pixel Perfect, que consiste em utilizar a PPI do aparelho como base para isto.</p>
+
+<p>Neste post vou explicar como está técnica funciona usando como base os aparelhos da Apple com iOS. No Android e Windows Phone é a mesma coisa, porém eles possuem mais variações de PPI, por isso dá um pouco mais de trabalho. Aqui não vou explicar como identificar a DPI de um aparelho, e sim o uso da técnica. Lembrando que isto funciona apenas para jogos em 2D, pois em 3D é outra história.</p>
+
+<p>PPI significa Pixels Per Inch, ou seja, é o número de pixels por polegada. Isto é literalmente o número de pixels que são exibidos em uma polegada da tela, quanto maior mais detalhes se o tamanho da tela for grande também. Algumas pessoas chama isso também de DPI, que significa Dots Per Inch, ou seja, pontos por polegada. Esta atribuição é incorreta quando falamos de aparelhos digitais, pois esta medida é usada em impressões. Porém, é bem comum chamar PPI de DPI, o próprio Google chama esta medida de DPI no Android, então acostume-se a ouvir ambos.</p>
+
+<p>Primeiro, vamos analizar a resolução e o PPI dos aparelhos da Apple. No Android a DPI é classificada como MDPI, HDPI, XHDPI, entre outros. Não vou entrar nos detalhes de classificação, pois o importante neste técnica é o valor da PPI/DPI. No caso do Android, você pode encontrar <a href="http://developer.android.com/guide/practices/screens_support.html" title="DPI">mais detalhes aqui</a>.</p>
+
+<p>iPhone 3G/3GS 320x480 163 ppi iPhone 4/4S 640×960 326 ppi iPhone 5/5C/5S 640×1136 326 ppi</p>
+
+<p>A PPI do iPhone 3, assim como a resolução da sua tela, é exatamente a metade da PPI do iPhone 4 e de sua tela também. Por ser exatamente metade, isto significa que se você usar uma imagem do tamanho do iPhone 4 com resize no iPhone 3, ela ficará “perfeita”, e dai vem o termo Pixel Perfect. Isto só funciona quando a PPI (ou DPI) possui esta proporção de ser metade, então nestes casos você pode usar uma imagem maior com resize para um tamanho menor sem perder a qualidade e definição.</p>
+
+<p>No caso do iPhone 5 temos um problema, embora sua PPI seja a mesma do iPhone 4, o tamanho da sua tela é diferente e não é proporcional, pois a largura é a mesma e a altura é diferente. Uma imagem no tamanho do iPhone 5 ficará cortada no iPhone 4, pois apesar da mesma DPI não é possível fazer o resize sem perder qualidade. Isto se aplica ao iPhone 3 também, que também tem a metade da PPI do iPhone 5, mas não tem a metade da resolução. Assim, a imagem ficará distorcida.</p>
+
+<p>Estes são dois exemplos levando em conta apenas imagens com o tamanho da tela do aparelho, sendo que funciona do iPhone 4 para o iPhone 3, mas não funciona do iPhone 5 para os demais. Neste caso, muitos desenvolvedores criam uma imagem para o iPhone 5 e uma para o iPhone 4, que é usada também no iPhone 3.</p>
+
+<p>Porém, para imagens que não ocupam a tela inteira como botões ou sprites, a mesma imagem usada no iPhone 5 pode ser usada no iPhone 4 sem resize, e usada no iPhone 3 com resize mas sem perder a qualidade e definição graças a PPI. Basicamente, a regra geral é esta:</p>
+
+<blockquote>
+  <p>Para imagens com o tamanho da tela: <br>
+   – Resize só funciona sem perder a qualidade se os aparelhos tiverem a PPI/DPI e o tamanho da tela proporcionais.</p>
+  
+  <p>Para imagens menores: <br>
+   – Resize funciona baseado apenas na PPI/DPI, o tamanho da tela pode influenciar apenas o posicionamento dos itens na tela.</p>
+</blockquote>
+
+<p>Já utilizei esta técnica algumas vezes quando trabalhei na <a href="http://glu.com" title="Glu">Glu Mobile</a> e na <a href="http://ea.com" title="EA">Electronic Arts</a>. O jogo que mais usei isto foi o <a href="http://www.ea.com/scrabble-paid-ipad?intcmp=EACom_scrabbleipad_update_0313" title="Scrabble">Scrabble</a>, para <a href="https://play.google.com/store/apps/details?id=com.ea.game.scrabblemattel_bv" title="Android">Android</a> e <a href="https://itunes.apple.com/br/app/scrabble/id311691366?mt=8" title="iOS">iOS</a>. Todo seu layout é baseado na PPI/DPI do aparelho, e as imagens são usadas de acordo com esta classificação. Neste jogo o layout do tablet é diferente do smartphone, então não tivemos problemas com a PPI/DPI e resolução destes aparelhos, o que ajudou bastante no resultado final.</p>
+
+<p>Espero ter conseguido explicar direito esta técnica, ela é bem simples de usar e um pouco complicada de explicar. Lembre-se que este exemplo foi feito para os modelos de iPhone, que é o mais simples de todos. Aparelhos Android geralmente dão mais problemas por causa da fragmentação e falta de padrões por parte dos fabricantes, mas não é impossível fazer uso do Pixel Perfect da mesma maneira. Qualquer dúvida, fique a vontade para perguntar nos comentários abaixo!</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Como%20ser%20um%20programador%20de%20jogos%3A%20Pixel%20Perfect&amp;url=http://localhost:2368/pixel-perfect/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/pixel-perfect/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/pixel-perfect/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/02/Screen-Shot-2014-02-27-at-19.42.11.png)" href="../like-a-boss-gdwc-2013/">
+        <section class="post">
+            <h2>Jogo brasileiro "Like a Boss" ganhou o concurso GDWC 2013</h2>
+            <p>Game desenvolvido pelo estúdio brasileiro Fire Horse ganhou o concurso internacional, e como prêmio vai viajar para a Finlândia…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/02/Screen-Shot-2014-02-24-at-15.16.09.png)" href="../making-of-the-last-of-us/">
+        <section class="post">
+            <h2>Documentário: The Making of The Last of Us</h2>
+            <p>The Last of Us é um jogo incrível, um marco da indústria que será lembrando como um dos melhores…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

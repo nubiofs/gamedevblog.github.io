@@ -1,0 +1,240 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HTML5 não serve para fazer jogos mobile</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="HTML5 não serve para fazer jogos mobile">
+    <meta property="og:description" content="Desde o seu surgimento, muita gente diz que o HTML5 seria o substituto do Flash para jogos, principalmente por ter um canvas 2D. Antes eu apoiava esta ideia, mas hoje já não acredito mais nisso em plataformas móveis. Antes de...">
+    <meta property="og:url" content="http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2014/07/Screen-Shot-2014-07-01-at-4.49.17-PM.png">
+    <meta property="article:published_time" content="2014-06-30T11:31:03.000Z">
+    <meta property="article:modified_time" content="2016-02-16T04:02:41.787Z">
+    <meta property="article:tag" content="programação">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="HTML5 não serve para fazer jogos mobile">
+    <meta name="twitter:description" content="Desde o seu surgimento, muita gente diz que o HTML5 seria o substituto do Flash para jogos, principalmente por ter um canvas 2D. Antes eu apoiava esta ideia, mas hoje já não acredito mais nisso em plataformas móveis. Antes de...">
+    <meta name="twitter:url" content="http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2014/07/Screen-Shot-2014-07-01-at-4.49.17-PM.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "HTML5 não serve para fazer jogos mobile",
+    "url": "http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/",
+    "datePublished": "2014-06-30T11:31:03.000Z",
+    "dateModified": "2016-02-16T04:02:41.787Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2014/07/Screen-Shot-2014-07-01-at-4.49.17-PM.png",
+    "keywords": "programação",
+    "description": "Desde o seu surgimento, muita gente diz que o HTML5 seria o substituto do Flash para jogos, principalmente por ter um canvas 2D. Antes eu apoiava esta ideia, mas hoje já não acredito mais nisso em plataformas móveis. Antes de..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-programacao nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/07/Screen-Shot-2014-07-01-at-4.49.17-PM.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-programacao">
+
+        <header class="post-header">
+            <h1 class="post-title">HTML5 não serve para fazer jogos mobile</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-06-30">30 June 2014</time>  on <a href="../tag/programacao/">programação</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Desde o seu surgimento, muita gente diz que o HTML5 seria o substituto do Flash para jogos, principalmente por ter um canvas 2D. Antes eu apoiava esta ideia, mas hoje já não acredito mais nisso em plataformas móveis.</p>
+
+<p>Antes de começar a falar sobre o assunto do post, quero esclarecer algo que muitos se confundem: o HTML5 é apenas um padrão para marcações de HTML, e você não usa tudo desse padrão para fazer jogos, apenas a tag <canvas>. A programação do jogo é feita com Javascript, portanto, o jogo não é “desenvolvido com HTML5”, mas sim com Javascript.</canvas></p>
+
+<p>O HTML5 é muitas vezes vendido como uma solução “perfeita” para o desenvolvimento de jogos e apps, pois você pode tornar o produto acessível através de um navegador (desktop, mobile e até consoles). Além disso, em plataformas móveis, existe a possibilidade de colocar o projeto dentro de um wrapper (como <a href="http://phonegap.com/" title="PhoneGap">PhoneGap</a> ou <a href="http://www.appcelerator.com/titanium/" title="Titanium">Titanium</a>) e lançar o jogo ou app nas stores.</p>
+
+<p>Parece um mundo perfeito, sem Flash (nada contra rs) e com uma solução que “funciona” em qualquer plataforma, certo? Bom, por mais que vendam isso, esta utopia não existe.</p>
+
+<p>Na empresa que trabalho atualmente tive a oportunidade de participar do desenvolvimento de um jogo muito parecido com o <a href="http://www.songpop.net/" title="SongPop">SongPop</a>, do seu início ao fim. Ele possui perguntas, interação social, partidas por turno e muitas outras coisas, então existe uma integração de front-end e back-end.</p>
+
+<p>Foi possível desenvolver o jogo sem grandes problemas, e ele funciona bem nas plataformas desktop e mobile, porém o uso de HTML5 deixou o que deveria ser simples mais complicado de fazer: a interface. A integração com redes sociais e com o próprio servidor do jogo foi muito fácil se comparado com o trabalho de montar a interface do jogo, que é apenas telas com botões de ação.</p>
+
+<p>O que era mais simples no Flash se torna a maior dificuldade em utilizar HTML5 para jogos, não existe uma solução visual boa para auxiliar o desenvolvimento. Mesmo soluções como o <a href="https://www.scirra.com/" title="Construct 2">Construct 2</a> são fracas e limitadas, pois facilitam a parte visual mas atrapalham a programação forçando o programador a utilizar tudo no padrão deles.</p>
+
+<p>Outro fator que me fez não gostar do HTML5 para jogos mobile é o desempenho. O navegador do smartphone e tablets é um aplicativo que roda no sistema operacional, e o jogo roda dentro desse aplicativo. Por isso, muitas coisas são extremamente limitadas, como a memória disponível e o controle do contexto do jogo.</p>
+
+<p>O carregamento de algumas músicas pode fazer aparelhos bons, como o iPhone 4S, não aguentarem e fecham o navegador. Pelos testes que fiz, estes navegadores aguentam no máximo algo perto de 10MB de imagens e sons na memória, mais do que isso faz o desempenho do jogo cair muito e o navegador fechar.</p>
+
+<p>Para o desenvolvimento do jogo em questão, utilizei a suite de frameworks <a href="http://www.createjs.com/#!/CreateJS" title="CreateJS">CreateJS</a>, um conjunto de bibliotecas Javascript muito bom para desenvolvimento de aplicações web interativas, como jogos ou aplicativos. Utilizei o <a href="http://www.createjs.com/#!/EaselJS" title="EaselJS">EaselJS</a>, para o canvas, <a href="http://www.createjs.com/#!/PreloadJS" title="PreloadJS">PreloadJS</a>, para fazer o carregamento dos recursos, e <a href="http://www.createjs.com/#!/SoundJS" title="SoundJS">SoundJS</a>, para gerenciamento do som.</p>
+
+<p>Este framework é muito bom para desenvolvimento web com Javascript, um dos melhores e mais estáveis do mercado. Porém, HTML5 não foi feito para jogos em navegadores. Enquanto que para desktop não há problemas, para mobile o navegador dos aparelhos coloca um limite sem sentido para jogos.</p>
+
+<p>Mesmo utilizando wrappers, como os dois citados no começo do post, isso não quer dizer que os problemas foram resolvidos. Embora dentro de um wrapper o jogo possa usar mais memória, pois roda como um aplicativo, ainda assim existem limites. Quem já desenvolveu utilizando wrappers para conteúdo com HTML5 sabe o quanto é complicado fazer muitas coisas que depende do hardware funcionarem, isso sem falar em problemas de layout que sempre acontecem devido a limitação também presente nestes wrappers.</p>
+
+<p>Enquanto não existir uma solução visual boa para o desenvolvimento de jogos com HTML5, mesmo seu uso em desktop será sempre limitado e de difícil utilização. Existem muitas outras opções melhores hoje, com a <a href="http://unity3d.com/" title="Unity">Unity</a>. É estranho ter tantos frameworks e tanta gente incentivando o uso de HTML5, porém não existem ferramentas de qualidade para auxiliar o desenvolvimento.</p>
+
+<p>Para desktop, eu acredito que o uso de HTML5 para jogos só vai crescer quando houver mais ferramentas que auxiliem o desenvolvimento, e não estou falando de frameworks, e sim de softwares. Grandes jogos não são feitos apenas de frameworks, mas sim diversas ferramentas que auxiliam o desenvolvimento.</p>
+
+<p>Para mobile, o melhor é não usar. Mesmo para o desenvolvimento de apps, o HTML5 é extremamente fraco. Nada é melhor do que fazer um aplicativo utilizando os recursos presentes no <a href="http://developer.android.com/" title="Android">Android SDK</a> e <a href="https://developer.apple.com/" title="iOS">iOS SDK</a>. Acredite: o trabalho de fazer dois apps com códigos diferentes é menor do que fazer um app com HTML5 e esperar que funcionem em ambos, e você ainda ganha mais desempenho no app.</p>
+
+<p>Apps grandes como Facebook, Twitter, Whatsapp, entre muitos outros, são feitos em projetos separados para cada sistema operacional mobile, pois eles precisam de performance e flexibilidade, coisas que o HTML5 está muito longe de oferecer. Se os grandes fazem assim, por que insistir em um padrão fraco? Muitas vezes os programadores preferem utilizar o HTML5 por preguiça de fazer mais de um projeto, e no fim acabam com uma solução mobile ruim ou tendo que fazer projetos para cada wrapper (que também é ruim).</p>
+
+<p>Com tantas opções hoje para desenvolvimento de jogos (e apps) mobile, não há razão para utilizar o HTML5. Eu tive todo tipo de experiência em jogos e aplicativos, ambos utilizando engines e frameworks bons e ruins, e tenho muito certeza quando digo que o momento é de abandonar o uso de HTML5 para jogos e aplicativos mobile. Ah, não confunda aplicativo com site, existe uma grande diferença entre prestar um serviço e mostrar informações.</p>
+
+<p>Desculpe o texto longo em forma de desabafo, seu objetivo é deixar claro que o HTML5 não é a solução de todos os problemas, não tem ferramentas boas para desenvolvimento, e não tem bons motivos para ser usado em jogos e aplicativos mobile. Deixe seu comentário abaixo para continuarmos esta discussão.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=HTML5%20n%C3%A3o%20serve%20para%20fazer%20jogos%20mobile&amp;url=http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/html5-nao-serve-para-fazer-jogos-mobile/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/07/Screen-Shot-2014-07-18-at-2.58.42-PM.png)" href="../ferramentas-uteis-gamedev/">
+        <section class="post">
+            <h2>Várias ferramentas úteis para desenvolver jogos</h2>
+            <p>Há um tempo me enviaram este post do Reddit chamado “Pocketknives for Game Developers“, que é um conjunto de…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/06/Screen-Shot-2014-06-27-at-4.45.13-PM.png)" href="../como-programar-jogos-indie-jonathan-blow/">
+        <section class="post">
+            <h2>Como programar jogos independentes, por Jonathan Blow</h2>
+            <p>Jonathan Blow, criador de um dos jogos independentes de maior sucesso, o Braid, fez uma palestra sobre como programar…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

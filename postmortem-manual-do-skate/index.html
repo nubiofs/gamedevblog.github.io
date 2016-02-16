@@ -1,0 +1,251 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: Manual do Skate</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/postmortem-manual-do-skate/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: Manual do Skate">
+    <meta property="og:description" content="Depois de alguns postmortems de jogos digitais enviados pelos desenvolvedores, este é o primeiro de um jogo de tabuleiro e mostra algumas diferenças na criação de um jogo analógico. Este é o segundo postmortem de um jogo desenvolvido pelo Maurílio...">
+    <meta property="og:url" content="http://localhost:2368/postmortem-manual-do-skate/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2013/12/Screen-Shot-2013-12-20-at-14.57.01.png">
+    <meta property="article:published_time" content="2013-12-20T15:02:03.000Z">
+    <meta property="article:modified_time" content="2016-02-16T04:27:16.729Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Postmortem: Manual do Skate">
+    <meta name="twitter:description" content="Depois de alguns postmortems de jogos digitais enviados pelos desenvolvedores, este é o primeiro de um jogo de tabuleiro e mostra algumas diferenças na criação de um jogo analógico. Este é o segundo postmortem de um jogo desenvolvido pelo Maurílio...">
+    <meta name="twitter:url" content="http://localhost:2368/postmortem-manual-do-skate/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2013/12/Screen-Shot-2013-12-20-at-14.57.01.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: Manual do Skate",
+    "url": "http://localhost:2368/postmortem-manual-do-skate/",
+    "datePublished": "2013-12-20T15:02:03.000Z",
+    "dateModified": "2016-02-16T04:27:16.729Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2013/12/Screen-Shot-2013-12-20-at-14.57.01.png",
+    "keywords": "postmortem",
+    "description": "Depois de alguns postmortems de jogos digitais enviados pelos desenvolvedores, este é o primeiro de um jogo de tabuleiro e mostra algumas diferenças na criação de um jogo analógico. Este é o segundo postmortem de um jogo desenvolvido pelo Maurílio..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/12/Screen-Shot-2013-12-20-at-14.57.01.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: Manual do Skate</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-12-20">20 December 2013</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Depois de alguns <a href="http://gamedeveloper.com.br/blog/category/postmortem/" title="Postmortem">postmortems</a> de jogos digitais enviados pelos desenvolvedores, este é o primeiro de um jogo de tabuleiro e mostra algumas diferenças na criação de um jogo analógico.</p>
+
+<p>Este é o segundo postmortem de um jogo desenvolvido pelo <a href="http://okamotoprojects.wix.com/site" title="Okamoto">Maurílio Eudes Okamoto</a>, que já tinha me enviado o postmortem do seu jogo <a href="http://gamedeveloper.com.br/blog/2013/11/11/postmortem-sou-sustentavel/" title="Sou sustentável">Sou Sustentável</a>. Confira abaixo o que deu certo e errado na criação deste jogo analógico. No final do texto há o link para download do jogo, é só imprimir e jogar!</p>
+
+<blockquote>
+  <p><strong>1. Descrição do Jogo</strong></p>
+  
+  <p>É um jogo de tabuleiro, onde você se torna um skatista profissional e é um participante finalista de uma competição de skate. O jogo consiste em uma fase de treinamento rápido, na qual abrange analisar o skatepark e escolher quais manobras você irá usar na competição. Na segunda fase a de competição propriamente dita. Cada jogador tem o seu turno, onde escolhe-se em qual direção irá tomar dentro do skatepark, qual será o local onde o jogador irá usar as manobras e como irá combiná-las.</p>
+  
+  <p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/12/FotoManualDoSkate-1024x751.jpg" alt="" title="Manual do Skate"></p>
+  
+  <p><strong>2. Dificuldades e Problemas</strong></p>
+  
+  <p>1) Definição do Tema <br>
+   Esse projeto fez parte de um projeto da faculdade, com isso tínhamos quatro limitações, o projeto deveria ser de tabuleiro/cartas, com o tema esporte, prazos de entrega e o jogo deveria ser útil, tentar passar algo através do jogo para os jogadores. <br>
+   O maior dificuldade inicial era a utilidade do jogo. Entre idéias e discussões, chegamos a começar fazer um jogo sobre Tiro Esportivo, onde iríamos mostrar as regras, curiosidades e passar que o esporte não é algo ligado a violência apesar de usar armas. <br>
+   Porém um dos responsáveis pela idéia acabou desistindo do curso e a utilidade do jogo na prática estava ficando meio duvidosa. Decidimos voltar para uma idéia que sugeri no começo, na qual era sobre skate usando cartas. A utilidade ficou definida como ensinar algumas regras, manobras, combinações e uma abstração de uma competição.</p>
+  
+  <p>2) Equipe <br>
+   Manual do Skate não foi uma exceção, assim como muitas equipes recém criadas houve também problema com a equipe. A saída de um dos membros da equipe foi o primeiro, ele era um dos que mais ajudava. Um segundo membro não ajudava em nada. E por fim os outros dois tentavam ajudar, porém a qualidade não estava ficando boa. <br>
+   Com isso no fim tive que fazer toda parte gráfica também, na qual era responsabilidade dos outros membros. Minha parte era inicialmente o Game Design.</p>
+  
+  <p>3) Prazo e Conseqüências <br>
+   Com o troca troca de tema, acabamos perdendo muito tempo e o prazo ficou apertado. Com isso acabamos não fazendo muitos testes de mecânica e a versão final ficou com alguns ajustes pendentes. <br>
+   Um dos ajustes pendentes foi o tamanho do tabuleiro, como o jogo era praticamente só de cartas, decidimos fazer uma caixa pequena, com isso tabuleiro ficou pequeno. É um pouco difícil de ler os escritos dele, porém dava para ter aumentando os escritos sem aumentar o tabuleiro, mas isso acabou ficando de lado para dar prioridade a outros problemas. <br>
+   E o outro ajuste pendente é que demora um pouco para chegar o próximo turno de cada jogador. Como o jogo é para um total de 5 pessoas e cada um tem que ficar pensando qual lugar vai ir, quais manobras e combinações vai fazer, isso demora um pouco.</p>
+  
+  <p>4) Outros Problemas <br>
+   Tempo de jogo, o jogo estava demorando cerca de 2 horas e isso é bastante num jogo voltado a utilidade. Porém conseguimos arrumar isso, descartando metade da mecânica. Ela era inicialmente mostrar toda carreira de um skatista até chegar na primeira competição. No final ficou apenas a competição. <br>
+   Qualidade da Gráfica, a gráfica que fomos imprimir o jogo para apresentar depois, fez um trabalho bem ruim. Escolhemos ela pois, estávamos sem tempo, a gráfica tinha prazo de entrega rápido e aparentemente não era cara. Porém, as cartas ficaram todas tortas e não só as cartas com o todo resto ficou mal cortado. Com algumas reclamações o resultado ficou mediano, estava “bom” pelo tempo que eles levaram para fazer tudo, menos de um dia.</p>
+  
+  <p><strong>3. Pontos Positivos</strong></p>
+  
+  <p>1) Nova Experiência <br>
+   Desde que comecei a fazer jogos, a cerca de 2 anos, não tinha pensando em fazer jogos de tabuleiro, acabou sendo uma boa experiência. Apesar de ambos serem jogos tabuleiro e eletrônicos, é um pouco diferente na hora de criar, principalmente pelo fato da interação entre jogo e jogadores e também de jogadores com jogadores é diferenciada. Toda parte de testes é um tanto diferente também. <br>
+   E não menos importante foi o primeiro projeto que fui o Graphic Designer, como eu fiz Ciência da Computação antes, meu cargo nos projetos de jogos era sempre programador.</p>
+  
+  <p>2) Satisfação Pessoal <br>
+   Apesar de todos os problemas foi bastante gratificante por causa do feedback positivo que recebemos. Dentre eles, a mecânica bem projetada, apesar de demorar para chegar a vez de cada jogador jogar. Bom aspecto visual, apesar da qualidade de impressão e trabalho da gráfica. E pontualidade com os prazos, mesmo com todos os problemas, fomos o único grupo a apresentar 100% dentro do prazo.</p>
+  
+  <p>Download do Manual do Skate (imagens e manual de regras para imprimir): <a href="http://okamotoprojects.wix.com/site#!manual-do-skate/c101n" title="Download">http://okamotoprojects.wix.com/site#!manual-do-skate/c101n</a></p>
+  
+  <p>Para terminar, muito obrigado ao Bruno Cicanci, pelo espaço e oportunidade de postagem do meu segundo postmortem e o primeiro de um jogo de tabuleiro. E obrigado a todos que leram o/</p>
+  
+  <p>Maurílio Eudes Okamoto</p>
+</blockquote>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20Manual%20do%20Skate&amp;url=http://localhost:2368/postmortem-manual-do-skate/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/postmortem-manual-do-skate/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/postmortem-manual-do-skate/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/01/Screen-Shot-2014-01-02-at-14.11.36.png)" href="../2014-um-ano-de-oportunidades/">
+        <section class="post">
+            <h2>2014, um ano de oportunidades para os desenvolvedores de jogos</h2>
+            <p>Enfim chegamos a 2014, um ano com eleições, copa do mundo no Brasil, novos consoles e muitas oportunidades para…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/12/Screen-Shot-2013-12-19-at-15.19.44.png)" href="../head-first-html5-programming/">
+        <section class="post">
+            <h2>Head First HTML5 Programming</h2>
+            <p>Assim como a maioria dos livros da série Head First (Use a Cabeça, no Brasil), o HTML5 Programming mostra…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

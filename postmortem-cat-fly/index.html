@@ -1,0 +1,266 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: Cat-Fly</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/postmortem-cat-fly/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: Cat-Fly">
+    <meta property="og:description" content="Neste postmortem conheça o jogo independente brasileiro Cat-Fly para Android e conheça os desafios enfrentados pelo desenvolvedor Cláudio Rainho para publicá-lo. Como escrevi neste post, se você não publicou um jogo, você não fez um jogo. Apenas um jogo publicado...">
+    <meta property="og:url" content="http://localhost:2368/postmortem-cat-fly/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2014/01/Screen-Shot-2014-01-21-at-10.28.50.png">
+    <meta property="article:published_time" content="2014-01-21T08:30:45.000Z">
+    <meta property="article:modified_time" content="2016-02-16T04:25:39.564Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Postmortem: Cat-Fly">
+    <meta name="twitter:description" content="Neste postmortem conheça o jogo independente brasileiro Cat-Fly para Android e conheça os desafios enfrentados pelo desenvolvedor Cláudio Rainho para publicá-lo. Como escrevi neste post, se você não publicou um jogo, você não fez um jogo. Apenas um jogo publicado...">
+    <meta name="twitter:url" content="http://localhost:2368/postmortem-cat-fly/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2014/01/Screen-Shot-2014-01-21-at-10.28.50.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: Cat-Fly",
+    "url": "http://localhost:2368/postmortem-cat-fly/",
+    "datePublished": "2014-01-21T08:30:45.000Z",
+    "dateModified": "2016-02-16T04:25:39.564Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2014/01/Screen-Shot-2014-01-21-at-10.28.50.png",
+    "keywords": "postmortem",
+    "description": "Neste postmortem conheça o jogo independente brasileiro Cat-Fly para Android e conheça os desafios enfrentados pelo desenvolvedor Cláudio Rainho para publicá-lo. Como escrevi neste post, se você não publicou um jogo, você não fez um jogo. Apenas um jogo publicado..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/01/Screen-Shot-2014-01-21-at-10.28.50.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: Cat-Fly</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2014-01-21">21 January 2014</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Neste postmortem conheça o jogo independente brasileiro Cat-Fly para Android e conheça os desafios enfrentados pelo desenvolvedor Cláudio Rainho para publicá-lo.</p>
+
+<p>Como escrevi <a href="http://gamedeveloper.com.br/blog/2014/01/15/voce-ja-fez-um-jogo/" title="Blog">neste post</a>, se você não publicou um jogo, você não fez um jogo. Apenas um jogo publicado tem uma história para contar em um postmortem, e só assim um desenvolvedor aprende todo ciclo de vida de um jogo como um produto. Leia abaixo o texto enviado pelo Cláudio e veja mais um exemplo de que não é fácil criar um jogo, e que publicar faz parte do processo.</p>
+
+<blockquote>
+  <p><strong>1. Descrição do Jogo</strong></p>
+  
+  <p>Cat-Fly é um game casual desenvolvido para Android, o jogador pode escolher dentre vários gatinhos o seu preferido, a base dos acontecimentos do jogo acontece em volta de uma situação inusitada, o seu gatinho bebeu um leite um tanto quanto ruim e a dor de barriga apertou, ele corre para o banheiro mas algo estranho acontece, o banheiro ” Explode ” e o seu gatinho sai voando pelos ares, voe o mais alto possível com seu gatinho ” até mais alto que a Lua”</p>
+  
+  <p>Mecanica do jogo.</p>
+  
+  <p>A mecânica é simples você movimenta o seu gato de um lado para outro, precisa apenas recolher moedas e desviar de objetos que estão caindo, você possui um arsenal de powerUps que vão ajudar você a ir o mais alto possível. Dentro do jogo é possivel, comprar personagens, poderes e fases.</p>
+  
+  <p>O jogo esta disponível gratuitamente na PlayStore para Tablets e Smartphone com Android. Baixe o jogo aqui: <a href="https://play.google.com/store/apps/details?id=com.crgamestudio.tut.catflyfree" title="Cat-Fly">https://play.google.com/store/apps/details?id=com.crgamestudio.tut.catflyfree</a>.</p>
+  
+  <p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2014/01/10polegadas-660x1024.jpg" alt="" title="Cat-Fly "></p>
+  
+  <p><strong>2. Dificuldades e Problemas</strong></p>
+  
+  <p>1) Desempenho</p>
+  
+  <p>Bom, quem desenvolve para dispositivos sabe bem como isso é complicado,em Cat-Flyexistem objetos que se quebram, existem muitas partículas,e eu queria boas texturas com objetos 3D, no começo foi dificil adaptar o jogo para celulares moveis, dive que diminuir muito a qualidade dos objetos, as resoluções das texturas, e tirar objetos do jogo, tive que remodelar objetos das cenas diversas vezes, deus sabe o como isso foi cansativo, mas no final o jogo ficou razoável, porem não como eu esperava.</p>
+  
+  <p>2) Desenvolver sozinho.</p>
+  
+  <p>Eu particularmente gosto de fazer sozinho, mas não posso negar que isso da um trabalhão, eu como desenvolvedor indie não sei tudo e tudo que sei não é 100% mas nesse jogo tive quetrabalhar como tudo, desde desenho,animações,programação até a edição de áudio, o que mais me deu trabalho foi os efeitos sonoros e as musicas, e vou aproveitar o espaço para dar uma dica, porque tive dificuldade de achar bons efeitos sonoros e musicas que de fato fosse gratuitas, mas achei um site que permite a comercialização dos sons disponíveis nele, o nome do site é <a href="http://Delete-Key_2" title="Freesound">freesound.com</a>, outros problemas em relação a trabalhar sozinho é o fato de que com o tempo você passa a odiar o seu jogo de tanto que teve que testa ele, mas faz parte.</p>
+  
+  <p>3) Resoluções de aparelhos.</p>
+  
+  <p>Eu estou desenvolvendo para Android faz pouco tempo mas, o que mais me deu trabalho foi trabalhar com resoluções,os aparelhos Android possuem uma grande variedade de resoluções e isso atrapalha um pouco,então tive que limitar meu jogo para aparelhos com uma tela maior ou igual a 4″, agora para o próximo projeto eu estou mais preparado para lidar com as resoluções .</p>
+  
+  <p>4) Publicidade</p>
+  
+  <p>Esse sim é um grande problema, eu como desenvolvedor independente sou um tremendo de um durango, não tenho recursos financeiros para investir em propaganda, então a parte de publicidade do jogo foi um grande problema,minha unica solução foi recorrer as redes sociais, entrei em todos os foruns e grupos relacionados a jogos e android, e divulguei neles mas isso me consumiu um bom tempo, e ainda sim não vai dar um retorno satisfatório, é como o meu pai sempre fala “Propaganda é a alma do negocio” eu demorei para entender isso.</p>
+  
+  <p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2014/01/7polegadas.jpg" alt="" title="Cat-Fly "></p>
+  
+  <p><strong>3. Pontos Positivos</strong></p>
+  
+  <p>1) Aprendizado</p>
+  
+  <p>O Aprendizado foi sem duvida o maior ponto positivo, aprendi tantas coisas novas nesse jogo que me sinto pronto para fazer outro jogo e melhor, atualmente eu tenho apenas dois jogos lançados oficialmente, mas dezenas espalhados pela internet, mas é possível reparar a evolução que tive de um jogo para outro foi incrível,em Cat-Fly eu me desafiei em algumas mecânicas do jogo,coisas que deram um trabalho danado mas foi incrivelmente proveitoso e o fato de ter ganhando experiência,, agora posso ver claramente os erros que cometi no primeiro e ja vejo outros erros que cometi no Cat-Fly e esses erros serão evitados nos próximos projetos.</p>
+  
+  <p>2) Satisfação Pessoal</p>
+  
+  <p>Sem duvidas a Satisfação Pessoal é grande, eu desenvolvo games desde os meus 13 anos mas nunca fiz nada completo, agora com o segundo jogo lançado na PlayStore me sinto ótimo e pronto para outro.</p>
+  
+  <p>3) Novas Ideias</p>
+  
+  <p>O que Cat-Fly mais rendeu foi novas ideias, o desenvolvimento do jogo me obrigou a pesquisar diversas coisas que me geraram um bom conhecimento e bagagem para um próximo game também relacionado a animais, e a experiencia que eu tivo junto com os conselhos que recebi, estou convencido a investir meu tempo em um projeto mais comercial, seguindo a tendencia, infelizmente não posso falar dele mas quem quiser ficar por dentro é só curtit essa pagina nofacebook: <a href="https://www.facebook.com/crgamestudio" title="Facebook">https://www.facebook.com/crgamestudio</a></p>
+  
+  <p>Download do Cat-Fly FREE</p>
+  
+  <p><a href="https://play.google.com/store/apps/details?id=com.crgamestudio.tut.catflyfree" title="Cat-Fly">https://play.google.com/store/apps/details?id=com.crgamestudio.tut.catflyfree</a></p>
+  
+  <p>Para finalizar,quero agradecer o ao Bruno Cicanci, muito obrigado pelo espaço e oportunidade e agradeço a todos que leram.</p>
+  
+  <p>Claudio Rainho</p>
+</blockquote>
+
+<p>Esta é uma sessão do blog dedicada a mostrar exemplos de pessoas que conseguiram tirar sua ideia do papel e fizeram um jogo, o texto é escrito pelo desenvolvedor e publicado aqui da mesma maneira que recebo.  Se você já publicou um jogo e tem interesse de contar como foi o processo de desenvolvimento entre em contato para saber mais sobre o postmortem.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20Cat-Fly&amp;url=http://localhost:2368/postmortem-cat-fly/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/postmortem-cat-fly/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/postmortem-cat-fly/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/01/post19.png)" href="../gerenciamento-do-seu-tempo/">
+        <section class="post">
+            <h2>Como ser um programador de jogos: Gerenciamento do seu tempo</h2>
+            <p>Sem dúvidas um dos principais problemas que a maioria dos desenvolvedores enfrentam é a falta de tempo para se…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2014/01/post181.png)" href="../voce-ja-fez-um-jogo/">
+        <section class="post">
+            <h2>Como ser um programador de jogos: Você já fez um jogo?</h2>
+            <p>Em primeiro lugar, peço desculpas por não ter postado nesta série nas últimas semanas. Mas agora eu voltarei a…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

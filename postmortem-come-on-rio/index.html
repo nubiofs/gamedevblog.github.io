@@ -1,0 +1,270 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: Come On Rio</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/postmortem-come-on-rio/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: Come On Rio">
+    <meta property="og:description" content="As vezes recebo emails de desenvolvedores independentes brasileiros mostrando seus jogos recém lançados, e as vezes perguntam se eu posso divulgar. Como este blog é sobre desenvolvimento de jogos, e também meu portfólio, sempre respondi falando exatamente isso. Até que...">
+    <meta property="og:url" content="http://localhost:2368/postmortem-come-on-rio/">
+    <meta property="article:published_time" content="2013-06-25T09:07:13.000Z">
+    <meta property="article:modified_time" content="2016-02-16T15:08:09.850Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Postmortem: Come On Rio">
+    <meta name="twitter:description" content="As vezes recebo emails de desenvolvedores independentes brasileiros mostrando seus jogos recém lançados, e as vezes perguntam se eu posso divulgar. Como este blog é sobre desenvolvimento de jogos, e também meu portfólio, sempre respondi falando exatamente isso. Até que...">
+    <meta name="twitter:url" content="http://localhost:2368/postmortem-come-on-rio/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: Come On Rio",
+    "url": "http://localhost:2368/postmortem-come-on-rio/",
+    "datePublished": "2013-06-25T09:07:13.000Z",
+    "dateModified": "2016-02-16T15:08:09.850Z",
+    "keywords": "postmortem",
+    "description": "As vezes recebo emails de desenvolvedores independentes brasileiros mostrando seus jogos recém lançados, e as vezes perguntam se eu posso divulgar. Como este blog é sobre desenvolvimento de jogos, e também meu portfólio, sempre respondi falando exatamente isso. Até que..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: Come On Rio</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-06-25">25 June 2013</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>As vezes recebo emails de desenvolvedores independentes brasileiros mostrando seus jogos recém lançados, e as vezes perguntam se eu posso divulgar. Como este blog é sobre desenvolvimento de jogos, e também meu portfólio, sempre respondi falando exatamente isso. Até que um dia recebi mais um emails desses, do Bernardo Dias, e dessa vez tive uma ideia diferente, que seria interessante para o blog, e também uma forma de divulgar o jogo: pedi para ele me enviar um postmortem do jogo.</p>
+
+<p>Um postmortem é um documento muito importante de pós-produção, ou seja, é feito após o jogo ter sido lançado. O principal objetivo desse documento é contar as coisas que deram certo e errado, para que todos da equipe possam aprender e melhorar para próximos projetos.</p>
+
+<p>Por ser um documento que tem como objetivo ensinar, e não é “confidencial” como um documento de game design, muitas empresas divulgam esses documentos após o término do projeto. No site <a href="http://www.gamasutra.com/view/feature/193695/postmortem__sony_santa_monicas_.php" title="Gamasutra">Gamasutra</a> existem muitos publicados, de empresas gigantes e grupos independentes pequenos. Este é o documento mais incrível que podemos conhecer sobre um jogo, pois nele podemos aprender tudo que foi feito para o jogo ser um sucesso, e tudo que não deu certo.</p>
+
+<p>Para iniciar essa nova categoria aqui no blog, convidei o Bernardo para escrever um postmortem do seu primeiro jogo lançado para Android e iOS, o Come On Rio. O texto abaixo foi escrito por ele, contanto suas experiências e, até mais do que isso, a realização pessoal de fazer um jogo.</p>
+
+<blockquote>
+  <p>Olá, sou Bernardo Dias, criador de Come On Rio para iOS e Android, um jogo de lógica que tem como tema a cidade do Rio de Janeiro. Estou escrevendo esse artigo para mostrar um pouco do meu primeiro projeto de jogo, como também partilhar um pouco da experiência que pude adquirir e apontar alguns pontos que deram certo e outros que deram errado.</p>
+  
+  <p>Primeiramente, acho importante mencionar que se você pretende desenvolver um jogo de maneira independente, esteja preparado para enfrentar dificuldades que se originam em questões completamente divergentes uma da outra, ou seja, o que quero dizer é que, por exemplo, quando a questão financeira estiver te atrapalhando, aparecerá outro problema diferente, como uma parte da programação que não está funcionando como você desejaria, etc.</p>
+  
+  <p>É possível pensar depois de ler o parágrafo anterior: “isso é normal e acontece em qualquer tipo de projeto”, ok, mas já parou para pensar em todos esses problemas caindo apenas sobre uma cabeça: a sua, ou então, no máximo na cabeça de cinco ou seis pessoas? É bem complicado… imagina ter que pensar em todo o design do jogo (enredo, GDD, etc), criar toda a arte visual e sonora, a arquitetura e a usabilidade, programar o jogo, corrigir bugs, entre outros, e ainda ter todos esses problemas a sua volta? Isso sem citar os problemas que enfrentamos na vida, no trabalho…</p>
+  
+  <p>Outro fator que quero citar é a mudança que o projeto vai sofrer conforme o mesmo for se desenvolvendo, claro que ele não ficará completamente diferente do conceito aplicado inicialmente, porém você terá um projeto bem modificado devido a diversos fatores, como otimização por exemplo. Mas acredite, isso é muito bom porque se trata de um fator essencial no refinamento do projeto, fazendo com que no final você perceba que algumas de suas idéias iniciais eram simplesmente bizarras.</p>
+  
+  <p>Para aproveitar o fator das mudanças, citarei algumas que aconteceram na minha experiência de desenvolvimento em Come On Rio através de algumas coisas que deram certo e outras que não foram tão bem assim.</p>
+  
+  <p><strong>• Coisas que deram certo:</strong></p>
+  
+  <ol>
+  <li><p>A realização de um sonho. <br>
+  Independente do dinheiro ou do sucesso que seu jogo poderá adquirir, acho que nada mais gratificante e importante que você ter uma ideia, trabalhar em cima dela, enfrentar diversos obstáculos para no final, aleluia, você ver o seu jogo disponível para download em todos os continentes do mundo e para milhares de pessoas. Nada mais prazeroso do que estar num local, olhar para o lado e ver uma criança que você não conhece, jogando o seu jogo! Acredito que no final; para o seu primeiro projeto, aquele que vai te colocar dentro do sonho de criar um jogo; não importa se você não ficou milionário com ele ou se ele não fez sucesso mundial, seu jogo não foi um fracasso e sim um vitória! Ele é seu primeiro projeto concluído com êxito que te dará experiência e força para outros futuros projetos.</p></li>
+  <li><p>Sem qualquer tipo de censura. <br>
+  Diante de tantos jogos que abordam tiros, sangue, violência ou zumbis, como escolha pessoal, queria que meu primeiro projeto pudesse abordar um tema que não houvesse qualquer tipo de censura, que pudesse ser jogado desde uma criança de sete anos, até uma senhora de sessenta anos sem qualquer tipo de preconceito. No final das contas, percebi que essa ideia principal seguiu ao meu lado até o fim.</p></li>
+  <li><p>Tema único e originado de uma maneira diferente. <br>
+  Por vontade própria, eu não queria fazer um jogo clichê de corrida, zumbi ou de arma (apesar de gostar muito de todos esses). Penso que a ideia de um jogo que se passa nos principais pontos turísticos da cidade, presente em Come On Rio, nunca foi utilizada antes. Engraçado que tudo surgiu naquele dia abençoado em que num simples passeio de carro pela cidade, olhando para o maravilhoso Pão de Açúcar à minha esquerda, houve o momento em que uma pessoa que estava comigo definiu a cidade do Rio de Janeiro da melhor maneira que eu já escutei: “o Rio é a cidade mais linda do mundo, pois em nenhum outro lugar há uma harmonia tão grande entre o urbano e a natureza como há nela”. Bem, uniu a vontade de criar um jogo com uma ideia originada a partir de uma definição perfeita para mim: a harmonia entre o urbano e a natureza presente no Rio de Janeiro.</p></li>
+  <li><p>Se divertir e aprender ao mesmo tempo. <br>
+  Engajando no ponto citado anteriormente, com o surgimento da ideia de um jogo sobre o Rio de Janeiro, acho que consegui completar outro objetivo que eu tinha para o projeto após a definição do tema. Penso que foi possível fazer as pessoas se divertirem aprendendo, foi possível passar um pouco de cultura e um pouco da cidade de uma maneira diferente.</p></li>
+  </ol>
+  
+  <p><strong>• Coisas que deram errado</strong></p>
+  
+  <ol>
+  <li><p>Vários jogos em um só. <br>
+  Pois é, a princípio a minha ideia era em que cada ponto turístico que a pessoa acessasse, fosse possível jogar um jogo diferente. Bem, isso era simplesmente inviável por causa de diversos problemas como o tamanho final do jogo, otimização e tempo que o projeto levaria, sem contar o fato de fazer todos esses diversos jogos com atenção e cuidado total. Por isso no final, optei por fazer apenas um e poder dar total atenção, cuidado, vontade, etc a ele.</p></li>
+  <li><p>Terminar o projeto em meses. <br>
+  Quando finalmente coloquei a mão para trabalhar em Come On Rio, pretendia termina-lo em alguns meses, porém só consegui finaliza-lo depois de um pouco mais de um ano. Acredite, o seu projeto vai demorar muito mais do que você espera. Você não tem 100% do seu tempo para se dedicar ao jogo pois tem que trabalhar ou estudar, como também você não tem milhões de reais para investir em uma equipe e em uma estrutura que vá acelerar o andamento do projeto.</p></li>
+  <li><p>Criar o jogo exatamente igual em todas as plataformas em que eu lançasse. <br>
+  Apesar de não afetar a parte do jogo em si e sim a parte mais informativa de Come On Rio, não foi possível (pelo menos por enquanto) disponibilizar as fotos dos pontos turísticos para o projeto no Android, como é disponibilizado no iOS. Por querer atingir o máximo número de dispositivos Android possíveis, por questão de otimização, foi necessário retirar a parte informativa que mostrava lindas fotos do Rio de Janeiro.</p></li>
+  <li><p>Ficar rico <br>
+  Pois é, pelo menos por enquanto eu não fiquei rsrsrsrs. Realmente é extremamente difícil no primeiro projeto, com pouquíssimos recursos, você conseguir captar muito dinheiro com ele. Você não tem fundos para investir em propagandas em diversos lugares e a única coisa que te resta é trabalhar muito, mas muito mesmo, para tornar o seu jogo famoso.</p></li>
+  </ol>
+  
+  <p>Como dito no início do artigo, se você conseguir ter uma ideia, trabalhar em cima dela e no final você ver essa sua ideia obtendo êxito, parabéns, você é um vitorioso! Você conseguiu superar todos os obstáculos e está iniciando seu caminho onde você sempre sonhou caminhar: desenvolvendo jogos. Uma vez li um artigo sobre desenvolvimento de jogos onde Chet Faliszek (roteirista de Half-Life 2, Portal e Left 4 Dead) deu a sugestão para quem quer trabalhar com jogos: apenas faça um. Lembro de ter lido que para ele não tem mistério, basta criar um jogo, todo dia que chegar em casa após o seu trabalho, continue o seu projeto, faça isso até que ele fique pronto e depois coloque-o disponível para venda. Eu fiz isso durante meu projeto e acredito realmente que esse seja o segredo e então sigo-o totalmente todos os dias da minha vida.</p>
+  
+  <p>Esse foi o meu primeiro projeto onde foi possível adquirir bastante experiência no desenvolvimento de um jogo para em breve começar a lançar uns projetos em 3D usando a Unity ou outra engine que eu venha a me adaptar melhor. Só para concluir, acredite em uma coisa, você não conseguirá criar um projeto totalmente sozinho. Apesar de ter sido eu a colocar toda a mão na massa para criar tudo em Come On Rio, tive ajudas essenciais para o sucesso do mesmo, primeiramente Deus por me dar forças e recuperar minhas energias todos os dias, um grande amigo que me ajudou criando algumas artes e idéias, uma irmã que simplesmente fez um trabalho fenomenal em passar o jogo todo para inglês,familiares apoiando, e outros grandes amigos que foram beta testers por diversas vezes, inclusive alguns da faculdade que paravam de fazer o que estavam fazendo para me ajudar.</p>
+  
+  <p>Bem, espero que esse artigo seja útil para quem quer desenvolver um jogo, e que minhas palavras tenham ajudado de alguma maneira. Obrigado a todos e principalmente ao Bruno Cicanci que me deu a excelente ideia de criar esse artigo.</p>
+  
+  <p>Quem se interessar em ver como é o jogo, basta baixa-lo gratuitamente nos links abaixo:</p>
+  
+  <p>Android: <a href="https://play.google.com/store/apps/details?id=com.brevo.comeonrio" title="Come On Rio">https://play.google.com/store/apps/details?id=com.brevo.comeonrio</a> <br>
+   iPhone/iPod/iPad: <a href="https://itunes.apple.com/br/app/come-on-rio/id595551098?l=pt&amp;ls=1&amp;mt=8" title="Come On Rio">https://itunes.apple.com/br/app/come-on-rio/id595551098?l=pt&amp;ls=1&amp;mt=8</a></p>
+  
+  <p>Página do jogo: <a href="http://www.comeonrio.com" title="Come On Rio">http://www.comeonrio.com</a> <br>
+   Página do facebook: <a href="http://www.facebook.com/comeonrio" title="Come On Rio">http://www.facebook.com/comeonrio</a></p>
+  
+  <p>Abraços, <br>
+   Bernardo Dias</p>
+</blockquote>
+
+<p>Eu gostei bastante do texto, e o jogo é divertido. Clique nos links acima para baixar, e confira o trailer abaixo. Bernardo, muito obrigado por compartilhar suas experiências e boa sorte nos seus próximos projetos.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/wBuJiUFqDS4?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"></iframe></span></p>
+
+<p>A partir de agora, sempre que eu receber algum email de sobre jogos, vou sugerir de fazer um postmortem para ser publicado aqui desta mesma forma. Se você, leitor, tem algum jogo publicado e quer compartilhar suas experiências contanto o que deu certo e errado n seu projeto, envie um email para mim (está em Contato).</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20Come%20On%20Rio&amp;url=http://localhost:2368/postmortem-come-on-rio/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/postmortem-come-on-rio/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/postmortem-come-on-rio/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/07/1016127_328924493904563_591868422_n.png)" href="../sbgames-2013-em-sao-paulo/">
+        <section class="post">
+            <h2>SBGames 2013 em São Paulo</h2>
+            <p>Em outubro, entre os dias 16 e 18, a Universidade Presbiteriana Mackenzie em São Paulo recebe o XII Simpósio…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/06/capa.png)" href="../palestra-corona-sdk-unicsul/">
+        <section class="post">
+            <h2>Como foi a palestra sobre Corona SDK na Unicsul</h2>
+            <p>Esta foi a segunda palestra que apresentei este ano sobre desenvolvimento de jogos para dispositivos móveis, e desta vez…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

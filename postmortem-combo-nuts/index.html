@@ -1,0 +1,434 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: Combo Nuts</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/postmortem-combo-nuts/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: Combo Nuts">
+    <meta property="og:description" content="Mais um postmortem exclusivo para o blog, e desta vez é um jogo que eu participei do desenvolvimento como programador. Sabia como foi o precesso de produção do jogo Combo Nuts! Combo Nuts é um jogo independente da Aplay Studios...">
+    <meta property="og:url" content="http://localhost:2368/postmortem-combo-nuts/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2013/09/combonuts.jpg">
+    <meta property="article:published_time" content="2013-09-24T09:58:41.000Z">
+    <meta property="article:modified_time" content="2016-02-16T14:56:36.177Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Postmortem: Combo Nuts">
+    <meta name="twitter:description" content="Mais um postmortem exclusivo para o blog, e desta vez é um jogo que eu participei do desenvolvimento como programador. Sabia como foi o precesso de produção do jogo Combo Nuts! Combo Nuts é um jogo independente da Aplay Studios...">
+    <meta name="twitter:url" content="http://localhost:2368/postmortem-combo-nuts/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2013/09/combonuts.jpg">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: Combo Nuts",
+    "url": "http://localhost:2368/postmortem-combo-nuts/",
+    "datePublished": "2013-09-24T09:58:41.000Z",
+    "dateModified": "2016-02-16T14:56:36.177Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2013/09/combonuts.jpg",
+    "keywords": "postmortem",
+    "description": "Mais um postmortem exclusivo para o blog, e desta vez é um jogo que eu participei do desenvolvimento como programador. Sabia como foi o precesso de produção do jogo Combo Nuts! Combo Nuts é um jogo independente da Aplay Studios..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/09/combonuts.jpg)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: Combo Nuts</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-09-24">24 September 2013</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Mais um postmortem exclusivo para o blog, e desta vez é um jogo que eu participei do desenvolvimento como programador. Sabia como foi o precesso de produção do jogo Combo Nuts!</p>
+
+<p><a href="http://www.aplaystudios.com/games.html" title="Combo Nuts">Combo Nuts</a> é um jogo independente da <a href="http://www.aplaystudios.com" title="Aplay">Aplay Studios</a> para iOS e Android, que foi desenvolvido por uma equipe formada por ex-funcionários de grandes empresas, como <a href="http://ubisoft.com" title="Ubisoft">Ubisoft</a>, <a href="http://glu.com" title="Glu">Glu Mobile</a> e <a href="http://ea.com" title="EA">Electronic Arts</a>.</p>
+
+<p>Este postmortem é muito especial para mim por que eu participei do desenvolvimento deste jogo em sua fase final e no primeiro update para ambas as plataformas. <span style="line-height: 1.3em;">Toda a experiência com desenvolvimento de jogos da equipe foi empregada na produção de Combo Nuts, um jogo muito divertido e viciante!</span></p>
+
+<p><span style="line-height: 1.3em;">Eu aprendi bastante, principalmente sobre o processo de publicação do jogo na App Store e no Google Play, mas isto é um assunto para outro post. Muito obrigado Sandro pelo postmortem e pela oportunidade de participar deste projeto! Alias, este jogo está concorrendo a Melhor Jogo Completo e Melhor Jogo Mobile na <a href="http://gamedeveloper.com.br/blog/2013/07/03/sbgames-2013-em-sao-paulo/" title="SBGames">SBGames 2013</a>, que acontece mês que vem em São Paulo.</span></p>
+
+<blockquote>
+  <h2 id="postmortemcombonuts">Postmortem: Combo Nuts</h2>
+  
+  <p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/title.jpg" alt="" title=""></p>
+  
+  <h2 id=""> </h2>
+  
+  <h2 id="descrio">Descrição</h2>
+  
+  <p>Combo Nuts é um endless casual game com uma jogabilidade simples e intuitiva, com partidas rápidas e emocionantes.</p>
+  
+  <p>O jogador controla Albert Squirrel, um esquilo voador que deve recolher as nozes que caem do céu roubadas pelos irmãos Wrong. A melhor maneira de recolher um grande número de nozes é através das sequências de nozes que aparecem, dessa maneira o jogador pode fazer diversos “combos”, recolhendo mais nozes e ganhando mais pontos.</p>
+  
+  <p>O jogo é freemium e as formas de monetização implementadas foram através de propagandas e vendas de in-app purchases.</p>
+  
+  <p>O jogo foi lançado para iOS e Android.</p>
+  
+  <p>Links para download:</p>
+  
+  <p>iOS: <a href="http://bit.ly/combonuts_ios">http://bit.ly/combonuts_ios</a></p>
+  
+  <p>Android: <a href="http://bit.ly/combonuts_android">http://bit.ly/combonuts_android</a></p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="equipe">Equipe</h2>
+  
+  <p>No início do projeto a equipe consistia em 3 pessoas, um game designer, um artista e um programador. Trabalhamos de forma remota, a principal forma de comunicação foi através de e-mails e reuniões via Skype e com encontros presenciais esporádicos. Ao final do projeto, mais 2 programadores nos auxiliaram para finalização do jogo.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="conceito">Conceito</h2>
+  
+  <p>A idéia era criar um jogo casual no estilo endless com uma jogabilidade simples e divertida, onde as partidas fossem rápidas e dinâmicas.</p>
+  
+  <p>Analisamos o mercado e o público alvo que gostaríamos de atingir. Estudamos os estilos de jogo e gameplay que gostaríamos de produzir, que fosse algo simples, divertido, bonito e original onde cada membro da equipe aprenderia algo de novo em sua respectiva área.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="estruturaparaproduo">Estrutura para produção</h2>
+  
+  <p>Para a definição, organização e compartilhamento dos trabalhos utilizamos as seguintes ferramentas:</p>
+  
+  <ul>
+  <li>Google Docs: criação e organização dos documentos e tabelas (<a href="http://www.docs.google.com">www.docs.google.com</a>);</li>
+  <li>Trello: Definição das tasks e prazos (<a href="http://www.trello.com">www.trello.com</a>);</li>
+  <li>Dropbox: Armazenamento dos assets de arte, plugins, GDD etc (<a href="http://www.dropbox.com">www.dropbox.com</a>);</li>
+  <li>BitBucket: repositório online para o projeto (<a href="http://www.bitbucket.com">www.bitbucket.com</a>);</li>
+  <li>Engine: Unity (<a href="http://unity3d.com/">http://unity3d.com/</a>);</li>
+  <li>TestFlight: Serviço para teste de builds remotamente (<a href="https://testflightapp.com/">https://testflightapp.com/</a>).</li>
+  </ul>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="prototipagem">Prototipagem</h2>
+  
+  <p>Desenvolvemos o Game Design Document (GDD) com o detalhamento inicial do gameplay principal do jogo, com as principais guidelines a respeito da mecânica do jogo para iniciarmos o quanto antes a prototipagem.</p>
+  
+  <p>Com o decorrer da prototipagem e testes, fomos definindo na engine os editores que precisaríamos para criação e ajustes de todos os elementos do jogo como: posição, tamanho e velocidade do aparecimento dos objetos, criação dos padrões de sequência de objetos, controle dos intervalos de tempo e dos objetos para termos controle da curva de aprendizado e dificuldade etc.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="estudosiniciais">Estudos iniciais</h2>
+  
+  <p>Paralelamente, fomos desenvolvendo o estilo artístico do jogo, estudando a melhor forma para a implementação dos elementos gráficos levando em conta a otimização dos recursos técnicos da engine e a beleza e composição da arte.</p>
+  
+  <p>Nesse momento foram feitos estudos de animação na engine e nos principais devices para encontrar um equilíbrio entre otimização dos recursos técnicos e resultado artístico desejado.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <p></p><div dir="ltr"><table border="0"><tbody><tr><td><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/tapdragrelease-Medium.jpg" alt="" title=""></td><td><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/drag.jpg" alt="" title=""></td></tr></tbody></table></div><span style="line-height: 1.3em;"> <br>
+  </span>
+  
+  <h2 id="gamedesigndocument">Game Design Document</h2>
+  
+  <p>No GDD foram detalhadas todas as mecânicas necessárias para implementação no jogo, funcionamento da câmera, personagem e controle, comportamento de todos os elementos do jogo, progressão de jogabilidade, signs e feedbacks, fluxograma das telas e das ações, interface de usuário, conteúdo do jogo, detalhamento do funcionamento da “loja” do jogo etc.</p>
+  
+  <p>A medida que os elementos eram implementados e testados, ajustes eram feitos e essas informações eram atualizadas no GDD para manter a organização do projeto.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <p></p><div dir="ltr"><table border="0"><tbody><tr><td><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/launch_directions.jpg" alt="" title=""></td><td><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/launch_intensity.jpg" alt="" title=""></td></tr><tr><td><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/enemy_sizes.jpg" alt="" title=""></td><td><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/size.jpg" alt="" title=""></td></tr></tbody></table></div><span style="line-height: 1.3em;"> <br>
+  </span>
+  
+  <h2 id="produo">Produção</h2>
+  
+  <p>Durante a produção do jogo adquirimos os efeitos sonoros e música que seriam implementados no jogo através do site <a href="http://www.premiumbeat.com/">http://www.premiumbeat.com/</a></p>
+  
+  <p>Além dos in-app purchases foi adotado como método de monetização as propagandas dentro do jogo, nós utilizamos 2 serviços para isso:</p>
+  
+  <ul>
+  <li>AdMob: serviço de banner in-game do Google (<a href="http://www.admob.com">www.admob.com</a>);</li>
+  <li>Chartboost: serviço de banners intersticiais (<a href="http://www.chartboost.com">www.chartboost.com</a>).</li>
+  </ul>
+  
+  <p>No nosso projeto, o serviço do Chartboost é o mais efetivo e com maior retorno financeiro.</p>
+  
+  <p>Foi comprado também diversos plugins para a Unity para facilitar a implementação de diversos elementos no jogo como integração com Game Center da Apple, Chartboost, AdMob, Flurry etc, os plugins foram adquiridos no site: <a href="http://prime31.com/plugins">http://prime31.com/plugins</a></p>
+  
+  <p>Na fase final do projeto, contamos com mais 2 programadores para ajudar na implementação desses plugins.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="balanceamentoqabugfixesepolimento">Balanceamento, QA, bug fixes e polimento</h2>
+  
+  <p>O balanceamento do jogo foi constantemente executado durante o jogo, de todos os objetos, inimigos, itens especiais etc, com o objetivo de encontrar o melhor equilíbrio entre diversão e o estilo de gameplay com sessões rápidas e dinâmicas.</p>
+  
+  <p>O QA (quality assurance) é o momento onde verificamos a integridade do jogo, se todos os elementos estão funcionando de acordo com o planejado e onde podemos melhorar para tornar melhor a experiência para o jogador. Fizemos sucessivos testes a fim de descobrir erros no jogo e solucioná-los.</p>
+  
+  <p>Depois de implementado os principais itens do jogo iniciamos o procedimento de bug fixes, categorizando em 3 níveis, do mais ao menos crítico que influenciasse o gameplay e a experiência do jogador.</p>
+  
+  <p>Nesse momento iniciamos o polimento do jogo, analisando o fluxo das telas e ações do jogo, colocando os assets de arte finais, revisando textos, melhorando signs e feedbacks etc.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  <img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/09/balance.jpg" alt="" title=""></span></p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="validaoedivulgao">Validação e divulgação</h2>
+  
+  <p>Após os últimos testes, enviamos as builds finais para a validação do projeto, para iOS a validação levou 10 dias e para Android cerca de 3 horas.</p>
+  
+  <p>Para a divulgação de nosso jogo, preparamos os seguintes meios:</p>
+  
+  <ul>
+  <li>Website: <a href="http://www.aplaystudios.com/games.html">http://www.aplaystudios.com/games.html</a></li>
+  <li>Press release: <a href="http://www.mediafire.com/?zsvd8o2njdjed">http://www.mediafire.com/?zsvd8o2njdjed</a></li>
+  <li>Facebook Fan Page: <a href="https://www.facebook.com/combonuts?fref=ts">https://www.facebook.com/combonuts?fref=ts</a></li>
+  <li>Twiiter: <a href="https://twitter.com/aplaystudios">https://twitter.com/aplaystudios</a></li>
+  <li>Canal no YouTube: <a href="http://www.youtube.com/user/aplaystudios/feed">http://www.youtube.com/user/aplaystudios/feed</a></li>
+  <li>Trailer do jogo: <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/4Hv4oHdvNfQ?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"></iframe></span></li>
+  <li>Vídeo mashup com a banda He Saike: <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/69OW6ji8cao?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"></iframe></span></li>
+  </ul>
+  
+  <p>No lançamento, entramos em contato com diversos sites e blogs, nacionais e internacionais, especializados na cobertura e análise de jogos mobile, para apresentar o jogo.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="downloadsfeedbacksmtricaseupdates">Downloads, Feedbacks, métricas e updates</h2>
+  
+  <p>Durante a primeira semana de lançamento foram muitos downloads para iOS e Android, e no decorrer das próximas semanas esse número diminui e estabilizou até uma certa média. Porém os números do Android continuam a subir e atualmente já ultrapassou, e muito, os números de downloads do iOS.</p>
+  
+  <p>Após o lançamento nos atentamos para os feedbacks dos jogadores através da área de comentários das lojas App Store e Google Play e das redes sociais.</p>
+  
+  <p>Analisamos os números e estatísticas do jogo através de sites como App Annie (<a href="http://www.appannie.com/">http://www.appannie.com/</a>) e Distimo (<a href="http://www.distimo.com/">http://www.distimo.com/</a>) para</p>
+  
+  <p>O Flurry (<a href="http://www.flurry.com/">http://www.flurry.com/</a>) é uma ferramenta para analisar o comportamento do usuário em relação a seu aplicativo e/ou jogo. Através dele verificamos quais são os itens e ações mais e menos acessados e executados pelos jogadores o que nos auxilia a melhorar o nosso jogo nos próximos updates.</p>
+  
+  <p>Após avaliarmos a série de feedbacks que recebemos, nos organizamos e definimos quais são os mais importantes para o primeiro update.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="problemasdificuldades">Problemas / Dificuldades</h2>
+  
+  <p><strong>1) Ritmo de produção</strong></p>
+  
+  <p>O ritmo de desenvolvimento não foi constante, algumas vezes não conseguíamos nos dedicar todos os dias e ficamos período sem produzir nada no projeto o que comprometeu no número de iterações que gostaríamos para melhorar características e mecânicas do jogo.</p>
+  
+  <p><strong>2) Balanceamento inicial</strong></p>
+  
+  <p>No primeiro balanceamento a dificuldade do jogo estava muito alta, foi uma decisão tomada conscientemente, com o objetivo de tornar as partidas mais rápidas e dinâmicas, mas através dos feedbacks percebemos que poderíamos melhorá-lo nesse ponto oferecendo ao jogador 3 tentativas ao invés de apenas uma. Melhoramos isso no primeiro update que lançamos.</p>
+  
+  <p><strong>3) Pouco divulgação</strong></p>
+  
+  <p>Apesar dos esforços para divulgarmos nosso jogo, tivemos pouco exposição a respeito dele. Não tínhamos condição de investir nenhum valor nesse sentido, no que refletiu no baixo número de downloads do jogo. Uma característica interessante são os números do Android que, mesmo sem divulgação, mantém-se num número interessante e estável.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="sucessoaprendizado">Sucesso / Aprendizado</h2>
+  
+  <p><strong>1) Experiência no processo de desenvolvimento</strong></p>
+  
+  <p>Sem dúvida nenhuma, o principal ponto positivo do projeto foi a experiência adquirida em todo o processo necessário para lançar um jogo, desde a criação do conceito inicial, organização e produção para execução do projeto, cadastramento e processo de validação de um jogo, conhecer e trabalhar no processo de divulgação de um jogo, análise dos downloads, métricas e feedbacks gerados pelo jogo.</p>
+  
+  <p>Diferente de experiências anteriores, onde todos os membros da equipe já trabalharam em empresas de jogos em suas áreas específicas, em nosso projeto tivemos que aprender e trabalhar em diferentes áreas como produção, marketing, análise de métricas etc, e todo esse conhecimento serviu para melhorar a nossa percepção em relação a produção de um jogo.</p>
+  
+  <p><strong>2) Custo direto relativamente baixo</strong></p>
+  
+  <p>O principal investimento do projeto foi o tempo de cada membro da equipe. Como utilizamos equipamentos próprios e a maioria das ferramentas eram grátis, conseguimos produzir um jogo sem custos muito elevados.</p>
+  
+  <p>Os principais gastos foram em licenças para a engine, cadastramento  para ser desenvolvedores nas lojas, efeitos sonoros e música, plugins e manutenção do site para divulgação.</p>
+  
+  <p><strong>3) Uso da Unity no projeto</strong></p>
+  
+  <p>Produzir o jogo desde no início utilizando a Unity nos ajudou e muito no processo.</p>
+  
+  <p>Com um grande número de usuários, documentações e plugins disponíveis, e com a possibilidade de compilar o jogo para diferentes plataformas (iOS e Android na primeira fase) foi a melhor opção para produzirmos nosso jogo.</p>
+  
+  <p><span style="line-height: 1.3em;"> <br>
+  </span></p>
+  
+  <h2 id="concluso">Conclusão</h2>
+  
+  <p>A experiência em produzir um jogo do início ao fim foi o melhor aspecto de todo o projeto.</p>
+  
+  <p>Muitos erros foram cometidos e aprendemos bastante a respeito de outras áreas tão importantes além do desenvolvimento direto na produção dos jogos, como análise dos números e métricas do jogo, criação de uma estratégia de marketing para otimizar a divulgação etc.</p>
+  
+  <p>A criação de jogos envolve diversos setores distintos e a oportunidade de trabalhar e conhecer esses diferentes setores foi uma parte muito importante para a execução do projeto.</p>
+  
+  <p>O objetivo agora é aplicar todo o conhecimento adquirido nos nossos próximos jogos, para que essa experiência e conhecimento possam nos ajudar a criar jogos cada vez melhores.</p>
+  
+  <p>Obrigado pelo o seu tempo e atenção lendo esse Post Mortem e um obrigado especial para o Bruno Cicanci que ofereceu esse espaço para compartilharmos a nossa experiência, e pela ajuda direta em nosso jogo também, muito obrigado.</p>
+  
+  <p><strong>Sandro Junki Morishita</strong></p>
+  
+  <p>e-mail: <a href="mailto:sandromorishita@aplaystudios.com">sandromorishita@aplaystudios.com</a></p>
+  
+  <p>portifólio: <a href="http://www.junki1978.com">www.junki1978.com</a></p>
+</blockquote>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20Combo%20Nuts&amp;url=http://localhost:2368/postmortem-combo-nuts/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/postmortem-combo-nuts/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/postmortem-combo-nuts/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/09/post07.png)" href="../como-ser-um-programador-de-jogos-concursos/">
+        <section class="post">
+            <h2>Como ser um programador de jogos: Concursos</h2>
+            <p>Muitas vezes temos a vontade de fazer algo, mas não temos uma motivação forte o bastante para levamos nosso…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../indie-mobile-brasil/">
+        <section class="post">
+            <h2>Indie Mobile Brasil, o site para divulgar seu jogo!</h2>
+            <p>Muita gente passa dias, semanas, meses fazendo seu jogo, vira noites e não consegue dormir até terminar. Mas, depois…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

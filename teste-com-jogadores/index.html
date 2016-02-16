@@ -1,0 +1,250 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Como ser um programador de jogos: Teste com jogadores</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/teste-com-jogadores/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Como ser um programador de jogos: Teste com jogadores">
+    <meta property="og:description" content="Testar um jogo é algo fácil, não é? Só jogar? Não! Existem maneiras de testar e, o mais importante, coletar dados destes testes para realmente melhorar o jogo. Alguns tipos de testes podem e devem ser feitos com um jogador,...">
+    <meta property="og:url" content="http://localhost:2368/teste-com-jogadores/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/wp-content/uploads/2013/12/post15.png">
+    <meta property="article:published_time" content="2013-12-05T18:03:31.000Z">
+    <meta property="article:modified_time" content="2016-02-16T14:46:29.168Z">
+    <meta property="article:tag" content="como começar">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Como ser um programador de jogos: Teste com jogadores">
+    <meta name="twitter:description" content="Testar um jogo é algo fácil, não é? Só jogar? Não! Existem maneiras de testar e, o mais importante, coletar dados destes testes para realmente melhorar o jogo. Alguns tipos de testes podem e devem ser feitos com um jogador,...">
+    <meta name="twitter:url" content="http://localhost:2368/teste-com-jogadores/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/wp-content/uploads/2013/12/post15.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Como ser um programador de jogos: Teste com jogadores",
+    "url": "http://localhost:2368/teste-com-jogadores/",
+    "datePublished": "2013-12-05T18:03:31.000Z",
+    "dateModified": "2016-02-16T14:46:29.168Z",
+    "image": "http://gamedeveloper.com.br/wp-content/uploads/2013/12/post15.png",
+    "keywords": "como começar",
+    "description": "Testar um jogo é algo fácil, não é? Só jogar? Não! Existem maneiras de testar e, o mais importante, coletar dados destes testes para realmente melhorar o jogo. Alguns tipos de testes podem e devem ser feitos com um jogador,..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-como-programar-jogos nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/12/post15.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-como-programar-jogos">
+
+        <header class="post-header">
+            <h1 class="post-title">Como ser um programador de jogos: Teste com jogadores</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2013-12-05">05 December 2013</time>  on <a href="../tag/como-programar-jogos/">como começar</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Testar um jogo é algo fácil, não é? Só jogar? Não! Existem maneiras de testar e, o mais importante, coletar dados destes testes para realmente melhorar o jogo. Alguns tipos de testes podem e devem ser feitos com um jogador, mas também existe o momento certo para cada tipo de teste.</p>
+
+<p>Para ficar mais simples de explicar, vou dividir o texto em fases do processo de desenvolvimento e destacar os tipos de testes que podem ser realizados. Em todas as fases assuma sempre que quem está testando o jogo é um QA da equipe de desenvolvimento, e não artistas, programadores, produtores e game designers. Nas fases finais, além do QA da equipe, falarei também sobre testes com o público-alvo e público geral.</p>
+
+<h2 id="prottipo"><strong>Protótipo</strong></h2>
+
+<p>Durante a elaboração do Documento de Game Design (GDD) é iniciado o desenvolvimento do protótipo do jogo que, <a href="http://gamedeveloper.com.br/blog/2013/10/09/como-ser-um-programador-de-jogos-prototipos/" title="Protótipos">como expliquei neste post</a>, é fundamental para a validação da ideia e do gameplay. Neste contexto, o teste deve focar na ideia que o game designer quer transmitir, e não em encontrar problemas técnicos.</p>
+
+<p><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/12/Insert-Coin-Page-5.png%20" prot alt=""></p>
+
+<p>O game designer também vai jogar e testar a jogabilidade, inclusive ele fará isso durante todo desenvolvimento, porém é importante um QA testar, pois o teste do game designer, assim como de todos desenvolvedores, pode ser algo viciado, que não vai ver o que um QA pode encontrar por não estar dentro do desenvolvimento.</p>
+
+<h2 id="alpha"><strong>Alpha</strong></h2>
+
+<p>Esta fase começa logo depois que o protótipo foi validado e o game designer está com boa parte do GDD pronto, então começamos o desenvolvimento do jogo de acordo com a orientação do produtor e do gerente do projeto. Embora o jogo esteja no começo do desenvolvimento, aqui o QA já pode ficar mais atendo a problemas técnicos.</p>
+
+<p>É muito importante manter uma base de bugs encontrados, que também possua informações de como reproduzir e qual seu status (aberto, corrigido, não é bug, etc). Quando trabalhei na <a href="http://www.glu.com" title="Glu">Glu Mobile</a> usávamos o <a href="http://www.bugzilla.org/" title="Bugzilla">Bugzilla</a>, e na <a href="http://www.ea.com" title="EA">Electronic Arts</a> usávamos o <a href="http://techexcel.com/products/devtrack/" title="DevTRack">DevTrack</a>. Eu recomendo o Bugzilla por ser uma ferramenta gratuita e opensource que funciona muito bem para o que eu mencionei. Por favor, não use um Excel para isso já que temos opções profissionais e gratuitas.</p>
+
+<p><a href="http://www.ign.com/articles/2012/03/29/the-tough-life-of-a-games-tester"><img src="http://blog.gamedeveloper.com.br/wp-content/uploads/2013/12/Tedious72_1332794749.jpg" alt="" title="QA"></a></p>
+
+<p>Aqui ainda não temos testes com jogadores, pois o produto está em um estágio que pode causar uma impressão ruim ao jogador por não estar bem acabado, já que o foco é o gameplay. Por isso, nesta fase o teste é feito apenas pela equipe de QA interna. Vida de QA não é fácil, como mostra este <a href="http://www.ign.com/articles/2012/03/29/the-tough-life-of-a-games-tester" title="IGN">artigo do IGN</a>.</p>
+
+<h2 id="betafechado"><strong>Beta fechado</strong></h2>
+
+<p>Aqui as coisas começam a ficar mais divertidas. Com um jogo com a base bem definida e testada pela equipe de QA na fase Alpha, agora podemos começar a testar com jogadores. A ideia do Beta fechado é selecionar jogadores que fazem parte do seu público-alvo para testar o jogo, e apenas isso. Por isso é fechado, devem ser convidados apenas as pessoas que você acredita que vão dar um bom feedback sobre o jogo. O objetivo é que todos problemas do jogo sejam encontrados e corrigidos para não acontecer problemas como no vídeo abaixo.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/HdWRTleizFU?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"></iframe></span></p>
+
+<p>Existe diversas maneiras de recrutar pessoas para testes fechados, e por serem limitados você não precisa de muitas. Aqui o que vale é a qualidade, e não a quantidade de jogadores. Enquanto os programadores e artistas estão trabalhando, o gerente do projeto e o produtor devem conseguir esta lista de jogadores para serem a equipe de testes do beta fechado. A coordenação dos testes deve ser feita pela equipe de QA, e os jogadores devem responder questionários e enviar todo tipo de informação que, depois de filtradas, devem ser entregues a equipe de desenvolvimento.</p>
+
+<p>Os formulários do Google Documents são uma boa forma de coletar dados, pois é uma ferramenta online e gratuita, onde os resultados são obtidos em tempo real. Por ser uma fase bem limitada, é possível também convidar jogadores para testar dentro do próprio estúdio. Neste caso a equipe de QAs, junto com o game designer, devem fazer apenas uma coisa: observar. Deixe os jogadores explorarem o jogo, e ao final da sessão peça para preencher algum formulário ou até converse com cada um para obter o feedback. Isso é muito importante para que o jogo dê certo.</p>
+
+<h2 id="betaaberto"><strong>Beta aberto</strong></h2>
+
+<p>Depois de toda experiência com os jogadores no Beta fechado, o teste aberto e feito para o público em geral é mais simples. É importante lembrar que provavelmente boa parte do público não vai enviar feedback sobre os testes, e talvez jogue apenas uma vez para ver como o jogo é. Por isso, toda informação mais importante é obtida pelo Beta fechado, que geralmente demora mais do que esta fase. Um jogador que está testando deve sempre ser orientado a reportar qualquer tipo de problema que encontrar, mesmo que ele ache que não é um problema.</p>
+
+<p><img src="http://gamedeveloper.com.br/wp-content/uploads/2013/12/open_beta_ymir_skin.jpg" alt=""></p>
+
+<p>Por ser aberto, nesta fase fica difícil de receber jogadores para testar, por isso tudo deve ser feito online através de pesquisas. Muitas empresas oferecem incentivos para os jogadores, como algum item especial ou desconto no jogo em troca do feedback deles, e isso funciona muito bem, como o exemplo da imagem acima. Outro detalhe muito importante é que todo feedback coletado deve ser apresentado a equipe de desenvolvimento resumido e com tudo que é mais importante destacado. O objetivo disso é ajudar a ter um jogo melhor, e não atrapalhar o desenvolvimento, por isso se for feito de qualquer jeito, a equipe de desenvolvimento não vai parar para ver tudo com calma.</p>
+
+<h2 id="concluso"><strong>Conclusão</strong></h2>
+
+<p>Cada fase possui um foco diferente, mas em todas a figura do QA é muito importante para garantir a qualidade do jogo. Nos testes em que deve-se observar o jogador, faça anotações das reações deles em cada parte, se demoraram muito para concluir uma missão, se estão com cara de desanimo ou empolgados. A expressão deles é a mesma que você pode ter quando seu jogo for lançado, por isso é importante entender se o jogo está agradando ou não, e cabe ao game designer mudar isso caso seja necessário.</p>
+
+<p>Embora pareça que tudo que eu escrevi aqui serve apenas para empresas grandes, isto não é verdade. O público-alvo pode ser seus amigos que tem os mesmos gostos e os testes podem ser feitos até em um encontro para tomar café, o importante é que estes testes sejam feitos e as informações coletadas. Você não precisar ser uma empresa grande para fazer grande jogos, mas pode e precisar ter o mesmo nível de profissionalismo.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Como%20ser%20um%20programador%20de%20jogos%3A%20Teste%20com%20jogadores&amp;url=http://localhost:2368/teste-com-jogadores/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/teste-com-jogadores/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/teste-com-jogadores/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/12/google.jpg)" href="../google-developer-bus-brasil/">
+        <section class="post">
+            <h2>Califórnia, aí vou eu: Como minha equipe ganhou o Google Developer Bus</h2>
+            <p>Fiquei alguns dias sem postar no blog, mas foi por um bom motivo. Aliás, um excelente motivo! Participei do…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev " style="background-image: url(http://gamedeveloper.com.br/wp-content/uploads/2013/11/Screen-Shot-2013-11-18-at-17.11.20.png)" href="../conheca-otimos-games-para-seu-celular-android/">
+        <section class="post">
+            <h2>Conheça ótimos games para seu celular Android</h2>
+            <p>Os aplicativos de games para smartphones vieram para alegrar a minha vida a vida de quem já era fissurado…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

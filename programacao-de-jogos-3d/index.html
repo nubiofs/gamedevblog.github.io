@@ -1,0 +1,229 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Programação de jogos 3D</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/programacao-de-jogos-3d/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Programação de jogos 3D">
+    <meta property="og:description" content="Programar um jogo 2D não é algo muito complexo, pois trabalhar com objetos em duas dimensões não exige muitos cálculos. Claro que existem exceções, mas, na maioria dos casos, a programação em um ambiente 2D é bem simples de fazer....">
+    <meta property="og:url" content="http://localhost:2368/programacao-de-jogos-3d/">
+    <meta property="article:published_time" content="2009-10-02T20:26:41.000Z">
+    <meta property="article:modified_time" content="2016-02-16T15:46:35.295Z">
+    <meta property="article:tag" content="programação">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Programação de jogos 3D">
+    <meta name="twitter:description" content="Programar um jogo 2D não é algo muito complexo, pois trabalhar com objetos em duas dimensões não exige muitos cálculos. Claro que existem exceções, mas, na maioria dos casos, a programação em um ambiente 2D é bem simples de fazer....">
+    <meta name="twitter:url" content="http://localhost:2368/programacao-de-jogos-3d/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Programação de jogos 3D",
+    "url": "http://localhost:2368/programacao-de-jogos-3d/",
+    "datePublished": "2009-10-02T20:26:41.000Z",
+    "dateModified": "2016-02-16T15:46:35.295Z",
+    "keywords": "programação",
+    "description": "Programar um jogo 2D não é algo muito complexo, pois trabalhar com objetos em duas dimensões não exige muitos cálculos. Claro que existem exceções, mas, na maioria dos casos, a programação em um ambiente 2D é bem simples de fazer...."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-programacao nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-programacao">
+
+        <header class="post-header">
+            <h1 class="post-title">Programação de jogos 3D</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2009-10-02">02 October 2009</time>  on <a href="../tag/programacao/">programação</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Programar um jogo 2D não é algo muito complexo, pois trabalhar com objetos em duas dimensões não exige muitos cálculos. Claro que existem exceções, mas, na maioria dos casos, a programação em um ambiente 2D é bem simples de fazer.</p>
+
+<p>Programar um jogo 3D é um pouco mais complicado. Orientar um objeto em três dimensões não é simples de fazer, principalmente se for um objeto mais elaborado (diferente de um simples cubo, por exemplo). Este tipo de programação exige uma boa noção do que é trabalhar com três dimensões. É a mesma sensação que tive ao mexer pela primeira vez com um software de modelagem 3D; <strong>sua percepção tem que se adaptar ao ambiente 3D</strong>.</p>
+
+<p>No semestre passado tive a matéria de programação 3D na pós-graduação. Por ter sido curta, não vi muitas coisas com a profundidade que gostaria, mas pelo menos a base eu tive. Nas aulas, utilizamos C++ com o Visual Studio 2005 e o <a href="http://msdn.microsoft.com/en-us/directx/aa937788.aspx" title="DirectX SDK">DirectX SDK</a>, que contém a biblioteca <a href="http://msdn.microsoft.com/en-us/library/ee417844%28VS.85%29.aspx" title="Direct3D">Direct3D</a> para programação 3D.</p>
+
+<p>Antes de começar a programar em 3D, é necessário entender como isto funciona. Todo o processo que gera um objeto em 3D na tela passa por uma <a href="http://en.wikipedia.org/wiki/Graphics_pipeline" title="Pipeline">Pipeline Gráfica</a> no hardware. Cada estapa é responsável por uma propriedade que foi programada, como Iluminação, Textura, Projeção, Transformações, entre outros.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_133" style="width: 495px"><a href="http://msdn.microsoft.com/en-us/library/ee417844%28VS.85%29.aspx"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/09/pipeline_directx.gif" alt="Pipiline Gráfica do DirectX" title="pipeline_directx"></a><figcaption class="wp-caption-text">Pipiline Gráfica da Direct3D</figcaption></figure>Na primeira aula, fiz um programar para desenhar 3 vetores, um em cada eixo (x, y e z), utilizando um array de vetores e a função <em>DrawPrimitiveUP</em>() para desenhar na tela. Também desenhamos um grid e os eixos. Esta foi a parte simples de fazer; a parte mais complicada é configurar o programa para funcionar, é um pouco trabalhoso, mas depois que a base está criada, podemos utilizá-la em vários outros projetos praticamente sem alterações, como foi o caso dos demais exercícios.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_135" style="width: 495px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/3d_01.gif" alt="Eixos desenhados utilizando DrawPrimitiveUP()" title="3d_01"><figcaption class="wp-caption-text">Eixos desenhados utilizando DrawPrimitiveUP()</figcaption></figure>Depois, brincamos um pouco com a Pipeline Gráfica desenhando figuras geométricas coloridas e realizado translações. É o mesmo processo utilizado para desenhar os vetores, além <em>doD3DXMatrixTranslation</em>() para as translações.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_136" style="width: 495px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/3d_02.gif" alt="Figuras geométricas desenhadas e com translação" title="3d_02"><figcaption class="wp-caption-text">Figuras geométricas desenhadas e com translação</figcaption></figure>Utilizamos um modelo 3D de um golfinho, fornecido pelo professor, para aprender como exibir um modelo 3D simples na tela. O modelo foi exportando na extensão .X, que é do DirectX, e desenhando na dela utilizando a função <em>D3DXLoadMeshFromX</em>(). Além deste função, existe uma configuração de <em>Material *para que o objeto (</em>Mesh<em>) possa ser desenhado na tela com a função *DrawSubset</em>() do mesh.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_137" style="width: 495px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/3d_03.gif" alt="Modelo 3D de golfinho e pirâmides de vetores desenhados na tela" title="3d_03"><figcaption class="wp-caption-text">Modelo 3D de golfinho e pirâmides de vetores desenhados na tela</figcaption></figure>Além de modelos 3D, também utilizamos arquivos externos para Shaders. São arquivos .FX que contém efeitos que são aplicados em um objeto. A vantagem de utilizar este arquivo é que a configuração fica separada do código, e pode ser editada em softwares de criação de efeitos. O arquivo é carregado utilizando a função <em>D3DXCreateEffectFromFile</em>() e o efeito desejado é aplicado com a função SetTechnique() de uma variável do tipo <em>LPD3DXEFFECT</em>. Nesta mesma variável, a textura é aplicada com a função SetTexture().</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_139" style="width: 495px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/3d_05.gif" alt="Modelo com Shaders e textura" title="3d_05"><figcaption class="wp-caption-text">Modelo com Shaders e textura</figcaption></figure>No final desta matéria, tivemos que apresentar um projeto com um objeto 3D animado e um controlado pelo teclado. Não era obrigatório utilizar o Direct3D com C++ para isto, então utilizei XNA 3.1. Fiz um cubo com textura de dado, onde sua rotação é controlada pelo teclado, e uma esféra com shaders que fica girando em torno do dado.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_140" style="width: 495px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/3d_06.gif" alt="Dado com textura e esfera animada utilizando XNA" title="3d_06"><figcaption class="wp-caption-text">Dado com textura e esfera com shaders - animadas utilizando XNA</figcaption></figure>Eu tive muita dificuldade em capturar eventos do teclado utilizando o Direct3D com C++, por isso resolvi utilizar o XNA. Com XNA eu já tinha feito algumas brincadeiras, porém apenas com 2D. Este projeto foi uma oportunidade para começar a programar em ambiente 3D no XNA, utilizando modelos exportados pelo Softimage XSI em extensão .X e a textura em um arquivo .JPG.</p>
+
+<p>Alias, o dado que utilizei é exatamente o mesmo que modelei e apliquei textura na <a href="http://gamedeveloper.com.br/blog/2009/04/29/modelagem-3d-com-softimage-xsi/" title="Modelagem 3D com XSI">aula de modelagem 3D</a> que tive no início do curso. <strong>Esta foi a melhor parte deste projeto, pois consegui exportar um modelo 3D que tinha feito no XSI (com textura feita no Photoshop) e utilizá-lo no XNA sem muitos problemas</strong>. A imagem da esfera também foi modelada no XSI com efeitos de shader, e utilizada no XNA.</p>
+
+<p>A maior dificuldade que tive foi exibir os dois modelos na tela no tamanho correto, pois cada um tinha um tamanho diferente e para corrigir isto alterei o zoom pela programação, além de fazer suas animações nos 3 eixos. Trabalhar com modelos 3D no XNA é muito fácil, pois ele tem um tipo de variável que é perfeita para isto, a <em>Model</em>. Para desenhar na tela, criamos um objeto <em>ModelMesh</em> e podemos aplicar efeitos de shader com *BasicEffect *no mesh.</p>
+
+<p>Conhecendo a teoria, tendo uma noção de modelagem 3D e programação no XNA com C#, <strong>não é muito difícil de programar 3D, é necessário apenas muita paciência</strong> para deixar tudo certo. Ainda não fiz um jogo em 3D, apenas essas brincadeiras, mas pretendo logo criar algo bem simples para aprender mais sobre isso. A programação 3D é bem complexa, mas pelo menos no XNA isso fica mais simples. Acho que não tive uma boa experiência com Direct3D e C++, mas este é mais motivo para continuar aprendendo C++.</p>
+
+<p>Para os iniciantes em programação 3D, como eu, <strong>recomendo aprender as técnicas e aplicá-las no XNA</strong>, que é mais simples, e depois partir para o C++. E, embora eu seja programador, as aulas de modelagem 3D ajudaram muito! Por isso é sempre bom ter uma noção, pelo menos básica, de tudo que envolve o desenvolvimento de um game.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Programa%C3%A7%C3%A3o%20de%20jogos%203D&amp;url=http://localhost:2368/programacao-de-jogos-3d/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/programacao-de-jogos-3d/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/programacao-de-jogos-3d/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../animacao-3d-com-softimage-xsi/">
+        <section class="post">
+            <h2>Animação 3D com softimage XSI</h2>
+            <p>Eu pensava que animar um objeto 3D era tão complicado quando modelar, mas fiquei surpreso ao descobrir que o…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../hello-world-no-nintendo-ds/">
+        <section class="post">
+            <h2>Hello World no Nintendo DS</h2>
+            <p>Há pouco tempo comecei a pesquisar e estudar o desenvolvimento de jogos para o Nintendo DS. Poucos estúdios de…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>

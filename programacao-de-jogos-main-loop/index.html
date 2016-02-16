@@ -1,0 +1,215 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Programação de jogos: main loop</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=3134723d60">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://localhost:2368/programacao-de-jogos-main-loop/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Programação de jogos: main loop">
+    <meta property="og:description" content="Antes de começar a estudar desenvolvimentos de games ano passado eu não imaginava o que realmente era um jogo, do ponto de vista da programação. Quem está acostumado com a estrutura de um sistema, não consegue imaginar muito bem que...">
+    <meta property="og:url" content="http://localhost:2368/programacao-de-jogos-main-loop/">
+    <meta property="article:published_time" content="2010-03-01T20:26:55.000Z">
+    <meta property="article:modified_time" content="2016-02-16T15:43:00.929Z">
+    <meta property="article:tag" content="programação">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Programação de jogos: main loop">
+    <meta name="twitter:description" content="Antes de começar a estudar desenvolvimentos de games ano passado eu não imaginava o que realmente era um jogo, do ponto de vista da programação. Quem está acostumado com a estrutura de um sistema, não consegue imaginar muito bem que...">
+    <meta name="twitter:url" content="http://localhost:2368/programacao-de-jogos-main-loop/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://localhost:2368/content/images/2016/02/cicanci.jpg",
+        "url": "http://localhost:2368/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Programação de jogos: main loop",
+    "url": "http://localhost:2368/programacao-de-jogos-main-loop/",
+    "datePublished": "2010-03-01T20:26:55.000Z",
+    "dateModified": "2016-02-16T15:43:00.929Z",
+    "keywords": "programação",
+    "description": "Antes de começar a estudar desenvolvimentos de games ano passado eu não imaginava o que realmente era um jogo, do ponto de vista da programação. Quem está acostumado com a estrutura de um sistema, não consegue imaginar muito bem que..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://localhost:2368/rss/">
+</head>
+<body class="post-template tag-programacao nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://localhost:2368/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://localhost:2368/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://localhost:2368/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://localhost:2368/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://localhost:2368/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://localhost:2368/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://localhost:2368/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://localhost:2368/tag/noticia">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://localhost:2368/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://localhost:2368/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://localhost:2368/tag/programacao">Programação</a></li>
+            <li class="nav-projetos" role="presentation"><a href="http://localhost:2368/tag/projetos">Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://localhost:2368/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://localhost:2368/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://localhost:2368/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://localhost:2368/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        <a class="blog-logo" href="http://localhost:2368"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-programacao">
+
+        <header class="post-header">
+            <h1 class="post-title">Programação de jogos: main loop</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2010-03-01">01 March 2010</time>  on <a href="../tag/programacao/">programação</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Antes de começar a estudar desenvolvimentos de games ano passado eu não imaginava o que realmente era um jogo, do ponto de vista da programação. Quem está acostumado com a estrutura de um sistema, não consegue imaginar muito bem que tipo de programa é um jogo sem estudar sua estrutura básica.</p>
+
+<p>Basicamente, <strong>um jogo é um programa em <em>loop *infinito</em></strong>. Fiquei surpreso nas primeiras aulas da pós-graduação quando percebi isso. Independente do tipo do jogo, todos têm isso em comum, chamado de *Main Loop ou <em>Game Loop</em>, que é responsável por controlar tudo no jogo.</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_413" style="width: 422px"><a href="http://www.ronkes.nl/blog/?2005-07-21-gameengine"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2010/03/2005-07-21-gameloop.gif" alt="Game Loop" title="Game Loop"></a><figcaption class="wp-caption-text">Fonte: <a href="http://www.ronkes.nl/blog/?2005-07-21-gameengine">http://www.ronkes.nl/blog/?2005-07-21-gameengine</a></figcaption></figure>A principal responsabilidade do Main Loop é receber entradas, atualizar o status do jogo e produzir saídas correspondentes, tudo isso em um ciclo contínuo, praticamente infinito. Neste ponto existe uma diferença entre o Main Loop de um jogo de PC e um jogo de console: no PC o Main Loop é finalizado quando o jogar fecha o jogo; em alguns Consoles o Main Loop é praticamente infinito, pois não existe um “sair do jogo”; em Consoles como o Nintendo Wii, é possível sair do jogo e voltar para a tela inicial do Wii, finalizando o Main Loop do jogo.</p>
+
+<p>Outra responsabilidade do Main Loop, que muitos iniciantes esquecem, é o <strong><em>Frame Rate</em></strong>. A taxa de quadros por segundo em que o jogo roda é importante por que sem este tipo de controle o jogo não fica sincronizado. Em alguns casos, o Frame Rate é escondido do programador e utiliza um valor default, como no XNA. Em outros, ele é obrigatório para o jogo rodar, como na SDL.</p>
+
+<p>O Frame Rate pode ser definido com um número que o programa deve esperar até executar o Main Loop novamente. Porém, não é simplesmente fazendo isso que o programa irá executar aquele mesmo rate sempre. Dependendo do consumo de processamento e memória, um loop pode ser mais lento do que outro, e utilizando um número fixo, o rate sempre será diferente, provocando lags para o jogador.</p>
+
+<p>Uma solução para este problema é descontar do Frame Rate o tempo em o Main Loop gastou em sua execução, assim, o jogo rodará sempre no mesmo frame. Por exemplo: se o Frame Rate é 30, e o Main Loop gastou 3, o programa deve aguardar 27 (30 – 3) para executar novamente o Main Loop. Sem este controle, o programa iria aguardar 33 (30 + 3) para ser executado novamente, lembrando que o tempo do Main Loop pode variar sempre e o Frame Rate é uma constante. O diagrama abaixo ilustra o funcionamento do Main Loop Fixed Rate:</p>
+
+<p><figure class="wp-caption aligncenter" id="attachment_416" style="width: 506px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2010/03/main_loop_fixed_rate.gif" alt="Main Loop Fixed Rate" title="Main Loop Fixed Rate"><figcaption class="wp-caption-text">Fixed Rate - Fonte: NAKAMURA, Ricardo. Técnicas de Programação de Games.</figcaption></figure>O que escrevi neste post é algo que considero bem básico para a programação de um game, e acho que pode ser <strong>muito útil para iniciantes</strong>. Apesar de ser básico, a partir disso é possível procurar mais informações na internet, ou perguntar aqui mesmo qualquer dúvida sobre o assunto.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Programa%C3%A7%C3%A3o%20de%20jogos%3A%20main%20loop&amp;url=http://localhost:2368/programacao-de-jogos-main-loop/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/programacao-de-jogos-main-loop/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/programacao-de-jogos-main-loop/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="../octopus-team-desenvolvimento-de-jogos-independentes/">
+        <section class="post">
+            <h2>Octopus Team – desenvolvimento de jogos independentes</h2>
+            <p>Você quer começar a trabalhar com desenvolvimento de games, mas em um mercado brasileiro em crescimento e com muita…</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="../como-montar-um-grid-3d-com-xna/">
+        <section class="post">
+            <h2>Como montar um grid 3D com XNA</h2>
+            <p>Uma das coisas que tenho estudando bastante ultimamente, além da Unity e de C++, é o XNA. Por ser…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://localhost:2368">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=3134723d60"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=3134723d60"></script>
+
+</body>
