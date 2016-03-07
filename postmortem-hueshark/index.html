@@ -1,0 +1,313 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Postmortem: HueShark</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=62d4427118">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://gamedeveloper.com.br/postmortem-hueshark/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Postmortem: HueShark">
+    <meta property="og:description" content="Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts...">
+    <meta property="og:url" content="http://gamedeveloper.com.br/postmortem-hueshark/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg">
+    <meta property="article:published_time" content="2016-03-02T15:53:00.000Z">
+    <meta property="article:modified_time" content="2016-03-07T16:12:34.151Z">
+    <meta property="article:tag" content="postmortem">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Postmortem: HueShark">
+    <meta name="twitter:description" content="Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts...">
+    <meta name="twitter:url" content="http://gamedeveloper.com.br/postmortem-hueshark/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
+        "url": "http://gamedeveloper.com.br/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Postmortem: HueShark",
+    "url": "http://gamedeveloper.com.br/postmortem-hueshark/",
+    "datePublished": "2016-03-02T15:53:00.000Z",
+    "dateModified": "2016-03-07T16:12:34.151Z",
+    "image": "http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg",
+    "keywords": "postmortem",
+    "description": "Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://gamedeveloper.com.br/rss/">
+</head>
+<body class="post-template tag-postmortem nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://gamedeveloper.com.br/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://gamedeveloper.com.br/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://gamedeveloper.com.br/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://gamedeveloper.com.br/tag/eventos">Eventos</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://gamedeveloper.com.br/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://gamedeveloper.com.br/tag/noticias">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://gamedeveloper.com.br/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://gamedeveloper.com.br/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://gamedeveloper.com.br/tag/programacao">Programação</a></li>
+            <li class="nav-meus-projetos" role="presentation"><a href="http://gamedeveloper.com.br/tag/meus-projetos">Meus Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://gamedeveloper.com.br/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://gamedeveloper.com.br/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://gamedeveloper.com.br/sobre">Sobre</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../content/images/2016/03/hueshark1.jpg)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://gamedeveloper.com.br"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-postmortem">
+
+        <header class="post-header">
+            <h1 class="post-title">Postmortem: HueShark</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-03-02">02 March 2016</time>  on <a href="../tag/postmortem/">postmortem</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog (e sua equipe) desenvolvendo e publicando um jogo, e ainda mais contando a história do desenvolvimento aqui para encorajar outros desenvolvedores a publicar seus jogos. </p>
+
+<hr>
+
+<p>Olá, meu nome é João Paulo Santos e sou um dos programadores do jogo <a href="https://play.google.com/store/apps/details?id=air.HueShark">HueShark</a> que está 100% gratuito e pronto para download na GooglePlay no link acima. Abaixo irei especificar tudo que ocorreu durante todo o desenvolvimento, as nuances e mostrar o que realmente é positivo e negativo no desenvolvimento de um jogo de pequeno porte como HueShark.</p>
+
+<p><img src="../content/images/2016/03/hueshark2.jpg" alt=""></p>
+
+<p><strong>Descrição do Game</strong></p>
+
+<p>HueShark conta a história de 2 casais (Pai, Mãe, Filho e Nora) que ganham uma viagem da empresa a qual prestam serviços por serem excelentes funcionários. Todos são especializados em engenharia e conhecem muito de mecânica e tecnologia. Ao irem com um Iate para o mar (Iate locado pela empresa) eles sofrem com as intemperanças do mar, em meio a viagem uma forte tempestade atinge o Iate que eles estão e eles são levados pela correnteza forte. O navio acaba parando em uma ilha deserta, tendo seu motor e parte elétrica destruídos.</p>
+
+<p>O grupo pensa em como sobreviver e como voltarem para casa e a saída para isto era colocar um navio pesqueiro que também estava na ilha ancorado bem próximo a ilha e tentar consertar o motor/rádio deste barco novo que acharam na ilha para funcionar e assim serem recuperados ou irem para casa. Misteriosamente o barco pesqueiro tinha alguns esqueletos e marcas de "chifradas" no casco. <br>
+Apesar de ainda estar em bom estado gerou curiosidade aos tripulantes que com esforço conseguiram levar o barco para bem próximo da ilha e ancora-lo ali mesmo. A ideia deles era ir a ilha sempre que possível em um bote para pegar alimento e procurar suprimentos para ajudar o grupo a sobreviver.</p>
+
+<p>Abaixo segue uma descrição InGame:</p>
+
+<p>Um jogo desafiador que faz com que o player tenha total atenção com o status de cada player e com a bag com recursos do navio. Cuide da Nutrição, Humor e Cansaço de cada personagem para evitar que eles trabalhem com penalidades na movimentação e tempo de cumprimento de tarefas.</p>
+
+<p>Pesque, crie armadilha para o HueShark, mantenha o tanque de peixe sempre cheio para evitar danos ao navio. <br>
+Chuvas ocorrem continuamente para renovar a reserva de água do barco.</p>
+
+<p>Tente "fisgar" gaivotas para criar armadilhas para o tubarão (sim, gaivotas + vidro + putrefação = dor de barriga no HueShark).</p>
+
+<p>Existem 3 formas de vencer:</p>
+
+<p>1 - Gaste o máximo de suprimentos (supplies) no motor e você vencerá o game indo para casa com o motor novo;</p>
+
+<p>2 - Gaste o máximo de suprimentos (supplies) no rádio e você vencerá o game sendo resgatado por um helicóptero da marinha;</p>
+
+<p>3 - Vá o máximo de vezes possíveis para ilha e use o sinalizador para atrair a guarda costeira e você será salvo por um helicóptero da marinha.</p>
+
+<p>Obrigado por apreciar nosso jogo, ele é FREE e é uma honra para nós compartilharmos o nosso esforço com vocês.</p>
+
+<p><strong>Início</strong></p>
+
+<p>O game antes mesmo de ser desenvolvido foi pensado no público de smartphones Android. Pensamos no Gdd entre o final de junho de 2015 e o começo de julho 2015 e juntamos 4 pessoas neste projeto inicialmente (tinha por data final de entrega 7 de dezembro de 2015), ressaltando que era um projeto de Universidade (Projeto Integrador). <br>
+O Gdd foi idealizado em 1 dia, tendo quase tudo o que o projeto final tinha em seu documento original (poucas coisas mudaram). Abaixo irei especificar coisas técnicas, pontos positivos e pontos negativos.</p>
+
+<p><strong>Especificações Técnicas do Projeto</strong></p>
+
+<p>Engine: Nenhuma, usamos AS3 + Flash Builder  + Starling + GreenSock (AS3). <br>
+Plataforma: Android <br>
+Estilo de Jogo: Survivor Comic <br>
+Jogabilidade: Point and Click <br>
+Ferramenta para Gráficos: Photoshop CC 2015 <br>
+Animação: Photoshop CC 2015 (frames animados via código) <br>
+Estilo: PixelArt <br>
+Controle de Versão: Git (BitBucket) + Sourcetree + DropBox <br>
+Técnica para Gestão: Scrum + Trello</p>
+
+<p><strong>Pontos Negativos</strong></p>
+
+<p>Aqui é aonde moram os perigos de qualquer projeto. Vamos dividir por partes:</p>
+
+<p><strong>1 – Procure pessoas que realmente estão motivadas</strong></p>
+
+<p>É muito fácil ouvir “estou contigo”, “contigo comigo para o que der e vier” e coisas do gênero quando se está em um mercado tão variável e tão lucrativo como o de game design. Porém, quando é hora de arregaçar às mangas e trabalhar de verdade pouco percebe-se de tal entrega por parte de alguns. Provavelmente o principal motivo disto foi a não identificação com o projeto ou com a área do projeto. É como pensar na Blizzard, imagine que eu como programador fosse trabalhar na área de rigging ou modelagem, além de ser um desastre para companhia provavelmente seria um ponto de desmotivação para mim. Certifique-se de que quem vai entrar no projeto com você realmente quer fazer e está disposto a quase tudo para ver o release do game oficial acontecer. 1 Erro na conta do projeto!</p>
+
+<p><strong>2 – Certifique-se que todos estão na área correta</strong></p>
+
+<p>No final do semestre 2 membros do grupo (éramos 4) saíram do projeto, mas apenas no final foi deixado claro que ambos não estavam na área que queriam, a saber desenho (pixel art).</p>
+
+<p>Lembro-me bem do primeiro dia quando sentamos juntos e estabelecemos o que cada um faria, ou seja, 2 programadores e 2 designers, todavia recebemos bastante elogio na parte de código (não por sermos revolucionários, mas por termos produzido muito em pouco tempo), mas na parte visual não recebemos honrarias. Antes de começar qualquer projeto estripe todos os componentes para saber se realmente é aquela área que ele atuará que será sua “paixão no projeto”. Mais 1 Erro na conta do projeto!</p>
+
+<p><strong>3 – Motive o tempo todo, mas tenha parcimônia em poupar exclusões</strong></p>
+
+<p>Esse é um ponto grave de qualquer projeto que se não houver cautela ou falta de pulso seu projeto afunda! Veja bem, imagine o caso aonde uma pessoa não está produzindo (produzir != volume de coisas entregues, na verdade é qualidade) o proposto por ela mesma na semana/dia, se a resposta é NÃO avalie TODAS as coisas do ambiente ao qual ela faz parte (saúde dela/de familiares, emprego ameaçado, relacionamento acabado e etc), se realmente há algo grave ocorrendo respeite-a, mas se não há nada grave/desmotivador fora do projeto ocorrendo e o integrante não cumpre os backlogs propostos por ele mesmo está na hora de reavaliar o componente e se através de reuniões/diálogos privados e outras coisas não houver desprendimento mande um kick e assuma a função, é melhor fazer o seu melhor a não fazer NADA (mesmo que você não seja bom naquela área). Por causa desta falha de tolerar demais tivemos severos problemas com o cronograma assim como resultado negativo, 2 kicks. +1 Erro na conta do projeto!</p>
+
+<p><strong>4 – Tenha todos componentes com capacidade ou motivação extrema em sua área</strong></p>
+
+<p>Esse ponto é importante, pense comigo, você não vai achar o programador do Diablo 3 disponível para um projeto indie, vai? Claro que não, mas também não é aceitável um cara que ainda está estudando como se comenta múltiplas linhas em C# na Unity fazer parte de um projeto como programador (pelo menos com tempo de entrega cravado e não mutável). A coisa gira em torno disto, procure pessoas que conhecem do assunto (não precisa ser expert) e se tal pessoa não puder cumprir algo complexo na área dela dê tempo, uma pessoa motivada produz muito (e o bom é que ocorre um aprendizado forte). Colocar pessoas porque são “amigos, chegados, parceirões”  é FURADA, corra!  +1 Erro na conta do projeto!</p>
+
+<p><strong>Pontos bem positivos</strong></p>
+
+<p><strong>1 -  O verdadeiro líder</strong></p>
+
+<p>Como um mero aprendiz de liderança fui colocado como cabeça do projeto e isto me colocou uma responsabilidade de 1 tonelada nas costas. Como programador do projeto (também) decidi que a melhor forma de cobrar era fazer, ou seja, programar o máximo de linhas possíveis no menor tempo possível para poder mostrar um “olha caras, minha parte fiz bacana por isso estou pedindo que façam as suas partes” com cabeça fria e tranquila. Isso se mostrou mais que positivo, percebi que gera frutos (para componentes interessados no projeto), todos se sentem devedores de “entregar coisas” no projeto ao verem 1 componente fazendo isto. Lembro-me de “competir” com o outro programador quando fazíamos algoritmos bem legais para sanar problemas e ficávamos zoando um do outro no projeto para ver que fazia algo mais bem elaborado e isso gerou mais qualidade no projeto (perdi na maior parte das vezes  kkkkkkk)...</p>
+
+<p><strong>2 – Redescobrindo seus limites</strong></p>
+
+<p>Uma das coisas mais legais que ocorreram foi chegar além do meu limite físico. Lembro-me que para cumprir um backlog precisei varar 3 dias e meu corpo já não aguentava mais e o new metal + cafeína + energético sustentaram juntamente com a motivação de maneira louvável os meus sentimentos e persistência. Uma das coisas mais legais que você descobre em um projeto com cronograma a ser seguido é que seus limites podem ser rompidos e positivamente ampliados. Cheguei a adoecer em detrimento disto, mas valeu a pena, ganhei o respeito de alguns da sala e da universidade que tomaram conhecimento do esforço dos programadores envolvidos no projeto.</p>
+
+<p><strong>3 – Achar motivação aonde não tem</strong></p>
+
+<p>Se não há dinheiro em jogo (projeto acadêmico), como fazer algo dando o melhor de si? Aí foi o bacana da história, pensar em superar a si mesmo e competir consigo mesmo tornam esse ponto uma resposta clara, Ultrapasse VOCÊ MESMO! Pise em você mesmo! Humilhe você mesmo por resultados melhores e você mesmo terá um crescimento forte!</p>
+
+<p><strong>4 – Quem está na chuva é para se molhar!</strong></p>
+
+<p>Quando houveram os kicks em detrimento do desinteresse/descumprimento de “Brothers” pensamos (os 2 devs): O que iremos fazer sem designers? Como vamos codar e desenhar? E a resposta foi: Vamos romper nossos limites, se for necessário não dormiremos mais! Temos data certa para encerrar este sofrimento ← Esse ponto é o legal porque aqui abre o leque para se romper limites, tenho até o momento os psds com históricos de edições pixel a pixel assim como o outro programador, aonde superamos a nós mesmos! Supere a si mesmo e se houver algum acomodado tome a frente, não deixe o barco afundar porque não há gente que leva a sério seu trabalho ou simplesmente pulou do barco, META A MÃO E FAÇA!</p>
+
+<p><strong>Considerações finais</strong></p>
+
+<p>Integrantes no início: 4 (2 devs/2 designers), <br>
+Integrantes no fim: 2 (2 devs), <br>
+Cronograma e Conclusão estimada: 5 meses, <br>
+Conclusão do projeto: 8 meses, <br>
+Rendimento estimado da matéria: 100%, <br>
+Rendimento alcançado na matéria: 100%.</p>
+
+<p><strong>Agradecimentos</strong></p>
+
+<p>Quero agradecer ao portal gamedeveloper.com.br por ceder este espaço, é uma honra estar aqui postando meu primeiro game oficial e espero repetir este processo de post-mortem mais vezes, será mais que uma honra para mim. Obrigado, Bruno, você é Show!</p>
+
+<p>Quero também agradecer a Deus que em 10 dias me possibilitou o aprendizado de um framework tão formidável como o Starling.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Postmortem%3A%20HueShark&amp;url=http://gamedeveloper.com.br/postmortem-hueshark/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gamedeveloper.com.br/postmortem-hueshark/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gamedeveloper.com.br/postmortem-hueshark/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev " style="background-image: url(../content/images/2016/03/banner01.png)" href="../primeiro-congresso-online-de-desenvolvimento-mobile/">
+        <section class="post">
+            <h2>1º Congresso Online de Desenvolvimento Mobile</h2>
+            <p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://gamedeveloper.com.br">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5271840-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=62d4427118"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=62d4427118"></script>
+
+</body>
