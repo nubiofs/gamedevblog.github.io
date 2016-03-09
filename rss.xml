@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 09 Mar 2016 17:54:15 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Melhores práticas para 2D na Unity - Parte 2]]></title><description><![CDATA[<p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos</p>]]></description><link>http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2/</link><guid isPermaLink="false">3111866d-4026-40f3-9089-abe700917f52</guid><category><![CDATA[programação]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 09 Mar 2016 12:46:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/03/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/03/unity3d1.jpg" alt="Melhores práticas para 2D na Unity - Parte 2"><p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> antes de continuar neste post.</p>
+
+<p><strong>Boas práticas usando NGUI</strong></p>
+
+<p>Quando desenvolvi o jogo que mencionei na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> a GUI da Unity estava em beta, por isso acabamos comprando e usando o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI: Next-Gen UI</a>. Este plugin ficou muito famoso pois tornou possível a criação de interface e até jogos 2D utilizando a Unity, que até então não tinha suporte para ambos nativamente.</p>
+
+<p>Hoje o cenário é bem diferente, porém quase tudo que era feito na NGUI também se aplica aos recursos da Unity. A palavra "quase" é devido aos recursos disponíveis na classe NGUITools, que muitas vezes te ajudam demais no desenvolvimento. Eu particularmente utilizei muito os métodos <code>SetActive</code> e <code>AddChild</code>, junto com os componentes da NGUI.</p>
+
+<p>Um dos grandes recursos da NGUI é fazer toda UI ter apenas um draw call, ou seja, ser desenhada em uma única chamada. Eu recomendo assistir aos videos desta <a href="https://www.youtube.com/playlist?list=PLI_jd5nXafTbBrubTmgbodCtWY6BhVxtP">playlist</a> do criador da NGUI (em Inglês), ele fez tutoriais cobrindo todo básico necessário para utilizar o plugin seguindo as boas práticas e otimizando seu jogo. O vídeo abaixo é o número 2 de 5, e cobre o básico.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen></iframe></span></p>
+
+<p>Eu tive um grande problema com este plugin: era praticamente impossível migrar o projeto da Unity 4 para Unity 5 sem ter que refazer boa parte da interface. Por este motivo decidimos continuar utilizando a Unity 4. Eu sei que outros desenvolvedores passaram pela mesma situação, e muitos utilizam Unity 4 até hoje por que não tiveram tempo de migrar a NGUI. Mas, ao mesmo tempo, conheço gente que não teve problemas em migrar para Unity 5. Mesmo com estes problemas eu acho que vale a pena utilizar NGUI, pois é um plugin incrível com muito conteúdo disponível. </p>
+
+<p>Se você está se perguntando se deveria comprar o plugin NGUI por $95 dólares ou utilizar os recursos da Unity minha sugestão é a seguinte: se você já comprou a NGUI, e tem experiência com ela, continue utilizando mas não deixe de estudar os recursos da Unity. Se você ainda não comprou, primeiro estude os recursos da Unity antes de tomar a decisão de comprar, pois isso pode te economizar $95 dólares. </p>
+
+<p><strong>Seu melhor amigo, o sprite sheet</strong></p>
+
+<p>Um sprite é image imagem solitária, e seu jogo pode ter várias imagens assim. Quando você combina vários sprites em uma única imagem, isto é chamado sprite sheet. Existem tantos benefícios por utilizar isto que é praticamente uma boa prática obrigatória para jogos 2D. </p>
+
+<p>No primeiro video abaixo (em Inglês) podemos ver as vantagens relacionadas ao tamanho e redução de cores para deixar seus assets mais leves e reduzir o consumo de memória. O segundo video explica a importância de usar sprite sheets para otimizar o tempo do OpenGL para carregar e desenhar imagens na tela. </p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/crrFUYabm6E" frameborder="0" allowfullscreen></iframe></span></p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/_KyUqyS5MLA" frameborder="0" allowfullscreen></iframe></span></p>
+
+<p>Sem dúvidas é um ganho enorme se preocupar em organizar os assets do seu jogo em um único sprite sheet. Porém, devemos levar em conta as limitações de hardware das plataformas que estamos desenvolvendo. Em muitos aparelhos Android e iOS antigos o sprite sheet não deve ter mais do que 1024. O 2048 é um tamanho mais recomendado para que funcione na maioria dos aparelhos, mas 4096 funciona bem em praticamente todos hardwares mais recentes. Lembre-se que o sprite sheet deve sempre ter o tamanho em POT (power of two, ou potência de dois), pois se não for o OpenGL vai fazer sua imagem ser na hora que carregar na memória, o que consome mais espaço e recurso do processador.</p>
+
+<p>Os dois videos foram feitos pelo autor do <a href="https://www.codeandweb.com/texturepacker">TexturePacker</a>, um excelente software para gerar sprite sheets e que é compatível com qualquer game engine ou framework com suporte 2D. O site também possui excelentes <a href="https://www.codeandweb.com/texturepacker/tutorials">tutoriais</a> para as principais tecnologias, tudo em Inglês.</p>
+
+<p>No caso da Unity é necessário utilizar o plugin gratuito chamado <a href="https://www.assetstore.unity3d.com/en/#!/content/16641">TexturePacker Importer</a>. Eu utilizei o TexturePacker e o plugin junto com a NGUI no projeto que mencionei na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a>, e os ganhos de consumo de memória e tamanho da build foram boa partes graças ao uso de sprite sheets, junto com as outras coisas mencionadas.</p>
+
+<p>Internamente a Unity agrupa suas imagens em uma sprite sheet na hora que seu jogo compilado, então mesmo se você não quiser ter este trabalho de preparar tudo antes a Unity faz pra você. Porém, é bom ter o controle disso, pois muitas otimizações mencionadas aqui devem ser feitas manualmente para se ter um ganho de memória na Unity.</p>
+
+<p>Esta foi a parte 2! Na próxima e, provavelmente, última parte vou comentar sobre melhores práticas relacionadas à programação na Unity em C#. O foco não será a linguagem de programação, mas sim sobre a utilização dos recursos de script engine. Qualquer dúvida ou sugestão deixe seu comentário abaixo!</p>]]></content:encoded></item><item><title><![CDATA[Postmortem: HueShark]]></title><description><![CDATA[<p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog</p>]]></description><link>http://gamedeveloper.com.br/postmortem-hueshark/</link><guid isPermaLink="false">decf46bf-ce94-48fd-8cf5-e1923b989e71</guid><category><![CDATA[postmortem]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 02 Mar 2016 15:53:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg" alt="Postmortem: HueShark"><p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog (e sua equipe) desenvolvendo e publicando um jogo, e ainda mais contando a história do desenvolvimento aqui para encorajar outros desenvolvedores a publicar seus jogos. </p>
+
+<hr>
+
+<p>Olá, meu nome é João Paulo Santos e sou um dos programadores do jogo <a href="https://play.google.com/store/apps/details?id=air.HueShark">HueShark</a> que está 100% gratuito e pronto para download na GooglePlay no link acima. Abaixo irei especificar tudo que ocorreu durante todo o desenvolvimento, as nuances e mostrar o que realmente é positivo e negativo no desenvolvimento de um jogo de pequeno porte como HueShark.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/03/hueshark2.jpg" alt="Postmortem: HueShark"></p>
+
+<p><strong>Descrição do Game</strong></p>
+
+<p>HueShark conta a história de 2 casais (Pai, Mãe, Filho e Nora) que ganham uma viagem da empresa a qual prestam serviços por serem excelentes funcionários. Todos são especializados em engenharia e conhecem muito de mecânica e tecnologia. Ao irem com um Iate para o mar (Iate locado pela empresa) eles sofrem com as intemperanças do mar, em meio a viagem uma forte tempestade atinge o Iate que eles estão e eles são levados pela correnteza forte. O navio acaba parando em uma ilha deserta, tendo seu motor e parte elétrica destruídos.</p>
+
+<p>O grupo pensa em como sobreviver e como voltarem para casa e a saída para isto era colocar um navio pesqueiro que também estava na ilha ancorado bem próximo a ilha e tentar consertar o motor/rádio deste barco novo que acharam na ilha para funcionar e assim serem recuperados ou irem para casa. Misteriosamente o barco pesqueiro tinha alguns esqueletos e marcas de "chifradas" no casco. <br>
+Apesar de ainda estar em bom estado gerou curiosidade aos tripulantes que com esforço conseguiram levar o barco para bem próximo da ilha e ancora-lo ali mesmo. A ideia deles era ir a ilha sempre que possível em um bote para pegar alimento e procurar suprimentos para ajudar o grupo a sobreviver.</p>
+
+<p>Abaixo segue uma descrição InGame:</p>
+
+<p>Um jogo desafiador que faz com que o player tenha total atenção com o status de cada player e com a bag com recursos do navio. Cuide da Nutrição, Humor e Cansaço de cada personagem para evitar que eles trabalhem com penalidades na movimentação e tempo de cumprimento de tarefas.</p>
+
+<p>Pesque, crie armadilha para o HueShark, mantenha o tanque de peixe sempre cheio para evitar danos ao navio. <br>
+Chuvas ocorrem continuamente para renovar a reserva de água do barco.</p>
+
+<p>Tente "fisgar" gaivotas para criar armadilhas para o tubarão (sim, gaivotas + vidro + putrefação = dor de barriga no HueShark).</p>
+
+<p>Existem 3 formas de vencer:</p>
+
+<p>1 - Gaste o máximo de suprimentos (supplies) no motor e você vencerá o game indo para casa com o motor novo;</p>
+
+<p>2 - Gaste o máximo de suprimentos (supplies) no rádio e você vencerá o game sendo resgatado por um helicóptero da marinha;</p>
+
+<p>3 - Vá o máximo de vezes possíveis para ilha e use o sinalizador para atrair a guarda costeira e você será salvo por um helicóptero da marinha.</p>
+
+<p>Obrigado por apreciar nosso jogo, ele é FREE e é uma honra para nós compartilharmos o nosso esforço com vocês.</p>
+
+<p><strong>Início</strong></p>
+
+<p>O game antes mesmo de ser desenvolvido foi pensado no público de smartphones Android. Pensamos no Gdd entre o final de junho de 2015 e o começo de julho 2015 e juntamos 4 pessoas neste projeto inicialmente (tinha por data final de entrega 7 de dezembro de 2015), ressaltando que era um projeto de Universidade (Projeto Integrador). <br>
+O Gdd foi idealizado em 1 dia, tendo quase tudo o que o projeto final tinha em seu documento original (poucas coisas mudaram). Abaixo irei especificar coisas técnicas, pontos positivos e pontos negativos.</p>
+
+<p><strong>Especificações Técnicas do Projeto</strong></p>
+
+<p>Engine: Nenhuma, usamos AS3 + Flash Builder  + Starling + GreenSock (AS3). <br>
+Plataforma: Android <br>
+Estilo de Jogo: Survivor Comic <br>
+Jogabilidade: Point and Click <br>
+Ferramenta para Gráficos: Photoshop CC 2015 <br>
+Animação: Photoshop CC 2015 (frames animados via código) <br>
+Estilo: PixelArt <br>
+Controle de Versão: Git (BitBucket) + Sourcetree + DropBox <br>
+Técnica para Gestão: Scrum + Trello</p>
+
+<p><strong>Pontos Negativos</strong></p>
+
+<p>Aqui é aonde moram os perigos de qualquer projeto. Vamos dividir por partes:</p>
+
+<p><strong>1 – Procure pessoas que realmente estão motivadas</strong></p>
+
+<p>É muito fácil ouvir “estou contigo”, “contigo comigo para o que der e vier” e coisas do gênero quando se está em um mercado tão variável e tão lucrativo como o de game design. Porém, quando é hora de arregaçar às mangas e trabalhar de verdade pouco percebe-se de tal entrega por parte de alguns. Provavelmente o principal motivo disto foi a não identificação com o projeto ou com a área do projeto. É como pensar na Blizzard, imagine que eu como programador fosse trabalhar na área de rigging ou modelagem, além de ser um desastre para companhia provavelmente seria um ponto de desmotivação para mim. Certifique-se de que quem vai entrar no projeto com você realmente quer fazer e está disposto a quase tudo para ver o release do game oficial acontecer. 1 Erro na conta do projeto!</p>
+
+<p><strong>2 – Certifique-se que todos estão na área correta</strong></p>
+
+<p>No final do semestre 2 membros do grupo (éramos 4) saíram do projeto, mas apenas no final foi deixado claro que ambos não estavam na área que queriam, a saber desenho (pixel art).</p>
+
+<p>Lembro-me bem do primeiro dia quando sentamos juntos e estabelecemos o que cada um faria, ou seja, 2 programadores e 2 designers, todavia recebemos bastante elogio na parte de código (não por sermos revolucionários, mas por termos produzido muito em pouco tempo), mas na parte visual não recebemos honrarias. Antes de começar qualquer projeto estripe todos os componentes para saber se realmente é aquela área que ele atuará que será sua “paixão no projeto”. Mais 1 Erro na conta do projeto!</p>
+
+<p><strong>3 – Motive o tempo todo, mas tenha parcimônia em poupar exclusões</strong></p>
+
+<p>Esse é um ponto grave de qualquer projeto que se não houver cautela ou falta de pulso seu projeto afunda! Veja bem, imagine o caso aonde uma pessoa não está produzindo (produzir != volume de coisas entregues, na verdade é qualidade) o proposto por ela mesma na semana/dia, se a resposta é NÃO avalie TODAS as coisas do ambiente ao qual ela faz parte (saúde dela/de familiares, emprego ameaçado, relacionamento acabado e etc), se realmente há algo grave ocorrendo respeite-a, mas se não há nada grave/desmotivador fora do projeto ocorrendo e o integrante não cumpre os backlogs propostos por ele mesmo está na hora de reavaliar o componente e se através de reuniões/diálogos privados e outras coisas não houver desprendimento mande um kick e assuma a função, é melhor fazer o seu melhor a não fazer NADA (mesmo que você não seja bom naquela área). Por causa desta falha de tolerar demais tivemos severos problemas com o cronograma assim como resultado negativo, 2 kicks. +1 Erro na conta do projeto!</p>
+
+<p><strong>4 – Tenha todos componentes com capacidade ou motivação extrema em sua área</strong></p>
+
+<p>Esse ponto é importante, pense comigo, você não vai achar o programador do Diablo 3 disponível para um projeto indie, vai? Claro que não, mas também não é aceitável um cara que ainda está estudando como se comenta múltiplas linhas em C# na Unity fazer parte de um projeto como programador (pelo menos com tempo de entrega cravado e não mutável). A coisa gira em torno disto, procure pessoas que conhecem do assunto (não precisa ser expert) e se tal pessoa não puder cumprir algo complexo na área dela dê tempo, uma pessoa motivada produz muito (e o bom é que ocorre um aprendizado forte). Colocar pessoas porque são “amigos, chegados, parceirões”  é FURADA, corra!  +1 Erro na conta do projeto!</p>
+
+<p><strong>Pontos bem positivos</strong></p>
+
+<p><strong>1 -  O verdadeiro líder</strong></p>
+
+<p>Como um mero aprendiz de liderança fui colocado como cabeça do projeto e isto me colocou uma responsabilidade de 1 tonelada nas costas. Como programador do projeto (também) decidi que a melhor forma de cobrar era fazer, ou seja, programar o máximo de linhas possíveis no menor tempo possível para poder mostrar um “olha caras, minha parte fiz bacana por isso estou pedindo que façam as suas partes” com cabeça fria e tranquila. Isso se mostrou mais que positivo, percebi que gera frutos (para componentes interessados no projeto), todos se sentem devedores de “entregar coisas” no projeto ao verem 1 componente fazendo isto. Lembro-me de “competir” com o outro programador quando fazíamos algoritmos bem legais para sanar problemas e ficávamos zoando um do outro no projeto para ver que fazia algo mais bem elaborado e isso gerou mais qualidade no projeto (perdi na maior parte das vezes  kkkkkkk)...</p>
+
+<p><strong>2 – Redescobrindo seus limites</strong></p>
+
+<p>Uma das coisas mais legais que ocorreram foi chegar além do meu limite físico. Lembro-me que para cumprir um backlog precisei varar 3 dias e meu corpo já não aguentava mais e o new metal + cafeína + energético sustentaram juntamente com a motivação de maneira louvável os meus sentimentos e persistência. Uma das coisas mais legais que você descobre em um projeto com cronograma a ser seguido é que seus limites podem ser rompidos e positivamente ampliados. Cheguei a adoecer em detrimento disto, mas valeu a pena, ganhei o respeito de alguns da sala e da universidade que tomaram conhecimento do esforço dos programadores envolvidos no projeto.</p>
+
+<p><strong>3 – Achar motivação aonde não tem</strong></p>
+
+<p>Se não há dinheiro em jogo (projeto acadêmico), como fazer algo dando o melhor de si? Aí foi o bacana da história, pensar em superar a si mesmo e competir consigo mesmo tornam esse ponto uma resposta clara, Ultrapasse VOCÊ MESMO! Pise em você mesmo! Humilhe você mesmo por resultados melhores e você mesmo terá um crescimento forte!</p>
+
+<p><strong>4 – Quem está na chuva é para se molhar!</strong></p>
+
+<p>Quando houveram os kicks em detrimento do desinteresse/descumprimento de “Brothers” pensamos (os 2 devs): O que iremos fazer sem designers? Como vamos codar e desenhar? E a resposta foi: Vamos romper nossos limites, se for necessário não dormiremos mais! Temos data certa para encerrar este sofrimento ← Esse ponto é o legal porque aqui abre o leque para se romper limites, tenho até o momento os psds com históricos de edições pixel a pixel assim como o outro programador, aonde superamos a nós mesmos! Supere a si mesmo e se houver algum acomodado tome a frente, não deixe o barco afundar porque não há gente que leva a sério seu trabalho ou simplesmente pulou do barco, META A MÃO E FAÇA!</p>
+
+<p><strong>Considerações finais</strong></p>
+
+<p>Integrantes no início: 4 (2 devs/2 designers), <br>
+Integrantes no fim: 2 (2 devs), <br>
+Cronograma e Conclusão estimada: 5 meses, <br>
+Conclusão do projeto: 8 meses, <br>
+Rendimento estimado da matéria: 100%, <br>
+Rendimento alcançado na matéria: 100%.</p>
+
+<p><strong>Agradecimentos</strong></p>
+
+<p>Quero agradecer ao portal gamedeveloper.com.br por ceder este espaço, é uma honra estar aqui postando meu primeiro game oficial e espero repetir este processo de post-mortem mais vezes, será mais que uma honra para mim. Obrigado, Bruno, você é Show!</p>
+
+<p>Quero também agradecer a Deus que em 10 dias me possibilitou o aprendizado de um framework tão formidável como o Starling.</p>]]></content:encoded></item><item><title><![CDATA[1º Congresso Online de Desenvolvimento Mobile]]></title><description><![CDATA[<p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile</p>]]></description><link>http://gamedeveloper.com.br/primeiro-congresso-online-de-desenvolvimento-mobile/</link><guid isPermaLink="false">674cce30-7b48-491d-934b-391bb0cdb3fc</guid><category><![CDATA[eventos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 24 Feb 2016 15:21:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/03/banner01.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/03/banner01.png" alt="1º Congresso Online de Desenvolvimento Mobile"><p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile do Brasil.</p>
+
+<p><strong>Quando?</strong></p>
+
+<p>Evento ocorrerá do dia 04 à 08 de abril de 2016.</p>
+
+<p><strong>Como se dará a realização do evento?</strong></p>
+
+<p>Por ser um evento totalmente ONLINE não será necessário você agendar nenhuma viajem ou faltar o trabalho para acompanhar as palestras. <br>
+As palestras serão GRAVADAS previamente e a exibição dessas palestras será de acordo com a programação definida pelos organizadores do evento. <br>
+Para assistir as palestras é necessário realizar o CADASTRO para receber o link da transmissão da palestra do dia. É IMPORTANTE acessar o link da palestra com 15 minutos de antecedência para garantir a sua participação em cada palestra. <br>
+Inscrições</p>
+
+<p>Não perca mais tempo e se inscreva para participar do evento, <a href="http://congressodemobile.com.br/">clicando aqui</a>.</p>
+
+<p><strong>Palestrantes</strong></p>
+
+<p>Veja quem já está confirmado:</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/03/12767570_1143722725679283_1652801173_n.jpg" alt="1º Congresso Online de Desenvolvimento Mobile"></p>]]></content:encoded></item><item><title><![CDATA[Adeus Wordpress, olá Ghost]]></title><description><![CDATA[<p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais "blog" do que "site".</p>
+
+<p>Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente</p>]]></description><link>http://gamedeveloper.com.br/ola-ghost/</link><guid isPermaLink="false">3f6a6dea-eff0-4df2-bb84-510042b8cc6c</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 18 Feb 2016 01:38:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/02/Ghost-Logo-svg.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/02/Ghost-Logo-svg.png" alt="Adeus Wordpress, olá Ghost"><p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais "blog" do que "site".</p>
+
+<p>Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente não imaginaria que continuaria o blog por tanto tempo. Ainda vou fazer um post sobre minha carreira, por isso aqui quero focar no blog em si.</p>
+
+<p>Comecei hospedando o blog no side do <a href="https://br.wordpress.com/">Wordpress</a> e depois de 1 ano quis instalar no meu próprio servidor. Na época eu tinha um hospedagem no <a href="http://www.uolhost.uol.com.br/">UOL Host</a> com meu projeto de TCC da graduação, que acabei tirando do ar para colocar meu blog. Não conhecia muito sobre hospedagem, mas em pouco tem percebi como esta era ruim. Por diversas vezes meu blog ficou fora do ar por problemas na infraestrutura deles, e mesmo não sendo algo famoso eu estava pagando por um serviço que não era bom.</p>
+
+<p>Logo migrei para a <a href="https://br.bluehost.com/">Bluehost</a>, e até fiquei feliz por um tempo. Depois descobri a <a href="https://www.digitalocean.com/">Digital Ocean</a>, e vi que poderia configurar meu próprio servidor ao invés de ter uma hospedagem e acabei migrando o blog pra lá. Pouco tempo depois migrei para a <a href="http://aws.amazon.com/pt/">Amazon Web Services</a>, e estava muito feliz em ter meu servidor lá.</p>
+
+<p>Em todo esse tempo sempre tive curiosidade de mudar do Wordpress, mas acabava ficando nele por ter muito conteúdo publicado. Uma das coisas que mais me fez querer mudar do Wordpress era a velocidade dele, a dependência de um banco de dados sempre iria adicionar uma camada de lentidão no carregamento da página.</p>
+
+<p>Há 2 anos conheci o <a href="https://jekyllrb.com/">Jekyll</a> e fiquei impressionado, pois era exatamente o que eu queria! Algo que fizesse meu blog ser ter um foco maior em ser um blog, além do conteúdo publicado ser estático e sem banco de dados. A única coisa que me impediu de migrar na época foi mover o conteúdo do Wordpress para o formato do Jekyll, pois a ferramenta de migração na época não funcionava muito bem e acabei desistindo.</p>
+
+<p>Há alguns dias encontrei uma nova tecnologia parecida com Jekyll, porém baseada no <a href="http://nodejs.org/">NodeJS</a>, o <a href="https://ghost.org/">Ghost</a>. De cara já gostei da sua simplicidade e interface para administrar o blog: simples e direto ao ponto. Fiquei tão empolgado e que decidi tentar sua ferramenta de migração, e para minha supresa funcionou muito bem! Todo conteúdo do blog foi gerado, e a partir dai comecei a migrar o blog.</p>
+
+<p>O único problema que tive foi que a ferramenta de migração não faz download das imagens, então tive que copiar todas para o diretório do Ghost (que tem a mesma estrutura do Wordpress) e depois editei o arquivo de banco de dados (SQLite3) usando sqlitebrowser e algum código SQL para mudar todas URLs para carregar as imagens locais. Em cerca de 2 horas tudo estava pronto, porém comecei a pensar em outra coisa.</p>
+
+<p>Fiz um teste utilizando o <a href="https://aws.amazon.com/pt/elasticbeanstalk/">Elastic Beanstalk</a> do AWS e publiquei meu blog como uma aplicação NodeJS. Ficou rápido, porém eu queria resolver outro problema: baixar o custo da hospedagem. Deixar meu blog lá custaria cerca de $10 dólares por mês, e com o valor do dólar atualmente qualquer ajuda é bem vinda para diminuir os custos. Neste ponto entrou o <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<p>Meu portfólio já estava hospedado no GitHub Pages, por ser um conteúdo estático, porém meu novo blog era uma aplicação NodeJS. Com um pouco de pesquisa encontrei o <a href="https://github.com/axitkhurana/buster/">Buster</a> que converte todo conteúdo do Ghost em arquivos estáticos, para que possa ser publicado no GitHub Pages.</p>
+
+<p>Depois de um longo caminho estou muito feliz com o resultado. Atualmente estou trabalhando com dois repositórios, um privado com a aplicação do Ghost e um <a href="https://github.com/GameDevBlog/gamedevblog.github.io">público no GitHub</a>. Quando quero publicar algo, abro a linha de comando e rodo o Ghost localmente como uma aplicação NodeJS. E quando termino de mexer, uso o buster para converter meu blog em arquivos estáticos e publicar no repositório público do GitHub, e assim deixá-lo disponível no GitHub Pages. Parece muito trabalho, mas já automatizei tudo utilizando um script Ruby. Assim que termino de escrever, basta rodar o script e tudo que escrevi neste parágrafo acontece bem rápido. </p>
+
+<p>Faz 7 anos que pago cerca de $10 dólares por mês para manter este blog, e o máximo que consegui foi $100 dólares depois de uns 5 anos usando Google Ads. Esta mudança para o Ghost não é apenas boa por deixar de lado o Wordpress e seu conteúdo dinâmico lento. É muito boa por que agora minha hospedagem é gratuita e o conteúdo está muito rápido.</p>
+
+<p>Ainda existem coisas que preciso ajustar, como alguns posts com texto mal formatado ou imagens e links quebrados. Aos poucos estou editando cada um dos 256 posts do blog para que todo conteúdo fique corrigido. Muito obrigado a todos leitores, todo esse tempo que dedico ao blog é para tentar te ajudar com um pouco do meu conhecimento na área. E lembre, estou sempre aberto a sugestões aqui ou por e-mail. </p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Esta semana comecei a ler o livro <a href="http://geral.leya.com.br/pt/literatura-fantastica/armada/">Armada</a> publicado no Brasil pela editora Leya, o segundo do autor Ernest Cline que escreveu o incrível <a href="http://geral.leya.com.br/pt/literatura-fantastica/jogador-n-1/">Jogador Número 1</a>. Ambos os livro são excelentes, com muito conteúdo relacionado a jogos antigos. Vale muito a pena ler!</p>]]></content:encoded></item><item><title><![CDATA[Amazon entra na briga com Lumberyard]]></title><description><![CDATA[<p>A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha "apenas" uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com</p>]]></description><link>http://gamedeveloper.com.br/amazon-lumberyard/</link><guid isPermaLink="false">5fa58033-2d42-446e-9e8a-9c40bab1c0de</guid><category><![CDATA[notícias]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 11 Feb 2016 01:34:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/02/lumberyard-1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/02/lumberyard-1.jpg" alt="Amazon entra na briga com Lumberyard"><p>A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha "apenas" uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com que praticamente todo mundo migrasse para a cloud da Amazon.</p>
+
+<p>Eu trabalho com <a href="http://aws.amazon.com/pt/">AWS</a> há algum tempo, tanto para meus projetos pessoais quanto para os profissionais. Este blog mesmo já ficou um tempo hospedado no AWS, e eu utilizo muitos dos seus serviços em meus projetos de jogos, apps e até backend. Se você não conheço os serviços e produtos do AWS, recomendo dar uma olhada logo!</p>
+
+<p>Há algum tempo a Amazon criou um estúdio para desenvolvimento de jogos, o <a href="https://games.amazon.com/">Amazon Game Studios</a>, e inclusive contratou a game designer responsável pelo jogo <a href="http://www.polygon.com/2014/4/2/5575354/amazon-game-studios-portal-kim-swift-splinter-cell-clint-hocking">Portal</a>. Até agora lançaram 5 jogos para dispositivos móveis, porém nenhum conseguiu fazer um grande barulho na indústria. Ainda.</p>
+
+<p>Com tanta tecnologia, conhecimento e dinheiro infinito, criar sua própria game engine como um produto parecia algo claro para a Amazon. Porém, sendo ainda mais esperta, criou toda engine em cima do código da <a href="http://cryengine.com/">CRYENGINE</a>, sem precisar criar toda base necessária para uma engine, que geralmente levam-se anos para se estabilizar.</p>
+
+<p><a href="https://aws.amazon.com/pt/lumberyard/">Amazon Lumberyard</a> é uma game engine gratuita e open source, que se integra com todos serviços da AWS. Ou seja, tem tudo para ser um grande produto. Atualmente roda apenas em Windows, mas acredito que logo devem expandir para Mac, iOS, Android e até Windows Phone.</p>
+
+<p>Há um tempo <a href="http://gamedeveloper.com.br/project-anarchy-nova-engine-gratuita-havok/">achei</a> que o Project Anarchy, uma game engine gratuita da <a href="http://www.havok.com/">Havok</a>, seria uma ameaça para a <a href="http://unity3d.com/pt/">Unity</a>. Estava errado, pois eles não tiveram popularidade e dinheiro para investir neste produto. Inclusive esta semana vi a <a href="http://www.develop-online.net/news/havok-s-free-mobile-engine-project-anarchy-has-been-closed/0216672">notícia</a> de que o Project Anarchy foi cancelado.</p>
+
+<p>Não sei dizer se dessa vez temos um concorrente a altura da Unity, mas uma coisa eu sei: a Amazon já tem muitos desenvolvedores que utilizam suas tecnologias para games e eles tem dinheiro infinito para investir nesta game engine. Ainda não tive a oportunidade de testar, mas com certeza vale a pena, como tudo que a AWS faz.</p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Esta semana queria recomendar um livro muito bom, que ainda preciso terminar de ler, chamado <a href="http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&amp;qid=1456029009&amp;sr=8-1&amp;keywords=clean+code">Clean Code</a>. O objetivo deste livro é ajudar a escrever um código bom e fácil de manter, assim como identificar quando um código não é bom e pensar na melhor maneira de arrumar.</p>]]></content:encoded></item><item><title><![CDATA[Vamos fazer um jogo juntos?]]></title><description><![CDATA[<p>Estava aqui pensando sobre o que escrever no blog e tive uma ideia: por que não fazer um jogo junto com os leitores do blog?</p>
+
+<p>Este blog tenho quase 7 anos de existência, e tem acompanhado minha carreira desde o início quando terminei minha graduação em Ciência da Computação e</p>]]></description><link>http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/</link><guid isPermaLink="false">dce41599-806c-4410-972a-c23f90d657a1</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 03 Feb 2016 04:07:00 GMT</pubDate><media:content url="../content/images/2016/02/match3.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/02/match3.jpg" alt="Vamos fazer um jogo juntos?"><p>Estava aqui pensando sobre o que escrever no blog e tive uma ideia: por que não fazer um jogo junto com os leitores do blog?</p>
+
+<p>Este blog tenho quase 7 anos de existência, e tem acompanhado minha carreira desde o início quando terminei minha graduação em Ciência da Computação e comecei minha pós-graduação em Produção e Programação de Games. Nesse período tive contato pelo blog e por email com muitos leitores, e acredito que devem existir alguns que acompanham o blog há um bom tempo mas nunca entrar em contato comigo.</p>
+
+<p>Por isso resolvi fazer este teste e propor este projeto maluco de tentar fazer um jogo em colaboração com os leitores do blog. Abaixo estão as regras do projeto, tentei pensar em tudo que pode ser feito para isso realmente dar certo. O objetivo disso é apenas um: fazer um jogo. Não importa se vai dar certo, se vamos terminar, se vou fazer sozinho ou se mais gente vai ajudar. O que quero fazer é criar uma iniciativa de fazer eu e você criarmos um jogo juntos.</p>
+
+<p>Ainda não sei ao certo como será a definição de tarefas do projeto ou por onde começar (já que não faço de ideia de quantos vão participar), mas provavelmente será algo como uma planilha no Google Docs pra deixar tudo bem simples e acessível. Pelas regras abaixo é possível notar que minha maior preocupação é deixar isso simples para mais gente participar, mas ao mesmo tempo ser algo legal de desenvolver.</p>
+
+<p><strong>Regras (atualizadas em 04/02/16)</strong></p>
+
+<ul>
+<li>Para deixar tudo o mais simples possível, este jogo será desenvolvimento utilizando <a href="http://unity3d.com">Unity</a> e C# como linguagem de programação</li>
+<li>Também para simplificar tudo, este primeiro projeto será em 2D e vamos tentar fazer um <a href="http://www.polygon.com/2014/2/26/5428104/from-bejeweled-to-candy-crush-finding-the-key-to-match-3">jogo Match-3</a>, parecido com <a href="http://www.popcap.com/bejeweled-games">Bejeweled</a> e <a href="http://candycrushsaga.com/">Candy Crush</a></li>
+<li>O projeto ficará em um repositório público no <a href="https://github.com/GameDevBlog/game-unity-first">GitHub</a> utilizando a <a href="https://opensource.org/licenses/MIT">licença MIT</a></li>
+<li>Não é necessário já ter experiência ou saber programar, o único requisito é querer aprender</li>
+<li>A participação não é restrita a programadores: artistas, game designers, músicos, todo mundo é bem vindo para participar</li>
+<li>O objetivo deste projeto é permitir que qualquer pessoa possa participar da produção de um jogo, além de ter um jogo em seu portfólio</li>
+<li>Se tudo der certo e este projeto for concluído, podemos começar outros (mesmo em paralelo se for o caso)</li>
+<li>Aviso aos desenvolvedores experiente: tente explicar no código o que foi feito (se for algo relativamente complexo)</li>
+<li>Após o término o jogo poderá ser lançado em algumas plataformas de acordo com a opinião dos participantes, porém em nenhum momento haverá monetização (o jogo sempre será gratuito e open source)</li>
+</ul>
+
+<p><strong>Links úteis (atualizados em 20/02/16)</strong></p>
+
+<ul>
+<li>Grupo no Google: <a href="https://groups.google.com/forum/#!forum/gamedevblog">Leitores do gamedeveloper.com.br</a></li>
+<li>Repositório do jogo: <a href="https://github.com/GameDevBlog/game-unity-first">game-unity-first</a></li>
+<li>Como funciona o pull request no GitHub (em inglês): <a href="https://help.github.com/articles/creating-a-pull-request/">Creating a pull request</a></li>
+<li>Software do GitHub (fácil de usar pra quem está começando): <a href="https://desktop.github.com/">GitHub Desktop</a></li>
+<li>Board no Trello com as tarefas: <a href="https://trello.com/b/jlTEEvJz/primeiro-jogo">Primeiro Jogo</a></li>
+</ul>
+
+<p>Deixem nos comentários sugestões de como seguir pra frente com isso, ou mesmo no grupo do Facebook. Qualquer ajuda é sempre bem vinda, e espero que nós consigamos fazer um jogo juntos!</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-263660897/stock-vector-precious-gems-flat-icons-set-square-round-pear-shaped-gemstones-vector-elements-isolated-on.html?src=-C1DBMVbPDMUKzJEPJFBJA-1-21">Precious gems flat icon set</a> do Shutterstock.</p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Seguindo o tema proposto por este projeto, recomendo jogar o <a href="http://www.pokemon.com/us/pokemon-video-games/pokemon-shuffle-mobile/">Pokémon Shuffle Mobile</a>, gratuito para Android ou iOS. Tente reparar nas diferenças deste jogo para o Bejeweled e Candy Crush, pois apesar de ser um Match-3 existem pequenos grandes detalhes que fazer toda diferença neste jogo.</p>]]></content:encoded></item><item><title><![CDATA[Como ser um programador de jogos]]></title><description><![CDATA[<p>Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1</p>]]></description><link>http://gamedeveloper.com.br/como-ser-um-programador-de-jogos/</link><guid isPermaLink="false">644f92a5-fd23-43b0-a738-c0605141890d</guid><category><![CDATA[como começar]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 28 Jan 2016 01:17:00 GMT</pubDate><media:content url="../content/images/2016/01/como-ser-prog-jogos.png" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/como-ser-prog-jogos.png" alt="Como ser um programador de jogos"><p>Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1 ano nesta categoria por que os assuntos para iniciantes foram diminuindo e eu acabei ficando sem tempo para posts semanais.</p>
+
+<p>Decidi fazer este post para reunir a lista com os 32 posts em apenas um lugar. Muitas vezes recebo emails de pessoas que estão querendo começar na área, e um dos links que sempre envio é o da categoria <a href="http://gamedeveloper.com.br/category/como-programar-jogos/">Como Começar</a>. Porém, acredito que todos links em um único post devem ser mais úteis e fáceis de consultar.</p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-pre-requisitos/">#01 Pré-requisitos</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-hello-world/">#02 Hello World</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-engine-vs-framework/">#03 Engine vs Framework</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-primeiro-jogo/">#04 Primeiro jogo</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-cursos/">#05 Cursos</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-livros/">#06 Livros</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-concursos/">#07 Concursos e Game Jams</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">#08 Playground</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">#09 Protótipos</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-codigos-opensource/">#10 Códigos Open Source</a></p>
+
+<p><a href="http://gamedeveloper.com.br/programar-sem-ter-a-arte-final/">#11 Programar sem ter a Arte Final</a></p>
+
+<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-para-que-serve-um-maker/">#12 Para que serve um Maker</a></p>
+
+<p><a href="http://gamedeveloper.com.br/delta-time/">#13 Delta Time</a></p>
+
+<p><a href="http://gamedeveloper.com.br/game-analytics/">#14 Dados analíticos do jogo</a></p>
+
+<p><a href="http://gamedeveloper.com.br/teste-com-jogadores/">#15 Teste com jogadores</a></p>
+
+<p><a href="http://gamedeveloper.com.br/game-design-document/">#16 Game Design Document</a></p>
+
+<p><a href="http://gamedeveloper.com.br/parallax/">#17 Parallax</a></p>
+
+<p><a href="http://gamedeveloper.com.br/voce-ja-fez-um-jogo/">#18 Você já fez um jogo?</a></p>
+
+<p><a href="http://gamedeveloper.com.br/gerenciamento-do-seu-tempo/">#19 Gerenciamento do seu tempo</a></p>
+
+<p><a href="http://gamedeveloper.com.br/jogue-bastante-mas-jogos-diferentes/">#20 Jogue bastante, mas jogos diferentes</a></p>
+
+<p><a href="http://gamedeveloper.com.br/dez-livros-de-games-que-vc-precisa-ler/">#21 Dez livros de games que você precisa ler</a></p>
+
+<p><a href="http://gamedeveloper.com.br/pixel-perfect/">#22 Pixel Perfect</a></p>
+
+<p><a href="http://gamedeveloper.com.br/boas-praticas-para-animacoes-2d/">#23 Boas práticas para animações 2D</a></p>
+
+<p><a href="http://gamedeveloper.com.br/feedback-de-acoes-para-o-jogador/">#24 Feedback de ações para o jogador</a></p>
+
+<p><a href="http://gamedeveloper.com.br/200-mecanicas-de-gameplay/">#25 200 mecânicas de gameplay</a></p>
+
+<p><a href="http://gamedeveloper.com.br/definicao-de-prioridade-de-tarefas/">#26 Definição de prioridade de tarefas</a></p>
+
+<p><a href="http://gamedeveloper.com.br/transformando-jogo-em-produto/">#27 Transformando jogo em produto</a></p>
+
+<p><a href="http://gamedeveloper.com.br/por-onde-comecar-programar/">#28 Por onde começar a programar</a></p>
+
+<p><a href="http://gamedeveloper.com.br/mantenha-tudo-simples/">#29 Mantenha tudo simples</a></p>
+
+<p><a href="http://gamedeveloper.com.br/avaliando-um-framework/">#30 Avaliando um Framework</a></p>
+
+<p><a href="http://gamedeveloper.com.br/programando-com-estilo/">#31 Programando com estilo</a></p>
+
+<p><a href="http://gamedeveloper.com.br/design-patterns/">#32 Design Patterns</a></p>
+
+<p>Olhando os 32 posts aqui até parecem capítulos de um livro, e a ideia inicial dessa série era ser um pequeno guia com informações úteis para quem estiver começando na área. Diferente dos últimos posts desta série, não vou prometer que vou voltar a postar nesta categoria toda semana, mas prometo que vou tentar continuar ou pelo menos atualizar os assuntos tratados anteriormente com novos posts e novas informações.</p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Esta semana finalmente assisti uma série de ficção científica incrível chamada <a href="http://www.imdb.com/title/tt0303461/">Firefly</a>. Nesta série a civilização humana desenvolveu uma tecnologia que transforma outros planetas e luas em lugares similares a Terra, permitindo a expansão pelo espaço. O interessante desta série é que não existem máquinas com inteligência artificial avançada e muito menos alienígenas, apenas humanos e naves.  É possível aplicar essa mesma ideia em games, usando jogabilidades comuns porém com diferentes abordagens.</p>]]></content:encoded></item><item><title><![CDATA[10 princípios para um bom level design]]></title><description><![CDATA[<p>Há quase 3 anos atrás li um post muito bom do game designer <a href="http://www.gamasutra.com/blogs/author/DanTaylor/543613/">Dan Taylor</a> no <a href="http://www.gamasutra.com">gamasutra</a> sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.</p>
+
+<ul>
+<li><p><strong>É divertido de explorar</strong></p></li></ul>]]></description><link>http://gamedeveloper.com.br/10-principios-level-design/</link><guid isPermaLink="false">213dcd7a-be42-460f-8b69-5a05c9522be3</guid><category><![CDATA[game design]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 20 Jan 2016 02:46:50 GMT</pubDate><media:content url="../content/images/2016/01/level-design.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/level-design.jpg" alt="10 princípios para um bom level design"><p>Há quase 3 anos atrás li um post muito bom do game designer <a href="http://www.gamasutra.com/blogs/author/DanTaylor/543613/">Dan Taylor</a> no <a href="http://www.gamasutra.com">gamasutra</a> sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.</p>
+
+<ul>
+<li><p><strong>É divertido de explorar</strong> – Usa uma linguagem visual clara para orientar o jogador pelo caminho principal, e cria interesse através da verticalidade, caminhos secundários, áreas escondidas e elementos de labirintos.</p></li>
+<li><p><strong>Não depende de palavras para contar uma história</strong> – Além da narrativa explicita através da história e objetivos, um bom level design apresenta uma narrativa implícita através do ambiente, e dá aos jogadores uma mecânica de escolhas para que eles possam criar sua própria narrativa emergente.</p></li>
+<li><p><strong>Diz ao jogador o que fazer, mas não como fazer</strong> – Garante que os objetivos da missão estão claros, mas permite aos jogadores completá-los do jeito que eles preferirem, e, sempre que possível, em qualquer ordem.</p></li>
+<li><p><strong>Ensina constantemente algo novo ao jogador</strong> – Mantêm o jogador engajado introduzindo novas mecânicas através do jogo, e impede que mecânicas já aprendidas sejam descartadas aplicando modificadores ou reutilizando-as de maneiras inusitadas.</p></li>
+<li><p><strong>É surpreendente</strong> – Um bom level design não tem medo de arriscar o ritmo, estética, localidade e outros elementos para criar uma experiência nova.</p></li>
+<li><p><strong>Capacita o jogador</strong> – Video games são escapistas e, como tal, devem abster-se do mundano. Além disso, um bom level design reforça a capacidade do jogador permitindo que eles experimentem as consequências das suas ações, de maneira imediata ou a longo prazo através do design dos de todos os níveis.</p></li>
+<li><p><strong>Permite ao jogador controlar a dificuldade</strong> – Prepara o caminho principal para jogadores iniciantes, apresentando à jogadores avançados desafios opcionais comunicando claramente o risco e a recompensa.</p></li>
+<li><p><strong>É eficiente</strong> – Recursos são limitados. Um bom design de nível cria eficiência através da modularidade, jogabilidade bidirecional, objetivos integrados e bônus exploráveis que fazem uso de todo espaço jogável.</p></li>
+<li><p><strong>Cria emoção</strong> – Começa pelo fim, com a resposta emocional desejada, e trabalha no sentido contrário, selecionando as mecânicas apropriadas, métricas espaciais e dispositivos de narrativa para alcançar aquela resposta.</p></li>
+<li><p><strong>É movido pela mecânica do jogo</strong> – Acima de tudo, demonstra a mecânica do jogo através dos níveis, para reforçar a natureza interativa única dos video games.</p></li>
+</ul>
+
+<p>Confira o texto completo na <a href="http://www.gamasutra.com/blogs/DanTaylor/20130929/196791/Ten_Principles_of_Good_Level_Design_Part_1.php">parte 1</a> e na <a href="http://www.gamasutra.com/blogs/DanTaylor/20131006/197209/Ten_Principles_of_Good_Level_Design_Part_2.php">parte 2</a> deste artigo no gamasutra, lá cada um destes princípios é explicado com mais detalhes e exemplos. O level design é tão importante que muitos game designers e até artistas se especializam nesta área. Este é um bom resumo das preocupações que um level designer deve ter, mas existe muito mais do que isso para se estudar!</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-174671009/stock-vector-game-world-computer-game-screen.html?src=U_RI1NWPvkTOlj1CBYvRFQ-1-4">Game world computer game screen</a> do Shutterstock.</p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Como estou tentando fazer um post por semana, quero aproveitar para começar algo novo e deixar no final do texto uma sugestão de algo que me chamou a atenção durante a semana, sempre tentando relacionar isto com desenvolvimento de jogos.</p>
+
+<p>Esta semana quero apresentar um card game chamado <a href="http://www.starrealms.com/">Star Realms</a>, que possui versão <a href="http://www.starrealms.com/about-star-realms/">física</a> e <a href="http://www.starrealms.com/digital-game/">digital</a> (gratuita) para várias plataformas. A versão digital veio depois e é incrivelmente fiel a versão física do jogo, e acredito que tenha sido desenvolvido utilizando <a href="http://unity3d.com/">Unity</a>. Apesar da mecânica do jogo ter sido muito bem implementada, a interface fica um pouco pequena em dispositivos móveis. O que me chamou mais a atenção neste jogo é a sua mecânica chamada <em><a href="https://en.wikipedia.org/wiki/Deck-building_game">deck building</a></em>, que dá uma dinâmica incrível ao jogo.</p>]]></content:encoded></item><item><title><![CDATA[5 dúvidas sobre programação de jogos]]></title><description><![CDATA[<p>Recebi um email de um leitor do blog chamado Alexandre que, como muita gente que está começando, estava com dúvida em relação a indústria de games. Suas 5 perguntas foram tão bem formuladas que eu pedi sua permissão para postá-las aqui no blog, confira abaixo!</p>
+
+<p><strong>No mercado de programadores para</strong></p>]]></description><link>http://gamedeveloper.com.br/5-duvidas-programacao-jogos/</link><guid isPermaLink="false">ab2e0c95-52b7-442a-bed9-28fad52fac43</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 13 Jan 2016 20:25:24 GMT</pubDate><media:content url="../content/images/2016/01/capa-duvidas.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/capa-duvidas.jpg" alt="5 dúvidas sobre programação de jogos"><p>Recebi um email de um leitor do blog chamado Alexandre que, como muita gente que está começando, estava com dúvida em relação a indústria de games. Suas 5 perguntas foram tão bem formuladas que eu pedi sua permissão para postá-las aqui no blog, confira abaixo!</p>
+
+<p><strong>No mercado de programadores para games uma certificação conta muito na hora de uma contratação?</strong></p>
+
+<p>Não. É claro que é importante ter pelo menos uma formação sólida como Ciência da Computação ou Engenharia, mas o que realmente conta na contratação é experiência. E o bom é que esta experiência não é necessariamente profissional, conta tudo que você fizer no seu tempo livre e publicar em um portfólio. Meu primeiro emprego com games foi assim, mostrei o que eu já tinha feito e respondi todas perguntas dos entrevistadores.</p>
+
+<p><strong>Quais as qualificação mais desejadas pelas empresas , tanto no brasil como no exterior?</strong></p>
+
+<p>No Brasil: ter portfolio. No exterior: ser formado e ter portfolio. Ai depende do que vc estiver procurando. Se for trabalhar com mobile, por exemplo, muito provavelmente vão cobrar experiência com Unity (aqui e fora). No caso de programadores, os jogos do portfolio não precisam ser bonitos, mas você pode usar arte da internet e fazer o jogo para mostrar que sabe programar.</p>
+
+<p><strong>Em relação e linguagens de programação, devo conhecer a fundo uma linguagem ou ser generalista?</strong></p>
+
+<p>Saber bem uma linguagem de programação é bom, mas lembre-se que ser o melhor em C# não quer dizer que vc seja o melhor em usar C# para fazer jogos com uma engine ou framework. É preciso estudar linguagem de programação sim, mas no caso de jogos também é necessário estudar engines e frameworks. No começo parece que existem milhares de opções, mas depois de um tempo você se acostuma com tudo e a mudar de tecnologia com frequencia e não ficar preso em uma. Minha sugestão para começar é estudar C# e Unity, pois além de ser uma engine muito boa, também é o que as empresas aqui e fora estão mais usando atualmente.</p>
+
+<p><strong>O que você considera decisivo, imprescindível para alcançar o sucesso nesse ramo?</strong></p>
+
+<p>Ter um portfolio (para provar que sabe fazer jogos, como disse anteriormente) e saber Inglês. Quando comecei a minha pós logo percebi que também era necessário saber Inglês e comecei um curso. Isso foi decisivo para minha carreira, pois muitas entrevistas e até mesmo no meu dia a dia nas empresas que trabalhei eu tinha que usar Inglês. E além disso, a maioria dos livros bons estão em Inglês.</p>
+
+<p><strong>Algum outro conselho que queira contar?</strong></p>
+
+<p>Aproveite que você está começando na faculdade e tente encontrar na sua sala pessoas que tenham os mesmos interesses que você, isso pode te ajudar a focar os projetos do curso em games e até fazer um TCC sobre o assunto. E, quem sabe, não sai algo legal de um grupo assim. Outra dica importante: jogue jogos diferentes, não apenas os quevocê gosta. Arrisque baixar jogos que você normalmente não jogaria e tente aprender a fazer uma analise dele. Sempre que você achar que um jogo é ruim tente responder estas duas pergunta: ‘eu conseguiria fazer algo assim?’ e ‘o que eu faria para melhorar este jogo?’. Ah, além de programação, recomendo dar uma lida em game design também para abrir mais sua mente em relação ao processo de criação de jogos.</p>
+
+<p>Muito obrigado ao Alexandre e a todos os outros leitores que acompanham o meu blog e me enviam emails. Tenho atualizado pouco aqui nos últimos meses, e até os emails estou demorando para responder. Mas (como já disse muitas vezes antes) vou tentar me organizar melhor para sempre postar um conteúdo legal aqui e responder emails o mais breve possível.</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-321090596/stock-photo-computer-programming-source-code-abstract-screen-of-software-developer-digital-technology-modern.html?src=csl_recent_image-1">Computer programming source code</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Introdução ao Desenvolvimento de Jogos em Python com PyGame]]></title><description><![CDATA[<p>A <a href="http://www.novatec.com.br/livros/intropygame/">Editora Novatec</a> trouxe para o Brasil um excelente livro de <a href="https://pythonprogramming.net/">Harrison Kinsley</a> e <a href="https://www.willmcgugan.com/">Will McGugan</a>: Introdução ao Desenvolvimento de Jogos em Python com PyGame. Este é um livro recheado de surpresas até mesmo para desenvolvedores que já conhecem Python.</p>
+
+<p>Com pouco mais do que 350 páginas, este livro consegue</p>]]></description><link>http://gamedeveloper.com.br/introducao-jogos-python-pygame/</link><guid isPermaLink="false">94ea5735-cd53-4eb9-83fa-d964097cd274</guid><category><![CDATA[livros]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 06 Jan 2016 14:14:00 GMT</pubDate><media:content url="../content/images/2016/01/livro-pygame-capa.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/livro-pygame-capa.jpg" alt="Introdução ao Desenvolvimento de Jogos em Python com PyGame"><p>A <a href="http://www.novatec.com.br/livros/intropygame/">Editora Novatec</a> trouxe para o Brasil um excelente livro de <a href="https://pythonprogramming.net/">Harrison Kinsley</a> e <a href="https://www.willmcgugan.com/">Will McGugan</a>: Introdução ao Desenvolvimento de Jogos em Python com PyGame. Este é um livro recheado de surpresas até mesmo para desenvolvedores que já conhecem Python.</p>
+
+<p>Com pouco mais do que 350 páginas, este livro consegue ser uma introdução perfeita ao assunto, rápido e fácil de ler. Se você não sabe <a href="https://www.python.org/">Python</a> não tem problemas, os dois primeiros capítulos tem o objetivo de ensinar a programar e configurar tudo que é necessário para os exemplos do livro. No terceiro capítulo há uma pequena introdução ao <a href="http://pygame.org/">PyGame</a>, explicando diversas funcionalidades básicas deste framework. E a partir do capítulo 4 a diversão começa!</p>
+
+<p><img src="http://gamedeveloper.com.br/introducao-jogos-python-pygame/../content/images/2016/01/livro-pygame2-768x1024.jpg" alt="Introdução ao Desenvolvimento de Jogos em Python com PyGame"></p>
+
+<p>Tudo que é necessário para se criar um jogo utilizando o PyGame é apresentado: como desenhar na tela, pegar input do jogador, mover objetos, efeitos sonoros, e até um pouco de inteligência artificial. Mas o que realmente chama a atenção para este livro são os capítulos finais.</p>
+
+<p>De uma maneira muito didática, os autores apresentam como criar jogos utilizando OpenGL dentro do PyGame. Por ser algo relativamente avançado para iniciantes, boa parte do livro é dedicada a este assunto. Iluminação, câmera, modelos 3D, skyboxes, fog, texturas, entre muitas outras coisas são apresentadas, e até uma pequena introdução ao OpenGL. Acredito que das coisas mais comuns ficou de fora apenas um pouco sobre animação e shaders, mas o conteúdo é tanto que não da para reclamar disso em um livro introdutório.</p>
+
+<p>Por fim os autores ensinam como empacotar o seu jogo para publicá-lo ou pelo menos enviar para seus amigos jogarem. Pode parecer simples, mas é algo não trivial para iniciantes e muitos autores esquecem deste detalhe.</p>
+
+<p>Até antes de ler este livro meu único contato com Python foi criar scripts para automatizar build de jogos, porém o PyGame abriu minha mente para tentar fazer mais coisas com Python. É uma linguagem de programação incrível e que vale a pena estudar.</p>
+
+<p>Muito obrigado a <a href="http://novatec.com.br/" title="Novatec">Editora Novatec</a> por me enviar este livro para fazer esta review. Você pode comprar <a href="http://www.novatec.com.br/livros/intropygame/" title="Livro Android">este livro</a> e outros no site da Novatec, e utilize o código <strong>GAMEDEVELOPER</strong> para ter desconto na compra!</p>]]></content:encoded></item><item><title><![CDATA[Postmortem: Teharth Prologue - The Resources Dissolution]]></title><description><![CDATA[<p>Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. <a href="http://www.souking.com.br/teharth-resources-dissolution">Teharth Prologue – The Resources Dissolution</a> é o terceiro jogo do <a href="http://okamotoprojects.wix.com/site" title="Okamoto">Maurílio Eudes Okamoto</a>, que já publicou os jogos <a href="http://gamedeveloper.com.br/postmortem-sou-sustentavel/">Sou Sustentável</a> e <a href="http://gamedeveloper.com.br/postmortem-manual-do-skate/">Manual do Skate</a>, e o primeiro do <a href="http://teharthstudios.wix.com/home">Teharth Studios</a>. Confira aqui um resumo de como</p>]]></description><link>http://gamedeveloper.com.br/postmortem-teharth-prologue/</link><guid isPermaLink="false">7597cb1a-b0ab-44b4-83ca-899a38850817</guid><category><![CDATA[postmortem]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 30 Dec 2015 08:08:20 GMT</pubDate><media:content url="../content/images/2015/12/08.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2015/12/08.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution"><p>Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. <a href="http://www.souking.com.br/teharth-resources-dissolution">Teharth Prologue – The Resources Dissolution</a> é o terceiro jogo do <a href="http://okamotoprojects.wix.com/site" title="Okamoto">Maurílio Eudes Okamoto</a>, que já publicou os jogos <a href="http://gamedeveloper.com.br/postmortem-sou-sustentavel/">Sou Sustentável</a> e <a href="http://gamedeveloper.com.br/postmortem-manual-do-skate/">Manual do Skate</a>, e o primeiro do <a href="http://teharthstudios.wix.com/home">Teharth Studios</a>. Confira aqui um resumo de como foi o desenvolvimento deste projeto as dificuldades que a equipe encontrou para terminar e publicar o jogo e <a href="http://www.souking.com.br/teharth-resources-dissolution">clique aqui</a> para fazer o download do jogo.</p>
+
+<ol>
+<li><strong>Descrição do jogo</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">O jogo tem como gênero um RPG de ação 2D, com bastante uso de metaficção (quebra da quarta parede), um pouco de humor com paródias e <em>non-sense</em>. E trata-se de apenas um Prólogo do que está por vir futuramente, possui cerca de 1 hora de jogo.</div></div></div></li>
+</ol>
+
+<iframe allowfullscreen frameborder="0" height="371" src="https://www.youtube.com/embed/w_9YOWUg7tg?feature=oembed" width="660"></iframe>
+
+<p>A história se passa em Baghdah, um país localizado no extremo leste do continente. Gray um aventureiro iniciante, decide explorar todo o mundo de Teharth. Sua primeira parada foi nas Misteriosas Ruínas de Abyadh, onde ele encontra um ser lendário chamado Azazil. Esse ser tem o poder de dissolver os recursos do jogo, como a aparência física, os sons e os mecanismos de seres e objetos de Teharth.</p>
+
+<p><img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/10-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution"></p>
+
+<p>O jogador possui o poder de evoluir de volta os recursos do jogo, auxiliando assim o Gray a conseguir atingir seus objetos e a resolver os quebra-cabeças. Pois Gray não consegue fazer muita coisa sem os recursos dele e o jogador não pode interagir diretamente com os elementos de Teharth. O jogador está participando do jogo como entidade jogador e não personificando o protagonista.</p>
+
+<p> <br>
+2. <strong>Postmortem</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">Dessa vez fiz o postmortem um pouco diferente, em vez de separar em pontos positivos e negativos, vou citar pontos “importantes” que acreditamos que podem ser interessantes. O motivo de não fazer essa separação é porque nesse projeto tivemos muitos pontos que são tanto positivos quanto negativos.</div></div></div></p>
+
+<p><img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/01-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution"></p>
+
+<p>1. <strong>O Projeto Nasceu de Um Problema</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">No Teharth Studios, até poucas semanas atrás, nosso maior problema era falta de artistas, para fazer a parte gráfica/arte dos jogos. Na época, em março, pensamos em tentar fazer um projeto um pouco mais simples e que pesasse menos em arte.</div></div></div></p>
+
+<p>Foi então que nasceu a ideia de evoluir o jogo de protótipo para final durante a jogada. Como gostamos de tentar inovar e colocar metaficção, colocamos o poder de evoluir o jogo no jogador, sendo um co-protagonista do jogo.</p>
+
+<p>Desse modo, conseguimos dar um tempo maior para os artistas, pois as artes mesmo só seriam usadas na segunda metade do projeto. E também tivemos mais tempo para recrutar novos artistas.</p>
+
+<p>Então de um problema, conseguimos um projeto e novos membros. Porém isso também gerou um outro problema. No começo do ano estávamos desenvolvendo outro projeto e tivemos que pausar ele, pois manter dois projetos seria um pouco complicado.</p>
+
+<p><img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/06-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution"></p>
+
+<p> <br>
+2. <strong>Inexperiência da Equipe Gerou Experiência</strong><div class="page" title="Page 1"><div class="layoutArea"><div class="column">Começamos projetar algumas coisas em 2014, porém só conseguimos começar algo efetivamente em janeiro de 2015. Ao longo de 2015 começamos estabilizar a equipe. Porém o grande problema era que a maioria não havia criado nenhum outro jogo completo anteriormente, por mais simples e curto que seja. Então decidimos fazer 1 ou outro prólogo, seriam projetos não necessariamente simples, mas curtos para a equipe começar ganhar mais experiência prática.</div></div></div></p>
+
+<div class="page" title="Page 2"><div class="layoutArea"><div class="column">O problema de alguns era falta de conhecimento em áreas específicas, outros tinham conhecimento, mas não sabiam direito como aplicar em jogos. Então vimos que um prólogo poderia ser perfeito para iniciar as coisas, mesmo porque a maioria dos membros não se conheciam entre si, seria um bom jeito de aumentar o engajamento e o trabalho em equipe.
+
+Como é geralmente comum em equipes pequenas, muitas pessoas acabam tendo que participar de várias áreas diferentes. Por um lado ruim isso diminui o foco, por outro lado melhora a comunicação entre os membros. Ao aprender e entender mesmo que bem pouco uma outra área de desenvolvimento. Faz você entender melhor o que os outros membros passam, que não é tão fácil ou não é tão difícil fazer tal tarefa daquela área.
+
+Então a inexperiência gera experiência, de certa forma isso é meio óbvio, porém somente é verdade quando a pessoa corre atrás para evoluir.
+
+<img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/03-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution">
+
+</div></div></div>  
+
+<ol>
+<li><strong>Objetivo do Projeto: Velocidade X Qualidade</strong><div class="page" title="Page 2"><div class="layoutArea"><div class="column">Colocamos em mente que nosso objetivo principal seria o ganho de experiência e o projeto deveria ser algo breve. Como citado no item 1, existe outro prólogo que estava em desenvolvimento. Então a ideia era terminar logo esse projeto para continuar o “prólogo de verdade”.</div></div></div></li>
+</ol>
+
+<p>O lado ruim disso é que o jogo não foi lapidado até o final, poderíamos ter melhorado muitas coisas, como deixar a mecânica ainda mais divertida, melhorar o roteiro que foi feito as pressas, criar animações melhores, algumas delas estão meio estranhas. Muitos desses problemas são consequências de a gente não ter sentado para fazer o GDD do projeto direito, já saímos desenvolvendo sem uma planejamento bem definido.</p>
+
+<p>Porém de forma positiva esse objetivo manteve melhor o nosso foco e conseguimos concluir o projeto e o objetivo dele. Com uma qualidade final razoável e uma ideia de jogo bacana, com potencial a ser explorado.</p>
+
+<p>Basicamente o desenvolvimento desse jogo foi um treino para fazer o próximo. Absorver os feedbacks positivos e negativos para fazer melhor futuramente.</p>
+
+<p><img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/04-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution"></p>
+
+<p> <br>
+4. <strong>Mudanças</strong><div class="page" title="Page 2"><div class="layoutArea"><div class="column">Este item é consequência dos outros três anteriores. Começamos o projeto “do nada”, nós acreditávamos que a ideia era boa, mas precisávamos ver como aplicar isso. Sabemos que muitas mudanças geram diversos problemas, como retrabalho, frustração, conflitos, entre outros. Porém pode deixar o projeto ainda melhor. Abaixo segue um breve histórico do projeto.</div></div></div></p>
+
+<p><strong>Abril de 2015:</strong> Pelo nosso foco em velocidade, decidimos fazer um jogo 2D do gênero plataforma. Arte 100% minimalista, com evolução do jogo apenas em mecânicas. Chegamos a criar um GDD simplificado as pressas e um protótipo. Porém pensamos depois, que poderíamos evoluir arte e áudio também, temos artistas (mesmo que pouco) e músicos. O gênero plataforma é um dos mais usados em jogos indies, tanto brasileiro quanto de fora. O feedback que mais recebemos na época foi que parece muito com Evoland ou DLC Quest. Mas a gente não achava isso, não estávamos apresentando a ideia de jeito certo. Como gostamos de tentar fazer diferente, cancelamos o projeto.</p>
+
+<div class="page" title="Page 3"><div class="layoutArea"><div class="column">**Maio de 2015:** Mas como a gente achou a ideia da evolução muito bacana e queríamos testar como o público iria reagir. Então pensamos em outro projeto usando essa ideia. Aqui o jogo passou a ser um RPG de ação 2D, com evolução de arte e áudio além da mecânica, deixando o projeto 5 vezes mais complexo que o anterior, indo contra o objetivo inicial. Porém o foco do grupo Teharth Studios é fazer RPG ou pelo menos híbridos com RPG, mais especificamente JRPGs. Após criar um novo GDD simplificado e um protótipo dele, vimos que o jogo não ficaria muito bom, com o tempo e equipe que temos. Aí cancelamos o projeto novamente. Pois, só o fato de ter RPG na descrição do projeto já fazia tudo ficar mais complexo.
+
+(Em junho e julho o responsável da equipe e projeto, teve que mudar de casa, que demorou muito para terminar e teve a perda de um irmão. Com isso o projeto acabou ficando de lado, sem ele a equipe não se sustenta direito.)
+
+**Agosto de 2015:** Decidimos então fazer algo ainda usando a ideia da evolução, mas seria um jogo de puzzles (quebra-cabeças), sem batalha e roteiro.. Algo por fases em vez de contínuo, algo bem mais casual e possivelmente para mobile. Ficamos o mês todo rabiscando algo, mas o projeto não dava aquela motivação de querer desenvolver ele.
+
+**Setembro de 2015:** Ficamos na dúvida e basicamente não fizemos nada em setembro. Somente no final do mês, decidimos voltar na ideia de maio, era ela que a gente achava gostava, decidimos tentar mesmo sabendo que poderia dar errado. Podemos dizer que o projeto começou efetivamente no final desse mês.
+
+**Outubro de 2015:** O velho problema da falta de artistas pesou novamente. Porém decidimos fazer o projeto mesmo assim, qualquer coisa ficaria com menos evoluções de arte. Porém no final do mês conseguimos ajuda de 3 novos artistas e conseguimos fazer tudo que estava dentro do planejado. Nessa época um dos músicos teve que sair, ele que faria a orquestração das músicas, com isso as músicas ficaram um pouco menos lapidadas, mas ainda ficaram bacanas. Depois disso o projeto finalmente fluiu bem.
+
+**Dezembro de 2015:** Tivemos alguns atrasos aqui, pois a maioria dos membros fazem faculdade e estavam em final de semestre com provas e tudo mais. Aí a fase final do projeto que era testar e lapidar o projeto, durou bem menos tempo que o previsto. Mas conseguimos corrigir os problemas que encontramos e melhorar algumas coisas.
+
+<img src="http://gamedeveloper.com.br/postmortem-teharth-prologue/../content/images/2015/12/09-1024x576.jpg" alt="Postmortem: Teharth Prologue - The Resources Dissolution">
+
+</div></div></div>  
+
+<ol>
+<li><strong>Conclusão</strong><div class="page" title="Page 3"><div class="layoutArea"><div class="column">Apesar de o projeto não ter ficado tão bom quanto queríamos, cumprimos os objetivos com ele. Observamos que temos conhecimento para fazer algo bem melhor, se fizermos com calma e um melhor planejamento. Até agora já recebemos bastante feedback e em sua grande maioria foram positivos, então foi bastante gratificante desenvolver esse jogo.</div></div></div></li>
+</ol>
+
+<p>Para terminar, agradeço novamente ao Bruno Cicanci, pelo espaço e oportunidade de postagem de um postmortem por aqui, no Game Developer. E obrigado a todos que leram, aguardem que em 2016 quando atingirmos nossa meta iremos dobrá-la. Hahaha.</p>
+
+<p></p>
+
+<div class="page" title="Page 3"><div class="layoutArea"><div class="column">**Acompanhe-nos:**
+
+– Site: [http://teharthstudios.wix.com/home](http://teharthstudios.wix.com/home)  
+ – Facebook: [https://www.facebook.com/teharth.studios](https://www.facebook.com/teharth.studios)  
+ – Twitter: [https://twitter.com/teharthstudios](https://twitter.com/teharthstudios)
+
+</div></div></div>]]></content:encoded></item><item><title><![CDATA[Manual de Produção de Jogos Digitais]]></title><description><![CDATA[<p>Existem alguns livros que são tão únicos na abordagem de seus assuntos que se tornam referência e sempre são recomendados para quem tem interesse de estudar seu assunto específico. Isto acontece com este livro que, como o próprio título diz, é um <a href="http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830">manual para produção de jogos digitais</a>.</p>
+
+<p>A autora</p>]]></description><link>http://gamedeveloper.com.br/manual-de-producao-de-jogos-digitais/</link><guid isPermaLink="false">d9e192de-6889-48dd-8863-d5b78c51228a</guid><category><![CDATA[livros]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Tue, 29 Dec 2015 16:51:31 GMT</pubDate><media:content url="../content/images/2015/09/manual_producao.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2015/09/manual_producao.jpg" alt="Manual de Produção de Jogos Digitais"><p>Existem alguns livros que são tão únicos na abordagem de seus assuntos que se tornam referência e sempre são recomendados para quem tem interesse de estudar seu assunto específico. Isto acontece com este livro que, como o próprio título diz, é um <a href="http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830">manual para produção de jogos digitais</a>.</p>
+
+<p>A autora Heather Maxwell Chandler trabalha com produção de jogos desde 1996 e já passou por empresas como Ubisoft, Activision e Electronic Arts. Embora o livro tenha sido escrito visando projetos de jogos em equipes, muita coisa nele vai ser bem útil para desenvolvedores independente.</p>
+
+<p>O primeiro capítulo é um belo resumo das 4 principais fases da criação de um jogo: Pré-Produção, Produção, Testes e Pós-Produção. Todos os demais capítulos vão detalhar bem cada uma dessas fases do ciclo de produção, explicar tudo que é recomendável ter ou fazer em cada uma elas, mas isso não significa que tudo deve ser seguido a risca. No capítulo 2 são apresentados praticamente todos papéis possíveis na produção de um jogo, e o capítulo 3 fala rapidamente sobre métodos para gerenciar um projeto.</p>
+
+<p><a href="http://gamedeveloper.com.br/manual-de-producao-de-jogos-digitais/../content/images/2015/09/manua_producao_cover.jpg"><img src="http://gamedeveloper.com.br/manual-de-producao-de-jogos-digitais/../content/images/2015/09/manua_producao_cover-768x1024.jpg" alt="Manual de Produção de Jogos Digitais" title=""></a></p>
+
+<p>A parte II e III do livro eu tenho quase certeza de que este é o único livro que deve abordar este assunto na indústria de jogos. Detalhes sobre a parte legal de um projeto, como licenças e contratos, são apresentados para deixar claro como proteger seu projeto. Além disso, existe um capítulo inteiro sobre como deve ser o relacionamento entre o desenvolvedor e uma publisher de jogos, algo bem raro de se encontrar por ai, principalmente do ponto de vista de uma produtora de jogos. Na parte III o foco é a gestão das pessoas, desde como contratar e manter talentos na equipe, até como ter uma comunicação eficaz com o time.</p>
+
+<p>Na parte IV o foco é a produção técnica, e assuntos como música, voiceover, captura de movimentos, jogos online, marketing e relações públicas são abordados. É interessante que grande parte destes assunto possuem poucos livros sobre eles. Imagino que de maneira proposital assuntos como física e inteligência artificial foram deixados de lado aqui porque existem muitos livros sobre eles.</p>
+
+<p>O restante do livro tem um foco maior no papel do produtor e são apresentados em detalhes os assuntos Pré-Produção, Produção, Testes e Pós-Produção. São tantas coisas legais como testes com usuários, postmortem, localização, classificação de jogos, análise SWOT, entre muitos outros tópicos, que este texto ficaria do tamanho do livro para falar de tanto conteúdo de qualidade apresentado.</p>
+
+<p>Em resumo, este é um livro obrigatório para qualquer pessoa que quer trabalhar com jogos, não importante se é um desenvolvedor independente ou não. Este livro serve para programadores, artistas, designers, músicos e, é claro, produtores.</p>
+
+<p>Muito obrigado a editora <a href="http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830">Bookman</a> por me enviar está cópia para fazer esta review! Você pode comprar este livro no site da editora ou em outras livrarias virtuais.</p>]]></content:encoded></item><item><title><![CDATA[Minha participação no Ludum Dare #34]]></title><description><![CDATA[<p>Participei do <a href="http://ludumdare.com/compo">Ludum Dare</a> pela terceira vez mas sempre parece ser a primeira pela quantidade de coisas que aprendo. Mudei algumas coisas desta fez, tentei ficar mais organizado, mas como sempre o tempo é o maior vilão.</p>
+
+<p>Desta vez houve um empate na votação do tema, e dois ficaram disponíveis.</p>]]></description><link>http://gamedeveloper.com.br/ludum-dare-34/</link><guid isPermaLink="false">768a1418-12c8-453f-adbd-7981132845c5</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Mon, 14 Dec 2015 11:39:11 GMT</pubDate><media:content url="../content/images/2015/12/52021-shot0-1450057301.png-eq-900-500.png" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2015/12/52021-shot0-1450057301.png-eq-900-500.png" alt="Minha participação no Ludum Dare #34"><p>Participei do <a href="http://ludumdare.com/compo">Ludum Dare</a> pela terceira vez mas sempre parece ser a primeira pela quantidade de coisas que aprendo. Mudei algumas coisas desta fez, tentei ficar mais organizado, mas como sempre o tempo é o maior vilão.</p>
+
+<p>Desta vez houve um empate na votação do tema, e dois ficaram disponíveis. Cada participante poderia escolher um deles ou os dois, e eu acabei escolhendo fazer um jogo com ambos. Os temas eram Growing (crescimento) e Two button controls (controle com dois botões). Diferente da edição #33 onde demorei para pensar no jogo, desta vez foi bem fácil e rápido.</p>
+
+<p>Minha ideia foi fazer um jogo com meu cachorro, um pug chamado Spock. Neste jogo ele se movimentaria para esquerda e direita coletando itens que cairiam do céu. O brocolis é um item saudável, que dá pontos. Já a pizza não dá pontos, e faz ele ficar maior e lento. Com seu crescimento, ao invés de se movimentar ele iria rolar pela pela. E quando atingisse um tamanho máximo, iria explodir em confetti e o jogo terminaria.</p>
+
+<p><img src="http://gamedeveloper.com.br/ludum-dare-34/../content/images/2015/12/52021-shot1-1450057302.png-eq-900-500.png" alt="Minha participação no Ludum Dare #34"></p>
+
+<p>Novamente escolhi utilizar a <a href="http://unity3d.com/pt/">Unity</a>, principalmente pela facilidade de exportar para diversas plataformas e facilitar o teste do jogo. Existem muitos casos onde os desenvolvedores publicam apenas para uma plataforma e isso pode limitar um pouco o publico. Hoje por exemplo estou trabalhando usando um Mac, então jogos que não tem versão para Mac ou Web eu estou deixando pra testar depois quando ligar meu desktop Windows, mas há uma chance de eu não jogá-los também. Por isso escolhi usar a Unity e publicar para Mac, Windows, Linux e Android.</p>
+
+<p>Eu cheguei a <a href="http://gamedeveloper.com.br/hoje-comeca-o-ludum-dare-34/">mencionar</a> que estava planejando exportar para Web utilizando o WebGL da Unity que saiu do beta na versão 5.3, porém decidi não utilizá-lo neste momento. Provavelmente vou fazer upload do jogo na página do jogo no Ludum Dare depois, para ter mais uma opção disponível.</p>
+
+<p><img src="http://gamedeveloper.com.br/ludum-dare-34/../content/images/2015/12/52021-shot2-1450086187.png-eq-900-500.jpg" alt="Minha participação no Ludum Dare #34"></p>
+
+<p>Desta vez tentei brincar de artista e desenhei a pizza, o brocolis e o céu utilizando <a href="https://www.gimp.org/">GIMP</a>. Não sou artista, mas o resultado ficou até que aceitável e engraçado. Para o personagem utilizei a foto do Spock.</p>
+
+<p>Ao invés de utilizar um pedaço de papel com as tarefas decidi me organizar utilizando o <a href="https://trello.com/">Trello</a>, e criei um board com todas tarefas. A grande vantagem disso foi que caso eu queria continuar o jogo já deixei algumas coisas listadas lá como ideias futuras ou melhorias. Nos outros dois jogos pensei em várias coisas para melhorar, mas por não anotar deixei pra lá. Esta com certeza foi uma boa decisão para eu poder continuar o projeto.</p>
+
+<p>Novamente a parte mais difícil foi a falta de tempo, e isso me prejudicou muito neste projeto. Planejei muitas coisas que não tive tempo de fazer, e esta foi a primeira vez que não coloquei música e efeitos sonoros em um jogo do Ludum Dare. As fotos do Spock eram algo temporário, pois eu iria desenhar de algum jeito ele, mas também não tive tempo para isto. Como o uso de fotos são permitidas, eu deixei elas na versão final do jogo. Também não tive tempo de fazer a explosão em confetti no final do jogo.</p>
+
+<p><img src="http://gamedeveloper.com.br/ludum-dare-34/../content/images/2015/12/52021-shot3-1450086187.png-eq-900-500.jpg" alt="Minha participação no Ludum Dare #34"></p>
+
+<p>Alguns fatores que me prejudicaram:</p>
+
+<ul>
+<li>Publicar para várias plataformas: lembra que eu mencionei lá em cima no texto que isso era algo bom para testar? Realmente é, mas durante um game jam pensar em várias plataformas requer compilar e testar, e sempre é necessário fazer algum ajuste (principalmente no caso de mobile). Por isso da próxima vez vou focar em apenas uma plataforma;</li>
+<li>Criar a arte: diferente dos outros dois jogos que fiz nas edições passadas, este exigiu um pouco mais de “arte”, e por não ser artista acabei fazendo apenas os itens e o background;</li>
+<li>Fim de ano: Geralmente no fim de semana no final do ano temos muitas coisas para fazer por causa do Natal e viagens, e isto me deixou com pouco menos de 10 horas disponíveis para trabalhar no projeto. Outro problema é que nestas 10 horas disponíveis eu não estava descansado para me concentrar, então não renderam tanto quando eu gostaria. Por conta disso, acabei cortando coisas legais do jogo.</li>
+</ul>
+
+<p>O próximo Ludum Dare #35 será em Abril de 2016 e provavelmente irei tentar utilizar um framework diferente para fazer o jogo, além de focar em apenas uma plataforma. Vou tentar estar mais preparado para improvisar arte e fazer o possível para ter mais tempo disponível. Também quero tentar fazer um jogo melhor e maior, geralmente faço esses jogos simples por medo de não terminar a tempo.</p>
+
+<p><a href="http://ludumdare.com/compo/ludum-dare-34/?action=preview&amp;uid=52021">Neste link</a> você pode conferir a página do jogo no Ludum Dare os links para download do jogo. O código do jogo está disponível no meu <a href="https://github.com/cicanci/game-unity-ld34">GitHub</a>.</p>
+
+<p><strong>UPDATE</strong>: Adicionei uma build web lá na página do jogo no Ludum Dare, realmente está muito melhor essa versão nova da Unity 5.3 para exportar WebGL. Ainda quero fazer testes com um jogo mais pesado, mas fiquei realmente surpreso pela melhora.</p>]]></content:encoded></item><item><title><![CDATA[Hoje começa o Ludum Dare #34]]></title><description><![CDATA[<p>Meia noite, no horário de Brasilia, começa mais uma edição do Ludum Dare, uma game jam internacional online onde desenvolvedores de jogos profissionais e amadores tem 48 horas para criar um jogo baseado em um tema (ou 72 horas no caso de equipes).</p>
+
+<p>Neste post sobre o <a href="http://gamedeveloper.com.br/hoje-comeca-o-ludum-dare-33/">Ludum Dare #33</a></p>]]></description><link>http://gamedeveloper.com.br/hoje-comeca-o-ludum-dare-34/</link><guid isPermaLink="false">56a95fee-4448-4488-a4e1-626b99ec39aa</guid><category><![CDATA[notícias]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Fri, 11 Dec 2015 00:04:31 GMT</pubDate><media:content url="../content/images/2015/08/LD2009-HighresNoShadow.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2015/08/LD2009-HighresNoShadow.jpg" alt="Hoje começa o Ludum Dare #34"><p>Meia noite, no horário de Brasilia, começa mais uma edição do Ludum Dare, uma game jam internacional online onde desenvolvedores de jogos profissionais e amadores tem 48 horas para criar um jogo baseado em um tema (ou 72 horas no caso de equipes).</p>
+
+<p>Neste post sobre o <a href="http://gamedeveloper.com.br/hoje-comeca-o-ludum-dare-33/">Ludum Dare #33</a> dei algumas dicas para quem tem interesse de participar. Este vai ser o meu terceiro Ludum Dare, e estou bastante animado para colocar em prática muitas coisas que não tive tempo de fazer na edição passada.</p>
+
+<p>Acesse o site o oficial e se inscreva! Desta vez vou utilizar novamente a <a href="http://unity3d.com/pt/">Unity</a> para desenvolver o jogo, e vou dar mais uma chance para o exportador do <a href="http://blogs.unity3d.com/2015/12/07/unity-5-3-webgl-updates/">WebGL</a> que finalmente saiu do beta versão 5.3 lançada recentemente. Depois da Ludum Dare vou fazer um post contando minha experiência em uma uma game jam, e o jogo que consegui fazer.</p>
+
+<p>Links interessantes:</p>
+
+<ul>
+<li><a href="http://gamedeveloper.com.br/ludum-dare-32/">Minha participação no Ludum Dare #32</a></li>
+<li><a href="http://gamedeveloper.com.br/ludum-dare-33/">Minha participação no Ludum Dare #33</a></li>
+</ul>]]></content:encoded></item><item><title><![CDATA[Minha palestra sobre Design Patterns no GameDays 2015]]></title><description><![CDATA[<p>Ontem apresentei minha palestra sobre uso de design patterns na programação de jogos no evento <a href="http://gamedeveloper.com.br/gamedays-2015/">GameDays 2015</a> na Universidade Cruzeiro do Sul em São Paulo. Confira aqui os slides apresentados.</p>
+
+<p><iframe allowfullscreen height="541" mozallowfullscreen="" src="https://www.slideshare.net/slideshow/embed_code/54298266" webkitallowfullscreen="" width="660"></iframe>Muito obrigado a coordenação do evento por me convidar para realizar esta palestra, e também a todos que estiveram lá</p>]]></description><link>http://gamedeveloper.com.br/palestra-design-patterns-gamedays-2015/</link><guid isPermaLink="false">f56817fd-2371-43b2-abb8-4c18f126e13c</guid><category><![CDATA[palestras]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Fri, 23 Oct 2015 09:41:23 GMT</pubDate><media:content url="../content/images/2015/10/IMG_2958.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2015/10/IMG_2958.jpg" alt="Minha palestra sobre Design Patterns no GameDays 2015"><p>Ontem apresentei minha palestra sobre uso de design patterns na programação de jogos no evento <a href="http://gamedeveloper.com.br/gamedays-2015/">GameDays 2015</a> na Universidade Cruzeiro do Sul em São Paulo. Confira aqui os slides apresentados.</p>
+
+<p><iframe allowfullscreen height="541" mozallowfullscreen="" src="https://www.slideshare.net/slideshow/embed_code/54298266" webkitallowfullscreen="" width="660"></iframe>Muito obrigado a coordenação do evento por me convidar para realizar esta palestra, e também a todos que estiveram lá e assistiram minha apresentação.  Abaixo esta o video que foi gravado durante a palestra, peço desculpas pela qualidade da imagem e do audio.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/fiGIdyHLwLc?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"></iframe></span></p>]]></content:encoded></item></channel></rss>
