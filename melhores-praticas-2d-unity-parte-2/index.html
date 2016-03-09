@@ -24,7 +24,7 @@
     <meta property="og:url" content="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2/">
     <meta property="og:image" content="http://gamedeveloper.com.br/content/images/2016/03/unity3d1.jpg">
     <meta property="article:published_time" content="2016-03-09T12:46:00.000Z">
-    <meta property="article:modified_time" content="2016-03-09T14:24:28.226Z">
+    <meta property="article:modified_time" content="2016-03-09T14:31:26.102Z">
     <meta property="article:tag" content="programação">
     
     <meta name="twitter:card" content="summary_large_image">
@@ -49,7 +49,7 @@
     "headline": "Melhores práticas para 2D na Unity - Parte 2",
     "url": "http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2/",
     "datePublished": "2016-03-09T12:46:00.000Z",
-    "dateModified": "2016-03-09T14:24:28.226Z",
+    "dateModified": "2016-03-09T14:31:26.102Z",
     "image": "http://gamedeveloper.com.br/content/images/2016/03/unity3d1.jpg",
     "keywords": "programação",
     "description": "Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar..."
@@ -112,7 +112,7 @@
         </header>
 
         <section class="post-content">
-            <p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a <a href="http://127.0.0.1:2368/melhores-praticas-2d-unity-parte-2/iframe%20width=" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen>parte 1</a> antes de continuar neste post.</p>
+            <p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> antes de continuar neste post.</p>
 
 <p><strong>Boas práticas usando NGUI</strong></p>
 
@@ -122,7 +122,7 @@
 
 <p>Um dos grandes recursos da NGUI é fazer toda UI ter apenas um draw call, ou seja, ser desenhada em uma única chamada. Eu recomendo assistir aos videos desta <a href="https://www.youtube.com/playlist?list=PLI_jd5nXafTbBrubTmgbodCtWY6BhVxtP">playlist</a> do criador da NGUI (em Inglês), ele fez tutoriais cobrindo todo básico necessário para utilizar o plugin seguindo as boas práticas e otimizando seu jogo. O vídeo abaixo é o número 2 de 5, e cobre o básico.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen></iframe>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen></iframe></span></p>
 
 <p>Eu tive um grande problema com este plugin: era praticamente impossível migrar o projeto da Unity 4 para Unity 5 sem ter que refazer boa parte da interface. Por este motivo decidimos continuar utilizando a Unity 4. Eu sei que outros desenvolvedores passaram pela mesma situação, e muitos utilizam Unity 4 até hoje por que não tiveram tempo de migrar a NGUI. Mas, ao mesmo tempo, conheço gente que não teve problemas em migrar para Unity 5. Mesmo com estes problemas eu acho que vale a pena utilizar NGUI, pois é um plugin incrível com muito conteúdo disponível. </p>
 
@@ -134,9 +134,9 @@
 
 <p>No primeiro video abaixo (em Inglês) podemos ver as vantagens relacionadas ao tamanho e redução de cores para deixar seus assets mais leves e reduzir o consumo de memória. O segundo video explica a importância de usar sprite sheets para otimizar o tempo do OpenGL para carregar e desenhar imagens na tela. </p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/crrFUYabm6E" frameborder="0" allowfullscreen></iframe>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/crrFUYabm6E" frameborder="0" allowfullscreen></iframe></span></p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_KyUqyS5MLA" frameborder="0" allowfullscreen></iframe>
+<p><span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/_KyUqyS5MLA" frameborder="0" allowfullscreen></iframe></span></p>
 
 <p>Sem dúvidas é um ganho enorme se preocupar em organizar os assets do seu jogo em um único sprite sheet. Porém, devemos levar em conta as limitações de hardware das plataformas que estamos desenvolvendo. Em muitos aparelhos Android e iOS antigos o sprite sheet não deve ter mais do que 1024. O 2048 é um tamanho mais recomendado para que funcione na maioria dos aparelhos, mas 4096 funciona bem em praticamente todos hardwares mais recentes. Lembre-se que o sprite sheet deve sempre ter o tamanho em POT (power of two, ou potência de dois), pois se não for o OpenGL vai fazer sua imagem ser na hora que carregar na memória, o que consome mais espaço e recurso do processador.</p>
 
