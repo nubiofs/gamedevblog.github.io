@@ -1,4 +1,102 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Fri, 06 May 2016 17:18:30 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Posicionamento da Abragames sobre resolução da Anatel]]></title><description><![CDATA[<p>Acredito que a maioria dos usuários de internet no Brasil já está sabendo da ideia ridícula de algumas empresas de <a href="http://gizmodo.uol.com.br/usuarios-criticam-limite-internet-fixa/">limitar a internet</a> e cobrar para que o usuário continue navegando, transformando o modelo de cobrança da internet fixa no modelo de cobrança de internet móvel.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 04 Jun 2016 00:28:26 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Não vamos fazer um jogo juntos]]></title><description><![CDATA[<p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
+
+<p>O objetivo deste projeto era simples: fazer um jogo com ajuda de outras pessoas interessadas. Eu</p>]]></description><link>http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/</link><guid isPermaLink="false">1374b142-b408-4a5f-9388-a42cef5b3824</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 02 Jun 2016 00:05:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" alt="Não vamos fazer um jogo juntos"><p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
+
+<p>O objetivo deste projeto era simples: fazer um jogo com ajuda de outras pessoas interessadas. Eu configurei o projeto no GitHub pra deixar fácil de todos acompanharem e criei um grupo no Facebook, que depois foi substituído por um grupo no <a href="https://groups.google.com/forum/#!forum/gamedevblog">Google</a>, e o projeto começou.</p>
+
+<p>Esperei 1 mês para começar o projeto, dando este tempo para que outras pessoas pudessem ler o post e entrar no grupo. Comecei organizando meu próprio tempo, e decidi que dedicaria meu tempo livre de segunda-feira para participar deste projeto. No primeiro mês foquei em escrever o <a href="https://docs.google.com/document/d/1oJO44LWsLFr1uZdfcmSFFD5DQI-b-b3nKj4_ICFE5Ho/edit">GDD</a> do projeto e cada semana escrevia um post no grupo informando o que tinha sido feito e quais eram meus objetivos para a próxima semana.</p>
+
+<p>Depois de 1 mês percebi algo que me desanimou: o grupo tinha 50 integrantes, porém nenhum estava interagindo com o projeto. Com excessão de duas pessoas que conversaram comigo sobre o GDD neste período, nada foi feito e eu parei de dedicar meu tempo neste projeto esperando quem algo acontecesse.</p>
+
+<p>Hoje, 4 meses depois, nada aconteceu e eu decidi <strong>cancelar este projeto</strong>. Apaguei o repositório e o quadro no Trello (que praticamente estavam vazios), mas vou deixar o grupo e o GDD por enquanto. </p>
+
+<p>Mas, como eu percebi que existia a vontade de acompanhar o desenvolvimento de um projeto eu comecei um novo jogo e este quero compartilhar com vocês. Por enquanto seu nome é Final Frontier e vai ser um jogo de exploração espacial 3D. O código do projeto está no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e pretendo fazer posts comentando sobre o projeto, e até compartilhar o GDD e roadmap do jogo durante seu desenvolvimento.</p>
+
+<p>Muito obrigado a todos pelo apoio, especialmente aos 50 integrantes do grupo que tiveram interesse em participar desde projeto. Eu não queria deixar o projeto em aberto morrendo aos poucos, então decidi acabar com ele logo e começar algo novo para poder compartilhar aqui.</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-317182457/stock-photo-seal-cancelled-stamped-on-paper-planner.html?src=VkmaZUOTm08LC_DM2NEeGQ-1-0">Seal cancelled</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Crytek lança código da CryEngine no GitHub]]></title><description><![CDATA[<p>A <a href="https://www.cryengine.com/news/looking-ahead-github-and-cryengine">CryEngine</a> já tinha seu código aberto porém, por não ter um instalador, era necessário baixar todo código sempre que algum update era realizado. E o projeto não é pequeno para ser baixado a cada alteração, por isso muitas vezes é comum o desenvolvedor trabalhar com uma versão fixa da</p>]]></description><link>http://gamedeveloper.com.br/crytek-lanca-codigo-da-cryengine-no-github/</link><guid isPermaLink="false">1e0a86bf-fd6a-4dc8-85c4-1e98a1188286</guid><category><![CDATA[notícias]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 25 May 2016 23:55:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/cryengine.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/cryengine.jpg" alt="Crytek lança código da CryEngine no GitHub"><p>A <a href="https://www.cryengine.com/news/looking-ahead-github-and-cryengine">CryEngine</a> já tinha seu código aberto porém, por não ter um instalador, era necessário baixar todo código sempre que algum update era realizado. E o projeto não é pequeno para ser baixado a cada alteração, por isso muitas vezes é comum o desenvolvedor trabalhar com uma versão fixa da engine sem atualizar durante todo o projeto.</p>
+
+<p>Agora que seu <a href="https://github.com/CRYTEK-CRYENGINE/CRYENGINE">código</a> está no GitHub, e não é mais um ZIP no site, desenvolvedores podem manter o código sempre atualizado, baixando apenas as atualizações do repositório. </p>
+
+<p>Seria bom a Amazon fazer algo semelhante para a sua engine <a href="https://aws.amazon.com/pt/lumberyard/">Lumberyard</a>, que foi construída em cima da CryEngine. Embora exista uma ferramenta de update, não é muito claro o que foi alterado. Em projetos de código aberto isto é muito importante.</p>
+
+<p>A <a href="https://github.com/EpicGames/UnrealEngine">Unreal Engine</a> também está disponível no GitHub, e possui a mesma vantagem para os desenvolvedores terem seu código atualizado. </p>
+
+<p>Na minha opinião isto é algo que <a href="http://unity3d.com/pt/get-unity">Unity</a> deve fazer logo, não abrir seu código necessariamente, mas ter um update melhor do que fazer o desenvolvedor baixar quase 10GB todo mês pra manter a engine atualizada para todas plataformas. </p>]]></content:encoded></item><item><title><![CDATA[Aprenda game design jogando Super Mario 64]]></title><description><![CDATA[<p>O site <a href="http://www.polygon.com/2016/5/16/11683934/super-mario-64-pannenkoek2012-videos-rng">Polygon</a> publicou uma notícia sobre um canal do <a href="https://www.youtube.com/user/pannenkoek2012/videos">YouTube</a> onde o autor cria videos ensinando técnicas de game design enquanto joga Super Mario 64.</p>
+
+<p>O jogo lançado para o <a href="https://en.wikipedia.org/wiki/Super_Mario_64">Nintendo 64</a> e criado pela lenda vida <a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto">Shigeru Miyamoto</a> possui tantos detalhes que normalmente passam despercebidos, mas se retirarmos</p>]]></description><link>http://gamedeveloper.com.br/aprenda-game-design-jogando-super-mario-64/</link><guid isPermaLink="false">ed35c488-2e51-4cb9-9f88-90fac088e8d7</guid><category><![CDATA[game design]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 18 May 2016 23:31:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/smb64.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/smb64.jpg" alt="Aprenda game design jogando Super Mario 64"><p>O site <a href="http://www.polygon.com/2016/5/16/11683934/super-mario-64-pannenkoek2012-videos-rng">Polygon</a> publicou uma notícia sobre um canal do <a href="https://www.youtube.com/user/pannenkoek2012/videos">YouTube</a> onde o autor cria videos ensinando técnicas de game design enquanto joga Super Mario 64.</p>
+
+<p>O jogo lançado para o <a href="https://en.wikipedia.org/wiki/Super_Mario_64">Nintendo 64</a> e criado pela lenda vida <a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto">Shigeru Miyamoto</a> possui tantos detalhes que normalmente passam despercebidos, mas se retirarmos eles o jogo perde um pouco do seu brilho. São estes detalhes que o canal <a href="https://www.youtube.com/user/pannenkoek2012/videos">pannenkoek2012</a> busca exemplificar e ensinar. </p>
+
+<p>Eu selecionei dois videos que eu gostei, mas eu recomendo dar uma olhada nos demais videos do <a href="https://www.youtube.com/user/pannenkoek2012/videos">canal</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MiuLeTE2MeQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kpk2tdsPh0A" frameborder="0" allowfullscreen></iframe>
+
+<p>Se você quiser ler mais sobre o quão incrível o Super Mario 64 é, dê uma lida nesta <a href="http://br.ign.com/super-mario-64-n64-1/8184/feature/entenda-a-genialidade-de-super-mario-64">matéria</a> do IGN.</p>]]></content:encoded></item><item><title><![CDATA[Dicas de John Romero para desenvolver jogos]]></title><description><![CDATA[<p><a href="https://twitter.com/romero">John Romero</a>, co-fundador da <a href="http://www.idsoftware.com/">Id Software</a> e criador dos jogos DOOM e Quake, entre muitos <a href="https://en.wikipedia.org/wiki/John_Romero#Games">outros</a>, deu uma palestra em um evento da revista britânica <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">Develop</a> e falou sobre algumas técnicas para desenvolvimento que ele sempre usou, muitas indo contra ao que encontramos nos livros. Abaixo estão algumas frases que</p>]]></description><link>http://gamedeveloper.com.br/dicas-de-john-romero/</link><guid isPermaLink="false">6b87fcfa-61e0-4120-a0ad-017f6a68900b</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 11 May 2016 22:38:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/romero.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/romero.jpg" alt="Dicas de John Romero para desenvolver jogos"><p><a href="https://twitter.com/romero">John Romero</a>, co-fundador da <a href="http://www.idsoftware.com/">Id Software</a> e criador dos jogos DOOM e Quake, entre muitos <a href="https://en.wikipedia.org/wiki/John_Romero#Games">outros</a>, deu uma palestra em um evento da revista britânica <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">Develop</a> e falou sobre algumas técnicas para desenvolvimento que ele sempre usou, muitas indo contra ao que encontramos nos livros. Abaixo estão algumas frases que retirei do texto, a notícia completa pode ser lida aqui.</p>
+
+<blockquote>
+  <p>“No prototypes,” he said. “Just make the game. Polish as you go. Don’t depend on polish happening later. Always maintain constantly shippable code.</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Sem protótipos", ele disse. "Apenas crie o jogo. Faça polimento durante o projeto. Não conte com o polimento acontecendo mais tarde. Sempre tenha código pronto para ser lançado."</p>
+</blockquote>
+
+<p>Na continuação do texto ele fala que se existe muito dinheiro e pessoas envolvidas, que provavelmente haverá um protótipo, mas quando se é pequeno e independente (como ele era). Segundo Romero, o melhor é sempre desenvolver algo final ao invés do ciclo que normalmente inicia com um protótipo, que então é descartado para desenvolver o jogo, e após o desenvolvimento estar completo entra na fase de polimento.</p>
+
+<p>Isso faz muito sentido quando pensamos em empresas pequenas e independentes, mas é claro que existe um risco da equipe desenvolver um jogo se que muitas perguntas importantes tenham sido respondidas na fase de protótipo. Acho que se o game designer tem experiência, e o jogo está bem claro para a equipe, este é um risco que pode ser tomado. Muitas vezes não há tempo suficiente para fazer um protótipo, por isso é comum mesmo as empresas partirem para o jogo final desde o começo.</p>
+
+<blockquote>
+  <p>“As soon as you see a bug, you fix it. Do not continue on. If you don’t fix your bugs, your new code will be built on a buggy codebase and ensure an unstable foundation.”</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Ao encontrar um bug, corrija-o. Não continue o desenvolvimento. Se você não corrigir seus bugs, you novo código será escrito em cima de um projeto com problemas e resultando em uma base instável para o jogo"</p>
+</blockquote>
+
+<p>Romero diz que não devemos perder o tempo de outras pessoas, se você encontrou um bug ele deve ser corrigido antes de prosseguir. É comum o programador saber que existem bugs mas envia o jogo para a equipe de testes sem falar nada, esperando que eles encontrem para ele corrigir após o bug ser "oficial" e estar anotado em algum lugar.</p>
+
+<p>Novamente, esta é uma dica para pequenas empresas, pois não possuem processos burocráticos. Mas, independente do tamanho da empresa e do projeto, todo bug deve ser sempre corrigido, especialmente se for seu. Ou, se não houver tempo, pelo menos informe a equipe de testes (ou a pessoa que vai testar).</p>
+
+<blockquote>
+  <p>“Write your code for this game only – not for a future game. You’re going to be writing a new code later because you’ll be smarter.”</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Escreve seu código para este jogo apenas - não para jogos futuros. Você irá escrever um código novo depois pois você terá aprendido mais"</p>
+</blockquote>
+
+<p>Muitos programadores, não só da área de games, se preocupam em fazer um código que poderá ser utilizado por vários projetos depois. Isto é uma preocupação válida, mas quando não se tem muito tempo não devemos nos preocupar em criar um framework antes de criar o jogo em si. E a segunda parte que ele disse é verdade, provavelmente você irá escrever um código melhor na segunda vez.</p>
+
+<p>Em empresas grandes existem até equipes desenvolve ferramentas e frameworks para que as equipes que desenvolvem os jogos consigam focar em fazer o jogo. </p>
+
+<p>O <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">texto</a> contém mais detalhes e dicas, e vale muito a pena ler. John Romero é um grande game designer, e sempre podemos aprender muito com desenvolvedores experientes como ele.</p>]]></content:encoded></item><item><title><![CDATA[Vamos falar sobre salário]]></title><description><![CDATA[<p>Este é um assunto bem complicado no Brasil pois, com tantas pessoas querendo trabalhar com desenvolvimento de jogos, muitas empresas se aproveitam disso e oferecem salários baixos.</p>
+
+<p>Vou focar este post na área de programação, pois é mais fácil pra mim dar exemplos. É bem comum um programador de jogos</p>]]></description><link>http://gamedeveloper.com.br/vamos-falar-sobre-salario/</link><guid isPermaLink="false">ce517b39-bfc9-4fe1-8119-0dc1dfb0c322</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 04 May 2016 17:24:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/05/salary.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/05/salary.jpg" alt="Vamos falar sobre salário"><p>Este é um assunto bem complicado no Brasil pois, com tantas pessoas querendo trabalhar com desenvolvimento de jogos, muitas empresas se aproveitam disso e oferecem salários baixos.</p>
+
+<p>Vou focar este post na área de programação, pois é mais fácil pra mim dar exemplos. É bem comum um programador de jogos ganhar menos do que um analista de sistema, mesmo tendo mais anos de experiência. Para deixar isso mais simples, não estou comparando conhecimento individual, mas sim anos de experiência pois é a primeira coisa que muitas empresas olham no currículo.</p>
+
+<p>Em 2008 terminei minha graduação em Ciência da Computação, e no começo de 2009 comecei minha pós-graduação em Produção e Programação de Games. Antes de eu trabalhar com jogos sempre fui analista de sistemas, e com 3 anos de experiência em programação meu salário bruto na época era R$4.000 para um cargo júnior, um excelente salário para um recém formado.</p>
+
+<p>2 anos depois disso, quando estava terminando minha pós-graduação (só faltava o TCC) e com 5 anos de experiência como programador, consegui meu primeiro emprego na área de jogos na <a href="http://glu.com">Glu Mobile</a> (que fechou o estúdio daqui em 2011) para ganhar um salário de R$3.000 como programador de nível intermediário. Ou seja, por vontade de trabalhar com jogos abri mão de um salário maior, o que normalmente acontece com todo programador que trabalhou com sistemas antes de ser programador de jogos.</p>
+
+<p>Mais tarde, 1 ano depois, aceitei o mesmo salário para trabalhar na <a href="http://ea.com">Electronic Arts</a> (que fechou o estúdio daqui em 2013), ocupando o mesmo cargo de nível intermediário que estava na Glu Mobile. Estava ganhando pouco, porém estava na área de jogos e em uma empresa muito grande lá fora. Nesta época estava com quase 6 anos de experiência, com uma graduação e uma pós-graduação, ganhando menos do que quando eu tinha acabado de me formar. Porém, nunca estive mais feliz. </p>
+
+<p>É muito difícil acertar de primeira o curso e a carreira que realmente queremos, e eu tive a sorte de fazer a escolha correta cursando Ciência da Computação e me especializando em games. O grande problema é que muitas empresas de jogos sabem que trabalhar com games é o sonho de muita gente, por isso exigem um grande conhecimento na área e pagam salários bem baixos. É claro que isto não se aplica a todas empresas, muitas simplesmente não podem pagar salários altos por serem pequenas.</p>
+
+<p>É indiscutível que, aqui no Brasil, um analista de sistemas com 6 anos de experiência tem um salário bem maior (praticamente o dobro) do que um programador de jogos com o mesmo tempo de experiência. Por isso é bem comum dizer que quem trabalha com jogos no Brasil é por que realmente ama o que faz, pois há mais vagas para se trabalhar como analista do que programador de jogos e que geralmente pagam mais.</p>
+
+<p>Os exemplos que dei aqui foram todos com valor para contratação CLT. É bem comum empresas de jogos contratarem como PJ, pois é vantajoso para a empresa e também o salário oferecido pode ser maior do que CLT (mas sem benefícios). Infelizmente esta é a realidade de quem trabalhar com jogos no Brasil. Mesmo meus exemplos sendo de alguns anos atrás, a única coisa que mudou hoje é que temos ainda menos empresas para trabalhar por aqui.</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-289507745/stock-vector-salary-variation-flat-design-business-concept-cartoon-illustration.html?src=NakHlovtgWQyzSUfdkrtcg-1-6">Salary variation</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Posicionamento da Abragames sobre resolução da Anatel]]></title><description><![CDATA[<p>Acredito que a maioria dos usuários de internet no Brasil já está sabendo da ideia ridícula de algumas empresas de <a href="http://gizmodo.uol.com.br/usuarios-criticam-limite-internet-fixa/">limitar a internet</a> e cobrar para que o usuário continue navegando, transformando o modelo de cobrança da internet fixa no modelo de cobrança de internet móvel.</p>
 
 <p>E, é claro, sempre</p>]]></description><link>http://gamedeveloper.com.br/posicionamento-da-abragames-sobre-resolucao-da-anatel/</link><guid isPermaLink="false">a726b643-e1db-4de3-af48-76c475d61e8b</guid><category><![CDATA[notícias]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 28 Apr 2016 02:58:15 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/04/shutterstock_112158140-1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/04/shutterstock_112158140-1.jpg" alt="Posicionamento da Abragames sobre resolução da Anatel"><p>Acredito que a maioria dos usuários de internet no Brasil já está sabendo da ideia ridícula de algumas empresas de <a href="http://gizmodo.uol.com.br/usuarios-criticam-limite-internet-fixa/">limitar a internet</a> e cobrar para que o usuário continue navegando, transformando o modelo de cobrança da internet fixa no modelo de cobrança de internet móvel.</p>
 
@@ -341,187 +439,4 @@ Inscrições</p>
 
 <p>Veja quem já está confirmado:</p>
 
-<p><img src="http://gamedeveloper.com.br/content/images/2016/03/12767570_1143722725679283_1652801173_n.jpg" alt="1º Congresso Online de Desenvolvimento Mobile"></p>]]></content:encoded></item><item><title><![CDATA[Adeus Wordpress, olá Ghost]]></title><description><![CDATA[<p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais "blog" do que "site".</p>
-
-<p>Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente</p>]]></description><link>http://gamedeveloper.com.br/ola-ghost/</link><guid isPermaLink="false">3f6a6dea-eff0-4df2-bb84-510042b8cc6c</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 18 Feb 2016 01:38:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/02/Ghost-Logo-svg.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/02/Ghost-Logo-svg.png" alt="Adeus Wordpress, olá Ghost"><p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais "blog" do que "site".</p>
-
-<p>Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente não imaginaria que continuaria o blog por tanto tempo. Ainda vou fazer um post sobre minha carreira, por isso aqui quero focar no blog em si.</p>
-
-<p>Comecei hospedando o blog no side do <a href="https://br.wordpress.com/">Wordpress</a> e depois de 1 ano quis instalar no meu próprio servidor. Na época eu tinha um hospedagem no <a href="http://www.uolhost.uol.com.br/">UOL Host</a> com meu projeto de TCC da graduação, que acabei tirando do ar para colocar meu blog. Não conhecia muito sobre hospedagem, mas em pouco tem percebi como esta era ruim. Por diversas vezes meu blog ficou fora do ar por problemas na infraestrutura deles, e mesmo não sendo algo famoso eu estava pagando por um serviço que não era bom.</p>
-
-<p>Logo migrei para a <a href="https://br.bluehost.com/">Bluehost</a>, e até fiquei feliz por um tempo. Depois descobri a <a href="https://www.digitalocean.com/">Digital Ocean</a>, e vi que poderia configurar meu próprio servidor ao invés de ter uma hospedagem e acabei migrando o blog pra lá. Pouco tempo depois migrei para a <a href="http://aws.amazon.com/pt/">Amazon Web Services</a>, e estava muito feliz em ter meu servidor lá.</p>
-
-<p>Em todo esse tempo sempre tive curiosidade de mudar do Wordpress, mas acabava ficando nele por ter muito conteúdo publicado. Uma das coisas que mais me fez querer mudar do Wordpress era a velocidade dele, a dependência de um banco de dados sempre iria adicionar uma camada de lentidão no carregamento da página.</p>
-
-<p>Há 2 anos conheci o <a href="https://jekyllrb.com/">Jekyll</a> e fiquei impressionado, pois era exatamente o que eu queria! Algo que fizesse meu blog ser ter um foco maior em ser um blog, além do conteúdo publicado ser estático e sem banco de dados. A única coisa que me impediu de migrar na época foi mover o conteúdo do Wordpress para o formato do Jekyll, pois a ferramenta de migração na época não funcionava muito bem e acabei desistindo.</p>
-
-<p>Há alguns dias encontrei uma nova tecnologia parecida com Jekyll, porém baseada no <a href="http://nodejs.org/">NodeJS</a>, o <a href="https://ghost.org/">Ghost</a>. De cara já gostei da sua simplicidade e interface para administrar o blog: simples e direto ao ponto. Fiquei tão empolgado e que decidi tentar sua ferramenta de migração, e para minha supresa funcionou muito bem! Todo conteúdo do blog foi gerado, e a partir dai comecei a migrar o blog.</p>
-
-<p>O único problema que tive foi que a ferramenta de migração não faz download das imagens, então tive que copiar todas para o diretório do Ghost (que tem a mesma estrutura do Wordpress) e depois editei o arquivo de banco de dados (SQLite3) usando sqlitebrowser e algum código SQL para mudar todas URLs para carregar as imagens locais. Em cerca de 2 horas tudo estava pronto, porém comecei a pensar em outra coisa.</p>
-
-<p>Fiz um teste utilizando o <a href="https://aws.amazon.com/pt/elasticbeanstalk/">Elastic Beanstalk</a> do AWS e publiquei meu blog como uma aplicação NodeJS. Ficou rápido, porém eu queria resolver outro problema: baixar o custo da hospedagem. Deixar meu blog lá custaria cerca de $10 dólares por mês, e com o valor do dólar atualmente qualquer ajuda é bem vinda para diminuir os custos. Neste ponto entrou o <a href="https://pages.github.com/">GitHub Pages</a>.</p>
-
-<p>Meu portfólio já estava hospedado no GitHub Pages, por ser um conteúdo estático, porém meu novo blog era uma aplicação NodeJS. Com um pouco de pesquisa encontrei o <a href="https://github.com/axitkhurana/buster/">Buster</a> que converte todo conteúdo do Ghost em arquivos estáticos, para que possa ser publicado no GitHub Pages.</p>
-
-<p>Depois de um longo caminho estou muito feliz com o resultado. Atualmente estou trabalhando com dois repositórios, um privado com a aplicação do Ghost e um <a href="https://github.com/GameDevBlog/gamedevblog.github.io">público no GitHub</a>. Quando quero publicar algo, abro a linha de comando e rodo o Ghost localmente como uma aplicação NodeJS. E quando termino de mexer, uso o buster para converter meu blog em arquivos estáticos e publicar no repositório público do GitHub, e assim deixá-lo disponível no GitHub Pages. Parece muito trabalho, mas já automatizei tudo utilizando um script Ruby. Assim que termino de escrever, basta rodar o script e tudo que escrevi neste parágrafo acontece bem rápido. </p>
-
-<p>Faz 7 anos que pago cerca de $10 dólares por mês para manter este blog, e o máximo que consegui foi $100 dólares depois de uns 5 anos usando Google Ads. Esta mudança para o Ghost não é apenas boa por deixar de lado o Wordpress e seu conteúdo dinâmico lento. É muito boa por que agora minha hospedagem é gratuita e o conteúdo está muito rápido.</p>
-
-<p>Ainda existem coisas que preciso ajustar, como alguns posts com texto mal formatado ou imagens e links quebrados. Aos poucos estou editando cada um dos 256 posts do blog para que todo conteúdo fique corrigido. Muito obrigado a todos leitores, todo esse tempo que dedico ao blog é para tentar te ajudar com um pouco do meu conhecimento na área. E lembre, estou sempre aberto a sugestões aqui ou por e-mail. </p>
-
-<p><strong>Recomendação da semana</strong></p>
-
-<p>Esta semana comecei a ler o livro <a href="http://geral.leya.com.br/pt/literatura-fantastica/armada/">Armada</a> publicado no Brasil pela editora Leya, o segundo do autor Ernest Cline que escreveu o incrível <a href="http://geral.leya.com.br/pt/literatura-fantastica/jogador-n-1/">Jogador Número 1</a>. Ambos os livro são excelentes, com muito conteúdo relacionado a jogos antigos. Vale muito a pena ler!</p>]]></content:encoded></item><item><title><![CDATA[Amazon entra na briga com Lumberyard]]></title><description><![CDATA[<p>A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha "apenas" uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com</p>]]></description><link>http://gamedeveloper.com.br/amazon-lumberyard/</link><guid isPermaLink="false">5fa58033-2d42-446e-9e8a-9c40bab1c0de</guid><category><![CDATA[notícias]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 11 Feb 2016 01:34:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/02/lumberyard-1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/02/lumberyard-1.jpg" alt="Amazon entra na briga com Lumberyard"><p>A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha "apenas" uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com que praticamente todo mundo migrasse para a cloud da Amazon.</p>
-
-<p>Eu trabalho com <a href="http://aws.amazon.com/pt/">AWS</a> há algum tempo, tanto para meus projetos pessoais quanto para os profissionais. Este blog mesmo já ficou um tempo hospedado no AWS, e eu utilizo muitos dos seus serviços em meus projetos de jogos, apps e até backend. Se você não conheço os serviços e produtos do AWS, recomendo dar uma olhada logo!</p>
-
-<p>Há algum tempo a Amazon criou um estúdio para desenvolvimento de jogos, o <a href="https://games.amazon.com/">Amazon Game Studios</a>, e inclusive contratou a game designer responsável pelo jogo <a href="http://www.polygon.com/2014/4/2/5575354/amazon-game-studios-portal-kim-swift-splinter-cell-clint-hocking">Portal</a>. Até agora lançaram 5 jogos para dispositivos móveis, porém nenhum conseguiu fazer um grande barulho na indústria. Ainda.</p>
-
-<p>Com tanta tecnologia, conhecimento e dinheiro infinito, criar sua própria game engine como um produto parecia algo claro para a Amazon. Porém, sendo ainda mais esperta, criou toda engine em cima do código da <a href="http://cryengine.com/">CRYENGINE</a>, sem precisar criar toda base necessária para uma engine, que geralmente levam-se anos para se estabilizar.</p>
-
-<p><a href="https://aws.amazon.com/pt/lumberyard/">Amazon Lumberyard</a> é uma game engine gratuita e open source, que se integra com todos serviços da AWS. Ou seja, tem tudo para ser um grande produto. Atualmente roda apenas em Windows, mas acredito que logo devem expandir para Mac, iOS, Android e até Windows Phone.</p>
-
-<p>Há um tempo <a href="http://gamedeveloper.com.br/project-anarchy-nova-engine-gratuita-havok/">achei</a> que o Project Anarchy, uma game engine gratuita da <a href="http://www.havok.com/">Havok</a>, seria uma ameaça para a <a href="http://unity3d.com/pt/">Unity</a>. Estava errado, pois eles não tiveram popularidade e dinheiro para investir neste produto. Inclusive esta semana vi a <a href="http://www.develop-online.net/news/havok-s-free-mobile-engine-project-anarchy-has-been-closed/0216672">notícia</a> de que o Project Anarchy foi cancelado.</p>
-
-<p>Não sei dizer se dessa vez temos um concorrente a altura da Unity, mas uma coisa eu sei: a Amazon já tem muitos desenvolvedores que utilizam suas tecnologias para games e eles tem dinheiro infinito para investir nesta game engine. Ainda não tive a oportunidade de testar, mas com certeza vale a pena, como tudo que a AWS faz.</p>
-
-<p><strong>Recomendação da semana</strong></p>
-
-<p>Esta semana queria recomendar um livro muito bom, que ainda preciso terminar de ler, chamado <a href="http://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&amp;qid=1456029009&amp;sr=8-1&amp;keywords=clean+code">Clean Code</a>. O objetivo deste livro é ajudar a escrever um código bom e fácil de manter, assim como identificar quando um código não é bom e pensar na melhor maneira de arrumar.</p>]]></content:encoded></item><item><title><![CDATA[Vamos fazer um jogo juntos?]]></title><description><![CDATA[<p>Estava aqui pensando sobre o que escrever no blog e tive uma ideia: por que não fazer um jogo junto com os leitores do blog?</p>
-
-<p>Este blog tenho quase 7 anos de existência, e tem acompanhado minha carreira desde o início quando terminei minha graduação em Ciência da Computação e</p>]]></description><link>http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/</link><guid isPermaLink="false">dce41599-806c-4410-972a-c23f90d657a1</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 03 Feb 2016 04:07:00 GMT</pubDate><media:content url="../content/images/2016/02/match3.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/02/match3.jpg" alt="Vamos fazer um jogo juntos?"><p>Estava aqui pensando sobre o que escrever no blog e tive uma ideia: por que não fazer um jogo junto com os leitores do blog?</p>
-
-<p>Este blog tenho quase 7 anos de existência, e tem acompanhado minha carreira desde o início quando terminei minha graduação em Ciência da Computação e comecei minha pós-graduação em Produção e Programação de Games. Nesse período tive contato pelo blog e por email com muitos leitores, e acredito que devem existir alguns que acompanham o blog há um bom tempo mas nunca entrar em contato comigo.</p>
-
-<p>Por isso resolvi fazer este teste e propor este projeto maluco de tentar fazer um jogo em colaboração com os leitores do blog. Abaixo estão as regras do projeto, tentei pensar em tudo que pode ser feito para isso realmente dar certo. O objetivo disso é apenas um: fazer um jogo. Não importa se vai dar certo, se vamos terminar, se vou fazer sozinho ou se mais gente vai ajudar. O que quero fazer é criar uma iniciativa de fazer eu e você criarmos um jogo juntos.</p>
-
-<p>Pelas regras abaixo é possível notar que minha maior preocupação é deixar isso simples para mais gente participar, mas ao mesmo tempo ser algo legal de desenvolver.</p>
-
-<p><strong>Regras (atualizadas em 04/02/16)</strong></p>
-
-<ul>
-<li>Para deixar tudo o mais simples possível, este jogo será desenvolvimento utilizando <a href="http://unity3d.com">Unity</a> e C# como linguagem de programação</li>
-<li>Também para simplificar tudo, este primeiro projeto será em 2D e vamos tentar fazer um <a href="http://www.polygon.com/2014/2/26/5428104/from-bejeweled-to-candy-crush-finding-the-key-to-match-3">jogo Match-3</a>, parecido com <a href="http://www.popcap.com/bejeweled-games">Bejeweled</a> e <a href="http://candycrushsaga.com/">Candy Crush</a></li>
-<li>O projeto ficará em um repositório público no <a href="https://github.com/GameDevBlog/game-unity-first">GitHub</a> utilizando a <a href="https://opensource.org/licenses/MIT">licença MIT</a></li>
-<li>Não é necessário já ter experiência ou saber programar, o único requisito é querer aprender</li>
-<li>A participação não é restrita a programadores: artistas, game designers, músicos, todo mundo é bem vindo para participar</li>
-<li>O objetivo deste projeto é permitir que qualquer pessoa possa participar da produção de um jogo, além de ter um jogo em seu portfólio</li>
-<li>Se tudo der certo e este projeto for concluído, podemos começar outros (mesmo em paralelo se for o caso)</li>
-<li>Aviso aos desenvolvedores experiente: tente explicar no código o que foi feito (se for algo relativamente complexo)</li>
-<li>Após o término o jogo poderá ser lançado em algumas plataformas de acordo com a opinião dos participantes, porém em nenhum momento haverá monetização (o jogo sempre será gratuito e open source)</li>
-</ul>
-
-<p><strong>Links úteis (atualizados em 20/02/16)</strong></p>
-
-<ul>
-<li>Grupo no Google: <a href="https://groups.google.com/forum/#!forum/gamedevblog">Leitores do gamedeveloper.com.br</a></li>
-<li>Board no Trello com as tarefas: <a href="https://trello.com/b/jlTEEvJz/primeiro-jogo">Primeiro Jogo</a></li>
-<li>Repositório do jogo: <a href="https://github.com/GameDevBlog/game-unity-first">game-unity-first</a></li>
-<li>Software do GitHub (fácil de usar pra quem está começando): <a href="https://desktop.github.com/">GitHub Desktop</a></li>
-</ul>
-
-<p>Qualquer ajuda é sempre bem vinda, e espero que nós consigamos fazer um jogo juntos!</p>
-
-<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-263660897/stock-vector-precious-gems-flat-icons-set-square-round-pear-shaped-gemstones-vector-elements-isolated-on.html?src=-C1DBMVbPDMUKzJEPJFBJA-1-21">Precious gems flat icon set</a> do Shutterstock.</p>
-
-<p><strong>Recomendação da semana</strong></p>
-
-<p>Seguindo o tema proposto por este projeto, recomendo jogar o <a href="http://www.pokemon.com/us/pokemon-video-games/pokemon-shuffle-mobile/">Pokémon Shuffle Mobile</a>, gratuito para Android ou iOS. Tente reparar nas diferenças deste jogo para o Bejeweled e Candy Crush, pois apesar de ser um Match-3 existem pequenos grandes detalhes que fazer toda diferença neste jogo.</p>]]></content:encoded></item><item><title><![CDATA[Como ser um programador de jogos]]></title><description><![CDATA[<p>Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1</p>]]></description><link>http://gamedeveloper.com.br/como-ser-um-programador-de-jogos/</link><guid isPermaLink="false">644f92a5-fd23-43b0-a738-c0605141890d</guid><category><![CDATA[como começar]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 28 Jan 2016 01:17:00 GMT</pubDate><media:content url="../content/images/2016/01/como-ser-prog-jogos.png" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/como-ser-prog-jogos.png" alt="Como ser um programador de jogos"><p>Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1 ano nesta categoria por que os assuntos para iniciantes foram diminuindo e eu acabei ficando sem tempo para posts semanais.</p>
-
-<p>Decidi fazer este post para reunir a lista com os 32 posts em apenas um lugar. Muitas vezes recebo emails de pessoas que estão querendo começar na área, e um dos links que sempre envio é o da categoria <a href="http://gamedeveloper.com.br/category/como-programar-jogos/">Como Começar</a>. Porém, acredito que todos links em um único post devem ser mais úteis e fáceis de consultar.</p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-pre-requisitos/">#01 Pré-requisitos</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-hello-world/">#02 Hello World</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-engine-vs-framework/">#03 Engine vs Framework</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-primeiro-jogo/">#04 Primeiro jogo</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-cursos/">#05 Cursos</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-livros/">#06 Livros</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-concursos/">#07 Concursos e Game Jams</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">#08 Playground</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">#09 Protótipos</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-codigos-opensource/">#10 Códigos Open Source</a></p>
-
-<p><a href="http://gamedeveloper.com.br/programar-sem-ter-a-arte-final/">#11 Programar sem ter a Arte Final</a></p>
-
-<p><a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-para-que-serve-um-maker/">#12 Para que serve um Maker</a></p>
-
-<p><a href="http://gamedeveloper.com.br/delta-time/">#13 Delta Time</a></p>
-
-<p><a href="http://gamedeveloper.com.br/game-analytics/">#14 Dados analíticos do jogo</a></p>
-
-<p><a href="http://gamedeveloper.com.br/teste-com-jogadores/">#15 Teste com jogadores</a></p>
-
-<p><a href="http://gamedeveloper.com.br/game-design-document/">#16 Game Design Document</a></p>
-
-<p><a href="http://gamedeveloper.com.br/parallax/">#17 Parallax</a></p>
-
-<p><a href="http://gamedeveloper.com.br/voce-ja-fez-um-jogo/">#18 Você já fez um jogo?</a></p>
-
-<p><a href="http://gamedeveloper.com.br/gerenciamento-do-seu-tempo/">#19 Gerenciamento do seu tempo</a></p>
-
-<p><a href="http://gamedeveloper.com.br/jogue-bastante-mas-jogos-diferentes/">#20 Jogue bastante, mas jogos diferentes</a></p>
-
-<p><a href="http://gamedeveloper.com.br/dez-livros-de-games-que-vc-precisa-ler/">#21 Dez livros de games que você precisa ler</a></p>
-
-<p><a href="http://gamedeveloper.com.br/pixel-perfect/">#22 Pixel Perfect</a></p>
-
-<p><a href="http://gamedeveloper.com.br/boas-praticas-para-animacoes-2d/">#23 Boas práticas para animações 2D</a></p>
-
-<p><a href="http://gamedeveloper.com.br/feedback-de-acoes-para-o-jogador/">#24 Feedback de ações para o jogador</a></p>
-
-<p><a href="http://gamedeveloper.com.br/200-mecanicas-de-gameplay/">#25 200 mecânicas de gameplay</a></p>
-
-<p><a href="http://gamedeveloper.com.br/definicao-de-prioridade-de-tarefas/">#26 Definição de prioridade de tarefas</a></p>
-
-<p><a href="http://gamedeveloper.com.br/transformando-jogo-em-produto/">#27 Transformando jogo em produto</a></p>
-
-<p><a href="http://gamedeveloper.com.br/por-onde-comecar-programar/">#28 Por onde começar a programar</a></p>
-
-<p><a href="http://gamedeveloper.com.br/mantenha-tudo-simples/">#29 Mantenha tudo simples</a></p>
-
-<p><a href="http://gamedeveloper.com.br/avaliando-um-framework/">#30 Avaliando um Framework</a></p>
-
-<p><a href="http://gamedeveloper.com.br/programando-com-estilo/">#31 Programando com estilo</a></p>
-
-<p><a href="http://gamedeveloper.com.br/design-patterns/">#32 Design Patterns</a></p>
-
-<p>Olhando os 32 posts aqui até parecem capítulos de um livro, e a ideia inicial dessa série era ser um pequeno guia com informações úteis para quem estiver começando na área. Diferente dos últimos posts desta série, não vou prometer que vou voltar a postar nesta categoria toda semana, mas prometo que vou tentar continuar ou pelo menos atualizar os assuntos tratados anteriormente com novos posts e novas informações.</p>
-
-<p><strong>Recomendação da semana</strong></p>
-
-<p>Esta semana finalmente assisti uma série de ficção científica incrível chamada <a href="http://www.imdb.com/title/tt0303461/">Firefly</a>. Nesta série a civilização humana desenvolveu uma tecnologia que transforma outros planetas e luas em lugares similares a Terra, permitindo a expansão pelo espaço. O interessante desta série é que não existem máquinas com inteligência artificial avançada e muito menos alienígenas, apenas humanos e naves.  É possível aplicar essa mesma ideia em games, usando jogabilidades comuns porém com diferentes abordagens.</p>]]></content:encoded></item><item><title><![CDATA[10 princípios para um bom level design]]></title><description><![CDATA[<p>Há quase 3 anos atrás li um post muito bom do game designer <a href="http://www.gamasutra.com/blogs/author/DanTaylor/543613/">Dan Taylor</a> no <a href="http://www.gamasutra.com">gamasutra</a> sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.</p>
-
-<ul>
-<li><p><strong>É divertido de explorar</strong></p></li></ul>]]></description><link>http://gamedeveloper.com.br/10-principios-level-design/</link><guid isPermaLink="false">213dcd7a-be42-460f-8b69-5a05c9522be3</guid><category><![CDATA[game design]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 20 Jan 2016 02:46:50 GMT</pubDate><media:content url="../content/images/2016/01/level-design.jpg" medium="image"/><content:encoded><![CDATA[<img src="../content/images/2016/01/level-design.jpg" alt="10 princípios para um bom level design"><p>Há quase 3 anos atrás li um post muito bom do game designer <a href="http://www.gamasutra.com/blogs/author/DanTaylor/543613/">Dan Taylor</a> no <a href="http://www.gamasutra.com">gamasutra</a> sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.</p>
-
-<ul>
-<li><p><strong>É divertido de explorar</strong> – Usa uma linguagem visual clara para orientar o jogador pelo caminho principal, e cria interesse através da verticalidade, caminhos secundários, áreas escondidas e elementos de labirintos.</p></li>
-<li><p><strong>Não depende de palavras para contar uma história</strong> – Além da narrativa explicita através da história e objetivos, um bom level design apresenta uma narrativa implícita através do ambiente, e dá aos jogadores uma mecânica de escolhas para que eles possam criar sua própria narrativa emergente.</p></li>
-<li><p><strong>Diz ao jogador o que fazer, mas não como fazer</strong> – Garante que os objetivos da missão estão claros, mas permite aos jogadores completá-los do jeito que eles preferirem, e, sempre que possível, em qualquer ordem.</p></li>
-<li><p><strong>Ensina constantemente algo novo ao jogador</strong> – Mantêm o jogador engajado introduzindo novas mecânicas através do jogo, e impede que mecânicas já aprendidas sejam descartadas aplicando modificadores ou reutilizando-as de maneiras inusitadas.</p></li>
-<li><p><strong>É surpreendente</strong> – Um bom level design não tem medo de arriscar o ritmo, estética, localidade e outros elementos para criar uma experiência nova.</p></li>
-<li><p><strong>Capacita o jogador</strong> – Video games são escapistas e, como tal, devem abster-se do mundano. Além disso, um bom level design reforça a capacidade do jogador permitindo que eles experimentem as consequências das suas ações, de maneira imediata ou a longo prazo através do design dos de todos os níveis.</p></li>
-<li><p><strong>Permite ao jogador controlar a dificuldade</strong> – Prepara o caminho principal para jogadores iniciantes, apresentando à jogadores avançados desafios opcionais comunicando claramente o risco e a recompensa.</p></li>
-<li><p><strong>É eficiente</strong> – Recursos são limitados. Um bom design de nível cria eficiência através da modularidade, jogabilidade bidirecional, objetivos integrados e bônus exploráveis que fazem uso de todo espaço jogável.</p></li>
-<li><p><strong>Cria emoção</strong> – Começa pelo fim, com a resposta emocional desejada, e trabalha no sentido contrário, selecionando as mecânicas apropriadas, métricas espaciais e dispositivos de narrativa para alcançar aquela resposta.</p></li>
-<li><p><strong>É movido pela mecânica do jogo</strong> – Acima de tudo, demonstra a mecânica do jogo através dos níveis, para reforçar a natureza interativa única dos video games.</p></li>
-</ul>
-
-<p>Confira o texto completo na <a href="http://www.gamasutra.com/blogs/DanTaylor/20130929/196791/Ten_Principles_of_Good_Level_Design_Part_1.php">parte 1</a> e na <a href="http://www.gamasutra.com/blogs/DanTaylor/20131006/197209/Ten_Principles_of_Good_Level_Design_Part_2.php">parte 2</a> deste artigo no gamasutra, lá cada um destes princípios é explicado com mais detalhes e exemplos. O level design é tão importante que muitos game designers e até artistas se especializam nesta área. Este é um bom resumo das preocupações que um level designer deve ter, mas existe muito mais do que isso para se estudar!</p>
-
-<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-174671009/stock-vector-game-world-computer-game-screen.html?src=U_RI1NWPvkTOlj1CBYvRFQ-1-4">Game world computer game screen</a> do Shutterstock.</p>
-
-<p><strong>Recomendação da semana</strong></p>
-
-<p>Como estou tentando fazer um post por semana, quero aproveitar para começar algo novo e deixar no final do texto uma sugestão de algo que me chamou a atenção durante a semana, sempre tentando relacionar isto com desenvolvimento de jogos.</p>
-
-<p>Esta semana quero apresentar um card game chamado <a href="http://www.starrealms.com/">Star Realms</a>, que possui versão <a href="http://www.starrealms.com/about-star-realms/">física</a> e <a href="http://www.starrealms.com/digital-game/">digital</a> (gratuita) para várias plataformas. A versão digital veio depois e é incrivelmente fiel a versão física do jogo, e acredito que tenha sido desenvolvido utilizando <a href="http://unity3d.com/">Unity</a>. Apesar da mecânica do jogo ter sido muito bem implementada, a interface fica um pouco pequena em dispositivos móveis. O que me chamou mais a atenção neste jogo é a sua mecânica chamada <em><a href="https://en.wikipedia.org/wiki/Deck-building_game">deck building</a></em>, que dá uma dinâmica incrível ao jogo.</p>]]></content:encoded></item></channel></rss>
+<p><img src="http://gamedeveloper.com.br/content/images/2016/03/12767570_1143722725679283_1652801173_n.jpg" alt="1º Congresso Online de Desenvolvimento Mobile"></p>]]></content:encoded></item></channel></rss>
