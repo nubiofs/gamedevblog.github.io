@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 04 Jun 2016 00:28:26 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Não vamos fazer um jogo juntos]]></title><description><![CDATA[<p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 08 Jun 2016 21:08:35 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Como desbloquear o Xbox One para o modo desenvolvedor]]></title><description><![CDATA[<p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
+
+<p>Estes são os pré-requisitos para transformar seu console em uma ferramenta</p>]]></description><link>http://gamedeveloper.com.br/xbox-one-modo-dev/</link><guid isPermaLink="false">3461e46a-b631-4c41-8941-cbf551ff0555</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 08 Jun 2016 19:10:51 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" alt="Como desbloquear o Xbox One para o modo desenvolvedor"><p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
+
+<p>Estes são os pré-requisitos para transformar seu console em uma ferramenta para desenvolvimento de jogos:</p>
+
+<ul>
+<li>Participar do programa <a href="https://insider.windows.com">Windows Insider</a></li>
+<li>Ter Windows 10 atualizado no seu computador</li>
+<li>Conectar o computador no Xbox One através de um cabo</li>
+<li>Instalar a última versão do <a href="https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx">Visual Studio 2015</a></li>
+<li>Ter pelo menos 30GB de espaço disponível no Xbox One</li>
+</ul>
+
+<p>O vídeo abaixo mostra o passo a passo para desbloquear o Xbox One como ferramenta de desenvolvimento, e também esclarece muitas dúvidas em relação a como este processo funciona.</p>
+
+<iframe src="https://channel9.msdn.com/Shows/MarlonLuz/Desbloqueando-o-XBox-One-para-o-modo-desenvolvedor/player?format=html5" width="640" height="360" allowfullscreen frameborder="0"></iframe>
+
+<p>Ainda não tive a oportunidade de testar o <a href="http://www.xbox.com/en-US/xbox-one">Xbox One</a> no modo desenvolvedor, mas assim que eu conseguir pretendo postar mais informações e sobre como funciona a integração com a <a href="http://unity3d.com/pt/">Unity</a>.</p>]]></content:encoded></item><item><title><![CDATA[Não vamos fazer um jogo juntos]]></title><description><![CDATA[<p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
 
 <p>O objetivo deste projeto era simples: fazer um jogo com ajuda de outras pessoas interessadas. Eu</p>]]></description><link>http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/</link><guid isPermaLink="false">1374b142-b408-4a5f-9388-a42cef5b3824</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 02 Jun 2016 00:05:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" alt="Não vamos fazer um jogo juntos"><p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
 
@@ -420,23 +438,4 @@ Rendimento alcançado na matéria: 100%.</p>
 
 <p>Quero agradecer ao portal gamedeveloper.com.br por ceder este espaço, é uma honra estar aqui postando meu primeiro game oficial e espero repetir este processo de post-mortem mais vezes, será mais que uma honra para mim. Obrigado, Bruno, você é Show!</p>
 
-<p>Quero também agradecer a Deus que em 10 dias me possibilitou o aprendizado de um framework tão formidável como o Starling.</p>]]></content:encoded></item><item><title><![CDATA[1º Congresso Online de Desenvolvimento Mobile]]></title><description><![CDATA[<p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile</p>]]></description><link>http://gamedeveloper.com.br/primeiro-congresso-online-de-desenvolvimento-mobile/</link><guid isPermaLink="false">674cce30-7b48-491d-934b-391bb0cdb3fc</guid><category><![CDATA[eventos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 24 Feb 2016 15:21:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/03/banner01.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/03/banner01.png" alt="1º Congresso Online de Desenvolvimento Mobile"><p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile do Brasil.</p>
-
-<p><strong>Quando?</strong></p>
-
-<p>Evento ocorrerá do dia 04 à 08 de abril de 2016.</p>
-
-<p><strong>Como se dará a realização do evento?</strong></p>
-
-<p>Por ser um evento totalmente ONLINE não será necessário você agendar nenhuma viajem ou faltar o trabalho para acompanhar as palestras. <br>
-As palestras serão GRAVADAS previamente e a exibição dessas palestras será de acordo com a programação definida pelos organizadores do evento. <br>
-Para assistir as palestras é necessário realizar o CADASTRO para receber o link da transmissão da palestra do dia. É IMPORTANTE acessar o link da palestra com 15 minutos de antecedência para garantir a sua participação em cada palestra. <br>
-Inscrições</p>
-
-<p>Não perca mais tempo e se inscreva para participar do evento, <a href="http://congressodemobile.com.br/">clicando aqui</a>.</p>
-
-<p><strong>Palestrantes</strong></p>
-
-<p>Veja quem já está confirmado:</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/03/12767570_1143722725679283_1652801173_n.jpg" alt="1º Congresso Online de Desenvolvimento Mobile"></p>]]></content:encoded></item></channel></rss>
+<p>Quero também agradecer a Deus que em 10 dias me possibilitou o aprendizado de um framework tão formidável como o Starling.</p>]]></content:encoded></item></channel></rss>
