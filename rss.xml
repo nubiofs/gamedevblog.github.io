@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 08 Jun 2016 21:08:35 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Como desbloquear o Xbox One para o modo desenvolvedor]]></title><description><![CDATA[<p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Wed, 15 Jun 2016 21:42:50 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Tutoriais de desenvolvimento de jogos com Unity e Blender]]></title><description><![CDATA[<p>Semana passada estava procurando um video sobre como fazer um FPS com Unity para o projeto que comentei neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a>. Eu já fiz jogos com mecânicas de FPS, porém eu sempre procuro tutoriais sobre o que eu quero fazer para aprender maneiras diferentes de fazer as mesmas coisas.</p>
+
+<p>Está é</p>]]></description><link>http://gamedeveloper.com.br/tutoriais-jogos-unity/</link><guid isPermaLink="false">428d639f-4f8c-4509-930d-8c12911d693f</guid><category><![CDATA[programação]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 15 Jun 2016 21:41:11 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/unity3d1.jpg" alt="Tutoriais de desenvolvimento de jogos com Unity e Blender"><p>Semana passada estava procurando um video sobre como fazer um FPS com Unity para o projeto que comentei neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a>. Eu já fiz jogos com mecânicas de FPS, porém eu sempre procuro tutoriais sobre o que eu quero fazer para aprender maneiras diferentes de fazer as mesmas coisas.</p>
+
+<p>Está é uma boa dica que gostaria de deixar neste post: mesmo que você saiba fazer algo existe sempre outras maneiras de fazer, que podem ser melhores, iguais ou piores do que a maneira que você costuma fazer. Por isso é muito importante sempre pesquisar na internet, ler livros e assistir videos sobre o assunto, com certeza pelo menos um detalhe novo deve surgir e vai te ajudar.</p>
+
+<p>Voltando ao assunto do post, eu encontrei este canal (em Inglês) chamado <a href="https://www.youtube.com/user/quill18creates">quill18creates</a> com muitos videos sobre desenvolvimento de jogos para Unity e Blender. O autor do canal, <a href="http://quill18.com/">Martin "quill18" Glaude</a>, possui um outro canal com foco jogos chamado <a href="https://www.youtube.com/user/quill18">quill18</a>. </p>
+
+<p>Vou colocar alguns videos que gostei abaixo, porém recomendo dar uma olhada em nos outros videos e <a href="https://www.youtube.com/user/quill18creates/playlists">playlists</a> do canal. As playlists abaixo contém videos sobre geração procedural, algoritmo pathfind para movimentação e objetos destrutíveis, respectivamente.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6Tm0jUrhLZG8sEBI1hgCL8" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI55gwJLrDz0UtNfo9oC0K1Q" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6FPAZfn2HBdOu-JGSZ39vS" frameborder="0" allowfullscreen></iframe>
+
+<p>Se você conhece outros canais no YouTube sobre desenvolvimento de jogos deixe nos comentários!</p>]]></content:encoded></item><item><title><![CDATA[Como desbloquear o Xbox One para o modo desenvolvedor]]></title><description><![CDATA[<p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
 
 <p>Estes são os pré-requisitos para transformar seu console em uma ferramenta</p>]]></description><link>http://gamedeveloper.com.br/xbox-one-modo-dev/</link><guid isPermaLink="false">3461e46a-b631-4c41-8941-cbf551ff0555</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 08 Jun 2016 19:10:51 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" alt="Como desbloquear o Xbox One para o modo desenvolvedor"><p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
 
@@ -334,108 +350,4 @@
 
 <p>Internamente a Unity agrupa suas imagens em uma sprite sheet na hora que seu jogo compilado, então mesmo se você não quiser ter este trabalho de preparar tudo antes a Unity faz pra você. Porém, é bom ter o controle disso, pois muitas otimizações mencionadas aqui devem ser feitas manualmente para se ter um ganho de memória na Unity.</p>
 
-<p>Esta foi a parte 2! Na próxima e, provavelmente, última parte vou comentar sobre melhores práticas relacionadas à programação na Unity em C#. O foco não será a linguagem de programação, mas sim sobre a utilização dos recursos de script engine. Qualquer dúvida ou sugestão deixe seu comentário abaixo!</p>]]></content:encoded></item><item><title><![CDATA[Postmortem: HueShark]]></title><description><![CDATA[<p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog</p>]]></description><link>http://gamedeveloper.com.br/postmortem-hueshark/</link><guid isPermaLink="false">decf46bf-ce94-48fd-8cf5-e1923b989e71</guid><category><![CDATA[postmortem]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 02 Mar 2016 15:53:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/03/hueshark1.jpg" alt="Postmortem: HueShark"><p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog (e sua equipe) desenvolvendo e publicando um jogo, e ainda mais contando a história do desenvolvimento aqui para encorajar outros desenvolvedores a publicar seus jogos. </p>
-
-<hr>
-
-<p>Olá, meu nome é João Paulo Santos e sou um dos programadores do jogo <a href="https://play.google.com/store/apps/details?id=air.HueShark">HueShark</a> que está 100% gratuito e pronto para download na GooglePlay no link acima. Abaixo irei especificar tudo que ocorreu durante todo o desenvolvimento, as nuances e mostrar o que realmente é positivo e negativo no desenvolvimento de um jogo de pequeno porte como HueShark.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/03/hueshark2.jpg" alt="Postmortem: HueShark"></p>
-
-<p><strong>Descrição do Game</strong></p>
-
-<p>HueShark conta a história de 2 casais (Pai, Mãe, Filho e Nora) que ganham uma viagem da empresa a qual prestam serviços por serem excelentes funcionários. Todos são especializados em engenharia e conhecem muito de mecânica e tecnologia. Ao irem com um Iate para o mar (Iate locado pela empresa) eles sofrem com as intemperanças do mar, em meio a viagem uma forte tempestade atinge o Iate que eles estão e eles são levados pela correnteza forte. O navio acaba parando em uma ilha deserta, tendo seu motor e parte elétrica destruídos.</p>
-
-<p>O grupo pensa em como sobreviver e como voltarem para casa e a saída para isto era colocar um navio pesqueiro que também estava na ilha ancorado bem próximo a ilha e tentar consertar o motor/rádio deste barco novo que acharam na ilha para funcionar e assim serem recuperados ou irem para casa. Misteriosamente o barco pesqueiro tinha alguns esqueletos e marcas de "chifradas" no casco. <br>
-Apesar de ainda estar em bom estado gerou curiosidade aos tripulantes que com esforço conseguiram levar o barco para bem próximo da ilha e ancora-lo ali mesmo. A ideia deles era ir a ilha sempre que possível em um bote para pegar alimento e procurar suprimentos para ajudar o grupo a sobreviver.</p>
-
-<p>Abaixo segue uma descrição InGame:</p>
-
-<p>Um jogo desafiador que faz com que o player tenha total atenção com o status de cada player e com a bag com recursos do navio. Cuide da Nutrição, Humor e Cansaço de cada personagem para evitar que eles trabalhem com penalidades na movimentação e tempo de cumprimento de tarefas.</p>
-
-<p>Pesque, crie armadilha para o HueShark, mantenha o tanque de peixe sempre cheio para evitar danos ao navio. <br>
-Chuvas ocorrem continuamente para renovar a reserva de água do barco.</p>
-
-<p>Tente "fisgar" gaivotas para criar armadilhas para o tubarão (sim, gaivotas + vidro + putrefação = dor de barriga no HueShark).</p>
-
-<p>Existem 3 formas de vencer:</p>
-
-<p>1 - Gaste o máximo de suprimentos (supplies) no motor e você vencerá o game indo para casa com o motor novo;</p>
-
-<p>2 - Gaste o máximo de suprimentos (supplies) no rádio e você vencerá o game sendo resgatado por um helicóptero da marinha;</p>
-
-<p>3 - Vá o máximo de vezes possíveis para ilha e use o sinalizador para atrair a guarda costeira e você será salvo por um helicóptero da marinha.</p>
-
-<p>Obrigado por apreciar nosso jogo, ele é FREE e é uma honra para nós compartilharmos o nosso esforço com vocês.</p>
-
-<p><strong>Início</strong></p>
-
-<p>O game antes mesmo de ser desenvolvido foi pensado no público de smartphones Android. Pensamos no Gdd entre o final de junho de 2015 e o começo de julho 2015 e juntamos 4 pessoas neste projeto inicialmente (tinha por data final de entrega 7 de dezembro de 2015), ressaltando que era um projeto de Universidade (Projeto Integrador). <br>
-O Gdd foi idealizado em 1 dia, tendo quase tudo o que o projeto final tinha em seu documento original (poucas coisas mudaram). Abaixo irei especificar coisas técnicas, pontos positivos e pontos negativos.</p>
-
-<p><strong>Especificações Técnicas do Projeto</strong></p>
-
-<p>Engine: Nenhuma, usamos AS3 + Flash Builder  + Starling + GreenSock (AS3). <br>
-Plataforma: Android <br>
-Estilo de Jogo: Survivor Comic <br>
-Jogabilidade: Point and Click <br>
-Ferramenta para Gráficos: Photoshop CC 2015 <br>
-Animação: Photoshop CC 2015 (frames animados via código) <br>
-Estilo: PixelArt <br>
-Controle de Versão: Git (BitBucket) + Sourcetree + DropBox <br>
-Técnica para Gestão: Scrum + Trello</p>
-
-<p><strong>Pontos Negativos</strong></p>
-
-<p>Aqui é aonde moram os perigos de qualquer projeto. Vamos dividir por partes:</p>
-
-<p><strong>1 – Procure pessoas que realmente estão motivadas</strong></p>
-
-<p>É muito fácil ouvir “estou contigo”, “contigo comigo para o que der e vier” e coisas do gênero quando se está em um mercado tão variável e tão lucrativo como o de game design. Porém, quando é hora de arregaçar às mangas e trabalhar de verdade pouco percebe-se de tal entrega por parte de alguns. Provavelmente o principal motivo disto foi a não identificação com o projeto ou com a área do projeto. É como pensar na Blizzard, imagine que eu como programador fosse trabalhar na área de rigging ou modelagem, além de ser um desastre para companhia provavelmente seria um ponto de desmotivação para mim. Certifique-se de que quem vai entrar no projeto com você realmente quer fazer e está disposto a quase tudo para ver o release do game oficial acontecer. 1 Erro na conta do projeto!</p>
-
-<p><strong>2 – Certifique-se que todos estão na área correta</strong></p>
-
-<p>No final do semestre 2 membros do grupo (éramos 4) saíram do projeto, mas apenas no final foi deixado claro que ambos não estavam na área que queriam, a saber desenho (pixel art).</p>
-
-<p>Lembro-me bem do primeiro dia quando sentamos juntos e estabelecemos o que cada um faria, ou seja, 2 programadores e 2 designers, todavia recebemos bastante elogio na parte de código (não por sermos revolucionários, mas por termos produzido muito em pouco tempo), mas na parte visual não recebemos honrarias. Antes de começar qualquer projeto estripe todos os componentes para saber se realmente é aquela área que ele atuará que será sua “paixão no projeto”. Mais 1 Erro na conta do projeto!</p>
-
-<p><strong>3 – Motive o tempo todo, mas tenha parcimônia em poupar exclusões</strong></p>
-
-<p>Esse é um ponto grave de qualquer projeto que se não houver cautela ou falta de pulso seu projeto afunda! Veja bem, imagine o caso aonde uma pessoa não está produzindo (produzir != volume de coisas entregues, na verdade é qualidade) o proposto por ela mesma na semana/dia, se a resposta é NÃO avalie TODAS as coisas do ambiente ao qual ela faz parte (saúde dela/de familiares, emprego ameaçado, relacionamento acabado e etc), se realmente há algo grave ocorrendo respeite-a, mas se não há nada grave/desmotivador fora do projeto ocorrendo e o integrante não cumpre os backlogs propostos por ele mesmo está na hora de reavaliar o componente e se através de reuniões/diálogos privados e outras coisas não houver desprendimento mande um kick e assuma a função, é melhor fazer o seu melhor a não fazer NADA (mesmo que você não seja bom naquela área). Por causa desta falha de tolerar demais tivemos severos problemas com o cronograma assim como resultado negativo, 2 kicks. +1 Erro na conta do projeto!</p>
-
-<p><strong>4 – Tenha todos componentes com capacidade ou motivação extrema em sua área</strong></p>
-
-<p>Esse ponto é importante, pense comigo, você não vai achar o programador do Diablo 3 disponível para um projeto indie, vai? Claro que não, mas também não é aceitável um cara que ainda está estudando como se comenta múltiplas linhas em C# na Unity fazer parte de um projeto como programador (pelo menos com tempo de entrega cravado e não mutável). A coisa gira em torno disto, procure pessoas que conhecem do assunto (não precisa ser expert) e se tal pessoa não puder cumprir algo complexo na área dela dê tempo, uma pessoa motivada produz muito (e o bom é que ocorre um aprendizado forte). Colocar pessoas porque são “amigos, chegados, parceirões”  é FURADA, corra!  +1 Erro na conta do projeto!</p>
-
-<p><strong>Pontos bem positivos</strong></p>
-
-<p><strong>1 -  O verdadeiro líder</strong></p>
-
-<p>Como um mero aprendiz de liderança fui colocado como cabeça do projeto e isto me colocou uma responsabilidade de 1 tonelada nas costas. Como programador do projeto (também) decidi que a melhor forma de cobrar era fazer, ou seja, programar o máximo de linhas possíveis no menor tempo possível para poder mostrar um “olha caras, minha parte fiz bacana por isso estou pedindo que façam as suas partes” com cabeça fria e tranquila. Isso se mostrou mais que positivo, percebi que gera frutos (para componentes interessados no projeto), todos se sentem devedores de “entregar coisas” no projeto ao verem 1 componente fazendo isto. Lembro-me de “competir” com o outro programador quando fazíamos algoritmos bem legais para sanar problemas e ficávamos zoando um do outro no projeto para ver que fazia algo mais bem elaborado e isso gerou mais qualidade no projeto (perdi na maior parte das vezes  kkkkkkk)...</p>
-
-<p><strong>2 – Redescobrindo seus limites</strong></p>
-
-<p>Uma das coisas mais legais que ocorreram foi chegar além do meu limite físico. Lembro-me que para cumprir um backlog precisei varar 3 dias e meu corpo já não aguentava mais e o new metal + cafeína + energético sustentaram juntamente com a motivação de maneira louvável os meus sentimentos e persistência. Uma das coisas mais legais que você descobre em um projeto com cronograma a ser seguido é que seus limites podem ser rompidos e positivamente ampliados. Cheguei a adoecer em detrimento disto, mas valeu a pena, ganhei o respeito de alguns da sala e da universidade que tomaram conhecimento do esforço dos programadores envolvidos no projeto.</p>
-
-<p><strong>3 – Achar motivação aonde não tem</strong></p>
-
-<p>Se não há dinheiro em jogo (projeto acadêmico), como fazer algo dando o melhor de si? Aí foi o bacana da história, pensar em superar a si mesmo e competir consigo mesmo tornam esse ponto uma resposta clara, Ultrapasse VOCÊ MESMO! Pise em você mesmo! Humilhe você mesmo por resultados melhores e você mesmo terá um crescimento forte!</p>
-
-<p><strong>4 – Quem está na chuva é para se molhar!</strong></p>
-
-<p>Quando houveram os kicks em detrimento do desinteresse/descumprimento de “Brothers” pensamos (os 2 devs): O que iremos fazer sem designers? Como vamos codar e desenhar? E a resposta foi: Vamos romper nossos limites, se for necessário não dormiremos mais! Temos data certa para encerrar este sofrimento ← Esse ponto é o legal porque aqui abre o leque para se romper limites, tenho até o momento os psds com históricos de edições pixel a pixel assim como o outro programador, aonde superamos a nós mesmos! Supere a si mesmo e se houver algum acomodado tome a frente, não deixe o barco afundar porque não há gente que leva a sério seu trabalho ou simplesmente pulou do barco, META A MÃO E FAÇA!</p>
-
-<p><strong>Considerações finais</strong></p>
-
-<p>Integrantes no início: 4 (2 devs/2 designers), <br>
-Integrantes no fim: 2 (2 devs), <br>
-Cronograma e Conclusão estimada: 5 meses, <br>
-Conclusão do projeto: 8 meses, <br>
-Rendimento estimado da matéria: 100%, <br>
-Rendimento alcançado na matéria: 100%.</p>
-
-<p><strong>Agradecimentos</strong></p>
-
-<p>Quero agradecer ao portal gamedeveloper.com.br por ceder este espaço, é uma honra estar aqui postando meu primeiro game oficial e espero repetir este processo de post-mortem mais vezes, será mais que uma honra para mim. Obrigado, Bruno, você é Show!</p>
-
-<p>Quero também agradecer a Deus que em 10 dias me possibilitou o aprendizado de um framework tão formidável como o Starling.</p>]]></content:encoded></item></channel></rss>
+<p>Esta foi a parte 2! Na próxima e, provavelmente, última parte vou comentar sobre melhores práticas relacionadas à programação na Unity em C#. O foco não será a linguagem de programação, mas sim sobre a utilização dos recursos de script engine. Qualquer dúvida ou sugestão deixe seu comentário abaixo!</p>]]></content:encoded></item></channel></rss>
