@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=072fce9a09">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=a61512c0ce">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://gamedeveloper.com.br/pong-html5-javascript/">
@@ -23,7 +23,7 @@
     <meta property="og:description" content="Esta é mais uma série de posts nova no blog para ser um complemento da “Como ser um programador de jogos”. Lá eu escrevo sobre vários aspectos, muitos teóricos, sobre a formação e aprendizagem para se tornar um programador de...">
     <meta property="og:url" content="http://gamedeveloper.com.br/pong-html5-javascript/">
     <meta property="article:published_time" content="2013-08-21T10:18:50.000Z">
-    <meta property="article:modified_time" content="2016-02-16T15:04:55.208Z">
+    <meta property="article:modified_time" content="2016-06-23T03:31:18.997Z">
     <meta property="article:tag" content="programação">
     
     <meta name="twitter:card" content="summary">
@@ -47,7 +47,7 @@
     "headline": "Programando PONG com HTML5 e Javascript",
     "url": "http://gamedeveloper.com.br/pong-html5-javascript/",
     "datePublished": "2013-08-21T10:18:50.000Z",
-    "dateModified": "2016-02-16T15:04:55.208Z",
+    "dateModified": "2016-06-23T03:31:18.997Z",
     "keywords": "programação",
     "description": "Esta é mais uma série de posts nova no blog para ser um complemento da “Como ser um programador de jogos”. Lá eu escrevo sobre vários aspectos, muitos teóricos, sobre a formação e aprendizagem para se tornar um programador de..."
 }
@@ -149,13 +149,18 @@
 
 <p>A lógica do PONG é bem simples, e será sempre parecida em todos os posts desta série, sendo a única diferença a tecnologia utilizada. Outro detalhe importante neste post é que não existem imagens para os jogadores e a bolinha, tudo foi desenhado no próprio código Javascript utilizando recursos do canvas do HTML5, como demonstrado abaixo.</p>
 
-<p>// Jogador e Oponente context.fillRect(jogadorPosX, jogadorPosY, barraWidth, barraHeight); context.fillRect(oponentePosX, oponentePosY, barraWidth, barraHeight); // Bola context.beginPath(); context.arc(bolaPosX, bolaPosY, bolaDiametro, 0, Math.PI * 2, true); context.closePath(); context.fill();</p>
+<p><code>// Jogador e Oponente 
+context.fillRect(jogadorPosX, jogadorPosY, barraWidth, barraHeight); context.fillRect(oponentePosX, oponentePosY, barraWidth, barraHeight); <br>
+// Bola 
+context.beginPath(); <br>
+context.arc(bolaPosX, bolaPosY, bolaDiametro, 0, Math.PI * 2, true); context.closePath(); <br>
+context.fill();</code></p>
 
 <p>Por fim, temos mais pedaços de código responsáveis por exibir o placar, desenhar as linhas e os jogadores, contar a pontuação (basicamente é só verificar se a posição da bolinha está fora do canvas), entre outros detalhes que estão comentados no código completo no link abaixo.</p>
 
-<h3 id="cliqueaquiparabaixarocdigocompletohttpsgithubcomcicancigamehtml5pongpong"><a href="https://github.com/cicanci/game-html5-pong" title="PONG">Clique aqui para baixar o código completo!</a></h3>
+<p><a href="https://github.com/GameDevBlog/game-html5-pong" title="PONG">Clique aqui para baixar o código completo!</a></p>
 
-<h1 id="concluso">Conclusão</h1>
+<p>Conclusão</p>
 
 <p>Pode parecer que a única novidade é a marcação <canvas>, mas por trás disso o HTML5 implementa muitas melhorias de desempenho e gráficas, além de definir melhor o padrão para desenvolvimento web. Existem bibliotecas que podem reduzir muito o código aqui mostrado, mas a ideia era mostrar como fazer apensa utilizando o que já está disponível por padrão nos navegadores.</canvas></p>
 
@@ -260,7 +265,7 @@
 
 </script>
 
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=072fce9a09"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=072fce9a09"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=a61512c0ce"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=a61512c0ce"></script>
 
 </body>
