@@ -1,0 +1,245 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Final Frontier: Playground e destruição</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=43ff628183">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Final Frontier: Playground e destruição">
+    <meta property="og:description" content="Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o Final Frontier. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo...">
+    <meta property="og:url" content="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png">
+    <meta property="article:published_time" content="2016-07-06T16:40:00.000Z">
+    <meta property="article:modified_time" content="2016-07-07T16:41:13.861Z">
+    <meta property="article:tag" content="final frontier">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Final Frontier: Playground e destruição">
+    <meta name="twitter:description" content="Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o Final Frontier. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo...">
+    <meta name="twitter:url" content="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
+        "url": "http://gamedeveloper.com.br/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Final Frontier: Playground e destruição",
+    "url": "http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/",
+    "datePublished": "2016-07-06T16:40:00.000Z",
+    "dateModified": "2016-07-07T16:41:13.861Z",
+    "image": "http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png",
+    "keywords": "final frontier",
+    "description": "Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o Final Frontier. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://gamedeveloper.com.br/rss/">
+</head>
+<body class="post-template tag-final-frontier nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://gamedeveloper.com.br/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://gamedeveloper.com.br/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://gamedeveloper.com.br/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://gamedeveloper.com.br/tag/eventos">Eventos</a></li>
+            <li class="nav-final-frontier" role="presentation"><a href="http://gamedeveloper.com.br/tag/final-frontier">Final Frontier</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://gamedeveloper.com.br/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://gamedeveloper.com.br/tag/noticias">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://gamedeveloper.com.br/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://gamedeveloper.com.br/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://gamedeveloper.com.br/tag/programacao">Programação</a></li>
+            <li class="nav-meus-projetos" role="presentation"><a href="http://gamedeveloper.com.br/tag/meus-projetos">Meus Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://gamedeveloper.com.br/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://gamedeveloper.com.br/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://gamedeveloper.com.br/sobre">Sobre</a></li>
+            <li class="nav-pesquisar" role="presentation"><a href="https://cse.google.com/cse/publicurl?cx=018257166560141088195:qy3yqlngyms">Pesquisar</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../content/images/2016/07/ff-prototype-2.png)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://gamedeveloper.com.br"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-final-frontier">
+
+        <header class="post-header">
+            <h1 class="post-title">Final Frontier: Playground e destruição</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-07-06">06 July 2016</time>  on <a href="../tag/final-frontier/">final frontier</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o <a href="http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/">Final Frontier</a>. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. </p>
+
+<p>O jogo está em desenvolvimento publicamente no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, então dependendo de quando você ler este post pode ser que muita coisa tenha mudado. Mesmo assim, as dicas aqui podem ser aplicadas em seu projeto. </p>
+
+<p><strong>Como brincar no playground</strong></p>
+
+<p>Como disse no post anterior, o <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">playground</a> não é um <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">protótipo</a>. O playground é usado para experimentar ideias, enquanto o protótipo é usado para validar o gameplay. Por isso, existem algumas boas práticas que eu gosto de seguir aqui.</p>
+
+<p>A primeira dica é deixar bem claro o que pertence ao playground no projeto. Como o playground pode fazer parte do projeto de um protótipo ou da versão final, é comum utilizar scripts e assets de test ou finais no playground. No meu caso eu estou usando este playground antes de iniciar o desenvolvimento do protótipo, então decidi separar prefabs e scripts em uma pasta "Playground". </p>
+
+<p><img src="../content/images/2016/07/project-organization.png" alt=""></p>
+
+<p>Os scripts estão dentro de um namespace chamado "Playground", e quando usados exibem o log de warning abaixo. Este é uma dica que aprendi recentemente lendo a <a href="http://gamedeveloper.com.br/dicas-de-john-romero/">entrevista do John Romero</a>, onde ele fala que é sempre bom exibir na tela o que está acontecendo, principalmente o que não é esperado. Como este projeto deve crescer e ter muitos scripts e prefabs, eu quero ter certeza de que algum prefab com script de playground será esquecido no jogo. </p>
+
+<p><img src="../content/images/2016/07/playground-warnings.png" alt=""></p>
+
+<p>É sempre bom criar opções para debug visual enquanto o projeto está rodando e aproveitando os recursos do editor da Unity. Na imagem abaixo eu criei um <code>Boolean</code> chamado <code>cameraFollow</code> que pode ser habilitado durante a execução para fazer a câmera do jogo deixar de seguir a nave. Eu não coloquei o objeto da câmera dentro da nave para que durante sua movimentação não dê a impressão ser "dura". Isso vai fazer mais sentido quando implementar o controle completo da nave.</p>
+
+<p><img src="../content/images/2016/07/spaceship-script.png" alt=""></p>
+
+<p><strong>Destruindo objetos 3D</strong></p>
+
+<p>Destruição de objetos e cenário é algo que sempre quis implementar mas nunca tive uma oportunidade. Pode parecer algo muito complicado mas na verdade é simples de entender a idéia por trás. Basicamente você tem dois modelos: um normal e um "destruído", e quando o objeto é destruído você substitui pelo modelo destruído e aplica alguma física nos destroços se necessário.</p>
+
+<p><img src="../content/images/2016/07/blender-block.png" alt=""></p>
+
+<p>Como eu quero utilizar apenas ferramentas e assets gratuitos neste projeto, escolhi utilizar o blender para fazer um moledo de um cubo inteiro e um cubo destruído. O video abaixo ensina como fazer isto no blender e como adicionar a física necessária na Unity, mas basicamente você precisa aplicar <code>Cell Fracture</code> com <code>Noise</code> no modelo e importar na Unity adicionando um <code>Mesh Collider</code> em cada pedaço.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6FPAZfn2HBdOu-JGSZ39vS" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Próximos passos</strong></p>
+
+<p>Vou tentar escrever um post sobre este projeto a cada duas semanas. Como costumo publicar um post por semana vou intercalar posts sobre o andamento do projeto com o conteúdo do blog, assim consigo falar do projeto e ainda mostrar técnicas e dicas que estou usando em seu desenvolvimento. Através desta <a href="http://gamedeveloper.com.br/tag/final-frontier">tag</a> você poderá ver todos os posts sobre o projeto.</p>
+
+<p>Fique a vontade para baixar o projeto no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e comentar aqui no post suas opiniões e sugestões. Para o próximo post pretendo implementar o controle da nave, spawn de asteroides pelo caminho e mais alguns detalhes no playground. Embora demore duas semanas para eu publicar o próximo post, você pode acompanhar meu trabalho no jogo pelo GitHub, pois sempre que possível vou trabalhar neste projeto durante a semana.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Final%20Frontier%3A%20Playground%20e%20destrui%C3%A7%C3%A3o&amp;url=http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev " style="background-image: url(../content/images/2016/06/capa-livros.jpg)" href="../livros-gamedev/">
+        <section class="post">
+            <h2>Livros para desenvolver jogos - atualizado!</h2>
+            <p>Fazem quase 7 anos que escrevi este post com uma lista de livros para desenvolvimento de jogos. Naquela época…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://gamedeveloper.com.br">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5271840-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=43ff628183"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=43ff628183"></script>
+
+</body>
