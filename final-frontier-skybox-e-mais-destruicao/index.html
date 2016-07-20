@@ -1,0 +1,251 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Final Frontier: Skybox e mais destruição</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=d9b5bf3b96">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+    <link rel="canonical" href="http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Game Developer">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Final Frontier: Skybox e mais destruição">
+    <meta property="og:description" content="No post anterior sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox...">
+    <meta property="og:url" content="http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/">
+    <meta property="og:image" content="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg">
+    <meta property="article:published_time" content="2016-07-20T03:01:00.000Z">
+    <meta property="article:modified_time" content="2016-07-20T03:05:41.712Z">
+    <meta property="article:tag" content="final frontier">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Final Frontier: Skybox e mais destruição">
+    <meta name="twitter:description" content="No post anterior sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox...">
+    <meta name="twitter:url" content="http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/">
+    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "publisher": "Game Developer",
+    "author": {
+        "@type": "Person",
+        "name": "Bruno Cicanci",
+        "image": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
+        "url": "http://gamedeveloper.com.br/author/bruno",
+        "sameAs": "http://cicanci.com",
+        "description": null
+    },
+    "headline": "Final Frontier: Skybox e mais destruição",
+    "url": "http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/",
+    "datePublished": "2016-07-20T03:01:00.000Z",
+    "dateModified": "2016-07-20T03:05:41.712Z",
+    "image": "http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg",
+    "keywords": "final frontier",
+    "description": "No post anterior sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox..."
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://gamedeveloper.com.br/rss/">
+</head>
+<body class="post-template tag-final-frontier nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://gamedeveloper.com.br/">Home</a></li>
+            <li class="nav-como-comear" role="presentation"><a href="http://gamedeveloper.com.br/tag/como-programar-jogos">Como Começar</a></li>
+            <li class="nav-entrevistas" role="presentation"><a href="http://gamedeveloper.com.br/tag/entrevistas">Entrevistas</a></li>
+            <li class="nav-eventos" role="presentation"><a href="http://gamedeveloper.com.br/tag/eventos">Eventos</a></li>
+            <li class="nav-final-frontier" role="presentation"><a href="http://gamedeveloper.com.br/tag/final-frontier">Final Frontier</a></li>
+            <li class="nav-game-design" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-design">Game Design</a></li>
+            <li class="nav-game-dev" role="presentation"><a href="http://gamedeveloper.com.br/tag/game-dev">Game Dev</a></li>
+            <li class="nav-livros" role="presentation"><a href="http://gamedeveloper.com.br/tag/livros">Livros</a></li>
+            <li class="nav-notcias" role="presentation"><a href="http://gamedeveloper.com.br/tag/noticias">Notícias</a></li>
+            <li class="nav-palestras" role="presentation"><a href="http://gamedeveloper.com.br/tag/palestras">Palestras</a></li>
+            <li class="nav-postmortems" role="presentation"><a href="http://gamedeveloper.com.br/tag/postmortem">Postmortems</a></li>
+            <li class="nav-programao" role="presentation"><a href="http://gamedeveloper.com.br/tag/programacao">Programação</a></li>
+            <li class="nav-meus-projetos" role="presentation"><a href="http://gamedeveloper.com.br/tag/meus-projetos">Meus Projetos</a></li>
+            <li class="nav-contato" role="presentation"><a href="http://gamedeveloper.com.br/contato">Contato</a></li>
+            <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
+            <li class="nav-parceiros" role="presentation"><a href="http://gamedeveloper.com.br/parceiros">Parceiros</a></li>
+            <li class="nav-sobre" role="presentation"><a href="http://gamedeveloper.com.br/sobre">Sobre</a></li>
+            <li class="nav-pesquisar" role="presentation"><a href="https://cse.google.com/cse/publicurl?cx=018257166560141088195:qy3yqlngyms">Pesquisar</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head " style="background-image: url(../content/images/2016/07/ff-capa-3.jpg)">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="http://gamedeveloper.com.br"><img src="../content/images/2016/02/icone.png" alt="Game Developer"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post tag-final-frontier">
+
+        <header class="post-header">
+            <h1 class="post-title">Final Frontier: Skybox e mais destruição</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2016-07-20">20 July 2016</time>  on <a href="../tag/final-frontier/">final frontier</a>
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>No <a href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">post anterior</a> sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior, além de outros detalhes sobre a organização do projeto na Unity.</p>
+
+<p><strong>Ao infinito e além</strong></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Skybox_(video_games)">Skybox</a> é o nome da textura que fica no "fundo" do cenário renderizado pela câmera principal. O skybox padrão da Unity é um céu azul e um "chão" marrom no horizonte e, além de eu achar feio, este skybox padrão não combinava com meu jogo. Então, fui na <a href="https://www.assetstore.unity3d.com/">Asset Store</a> procurar uma opção gratuita e que fizesse mais sentido e foi então que encontrei o incrível <a href="https://www.assetstore.unity3d.com/en/#!/content/3392">Skybox Volume 2 (Nebula)</a>!</p>
+
+<p><img src="../content/images/2016/07/ff-skybox-1.jpg" alt=""></p>
+
+<p>Esta coleção de skyboxes possui 7 opções diferentes, todas bem interessantes e muito bem detalhadas. Por enquanto vou utilizar o Stars01 (imagem acima), mas vou colocar alguns exemplos abaixo de outras opções que eu gostei. Apesar de todas opções serem bem legais é bom manter no projeto apenas as que serão utilizadas por que esta coleção tem 80MB. Por enquanto vou deixar todas, mas ao longo do projeto provavelmente vou remover as que não irei utilizar. </p>
+
+<p><img src="../content/images/2016/07/ff-skybox-2.jpg" alt=""></p>
+
+<p><img src="../content/images/2016/07/ff-skybox-3.jpg" alt=""></p>
+
+<p><strong>Adicionando mais destruição</strong></p>
+
+<p>No post anterior eu tinha colocado apenas uma caixa que, quando o tiro colide com ela, o modelo 3D é substituído pela versão "destruída" e a física é aplicada nela para que os pedaços voem pelo ar. Desta vez decidi fazer uma parede de caixas que explode as demais quando os destroços de uma voarem após a colisão com o tiro, e o resultado fica conforme a sequencia abaixo.</p>
+
+<p><img src="../content/images/2016/07/ff-antes-explosao.jpg" alt=""></p>
+
+<p><img src="../content/images/2016/07/ff-explosao.jpg" alt=""></p>
+
+<p><img src="../content/images/2016/07/ff-capa-3.jpg" alt=""></p>
+
+<p>Muitos modelos 3D voando pelo cenário com física para colisão podem fazer o jogo ficar pesado. Não é o caso para o meu jogo ainda, mas quando mais objetos estiverem no cenário, mais modelos serão desenhados na tela, o que pode ser um problema para alguns aparelhos com hardware limitado. É muito cedo para se preocupar em otimizar isso, pois ainda nem sei como o jogo será, mas fiz algumas alterações para minimizar este problema. </p>
+
+<p>O modelo do tiro e dos da caixa destruída são removidos da cena pelo método da <a href="https://docs.unity3d.com/ScriptReference/Object.Destroy.html">Unity</a> chamado <code>Destroy(gameObject, timer)</code>, onde o <code>timer</code> é o tempo para que o objeto seja destruído após sua criação. Nada demais, mas já ajuda a manter a memória livre de objetos desnecessários.</p>
+
+<p><strong>Organizando a casa</strong></p>
+
+<p>Uma das alterações que fiz, seguindo a sugestão do leitor Felipe, foi colocar os assets baixados em um diretório separado ao invés de deixá-los jogados no projeto. Não tinha feito isso antes por ter apenas o <a href="https://www.assetstore.unity3d.com/en/#!/content/4392">Astra Starship Fleet Package</a>  no projeto, mas agora com o Skybox Volume 2 (Nebula) já faz mais sentido começar a organizar melhor. Ambos assets estão na pasta <code>ThirdParty Assets</code>, como mostra a imagem abaixo. Geralmente utilizo este nome ou algo parecido para esta pasta.</p>
+
+<p><img src="../content/images/2016/07/ff-organizacao.jpg" alt=""></p>
+
+<p>Outra alteração que fiz foi criar um novo prefab chamado <code>TestAsteroidGroup</code>, e adicionei 9 caixas dentro dele para formar a parede. É sempre bom criar prefabs para agrupar objetos, mesmo sendo outros prefabs. Outro detalhe visto na imagem acima é que estou colocando prefabs e scripts em diretórios com o mesmo nome da minha cena <code>Playground</code>. Estou fazendo isto por que quero manter tudo usado no playground separado do protótipo, mas sem a necessidade de criar um novo projeto.</p>
+
+<p><strong>Próximos passos</strong></p>
+
+<p>Eu mencionei no post passado mas acabei não tendo tempo de trabalhar na movimentação da nave, pelo menos não na implementação. Pesquisei algumas opções de controle e câmera, e no próximo post vou falar mais sobre isto. Se eu tiver tempo também quero começar a fazer um sistema simples de spawn para os meteoros (e talvez até achar assets para substituir as caixas). </p>
+
+<p>O andamento do projeto pode ser conferido no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, e <a href="https://github.com/cicanci/game-unity-ff/tree/8cd709c9bea93b397767636e421b7d2a4c1afce8">neste link</a> você pode ver as alterações no projeto até este post (também sugestão do leitor Felipe). Todos posts desta série sobre meu projeto podem ser vistos na tag <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a>, e como sempre qualquer sugestão ou opinião é bem vinda!</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="../author/bruno/" style="background-image: url(../content/images/2016/02/cicanci.jpg)"><span class="hidden">Bruno Cicanci's Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="../author/bruno/">Bruno Cicanci</a></h4>
+
+                    <p>Read <a href="../author/bruno/">more posts</a> by this author.</p>
+                <div class="author-meta">
+                    
+                    <span class="author-link icon-link"><a href="http://cicanci.com">http://cicanci.com</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Final%20Frontier%3A%20Skybox%20e%20mais%20destrui%C3%A7%C3%A3o&amp;url=http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story prev " style="background-image: url(../content/images/2016/07/livro-minecraft-capa.jpg)" href="../programar-com-minecraft/">
+        <section class="post">
+            <h2>Aprenda a Programar com Minecraft</h2>
+            <p>Minecraft conseguiu criar uma cultura e se tornou muito mais do que apenas um jogo, hoje é usado até…</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://gamedeveloper.com.br">Game Developer</a> © 2016</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-5271840-6', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=d9b5bf3b96"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=d9b5bf3b96"></script>
+
+</body>
