@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 16 Aug 2016 18:59:39 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Postmortem: Geometry World]]></title><description><![CDATA[<p>Eu sempre recebo e-mails pedindo para divulgar jogos, porém isto é algo que decidi desde o início do blog não fazer. Eu acho importante divulgar, mas fazer um post falando de um jogo não é o tipo de conteúdo que eu quero para o blog, por isso sempre respondo falando</p>]]></description><link>http://gamedeveloper.com.br/postmortem/</link><guid isPermaLink="false">f52cc162-4f8f-44ca-b3dd-f811d452b895</guid><category><![CDATA[game dev]]></category><category><![CDATA[postmortem]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Tue, 16 Aug 2016 14:41:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso.jpg" alt="Postmortem: Geometry World"><p>Eu sempre recebo e-mails pedindo para divulgar jogos, porém isto é algo que decidi desde o início do blog não fazer. Eu acho importante divulgar, mas fazer um post falando de um jogo não é o tipo de conteúdo que eu quero para o blog, por isso sempre respondo falando que não faço reviews ou divulgação de jogos, mas sempre ofereço uma oportunidade para divulgação do jogo através de um postmortem. Desta forma o desenvolver ganha sua divulgação, e os leitores deste blog ganham uma história sobre o desenvolvimento de um jogo.</p>
+
+<p>Isto é importante por que é possível aprender muito apenas lendo o que outras pessoas fizeram e deu certo, e também o que deu errado. Já vi muita gente falando que aprendeu com os <a href="http://gamedeveloper.com.br/tag/postmortem/">postmortems publicados</a> aqui, por isso fico feliz em sempre ter este espaço para todo desenvolver que tem seu jogo publicado (esta é a única regra). Não importa se o texto é longo e detalhado, ou curto e objetivo, sempre podemos aprender a partir da experiência dos outros.</p>
+
+<p>Desta vez vamos ver como foi o desenvolvimento do jogo <a href="https://itunes.apple.com/us/app/geometry-world/id1130806535?l=pt&amp;ls=1&amp;mt=8">Geometry World</a> do Eder Gabriel. Muito obrigado por enviar o texto abaixo e parabéns pelo jogo publicado!</p>
+
+<hr>
+
+<p><strong>Geometry World</strong></p>
+
+<p>Olá! Sou o Eder, designer do Geometry World. Abaixo a descrição dele, compartilhando alguns pontos que percebi durante a criação do game.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso-1.jpg" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Descrição do game</strong></p>
+
+<p>Geometry World é um puzzle em que o jogador tem como objetivo colocar a caixa em um determinado lugar do cenário. O jogo tem cinquenta níveis divididos em cinco mundos com características particulares, por exemplo, o segundo mundo tem as colunas deslizantes. <br>
+Apenas posicionando a caixa na posição determinada, o jogador desbloqueia os primeiros quarenta níveis do jogo. O último mundo é desbloqueável  coletando as medalhas de conquista disponível de acordo com o objetivo dos 40 níveis anteriores.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-gameplay-w1.png" alt="Postmortem: Geometry World"></p>
+
+<p>Para controlar a caixa, o jogador deve segurar na tela e direcioná-la para a direção em que ele queira. Os principais desafios são conseguir todas as conquistas dos cinquenta níveis e se acostumar com a física do jogo.</p>
+
+<p>Por eu estar mais preocupado com os aspectos funcionais do jogo, criei o design dele mais minimalista para diminuir o tempo de criação do jogo. Essa foi uma dúvida que eu fiquei por um tempo, de como alinhar uma arte funcional para o game, sem gastar muito tempo. Um requisito meu nesse projeto foi o de não usar palavras nas ações do jogo, apenas ícones.</p>
+
+<p>Conforme fui mostrando para os amigos mais próximos, reparei em alguns pontos que não ficaram claros o suficiente e provavelmente, eu crie em novas formas de apresentar isso nas futuras versões. Esses mesmos testes também me fizeram a dar um maior valor a como ensinar as pessoas a jogar nas telas iniciais.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-gameplay-w3.png" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Pontos Negativos</strong></p>
+
+<p>Tive um atraso para concluir o game porque num teste com o iPod Touch, alguns cenários não estavam com a resolução ideal, porque o jogador não conseguia fazer o movimento correto para alcançar um determinado lugar.</p>
+
+<p>Por se tratar de um jogo mais longo, pude aplicar alguns conceitos de level design. Mas sempre tem alguns pontos que ficam pendentes, por eu não ter ninguém para testar e discutir quando eu estava definindo como seriam os níveis.</p>
+
+<p>Tem um erro que não descobri o que faz com que ele não reconheça a posição do jogador quando ele posiciona no lugar correto. Ele é bem inconstante, nas próximas versões, vou ter que inventar uma outra forma de validação, porque quando é reiniciado o app e concluindo a mesma fase, o erro desaparece.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-menu-w3.png" alt="Postmortem: Geometry World"></p>
+
+<p>Uma outra dificuldade foi colocar e testar o aplicativo na AppStore, por ser bem rígido o controle deles são necessários diversos certificados no iMac e no iTunes Connect que fui descobrindo e sempre acabava atrasando a publicação.</p>
+
+<p>Tenho pesquisado algumas formas de propaganda, mas o mais difícil é convencer alguém que não me conhece a pagar pelo jogo e criei um flyer para divulgar por aí.</p>
+
+<p><strong>Pontos Positivos</strong></p>
+
+<p>Descobri o Corona SDK em uma pesquisa na faculdade, por ter uma curva de aprendizado menor em relação aos outros, acabei utilizando ele. Depois de alguns testes e a criação do meu primeiro game mobile, o Moving Kart, percebi que era possível criar algo mais complexo, que a comunidade do Corona é bem ativa e as minhas dúvidas sempre foram explicadas de algum jeito. Fiquei surpreso com o tamanho final do meu app para um jogo de 50 níveis (menos de 9MB).</p>
+
+<p>Sempre tive o interesse em criar um aplicativo na AppStore para tentar deixar o meu portfolio mais interessante e consegui depois de 10 meses de produção e alguns meses que ficou congelado o projeto. </p>
+
+<p>E o aprendizado que ganho com isso é enorme, principalmente, por ter que planejar todas as possibilidades do game, já que fiz sozinho, esse projeto me ajudou a ser mais analítico com qualquer sistema que eu crie no futuro.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-frente.jpg" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Links</strong></p>
+
+<p><a href="https://itunes.apple.com/us/app/geometry-world/id1130806535?l=pt&amp;ls=1&amp;mt=8">Download pela App Store</a></p>
+
+<p><a href="https://www.facebook.com/Geometryworld.game">Página no Facebook</a></p>]]></content:encoded></item><item><title><![CDATA[Melhores práticas para 2D na Unity - Parte 3]]></title><description><![CDATA[<p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores</p>]]></description><link>http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-3/</link><guid isPermaLink="false">78e0e4a9-782a-4774-a630-defc828b22cc</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 11 Aug 2016 02:19:47 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" alt="Melhores práticas para 2D na Unity - Parte 3"><p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores práticas de programação para jogos 2D na Unity.</p>
+
+<p>Apesar de ter o foco em 2D, boa parte do conteúdo deste post abrange jogos em 3D na Unity também. No site da Unity existe uma categoria de <a href="http://unity3d.com/pt/learn/tutorials/topics/best-practices">Melhores Práticas</a> excelente, falando de física, assets e UI. </p>
+
+<p><strong>O Update</strong></p>
+
+<p>Quando criamos um novo script na Unity, por padrão os métodos <code>Start()</code> e <code>Update()</code> são adicionados ao código. O maior problema é não dar atenção a este detalhe, pois muitos programadores deixam estes métodos mesmo vazios no script, e isto pode fazer diferença no desempenho do jogo dependendo da quantidade de scripts sendo usados.</p>
+
+<p>Internamente a Unity executa todos os <code>Update()</code> que encontra nos scripts ativos na cena do jogo, mesmo eles estando vazios. Este <a href="http://blogs.unity3d.com/2015/12/23/1k-update-calls">artigo</a> publicado no blog da Unity explica este problema em maiores detalhes. Se você não for utilizar o método, simplesmente remova do seu código. O <code>Start()</code> não faz muita diferença, mas o <code>Update()</code> pode reduzir o seu frame rate significativamente, principalmente em dispositivos móveis.</p>
+
+<p>Imagens e sprite sheets de jogos 2D podem ocupar mais espaço em disco e memória do que modelos 3D com textura, o que pode exigir um processamento extra do hardware que pode ser adquirido seguindo boas práticas como esta mencionada acima.</p>
+
+<p><strong>A Física</strong></p>
+
+<p>A Unity possui uma versão 2D para praticamente todo componente disponível no 3D, e mesmo sendo otimizado pode exigir bastante processamento do hardware se existirem muitos objetos na cena. Se eu não me engano, mesmo que o objeto não esteja sendo desenhado na tela, sua física continua ativa para verificações de colisão fora da tela. Se no seu jogo existem muitos objetos colidindo ao mesmo tempo em uma cena podemos desabilitar a física (ou mesmo o objeto inteiro) quando ele estiver fora da tela.</p>
+
+<p>Por exemplo, em um jogo de estratégia como StarCraft podemos "ligar" a física dos objetos quando as unidades do jogador estiverem em uma área próxima das unidades do imigo. Para evitar verificações em cada update (e poder ter o problema do tópico anterior), você pode deixar a física habilitada no líder do grupo, e fazer ele habilitar a física nos depois com um callback quando chegar na área do inimigo. É apenas uma ideia, provavelmente existe maneiras ainda melhores pra isso, mas o ponto é que muitos objetos com física ativada podem causar problemas de desempenho. </p>
+
+<p>A <a href="http://www.defold.com">Defold</a>, uma game engine desenvolvida pela King para jogos 2D, limita o número de objetos com colisão por nível. Tive este problema quando estava desenvolvendo o jogo <a href="http://gamejolt.com/games/metaforce/141821">Metaforce</a> para o <a href="http://gamedeveloper.com.br/ludum-dare-35/">Ludum Dare #35</a>, montei o mapa inteiro com colisão para o personagem não atravessar as paredes, mas o limite da engine (que eu não sabia) me fez mudar a maneira de verificar a colisão com o cenário.</p>
+
+<p><strong>O Loading</strong></p>
+
+<p>Isto depende muito do jogo, mas geralmente temos duas maneiras de carregar as imagens do cenário: tudo de uma vez ou aos poucos. A vantagem de carregar tudo de uma vez é que o jogo flui sem a necessidade de fazer o load de imagens do disco para a memória durante o jogo, mas a desvantagem é que em alguns hardwares isto pode fazer o jogo usar toda memória disponível e quebrar, ou pode ser que o loading seja muito longo em aparelhos com hardware fraco.</p>
+
+<p>Carregar aos poucos, ou <a href="https://en.wikipedia.org/wiki/Lazy_loading">Lazy Loading</a> como é conhecido, é você carregar as imagens apenas quando for necessário. Por exemplo, você não precisa carregar a arte do chefão sem saber se o jogador vai chegar no final da fase para enfrentá-lo, ou carregar todas as imagens de achievements do jogo, mesmo sendo difícil de conseguir todos na mesma fase. A vantagem disso é que você usa apenas a memória necessária para carregar as imagens que precisa no momento, e assim o loading inicial fica mais rápido e com um risco menor de quebrar o jogo em aparelhos com hardware fraco. A desvantagem é que você vai precisar escrever o código para gerenciar o loading de recursos do jogo para que sejam carregados apenas quando necessários.</p>
+
+<p>Ah, e não se esqueça de ter uma tela de loading ou um feedback para que o jogar saiba o que está acontecendo. Isto é mais Game Design do que Programação, mas vale a pena sempre pensar neste detalhes durante o desenvolvimento.</p>
+
+<p>Esta foi a terceira e última parte sobre melhores práticas para fazer um jogo em 2D na Unity. A ideia inicial era ter publicar estes posts em sequencia, porém demorei mais de 1 ano para publicá-los. Se você quiser saber mais sobre desenvolvimento de jogos com Unity acompanhe o desenvolvimento do meu jogo <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a>, estou escrevendo um post sobre o progresso do jogo a cada 2 semanas. </p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Câmera e controle]]></title><description><![CDATA[<p>No último <a href="http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/">post</a> deste série sobre o desenvolvimento do meu jogo <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a> falei sobre o novo skybox e melhorei a destruição da caixa que representa um asteroide. Desta vez trabalhei em melhorias para a câmera e o controle da nave, além de alterar novamente o skybox e adicionar um</p>]]></description><link>http://gamedeveloper.com.br/final-frontier-camera-e-controle/</link><guid isPermaLink="false">1b731dcd-9fa5-4f31-b55f-7356d55444bd</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 03 Aug 2016 15:36:40 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/capa-ff-camera-big.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/capa-ff-camera-big.jpg" alt="Final Frontier: Câmera e controle"><p>No último <a href="http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/">post</a> deste série sobre o desenvolvimento do meu jogo <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a> falei sobre o novo skybox e melhorei a destruição da caixa que representa um asteroide. Desta vez trabalhei em melhorias para a câmera e o controle da nave, além de alterar novamente o skybox e adicionar um planeta.</p>
+
+<p><strong>Um planeta na galáxia</strong></p>
+
+<p>Um skybox adiciona detalhes incríveis ao jogo, e muitas vezes o jogador não repara na arte que está acima de suas cabeças. O mapa da Lua no jogo <a href="https://www.destinythegame.com/">Destiny</a> tem um skybox incrível, com a Terra e a ISS destruída em destaque no céu. </p>
+
+<p>Eu decidi mudar o skybox para outra opção do mesmo asset pack, desta vez com uma névoa verde que adiciona mais detalhes. Também adicionei um novo asset pack gratuito chamado <a href="https://www.assetstore.unity3d.com/en/#!/content/38913">Vast Outer Space</a>, que contém modelos de planetas, asteroides e algumas partículas. Adicionei o planeta abaixo, ele parece próximo mas está bem longe e aumentei o modelo 1000 vezes. Também alterei o <code>Clipping Planes</code> da câmera, aumentando o <code>Far</code> para 10000, assim o planeta aparece ao fundo mesmo estando bem longe. </p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/planeta-novo.jpg" alt="Final Frontier: Câmera e controle"></p>
+
+<p><strong>Pilotando a nave</strong></p>
+
+<p>Até então o controle da nave era algo temporário, até mesmo para um quase protótipo. Decidi pesquisar como eu gostaria que o controle da minha nave fosse, e usei como referência alguns jogos que gostava de jogar no Nintendo 64 e Playstation 2. Estava em dúvida entre: <a href="https://www.youtube.com/watch?v=GhQp8le67Xo">Star Fox 64</a>, onde a a câmera fica fixa seguindo a nave; <a href="https://www.youtube.com/watch?v=V0zjmj4rf3U">Star Wars Rogue Squadron</a>, onde o jogador tem mais liberdade porém com variação de zoom na nave; Star Wars Starfighter (video abaixo), onde encontrei a melhor referência para o que eu quero fazer no Final Frontier.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/fv4e_vvwY6c" frameborder="0" allowfullscreen></iframe>
+
+<p>Eu poderia modificar o código que fiz para a movimentação da nave, adicionando ainda mais linhas de código, mas decidi pesquisar outras maneiras de controlar a nave. Mesmo sendo um código temporário, muitas linhas de código podem dificultar implementar novas features, portanto decidi melhorar esta parte do código. Usei como referência o video abaixo, que ensina a fazer um jogo simples de pilotar aviões.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/lCulq9J0Y9E" frameborder="0" allowfullscreen></iframe>
+
+<p>O resultado final, que foi uma mistura do que eu tinha feito com novas coisas do video acima, ficou bem melhor do que eu esperava. Além dos direcionais do teclado agora também é possível controlar usando um controle conectado ao computador, testei com o Xbox 360 Controller for Windows e o Steam Controller. Para deixar o tiro mais simples e reduzir uma verificação no código adicionei o botão <code>space</code> como um trigger para o botão <code>Fire1</code> no <code>Input Manager</code> (Edit > Project Settings > Input).</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/input-manager.jpg" alt="Final Frontier: Câmera e controle"></p>
+
+<p><strong>Câmera</strong></p>
+
+<p>Na versão anterior do controle da nave a câmera estava dentro do prefab da nave, o que dava a impressão de uma câmera dura seguindo a nave. Como alterei o controle, foi natural também adaptar a câmera para esta nova situação. Decidi tentar usar o <a href="https://docs.unity3d.com/ScriptReference/Transform.LookAt.html">LookAt</a> como é mostrado no video acima, mas não funcionou muito bem no meu caso, pois quando a nave dava um loop a câmera girava e ficava de cabeça para baixo.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/nave-erro-camera.jpg" alt="Final Frontier: Câmera e controle"></p>
+
+<p>Meu erro foi assumir que tudo do video acima funcionaria no meu caso, porém a câmera tem um comportamento diferente, então removi o <code>LookAt</code> e fiz a rotação da câmera ser a mesma da nave, o que ficou exatamente como eu queria. Ajustei a distância da câmera adicionando um offset no script, assim ela ficou um pouco mais afastada, além de dar um efeito legal ao rodar o jogo (a nave sai de trás da câmera e vai para o local do offset).</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/ff-camera.jpg" alt="Final Frontier: Câmera e controle"></p>
+
+<p><strong>Próximos passos</strong></p>
+
+<p>Agora que a movimentação da nave está melhor vou começar a trabalhar em uma mira na tela, para o jogador saber onde está atirando, e vou substituir a caixa branca por um modelo de asteroide. Provavelmente vou dar uma pesquisada em algum efeito de partícula para a nave e os tiros, substituindo as bolas brancas por algo que faça mais sentido ser atirado por uma nave no espaço.</p>
+
+<p>O andamento do projeto pode ser conferido no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e neste <a href="https://github.com/cicanci/game-unity-ff/tree/3e8ab71d0ae3410b50dac9e7873c48aa0e0e0b4a">link</a> você pode ver as alterações no projeto até este post. Todos os posts desta série sobre meu projeto podem ser vistos na tag <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a>, e como sempre qualquer sugestão ou opinião é bem vinda!</p>]]></content:encoded></item><item><title><![CDATA[Incentivos financeiros para desenvolver jogos no Brasil]]></title><description><![CDATA[<p>Este post foi uma sugestão do leitor Felipe, que inclusive me enviou boa parte do conteúdo abaixo. Ser um desenvolvedor independente não é fácil, principalmente quando se tem pouco ou nenhum recurso para investir. </p>
+
+<p>Até pouco tempo atrás a maneira mais comum para nós brasileiros conseguir investimento era ir atrás</p>]]></description><link>http://gamedeveloper.com.br/incentivos-financeiros-gamedev/</link><guid isPermaLink="false">87d551b1-6d9c-488e-8084-f384b3a8fe0d</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 27 Jul 2016 14:42:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/capa-investimento.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/capa-investimento.jpg" alt="Incentivos financeiros para desenvolver jogos no Brasil"><p>Este post foi uma sugestão do leitor Felipe, que inclusive me enviou boa parte do conteúdo abaixo. Ser um desenvolvedor independente não é fácil, principalmente quando se tem pouco ou nenhum recurso para investir. </p>
+
+<p>Até pouco tempo atrás a maneira mais comum para nós brasileiros conseguir investimento era ir atrás de publishers de fora e apresentar um jogo quase pronto, nada de idéias ou protótipos inacabados. E mesmo sendo possível conseguir investidores fora do país, ainda assim era necessário tirar dinheiro do próprio bolso para construir o jogo antes de ser apresentado, além dos custos de viajar para eventos e apresentar o jogo. </p>
+
+<p>Felizmente aos poucos isso tem mudado no Brasil, e agora temos algumas opções para ter o jogo financiado por programas do governo. Alguns estúdios brasileiros já se beneficiaram ou estão se beneficiando dos programados que vou comentar abaixo. Não sou especialista neste assunto, portanto o conteúdo abaixo foi escrito baseado nos links que recebi e mais o que pesquisei. A ideia deste post é mostrar as alternativas que temos no Brasil, e não entrar em discussões políticas.</p>
+
+<p><strong>Lei Roanet</strong></p>
+
+<p>Acredito que o primeiro programa do governo que passou a aceitar jogos foi a <a href="http://www.planalto.gov.br/ccivil_03/leis/L8313cons.htm">Lei Roanet</a> do Ministério da Cultura, que depois de muito custo começou a ver jogos como uma expressão artística e não como um brinquedo ou jogo de azar. O jogo <a href="http://toren-game.com/">Toren</a>, da Swordtales, conseguiu investimento através desta lei e foi <a href="http://br.ign.com/brasil/3789/interview/superproducao-brasileira-game-toren-e-lancado-apos-quatro-an">lançado ano passado</a> para PC e PS4. O vídeo abaixo explica como funciona este programa.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/7S8dAS9w-bk" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Editais da Prefeitura de São Paulo</strong></p>
+
+<p>A prefeitura de São Paulo tem <a href="https://spcine.wordpress.com/editais/investimento/">editais</a> voltado para investimento em produções audiovisuais, e jogos são aceitos. <a href="http://www.mynightjobgame.com/">My Night Job</a>, da Webcore Games, foi lançado este ano com <a href="http://overloadr.com.br/noticias/2015/08/contemplado-em-edital-da-prefeitura-de-sao-paulo-my-night-job-sera-lancado-para-ps4/">investimento obtido</a> através de um edital. <a href="http://www.pocket-trap.com/clash-of-carrots.html">Ninjin: Clash of Carrots</a>, da Pocket Trap, também <a href="http://overloadr.com.br/especiais/reportagens/2014/09/os-paulistas-da-pocket-trap-e-realizacao-de-um-sonho-levar-ninjin-2-tgs/">conseguiu investimento</a> pelo edital da prefeitura. </p>
+
+<p>Após o <a href="https://spcine.wordpress.com/2016/06/27/big-festival-traz-games-de-48-paises-ao-ccsp/">Big Festival</a>, o edital <a href="https://spcine.wordpress.com/2016/07/01/games-animacao-spcine-investe-em-conteudo-transmidia/">Batalha Animada</a> foi aberto e conta com R$100 mil para o desenvolvimento de games para dispositivos móveis. Mais R$100 mil são oferecidos por uma <a href="https://spcine.wordpress.com/2016/07/07/parceria-com-canada-investe-em-tv-game-web-e-vr/">parceria com o Canadá</a>. É claro que não é fácil conseguir o investimento através de um edital, mas existem algumas opções e vale a pena ficar de olho no site da <a href="https://spcine.wordpress.com">Spcine</a>.</p>
+
+<p><strong>INOVApps</strong></p>
+
+<p>O <a href="http://www.mc.gov.br/concurso-inovapps">INOVApps</a> é um concurso do Ministério das Comunicações que tem como objetivo apoiar o desenvolvimento de aplicativos para dispositivos móveis. É um pouco difícil encaixar um jogo neste concurso, pois ele requer que o projeto se encaixe em algumas categorias específicas, e a mais segura para jogos é Educação/Ensino. Não é um concurso difícil de participar e ganhar, pois não há apenas um projeto selecionado, mas precisa ter um bom material para ser submetido e se adequar ao edital do concurso.</p>
+
+<p>Parece que alguns jogos que ganharam este concurso ano passado tiveram seu financiamento suspenso devido a uma decisão judicial, mas este é o <a href="http://dropsdejogos.com.br/index.php/noticias/indie/item/1567-exclusivo-concurso-inovapps-e-alvo-de-decisao-judicial-e-suspende-pagamentos-a-desenvolvedores">único link</a> sobre o assunto.</p>
+
+<p><strong>BNDES</strong></p>
+
+<p>A <a href="http://www.aquiris.com.br/">Aquiris</a>, desenvolvedora do <a href="http://www.horizonchase.com/">Horizon Chase</a> que venceu o prêmio de <a href="http://br.ign.com/big-festival/30286/feature/horizon-chase-vence-premio-de-melhor-jogo-do-big-festival-20">melhor jogo</a> no Big Festival, foi a primeira empresa brasileira do setor de games a conseguir investimento do BNDES. Foram <a href="http://www.bndes.gov.br/SiteBNDES/bndes/bndes_pt/Institucional/Sala_de_Imprensa/Noticias/2016/Cultura/20160701_games.html">R$ 1,5 milhão financiados</a> para o plano de negócios da empresa. Eu acredito que este deve ser o financiamento mais difícil de conseguir, mas também é o que deve investir o maior valor em uma empresa.</p>
+
+<p><strong>Outras formas de investimento</strong></p>
+
+<p>Apesar de ser um concurso, o <a href="http://principal.bigfestival.com.br/2016/">Big Festival</a> possui um bom prêmio para os vencedores e, o que é mais importante na minha opinião, visibilidade internacional. Os vencedores saíram em portais de games no Brasil e no exterior, o que pode ajudar bastante a divulgar o jogo e talvez abrir novos investimentos para a empresa.</p>
+
+<p>Não tenho certeza, mas acho que para a maioria dos programas acima é necessário ter uma empresa aberta, por isso concursos são uma boa forma de conseguir dinheiro para investir em projetos.</p>
+
+<p>Se você conheço outros incentivos financeiros para desenvolver jogos no Brasil deixe um comentário abaixo que eu adiciono nesta lista.</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-337122470/stock-photo-young-man-using-a-laptop-building-online-business-making-dollar-bills-cash-falling-down-beginner.html?src=C-RF706VSch304ZcEvhH4A-1-6">Young man using a laptop</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Skybox e mais destruição]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">post anterior</a> sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior,</p>]]></description><link>http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/</link><guid isPermaLink="false">f240357d-be53-41a9-ab5a-0ad23b9f4a65</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 20 Jul 2016 03:01:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" alt="Final Frontier: Skybox e mais destruição"><p>No <a href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">post anterior</a> sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior, além de outros detalhes sobre a organização do projeto na Unity.</p>
+
+<p><strong>Ao infinito e além</strong></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Skybox_(video_games)">Skybox</a> é o nome da textura que fica no "fundo" do cenário renderizado pela câmera principal. O skybox padrão da Unity é um céu azul e um "chão" marrom no horizonte e, além de eu achar feio, este skybox padrão não combinava com meu jogo. Então, fui na <a href="https://www.assetstore.unity3d.com/">Asset Store</a> procurar uma opção gratuita e que fizesse mais sentido e foi então que encontrei o incrível <a href="https://www.assetstore.unity3d.com/en/#!/content/3392">Skybox Volume 2 (Nebula)</a>!</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-1.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p>Esta coleção de skyboxes possui 7 opções diferentes, todas bem interessantes e muito bem detalhadas. Por enquanto vou utilizar o Stars01 (imagem acima), mas vou colocar alguns exemplos abaixo de outras opções que eu gostei. Apesar de todas opções serem bem legais é bom manter no projeto apenas as que serão utilizadas por que esta coleção tem 80MB. Por enquanto vou deixar todas, mas ao longo do projeto provavelmente vou remover as que não irei utilizar. Existem outros assets no diretório <code>Standard Assets</code> que não estou usando e logo vou remover do projeto também.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-2.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-3.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p><strong>Adicionando mais destruição</strong></p>
+
+<p>No post anterior eu tinha colocado apenas uma caixa que, quando o tiro colide com ela, o modelo 3D é substituído pela versão "destruída" e a física é aplicada nela para que os pedaços voem pelo ar. Desta vez decidi fazer uma parede de caixas que explode as demais quando os destroços de uma voarem após a colisão com o tiro, e o resultado fica conforme a sequencia abaixo.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-antes-explosao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-explosao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p>Muitos modelos 3D voando pelo cenário com física para colisão podem fazer o jogo ficar pesado. Não é o caso para o meu jogo ainda, mas quando mais objetos estiverem no cenário, mais modelos serão desenhados na tela, o que pode ser um problema para alguns aparelhos com hardware limitado. É muito cedo para se preocupar em otimizar isso, pois ainda nem sei como o jogo será, mas fiz algumas alterações para minimizar este problema. </p>
+
+<p>O modelo do tiro e dos da caixa destruída são removidos da cena pelo método da <a href="https://docs.unity3d.com/ScriptReference/Object.Destroy.html">Unity</a> chamado <code>Destroy(gameObject, timer)</code>, onde o <code>timer</code> é o tempo para que o objeto seja destruído após sua criação. Nada demais, mas já ajuda a manter a memória livre de objetos desnecessários.</p>
+
+<p><strong>Organizando a casa</strong></p>
+
+<p>Uma das alterações que fiz, seguindo a sugestão do leitor Felipe, foi colocar os assets baixados em um diretório separado ao invés de deixá-los jogados no projeto. Não tinha feito isso antes por ter apenas o <a href="https://www.assetstore.unity3d.com/en/#!/content/4392">Astra Starship Fleet Package</a>  no projeto, mas agora com o Skybox Volume 2 (Nebula) já faz mais sentido começar a organizar melhor. Ambos assets estão na pasta <code>ThirdParty Assets</code>, como mostra a imagem abaixo. Geralmente utilizo este nome ou algo parecido para esta pasta.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-organizacao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
+
+<p>Outra alteração que fiz foi criar um novo prefab chamado <code>TestAsteroidGroup</code>, e adicionei 9 caixas dentro dele para formar a parede. É sempre bom criar prefabs para agrupar objetos, mesmo sendo outros prefabs. Outro detalhe visto na imagem acima é que estou colocando prefabs e scripts em diretórios com o mesmo nome da minha cena <code>Playground</code>. Estou fazendo isto por que quero manter tudo usado no playground separado do protótipo, mas sem a necessidade de criar um novo projeto.</p>
+
+<p><strong>Próximos passos</strong></p>
+
+<p>Eu mencionei no post passado mas acabei não tendo tempo de trabalhar na movimentação da nave, pelo menos não na implementação. Pesquisei algumas opções de controle e câmera, e no próximo post vou falar mais sobre isto. Se eu tiver tempo também quero começar a fazer um sistema simples de spawn para os meteoros (e talvez até achar assets para substituir as caixas). </p>
+
+<p>O andamento do projeto pode ser conferido no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, e <a href="https://github.com/cicanci/game-unity-ff/tree/8cd709c9bea93b397767636e421b7d2a4c1afce8">neste link</a> você pode ver as alterações no projeto até este post (também sugestão do leitor Felipe). Todos posts desta série sobre meu projeto podem ser vistos na tag <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a>, e como sempre qualquer sugestão ou opinião é bem vinda!</p>]]></content:encoded></item><item><title><![CDATA[Aprenda a Programar com Minecraft]]></title><description><![CDATA[<p><a href="https://minecraft.net/">Minecraft</a> conseguiu criar uma cultura e se tornou muito mais do que apenas um jogo, hoje é usado até na educação de crianças, como pode ser visto no documentário <a href="http://gamedeveloper.com.br/documentario-sobre-minecraft/">Minecraft: The Story of Mojang</a>. Hoje é possível até aprender a programar usando o jogo, e é isso que o livro</p>]]></description><link>http://gamedeveloper.com.br/programar-com-minecraft/</link><guid isPermaLink="false">22c00e3d-7a8b-4ae7-a6bd-e2c94d714a34</guid><category><![CDATA[livros]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 14 Jul 2016 00:45:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/livro-minecraft-capa.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/livro-minecraft-capa.jpg" alt="Aprenda a Programar com Minecraft"><p><a href="https://minecraft.net/">Minecraft</a> conseguiu criar uma cultura e se tornou muito mais do que apenas um jogo, hoje é usado até na educação de crianças, como pode ser visto no documentário <a href="http://gamedeveloper.com.br/documentario-sobre-minecraft/">Minecraft: The Story of Mojang</a>. Hoje é possível até aprender a programar usando o jogo, e é isso que o livro <a href="http://novatec.com.br/livros/aprenda-programar-minecraft/">Aprenda a Programar com Minecraft</a> do <a href="https://www.nostarch.com/programwithminecraft">Craig Richardson</a> faz de uma maneira incrivelmente didática.</p>
+
+<p>Este livro, lançado no Brasil pela editora <a href="http://novatec.com.br/livros/aprenda-programar-minecraft/">Novatec</a>, ensina lógica de programação utilizando a linguagem Python e usado o jogo Minecraft como ferramenta para exibir os resultados. Ou seja, após cada lição, é possível modificar e testar o que foi ensinado no jogo Minecraft para criar estruturas, blocos, itens, entre outras coisas. </p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/livro-minecraft-1.jpg" alt="Aprenda a Programar com Minecraft"></p>
+
+<p>Todas as lições no livro possuem imagens do jogo para mostrar como é o resultado esperado, o que ajuda bastante. Ao invés de aprender a programar em Python utilizando o terminal ou prompt de comando, tudo que é programado pode ser visto no jogo, seja em formato visual (blocos, por exemplo) ou em mensagens de texto na tela do jogo. </p>
+
+<p>O autor já trabalhou na <a href="https://www.raspberrypi.org/">Fundação Raspberry Pi</a>, por isso além de Windows e Mac também é possível seguir o livro utilizando Raspberry Pi. O capítulo inicial do livro ensina a configurar o ambiente de desenvolvimento, inclusive com o Minecraft API e Minecraft Server.</p>
+
+<p>O livro cobre todo básico de programação com Python: variáveis, strings, condicionais, loops, funções, operações básicas de matemática e lógica, estruturas de dados como lista e dicionário, e como salvar o progresso ou estado do jogo em arquivos de texto. Por fim um ótimo capítulo, porém básico, sobre orientação a objetivos com Python, tudo para deixar o leitor com uma vontade de continuar aprendendo a programar e testar seus programas no Minecraft.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/livro-minecraft-3.jpg" alt="Aprenda a Programar com Minecraft"></p>
+
+<p>Este livro é incrível para quem quer aprender a programar, e o uso do Minecraft é um grande diferencial para incentivar até mesmo crianças e adolescentes a entrarem para o lado negro da força e se tornarem programadores. Dependendo da idade provavelmente é necessário o acompanhamento de um adulto, pelo menos para configurar o computador e fazer os primeiros exercícios, mas depois acho que é possível continuar sozinho.</p>
+
+<p>Após terminar este livro se você quiser continuar estudando desenvolvimento de jogos com Python, com certeza o próximo livro que eu indico é o <a href="http://gamedeveloper.com.br/introducao-jogos-python-pygame/">Introdução ao Desenvolvimento de Jogos em Python com PyGame</a>. Assim você terá toda base necessária para programar jogos em Python, ou pelo menos criar mods mais complexos para Minecraft. É claro que existem diversos livros sobre Python, mas acredito que estes dois são suficientes para iniciar tanto na programação em Python quanto desenvolvimento de jogos.</p>
+
+<p>Muito obrigado a editora Novatec por me enviar este livro. Este livro pode ser adquirido pelo site da <a href="http://novatec.com.br/livros/aprenda-programar-minecraft/">Novatec</a> ou em praticamente qualquer livraria. Recomendo também dar uma olhada no site do autor, <a href="https://www.nostarch.com/programwithminecraft">Craig Richardson</a>, pois tem bastante conteúdo adicional para o livro disponível lá (em Inglês).</p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Playground e destruição]]></title><description><![CDATA[<p>Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o <a href="http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/">Final Frontier</a>. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. </p>
+
+<p>O jogo está em desenvolvimento publicamente no</p>]]></description><link>http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/</link><guid isPermaLink="false">bf3efdaa-57db-4db9-9a1b-30e61af54d68</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 06 Jul 2016 16:40:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png" alt="Final Frontier: Playground e destruição"><p>Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o <a href="http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/">Final Frontier</a>. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. </p>
+
+<p>O jogo está em desenvolvimento publicamente no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, então dependendo de quando você ler este post pode ser que muita coisa tenha mudado. Mesmo assim, as dicas aqui podem ser aplicadas em seu projeto. </p>
+
+<p><strong>Como brincar no playground</strong></p>
+
+<p>Como disse no post anterior, o <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">playground</a> não é um <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">protótipo</a>. O playground é usado para experimentar ideias, enquanto o protótipo é usado para validar o gameplay. Por isso, existem algumas boas práticas que eu gosto de seguir aqui.</p>
+
+<p>A primeira dica é deixar bem claro o que pertence ao playground no projeto. Como o playground pode fazer parte do projeto de um protótipo ou da versão final, é comum utilizar scripts e assets de test ou finais no playground. No meu caso eu estou usando este playground antes de iniciar o desenvolvimento do protótipo, então decidi separar prefabs e scripts em uma pasta "Playground". </p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/project-organization.png" alt="Final Frontier: Playground e destruição"></p>
+
+<p>Os scripts estão dentro de um namespace chamado "Playground", e quando usados exibem o log de warning abaixo. Este é uma dica que aprendi recentemente lendo a <a href="http://gamedeveloper.com.br/dicas-de-john-romero/">entrevista do John Romero</a>, onde ele fala que é sempre bom exibir na tela o que está acontecendo, principalmente o que não é esperado. Como este projeto deve crescer e ter muitos scripts e prefabs, eu quero ter certeza de que algum prefab com script de playground será esquecido no jogo. </p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/playground-warnings.png" alt="Final Frontier: Playground e destruição"></p>
+
+<p>É sempre bom criar opções para debug visual enquanto o projeto está rodando e aproveitando os recursos do editor da Unity. Na imagem abaixo eu criei um <code>Boolean</code> chamado <code>cameraFollow</code> que pode ser habilitado durante a execução para fazer a câmera do jogo deixar de seguir a nave. Eu não coloquei o objeto da câmera dentro da nave para que durante sua movimentação não dê a impressão ser "dura". Isso vai fazer mais sentido quando implementar o controle completo da nave.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/spaceship-script.png" alt="Final Frontier: Playground e destruição"></p>
+
+<p><strong>Destruindo objetos 3D</strong></p>
+
+<p>Destruição de objetos e cenário é algo que sempre quis implementar mas nunca tive uma oportunidade. Pode parecer algo muito complicado mas na verdade é simples de entender a idéia por trás. Basicamente você tem dois modelos: um normal e um "destruído", e quando o objeto é destruído você substitui pelo modelo destruído e aplica alguma física nos destroços se necessário.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/07/blender-block.png" alt="Final Frontier: Playground e destruição"></p>
+
+<p>Como eu quero utilizar apenas ferramentas e assets gratuitos neste projeto, escolhi utilizar o blender para fazer um moledo de um cubo inteiro e um cubo destruído. O video abaixo ensina como fazer isto no blender e como adicionar a física necessária na Unity, mas basicamente você precisa aplicar <code>Cell Fracture</code> com <code>Noise</code> no modelo e importar na Unity adicionando um <code>Mesh Collider</code> em cada pedaço.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6FPAZfn2HBdOu-JGSZ39vS" frameborder="0" allowfullscreen></iframe>
+
+<p><strong>Próximos passos</strong></p>
+
+<p>Vou tentar escrever um post sobre este projeto a cada duas semanas. Como costumo publicar um post por semana vou intercalar posts sobre o andamento do projeto com o conteúdo do blog, assim consigo falar do projeto e ainda mostrar técnicas e dicas que estou usando em seu desenvolvimento. Através desta <a href="http://gamedeveloper.com.br/tag/final-frontier">tag</a> você poderá ver todos os posts sobre o projeto.</p>
+
+<p>Fique a vontade para baixar o projeto no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e comentar aqui no post suas opiniões e sugestões. Para o próximo post pretendo implementar o controle da nave, spawn de asteroides pelo caminho e mais alguns detalhes no playground. Embora demore duas semanas para eu publicar o próximo post, você pode acompanhar meu trabalho no jogo pelo GitHub, pois sempre que possível vou trabalhar neste projeto durante a semana.</p>]]></content:encoded></item><item><title><![CDATA[Livros para desenvolver jogos - atualizado!]]></title><description><![CDATA[<p>Fazem quase 7 anos que escrevi este <a href="http://gamedeveloper.com.br/livros-de-desenvolvimento-de-jogos/">post</a> com uma lista de livros para desenvolvimento de jogos. Naquela época a lista foi baseada em duas coisas: o conteúdo da pós-graduação que eu estava cursando e o que estava disponível no momento. Felizmente, 7 anos depois, muitos livros novos surgiram e</p>]]></description><link>http://gamedeveloper.com.br/livros-gamedev/</link><guid isPermaLink="false">a9e75b91-02db-4f37-9556-23204e42f07a</guid><category><![CDATA[livros]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 30 Jun 2016 01:32:12 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/capa-livros.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/capa-livros.jpg" alt="Livros para desenvolver jogos - atualizado!"><p>Fazem quase 7 anos que escrevi este <a href="http://gamedeveloper.com.br/livros-de-desenvolvimento-de-jogos/">post</a> com uma lista de livros para desenvolvimento de jogos. Naquela época a lista foi baseada em duas coisas: o conteúdo da pós-graduação que eu estava cursando e o que estava disponível no momento. Felizmente, 7 anos depois, muitos livros novos surgiram e alguns foram traduzidos e lançados no Brasil, inclusive fiz <a href="http://gamedeveloper.com.br/tag/livros/">review</a> de grande parte deles.</p>
+
+<p>Não foi só isso que mudou. 7 anos atrás eu ainda não trabalhava com jogos e este blog estava começando, tinha apenas 4 meses de existência e uns 5 posts. Estava na hora de escrever um novo post atualizado com sugestões de livros. Sempre que me perguntam por e-mail ou realizo palestras costumo sugerir a lista abaixo, que na minha opinião muitos são leituras obrigatórias para todo desenvolvedor de jogos. Clique nas imagens para conferir mais detalhes dos livros.</p>
+
+<p><a href="https://amzn.com/B00P5URD96"><img src="http://gamedeveloper.com.br/content/images/2016/06/gpp.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://amzn.com/0321940156"><img src="http://gamedeveloper.com.br/content/images/2016/06/gpat.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://amzn.com/1556220782"><img src="http://gamedeveloper.com.br/content/images/2016/06/gameai.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://amzn.com/1449392512"><img src="http://gamedeveloper.com.br/content/images/2016/06/physics.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://amzn.com/0321618521"><img src="http://gamedeveloper.com.br/content/images/2016/06/scrum.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://amzn.com/1482217163"><img src="http://gamedeveloper.com.br/content/images/2016/06/gdw3.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="http://loja.grupoa.com.br/livros/serie-microsoft/code-complete/8536305045"><img src="http://gamedeveloper.com.br/content/images/2016/06/codecomplete.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="https://www.blucher.com.br/livro/detalhes/level-up-817"><img src="http://gamedeveloper.com.br/content/images/2016/06/levelup.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="http://loja.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830"><img src="http://gamedeveloper.com.br/content/images/2016/06/producao.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p><a href="http://novatec.com.br/livros/jogos2/"><img src="http://gamedeveloper.com.br/content/images/2016/06/gamedev2.jpg" alt="Livros para desenvolver jogos - atualizado!" title=""></a></p>
+
+<p>Apesar de serem muitos livros, foi difícil deixar alguns de fora desta lista. Provavelmente irei fazer outro lista em um post futuro com mais livros. Comparada com a lista do meu post de 7 anos atrás apenas dois livros permanecera: Game Design Workshop, que ganhou uma nova edição, e Desenvolvimento de Jogos Eletrônicos, que está novamente esgotado. Os últimos quatro livros da lista são em português e estão disponíveis no Brasil, confira as reviews do livro <a href="http://gamedeveloper.com.br/level-up-game-design/">Level Up!</a> e do livro <a href="http://gamedeveloper.com.br/manual-de-producao-de-jogos-digitais/">Produção de Jogos Digitais</a>, os demais estão disponíveis apenas em inglês.</p>
+
+<p>Neste <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-livros/">post</a> existem mais sugestões de livros em português lançados no Brasil, porém eu recomendo dar uma olhada nos livros em <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-pre-requisitos/">inglês</a> também. Nesta lista selecionei 10 livros que são bem abrangentes em seus assuntos, porém na próxima lista os livros serão mais específicos para um determinado assunto, como matemática para jogos, game design de jogos de tabuleiro, efeitos sonoros, entre outros.</p>]]></content:encoded></item><item><title><![CDATA[Inicio do projeto Final Frontier]]></title><description><![CDATA[<p>Como eu havia comentado neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a> decidi começar um novo projeto no meu tempo livre e colocar em um repositório público no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> para quem quiser acompanhar o desenvolvimento do jogo em Unity. Este é o primeiro de uma série de posts que vão contar detalhes sobre o desenvolvimento deste</p>]]></description><link>http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/</link><guid isPermaLink="false">186afc49-6c3a-4c38-85e9-6c60ca588287</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 22 Jun 2016 23:06:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/capa-jogos.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/capa-jogos.jpg" alt="Inicio do projeto Final Frontier"><p>Como eu havia comentado neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a> decidi começar um novo projeto no meu tempo livre e colocar em um repositório público no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> para quem quiser acompanhar o desenvolvimento do jogo em Unity. Este é o primeiro de uma série de posts que vão contar detalhes sobre o desenvolvimento deste projeto, fazendo referências aos posts da série <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos/">como ser um programador de jogos</a>.  Neste post, quero contar um pouco sobre como surgiu a ideia para este projeto e onde quero chegar com ele.</p>
+
+<p>Eu sempre fui um fã de jogos com tema de ficção científica, e entre meus favoritos estão as séries <a href="https://en.wikipedia.org/wiki/Metroid">Metroid</a>, <a href="https://en.wikipedia.org/wiki/StarCraft">Starcraft</a>, <a href="https://en.wikipedia.org/wiki/Halo_(series)">Halo</a>, <a href="https://en.wikipedia.org/wiki/Mass_Effect">Mass Effect</a>, <a href="https://en.wikipedia.org/wiki/Endless_Space">Endless Space</a>, <a href="https://en.wikipedia.org/wiki/Star_Wars:_Knights_of_the_Old_Republic">Star Wars: Knighs of the Old Republic</a> e <a href="https://en.wikipedia.org/wiki/Destiny_(video_game)">Destiny</a>. Até nos jogos de tabuleiro tenho essa preferência pelo tema e gosto muito dos jogos <a href="http://www.ludopedia.com.br/jogo/race-for-the-galaxy">Race for the Galaxy</a>, <a href="http://www.ludopedia.com.br/jogo/roll-for-the-galaxy">Roll for the Galaxy</a>, <a href="http://">Star Trek Catan</a>, <a href="http://www.ludopedia.com.br/jogo/star-realms">Star Realms</a>, e muitos outros que ainda não tenho. E nem preciso falar que sou fã de <a href="http://www.imdb.com/title/tt0076759/?ref_=nv_sr_3">Star Wars</a>, <a href="http://www.imdb.com/title/tt0060028/?ref_=nv_sr_3">Star Trek</a>, <a href="http://www.imdb.com/title/tt0436992/?ref_=nv_sr_1">Doctor Who</a>, <a href="http://www.imdb.com/title/tt0407362/?ref_=tt_rec_tt">Battlestar Galactica</a> e <a href="http://www.imdb.com/title/tt0303461/?ref_=tt_rec_tti">Firefly</a>. Muitos dos meus livros favoritos são dos autores <a href="https://en.wikipedia.org/wiki/Isaac_Asimov">Isaac Asimov</a> e <a href="https://en.wikipedia.org/wiki/Douglas_Adams">Douglas Adams</a>.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/06/jogos1.jpg" alt="Inicio do projeto Final Frontier"></p>
+
+<p>Por causa de todas estas referências acima decidi iniciar o desenvolvimento de um jogo de ficção científica. Ainda não defini como o jogo será, por isso iniciei o desenvolvimento de um <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">playground</a> para explorar ideias. O playground é um pouco diferente de um <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">protótipo</a> por que nele o objetivo é a exploração, e não a validação de uma mecânica ou ideia.</p>
+
+<p>Uma coisa eu já defini: quero que tenha uma nave para o jogador pilotar e que exista combates e exploração no espaço. Por isso, iniciei o projeto com um modelo 3D de nave gratuita que baixei na Asset Store da Unity e fiz ela atirar "bolas de ping-pong" em um cubo, enquanto se move. Como estou explorando a mecânica, os scripts utilizados até agora não foram escritos pensando em serem reutilizados no jogo. Outro detalhe definido é o nome do jogo: Final Frontier; uma referência a  <a href="https://en.wikipedia.org/wiki/Where_no_man_has_gone_before">Star Trek</a> e minha homenagem ao <a href="https://en.wikipedia.org/wiki/Leonard_Nimoy">Leonard Nimoy</a>.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/06/ff-prototype.jpg" alt="Inicio do projeto Final Frontier"></p>
+
+<p>O meu objetivo é desenvolver todo o protótipo do jogo utilizando a Unity e deixando o projeto público no GitHub, por isso todos recursos e plugins utilizados serão sempre gratuitos e com os devidos créditos adicionados. Se eu decidir que vale a pena investir neste projeto provavelmente irei terminar o desenvolvimento do protótipo e iniciar o desenvolvimento do jogo em um repositório particular, mas isto é algo pra se pensar quando o jogo estiver definido e testado. Durante o desenvolvimento do protótipo pretendo também criar e disponibilizar documentos, como o <a href="http://gamedeveloper.com.br/game-design-document/">Game Design Document</a>.</p>
+
+<p>Qualquer feedback é sempre bem-vindo! E se você não conhece algumas das minhas referências, recomendo dar uma olhada pois vale muito a pena! Ah, a imagem da capa foi tirada em uma partida de Star Trek Catan, tão bom quanto o jogo original.</p>]]></content:encoded></item><item><title><![CDATA[Tutoriais de desenvolvimento de jogos com Unity e Blender]]></title><description><![CDATA[<p>Semana passada estava procurando um video sobre como fazer um FPS com Unity para o projeto que comentei neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a>. Eu já fiz jogos com mecânicas de FPS, porém eu sempre procuro tutoriais sobre o que eu quero fazer para aprender maneiras diferentes de fazer as mesmas coisas.</p>
+
+<p>Está é</p>]]></description><link>http://gamedeveloper.com.br/tutoriais-jogos-unity/</link><guid isPermaLink="false">428d639f-4f8c-4509-930d-8c12911d693f</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 15 Jun 2016 21:41:11 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/unity3d1.jpg" alt="Tutoriais de desenvolvimento de jogos com Unity e Blender"><p>Semana passada estava procurando um video sobre como fazer um FPS com Unity para o projeto que comentei neste <a href="http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/">post</a>. Eu já fiz jogos com mecânicas de FPS, porém eu sempre procuro tutoriais sobre o que eu quero fazer para aprender maneiras diferentes de fazer as mesmas coisas.</p>
+
+<p>Está é uma boa dica que gostaria de deixar neste post: mesmo que você saiba fazer algo existe sempre outras maneiras de fazer, que podem ser melhores, iguais ou piores do que a maneira que você costuma fazer. Por isso é muito importante sempre pesquisar na internet, ler livros e assistir videos sobre o assunto, com certeza pelo menos um detalhe novo deve surgir e vai te ajudar.</p>
+
+<p>Voltando ao assunto do post, eu encontrei este canal (em Inglês) chamado <a href="https://www.youtube.com/user/quill18creates">quill18creates</a> com muitos videos sobre desenvolvimento de jogos para Unity e Blender. O autor do canal, <a href="http://quill18.com/">Martin "quill18" Glaude</a>, possui um outro canal com foco jogos chamado <a href="https://www.youtube.com/user/quill18">quill18</a>. </p>
+
+<p>Vou colocar alguns videos que gostei abaixo, porém recomendo dar uma olhada em nos outros videos e <a href="https://www.youtube.com/user/quill18creates/playlists">playlists</a> do canal. As playlists abaixo contém videos sobre geração procedural, algoritmo pathfind para movimentação e objetos destrutíveis, respectivamente.</p>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6Tm0jUrhLZG8sEBI1hgCL8" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI55gwJLrDz0UtNfo9oC0K1Q" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6FPAZfn2HBdOu-JGSZ39vS" frameborder="0" allowfullscreen></iframe>
+
+<p>Se você conhece outros canais no YouTube sobre desenvolvimento de jogos deixe nos comentários!</p>]]></content:encoded></item><item><title><![CDATA[Como desbloquear o Xbox One para o modo desenvolvedor]]></title><description><![CDATA[<p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
+
+<p>Estes são os pré-requisitos para transformar seu console em uma ferramenta</p>]]></description><link>http://gamedeveloper.com.br/xbox-one-modo-dev/</link><guid isPermaLink="false">3461e46a-b631-4c41-8941-cbf551ff0555</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 08 Jun 2016 19:10:51 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/XBox-One-Logo-Wallpaper.jpg" alt="Como desbloquear o Xbox One para o modo desenvolvedor"><p>Eu não tenho um Xbox One (ainda), mas após a Microsoft <a href="http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit">anunciar</a> uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. </p>
+
+<p>Estes são os pré-requisitos para transformar seu console em uma ferramenta para desenvolvimento de jogos:</p>
+
+<ul>
+<li>Participar do programa <a href="https://insider.windows.com">Windows Insider</a></li>
+<li>Ter Windows 10 atualizado no seu computador</li>
+<li>Conectar o computador no Xbox One através de um cabo</li>
+<li>Instalar a última versão do <a href="https://www.visualstudio.com/en-us/products/vs-2015-product-editions.aspx">Visual Studio 2015</a></li>
+<li>Ter pelo menos 30GB de espaço disponível no Xbox One</li>
+</ul>
+
+<p>O vídeo abaixo mostra o passo a passo para desbloquear o Xbox One como ferramenta de desenvolvimento, e também esclarece muitas dúvidas em relação a como este processo funciona.</p>
+
+<iframe src="https://channel9.msdn.com/Shows/MarlonLuz/Desbloqueando-o-XBox-One-para-o-modo-desenvolvedor/player?format=html5" width="640" height="360" allowfullscreen frameborder="0"></iframe>
+
+<p>Ainda não tive a oportunidade de testar o <a href="http://www.xbox.com/en-US/xbox-one">Xbox One</a> no modo desenvolvedor, mas assim que eu conseguir pretendo postar mais informações e sobre como funciona a integração com a <a href="http://unity3d.com/pt/">Unity</a>.</p>]]></content:encoded></item><item><title><![CDATA[Não vamos fazer um jogo juntos]]></title><description><![CDATA[<p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
+
+<p>O objetivo deste projeto era simples: fazer um jogo com ajuda de outras pessoas interessadas. Eu</p>]]></description><link>http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/</link><guid isPermaLink="false">1374b142-b408-4a5f-9388-a42cef5b3824</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 02 Jun 2016 00:05:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/cancelado.jpg" alt="Não vamos fazer um jogo juntos"><p>Há 4 meses atrás escrevi este <a href="http://gamedeveloper.com.br/vamos-fazer-um-jogo-juntos/">post</a> com uma proposta de fazer um jogo junto com os leitores deste blog que tivessem interesse. Hoje estou escrevendo este post comunicando que este projeto será cancelado.</p>
+
+<p>O objetivo deste projeto era simples: fazer um jogo com ajuda de outras pessoas interessadas. Eu configurei o projeto no GitHub pra deixar fácil de todos acompanharem e criei um grupo no Facebook, que depois foi substituído por um grupo no <a href="https://groups.google.com/forum/#!forum/gamedevblog">Google</a>, e o projeto começou.</p>
+
+<p>Esperei 1 mês para começar o projeto, dando este tempo para que outras pessoas pudessem ler o post e entrar no grupo. Comecei organizando meu próprio tempo, e decidi que dedicaria meu tempo livre de segunda-feira para participar deste projeto. No primeiro mês foquei em escrever o <a href="https://docs.google.com/document/d/1oJO44LWsLFr1uZdfcmSFFD5DQI-b-b3nKj4_ICFE5Ho/edit">GDD</a> do projeto e cada semana escrevia um post no grupo informando o que tinha sido feito e quais eram meus objetivos para a próxima semana.</p>
+
+<p>Depois de 1 mês percebi algo que me desanimou: o grupo tinha 50 integrantes, porém nenhum estava interagindo com o projeto. Com excessão de duas pessoas que conversaram comigo sobre o GDD neste período, nada foi feito e eu parei de dedicar meu tempo neste projeto esperando quem algo acontecesse.</p>
+
+<p>Hoje, 4 meses depois, nada aconteceu e eu decidi <strong>cancelar este projeto</strong>. Apaguei o repositório e o quadro no Trello (que praticamente estavam vazios), mas vou deixar o grupo e o GDD por enquanto. </p>
+
+<p>Mas, como eu percebi que existia a vontade de acompanhar o desenvolvimento de um projeto eu comecei um novo jogo e este quero compartilhar com vocês. Por enquanto seu nome é Final Frontier e vai ser um jogo de exploração espacial 3D. O código do projeto está no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e pretendo fazer posts comentando sobre o projeto, e até compartilhar o GDD e roadmap do jogo durante seu desenvolvimento.</p>
+
+<p>Muito obrigado a todos pelo apoio, especialmente aos 50 integrantes do grupo que tiveram interesse em participar desde projeto. Eu não queria deixar o projeto em aberto morrendo aos poucos, então decidi acabar com ele logo e começar algo novo para poder compartilhar aqui.</p>
+
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-317182457/stock-photo-seal-cancelled-stamped-on-paper-planner.html?src=VkmaZUOTm08LC_DM2NEeGQ-1-0">Seal cancelled</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Crytek lança código da CryEngine no GitHub]]></title><description><![CDATA[<p>A <a href="https://www.cryengine.com/news/looking-ahead-github-and-cryengine">CryEngine</a> já tinha seu código aberto porém, por não ter um instalador, era necessário baixar todo código sempre que algum update era realizado. E o projeto não é pequeno para ser baixado a cada alteração, por isso muitas vezes é comum o desenvolvedor trabalhar com uma versão fixa da</p>]]></description><link>http://gamedeveloper.com.br/crytek-lanca-codigo-da-cryengine-no-github/</link><guid isPermaLink="false">1e0a86bf-fd6a-4dc8-85c4-1e98a1188286</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 25 May 2016 23:55:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/cryengine.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/cryengine.jpg" alt="Crytek lança código da CryEngine no GitHub"><p>A <a href="https://www.cryengine.com/news/looking-ahead-github-and-cryengine">CryEngine</a> já tinha seu código aberto porém, por não ter um instalador, era necessário baixar todo código sempre que algum update era realizado. E o projeto não é pequeno para ser baixado a cada alteração, por isso muitas vezes é comum o desenvolvedor trabalhar com uma versão fixa da engine sem atualizar durante todo o projeto.</p>
+
+<p>Agora que seu <a href="https://github.com/CRYTEK-CRYENGINE/CRYENGINE">código</a> está no GitHub, e não é mais um ZIP no site, desenvolvedores podem manter o código sempre atualizado, baixando apenas as atualizações do repositório. </p>
+
+<p>Seria bom a Amazon fazer algo semelhante para a sua engine <a href="https://aws.amazon.com/pt/lumberyard/">Lumberyard</a>, que foi construída em cima da CryEngine. Embora exista uma ferramenta de update, não é muito claro o que foi alterado. Em projetos de código aberto isto é muito importante.</p>
+
+<p>A <a href="https://github.com/EpicGames/UnrealEngine">Unreal Engine</a> também está disponível no GitHub, e possui a mesma vantagem para os desenvolvedores terem seu código atualizado. </p>
+
+<p>Na minha opinião isto é algo que <a href="http://unity3d.com/pt/get-unity">Unity</a> deve fazer logo, não abrir seu código necessariamente, mas ter um update melhor do que fazer o desenvolvedor baixar quase 10GB todo mês pra manter a engine atualizada para todas plataformas. </p>]]></content:encoded></item><item><title><![CDATA[Aprenda game design jogando Super Mario 64]]></title><description><![CDATA[<p>O site <a href="http://www.polygon.com/2016/5/16/11683934/super-mario-64-pannenkoek2012-videos-rng">Polygon</a> publicou uma notícia sobre um canal do <a href="https://www.youtube.com/user/pannenkoek2012/videos">YouTube</a> onde o autor cria videos ensinando técnicas de game design enquanto joga Super Mario 64.</p>
+
+<p>O jogo lançado para o <a href="https://en.wikipedia.org/wiki/Super_Mario_64">Nintendo 64</a> e criado pela lenda vida <a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto">Shigeru Miyamoto</a> possui tantos detalhes que normalmente passam despercebidos, mas se retirarmos</p>]]></description><link>http://gamedeveloper.com.br/aprenda-game-design-jogando-super-mario-64/</link><guid isPermaLink="false">ed35c488-2e51-4cb9-9f88-90fac088e8d7</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 18 May 2016 23:31:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/smb64.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/smb64.jpg" alt="Aprenda game design jogando Super Mario 64"><p>O site <a href="http://www.polygon.com/2016/5/16/11683934/super-mario-64-pannenkoek2012-videos-rng">Polygon</a> publicou uma notícia sobre um canal do <a href="https://www.youtube.com/user/pannenkoek2012/videos">YouTube</a> onde o autor cria videos ensinando técnicas de game design enquanto joga Super Mario 64.</p>
+
+<p>O jogo lançado para o <a href="https://en.wikipedia.org/wiki/Super_Mario_64">Nintendo 64</a> e criado pela lenda vida <a href="https://en.wikipedia.org/wiki/Shigeru_Miyamoto">Shigeru Miyamoto</a> possui tantos detalhes que normalmente passam despercebidos, mas se retirarmos eles o jogo perde um pouco do seu brilho. São estes detalhes que o canal <a href="https://www.youtube.com/user/pannenkoek2012/videos">pannenkoek2012</a> busca exemplificar e ensinar. </p>
+
+<p>Eu selecionei dois videos que eu gostei, mas eu recomendo dar uma olhada nos demais videos do <a href="https://www.youtube.com/user/pannenkoek2012/videos">canal</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MiuLeTE2MeQ" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kpk2tdsPh0A" frameborder="0" allowfullscreen></iframe>
+
+<p>Se você quiser ler mais sobre o quão incrível o Super Mario 64 é, dê uma lida nesta <a href="http://br.ign.com/super-mario-64-n64-1/8184/feature/entenda-a-genialidade-de-super-mario-64">matéria</a> do IGN.</p>]]></content:encoded></item><item><title><![CDATA[Dicas de John Romero para desenvolver jogos]]></title><description><![CDATA[<p><a href="https://twitter.com/romero">John Romero</a>, co-fundador da <a href="http://www.idsoftware.com/">Id Software</a> e criador dos jogos DOOM e Quake, entre muitos <a href="https://en.wikipedia.org/wiki/John_Romero#Games">outros</a>, deu uma palestra em um evento da revista britânica <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">Develop</a> e falou sobre algumas técnicas para desenvolvimento que ele sempre usou, muitas indo contra ao que encontramos nos livros. Abaixo estão algumas frases que</p>]]></description><link>http://gamedeveloper.com.br/dicas-de-john-romero/</link><guid isPermaLink="false">6b87fcfa-61e0-4120-a0ad-017f6a68900b</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 11 May 2016 22:38:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/06/romero.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/06/romero.jpg" alt="Dicas de John Romero para desenvolver jogos"><p><a href="https://twitter.com/romero">John Romero</a>, co-fundador da <a href="http://www.idsoftware.com/">Id Software</a> e criador dos jogos DOOM e Quake, entre muitos <a href="https://en.wikipedia.org/wiki/John_Romero#Games">outros</a>, deu uma palestra em um evento da revista britânica <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">Develop</a> e falou sobre algumas técnicas para desenvolvimento que ele sempre usou, muitas indo contra ao que encontramos nos livros. Abaixo estão algumas frases que retirei do texto, a notícia completa pode ser lida aqui.</p>
+
+<blockquote>
+  <p>“No prototypes,” he said. “Just make the game. Polish as you go. Don’t depend on polish happening later. Always maintain constantly shippable code.</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Sem protótipos", ele disse. "Apenas crie o jogo. Faça polimento durante o projeto. Não conte com o polimento acontecendo mais tarde. Sempre tenha código pronto para ser lançado."</p>
+</blockquote>
+
+<p>Na continuação do texto ele fala que se existe muito dinheiro e pessoas envolvidas, que provavelmente haverá um protótipo, mas quando se é pequeno e independente (como ele era). Segundo Romero, o melhor é sempre desenvolver algo final ao invés do ciclo que normalmente inicia com um protótipo, que então é descartado para desenvolver o jogo, e após o desenvolvimento estar completo entra na fase de polimento.</p>
+
+<p>Isso faz muito sentido quando pensamos em empresas pequenas e independentes, mas é claro que existe um risco da equipe desenvolver um jogo se que muitas perguntas importantes tenham sido respondidas na fase de protótipo. Acho que se o game designer tem experiência, e o jogo está bem claro para a equipe, este é um risco que pode ser tomado. Muitas vezes não há tempo suficiente para fazer um protótipo, por isso é comum mesmo as empresas partirem para o jogo final desde o começo.</p>
+
+<blockquote>
+  <p>“As soon as you see a bug, you fix it. Do not continue on. If you don’t fix your bugs, your new code will be built on a buggy codebase and ensure an unstable foundation.”</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Ao encontrar um bug, corrija-o. Não continue o desenvolvimento. Se você não corrigir seus bugs, you novo código será escrito em cima de um projeto com problemas e resultando em uma base instável para o jogo"</p>
+</blockquote>
+
+<p>Romero diz que não devemos perder o tempo de outras pessoas, se você encontrou um bug ele deve ser corrigido antes de prosseguir. É comum o programador saber que existem bugs mas envia o jogo para a equipe de testes sem falar nada, esperando que eles encontrem para ele corrigir após o bug ser "oficial" e estar anotado em algum lugar.</p>
+
+<p>Novamente, esta é uma dica para pequenas empresas, pois não possuem processos burocráticos. Mas, independente do tamanho da empresa e do projeto, todo bug deve ser sempre corrigido, especialmente se for seu. Ou, se não houver tempo, pelo menos informe a equipe de testes (ou a pessoa que vai testar).</p>
+
+<blockquote>
+  <p>“Write your code for this game only – not for a future game. You’re going to be writing a new code later because you’ll be smarter.”</p>
+</blockquote>
+
+<p>Tradução:</p>
+
+<blockquote>
+  <p>"Escreve seu código para este jogo apenas - não para jogos futuros. Você irá escrever um código novo depois pois você terá aprendido mais"</p>
+</blockquote>
+
+<p>Muitos programadores, não só da área de games, se preocupam em fazer um código que poderá ser utilizado por vários projetos depois. Isto é uma preocupação válida, mas quando não se tem muito tempo não devemos nos preocupar em criar um framework antes de criar o jogo em si. E a segunda parte que ele disse é verdade, provavelmente você irá escrever um código melhor na segunda vez.</p>
+
+<p>Em empresas grandes existem até equipes desenvolve ferramentas e frameworks para que as equipes que desenvolvem os jogos consigam focar em fazer o jogo. </p>
+
+<p>O <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">texto</a> contém mais detalhes e dicas, e vale muito a pena ler. John Romero é um grande game designer, e sempre podemos aprender muito com desenvolvedores experientes como ele.</p>]]></content:encoded></item></channel></rss>

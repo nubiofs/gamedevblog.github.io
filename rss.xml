@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 11 Aug 2016 03:52:32 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Melhores práticas para 2D na Unity - Parte 3]]></title><description><![CDATA[<p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores</p>]]></description><link>http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-3/</link><guid isPermaLink="false">78e0e4a9-782a-4774-a630-defc828b22cc</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 11 Aug 2016 02:19:47 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" alt="Melhores práticas para 2D na Unity - Parte 3"><p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores práticas de programação para jogos 2D na Unity.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Tue, 16 Aug 2016 18:59:39 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Postmortem: Geometry World]]></title><description><![CDATA[<p>Eu sempre recebo e-mails pedindo para divulgar jogos, porém isto é algo que decidi desde o início do blog não fazer. Eu acho importante divulgar, mas fazer um post falando de um jogo não é o tipo de conteúdo que eu quero para o blog, por isso sempre respondo falando</p>]]></description><link>http://gamedeveloper.com.br/postmortem/</link><guid isPermaLink="false">f52cc162-4f8f-44ca-b3dd-f811d452b895</guid><category><![CDATA[game dev]]></category><category><![CDATA[postmortem]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Tue, 16 Aug 2016 14:41:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso.jpg" alt="Postmortem: Geometry World"><p>Eu sempre recebo e-mails pedindo para divulgar jogos, porém isto é algo que decidi desde o início do blog não fazer. Eu acho importante divulgar, mas fazer um post falando de um jogo não é o tipo de conteúdo que eu quero para o blog, por isso sempre respondo falando que não faço reviews ou divulgação de jogos, mas sempre ofereço uma oportunidade para divulgação do jogo através de um postmortem. Desta forma o desenvolver ganha sua divulgação, e os leitores deste blog ganham uma história sobre o desenvolvimento de um jogo.</p>
+
+<p>Isto é importante por que é possível aprender muito apenas lendo o que outras pessoas fizeram e deu certo, e também o que deu errado. Já vi muita gente falando que aprendeu com os <a href="http://gamedeveloper.com.br/tag/postmortem/">postmortems publicados</a> aqui, por isso fico feliz em sempre ter este espaço para todo desenvolver que tem seu jogo publicado (esta é a única regra). Não importa se o texto é longo e detalhado, ou curto e objetivo, sempre podemos aprender a partir da experiência dos outros.</p>
+
+<p>Desta vez vamos ver como foi o desenvolvimento do jogo <a href="https://itunes.apple.com/us/app/geometry-world/id1130806535?l=pt&amp;ls=1&amp;mt=8">Geometry World</a> do Eder Gabriel. Muito obrigado por enviar o texto abaixo e parabéns pelo jogo publicado!</p>
+
+<hr>
+
+<p><strong>Geometry World</strong></p>
+
+<p>Olá! Sou o Eder, designer do Geometry World. Abaixo a descrição dele, compartilhando alguns pontos que percebi durante a criação do game.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-verso-1.jpg" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Descrição do game</strong></p>
+
+<p>Geometry World é um puzzle em que o jogador tem como objetivo colocar a caixa em um determinado lugar do cenário. O jogo tem cinquenta níveis divididos em cinco mundos com características particulares, por exemplo, o segundo mundo tem as colunas deslizantes. <br>
+Apenas posicionando a caixa na posição determinada, o jogador desbloqueia os primeiros quarenta níveis do jogo. O último mundo é desbloqueável  coletando as medalhas de conquista disponível de acordo com o objetivo dos 40 níveis anteriores.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-gameplay-w1.png" alt="Postmortem: Geometry World"></p>
+
+<p>Para controlar a caixa, o jogador deve segurar na tela e direcioná-la para a direção em que ele queira. Os principais desafios são conseguir todas as conquistas dos cinquenta níveis e se acostumar com a física do jogo.</p>
+
+<p>Por eu estar mais preocupado com os aspectos funcionais do jogo, criei o design dele mais minimalista para diminuir o tempo de criação do jogo. Essa foi uma dúvida que eu fiquei por um tempo, de como alinhar uma arte funcional para o game, sem gastar muito tempo. Um requisito meu nesse projeto foi o de não usar palavras nas ações do jogo, apenas ícones.</p>
+
+<p>Conforme fui mostrando para os amigos mais próximos, reparei em alguns pontos que não ficaram claros o suficiente e provavelmente, eu crie em novas formas de apresentar isso nas futuras versões. Esses mesmos testes também me fizeram a dar um maior valor a como ensinar as pessoas a jogar nas telas iniciais.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-gameplay-w3.png" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Pontos Negativos</strong></p>
+
+<p>Tive um atraso para concluir o game porque num teste com o iPod Touch, alguns cenários não estavam com a resolução ideal, porque o jogador não conseguia fazer o movimento correto para alcançar um determinado lugar.</p>
+
+<p>Por se tratar de um jogo mais longo, pude aplicar alguns conceitos de level design. Mas sempre tem alguns pontos que ficam pendentes, por eu não ter ninguém para testar e discutir quando eu estava definindo como seriam os níveis.</p>
+
+<p>Tem um erro que não descobri o que faz com que ele não reconheça a posição do jogador quando ele posiciona no lugar correto. Ele é bem inconstante, nas próximas versões, vou ter que inventar uma outra forma de validação, porque quando é reiniciado o app e concluindo a mesma fase, o erro desaparece.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-menu-w3.png" alt="Postmortem: Geometry World"></p>
+
+<p>Uma outra dificuldade foi colocar e testar o aplicativo na AppStore, por ser bem rígido o controle deles são necessários diversos certificados no iMac e no iTunes Connect que fui descobrindo e sempre acabava atrasando a publicação.</p>
+
+<p>Tenho pesquisado algumas formas de propaganda, mas o mais difícil é convencer alguém que não me conhece a pagar pelo jogo e criei um flyer para divulgar por aí.</p>
+
+<p><strong>Pontos Positivos</strong></p>
+
+<p>Descobri o Corona SDK em uma pesquisa na faculdade, por ter uma curva de aprendizado menor em relação aos outros, acabei utilizando ele. Depois de alguns testes e a criação do meu primeiro game mobile, o Moving Kart, percebi que era possível criar algo mais complexo, que a comunidade do Corona é bem ativa e as minhas dúvidas sempre foram explicadas de algum jeito. Fiquei surpreso com o tamanho final do meu app para um jogo de 50 níveis (menos de 9MB).</p>
+
+<p>Sempre tive o interesse em criar um aplicativo na AppStore para tentar deixar o meu portfolio mais interessante e consegui depois de 10 meses de produção e alguns meses que ficou congelado o projeto. </p>
+
+<p>E o aprendizado que ganho com isso é enorme, principalmente, por ter que planejar todas as possibilidades do game, já que fiz sozinho, esse projeto me ajudou a ser mais analítico com qualquer sistema que eu crie no futuro.</p>
+
+<p><img src="http://gamedeveloper.com.br/content/images/2016/08/geometry-world-flyer-frente.jpg" alt="Postmortem: Geometry World"></p>
+
+<p><strong>Links</strong></p>
+
+<p><a href="https://itunes.apple.com/us/app/geometry-world/id1130806535?l=pt&amp;ls=1&amp;mt=8">Download pela App Store</a></p>
+
+<p><a href="https://www.facebook.com/Geometryworld.game">Página no Facebook</a></p>]]></content:encoded></item><item><title><![CDATA[Melhores práticas para 2D na Unity - Parte 3]]></title><description><![CDATA[<p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores</p>]]></description><link>http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-3/</link><guid isPermaLink="false">78e0e4a9-782a-4774-a630-defc828b22cc</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 11 Aug 2016 02:19:47 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/unity3d1.jpg" alt="Melhores práticas para 2D na Unity - Parte 3"><p>Na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1">parte 1</a> falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2">parte 2</a> o foco foi o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI</a> (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores práticas de programação para jogos 2D na Unity.</p>
 
 <p>Apesar de ter o foco em 2D, boa parte do conteúdo deste post abrange jogos em 3D na Unity também. No site da Unity existe uma categoria de <a href="http://unity3d.com/pt/learn/tutorials/topics/best-practices">Melhores Práticas</a> excelente, falando de física, assets e UI. </p>
 
@@ -350,22 +407,4 @@
 
 <p>Em empresas grandes existem até equipes desenvolve ferramentas e frameworks para que as equipes que desenvolvem os jogos consigam focar em fazer o jogo. </p>
 
-<p>O <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">texto</a> contém mais detalhes e dicas, e vale muito a pena ler. John Romero é um grande game designer, e sempre podemos aprender muito com desenvolvedores experientes como ele.</p>]]></content:encoded></item><item><title><![CDATA[Vamos falar sobre salário]]></title><description><![CDATA[<p>Este é um assunto bem complicado no Brasil pois, com tantas pessoas querendo trabalhar com desenvolvimento de jogos, muitas empresas se aproveitam disso e oferecem salários baixos.</p>
-
-<p>Vou focar este post na área de programação, pois é mais fácil pra mim dar exemplos. É bem comum um programador de jogos</p>]]></description><link>http://gamedeveloper.com.br/vamos-falar-sobre-salario/</link><guid isPermaLink="false">ce517b39-bfc9-4fe1-8119-0dc1dfb0c322</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 04 May 2016 17:24:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/05/salary.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/05/salary.jpg" alt="Vamos falar sobre salário"><p>Este é um assunto bem complicado no Brasil pois, com tantas pessoas querendo trabalhar com desenvolvimento de jogos, muitas empresas se aproveitam disso e oferecem salários baixos.</p>
-
-<p>Vou focar este post na área de programação, pois é mais fácil pra mim dar exemplos. É bem comum um programador de jogos ganhar menos do que um analista de sistema, mesmo tendo mais anos de experiência. Para deixar isso mais simples, não estou comparando conhecimento individual, mas sim anos de experiência pois é a primeira coisa que muitas empresas olham no currículo.</p>
-
-<p>Em 2008 terminei minha graduação em Ciência da Computação, e no começo de 2009 comecei minha pós-graduação em Produção e Programação de Games. Antes de eu trabalhar com jogos sempre fui analista de sistemas, e com 3 anos de experiência em programação meu salário bruto na época era R$4.000 para um cargo júnior, um excelente salário para um recém formado.</p>
-
-<p>2 anos depois disso, quando estava terminando minha pós-graduação (só faltava o TCC) e com 5 anos de experiência como programador, consegui meu primeiro emprego na área de jogos na <a href="http://glu.com">Glu Mobile</a> (que fechou o estúdio daqui em 2011) para ganhar um salário de R$3.000 como programador de nível intermediário. Ou seja, por vontade de trabalhar com jogos abri mão de um salário maior, o que normalmente acontece com todo programador que trabalhou com sistemas antes de ser programador de jogos.</p>
-
-<p>Mais tarde, 1 ano depois, aceitei o mesmo salário para trabalhar na <a href="http://ea.com">Electronic Arts</a> (que fechou o estúdio daqui em 2013), ocupando o mesmo cargo de nível intermediário que estava na Glu Mobile. Estava ganhando pouco, porém estava na área de jogos e em uma empresa muito grande lá fora. Nesta época estava com quase 6 anos de experiência, com uma graduação e uma pós-graduação, ganhando menos do que quando eu tinha acabado de me formar. Porém, nunca estive mais feliz. </p>
-
-<p>É muito difícil acertar de primeira o curso e a carreira que realmente queremos, e eu tive a sorte de fazer a escolha correta cursando Ciência da Computação e me especializando em games. O grande problema é que muitas empresas de jogos sabem que trabalhar com games é o sonho de muita gente, por isso exigem um grande conhecimento na área e pagam salários bem baixos. É claro que isto não se aplica a todas empresas, muitas simplesmente não podem pagar salários altos por serem pequenas.</p>
-
-<p>É indiscutível que, aqui no Brasil, um analista de sistemas com 6 anos de experiência tem um salário bem maior (praticamente o dobro) do que um programador de jogos com o mesmo tempo de experiência. Por isso é bem comum dizer que quem trabalha com jogos no Brasil é por que realmente ama o que faz, pois há mais vagas para se trabalhar como analista do que programador de jogos e que geralmente pagam mais.</p>
-
-<p>Os exemplos que dei aqui foram todos com valor para contratação CLT. É bem comum empresas de jogos contratarem como PJ, pois é vantajoso para a empresa e também o salário oferecido pode ser maior do que CLT (mas sem benefícios). Infelizmente esta é a realidade de quem trabalhar com jogos no Brasil. Mesmo meus exemplos sendo de alguns anos atrás, a única coisa que mudou hoje é que temos ainda menos empresas para trabalhar por aqui.</p>
-
-<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-289507745/stock-vector-salary-variation-flat-design-business-concept-cartoon-illustration.html?src=NakHlovtgWQyzSUfdkrtcg-1-6">Salary variation</a> do Shutterstock.</p>]]></content:encoded></item></channel></rss>
+<p>O <a href="http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747">texto</a> contém mais detalhes e dicas, e vale muito a pena ler. John Romero é um grande game designer, e sempre podemos aprender muito com desenvolvedores experientes como ele.</p>]]></content:encoded></item></channel></rss>
