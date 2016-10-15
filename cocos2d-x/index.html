@@ -11,49 +11,68 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c6a6b15e86">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=03d8bb1ec5">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://gamedeveloper.com.br/cocos2d-x/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://gamedeveloper.com.br/cocos2d-x/amp/">
     
     <meta property="og:site_name" content="Game Developer">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Desenvolvimento de jogos utilizando a Cocos2d-x">
-    <meta property="og:description" content="A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a...">
+    <meta property="og:description" content="A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a programação é em Objective-C. Muitos desenvolvedores independentes, e até empresas,">
     <meta property="og:url" content="http://gamedeveloper.com.br/cocos2d-x/">
     <meta property="article:published_time" content="2012-09-29T23:22:23.000Z">
-    <meta property="article:modified_time" content="2016-08-11T03:05:05.750Z">
+    <meta property="article:modified_time" content="2016-08-11T03:05:05.000Z">
     <meta property="article:tag" content="game dev">
     
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Desenvolvimento de jogos utilizando a Cocos2d-x">
-    <meta name="twitter:description" content="A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a...">
+    <meta name="twitter:description" content="A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a programação é em Objective-C. Muitos desenvolvedores independentes, e até empresas,">
     <meta name="twitter:url" content="http://gamedeveloper.com.br/cocos2d-x/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Bruno Cicanci">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="game dev">
     
     <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
-    "publisher": "Game Developer",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Game Developer",
+        "logo": "http://gamedeveloper.com.br/content/images/2016/02/icone.png"
+    },
     "author": {
         "@type": "Person",
         "name": "Bruno Cicanci",
-        "image": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
-        "url": "http://gamedeveloper.com.br/author/bruno",
-        "sameAs": "http://cicanci.com",
-        "description": null
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
+            "width": 512,
+            "height": 512
+        },
+        "url": "http://gamedeveloper.com.br/author/bruno/",
+        "sameAs": [
+            "http://cicanci.com"
+        ]
     },
     "headline": "Desenvolvimento de jogos utilizando a Cocos2d-x",
     "url": "http://gamedeveloper.com.br/cocos2d-x/",
     "datePublished": "2012-09-29T23:22:23.000Z",
-    "dateModified": "2016-08-11T03:05:05.750Z",
+    "dateModified": "2016-08-11T03:05:05.000Z",
     "keywords": "game dev",
-    "description": "A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a..."
+    "description": "A Cocos2d-x é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da Cocos2d, que serve para desenvolvimento de jogos apenas para iOS, pois a programação é em Objective-C. Muitos desenvolvedores independentes, e até empresas,",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://gamedeveloper.com.br"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.7">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://gamedeveloper.com.br/rss/">
 </head>
 <body class="post-template tag-game-dev nav-closed">
@@ -73,7 +92,7 @@
             <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
             <li class="nav-sobre" role="presentation"><a href="http://gamedeveloper.com.br/sobre">Sobre</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
 
@@ -118,28 +137,6 @@
 <p>No <a href="http://www.cocos2d-x.org/projects/cocos2d-x/wiki" title="Cocos2d-x">site da Cocos2d-x</a> também existem vários tutoriais muito bons que ajudam a configurar o ambiente de desenvolvimento no sistema operacional que você quiser utilizar. Se você não conhece, dê uma chance a Cocos2d-x, acho que você vai gostar!</p>
 
 <p>Este mês o blog ficou meio parado, sem posts novos. Mas agora voltarei a postar com uma frequência maior, e em breve haverão novidades por aqui! <a href="https://www.facebook.com/GameDeveloperBlog" title="Facebook">Não deixe de curtir e acompanhar a página do blog no Facebook</a>, lá também posto alguns links interessantes de artigos, vídeos e sites.</p>
-            <div id="disqus_thread"></div>
-            <script>
-            /**
-            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-            */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-
-            s.src = '//gamedeveloper.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </section>
 
         <footer class="post-footer">
@@ -172,6 +169,7 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
+
 
         </footer>
 
@@ -213,8 +211,7 @@
   ga('send', 'pageview');
 
 </script>
-
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=c6a6b15e86"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=c6a6b15e86"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=03d8bb1ec5"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=03d8bb1ec5"></script>
 
 </body>

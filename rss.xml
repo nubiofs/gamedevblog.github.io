@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.7</generator><lastBuildDate>Thu, 06 Oct 2016 00:08:40 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Final Frontier: Expandindo o Inventário]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-interface-da-nave/">post anterior</a> demonstrei como iniciei o desenvolvimento da interface do inventário da nave, baseado na interface do jogo Destiny. O inventário ainda não, e desta vez comecei a adicionar mais funções na interface. </p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.11</generator><lastBuildDate>Sat, 15 Oct 2016 19:49:08 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Vídeos da GDC no YouTube]]></title><description><![CDATA[<p>A <a href="http://www.gdconf.com/">Game Developers Conference</a> (GDC) é bem famosa na indústria, e com certeza o maior evento para desenvolvedores de jogos. A GDC tem sua edição principal nos EUA e algumas edições um pouco menores na Europa e Asia, assim como edições especiais, como a VRDC. Todo conteúdo das palestras ficam</p>]]></description><link>http://gamedeveloper.com.br/videos-da-gdc-no-youtube/</link><guid isPermaLink="false">008a2389-236d-479e-a417-d3c00b436da0</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Sat, 15 Oct 2016 19:22:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/10/gdc.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/10/gdc.png" alt="Vídeos da GDC no YouTube"><p>A <a href="http://www.gdconf.com/">Game Developers Conference</a> (GDC) é bem famosa na indústria, e com certeza o maior evento para desenvolvedores de jogos. A GDC tem sua edição principal nos EUA e algumas edições um pouco menores na Europa e Asia, assim como edições especiais, como a VRDC. Todo conteúdo das palestras ficam disponíveis no site <a href="http://www.gdcvault.com/">GDC Vault</a>, que possui alguns conteúdos gratuitos mas sua maioria precisa de uma assinatura mensal para ter acesso.</p>
+
+<p>Ano passado a GDC começou um <a href="https://www.youtube.com/channel/UC0JB7TSe49lg56u6qH8y_MQ/videos">canal no YouTube</a>, e a cada dia eles postam um video do seu conteúdo pago. Muitas vezes as palestras são curtas, ou até de alguns anos atrás, mas eles também postam videos recentes e longos. Vale muito a pena acompanhar este canal e assistir seus videos, muitas vezes são melhores do que aulas.</p>
+
+<p>Os videos abaixo são alguns dos meus favoritos, recomendo assistir pois são verdadeiras aulas sobre desenvolvimento de jogos! </p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E2MIpi8pIvY" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zp4NZ8i80QI" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pyjDMPTgxxk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BYFvwbby2YM" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/moW8-MXjivs" frameborder="0" allowfullscreen></iframe>
+
+<p>Quais são seus favoritos?</p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Expandindo o Inventário]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-interface-da-nave/">post anterior</a> demonstrei como iniciei o desenvolvimento da interface do inventário da nave, baseado na interface do jogo Destiny. O inventário ainda não, e desta vez comecei a adicionar mais funções na interface. </p>
 
 <p><strong>Melhorias no inventário</strong></p>
 
@@ -495,40 +511,4 @@ Apenas posicionando a caixa na posição determinada, o jogador desbloqueia os p
 
 <p>Após terminar este livro se você quiser continuar estudando desenvolvimento de jogos com Python, com certeza o próximo livro que eu indico é o <a href="http://gamedeveloper.com.br/introducao-jogos-python-pygame/">Introdução ao Desenvolvimento de Jogos em Python com PyGame</a>. Assim você terá toda base necessária para programar jogos em Python, ou pelo menos criar mods mais complexos para Minecraft. É claro que existem diversos livros sobre Python, mas acredito que estes dois são suficientes para iniciar tanto na programação em Python quanto desenvolvimento de jogos.</p>
 
-<p>Muito obrigado a editora Novatec por me enviar este livro. Este livro pode ser adquirido pelo site da <a href="http://novatec.com.br/livros/aprenda-programar-minecraft/">Novatec</a> ou em praticamente qualquer livraria. Recomendo também dar uma olhada no site do autor, <a href="https://www.nostarch.com/programwithminecraft">Craig Richardson</a>, pois tem bastante conteúdo adicional para o livro disponível lá (em Inglês).</p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Playground e destruição]]></title><description><![CDATA[<p>Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o <a href="http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/">Final Frontier</a>. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. </p>
-
-<p>O jogo está em desenvolvimento publicamente no</p>]]></description><link>http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/</link><guid isPermaLink="false">bf3efdaa-57db-4db9-9a1b-30e61af54d68</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 06 Jul 2016 16:40:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/ff-prototype-2.png" alt="Final Frontier: Playground e destruição"><p>Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o <a href="http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/">Final Frontier</a>. Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. </p>
-
-<p>O jogo está em desenvolvimento publicamente no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, então dependendo de quando você ler este post pode ser que muita coisa tenha mudado. Mesmo assim, as dicas aqui podem ser aplicadas em seu projeto. </p>
-
-<p><strong>Como brincar no playground</strong></p>
-
-<p>Como disse no post anterior, o <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/">playground</a> não é um <a href="http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/">protótipo</a>. O playground é usado para experimentar ideias, enquanto o protótipo é usado para validar o gameplay. Por isso, existem algumas boas práticas que eu gosto de seguir aqui.</p>
-
-<p>A primeira dica é deixar bem claro o que pertence ao playground no projeto. Como o playground pode fazer parte do projeto de um protótipo ou da versão final, é comum utilizar scripts e assets de test ou finais no playground. No meu caso eu estou usando este playground antes de iniciar o desenvolvimento do protótipo, então decidi separar prefabs e scripts em uma pasta "Playground". </p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/project-organization.png" alt="Final Frontier: Playground e destruição"></p>
-
-<p>Os scripts estão dentro de um namespace chamado "Playground", e quando usados exibem o log de warning abaixo. Este é uma dica que aprendi recentemente lendo a <a href="http://gamedeveloper.com.br/dicas-de-john-romero/">entrevista do John Romero</a>, onde ele fala que é sempre bom exibir na tela o que está acontecendo, principalmente o que não é esperado. Como este projeto deve crescer e ter muitos scripts e prefabs, eu quero ter certeza de que algum prefab com script de playground será esquecido no jogo. </p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/playground-warnings.png" alt="Final Frontier: Playground e destruição"></p>
-
-<p>É sempre bom criar opções para debug visual enquanto o projeto está rodando e aproveitando os recursos do editor da Unity. Na imagem abaixo eu criei um <code>Boolean</code> chamado <code>cameraFollow</code> que pode ser habilitado durante a execução para fazer a câmera do jogo deixar de seguir a nave. Eu não coloquei o objeto da câmera dentro da nave para que durante sua movimentação não dê a impressão ser "dura". Isso vai fazer mais sentido quando implementar o controle completo da nave.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/spaceship-script.png" alt="Final Frontier: Playground e destruição"></p>
-
-<p><strong>Destruindo objetos 3D</strong></p>
-
-<p>Destruição de objetos e cenário é algo que sempre quis implementar mas nunca tive uma oportunidade. Pode parecer algo muito complicado mas na verdade é simples de entender a idéia por trás. Basicamente você tem dois modelos: um normal e um "destruído", e quando o objeto é destruído você substitui pelo modelo destruído e aplica alguma física nos destroços se necessário.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/blender-block.png" alt="Final Frontier: Playground e destruição"></p>
-
-<p>Como eu quero utilizar apenas ferramentas e assets gratuitos neste projeto, escolhi utilizar o blender para fazer um moledo de um cubo inteiro e um cubo destruído. O video abaixo ensina como fazer isto no blender e como adicionar a física necessária na Unity, mas basicamente você precisa aplicar <code>Cell Fracture</code> com <code>Noise</code> no modelo e importar na Unity adicionando um <code>Mesh Collider</code> em cada pedaço.</p>
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/videoseries?list=PLbghT7MmckI6FPAZfn2HBdOu-JGSZ39vS" frameborder="0" allowfullscreen></iframe>
-
-<p><strong>Próximos passos</strong></p>
-
-<p>Vou tentar escrever um post sobre este projeto a cada duas semanas. Como costumo publicar um post por semana vou intercalar posts sobre o andamento do projeto com o conteúdo do blog, assim consigo falar do projeto e ainda mostrar técnicas e dicas que estou usando em seu desenvolvimento. Através desta <a href="http://gamedeveloper.com.br/tag/final-frontier">tag</a> você poderá ver todos os posts sobre o projeto.</p>
-
-<p>Fique a vontade para baixar o projeto no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a> e comentar aqui no post suas opiniões e sugestões. Para o próximo post pretendo implementar o controle da nave, spawn de asteroides pelo caminho e mais alguns detalhes no playground. Embora demore duas semanas para eu publicar o próximo post, você pode acompanhar meu trabalho no jogo pelo GitHub, pois sempre que possível vou trabalhar neste projeto durante a semana.</p>]]></content:encoded></item></channel></rss>
+<p>Muito obrigado a editora Novatec por me enviar este livro. Este livro pode ser adquirido pelo site da <a href="http://novatec.com.br/livros/aprenda-programar-minecraft/">Novatec</a> ou em praticamente qualquer livraria. Recomendo também dar uma olhada no site do autor, <a href="https://www.nostarch.com/programwithminecraft">Craig Richardson</a>, pois tem bastante conteúdo adicional para o livro disponível lá (em Inglês).</p>]]></content:encoded></item></channel></rss>

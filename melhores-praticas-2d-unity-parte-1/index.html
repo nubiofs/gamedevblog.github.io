@@ -11,52 +11,78 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=c6a6b15e86">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=03d8bb1ec5">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">
-    <meta name="referrer" content="origin">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/amp/">
     
     <meta property="og:site_name" content="Game Developer">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Melhores práticas para 2D na Unity - Parte 1">
-    <meta property="og:description" content="Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o...">
+    <meta property="og:description" content="Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o desempenho da Unity em jogos 2D. Para ter uma idéia,">
     <meta property="og:url" content="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">
     <meta property="og:image" content="http://gamedeveloper.com.br/content/images/2016/03/unity3d1-1.jpg">
     <meta property="article:published_time" content="2015-06-12T12:26:05.000Z">
-    <meta property="article:modified_time" content="2016-08-11T03:27:55.285Z">
+    <meta property="article:modified_time" content="2016-08-11T03:27:55.000Z">
     <meta property="article:tag" content="game dev">
     
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Melhores práticas para 2D na Unity - Parte 1">
-    <meta name="twitter:description" content="Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o...">
+    <meta name="twitter:description" content="Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o desempenho da Unity em jogos 2D. Para ter uma idéia,">
     <meta name="twitter:url" content="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">
-    <meta name="twitter:image:src" content="http://gamedeveloper.com.br/content/images/2016/03/unity3d1-1.jpg">
+    <meta name="twitter:image" content="http://gamedeveloper.com.br/content/images/2016/03/unity3d1-1.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Bruno Cicanci">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="game dev">
+    <meta property="og:image:width" content="1600">
+    <meta property="og:image:height" content="1200">
     
     <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
-    "publisher": "Game Developer",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Game Developer",
+        "logo": "http://gamedeveloper.com.br/content/images/2016/02/icone.png"
+    },
     "author": {
         "@type": "Person",
         "name": "Bruno Cicanci",
-        "image": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
-        "url": "http://gamedeveloper.com.br/author/bruno",
-        "sameAs": "http://cicanci.com",
-        "description": null
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://gamedeveloper.com.br/content/images/2016/02/cicanci.jpg",
+            "width": 512,
+            "height": 512
+        },
+        "url": "http://gamedeveloper.com.br/author/bruno/",
+        "sameAs": [
+            "http://cicanci.com"
+        ]
     },
     "headline": "Melhores práticas para 2D na Unity - Parte 1",
     "url": "http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/",
     "datePublished": "2015-06-12T12:26:05.000Z",
-    "dateModified": "2016-08-11T03:27:55.285Z",
-    "image": "http://gamedeveloper.com.br/content/images/2016/03/unity3d1-1.jpg",
+    "dateModified": "2016-08-11T03:27:55.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://gamedeveloper.com.br/content/images/2016/03/unity3d1-1.jpg",
+        "width": 1600,
+        "height": 1200
+    },
     "keywords": "game dev",
-    "description": "Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o..."
+    "description": "Trabalhei em um projeto grande utilizando a Unity, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui. Vou listar alguns tópicos abaixo com o que aprendi para melhorar o desempenho da Unity em jogos 2D. Para ter uma idéia,",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://gamedeveloper.com.br"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.7">
+    <meta name="generator" content="Ghost 0.11">
     <link rel="alternate" type="application/rss+xml" title="Game Developer" href="http://gamedeveloper.com.br/rss/">
 </head>
 <body class="post-template tag-game-dev nav-closed">
@@ -76,7 +102,7 @@
             <li class="nav-portfolio" role="presentation"><a href="http://cicanci.com">Portfolio</a></li>
             <li class="nav-sobre" role="presentation"><a href="http://gamedeveloper.com.br/sobre">Sobre</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
+        <a class="subscribe-button icon-feed" href="http://gamedeveloper.com.br/rss/">Subscribe</a>
 </div>
 <span class="nav-cover"></span>
 
@@ -137,28 +163,6 @@
 <p>Eu pesquisei bastante sobre qual seria a melhor resolução para fazer um jogo mobile na Unity, e embora muitos digam que o melhor é partir da maior resolução, eu acho que aqui está um item chave para melhorar o jogo. A maior resolução recomendada é do iPad com retina 2048×1536. Porém, quando convertida para POT esta imagem vai ter o tamanho de aproximadamente 2048×2048 e muitos bytes transparentes.</p>
 
 <p>Na parte 2 vou abordar as melhores práticas usando NGUI (que também servem para o 2D da Unity) e como utilizar sprite sheets no jogo. Na parte 3 vou dar algumas dicas para otimização de código. Se você tem alguma dúvida ou dica relacionada ao assunto é só comentar abaixo!</p>
-            <div id="disqus_thread"></div>
-            <script>
-            /**
-            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
-            */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-
-            s.src = '//gamedeveloper.disqus.com/embed.js';
-
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-            </script>
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </section>
 
         <footer class="post-footer">
@@ -191,6 +195,7 @@
                     <span class="hidden">Google+</span>
                 </a>
             </section>
+
 
         </footer>
 
@@ -232,8 +237,7 @@
   ga('send', 'pageview');
 
 </script>
-
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=c6a6b15e86"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=c6a6b15e86"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=03d8bb1ec5"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=03d8bb1ec5"></script>
 
 </body>
