@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=f8e3511b76">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=8ca82c4b5a">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
     <link rel="canonical" href="http://gamedeveloper.com.br/programacao-de-jogos-main-loop/">
@@ -133,6 +133,28 @@
 <p>Uma solução para este problema é descontar do Frame Rate o tempo em o Main Loop gastou em sua execução, assim, o jogo rodará sempre no mesmo frame. Por exemplo: se o Frame Rate é 30, e o Main Loop gastou 3, o programa deve aguardar 27 (30 – 3) para executar novamente o Main Loop. Sem este controle, o programa iria aguardar 33 (30 + 3) para ser executado novamente, lembrando que o tempo do Main Loop pode variar sempre e o Frame Rate é uma constante. O diagrama abaixo ilustra o funcionamento do Main Loop Fixed Rate:</p>
 
 <p><figure class="wp-caption aligncenter" id="attachment_416" style="width: 506px"><img src="http://gamedeveloper.com.br/blog/wp-content/uploads/2010/03/main_loop_fixed_rate.gif" alt="Main Loop Fixed Rate" title="Main Loop Fixed Rate"><figcaption class="wp-caption-text">Fixed Rate - Fonte: NAKAMURA, Ricardo. Técnicas de Programação de Games.</figcaption></figure>O que escrevi neste post é algo que considero bem básico para a programação de um game, e acho que pode ser <strong>muito útil para iniciantes</strong>. Apesar de ser básico, a partir disso é possível procurar mais informações na internet, ou perguntar aqui mesmo qualquer dúvida sobre o assunto.</p>
+            <div id="disqus_thread"></div>
+            <script>
+            /**
+            * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+            */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+
+            s.src = '//gamedeveloper.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         </section>
 
         <footer class="post-footer">
@@ -207,7 +229,7 @@
   ga('send', 'pageview');
 
 </script>
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=f8e3511b76"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=f8e3511b76"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8ca82c4b5a"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=8ca82c4b5a"></script>
 
 </body>
