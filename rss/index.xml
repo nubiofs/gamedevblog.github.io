@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.11</generator><lastBuildDate>Thu, 27 Oct 2016 02:19:25 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Final Frontier: Detalhes do Inventário]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-expandindo-o-inventario/">post anterior</a> fiz o inventário expandir quando o cursor estiver em cima de um slot. Desta vez comecei a adicionar alguns detalhes visuais, além de definir o que cada coluna da interface terá em relação a nave.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.11</generator><lastBuildDate>Sun, 30 Oct 2016 11:39:08 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Meu novo portfólio]]></title><description><![CDATA[<p>Uma das dicas que sempre falo para quem está começando é montar um portfólio pois, mesmo que no início tenha apenas jogos curtos ou projetos de cursos, é algo para mostrar e é um opcional praticamente obrigatório em um processo seletivo na área de jogos.</p>
+
+<p>Existem algumas coisas importantes que</p>]]></description><link>http://gamedeveloper.com.br/meu-novo-portfolio/</link><guid isPermaLink="false">8c7d03a9-f7da-4fc4-be4c-5a086ed882ec</guid><category><![CDATA[meus projetos]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Thu, 27 Oct 2016 11:07:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/10/oniro_1.png" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/10/oniro_1.png" alt="Meu novo portfólio"><p>Uma das dicas que sempre falo para quem está começando é montar um portfólio pois, mesmo que no início tenha apenas jogos curtos ou projetos de cursos, é algo para mostrar e é um opcional praticamente obrigatório em um processo seletivo na área de jogos.</p>
+
+<p>Existem algumas coisas importantes que vale sempre lembrar. Se você é um programador, ninguém vai cobrar pela arte, design ou audio do seu jogo, mas vão cobrar (e perguntar) sobre as técnicas de programação, engine, linguagem, design patterns e qualquer outra coisa técnica que possa ser relevante ao jogo. </p>
+
+<p>Até 2013 meu portfólio era uma categoria aqui no blog que listava os posts relacionados a meus projetos, porém isto não era muito prático para mostrar ou mesmo aplicar para vagas fora do país. Neste momento eu decidi separar o meu portfólio do blog e escrever o conteúdo dele em Inglês. </p>
+
+<p>No início eu queria algo bem simples e fiz meu <a href="http://cicanci.com/old/2014/">portfólio de 2014</a> utilizando apenas <a href="http://getbootstrap.com/">bootstrap</a>. Meus projetos estavam lá, porém o layout estava bem ruim. Continuei utilizando apenas o bootstrap no meu <a href="http://cicanci.com/old/2015/">portfólio de 2015</a>, que acabou ficando inacabado por falta de tempo.</p>
+
+<p>Porém, este ano, decidi refazer o portfólio mas queria ir um pouco mais além de apenas uma página estática. Decidi que queria hospedar o portfólio no <a href="https://pages.github.com/">GitHub Pages</a>, o mesmo lugar que está <a href="http://gamedeveloper.com.br/ola-ghost/">hospedado este blog</a>, porém não queria utilizar a combinação <a href="https://ghost.org/">Ghost</a> + <a href="https://github.com/axitkhurana/buster">Buster</a> para publicar. </p>
+
+<p>Foi então que decidi utilizar o <a href="https://jekyllrb.com/">Jekyll</a>, um framework possui algumas features bem legal para criar blogs e sites, e o melhor é que o GitHub Pages suporta Jekyll nativamente. Inclusive estou pensando em refazer este blog utilizado Jekyll, mas isto é um projeto maior que exigem um certo planejamento para não quebrar algumas coisas.</p>
+
+<p>Meu portfólio atual foi desenvolvido em poucos dias, utilizando meu tempo livre, e o resultado foi melhor do que o esperado. Você pode ver o projeto <a href="https://github.com/cicanci/cicanci.github.io">neste repositório</a> e o <a href="http://cicanci.com">portfólio aqui</a>. Além dos projetos profissionais, também adicionei meus projetos pessoais e jogos que desenvolvi em game jams. </p>
+
+<p>Coloquei apenas os jogos que foram desenvolvidos até o fim e publicados no meu blog ou em algum site, junto com imagens, videos e informações. Eu demorei mais para juntar toda essa informação e recursos do que montar o portfólio, mas todo esforço valeu a pena e hoje estou feliz com o resultado. Com o tempo vou adicionar mais detalhes sobre cada projeto, mas a base está pronta. </p>
+
+<p>Minha sugestão é fazer o portfólio em Inglês e em um lugar separado. Nem precisa ser no GitHub Pages, pois existem diversos outros serviços como o <a href="https://carbonmade.com/">Carbonmade</a> e o <a href="https://www.behance.net/">Behance</a>, ou você pode simplesmente colocar seus jogos em sites como <a href="http://gamejolt.com/">GameJolt</a> ou <a href="https://itch.io/">Itch.io</a>, mas lembre de colocar detalhes do que você fez no projeto. </p>
+
+<p>Deixe um comentário aqui com sugestões para melhorar meu portfólio, e também o link do seu para eu poder ver! </p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Detalhes do Inventário]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-expandindo-o-inventario/">post anterior</a> fiz o inventário expandir quando o cursor estiver em cima de um slot. Desta vez comecei a adicionar alguns detalhes visuais, além de definir o que cada coluna da interface terá em relação a nave.</p>
 
 <p><strong>Partes da nave</strong></p>
 
@@ -473,44 +493,4 @@ Apenas posicionando a caixa na posição determinada, o jogador desbloqueia os p
 
 <p>Se você conheço outros incentivos financeiros para desenvolver jogos no Brasil deixe um comentário abaixo que eu adiciono nesta lista.</p>
 
-<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-337122470/stock-photo-young-man-using-a-laptop-building-online-business-making-dollar-bills-cash-falling-down-beginner.html?src=C-RF706VSch304ZcEvhH4A-1-6">Young man using a laptop</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[Final Frontier: Skybox e mais destruição]]></title><description><![CDATA[<p>No <a href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">post anterior</a> sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior,</p>]]></description><link>http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/</link><guid isPermaLink="false">f240357d-be53-41a9-ab5a-0ad23b9f4a65</guid><category><![CDATA[final frontier]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Wed, 20 Jul 2016 03:01:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" alt="Final Frontier: Skybox e mais destruição"><p>No <a href="http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/">post anterior</a> sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior, além de outros detalhes sobre a organização do projeto na Unity.</p>
-
-<p><strong>Ao infinito e além</strong></p>
-
-<p><a href="https://en.wikipedia.org/wiki/Skybox_(video_games)">Skybox</a> é o nome da textura que fica no "fundo" do cenário renderizado pela câmera principal. O skybox padrão da Unity é um céu azul e um "chão" marrom no horizonte e, além de eu achar feio, este skybox padrão não combinava com meu jogo. Então, fui na <a href="https://www.assetstore.unity3d.com/">Asset Store</a> procurar uma opção gratuita e que fizesse mais sentido e foi então que encontrei o incrível <a href="https://www.assetstore.unity3d.com/en/#!/content/3392">Skybox Volume 2 (Nebula)</a>!</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-1.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p>Esta coleção de skyboxes possui 7 opções diferentes, todas bem interessantes e muito bem detalhadas. Por enquanto vou utilizar o Stars01 (imagem acima), mas vou colocar alguns exemplos abaixo de outras opções que eu gostei. Apesar de todas opções serem bem legais é bom manter no projeto apenas as que serão utilizadas por que esta coleção tem 80MB. Por enquanto vou deixar todas, mas ao longo do projeto provavelmente vou remover as que não irei utilizar. Existem outros assets no diretório <code>Standard Assets</code> que não estou usando e logo vou remover do projeto também.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-2.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-skybox-3.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p><strong>Adicionando mais destruição</strong></p>
-
-<p>No post anterior eu tinha colocado apenas uma caixa que, quando o tiro colide com ela, o modelo 3D é substituído pela versão "destruída" e a física é aplicada nela para que os pedaços voem pelo ar. Desta vez decidi fazer uma parede de caixas que explode as demais quando os destroços de uma voarem após a colisão com o tiro, e o resultado fica conforme a sequencia abaixo.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-antes-explosao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-explosao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-capa-3.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p>Muitos modelos 3D voando pelo cenário com física para colisão podem fazer o jogo ficar pesado. Não é o caso para o meu jogo ainda, mas quando mais objetos estiverem no cenário, mais modelos serão desenhados na tela, o que pode ser um problema para alguns aparelhos com hardware limitado. É muito cedo para se preocupar em otimizar isso, pois ainda nem sei como o jogo será, mas fiz algumas alterações para minimizar este problema. </p>
-
-<p>O modelo do tiro e dos da caixa destruída são removidos da cena pelo método da <a href="https://docs.unity3d.com/ScriptReference/Object.Destroy.html">Unity</a> chamado <code>Destroy(gameObject, timer)</code>, onde o <code>timer</code> é o tempo para que o objeto seja destruído após sua criação. Nada demais, mas já ajuda a manter a memória livre de objetos desnecessários.</p>
-
-<p><strong>Organizando a casa</strong></p>
-
-<p>Uma das alterações que fiz, seguindo a sugestão do leitor Felipe, foi colocar os assets baixados em um diretório separado ao invés de deixá-los jogados no projeto. Não tinha feito isso antes por ter apenas o <a href="https://www.assetstore.unity3d.com/en/#!/content/4392">Astra Starship Fleet Package</a>  no projeto, mas agora com o Skybox Volume 2 (Nebula) já faz mais sentido começar a organizar melhor. Ambos assets estão na pasta <code>ThirdParty Assets</code>, como mostra a imagem abaixo. Geralmente utilizo este nome ou algo parecido para esta pasta.</p>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/07/ff-organizacao.jpg" alt="Final Frontier: Skybox e mais destruição"></p>
-
-<p>Outra alteração que fiz foi criar um novo prefab chamado <code>TestAsteroidGroup</code>, e adicionei 9 caixas dentro dele para formar a parede. É sempre bom criar prefabs para agrupar objetos, mesmo sendo outros prefabs. Outro detalhe visto na imagem acima é que estou colocando prefabs e scripts em diretórios com o mesmo nome da minha cena <code>Playground</code>. Estou fazendo isto por que quero manter tudo usado no playground separado do protótipo, mas sem a necessidade de criar um novo projeto.</p>
-
-<p><strong>Próximos passos</strong></p>
-
-<p>Eu mencionei no post passado mas acabei não tendo tempo de trabalhar na movimentação da nave, pelo menos não na implementação. Pesquisei algumas opções de controle e câmera, e no próximo post vou falar mais sobre isto. Se eu tiver tempo também quero começar a fazer um sistema simples de spawn para os meteoros (e talvez até achar assets para substituir as caixas). </p>
-
-<p>O andamento do projeto pode ser conferido no <a href="https://github.com/cicanci/game-unity-ff">GitHub</a>, e <a href="https://github.com/cicanci/game-unity-ff/tree/8cd709c9bea93b397767636e421b7d2a4c1afce8">neste link</a> você pode ver as alterações no projeto até este post (também sugestão do leitor Felipe). Todos posts desta série sobre meu projeto podem ser vistos na tag <a href="http://gamedeveloper.com.br/tag/final-frontier/">Final Frontier</a>, e como sempre qualquer sugestão ou opinião é bem vinda!</p>]]></content:encoded></item></channel></rss>
+<p>Imagem da capa: <a href="http://www.shutterstock.com/pic-337122470/stock-photo-young-man-using-a-laptop-building-online-business-making-dollar-bills-cash-falling-down-beginner.html?src=C-RF706VSch304ZcEvhH4A-1-6">Young man using a laptop</a> do Shutterstock.</p>]]></content:encoded></item></channel></rss>
