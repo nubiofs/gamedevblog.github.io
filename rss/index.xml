@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.11</generator><lastBuildDate>Sat, 03 Dec 2016 23:36:55 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[ANCINE lança edital inédito para produção de jogos eletrônicos]]></title><description><![CDATA[<p>Recebi o e-mail abaixo e achei que seria interessante de postar aqui, embora seja um pouco em cima da hora.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Game Developer]]></title><description><![CDATA[Bruno Cicanci]]></description><link>http://gamedeveloper.com.br/</link><generator>Ghost 0.11</generator><lastBuildDate>Sun, 04 Dec 2016 00:05:58 GMT</lastBuildDate><atom:link href="http://gamedeveloper.com.br/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Por que você faz ou quer fazer jogos?]]></title><description><![CDATA[<p>Acredito que se você está lendo este texto existem grandes chances de você querer desenvolver jogos ou já trabalhar na área. É muito provável que alto te motivou a querer isso, algo mais sério do que "escolhi por que eu gosto de jogar", já que exige muita dedicação para fazer</p>]]></description><link>http://gamedeveloper.com.br/por-que-voce-faz-ou-quer-fazer-jogos/</link><guid isPermaLink="false">5aa511ff-d117-4a2e-a7a5-f134b94e3d68</guid><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Sun, 04 Dec 2016 00:05:00 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/12/porque-gamedev-capa.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/12/porque-gamedev-capa.jpg" alt="Por que você faz ou quer fazer jogos?"><p>Acredito que se você está lendo este texto existem grandes chances de você querer desenvolver jogos ou já trabalhar na área. É muito provável que alto te motivou a querer isso, algo mais sério do que "escolhi por que eu gosto de jogar", já que exige muita dedicação para fazer carreira na indústria de jogos.</p>
+
+<p>Pra mim o interesse surgiu por que eu gostava de jogar, mas quando comecei a estudar Ciência da Computação percebi que era algo muito desafiador de criar e compensador de ver alguém jogando o que você criou. Já escrevi alguns posts sobre este assunto, e recomendo dar uma lida no <a href="http://gamedeveloper.com.br/vi-uma-pessoa-jogando-um-jogo-que-fiz-na-ea/">O dia em que vi uma pessoa jogando um jogo que fiz na Electronic Arts</a> e no <a href="http://gamedeveloper.com.br/por-isso-que-faco-jogos/">É por isso que faço jogos!</a>, ambos são exemplos de recompensa que um desenvolvedor de jogos por ter. Algo tão simples, mas que faz todo trabalho valer a pena (pelo menos pra mim).</p>
+
+<p>Semana passada aconteceu o <a href="https://www.youtube.com/watch?v=d9O7N3GkG_o">Video Game Awards</a> em Los Angeles, um premiação para as empresas e pessoas que criaram as melhores experiências no ano. Fiquei com vontade de escrever este posts pois dois prêmios tiveram discursos muito emocionantes, que descrevem tudo que escrevi aqui. Confiram abaixo o discurso do desenvolvedor do <a href="http://www.thatdragoncancer.com/">That Dragon, Cancer</a> e do youtuber <a href="https://www.youtube.com/user/boogie2988">Boogie2988</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AAL91-GONxk" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RV2h9wWj4_Y" frameborder="0" allowfullscreen></iframe>
+
+<p>Então, por que você faz ou quer fazer jogos?</p>
+
+<p>Imagem da capa: <a href="https://www.shutterstock.com/pic-402752074/stock-photo-technology-gaming-entertainment-lets-play-and-people-concept-angry-screaming-young-man-in-headset-with-pc-computer-playing-game-at-home-and-streaming-playthrough-or-walkthrough-video.html">Playing game</a> do Shutterstock.</p>]]></content:encoded></item><item><title><![CDATA[ANCINE lança edital inédito para produção de jogos eletrônicos]]></title><description><![CDATA[<p>Recebi o e-mail abaixo e achei que seria interessante de postar aqui, embora seja um pouco em cima da hora.</p>
 
 <hr>
 
@@ -419,45 +431,4 @@ Largo Sen. Raul Cardoso, 207 – Vila Clementino, São Paulo</p>
 
 <p>Ainda não encontrei um equilíbrio bom entre Arte, Programação e Game Design, mas acredito que estou chegando perto de saber a dose certa de atenção que devo ter em cada área para fazer um jogo completo em 48 horas. Desta vez tive praticamente as 48 horas livres, dormi bastante de sexta pra sábado e pouco de sábado para domingo. No fim não foi um grande problema, pois mesmo com 48 horas sem dormir o jogo ainda estaria grade demais para eu fazer em 48 horas do jeito que imaginei. </p>
 
-<p>O código do jogo está disponível no <a href="https://github.com/cicanci/game-cocos2dx-ld36">GitHub</a> e na <a href="http://ludumdare.com/compo/ludum-dare-36/?action=preview&amp;uid=52021">página do jogo no Ludum Dare</a> existem mais informações sobre como baixar e jogar. O próximo Ludum Dare será em dezembro e já estou bem ansioso! Talvez eu tente novamente utilizando C++, porém ainda estou em dúvida se utilizo Unreal Engine ou chuto o balde e tento fazer algo no Linux (já trabalhei usando Ubuntu e Debian para programar backend, mas nunca um jogo). Talvez eu mude de ideia até lá e utilize algo diferente, ou algo que já usei. Na verdade não sei ainda, mas já estou ansioso para a próxima vez. </p>]]></content:encoded></item><item><title><![CDATA[Esta semana começa o Ludum Dare #36]]></title><description><![CDATA[<p>Sexta-feira às 22h (horário de Brasilia) começa o <a href="http://ludumdare.com/compo/">Ludum Dare #36</a>, e será minha <a href="http://gamedeveloper.com.br/tag/ludum-dare/">quinta participação</a> nesta game jam.</p>
-
-<p>Semana passada realizei uma palestra na USP sobre game jams e dei muitas dicas importantes para participar deste tipo de competição, principalmente no Ludum Dare que tempo mais experiência. Confira os</p>]]></description><link>http://gamedeveloper.com.br/esta-semana-comeca-o-ludum-dare-36/</link><guid isPermaLink="false">58fc0b5d-bdb6-451c-8d00-0ff83ab3e704</guid><category><![CDATA[game dev]]></category><dc:creator><![CDATA[Bruno Cicanci]]></dc:creator><pubDate>Tue, 23 Aug 2016 14:22:57 GMT</pubDate><media:content url="http://gamedeveloper.com.br/content/images/2016/08/LD2009-HighresNoShadow.jpg" medium="image"/><content:encoded><![CDATA[<img src="http://gamedeveloper.com.br/content/images/2016/08/LD2009-HighresNoShadow.jpg" alt="Esta semana começa o Ludum Dare #36"><p>Sexta-feira às 22h (horário de Brasilia) começa o <a href="http://ludumdare.com/compo/">Ludum Dare #36</a>, e será minha <a href="http://gamedeveloper.com.br/tag/ludum-dare/">quinta participação</a> nesta game jam.</p>
-
-<p>Semana passada realizei uma palestra na USP sobre game jams e dei muitas dicas importantes para participar deste tipo de competição, principalmente no Ludum Dare que tempo mais experiência. Confira os slides da <a href="http://gamedeveloper.com.br/game-jams-como-fazer-um-jogo-em-48h/">apresentação aqui</a>, tem muito conteúdo útil se você também pretende participar.</p>
-
-<p>Abaixo estão algumas coisas que vou fazer nesta edição do Ludum Dare, separando pelas que eu recomendo e as que eu não recomendo (a não se que tenha experiência).</p>
-
-<h3 id="norecomendomasvoufazer">Não recomendo, mas vou fazer</h3>
-
-<ul>
-<li><p>Em 3 edições do Ludum Dare usei a <a href="http://unity3d.com">Unity</a>, e na última a <a href="http://www.defold.com">Defold</a> (que foi um grande desafio por não conhecer). Desta fez quero usar algo que conheço mas não uso há um bom tempo, a <a href="http://www.cocos2d-x.org">Cocos2d-x</a>, um framework para desenvolver jogos em C/C++.</p></li>
-<li><p>Focar em game design. Na <a href="http://gamedeveloper.com.br/game-jams-como-fazer-um-jogo-em-48h/">minha apresentação</a> é possível ver o gráfico abaixo que mostra que a qualidade dos meus jogos aumentou, porém o game design diminuiu. Desta vez este será o principal foco.</p></li>
-</ul>
-
-<p><img src="http://gamedeveloper.com.br/content/images/2016/08/ludum-dare-chart.png" alt="Esta semana começa o Ludum Dare #36"></p>
-
-<ul>
-<li><p>Tentar fazer arte e som para o jogo. Na <a href="http://gamedeveloper.com.br/ludum-dare-35/">última edição</a> consegui fazer uma arte bem legal, vou tentar repetir o feito nesta.</p></li>
-<li><p>Para aproveitar melhor o tempo vou tentar não dormir no primeiro ou no segundo dia. Sempre tento, mas acabo dormindo, vamos ver se desta vez consigo.</p></li>
-<li><p>Sempre fiz os jogos do Ludum Dare pensando na plataforma Web, pois é mais fácil para colocar o jogo lá e testar. Desta vez quero que o foco seja mobile, então minha prioridade será Android.</p></li>
-</ul>
-
-<h3 id="dicasimportantes">Dicas importantes</h3>
-
-<ul>
-<li><p>Escolha a linguagem de programação, framework ou game engine antes de começar e tenha certeza de que tudo está atualizado para não perder tempo esperando downloads.</p></li>
-<li><p>Vai ser necessário criar arte e som, então já se prepare antecipadamente para isso (mesmo que você ache que não vai dar tempo, se prepare pois vai que dá).</p></li>
-<li><p>Se você tem dificuldade em se concentrar, não deixe a TV ligada e evite YouTube, tente ouvir trilha sonoras ou músicas que você gosta.</p></li>
-<li><p>Parece bobo mas planeja como serão suas refeições, e tente não sair pra comer pois isso pode te custar um tempo precioso. </p></li>
-<li><p>Planeje o que fazer em caso de falta de internet e/ou falta de energia elétrica, é sempre bom ter um plano B e um lugar pra ir (algo tipo Starbucks, por exemplo).</p></li>
-</ul>
-
-<p><strong>Links interessantes:</strong></p>
-
-<p><a href="http://gamedeveloper.com.br/ludum-dare-32/">Minha participação no Ludum Dare #32</a></p>
-
-<p><a href="http://gamedeveloper.com.br/ludum-dare-33/">Minha participação no Ludum Dare #33</a></p>
-
-<p><a href="http://gamedeveloper.com.br/ludum-dare-34/">Minha participação no Ludum Dare #34</a></p>
-
-<p><a href="http://gamedeveloper.com.br/ludum-dare-35/">Minha participação no Ludum Dare #35</a></p>]]></content:encoded></item></channel></rss>
+<p>O código do jogo está disponível no <a href="https://github.com/cicanci/game-cocos2dx-ld36">GitHub</a> e na <a href="http://ludumdare.com/compo/ludum-dare-36/?action=preview&amp;uid=52021">página do jogo no Ludum Dare</a> existem mais informações sobre como baixar e jogar. O próximo Ludum Dare será em dezembro e já estou bem ansioso! Talvez eu tente novamente utilizando C++, porém ainda estou em dúvida se utilizo Unreal Engine ou chuto o balde e tento fazer algo no Linux (já trabalhei usando Ubuntu e Debian para programar backend, mas nunca um jogo). Talvez eu mude de ideia até lá e utilize algo diferente, ou algo que já usei. Na verdade não sei ainda, mas já estou ansioso para a próxima vez. </p>]]></content:encoded></item></channel></rss>
