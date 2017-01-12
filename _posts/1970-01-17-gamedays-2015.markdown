@@ -1,0 +1,15 @@
+---
+layout: post
+title: GameDays 2015 na Unicsul em São Paulo
+date: 1970-01-17 14:22:22.000000000 -03:00
+---
+
+Nos dias 21, 22 e 23 de outubro acontece o [GameDays 2015](http://sites.cruzeirodosulvirtual.com.br/gamedays/programacao.html) na Universidade Cruzeiro do Sul em São Paulo no campus Liberdade, e eu serei um dos palestrantes do evento para falar sobre Design Patterns e técnicas de programação de jogos.
+
+O evento é gratuito e para se inscrever basta seguir as instruções [deste link](http://sites.cruzeirodosulvirtual.com.br/gamedays/inscricao/inscricao.php). Abaixo está um texto sobre o evento, que contará com outros palestrantes muito bons também. Não deixe de ir!
+
+> O **GameDays15** é um Evento Regional na área de Jogos Digitais Interativos, promovido pela Coordenação de Informática e ocorrerá nos dias 21, 22 e 23 de outubro no campus Liberdade da Universidade Cruzeiro do Sul. O evento já está em sua 11ª edição e pretende, ao longo dos anos, se tornar um referencial em São Paulo e região, em termos de jogos de computadores.
+> 
+> **Objetivos**: Atingir a comunidade interna da Universidade Cruzeiro do Sul, envolvendo todos os alunos de computação e informática e mais especificamente os alunos do curso de Jogos Digitais. Além disso, o foco é contar com a participação de pessoas do meio empresarial e de outras instituições de ensino (faculdades, colégios, cursos técnicos). O objetivo é projetar o evento para o mercado e buscar parcerias.
+
+

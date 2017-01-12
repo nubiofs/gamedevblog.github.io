@@ -1,0 +1,29 @@
+# Test Url
+baseUrl: http://localhost:4000
+
+# Production Url
+#baseUrl: http://gamedeveloper.com.br
+
+# Social Media
+linkFacebook: https://www.facebook.com/GameDeveloperBlog
+linkTwitter: http://twitter.com/cicanci
+linkBloglovin: https://www.bloglovin.com/blogs/gamedeveloper-14224145
+linkYoutube: https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ
+linkPinterest: https://br.pinterest.com/cicanci
+linkInstagram: https://www.instagram.com/cicanci
+
+# Blog Settings
+title: Game Developer
+description: Blog
+email: bruno@gamedeveloper.com.br
+paginate: 20
+permalink: pretty
+
+# Build Settings
+gems:
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md

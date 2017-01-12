@@ -1,0 +1,25 @@
+---
+layout: post
+title: Desenvolvimento de jogos utilizando a Cocos2d-x
+date: 1970-01-16 11:42:51.000000000 -03:00
+---
+
+A [Cocos2d-x](http://www.cocos2d-x.org/ "Cocos2d-x") é um framework para desenvolvimento de jogos mobile em código nativo (C/C++), para Android e iOS, entre outras plataformas. Este framework é uma versão da [Cocos2d](http://www.cocos2d-iphone.org/ "Cocos2d"), que serve para desenvolvimento de jogos apenas para iOS, pois a programação é em Objective-C.
+
+Muitos desenvolvedores independentes, e até empresas, estão utilizando a [Cocos2d-x](http://www.cocos2d-x.org/ "Cocos2d-x") para desenvolver [seus jogos](http://www.cocos2d-x.org/projects/cocos2d-x/apps "Jogos"), pois isso permite a publicação do mesmo jogo em mais de uma plataforma mobile, sem a necessidade de refazer o jogo. Basta apenas compilar para a plataforma desejada (depois de configurar o ambiente de desenvolvimento e o projeto corretamente).
+
+A [Cocos2d-x é opensource](https://github.com/cocos2d/cocos2d-x "Cocos2d-x") e está disponível no [GitHub](https://github.com/cocos2d "Cocos2d"), junto com a versão iOS/Objective-C ([cocos2d-iphone](https://github.com/cocos2d/cocos2d-iphone "Cocos2d-iphone")), HTML5/Javascript ([cocos2d-html5](https://github.com/cocos2d/cocos2d-html5 "Cocos2d-html5")) e C#/XNA ([cocos2d-x-for-xna](https://github.com/cocos2d/cocos2d-x-for-xna "Cocos2d-xna")). Essas quatro versões são diferentes entre si, cada uma serve para uma plataforma distinta, porém sua arquitetura e conteúdo são praticamente os mesmo, a única diferença é a linguagem de programação.
+
+[![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/09/cocos2dx_portrait.jpg "Cocos2d-x")](http://www.cocos2d-x.org)
+
+Então, se você entender como funciona qualquer versão, poderá utilizar as demais com facilidade. Outra vantagem desse padrão é que existem excelentes ferramentas que suportam a [Cocos2d](https://github.com/cocos2d/ "Cocos2d"), como o [TexturePacker](http://www.codeandweb.com/texturepacker "TexturePacker") (para criar sprite sheets), o [PhysicsEditor](http://www.codeandweb.com/physicseditor "PhysicsEditor") (para adicionar física ao jogo) e o [Tiled ](http://www.mapeditor.org/2009/08/cocos2d-for-iphone-081-released-with.html "Tiled")(que criar mapas 2d e perspectiva). Eu já usei essas três ferramentas com a Cocos2d-x, e recomendo! Existe também algumas ferramentas do site [Game Dev Helper](http://www.gamedevhelper.com/ "GameDevHelper"), que são parceiros do Cocos2d-x, mas eu nunca usei.
+
+Além dos [tutoriais do site da Cocos2d-x](http://www.cocos2d-x.org/projects/cocos2d-x/wiki "Tutoriais"), existem muitos exemplos espalhados pela internet. Se você encontrar algo, mas estiver em Objective-C (cocos2d), provavelmente vai existir a mesma coisa na Cocos2d-x em C/C++, você só precisa ter paciência e converter o código para achar o seu correspondente.
+
+Para desenvolver no Windows você deverá utilizar o [Visual Studio Professional ou Express](http://www.microsoft.com/visualstudio/ptb/downloads "Visual Studio"), e a Cocos2d-x possui templates para as versões 2008, 2010 e 2012. No Mac OSX você deverá utilizar o [Xcode](https://developer.apple.com/xcode/ "Xcode") para programar, e também existem templates para adicionar a Cocos2d-x na hora de criar um novo projeto. Existe também suporte ao Linux, mas não sei qual IDE é a mais indicada. Lembrando que apenas no Mac OSX você poderá desenvolver para iOS (iPhone e iPad), os demais sistemas operacionais tem suporte apenas ao Android.
+
+No [site da Cocos2d-x](http://www.cocos2d-x.org/projects/cocos2d-x/wiki "Cocos2d-x") também existem vários tutoriais muito bons que ajudam a configurar o ambiente de desenvolvimento no sistema operacional que você quiser utilizar. Se você não conhece, dê uma chance a Cocos2d-x, acho que você vai gostar!
+
+Este mês o blog ficou meio parado, sem posts novos. Mas agora voltarei a postar com uma frequência maior, e em breve haverão novidades por aqui! [Não deixe de curtir e acompanhar a página do blog no Facebook](https://www.facebook.com/GameDeveloperBlog "Facebook"), lá também posto alguns links interessantes de artigos, vídeos e sites.
+
+

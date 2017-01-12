@@ -1,0 +1,17 @@
+---
+layout: post
+title: 'TDC São Paulo 2012: Minha palestra na trilha de games!'
+date: 1970-01-16 09:34:37.000000000 -03:00
+---
+
+No dia 4 de julho (daqui a dois dias) começa o evento [The Developer’s Conference São Paulo 2012](http://www.thedevelopersconference.com.br/tdc/2012/index.html#saopaulo "TDC 2012"), na [Universidade Anhembi Morumbi – Campus Vila Olímpia](http://www.thedevelopersconference.com.br/tdc/2012/data-e-local#saopaulo "Local"). Organizado pela Global Code, o TDC 2012, que vai até o dia 8 de julho, conta com várias trilhas relacionadas à tecnologia.
+
+Este ano irei realizar uma palestra sobre [Desenvolvimento de Jogos Mobile](http://www.thedevelopersconference.com.br/tdc/2012/saopaulo/trilha-games#programacao "Trilha de Games") na [trilha de Games](http://www.thedevelopersconference.com.br/tdc/2012/saopaulo/trilha-games#programacao "Trilha Games"), que acontece no último dia do evento (8 de julho, às 13h10). Abaixo está um resumo que escrevi para o evento sobre o que seria a minha palestra:
+
+> Conheça como está o mercado de jogos para dispositivos móveis, uma das plataformas que mais cresceu nos últimos anos, e está presente em todo o mundo. Com tantas opções de plataformas mobile para desenvolver jogos e aplicativos, é preciso conhecer como melhor aproveitar essa tecnologia e garantir que seu produto seja um sucesso. O HTML5, novo padrão web, veio para ajudar também o desenvolvimento de webapps e jogos multiplataformas. Saiba como escolher a melhor tecnologia para desenvolver um jogo, como funciona o processo de desenvolvimento de um game, e conheça algumas dicas para estudar e desenvolver sua carreira como desenvolvedor de jogos.
+
+Se algum leitor for no dia da trilha de games, fique a vontade para falar comigo! =)
+
+**UPDATE: A apresentação utilizada na palestra foi [postada aqui](http://gamedeveloper.com.br/blog/2012/07/08/palestra-jogos-mobile-tdc-2012/ "TDC 2012").**
+
+

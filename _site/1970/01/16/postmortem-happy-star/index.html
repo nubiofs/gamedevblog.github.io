@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Postmortem: Happy Star Adventures</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Postmortem: Happy Star Adventures</p>
+<p class="blog-post-info blog-post-offset">
+  
+  16th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Este é o segundo postmortem de um jogo brasileiro que recebo para postar aqui no blog, desta vez é um jogo para o publico infantil desenvolvido com a Unity pelo Andre Dantas e publicado para Android. Confira os desafios que o Andre enfrentou em publicar seu primeiro jogo abaixo. Se você também fez um jogo e publicou em algum lugar, e quer publicar um postmortem aqui, entre em contato!</p>
+
+<blockquote>
+  <p>Happy Star Adventures é um jogo casual, direcionado para crianças, mas também é divertido para pessoas de todas as idades. Trata-se das aventuras de uma estrelinha que deve acumular pontos e fugir dos perigos entre céu, terra e mar.</p>
+
+  <p>Para vencer a aventura o jogador deve alcançar 1000 pontos em menos de 3 minutos ajudando a estrelinha a coletar itens e fugir dos vilões. Para guiar a estrela é preciso apenas deslizar o dedo pela tela do dispositivo, ou tocar no local onde deseja que a estrela se desloque.</p>
+
+  <p>Boa aventura!</p>
+
+  <p><strong>SOBRE</strong></p>
+
+  <p>Este é o primeiro jogo para plataformas móveis, desenvolvido por mim. A primeira versão foi desenvolvida em dez dias, logo após o nascimento da minha filha. Desde então, o jogo já recebeu cinco atualizações, e novas aventuras foram adicionadas. O game está disponível para Android e, em breve, para iOS.</p>
+
+  <p>Quem estiver interessado em jogar o jogo, antes de ler o Post Mortem abaixo, é só acessar os links:<br />
+<a href="https://play.google.com/store/apps/details?id=com.TOPgames.Happy_Star_Adventures">https://play.google.com/store/apps/details?id=com.TOPgames.Happy_Star_Adventures</a><br />
+<a href="http://happystar-adventures.tumblr.com/">http://happystar-adventures.tumblr.com/</a></p>
+
+  <p><strong>CONCEITO</strong></p>
+
+  <p>A idéia do jogo veio durante os meus estudos de Unity, para desenvolvimento de jogos para celulares. Eu havia ativado a licença grátis do Android para o Unity3d (versão 3.5) para publicar os jogos para esta plataforma. Os meus jogos anteriores haviam sido desenvolvidos para WEB (Heli Escape e Pale Blue) então eu não sabia se seria tão fácil desenvolver jogos para Android, já que várias funções são específicas das plataformas móveis.</p>
+
+  <p>Decidi fazer um cubo seguir o meu toque. Onde eu tocasse, o cubo deveria ir. Parece ser uma tarefa fácil, mas como o Unity trabalha com um espaço 3D, e as diferentes resoluções e proporções de tamanho de tela (Aspect Ratio) devem ser consideradas, demorei algumas horas para resolver este problema.</p>
+
+  <p>Com este problema resolvido, comecei a imaginar um jogo, onde pudesse utilizar esta funcionalidade. No fim, pensei num jogo onde as pessoas devessem deslizar o dedo pela tela, coletando alguns itens e evitando tocar em outros.</p>
+
+  <p>No desenvolvimento do Happy Star Adventures, encontrei algumas dificuldades e aprendi algumas lições, que irei compartilhar aqui.</p>
+
+  <p><strong>PROBLEMAS/DIFICULDADES</strong></p>
+
+  <p>1) Iniciar o jogo sem um Game Design Document (GDD)</p>
+
+  <p>Como parti de uma ideia não muito concreta, terminei por desenvolver um jogo completamente sem projeto/planejamento. Agora, aprendi que isto um erro grave, pois se o desenvolvedor não tem ideia do que pretende fazer, não saberá quando acabou e durante o andamento do projeto, terá inúmeras ideias que poderão ser difíceis de incluir durante o projeto já iniciado.<br />
+ Por exemplo, a minha ideia inicial era de fazer apenas uma fase, sem inimigos. Apenas uma estrela passeando enquanto coisas se moviam no background, e os itens para coleta não davam pontos para o jogador. Mostrando aos amigos e familiares, todos sentiram falta de um sistema de pontuação e de algum tipo de perigo a ser evitado. Para implementar estas sugestões, desenvolvi um sistema de pontuação e perigos que, quando tocavam na estrela, subtraíam pontos do jogador. Consequentemente, precisei desenvolver algo que mostrasse se o jogador venceu ou não a partida. Então, limitei o jogo a 3 minutos, no quais o jogador deveria atingir 1000 pontos, ou perderia a partida.</p>
+
+  <p>Nada destas funções estavam previstas incialmente e me tomou um bom tempo para inserir tudo isso num projeto em andamento.</p>
+
+  <p>2) “Fracasso” de Público</p>
+
+  <p>Apesar deste item não ter sido um erro técnico, adicionei ele neste Post Mortem, pois impacta diretamente no sucesso de um jogo.</p>
+
+  <p>No começo do projeto, pesquisei em alguns fóruns e vi que o retorno financeiro de jogos grátis, utilizando propagandas internas ao jogo, chegaria a US$1000 facilmente, mesmo em jogos mais simples. Porém, para chegar a esse valor, a quantidade de downloads do jogo deve ultrapassar 10.000 (estimativa).</p>
+
+  <p>Dei continuidade ao projeto, e após o lançamento… a frustração. Após 2 meses, apenas 100 pessoas baixaram o meu jogo e a receita das propagandas somavam US$1,33.</p>
+
+  <p>Apesar de eu ter feito este projeto como aprendizado, sem expectativas grandes de ganhar dinheiro com isso, eu não achava que o resultado seria tão ruim assim. Comecei a questionar se deveria continuar desenvolvendo jogos ou não.</p>
+
+  <p>Um ponto importante para este problema é que o jogo é direcionado para o público infantil. Mas esse problema eu não poderia resolver mais neste jogo, então precisei procurar outra solução.</p>
+
+  <p>Vamos lá. Cada fracasso gera uma nova oportunidade. Não desanimei e comecei a pesquisar mais sobre como fazer um jogo ter uma maior quantidade de downloads. Aprendi que a coisa não é tão fácil quanto me diziam. É extremamente importante planejar uma estratégia de marketing antes mesmo de começar a desenvolver um jogo. Monte o seu site/blog, entre em contato com outros desenvolvedores para opinarem, escreva sobre o andamento do seu projeto, coloque versões Betas para todos verem, mande press releases para sites especializados em jogos… Tudo isto tem que ser feito para aumentar as suas chances de sucesso após o lançamento.</p>
+
+  <p>Antes de começar a colocar esta estratégia em prática, achei que um dos problemas para a falta de popularidade do jogo é que ele possuía apenas uma fase (no Espaço) e resolvi desenvolver uma nova fase (no Campo), lançada 2 meses depois da data de lançamento do jogo.</p>
+
+  <p>Estranhamente, 10 dias antes do lançamento da nova fase, a quantidade de downloads começou a aumentar ligeiramente e logo depois, disparou rapidamente, atingindo uma média do último mês de aproximadamente 35 downloads por dia. As instalações totais, que demoraram 2 meses para chegar a 100, em mais 2 meses, atingiram 1800. As receitas com propagandas já atingem US$61,76.</p>
+
+  <p>A criação da terceira fase (no fundo do mar) já não elevou a quantidade de downloads consideravelmente, como ocorreu no lançamento da segunda fase.</p>
+
+  <p>A minha expectativa inicial ainda não foi atingida, mas pelo menos o resultado já não é tão frustrante quanto no início.</p>
+
+  <p>3) Falta de Fluidez no Jogo</p>
+
+  <p>Depois de um tempo notei que, mesmo em dispositivos mais poderosos, o jogo ficava travando rapidamente, prejudicando a fluidez nos movimentos da estrela.</p>
+
+  <p>Pesquisando sobre o assunto, achei duas possíveis causas para isto: Excesso de uso do Instantiate (Criação de um objeto durante o jogo) e o uso de planos com múltiplas faces no mesh, para as texturas.</p>
+
+  <p>Para resolver o problema do Instantiate, mudei a estratégia de CRIAR e depois DESTRUIR os objetos de jogo várias vezes, para fazer apenas o reposicionamento deles. Quando um objeto sair da tela, ele volta à posição inicial, sem precisar ser destruído e depois recriado. Esta estratégia melhorou a fluidez parcialmente.</p>
+
+  <p>Em relação aos planos, utilizei um plano criado no Blender, com apenas 1 face (2 triângulos) para substituir o plano nativo do Unity, com 100 faces (200 triângulos). Com isso, reduzi a quantidade de triângulos de aproximadamente 40 mil para 400, otimizando o processamento e melhorando mais ainda a fluidez do jogo.</p>
+
+  <p>4) Diferenças nas Telas dos Dispositivos</p>
+
+  <p>Este problema tirou o meu sono várias vezes. Mesmo já tendo chegado a uma solução, sempre que eu tentava fazer ajustes, os objetos ficavam desproporcionais dependendo do Aspect Ratio utilizado, e eu tive dificuldades para entender totalmente como o Unity tratava estas mudanças.</p>
+
+  <p>Inicialmente, por meio de programação, fazia cálculos baseado no comprimento (x) e altura (y) da tela. Descobri uma constante que deveria ser aplicado ao tamanho dos objetos, e multiplicava este valor pelo tamanho atual do objeto, fazendo todos os elementos do jogo aumentarem ou diminuírem, dependendo do Aspect Ratio utilizado. Que loucura!</p>
+
+  <p>Após a segunda atualização do jogo, decidi estudar mais este problema. Descobri que o Unity ajusta automaticamente o tamanho da câmera do jogo, dependendo do tamanho da tela em Pixels. Mas se o Aspect Ratio for diferente o tamanho da câmera deve ser ajustado via programação. Assim, descobri qual a fórmula que deveria ser utilizada para ajustar o tamanho da câmera e não precisei mais alterar o tamanho dos objetos. Ficou perfeito para o meu caso, mas esta solução apenas funciona para uma câmera em modo Ortográfico, modo comum em jogos 2D.</p>
+
+  <p><strong>SUCESSOS/APRENDIZADO</strong></p>
+
+  <p>1) Unity e Playmaker</p>
+
+  <p>Sem a game engine Unity, eu acho que não teria condições de fazer este jogo, já que eu não tenho muitas habilidades de programação e o Unity permite que muitas funções sejam realizadas por funções já pré-programadas na engine. Sua capacidade de exportar um mesmo jogo para várias plataformas diferentes, praticamente sem configuração extra, torna o desenvolvimento ainda mais fácil. E o melhor, a licença Indie para o Unity é gratuita.</p>
+
+  <p>Como não sei programar muito bem, o Playmaker foi indispensável para que eu conseguisse programar o jogo. O Playmaker é um plugin que permite que a programação seja realizada por meio de diagramas de blocos, substituindo a necessidade de programar diretamente nas linguagens do Unity (Javascript ou C#). O Happy Star Adventures foi totalmente desenvolvido com o Playmaker, sem a necessidade de digitar uma linha de código. Foram os US$45 mais bem gastos da minha vida!</p>
+
+  <p>2) Arte Vetorial</p>
+
+  <p>As minhas habilidades artísticas deixariam uma criança de 6 meses com inveja. Por isso, decidi me aprimorar tecnicamente, aprendendo a utilizar um programa de desenho vetorial (Inkscape) e usar figuras como modelos para fazer as texturas do jogo. Desta forma, não precisei desenvolver minhas habilidades artísticas, mantendo a arte simples o suficiente para não fazer a minha incompetência aparecer.</p>
+
+  <p>Apesar de saber que um artista de verdade faria algo muito melhor, estou satisfeito com o resultado final. Ficou bem melhor do que eu esperava.</p>
+
+  <p>3) Dinheiro!</p>
+
+  <p>Como já falei, estou recebendo bem menos do que esperava, mas já foi o suficiente para aprender algumas coisas sobre como ganhar dinheiro com aplicativos e jogos grátis.</p>
+
+  <p>Eu utilizo o AdMob (do Google) para colocar as propagandas no meu jogo e o AdMob me paga por cada clique que algum usuário dá nestas propagandas.</p>
+
+  <p>Depois que a quantidade de usuários dos Estados Unidos, Canadá e Austrália começaram a baixar mais o meu jogo, descobri uma coisa interessante. O valor pago pelo AdMob por clique nestes países chega a ser 6,3 vezes maior que o que me pagam por clique de brasileiros. Então, definitivamente, façam seus jogos também em inglês e se preocupem em divulgar seus jogos em sites e blogs estrangeiros.</p>
+
+  <p>Outra coisa que aprendi é que, se o jogo for curto, as pessoas não terão tempo suficiente para clicar nas propagandas. Por isso é importante planejar o jogo desde o início para que ele dure o máximo possível para ser terminado.</p>
+
+  <p>4) Rapidez e Simplicidade</p>
+
+  <p>Por ter mantido o jogo simples desde o início, consegui terminar a primeira versão em apenas 10 dias e já publicá-lo no Google Play.</p>
+
+  <p>Se o jogo levar muito tempo para ser desenvolvido, principalmente se for o seu primeiro, vai dar a você muita dor de cabeça e o fará querer desistir várias vezes durante o processo. Você ainda estará aprendendo a usar as ferramentas e se encontrar um desafio maior, após tanto ter batalhado para chegar aonde chegou, pode colocar tudo a perder, achando que nunca poderá fazer um jogo do início ao fim.</p>
+
+  <p>Felizmente, não senti esta pressão neste jogo e pude, logo após o lançamento da primeira versão, aprender rapidamente onde havia errado e já partir para encontrar as soluções necessárias.</p>
+
+  <p>Algumas pessoas não acreditam, mas quem nunca fez um jogo do início ao fim, não tem muita ideia de como é difícil fazer um jogo sozinho. Terminar este primeiro jogo te dará moral para conseguir um emprego na área ou para conseguir se unir a uma equipe maior e começar a fazer jogos ainda melhores.</p>
+
+  <p><strong>CONCLUSÃO</strong></p>
+
+  <p>Cada vez que começo um projeto deste tipo, me impressiono com a quantidade e complexidade de ferramentas e habilidades que temos que dominar do início ao fim, sem perder o foco. Ao fim, no entanto, a satisfação de ver o seu jogo disponível para todo o mundo é maior do que jogar todos os jogos de uma vez só.</p>
+
+  <p>Mas para que isso aconteça, se prepare, seja humilde, aprenda com os erros dos outros e se dedique ao máximo.</p>
+
+  <p>Caso alguém tenha algum questionamento adicional, pode me contatar pelo e-mail localizado no final do site: <a href="http://happystar-adventures.tumblr.com/">http://happystar-adventures.tumblr.com/</a></p>
+
+  <p>Para finalizar, gostaria de agradecer a todos os que me apoiaram durante o desenvolvimento deste jogo, e ao Bruno Cicanci por publicar este Post Mortem em seu blog.</p>
+
+  <p>Abraços para todos.</p>
+</blockquote>
+
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

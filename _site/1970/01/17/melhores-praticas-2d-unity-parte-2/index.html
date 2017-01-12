@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Melhores práticas para 2D na Unity - Parte 2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Melhores práticas para 2D na Unity - Parte 2</p>
+<p class="blog-post-info blog-post-offset">
+  
+  17th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> antes de continuar neste post.</p>
+
+<p><strong>Boas práticas usando NGUI</strong></p>
+
+<p>Quando desenvolvi o jogo que mencionei na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> a GUI da Unity estava em beta, por isso acabamos comprando e usando o plugin <a href="https://www.assetstore.unity3d.com/en/#!/content/2413">NGUI: Next-Gen UI</a>. Este plugin ficou muito famoso pois tornou possível a criação de interface e até jogos 2D utilizando a Unity, que até então não tinha suporte para ambos nativamente.</p>
+
+<p>Hoje o cenário é bem diferente, porém quase tudo que era feito na NGUI também se aplica aos recursos da Unity. A palavra “quase” é devido aos recursos disponíveis na classe NGUITools, que muitas vezes te ajudam demais no desenvolvimento. Eu particularmente utilizei muito os métodos <code class="highlighter-rouge">SetActive</code> e <code class="highlighter-rouge">AddChild</code>, junto com os componentes da NGUI.</p>
+
+<p>Um dos grandes recursos da NGUI é fazer toda UI ter apenas um draw call, ou seja, ser desenhada em uma única chamada. Eu recomendo assistir aos videos desta <a href="https://www.youtube.com/playlist?list=PLI_jd5nXafTbBrubTmgbodCtWY6BhVxtP">playlist</a> do criador da NGUI (em Inglês), ele fez tutoriais cobrindo todo básico necessário para utilizar o plugin seguindo as boas práticas e otimizando seu jogo. O vídeo abaixo é o número 2 de 5, e cobre o básico.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</span></p>
+
+<p>Eu tive um grande problema com este plugin: era praticamente impossível migrar o projeto da Unity 4 para Unity 5 sem ter que refazer boa parte da interface. Por este motivo decidimos continuar utilizando a Unity 4. Eu sei que outros desenvolvedores passaram pela mesma situação, e muitos utilizam Unity 4 até hoje por que não tiveram tempo de migrar a NGUI. Mas, ao mesmo tempo, conheço gente que não teve problemas em migrar para Unity 5. Mesmo com estes problemas eu acho que vale a pena utilizar NGUI, pois é um plugin incrível com muito conteúdo disponível.</p>
+
+<p>Se você está se perguntando se deveria comprar o plugin NGUI por $95 dólares ou utilizar os recursos da Unity minha sugestão é a seguinte: se você já comprou a NGUI, e tem experiência com ela, continue utilizando mas não deixe de estudar os recursos da Unity. Se você ainda não comprou, primeiro estude os recursos da Unity antes de tomar a decisão de comprar, pois isso pode te economizar $95 dólares.</p>
+
+<p><strong>Seu melhor amigo, o sprite sheet</strong></p>
+
+<p>Um sprite é image imagem solitária, e seu jogo pode ter várias imagens assim. Quando você combina vários sprites em uma única imagem, isto é chamado sprite sheet. Existem tantos benefícios por utilizar isto que é praticamente uma boa prática obrigatória para jogos 2D.</p>
+
+<p>No primeiro video abaixo (em Inglês) podemos ver as vantagens relacionadas ao tamanho e redução de cores para deixar seus assets mais leves e reduzir o consumo de memória. O segundo video explica a importância de usar sprite sheets para otimizar o tempo do OpenGL para carregar e desenhar imagens na tela.</p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/crrFUYabm6E" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</span></p>
+
+<p><span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/_KyUqyS5MLA" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</span></p>
+
+<p>Sem dúvidas é um ganho enorme se preocupar em organizar os assets do seu jogo em um único sprite sheet. Porém, devemos levar em conta as limitações de hardware das plataformas que estamos desenvolvendo. Em muitos aparelhos Android e iOS antigos o sprite sheet não deve ter mais do que 1024. O 2048 é um tamanho mais recomendado para que funcione na maioria dos aparelhos, mas 4096 funciona bem em praticamente todos hardwares mais recentes. Lembre-se que o sprite sheet deve sempre ter o tamanho em POT (power of two, ou potência de dois), pois se não for o OpenGL vai fazer sua imagem ser na hora que carregar na memória, o que consome mais espaço e recurso do processador.</p>
+
+<p>Os dois videos foram feitos pelo autor do <a href="https://www.codeandweb.com/texturepacker">TexturePacker</a>, um excelente software para gerar sprite sheets e que é compatível com qualquer game engine ou framework com suporte 2D. O site também possui excelentes <a href="https://www.codeandweb.com/texturepacker/tutorials">tutoriais</a> para as principais tecnologias, tudo em Inglês.</p>
+
+<p>No caso da Unity é necessário utilizar o plugin gratuito chamado <a href="https://www.assetstore.unity3d.com/en/#!/content/16641">TexturePacker Importer</a>. Eu utilizei o TexturePacker e o plugin junto com a NGUI no projeto que mencionei na <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a>, e os ganhos de consumo de memória e tamanho da build foram boa partes graças ao uso de sprite sheets, junto com as outras coisas mencionadas.</p>
+
+<p>Internamente a Unity agrupa suas imagens em uma sprite sheet na hora que seu jogo compilado, então mesmo se você não quiser ter este trabalho de preparar tudo antes a Unity faz pra você. Porém, é bom ter o controle disso, pois muitas otimizações mencionadas aqui devem ser feitas manualmente para se ter um ganho de memória na Unity.</p>
+
+<p>Esta foi a parte 2! Na próxima e, provavelmente, última parte vou comentar sobre melhores práticas relacionadas à programação na Unity em C#. O foco não será a linguagem de programação, mas sim sobre a utilização dos recursos de script engine. Qualquer dúvida ou sugestão deixe seu comentário abaixo!</p>
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

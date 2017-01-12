@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <!-- This loops through the paginated posts -->
+
+  <p class="blog-post-title"><a href="/1970/01/17/comeca-o-ludum-dare-35/">Esta semana começa o Ludum Dare #35</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Sexta-feira às 22h (horário de Brasilia) começa o <a href="http://ludumdare.com/compo/">Ludum Dare #35</a>, e eu admito que depois de participar das 3 <a href="http://ludumdare.com/compo/author/cicanci/">últimas edições</a> acabei ficando “viciado” em no LD, e sempre fico ansioso quando uma nova edição se aproxima.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/comeca-o-ludum-dare-35/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/a-logica-do-jogo/">A Lógica do Jogo</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>O livro “A Lógica do Jogo - Recriando clássicos da história dos videogames”, escrito por <a href="https://github.com/marcusbecker">Marcus Becker</a> e publicado pela editora <a href="https://www.casadocodigo.com.br/products/livro-logica-jogo">Casa do Código</a>, é um ótimo guia para aprender a programar jogos clássicos como Tetris, Space Invaders, Asteroids, Pong, Pac-Man, entre outros, utilizando Java.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/a-logica-do-jogo/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/microsoft-build-16/">Novidades da Microsoft no Build 16</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Esta semana começou o evento <a href="https://build.microsoft.com/">Build</a> da Microsoft em San Francisco, e muitas novidades para desenvolvedores foram apresentadas, inclusive para desenvolvedores de jogos.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/microsoft-build-16/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/king-defold-engine-2d/">King lança sua engine 2D Defold de graça</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>A <a href="https://king.com">King</a>, famosa pelo seu jogo Candy Crush Saga e outros similares, lançou esta semana sua game engine chamada <a href="http://www.defold.com/">Defold</a> para desenvolvimento de jogos em 2D. Ela é gratuita, conta com editor visual, controle de versão, editor de nível, e editor para programação em Lua.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/king-defold-engine-2d/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/certificacao-unity/">Certificação para Unity</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Durante o evento <a href="http://www.gdconf.com/">GDC</a> (Game Developer Conference) em San Francisco uma das novidades anunciadas pela Unity foi sua <a href="https://certification.unity.com/">certificação</a> para desenvolvedores de jogos que utilizam a game engine.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/certificacao-unity/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/postmortem-hueshark/">Postmortem: HueShark</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Este é o décimo postmortem publicado aqui no blog. Fiquei muito feliz com este projeto em especial pois, diferente dos demais que entraram em contato depois do projeto estar pronto, o João Paulo comentou sobre este jogo em alguns posts do blog. É muito legal ver um leitor do blog (e sua equipe) desenvolvendo e publicando um jogo, e ainda mais contando a história do desenvolvimento aqui para encorajar outros desenvolvedores a publicar seus jogos.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/postmortem-hueshark/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/primeiro-congresso-online-de-desenvolvimento-mobile/">1º Congresso Online de Desenvolvimento Mobile</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile do Brasil.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/primeiro-congresso-online-de-desenvolvimento-mobile/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/ola-ghost/">Adeus Wordpress, olá Ghost</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais “blog” do que “site”.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/ola-ghost/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/amazon-lumberyard/">Amazon entra na briga com Lumberyard</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha “apenas” uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com que praticamente todo mundo migrasse para a cloud da Amazon.</p>
+
+<p>Eu trabalho com <a href="http://aws.amazon.com/pt/">AWS</a> há algum tempo, tanto para meus projetos pessoais quanto para os profissionais. Este blog mesmo já ficou um tempo hospedado no AWS, e eu utilizo muitos dos seus serviços em meus projetos de jogos, apps e até backend. Se você não conheço os serviços e produtos do AWS, recomendo dar uma olhada logo!</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/amazon-lumberyard/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/vamos-fazer-um-jogo-juntos/">Vamos fazer um jogo juntos?</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p><strong>ESTE PROJETO FOI CANCELADO</strong></p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/vamos-fazer-um-jogo-juntos/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/como-ser-um-programador-de-jogos/">Como ser um programador de jogos</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1 ano nesta categoria por que os assuntos para iniciantes foram diminuindo e eu acabei ficando sem tempo para posts semanais.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/como-ser-um-programador-de-jogos/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/10-principios-level-design/">10 princípios para um bom level design</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Há quase 3 anos atrás li um post muito bom do game designer <a href="http://www.gamasutra.com/blogs/author/DanTaylor/543613/">Dan Taylor</a> no <a href="http://www.gamasutra.com">gamasutra</a> sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/10-principios-level-design/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/5-duvidas-programacao-jogos/">5 dúvidas sobre programação de jogos</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Recebi um email de um leitor do blog chamado Alexandre que, como muita gente que está começando, estava com dúvida em relação a indústria de games. Suas 5 perguntas foram tão bem formuladas que eu pedi sua permissão para postá-las aqui no blog, confira abaixo!</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/5-duvidas-programacao-jogos/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/introducao-jogos-python-pygame/">Introdução ao Desenvolvimento de Jogos em Python com PyGame</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>A <a href="http://www.novatec.com.br/livros/intropygame/">Editora Novatec</a> trouxe para o Brasil um excelente livro de <a href="https://pythonprogramming.net/">Harrison Kinsley</a> e <a href="https://www.willmcgugan.com/">Will McGugan</a>: Introdução ao Desenvolvimento de Jogos em Python com PyGame. Este é um livro recheado de surpresas até mesmo para desenvolvedores que já conhecem Python.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/introducao-jogos-python-pygame/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/postmortem-teharth-prologue/">Postmortem: Teharth Prologue - The Resources Dissolution</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. <a href="http://www.souking.com.br/teharth-resources-dissolution">Teharth Prologue – The Resources Dissolution</a> é o terceiro jogo do <a href="http://okamotoprojects.wix.com/site" title="Okamoto">Maurílio Eudes Okamoto</a>, que já publicou os jogos <a href="http://gamedeveloper.com.br/postmortem-sou-sustentavel/">Sou Sustentável</a> e <a href="http://gamedeveloper.com.br/postmortem-manual-do-skate/">Manual do Skate</a>, e o primeiro do <a href="http://teharthstudios.wix.com/home">Teharth Studios</a>. Confira aqui um resumo de como foi o desenvolvimento deste projeto as dificuldades que a equipe encontrou para terminar e publicar o jogo e <a href="http://www.souking.com.br/teharth-resources-dissolution">clique aqui</a> para fazer o download do jogo.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/postmortem-teharth-prologue/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/manual-de-producao-de-jogos-digitais/">Manual de Produção de Jogos Digitais</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Existem alguns livros que são tão únicos na abordagem de seus assuntos que se tornam referência e sempre são recomendados para quem tem interesse de estudar seu assunto específico. Isto acontece com este livro que, como o próprio título diz, é um <a href="http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830">manual para produção de jogos digitais</a>.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/manual-de-producao-de-jogos-digitais/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/ludum-dare-34/">Minha participação no Ludum Dare #34</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Participei do <a href="http://ludumdare.com/compo">Ludum Dare</a> pela terceira vez mas sempre parece ser a primeira pela quantidade de coisas que aprendo. Mudei algumas coisas desta fez, tentei ficar mais organizado, mas como sempre o tempo é o maior vilão.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/ludum-dare-34/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/hoje-comeca-o-ludum-dare-34/">Hoje começa o Ludum Dare #34</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Meia noite, no horário de Brasilia, começa mais uma edição do Ludum Dare, uma game jam internacional online onde desenvolvedores de jogos profissionais e amadores tem 48 horas para criar um jogo baseado em um tema (ou 72 horas no caso de equipes).</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/hoje-comeca-o-ludum-dare-34/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/palestra-design-patterns-gamedays-2015/">Minha palestra sobre Design Patterns no GameDays 2015</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Ontem apresentei minha palestra sobre uso de design patterns na programação de jogos no evento <a href="http://gamedeveloper.com.br/gamedays-2015/">GameDays 2015</a> na Universidade Cruzeiro do Sul em São Paulo. Confira aqui os slides apresentados.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/palestra-design-patterns-gamedays-2015/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/gamedays-2015/">GameDays 2015 na Unicsul em São Paulo</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Nos dias 21, 22 e 23 de outubro acontece o <a href="http://sites.cruzeirodosulvirtual.com.br/gamedays/programacao.html">GameDays 2015</a> na Universidade Cruzeiro do Sul em São Paulo no campus Liberdade, e eu serei um dos palestrantes do evento para falar sobre Design Patterns e técnicas de programação de jogos.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/gamedays-2015/">Read More</a>
+  </p>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/page2" class="pagination-item">&laquo; Newer Posts</a>
+  
+  <span class="pagination-item">3 of 16</span>
+  
+    <a href="/page4" class="pagination-item">Older Posts &raquo;</a>
+  
+</div>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

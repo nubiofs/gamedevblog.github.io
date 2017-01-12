@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <!-- This loops through the paginated posts -->
+
+  <p class="blog-post-title"><a href="/1970/01/17/hora-de-fazer-jogos/">Chega, é hora de fazer jogos!</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Fazem pouco mais de 5 anos que trabalho profissionalmente na indústria de jogos e, com cada vez mais tecnologias disponíveis para se fazer jogos, ainda é comum encontrar pessoas que ficam no “quero fazer jogos” e não fazem nem um PONG no tempo livre.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/hora-de-fazer-jogos/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/postmortem-insect/">Postmortem: Insect</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Eu fico muito feliz quando outros desenvolvedores independentes e até estudantes tem o interesse de publicar um postmortem sobre o projeto aqui no blog. Neste post, o desenvolvedor Aleksiam de 17 anos do Rio de Janeiro conta como foi criar e publicar seu <a href="https://play.google.com/store/apps/details?id=com.EYE.Insect&amp;hl=pt-BR">primeiro game no Google Play</a> usando Unity.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/postmortem-insect/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/desenvolvimento-para-iphone-e-ipad/">Desenvolvimento para iPhone e iPad</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Há alguns meses atrás tive a oportunidade de fazer a <a href="http://gamedeveloper.com.br/dominando-o-android-do-basico-ao-avancado/">review</a> de um livro muito bom de desenvolvimento para Android. Muitos me perguntaram qual seria o livro equivalente de desenvolvimento para iOS, e a resposta está neste post.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/desenvolvimento-para-iphone-e-ipad/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/board-games-e-jogos-digitais/">Jogos de tabuleiro e sua relação com jogos digitais</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Acredito que muitos desenvolvedores de jogos (e jogadores) têm uma paixão especial por jogos de tabuleiro, principalmente jogos diferentes e desafiadores. Neste post quero falar sobre a relação deles com jogos digitais, e como funciona a conversão de um para o outro.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/board-games-e-jogos-digitais/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/ludum-dare-33/">Minha participação no Ludum Dare #33</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Esta foi minha segunda participação no game jam <a href="http://ludumdare.com/">Ludum Dare</a>, e isto me fez entender uma coisa: não é apenas o tema que muda, mas tudo é diferente em cada edição.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/ludum-dare-33/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/hoje-comeca-o-ludum-dare-33/">Hoje começa o Ludum Dare #33</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Logo desenvolvedores do mundo todo começarão a incrível tarefa de desenvolver um jogo sozinhos em 48 horas (ou em grupo com prazo de 72 horas), aproveite esta oportunidade para participar de um dos maiores game jams do mundo, o <a href="http://ludumdare.com/compo/">Ludum Dare</a>!</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/hoje-comeca-o-ludum-dare-33/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/resultado-sorteio-livro-game-design/">Resultado do sorteio do livro Game Design</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Depois de pouco mais de duas semanas, hoje é o dia de anunciar o vencedor do <a href="http://gamedeveloper.com.br/game-design-modelos-de-negocio-e-processos-criativos-sorteio-do-livro/">sorteio</a> do livro Game Design: Modelos de Negócio e Processos Criativos da editora Cengage Learning.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/resultado-sorteio-livro-game-design/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/palestra-design-patterns-tdc-sp-2015/">Minha palestra sobre Programação de Jogos na TDC</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>No último sábado apresentei a palestra Programação de Jogos no evento <a href="http://www.thedevelopersconference.com.br/tdc/2015/saopaulo/">The Developers Conference</a> 2015 que aconteceu em São Paulo. O foco da palestra foi a utilização de design patterns no desenvolvimento de jogos, confira os slides abaixo.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/palestra-design-patterns-tdc-sp-2015/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/game-design-modelos-de-negocio-e-processos-criativos-sorteio-do-livro/">Game Design: Modelos de Negócio e Processos Criativos - sorteio do livro!</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Escrito pelo brasileiro <a href="https://twitter.com/vincevader">Vicente Martin Mastrocola</a> e público pela editora <a href="http://www.cengage.com.br/ls/game-design-modelos-de-negocio-e-processos-criativos/">Cengage Learning</a>, este livro aborda de forma resumida como funciona o processo criativo para se criar um jogo, passando por modelos de negócio e com alguns cases e entrevistas de desenvolvedores brasileiros. Confira no final do post como participar do sorteio deste livro!</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/game-design-modelos-de-negocio-e-processos-criativos-sorteio-do-livro/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/5-filmes-que-voce-precisa-assistir/">5 filmes que você precisa assistir</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Este post é um pouco diferente do normal, pois eu quero recomendar alguns filmes e documentários sobre a indústria de games que vale muito a pena assistir!</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/5-filmes-que-voce-precisa-assistir/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/postmortem-diablo-ii/">Postmortem de Diablo II é publicado 15 anos depois</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Dependendo do que você usar como exemplo, 15 anos pode não parecer muito. Mas, quando levamos em consideração qualquer coisa relacionada a tecnologia, este tempo parece ser muito maior.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/postmortem-diablo-ii/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/anime-friends-2015/">Anime Friends 2015</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Anime Friends, maior festival de cultura pop da América Latina, começa em julho. Megaevento oferece atrações nacionais e internacionais, entre elas cosplays, shows musicais, campeonatos de videogames e quadrinhos <a href="http://www.animefriends.com.br/">www.animefriends.com.br</a></p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/anime-friends-2015/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/tdc-2015-sao-paulo/">TDC 2015 em São Paulo</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Em julho acontece mais uma edição do evento <a href="http://www.thedevelopersconference.com.br/">TDC</a> (The Developer Conference) em São Paulo, e vou apresentar uma palestra na trilha de Games no dia 25/07 (sábado) sobre Programação de Jogos.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/tdc-2015-sao-paulo/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/melhores-praticas-2d-unity-parte-2/">Melhores práticas para 2D na Unity - Parte 2</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a <a href="http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/">parte 1</a> antes de continuar neste post.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/melhores-praticas-2d-unity-parte-2/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/estatisticas-de-hardware-desktop-e-mobile/">Estatísticas de hardware desktop e mobile</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Uma das principais preocupações de um programador de games é a performance do seu jogo e qual é o hardware mínimo que ele pode rodar, seja mobile ou desktop. Mas pra isso, primeiro você precisa saber quais são os hardwares mais usados para jogar.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/estatisticas-de-hardware-desktop-e-mobile/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/melhores-praticas-2d-unity-parte-1/">Melhores práticas para 2D na Unity - Parte 1</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Trabalhei em um projeto grande utilizando a <a href="http://unity3d.com/">Unity</a>, e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/melhores-praticas-2d-unity-parte-1/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/nao-faca-clones/">Não faça clones</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Esta semana li um post em um grupo de desenvolvedores de jogos no Facebook que deixou muitas pessoas revoltadas, inclusive eu: um “desenvolvedor” clonou totalmente um jogo famoso e disse que era inovador copiar formulas de sucesso. Isso esta muito errado.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/nao-faca-clones/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/postmortem-hungrymons/">Postmortem: Hungrymons</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Há alguns meses um amigo conversou comigo e disse que queria começar a desenvolver jogos. Hoje, algum tempo depois, ele e seu amigo formaram um estúdio de jogos independentes e lançaram seu primeiro jogo para dispositivos móveis.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/postmortem-hungrymons/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/dominando-o-android-do-basico-ao-avancado/">Dominando o Android: do básico ao avançado</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>Este livro escrito pelo <a href="http://www.nglauber.com.br/">Nelson Glauber</a> tem praticamente tudo que você precisa para desenvolver jogos e apps para <a href="http://developer.android.com">Android</a>. Em quase 800 páginas divididas em 26 capítulos, o autor descreve desde conceitos básicos até como desenvolver para  Android Wear.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/dominando-o-android-do-basico-ao-avancado/">Read More</a>
+  </p>
+
+  <p class="blog-post-title"><a href="/1970/01/17/marmalade-sdk/">Conheça o Marmalade SDK</a></p>
+  <p class="blog-post-info">
+    
+    17th
+      
+    January
+    1970
+
+    
+  </p>
+  
+  <div class="blog-post-excerpt">
+    <p>A última vez que usei o <a href="https://www.madewithmarmalade.com/">Marmalade SDK</a> ele nem tinha este nome, era chamado de Airplay SDK até ter o nome alterado devido a uma tecnologia da Apple também chamada AirPlay. Muitos jogos na EA até 2011~2012 eram desenvolvidos utilizando este framework, e hoje ele está bem diferente.</p>
+
+
+  </div>
+  <p class="blog-post-readmore">
+    <a href="/1970/01/17/marmalade-sdk/">Read More</a>
+  </p>
+
+
+<!-- Pagination links -->
+<div class="pagination">
+  
+    <a href="/page3" class="pagination-item">&laquo; Newer Posts</a>
+  
+  <span class="pagination-item">4 of 16</span>
+  
+    <a href="/page5" class="pagination-item">Older Posts &raquo;</a>
+  
+</div>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

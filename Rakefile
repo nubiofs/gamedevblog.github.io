@@ -1,8 +1,6 @@
-desc "Deploy"
-task :deploy do
-	sh "git add --all"
-	sh "git commit -am 'Updated blog content'"
-	sh "git push origin master"
+desc "Run"
+task :run do
+	sh "bundle exec jekyll serve"
 end
 
-task :default => [:deploy]
+task :default => [:run]

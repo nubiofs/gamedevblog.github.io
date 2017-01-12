@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Postmortem: Sou Sustentável</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Postmortem: Sou Sustentável</p>
+<p class="blog-post-info blog-post-offset">
+  
+  16th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Mais um postmortem de um jogo produzido por desenvolvedores independentes no Brasil, desta vez vamos conhecer o que deu certo e o que deu errado durante a criação do jogo Sou Sustentável, desenvolvido pelo Okamoto Game Productions.</p>
+
+<p>O jogo, desenvolvido com a game engine Unity 3D, possui três mini-games diferentes, todos com temática de sustentabilidade. O postmortem abaixo, escrito pelo <a href="http://okamotoprojects.wix.com/site" title="Ouroboros">Maurílio Eudes Okamoto</a>, mostra as dificuldades e problemas e os pontos positivos da experiência de criar um jogo do zero até o fim.</p>
+
+<blockquote>
+  <p><strong>Postmortem: Sou Sustentável</strong></p>
+
+  <p><img src="../content/images/2013/11/1-main1.jpg" alt="" title="Sou Sustentável" /></p>
+
+  <p><strong>1. Descrição do Jogo</strong></p>
+
+  <p>Sou Sustentável é um jogo para as plataformas Android, WebPlayer e Windows (PC). É um jogo educativo com o tema sobre sustentabilidade. Possui 3 minijogos, com fácil aprendizado e englobam conhecimento e situações que envolvam o tema sustentabilidade. O primeiro minijogo, é para coletar os lixos recicláveis, onde o jogador controla uma lixeira. O segundo é sobre reaproveitamento de água da chuva, onde o jogador precisa ligar os canos para formar a tubulação que irá levar a água da chuva da calha para uma cisterna. E o terceiro minijogo envolve reflexos, o nome de um tipo de lixo reciclável irá aparecer na tela e o jogador precisa apertar o botão referente a aquele tipo de lixo.</p>
+
+  <p><img src="../content/images/2013/11/3-levelSelect.jpg" alt="" title="Sou Sustentável" /></p>
+
+  <p><strong>2. Dificuldades e Problemas</strong></p>
+
+  <p>1) Pouco Empenho de Alguns Membros da Equipe<br />
+ Dos 5 membros da equipe, dois deles eu conheci pela internet e outros dois eram amigos de vários anos. O interessante desse projeto é que deixou bem claro para mim, algo que um grande amigo meu dizia “Trabalho e amizade são coisas diferentes.” depois disso venho passando essa frase para as pessoas. Pois vejo muita gente levando um problema de trabalho/projeto para o lado pessoal e perdendo amizades. E ter mais cuidado em criar a equipe, bons amigos não quer dizer que vão ser bom desenvolvedores.</p>
+
+  <p>2) Arte Gráfica<br />
+ O Graphic Designer sabe bem desenhar no papel, mas no computador “dava para o gasto”, mas a arte não ficou ruim. O grande problema da arte era o tamanho em bytes que as imagens ficavam. Outro problema enfrentado por ele foi a falta de conhecimento em ferramentas gráficas, isso fez com que a criação das imagens demorassem muito mais.</p>
+
+  <p><img src="../content/images/2013/11/4-minigame1.jpg" alt="" title="Sou Sustentável" /></p>
+
+  <p>3) Bugs e Problemas de Implementação<br />
+ Felizmente (ou infelizmente) houveram poucos problemas no fim do projeto. Os dois maiores problemas foram de desempenho, na qual causa lentidão (lag) em alguns aparelhos Android no primeiro minijogo. Outro problema foi com a chave da versão Android, que fez com que não conseguíssemos colocar o jogo no Google Play. Um outro problema considerável foi a qualidade das imagens no jogo, como elas eram naturalmente pesadas, nós tivemos que comprimir mais piorando bastante a qualidade inicial delas.</p>
+
+  <p><strong>3. Pontos Positivos</strong></p>
+
+  <p>1) Arte Sonora<br />
+ Em questão de músicas e efeitos sonoros, o Sound Designer do grupo fez um ótimo trabalho. As músicas e efeitos sonoros combinavam bem com o estilo do jogo, com cada minijogo. Foi um ponto positivo bem considerável, mas houve alguns improvisos.</p>
+
+  <p><img src="../content/images/2013/11/5-minigame2.jpg" alt="" title="Sou Sustentável" /></p>
+
+  <p>2) Aprendizado de Novas Ferramentas e Tecnologias<br />
+ Esse projeto foi focado para o aprendizado da game engine Unity 3D usando Javascript. E foi justamente isso o que eu aprendi nesse projeto, desenvolvimento de jogos no Unity 3D com Javascript. Também aprendi mais sobre a criação de um Game Design Document (GDD), que abrangeu a área de Game Design e Level Design.</p>
+
+  <p>3) Ganho de Experiência em Diversas Áreas<br />
+ Esse foi o segundo projeto de jogo que eu desenvolvi, ao contrário do primeiro que eu fui um participante mediano na equipe. Nesse projeto eu fui o que mais participou, apesar da pouca participação de alguns membros, a experiência que adquiri em um único projeto foi bem considerável.<br />
+ Foi a primeira vez que fui gerente de projeto e de equipe, foi o primeiro GDD que fiz que saiu do papel. Também foi a primeira vez que fui um Lead Programmer, programação é algo que sempre tive dificuldade.</p>
+
+  <p>4) Satisfação Pessoal<br />
+ Além dos fatores já citados, foi bem bacana trabalhar com pessoas inicialmente desconhecidas e o projeto fluir bem e terminar. Foi bastante divertido aprender a desenvolver no Unity 3D, antes disso só havia mexido em Android sem game engine. É tudo mais fácil e flui melhor, fora a economia de tempo que isso deu. O projeto demoraria pelo menos 5 vezes mais sem o Unity 3D, ou no pior caso ele nem sairia do papel.<br />
+ Resumidamente foi muito bom pelo aprendizado e experiência. Não menos importante é o segundo jogo que criei e foi o primeiro que eu projetei e gerenciei sozinho. Afinal uma das melhores sensações para um desenvolvedor de jogos é terminar um jogo, mesmo se for simples e feio.</p>
+
+  <p><img src="../content/images/2013/11/6-minigame3.jpg" alt="" title="Sou Sustentável" /></p>
+
+  <p>Download do Sou Sustentável: <a href="http://okamotoprojects.wix.com/site#!sou-sustentavel/cz1f">http://okamotoprojects.wix.com/site#!sou-sustentavel/cz1</a></p>
+
+  <p>E para terminar obrigado ao Bruno Cicanci pela oportunidade de postagem do meu primeiro postmortem. E obrigado a todos que leram o/</p>
+
+  <p>Maurílio Eudes Okamoto</p>
+</blockquote>
+
+<p>Obrigado por compartilhar sua experiência Maurílio, e parabéns pelo jogo! Lembrando que os postmortems publicados são escritos pelos desenvolvedores do jogo, contando as coisas que deram certo e que deram errado durante a produção do game. Se você também produziu um jogo e quer compartilhar com os leitores, entre em contato comigo pelo email que está na seção contato.</p>
+
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

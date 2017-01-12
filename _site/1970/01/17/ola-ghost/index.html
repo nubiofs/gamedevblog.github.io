@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Adeus Wordpress, olá Ghost</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Adeus Wordpress, olá Ghost</p>
+<p class="blog-post-info blog-post-offset">
+  
+  17th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais “blog” do que “site”.</p>
+
+<p>Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente não imaginaria que continuaria o blog por tanto tempo. Ainda vou fazer um post sobre minha carreira, por isso aqui quero focar no blog em si.</p>
+
+<p>Comecei hospedando o blog no side do <a href="https://br.wordpress.com/">Wordpress</a> e depois de 1 ano quis instalar no meu próprio servidor. Na época eu tinha um hospedagem no <a href="http://www.uolhost.uol.com.br/">UOL Host</a> com meu projeto de TCC da graduação, que acabei tirando do ar para colocar meu blog. Não conhecia muito sobre hospedagem, mas em pouco tem percebi como esta era ruim. Por diversas vezes meu blog ficou fora do ar por problemas na infraestrutura deles, e mesmo não sendo algo famoso eu estava pagando por um serviço que não era bom.</p>
+
+<p>Logo migrei para a <a href="https://br.bluehost.com/">Bluehost</a>, e até fiquei feliz por um tempo. Depois descobri a <a href="https://www.digitalocean.com/">Digital Ocean</a>, e vi que poderia configurar meu próprio servidor ao invés de ter uma hospedagem e acabei migrando o blog pra lá. Pouco tempo depois migrei para a <a href="http://aws.amazon.com/pt/">Amazon Web Services</a>, e estava muito feliz em ter meu servidor lá.</p>
+
+<p>Em todo esse tempo sempre tive curiosidade de mudar do Wordpress, mas acabava ficando nele por ter muito conteúdo publicado. Uma das coisas que mais me fez querer mudar do Wordpress era a velocidade dele, a dependência de um banco de dados sempre iria adicionar uma camada de lentidão no carregamento da página.</p>
+
+<p>Há 2 anos conheci o <a href="https://jekyllrb.com/">Jekyll</a> e fiquei impressionado, pois era exatamente o que eu queria! Algo que fizesse meu blog ser ter um foco maior em ser um blog, além do conteúdo publicado ser estático e sem banco de dados. A única coisa que me impediu de migrar na época foi mover o conteúdo do Wordpress para o formato do Jekyll, pois a ferramenta de migração na época não funcionava muito bem e acabei desistindo.</p>
+
+<p>Há alguns dias encontrei uma nova tecnologia parecida com Jekyll, porém baseada no <a href="http://nodejs.org/">NodeJS</a>, o <a href="https://ghost.org/">Ghost</a>. De cara já gostei da sua simplicidade e interface para administrar o blog: simples e direto ao ponto. Fiquei tão empolgado e que decidi tentar sua ferramenta de migração, e para minha supresa funcionou muito bem! Todo conteúdo do blog foi gerado, e a partir dai comecei a migrar o blog.</p>
+
+<p>O único problema que tive foi que a ferramenta de migração não faz download das imagens, então tive que copiar todas para o diretório do Ghost (que tem a mesma estrutura do Wordpress) e depois editei o arquivo de banco de dados (SQLite3) usando sqlitebrowser e algum código SQL para mudar todas URLs para carregar as imagens locais. Em cerca de 2 horas tudo estava pronto, porém comecei a pensar em outra coisa.</p>
+
+<p>Fiz um teste utilizando o <a href="https://aws.amazon.com/pt/elasticbeanstalk/">Elastic Beanstalk</a> do AWS e publiquei meu blog como uma aplicação NodeJS. Ficou rápido, porém eu queria resolver outro problema: baixar o custo da hospedagem. Deixar meu blog lá custaria cerca de $10 dólares por mês, e com o valor do dólar atualmente qualquer ajuda é bem vinda para diminuir os custos. Neste ponto entrou o <a href="https://pages.github.com/">GitHub Pages</a>.</p>
+
+<p>Meu portfólio já estava hospedado no GitHub Pages, por ser um conteúdo estático, porém meu novo blog era uma aplicação NodeJS. Com um pouco de pesquisa encontrei o <a href="https://github.com/axitkhurana/buster/">Buster</a> que converte todo conteúdo do Ghost em arquivos estáticos, para que possa ser publicado no GitHub Pages.</p>
+
+<p>Depois de um longo caminho estou muito feliz com o resultado. Atualmente estou trabalhando com dois repositórios, um privado com a aplicação do Ghost e um <a href="https://github.com/GameDevBlog/gamedevblog.github.io">público no GitHub</a>. Quando quero publicar algo, abro a linha de comando e rodo o Ghost localmente como uma aplicação NodeJS. E quando termino de mexer, uso o buster para converter meu blog em arquivos estáticos e publicar no repositório público do GitHub, e assim deixá-lo disponível no GitHub Pages. Parece muito trabalho, mas já automatizei tudo utilizando um script Ruby. Assim que termino de escrever, basta rodar o script e tudo que escrevi neste parágrafo acontece bem rápido.</p>
+
+<p>Faz 7 anos que pago cerca de $10 dólares por mês para manter este blog, e o máximo que consegui foi $100 dólares depois de uns 5 anos usando Google Ads. Esta mudança para o Ghost não é apenas boa por deixar de lado o Wordpress e seu conteúdo dinâmico lento. É muito boa por que agora minha hospedagem é gratuita e o conteúdo está muito rápido.</p>
+
+<p>Ainda existem coisas que preciso ajustar, como alguns posts com texto mal formatado ou imagens e links quebrados. Aos poucos estou editando cada um dos 256 posts do blog para que todo conteúdo fique corrigido. Muito obrigado a todos leitores, todo esse tempo que dedico ao blog é para tentar te ajudar com um pouco do meu conhecimento na área. E lembre, estou sempre aberto a sugestões aqui ou por e-mail.</p>
+
+<p><strong>Recomendação da semana</strong></p>
+
+<p>Esta semana comecei a ler o livro <a href="http://geral.leya.com.br/pt/literatura-fantastica/armada/">Armada</a> publicado no Brasil pela editora Leya, o segundo do autor Ernest Cline que escreveu o incrível <a href="http://geral.leya.com.br/pt/literatura-fantastica/jogador-n-1/">Jogador Número 1</a>. Ambos os livro são excelentes, com muito conteúdo relacionado a jogos antigos. Vale muito a pena ler!</p>
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

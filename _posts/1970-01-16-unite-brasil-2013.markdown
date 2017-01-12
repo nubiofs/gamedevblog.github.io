@@ -1,0 +1,23 @@
+---
+layout: post
+title: Como foi o Unite Brasil 2013
+date: 1970-01-16 21:01:04.000000000 -03:00
+---
+
+Incrível é a palavra que pode descrever melhor como foi o Unite Brasil, o primeiro evento da Unity realizado por aqui e que mostrou o nível de eventos para desenvolvedores de jogos que existem fora do país.
+
+Eu esperava menos, mas vou explicar o por que. Existem poucos eventos para desenvolvedores no Brasil, e esses poucos eventos são fracos e com pouco conteúdo interessante pra quem é realmente um desenvolvedor de jogos. Eu estava esperando que o Unity fosse mais um evento assim, e me enganei.
+
+<div class="separator" style="clear: both; text-align: center;">[![](../content/images/2013/10/wpid-Photo-15102013-0811.jpg)](../content/images/2013/10/wpid-Photo-15102013-0811.jpg)</div>As palestras do pessoal da Unity foram incríveis, mostrando como otimizar um jogo para reduzir draw calls, efeitos avançados com partículas, e o tão esperado recurso de 2D. Este recurso 2D era tão esperado que, mesmo sendo a última palestra depois de 10 horas de evento, todo mundo estava animado e rindo a toa das facilidades que a Unity vai proporcionar para o desenvolvimento de jogos 2D.
+
+<span style="line-height: 1.3em;">O 2D foi, sem dúvidas, um movimento inteligente e necessário da Unity para fazer sua engine ser ainda mais usada. Outro destaque foi a abertura do evento pelo simpático David, um dos fundadores da Unity que revelou estar envergonhado em ter demorado tanto para trazer o evento ao Brasil, sendo que somos o terceiro país que mais usa a Unity.</span>
+
+<div class="separator" style="text-align: center; clear: both;">[![](../content/images/2013/10/wpid-Photo-17102013-0935.jpg)](../content/images/2013/10/wpid-Photo-17102013-0935.jpg)</div>É claro que tiveram palestras mais sem graça, como da Microsoft e Blackberry, que estavam interessados em convencer os desenvolvedores a publicar seus jogos nas suas plataformas móveis. Não estou criticando as plataformas, que são ótimas opções, mas as demais palestras foram mais legais.
+
+Sem dúvidas, os pontos altos do evento foram as palestras de dois estúdios brasileiros, a [Behold](http://beholdstudios.com.br/ "Behold"), criadores do Knights of Pen and Paper, e [Aquiris](http://www.aquiris.com.br/ "Aquiris"), que fizeram a demo pra Unity 3.0 chamado Bootcamp, além de outros jogos. Ambos mostraram o caminho difícil que foi chegar ao seu sucesso, e ambos usaram a Unity desde as suas primeiras versões. Na minha opinião, estes são os dois estúdios brasileiros mais promissores e que estão representando muito bem a nossa indústria.
+
+Eu tenho mais coisas que quero falar sobre o evento, mas para não deixar este texto muito grande, vou fazer outros posts. Alguns assuntos merecem mais destaques, e também quero dar a minha opinião sobre tudo que foi apresentado e me chamou a atenção. <span style="line-height: 1.3em;">Foi muito bom também ter visto o Combo Nuts lá como um dos jogos em destaque produzidos com a Unity!</span>
+
+<div class="separator" style="clear: both; text-align: center;">[![](../content/images/2013/10/wpid-Photo-15102013-0919.jpg)](../content/images/2013/10/wpid-Photo-15102013-0919.jpg)</div>Além de ter sido um excelente evento, eu gostei muito de rever pessoas que fizem parte da trajetória da minha carreira, e também conheci outras. Queria agradecer e parabenizar a Unity, principalmente, ao Jay Santos, que ajudou a organizar este evento fantástico e também fez uma apresentação muito boa sobre efeitos gráficos. Um abraço também ao Odair, um cara que conheci no evento e disse que acompanha o meu blog.
+
+

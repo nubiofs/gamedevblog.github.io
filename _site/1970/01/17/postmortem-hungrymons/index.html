@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Postmortem: Hungrymons</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Postmortem: Hungrymons</p>
+<p class="blog-post-info blog-post-offset">
+  
+  17th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Há alguns meses um amigo conversou comigo e disse que queria começar a desenvolver jogos. Hoje, algum tempo depois, ele e seu amigo formaram um estúdio de jogos independentes e lançaram seu primeiro jogo para dispositivos móveis.</p>
+
+<p>Fico muito feliz por terem publicado o jogo e por contar neste postmortem um pouco sobre o projeto, o que deu errado e o que deu certo durante seu desenvolvimento.</p>
+
+<blockquote>
+  <h1 id="postmortem-hungrymons">POSTMORTEM HUNGRYMONS</h1>
+
+  <p>por Marcelo Vitoria e João Arthur Navarro</p>
+
+  <h2 id="introduo">1) INTRODUÇÃO</h2>
+
+  <p>Hungrymons é um game casual para iOS e Android. Nele, um robô flutuante (HungryBot) arremessa comidas no ar em diferentes direções, e o jogador precisa mover os monstros (Hungrymons) na tela na direção das comidas para alimentá-los, ganhando pontos por isso. O objetivo é fazer a maior quantidade de pontos possível. O jogador perde quando ele fica sem monstros para alimentar, sendo contabilizada a pontuação final.</p>
+
+  <p>O game foi desenvolvido por mim e por meu amigo e sócio João Arthur Navarro, sob a alcunha de CodeRogue Studio. Este é o nosso primeiro projeto, e o tempo total de desenvolvimento foi de 9 meses, entre Julho de 2014 e Março de 2015, tendo o game sido publicado nas app stores em Abril de 2015.</p>
+
+  <h2 id="detalhes-do-gameplay">2) DETALHES DO GAMEPLAY</h2>
+
+  <p>O jogador só precisa tocar no monstro e mover horizontalmente na direção das comidas lançadas. Com o tempo, a quantidade de comidas vai aumentando, assim como a velocidade com que elas são arremessadas, além de serem introduzidos elementos que não podem ser ingeridos, como frascos de veneno, que impedem o monstro de comer, e bombas, que eliminam o monstro imediatamente. Além disso, é possível realizar combos que multiplicam a pontuação, e controlar dois monstros ao mesmo tempo.</p>
+
+  <h2 id="proposta">3) PROPOSTA</h2>
+
+  <p>A idéia era fazer um game casual para plataformas mobile, com controles simples, objetivo claro, e que pudesse ser jogado em sessões curtas, de um a três minutos.</p>
+
+  <h2 id="o-que-deu-certo">4) O QUE DEU CERTO?</h2>
+
+  <h3 id="engine"><strong>4.1 Engine</strong></h3>
+
+  <p>Utilizamos o Corona SDK como plataforma de desenvolvimento, o que aumentou nossa produtividade e possibilitou que testássemos nossas decisões de design de forma rápida e objetiva. Além disso, o fato de podermos utilizar o mesmo código para ambos os SOs facilitou a escolha por esta engine, já que ela lida muito bem com as diferentes resoluções e tamanhos de tela (principalmente no Android).</p>
+
+  <h3 id="perfis-dos-desenvolvedores"><strong>4.2 Perfis dos desenvolvedores</strong></h3>
+
+  <p>No time tínhamos um programador e um designer, e essa divisão clara de responsabilidades e habilidades foi de grande valia durante todo o processo de desenvolvimento, e garantiu que cada um tivesse que se preocupar quase que única e exclusivamente com uma dessas duas tarefas. Isso ajudou a manter o foco, e fez com que o resultado final ficasse um pouco acima das nossas expectativas iniciais.</p>
+
+  <h3 id="comunicao"><strong>4.3 Comunicação</strong></h3>
+
+  <p>Como todos sabem, a comunicação eficiente, o debate e a rápida resolução de conflitos são pontos importantíssimos em qualquer equipe, de qualquer tamanho. Durante o processo de desenvolvimento, as dúvidas, idéias e problemas eram compartilhados, discutidos, e o consenso era alcançado sem desgaste. O fato de não termos um deadline para entrega, ou comprometimento com terceiros, contribuiu para a harmonia e a fácil comunicação.</p>
+
+  <h2 id="span-stylefont-size-35px-font-weight-bold-line-height-123085-o-que-deu-erradospan"><span style="font-size: 35px; font-weight: bold; line-height: 1.2308;">5) O QUE DEU ERRADO?</span></h2>
+
+  <h3 id="gdd-e-a-falta-dele"><strong>5.1 GDD (e a falta dele)</strong></h3>
+
+  <p>Mesmo sendo um game pequeno, com poucas mecânicas, controles e game design simples, houve momentos em que estávamos em um ponto avançado do desenvolvimento e nos deparamos com dúvidas e dilemas sobre algum aspecto do game que, se devidamente documentados, teria nos poupado tempo e evitado o desvio de foco.</p>
+
+  <p>A falta de um GDD evidenciou que não tínhamos pensado como queríamos que tudo funcionasse, desde o inicio. Nós tínhamos um conceito inicial em mente, basicamente relacionado ao gameplay, e trabalhamos em torno disso para que todo o resto atendesse a ideia principal. Entendo que, mesmo que tivéssemos um documento, ele também seria alterado eventualmente, e evoluiria para o que se tornou o produto final, mas a presença dele serve de direção para o trabalho realizado, e te faz pensar em todos os aspectos do game antecipadamente, definindo um ponto de referência para futuras discussões.</p>
+
+  <h3 id="planejamento"><strong>5.2 Planejamento</strong></h3>
+
+  <p>O game foi desenvolvido inteiramente em nosso tempo livre, concorrendo com trabalho em tempo integral, relacionamento, família, etc. Nessas situações, é imprescindível que haja um planejamento das atividades de acordo com estimativas (mesmo que superficiais), e um controle rígido do tempo gasto no projeto. Nós não nos planejamos devidamente para o projeto em nenhum dos aspectos mencionados.</p>
+
+  <p>Como não tínhamos um documento que guiasse o desenvolvimento, muitas vezes o trabalho era paralisado até que se pudesse discutir algum ponto importante ou tomar decisões sobre qual caminho seguir. Não tivemos um calendário definido de reuniões iniciais, e essas discussões muitas vezes causava retrabalho.</p>
+
+  <p>O uso de ferramentas de controle de atividades, como Trello, minimizou o impacto na produtividade, mas entendo que, se tivesse havido um melhor planejamento, teríamos feito mais em menos tempo.</p>
+
+  <h3 id="poucas-features"><strong>5.3 Poucas features</strong></h3>
+
+  <p>Sem dúvida, não conseguimos colocar no game tudo o que gostaríamos, como animações mais elaboradas, diferentes cenários, mini games, mais personagens, tutorial interativo, trilha sonora personalizada, e muito mais.</p>
+
+  <p>A verdade é que o projeto demorou bem mais do que imaginávamos, e tivemos que deixar muitas coisas de lado para garantir que tivéssemos no resultado final os conceitos principais, e não estendêssemos ainda mais o tempo de desenvolvimento.</p>
+
+  <h2 id="concluso">6) CONCLUSÃO</h2>
+
+  <p>Por ser nosso primeiro projeto, naturalmente enfrentamos muitas dificuldades durante o processo: falta de planejamento e documentação, curva de aprendizado da engine escolhida, dificuldade de conciliar as atividades do dia-a-dia com o tempo dedicado ao projeto, e diversas outras coisas.</p>
+
+  <p>Olhando para o produto final, podemos dizer que ficamos satisfeitos com o resultado, que condiz com a proposta inicial, com um conceito aderente às plataformas escolhidas, e um nível de “polimento” razoável, que não faz frente à grandes estúdios do mercado, mas nos deixou orgulhosos por termos começado com o pé direito.</p>
+
+  <p>Claro que gostaríamos de ter feito muito mais, mas conseguimos manter o foco no objetivo de fazer nosso primeiro game da melhor forma possível em um tempo aceitável. Muitos desenvolvedores cometem o “erro” de começar com projetos muito grandes, sem passar por experiências intermediarias que lhes dêem confiança e tempo para acumular as habilidades necessárias para criar games cada vez melhores. Felizmente, conseguimos fugir desse estigma e começar bem, com um sentimento de satisfação pessoal, e vontade de fazer muito mais!</p>
+
+  <h2 id="dados">7) DADOS</h2>
+
+  <p><strong>Desenvolvedor</strong>:</p>
+
+  <p>CodeRogue Studio (<a href="http://www.coderoguestudio.com/">http://www.coderoguestudio.com/</a>);</p>
+
+  <p><strong>Plataformas</strong>:</p>
+
+  <ul>
+    <li>iOS:<a href="https://itun.es/i6Lh3sB"> https://itun.es/i6Lh3sB</a></li>
+    <li>Android:<a href="http://goo.gl/xX3GFu"> http://goo.gl/xX3GFu</a></li>
+  </ul>
+
+  <p><strong>Time</strong>:</p>
+
+  <ul>
+    <li>Marcelo Vitoria (@MarcVit [<a href="https://twitter.com/marcvit">https://twitter.com/marcvit</a>]);</li>
+    <li>João Arthur Navarro (@Litsoh_Navarro [<a href="https://twitter.com/litsoh_navarro">https://twitter.com/litsoh_navarro</a>]);</li>
+  </ul>
+
+  <p><strong>Tempo de desenvolvimento</strong>:</p>
+
+  <p>9 meses;</p>
+
+  <p><strong>Ferramentas e Linguagens</strong>:</p>
+
+  <ul>
+    <li>Corona SDK (Lua), utilizando Sublime Text;</li>
+    <li>Git e GitHub, controle de versão e repositório de código;</li>
+    <li>Photoshop;</li>
+    <li>Audacity, PremiumBeat.com, OpenGameArt.org;</li>
+    <li>Trello (task manager);</li>
+  </ul>
+</blockquote>
+
+<p>Siga o exemplo do <a href="https://twitter.com/marcvit">Marcelo</a> e do <a href="https://twitter.com/litsoh_navarro">João</a> e faça um jogo simples e publique. Pela experiência deles (e de outros desenvolvedores publicados <a href="http://gamedeveloper.com.br/category/postmortem/">aqui</a>) fica claro que mesmo um jogo simples pode ser complexo de fazer por vários motivos. É muito legal comparar a experiência dos desenvolvedores e ver que as vezes algo que um acerta o outro erra, e isso é bem comum mesmo.</p>
+
+<p>Muito obrigado ao Marcelo e ao João por terem dedicado um tempo em escrever e compartilhar a experiência deles, e parabéns pelo ótimo jogo que desenvolveram e publicaram! Se você já fez um jogo e publicou, e quer compartilhar sua experiência, é só entrar em contato comigo que eu publico seu texto neste seção do blog.</p>
+
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

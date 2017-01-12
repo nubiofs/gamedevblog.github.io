@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Blog">
+    <meta name="author" content="Game Developer">
+    <link rel="icon" href="http://localhost:4000/favicon.ico">
+
+    <title>Game Developer | Postmortem: Combo Nuts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://localhost:4000/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://localhost:4000/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://localhost:4000/css/blog.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://localhost:4000/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://localhost:4000/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class="blog-header">
+  <div class="col-sm-6 blog-title">
+    <a href="http://localhost:4000"><img class="blog-logo" src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a>
+  </div>
+  <div class="col-sm-6 blog-title-social">
+    <a class="blog-social" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+    <a class="blog-social blog-social-right" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<nav class="blog-nav">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+      </button>
+      <!-- <a class="navbar-brand" href="http://localhost:4000"><img src="http://localhost:4000/img/logo_heylika.png" alt="hey, Lika" /></a> -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/diary">DIARY</a></li>
+        <li ><a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+        <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+        <div class="input-group">
+          <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+          <div class="input-group-btn">
+            <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!--
+<nav class="blog-nav">
+  <ul class="nav nav-justified">
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/beauty">BEAUTY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/diary">DIARY</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/lookbook">LOOKBOOK</a></li>
+    <li ><a class="blog-nav-item" href="http://localhost:4000/category/places">PLACES</a></li>
+  </ul>
+  <form class="navbar-form navbar-right" role="search" action="http://localhost:4000/busca" method="get">
+    <div class="input-group">
+      <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="SEARCH">
+      <div class="input-group-btn">
+        <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
+</nav> -->
+
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+        <p class="blog-post-title blog-post-offset">Postmortem: Combo Nuts</p>
+<p class="blog-post-info blog-post-offset">
+  
+  16th
+    
+  January
+  1970
+
+  
+</p>
+
+
+
+<p>Mais um postmortem exclusivo para o blog, e desta vez é um jogo que eu participei do desenvolvimento como programador. Sabia como foi o precesso de produção do jogo Combo Nuts!</p>
+
+<p><a href="http://www.aplaystudios.com/games.html" title="Combo Nuts">Combo Nuts</a> é um jogo independente da <a href="http://www.aplaystudios.com" title="Aplay">Aplay Studios</a> para iOS e Android, que foi desenvolvido por uma equipe formada por ex-funcionários de grandes empresas, como <a href="http://ubisoft.com" title="Ubisoft">Ubisoft</a>, <a href="http://glu.com" title="Glu">Glu Mobile</a> e <a href="http://ea.com" title="EA">Electronic Arts</a>.</p>
+
+<p>Este postmortem é muito especial para mim por que eu participei do desenvolvimento deste jogo em sua fase final e no primeiro update para ambas as plataformas. <span style="line-height: 1.3em;">Toda a experiência com desenvolvimento de jogos da equipe foi empregada na produção de Combo Nuts, um jogo muito divertido e viciante!</span></p>
+
+<p><span style="line-height: 1.3em;">Eu aprendi bastante, principalmente sobre o processo de publicação do jogo na App Store e no Google Play, mas isto é um assunto para outro post. Muito obrigado Sandro pelo postmortem e pela oportunidade de participar deste projeto! Alias, este jogo está concorrendo a Melhor Jogo Completo e Melhor Jogo Mobile na <a href="http://gamedeveloper.com.br/blog/2013/07/03/sbgames-2013-em-sao-paulo/" title="SBGames">SBGames 2013</a>, que acontece mês que vem em São Paulo.</span></p>
+
+<blockquote>
+  <h2 id="postmortem-combo-nuts">Postmortem: Combo Nuts</h2>
+
+  <p><img src="../content/images/2013/09/title.jpg" alt="" /></p>
+
+  <p>##</p>
+
+  <h2 id="descrio">Descrição</h2>
+
+  <p>Combo Nuts é um endless casual game com uma jogabilidade simples e intuitiva, com partidas rápidas e emocionantes.</p>
+
+  <p>O jogador controla Albert Squirrel, um esquilo voador que deve recolher as nozes que caem do céu roubadas pelos irmãos Wrong. A melhor maneira de recolher um grande número de nozes é através das sequências de nozes que aparecem, dessa maneira o jogador pode fazer diversos “combos”, recolhendo mais nozes e ganhando mais pontos.</p>
+
+  <p>O jogo é freemium e as formas de monetização implementadas foram através de propagandas e vendas de in-app purchases.</p>
+
+  <p>O jogo foi lançado para iOS e Android.</p>
+
+  <p>Links para download:</p>
+
+  <p>iOS: <a href="http://bit.ly/combonuts_ios">http://bit.ly/combonuts_ios</a></p>
+
+  <p>Android: <a href="http://bit.ly/combonuts_android">http://bit.ly/combonuts_android</a></p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="equipe">Equipe</h2>
+
+  <p>No início do projeto a equipe consistia em 3 pessoas, um game designer, um artista e um programador. Trabalhamos de forma remota, a principal forma de comunicação foi através de e-mails e reuniões via Skype e com encontros presenciais esporádicos. Ao final do projeto, mais 2 programadores nos auxiliaram para finalização do jogo.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="conceito">Conceito</h2>
+
+  <p>A idéia era criar um jogo casual no estilo endless com uma jogabilidade simples e divertida, onde as partidas fossem rápidas e dinâmicas.</p>
+
+  <p>Analisamos o mercado e o público alvo que gostaríamos de atingir. Estudamos os estilos de jogo e gameplay que gostaríamos de produzir, que fosse algo simples, divertido, bonito e original onde cada membro da equipe aprenderia algo de novo em sua respectiva área.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="estrutura-para-produo">Estrutura para produção</h2>
+
+  <p>Para a definição, organização e compartilhamento dos trabalhos utilizamos as seguintes ferramentas:</p>
+
+  <ul>
+    <li>Google Docs: criação e organização dos documentos e tabelas (<a href="http://www.docs.google.com">www.docs.google.com</a>);</li>
+    <li>Trello: Definição das tasks e prazos (<a href="http://www.trello.com">www.trello.com</a>);</li>
+    <li>Dropbox: Armazenamento dos assets de arte, plugins, GDD etc (<a href="http://www.dropbox.com">www.dropbox.com</a>);</li>
+    <li>BitBucket: repositório online para o projeto (<a href="http://www.bitbucket.com">www.bitbucket.com</a>);</li>
+    <li>Engine: Unity (<a href="http://unity3d.com/">http://unity3d.com/</a>);</li>
+    <li>TestFlight: Serviço para teste de builds remotamente (<a href="https://testflightapp.com/">https://testflightapp.com/</a>).</li>
+  </ul>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="prototipagem">Prototipagem</h2>
+
+  <p>Desenvolvemos o Game Design Document (GDD) com o detalhamento inicial do gameplay principal do jogo, com as principais guidelines a respeito da mecânica do jogo para iniciarmos o quanto antes a prototipagem.</p>
+
+  <p>Com o decorrer da prototipagem e testes, fomos definindo na engine os editores que precisaríamos para criação e ajustes de todos os elementos do jogo como: posição, tamanho e velocidade do aparecimento dos objetos, criação dos padrões de sequência de objetos, controle dos intervalos de tempo e dos objetos para termos controle da curva de aprendizado e dificuldade etc.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="estudos-iniciais">Estudos iniciais</h2>
+
+  <p>Paralelamente, fomos desenvolvendo o estilo artístico do jogo, estudando a melhor forma para a implementação dos elementos gráficos levando em conta a otimização dos recursos técnicos da engine e a beleza e composição da arte.</p>
+
+  <p>Nesse momento foram feitos estudos de animação na engine e nos principais devices para encontrar um equilíbrio entre otimização dos recursos técnicos e resultado artístico desejado.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <div dir="ltr"><table border="0"><tbody><tr><td>![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/tapdragrelease-Medium.jpg)</td><td>![](../content/images/2013/09/drag.jpg)</td></tr></tbody></table></div>
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="game-design-document">Game Design Document</h2>
+
+  <p>No GDD foram detalhadas todas as mecânicas necessárias para implementação no jogo, funcionamento da câmera, personagem e controle, comportamento de todos os elementos do jogo, progressão de jogabilidade, signs e feedbacks, fluxograma das telas e das ações, interface de usuário, conteúdo do jogo, detalhamento do funcionamento da “loja” do jogo etc.</p>
+
+  <p>A medida que os elementos eram implementados e testados, ajustes eram feitos e essas informações eram atualizadas no GDD para manter a organização do projeto.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <div dir="ltr"><table border="0"><tbody><tr><td>![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/launch_directions.jpg)</td><td>![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/launch_intensity.jpg)</td></tr><tr><td>![](../content/images/2013/09/enemy_sizes.jpg)</td><td>![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/09/size.jpg)</td></tr></tbody></table></div>
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="produo">Produção</h2>
+
+  <p>Durante a produção do jogo adquirimos os efeitos sonoros e música que seriam implementados no jogo através do site <a href="http://www.premiumbeat.com/">http://www.premiumbeat.com/</a></p>
+
+  <p>Além dos in-app purchases foi adotado como método de monetização as propagandas dentro do jogo, nós utilizamos 2 serviços para isso:</p>
+
+  <ul>
+    <li>AdMob: serviço de banner in-game do Google (<a href="http://www.admob.com">www.admob.com</a>);</li>
+    <li>Chartboost: serviço de banners intersticiais (<a href="http://www.chartboost.com">www.chartboost.com</a>).</li>
+  </ul>
+
+  <p>No nosso projeto, o serviço do Chartboost é o mais efetivo e com maior retorno financeiro.</p>
+
+  <p>Foi comprado também diversos plugins para a Unity para facilitar a implementação de diversos elementos no jogo como integração com Game Center da Apple, Chartboost, AdMob, Flurry etc, os plugins foram adquiridos no site: <a href="http://prime31.com/plugins">http://prime31.com/plugins</a></p>
+
+  <p>Na fase final do projeto, contamos com mais 2 programadores para ajudar na implementação desses plugins.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="balanceamento-qa-bug-fixes-e-polimento">Balanceamento, QA, bug fixes e polimento</h2>
+
+  <p>O balanceamento do jogo foi constantemente executado durante o jogo, de todos os objetos, inimigos, itens especiais etc, com o objetivo de encontrar o melhor equilíbrio entre diversão e o estilo de gameplay com sessões rápidas e dinâmicas.</p>
+
+  <p>O QA (quality assurance) é o momento onde verificamos a integridade do jogo, se todos os elementos estão funcionando de acordo com o planejado e onde podemos melhorar para tornar melhor a experiência para o jogador. Fizemos sucessivos testes a fim de descobrir erros no jogo e solucioná-los.</p>
+
+  <p>Depois de implementado os principais itens do jogo iniciamos o procedimento de bug fixes, categorizando em 3 níveis, do mais ao menos crítico que influenciasse o gameplay e a experiência do jogador.</p>
+
+  <p>Nesse momento iniciamos o polimento do jogo, analisando o fluxo das telas e ações do jogo, colocando os assets de arte finais, revisando textos, melhorando signs e feedbacks etc.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+<img src="../content/images/2013/09/balance.jpg" alt="" /></span></p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="validao-e-divulgao">Validação e divulgação</h2>
+
+  <p>Após os últimos testes, enviamos as builds finais para a validação do projeto, para iOS a validação levou 10 dias e para Android cerca de 3 horas.</p>
+
+  <p>Para a divulgação de nosso jogo, preparamos os seguintes meios:</p>
+
+  <ul>
+    <li>Website: <a href="http://www.aplaystudios.com/games.html">http://www.aplaystudios.com/games.html</a></li>
+    <li>Press release: <a href="http://www.mediafire.com/?zsvd8o2njdjed">http://www.mediafire.com/?zsvd8o2njdjed</a></li>
+    <li>Facebook Fan Page: <a href="https://www.facebook.com/combonuts?fref=ts">https://www.facebook.com/combonuts?fref=ts</a></li>
+    <li>Twiiter: <a href="https://twitter.com/aplaystudios">https://twitter.com/aplaystudios</a></li>
+    <li>Canal no YouTube: <a href="http://www.youtube.com/user/aplaystudios/feed">http://www.youtube.com/user/aplaystudios/feed</a></li>
+    <li>Trailer do jogo: <span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/4Hv4oHdvNfQ?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"&gt;&lt;/iframe&gt;</span></li>
+    <li>Vídeo mashup com a banda He Saike: <span class="embed-youtube" style="text-align:center; display: block;">&lt;iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/69OW6ji8cao?version=3&amp;rel=1&amp;fs=1&amp;autohide=2&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;wmode=transparent" type="text/html" width="660"&gt;&lt;/iframe&gt;</span></li>
+  </ul>
+
+  <p>No lançamento, entramos em contato com diversos sites e blogs, nacionais e internacionais, especializados na cobertura e análise de jogos mobile, para apresentar o jogo.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="downloads-feedbacks-mtricas-e-updates">Downloads, Feedbacks, métricas e updates</h2>
+
+  <p>Durante a primeira semana de lançamento foram muitos downloads para iOS e Android, e no decorrer das próximas semanas esse número diminui e estabilizou até uma certa média. Porém os números do Android continuam a subir e atualmente já ultrapassou, e muito, os números de downloads do iOS.</p>
+
+  <p>Após o lançamento nos atentamos para os feedbacks dos jogadores através da área de comentários das lojas App Store e Google Play e das redes sociais.</p>
+
+  <p>Analisamos os números e estatísticas do jogo através de sites como App Annie (<a href="http://www.appannie.com/">http://www.appannie.com/</a>) e Distimo (<a href="http://www.distimo.com/">http://www.distimo.com/</a>) para</p>
+
+  <p>O Flurry (<a href="http://www.flurry.com/">http://www.flurry.com/</a>) é uma ferramenta para analisar o comportamento do usuário em relação a seu aplicativo e/ou jogo. Através dele verificamos quais são os itens e ações mais e menos acessados e executados pelos jogadores o que nos auxilia a melhorar o nosso jogo nos próximos updates.</p>
+
+  <p>Após avaliarmos a série de feedbacks que recebemos, nos organizamos e definimos quais são os mais importantes para o primeiro update.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="problemas--dificuldades">Problemas / Dificuldades</h2>
+
+  <p><strong>1) Ritmo de produção</strong></p>
+
+  <p>O ritmo de desenvolvimento não foi constante, algumas vezes não conseguíamos nos dedicar todos os dias e ficamos período sem produzir nada no projeto o que comprometeu no número de iterações que gostaríamos para melhorar características e mecânicas do jogo.</p>
+
+  <p><strong>2) Balanceamento inicial</strong></p>
+
+  <p>No primeiro balanceamento a dificuldade do jogo estava muito alta, foi uma decisão tomada conscientemente, com o objetivo de tornar as partidas mais rápidas e dinâmicas, mas através dos feedbacks percebemos que poderíamos melhorá-lo nesse ponto oferecendo ao jogador 3 tentativas ao invés de apenas uma. Melhoramos isso no primeiro update que lançamos.</p>
+
+  <p><strong>3) Pouco divulgação</strong></p>
+
+  <p>Apesar dos esforços para divulgarmos nosso jogo, tivemos pouco exposição a respeito dele. Não tínhamos condição de investir nenhum valor nesse sentido, no que refletiu no baixo número de downloads do jogo. Uma característica interessante são os números do Android que, mesmo sem divulgação, mantém-se num número interessante e estável.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="sucesso--aprendizado">Sucesso / Aprendizado</h2>
+
+  <p><strong>1) Experiência no processo de desenvolvimento</strong></p>
+
+  <p>Sem dúvida nenhuma, o principal ponto positivo do projeto foi a experiência adquirida em todo o processo necessário para lançar um jogo, desde a criação do conceito inicial, organização e produção para execução do projeto, cadastramento e processo de validação de um jogo, conhecer e trabalhar no processo de divulgação de um jogo, análise dos downloads, métricas e feedbacks gerados pelo jogo.</p>
+
+  <p>Diferente de experiências anteriores, onde todos os membros da equipe já trabalharam em empresas de jogos em suas áreas específicas, em nosso projeto tivemos que aprender e trabalhar em diferentes áreas como produção, marketing, análise de métricas etc, e todo esse conhecimento serviu para melhorar a nossa percepção em relação a produção de um jogo.</p>
+
+  <p><strong>2) Custo direto relativamente baixo</strong></p>
+
+  <p>O principal investimento do projeto foi o tempo de cada membro da equipe. Como utilizamos equipamentos próprios e a maioria das ferramentas eram grátis, conseguimos produzir um jogo sem custos muito elevados.</p>
+
+  <p>Os principais gastos foram em licenças para a engine, cadastramento  para ser desenvolvedores nas lojas, efeitos sonoros e música, plugins e manutenção do site para divulgação.</p>
+
+  <p><strong>3) Uso da Unity no projeto</strong></p>
+
+  <p>Produzir o jogo desde no início utilizando a Unity nos ajudou e muito no processo.</p>
+
+  <p>Com um grande número de usuários, documentações e plugins disponíveis, e com a possibilidade de compilar o jogo para diferentes plataformas (iOS e Android na primeira fase) foi a melhor opção para produzirmos nosso jogo.</p>
+
+  <p><span style="line-height: 1.3em;"><br />
+</span></p>
+
+  <h2 id="concluso">Conclusão</h2>
+
+  <p>A experiência em produzir um jogo do início ao fim foi o melhor aspecto de todo o projeto.</p>
+
+  <p>Muitos erros foram cometidos e aprendemos bastante a respeito de outras áreas tão importantes além do desenvolvimento direto na produção dos jogos, como análise dos números e métricas do jogo, criação de uma estratégia de marketing para otimizar a divulgação etc.</p>
+
+  <p>A criação de jogos envolve diversos setores distintos e a oportunidade de trabalhar e conhecer esses diferentes setores foi uma parte muito importante para a execução do projeto.</p>
+
+  <p>O objetivo agora é aplicar todo o conhecimento adquirido nos nossos próximos jogos, para que essa experiência e conhecimento possam nos ajudar a criar jogos cada vez melhores.</p>
+
+  <p>Obrigado pelo o seu tempo e atenção lendo esse Post Mortem e um obrigado especial para o Bruno Cicanci que ofereceu esse espaço para compartilharmos a nossa experiência, e pela ajuda direta em nosso jogo também, muito obrigado.</p>
+
+  <p><strong>Sandro Junki Morishita</strong></p>
+
+  <p>e-mail: <a href="mailto:sandromorishita@aplaystudios.com">sandromorishita@aplaystudios.com</a></p>
+
+  <p>portifólio: <a href="http://www.junki1978.com">www.junki1978.com</a></p>
+</blockquote>
+
+
+
+<div class="row">
+  <img class="blog-post-signature" src="http://localhost:4000/img/post_signature.png" alt="Lika" />
+</div>
+
+<div class="row">
+  <p class="blog-post-related">Related</p>
+</div>
+
+<div class="row blog-post-footer-line">
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+  <div class="col-sm-4">
+    <p>
+      <a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a>
+    </p>
+    <p class="blog-post-footer-tag">
+      
+    </p>
+  </div>
+  
+</div>
+
+<div class="row">
+  <img class="blog-post-footer" src="http://localhost:4000/img/post_footer.png" alt="New and old?" />
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//felizassim.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+<br/>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 blog-sidebar">
+        <div class="sidebar-module">
+  <h4 class="sidebar-module-title">Recent Posts</h4>
+  <ol class="list-unstyled">
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
+    
+  </ol>
+</div>
+<div class="sidebar-module sidebar-module-offset">
+  <h4 class="sidebar-module-title">Daily Pictures</h4>
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/86P7Euqujo/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Estréia do meu canal: Lika 🎉😄😊😘❤️</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Uma foto publicada por Lika (@heylika) em <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-10-16T19:25:45+00:00">Out 16, 2015 às 12:25 PDT</time></p></div></blockquote>
+  <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+</div>
+<div class="sidebar-module">
+  <h4 class="sidebar-module-title">Latest Video</h4>
+  <div class="sidebar-youtube">
+    <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/lrDI5YnEPhA" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+  <div class="row footer-signature">
+    <img src="http://localhost:4000/img/footer_subtitle.png" alt="And now I'll do what's best for me" />
+  </div>
+
+  <div class="row footer-row footer-link footer-social">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/arquivo">ARCHIVE</a>
+      <a class="blog-nav-item blog-nav-item-margin" href="http://localhost:4000/sobre">ABOUT ME</a>
+      <a class="blog-nav-item" href="http://localhost:4000/legal">LEGAL</a>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+
+  <div class="row footer-row footer-social">
+    <a class="blog-social-footer" href="https://www.facebook.com/GameDeveloperBlog" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="http://twitter.com/cicanci" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.bloglovin.com/blogs/gamedeveloper-14224145" target="_blank"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://br.pinterest.com/cicanci" target="_blank"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+    <a class="blog-social-footer" href="https://www.instagram.com/cicanci" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+  </div>
+
+  <div class="footer-copyright footer-row">
+    All content copyright &copy; 2015 - 2016 hey, Lika, unless otherwise noted.
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://localhost:4000/js/jquery.min.js"></script>
+    <script src="http://localhost:4000/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://localhost:4000/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

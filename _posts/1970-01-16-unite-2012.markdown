@@ -1,0 +1,19 @@
+---
+layout: post
+title: Unite 2012 - Vídeos da conferência anual da Unity
+date: 1970-01-16 11:47:11.000000000 -03:00
+---
+
+A [Unite](http://unity3d.com/unite/ "Unite") é uma conferência anual que a empresa por trás da game engine [Unity](http://unity3d.com/ "Unity") realiza desde 2007 para apresentar novidades e realizar palestras sobre cases e melhores práticas. Os vídeos da edição desse ano, realizada em Amsterdã, já estão no site e você pode [conferir aqui](http://unity3d.com/unite/ "Unite")!
+
+Além de palestras técnicas, detalhes da nova versão da Unity e apresentação de cases, o evento também contou com a presença de [Peter Molyneux](http://en.wikipedia.org/wiki/Peter_Molyneux "Peter"), famoso game designer de Fable e Black & White, que fez uma apresentação junto aos fundadores da Unity (vídeo abaixo). Não deixe de conferir também os [vídeos dos anos anteriores](http://unity3d.com/unite/archive "Arquivo").
+
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/24AY4fJ66xA?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
+
+Se você não conhece, a [Unity é uma game engine](http://unity3d.com/ "Unity") (um software para criação de jogos), com versão gratuita, que permite o desenvolvimento de jogos com modelos 3D e programação em C#, Javascript ou Boo. Uma das suas principais características é que o mesmo jogo feito nela pode ser compilado para [iOS, Android, PC/Mac, Flash, Web, Wii, Xbox 360, PS3](http://unity3d.com/unity/publishing/ "Plataformas"), e já [anunciaram suporte ao WiiU](http://www.marketwire.com/press-release/unity-technologies-enters-extensive-agreement-with-nintendo-to-support-wii-u-1703600.htm "WiiU") (lembrando que cada plataforma exige uma licença diferente, só para PC/Mac e Web é gratuita). Faça o download no site e brinque um pouco, ela é gratuita para publicar jogos no PC e Web, e com certeza você vai gostar!
+
+Outra novidade sobre a Unity é que a [Rovio](http://www.rovio.com/ "Rovio"), produtora do famoso [Angry Birds](http://www.angrybirds.com/ "Angry Birds"), lançou um jogo essa semana com os porquinhos, chamado [Bad Piggies](http://www.badpiggies.com/ "Bad Piggies") (vídeo abaixo), e este jogo 2D também foi feito com a Unity. O mais impressionante é que a Unity não tem suporte a 2D, apenas 3D, então deve ter dado muito trabalho para fazer aquele jogo! Eles travaram a câmera 3D para mostrar o jogo em plataforma, mas não sei como fizeram as animações, é realmente impressionante.
+
+<span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/YsCpDaSooWA?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
+
+

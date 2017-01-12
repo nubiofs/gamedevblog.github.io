@@ -1,0 +1,34 @@
+---
+layout: post
+title: Adeus Wordpress, olá Ghost
+date: 1970-01-17 17:27:13.000000000 -03:00
+---
+Há muito tempo queria sair do Wordpress, não por estar insatisfeito, mas sim por querer utilizar alguma tecnologia mais nova que com um foco mais "blog" do que "site".
+
+Este mês o meu blog fez 7 anos. Eu nem acredito que há 7 anos estava começando minha pós-graduação, e provavelmente não imaginaria que continuaria o blog por tanto tempo. Ainda vou fazer um post sobre minha carreira, por isso aqui quero focar no blog em si.
+
+Comecei hospedando o blog no side do [Wordpress](https://br.wordpress.com/) e depois de 1 ano quis instalar no meu próprio servidor. Na época eu tinha um hospedagem no [UOL Host](http://www.uolhost.uol.com.br/) com meu projeto de TCC da graduação, que acabei tirando do ar para colocar meu blog. Não conhecia muito sobre hospedagem, mas em pouco tem percebi como esta era ruim. Por diversas vezes meu blog ficou fora do ar por problemas na infraestrutura deles, e mesmo não sendo algo famoso eu estava pagando por um serviço que não era bom.
+
+Logo migrei para a [Bluehost](https://br.bluehost.com/), e até fiquei feliz por um tempo. Depois descobri a [Digital Ocean](https://www.digitalocean.com/), e vi que poderia configurar meu próprio servidor ao invés de ter uma hospedagem e acabei migrando o blog pra lá. Pouco tempo depois migrei para a [Amazon Web Services](http://aws.amazon.com/pt/), e estava muito feliz em ter meu servidor lá.
+
+Em todo esse tempo sempre tive curiosidade de mudar do Wordpress, mas acabava ficando nele por ter muito conteúdo publicado. Uma das coisas que mais me fez querer mudar do Wordpress era a velocidade dele, a dependência de um banco de dados sempre iria adicionar uma camada de lentidão no carregamento da página.
+
+Há 2 anos conheci o [Jekyll](https://jekyllrb.com/) e fiquei impressionado, pois era exatamente o que eu queria! Algo que fizesse meu blog ser ter um foco maior em ser um blog, além do conteúdo publicado ser estático e sem banco de dados. A única coisa que me impediu de migrar na época foi mover o conteúdo do Wordpress para o formato do Jekyll, pois a ferramenta de migração na época não funcionava muito bem e acabei desistindo.
+
+Há alguns dias encontrei uma nova tecnologia parecida com Jekyll, porém baseada no [NodeJS](http://nodejs.org/), o [Ghost](https://ghost.org/). De cara já gostei da sua simplicidade e interface para administrar o blog: simples e direto ao ponto. Fiquei tão empolgado e que decidi tentar sua ferramenta de migração, e para minha supresa funcionou muito bem! Todo conteúdo do blog foi gerado, e a partir dai comecei a migrar o blog.
+
+O único problema que tive foi que a ferramenta de migração não faz download das imagens, então tive que copiar todas para o diretório do Ghost (que tem a mesma estrutura do Wordpress) e depois editei o arquivo de banco de dados (SQLite3) usando sqlitebrowser e algum código SQL para mudar todas URLs para carregar as imagens locais. Em cerca de 2 horas tudo estava pronto, porém comecei a pensar em outra coisa.
+
+Fiz um teste utilizando o [Elastic Beanstalk](https://aws.amazon.com/pt/elasticbeanstalk/) do AWS e publiquei meu blog como uma aplicação NodeJS. Ficou rápido, porém eu queria resolver outro problema: baixar o custo da hospedagem. Deixar meu blog lá custaria cerca de $10 dólares por mês, e com o valor do dólar atualmente qualquer ajuda é bem vinda para diminuir os custos. Neste ponto entrou o [GitHub Pages](https://pages.github.com/).
+
+Meu portfólio já estava hospedado no GitHub Pages, por ser um conteúdo estático, porém meu novo blog era uma aplicação NodeJS. Com um pouco de pesquisa encontrei o [Buster](https://github.com/axitkhurana/buster/) que converte todo conteúdo do Ghost em arquivos estáticos, para que possa ser publicado no GitHub Pages.
+
+Depois de um longo caminho estou muito feliz com o resultado. Atualmente estou trabalhando com dois repositórios, um privado com a aplicação do Ghost e um [público no GitHub](https://github.com/GameDevBlog/gamedevblog.github.io). Quando quero publicar algo, abro a linha de comando e rodo o Ghost localmente como uma aplicação NodeJS. E quando termino de mexer, uso o buster para converter meu blog em arquivos estáticos e publicar no repositório público do GitHub, e assim deixá-lo disponível no GitHub Pages. Parece muito trabalho, mas já automatizei tudo utilizando um script Ruby. Assim que termino de escrever, basta rodar o script e tudo que escrevi neste parágrafo acontece bem rápido. 
+
+Faz 7 anos que pago cerca de $10 dólares por mês para manter este blog, e o máximo que consegui foi $100 dólares depois de uns 5 anos usando Google Ads. Esta mudança para o Ghost não é apenas boa por deixar de lado o Wordpress e seu conteúdo dinâmico lento. É muito boa por que agora minha hospedagem é gratuita e o conteúdo está muito rápido.
+
+Ainda existem coisas que preciso ajustar, como alguns posts com texto mal formatado ou imagens e links quebrados. Aos poucos estou editando cada um dos 256 posts do blog para que todo conteúdo fique corrigido. Muito obrigado a todos leitores, todo esse tempo que dedico ao blog é para tentar te ajudar com um pouco do meu conhecimento na área. E lembre, estou sempre aberto a sugestões aqui ou por e-mail. 
+
+**Recomendação da semana**
+
+Esta semana comecei a ler o livro [Armada](http://geral.leya.com.br/pt/literatura-fantastica/armada/) publicado no Brasil pela editora Leya, o segundo do autor Ernest Cline que escreveu o incrível [Jogador Número 1](http://geral.leya.com.br/pt/literatura-fantastica/jogador-n-1/). Ambos os livro são excelentes, com muito conteúdo relacionado a jogos antigos. Vale muito a pena ler!

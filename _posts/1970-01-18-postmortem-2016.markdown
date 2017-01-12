@@ -1,0 +1,42 @@
+---
+layout: post
+title: Postmortem de 2016
+date: 1970-01-18 01:04:57.000000000 -03:00
+---
+Ano passado muitas coisas relacionadas ao blog e minha carreira aconteceram, então decidi fazer um post falando sobre elas como um postmortem: listar o que deu certo e errado. No final do post vou falar um pouco dos meus planos para 2017.
+
+**O que deu certo em 2016**
+
+* Comecei a postar com uma maior frequência e cumpri minha meta de escrever pelo menos um post por semana (com alguns problemas que vão estar abaixo).
+
+* Em 2015 participei pela primeira vez do [Ludum Dare](http://gamedeveloper.com.br/tag/ludum-dare/), um game jam online que acontece a cada 4 meses, e ano passado consegui participar de todas edições.
+
+* Comecei um projeto pessoal para desenvolver um jogo, o [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/), e postar seu progresso no blog.
+
+* [Migrei do Wordpress para o Ghost](http://gamedeveloper.com.br/ola-ghost/), porém utilizando o Buster para poder publicar meu blog no [GitHub Pages](https://pages.github.com/) sem pagar hospedagem (economia de $10 dólares por mês!).
+
+* Refiz [meu portfólio](http://cicanci.com/) com um novo layout utilizando [Jekyll](https://jekyllrb.com/) e publiquei no [GitHub Pages](https://pages.github.com/).
+
+**O que deu errado em 2016**
+
+* Migrar o blog para não pagar hospedagem no GitHub Pages foi ótimo, porém devia ter feito utilizando [Jekyll](https://jekyllrb.com/). Ter que rodar o Ghost local e o Buster para gerar as páginas me deixou prezo ao meu computador com o ambiente configurado para poder postar, por isso não postei na semana do natal (que estava viajando sem meu notebook) e em junho tive um problema e demorei para postar (todos posts estavam prontos, só não tinha gerado o html para publicar).
+
+* O Final Frontier nasceu de um [outro projeto que não deu certo](http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/). Eu queria começar um jogo com os leitores do blog e, embora mais de 50 pessoas se inscreveram no grupo, em 4 meses não ouve participação de nenhum leitor e cancelei o projeto.
+
+* Embora tenha participado de todos [Ludum Dares](http://gamedeveloper.com.br/tag/ludum-dare/) de 2016, não consegui continuar o desenvolvimento de nenhum projeto para publicar um jogo.
+
+**Novidades para 2017**
+
+Meu objetivo para o blog em 2017 é continuar o que deu certo e corrigir o que deu errado. Por isso, neste mês de janeiro não vou postar aqui no blog por que vou refazê-lo utilizando [Jekyll](https://jekyllrb.com/) para facilitar a postagem e adicionar mais features (como um campo de busca). Para não ter retrabalho vou migrar e corrigir todo conteúdo (imagens quebradas de posts antigos também) sem continuar postando por aqui.
+
+O projeto [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/) vai continuar, porém só vou postar sobre seu desenvolvimento em fevereiro (junto como novo layout). Enquanto isso, você pode acompanhar o andamento do projeto no [GitHub](https://github.com/cicanci/game-unity-ff). Este mês também pretendo iniciar o GDD e organizar as tarefas, tudo na página do GitHub do projeto.
+
+Este ano quero usar algum dos jogos que fiz nas minhas 6 participações no Ludum Dare para criar um projeto novo e lançá-lo para Android e iOS. Pelo menos um é o meu objetivo este ano!
+
+Este ano vão fazer 8 anos que escrevo neste blog, e é engraçado para mim lembrar que quando comecei estava apenas estudando e hoje tenho quase 7 anos de experiência na indústria de jogos. Com o novo layout também pretendo mudar mais coisas no blog, pois além do conteúdo que sempre postei quero falar mais sobre meus projetos (como estou fazendo com o Final Frontier). 
+
+Outra novidade que ainda não escrevi aqui é que estou trabalhando na [Aquiris](http://www.aquiris.com.br/) desde outubro do ano passado. Pretendo escrever um post sobre o que estou aprendendo lá (que são muitas coisas!) e como foi minha aventura de mudar de São Paulo para Porto Alegre.
+
+Por fim, muito obrigado por acompanhar meu blog! Só consegui escrever durante 8 anos por que comentários e e-mails me incentivaram a não parar. Fico feliz de poder compartilhar minha experiência com quem está começando na área.
+
+Imagem da capa: [Happy New Year 2017](http://www.shutterstock.com/pic-535276828/stock-vector-happy-new-year-2017-background-decoration-greeting-card-design-template-with-confetti-vector-illustration-of-date-2017-year-celebrate-brochure-or-flyer.html?language=pt&src=Ufd_FR8uEhn88It9U5v-vA-1-8) do Shutterstock.
