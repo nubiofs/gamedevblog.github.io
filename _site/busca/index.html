@@ -111,12 +111,12 @@
 <script>
   window.store = {
     
-      "1970-01-18-postmortem-2016": {
+      "2017-01-02-postmortem-2016": {
         "title": "Postmortem de 2016",
         "author": "",
         "category": "",
         "content": "Ano passado muitas coisas relacionadas ao blog e minha carreira aconteceram, então decidi fazer um post falando sobre elas como um postmortem: listar o que deu certo e errado. No final do post vou falar um pouco dos meus planos para 2017.O que deu certo em 2016      Comecei a postar com uma maior frequência e cumpri minha meta de escrever pelo menos um post por semana (com alguns problemas que vão estar abaixo).        Em 2015 participei pela primeira vez do Ludum Dare, um game jam online que acontece a cada 4 meses, e ano passado consegui participar de todas edições.        Comecei um projeto pessoal para desenvolver um jogo, o Final Frontier, e postar seu progresso no blog.        Migrei do Wordpress para o Ghost, porém utilizando o Buster para poder publicar meu blog no GitHub Pages sem pagar hospedagem (economia de $10 dólares por mês!).        Refiz meu portfólio com um novo layout utilizando Jekyll e publiquei no GitHub Pages.  O que deu errado em 2016      Migrar o blog para não pagar hospedagem no GitHub Pages foi ótimo, porém devia ter feito utilizando Jekyll. Ter que rodar o Ghost local e o Buster para gerar as páginas me deixou prezo ao meu computador com o ambiente configurado para poder postar, por isso não postei na semana do natal (que estava viajando sem meu notebook) e em junho tive um problema e demorei para postar (todos posts estavam prontos, só não tinha gerado o html para publicar).        O Final Frontier nasceu de um outro projeto que não deu certo. Eu queria começar um jogo com os leitores do blog e, embora mais de 50 pessoas se inscreveram no grupo, em 4 meses não ouve participação de nenhum leitor e cancelei o projeto.        Embora tenha participado de todos Ludum Dares de 2016, não consegui continuar o desenvolvimento de nenhum projeto para publicar um jogo.  Novidades para 2017Meu objetivo para o blog em 2017 é continuar o que deu certo e corrigir o que deu errado. Por isso, neste mês de janeiro não vou postar aqui no blog por que vou refazê-lo utilizando Jekyll para facilitar a postagem e adicionar mais features (como um campo de busca). Para não ter retrabalho vou migrar e corrigir todo conteúdo (imagens quebradas de posts antigos também) sem continuar postando por aqui.O projeto Final Frontier vai continuar, porém só vou postar sobre seu desenvolvimento em fevereiro (junto como novo layout). Enquanto isso, você pode acompanhar o andamento do projeto no GitHub. Este mês também pretendo iniciar o GDD e organizar as tarefas, tudo na página do GitHub do projeto.Este ano quero usar algum dos jogos que fiz nas minhas 6 participações no Ludum Dare para criar um projeto novo e lançá-lo para Android e iOS. Pelo menos um é o meu objetivo este ano!Este ano vão fazer 8 anos que escrevo neste blog, e é engraçado para mim lembrar que quando comecei estava apenas estudando e hoje tenho quase 7 anos de experiência na indústria de jogos. Com o novo layout também pretendo mudar mais coisas no blog, pois além do conteúdo que sempre postei quero falar mais sobre meus projetos (como estou fazendo com o Final Frontier).Outra novidade que ainda não escrevi aqui é que estou trabalhando na Aquiris desde outubro do ano passado. Pretendo escrever um post sobre o que estou aprendendo lá (que são muitas coisas!) e como foi minha aventura de mudar de São Paulo para Porto Alegre.Por fim, muito obrigado por acompanhar meu blog! Só consegui escrever durante 8 anos por que comentários e e-mails me incentivaram a não parar. Fico feliz de poder compartilhar minha experiência com quem está começando na área.Imagem da capa: Happy New Year 2017 do Shutterstock.",
-        "url": "/1970/01/18/postmortem-2016/"
+        "url": "/2017/01/02/postmortem-2016/"
       }
       ,
     
@@ -129,21 +129,21 @@
       }
       ,
     
-      "1970-01-18-mercado-de-games-2016": {
-        "title": "Mercado de games no Brasil em 2016",
-        "author": "",
-        "category": "",
-        "content": "Está curioso para saber como foi o desempenho do mercado de games em 2016? O Rafael Querido do site Segredo dos Games reuniu algumas informações a respeito e montou o infográfico abaixo, as referências estão no final da imagem.Este ano foi um bom para jogos em VR e continuou muito bom para jogos mobile. Eu acredito que no próximo ano jogos em VR serão mais fortes e acessíveis com mais opções de hardware, e que o Nintendo Switch vai trazer a Nintendo de volta a briga.Esse infográfico sobre o mercado de Games foi desenvolvido pelo site Segredo dos Games.Imagem da capa: [Mercado de Games no Brasil](http://segredodosgames.com.br/mercado-de-jogos/) do Segredo dos Games.",
-        "url": "/1970/01/18/mercado-de-games-2016/"
-      }
-      ,
-    
       "1970-01-18-ludum-dare-37": {
         "title": "Minha participação no Ludum Dare #37",
         "author": "",
         "category": "",
         "content": "Mais uma edição da game jam Ludum Dare passou, e desta vez o tema escolhido foi One Room (um quarto/espaço/local). Demorei para pensar no que fazer, e uma das opções que quase desenvolvi foi uma versão simplificada do jogo de tabuleiro Detetive em um quarto de hotel, algo meio adventure game. Como isso iria exigir mais arte do que consigo produzir (por ser programador), eu descartei a ideia.Com o tempo se esgotando ao meio dia do domingo decidi fazer algo simples para poder terminar um jogo nesta edição do Ludum Dare, então minha ideia foi fazer um jogo onde com cavaleiro fica no centro de uma sala defendendo cookies de monstros que querem roubar. Assim nasceu o jogo monocromático That’s My Cookie (aquele é o meu cookie), que demorou pouco menos de 8 horas para ser produzido.Neste link você pode baixar o jogo para Android, macOS e Windows, e também o seu código fonte.Game DesignA ideia era simples: uma sala, o jogador controla o cavaleiro para atacar os monstros e os monstros vão em direção ao cookie (não ao jogador). Um monstro entra na sala por uma das 4 portas e tenta ir em direção aos 3 cookies no centro da sala, e o jogador deve matar o monstro antes dele pegar o cookie.Eu quiz simplificar os controles e que fosse algo simples de jogar em um dispositivo móvel, então para jogar basta clicar ou tocar na tela e o cavaleiro vai naquela direção. Para simplificar ainda mais, o cavaleiro muda para o modo ataque enquanto se move, e volta para o estado parado se o jogador não tocar na tela.Quando os monstros pegarem os 3 cookies o jogo termina e a pontuação do jogador é o número de monstros que ele conseguiu matar antes de roubarem seus cookies. É um fim triste para o jogador, mas os monstros ficaram felizes com os cookies (olha a imagem da tela de game over).ProgramaçãoEu estava planejando utilizar o GameMaker ou a Torque 2D neste Ludum Dare, porém os dois softwares funcionam apenas em Windows e no momento estou só com meu Macbook. Por isso acabei escolhendo utilizar a cocos2d-x novamente e fazer o jogo em C++. Como tinha pouco tempo para fazer, já que demorei para pensar no que fazer, acabei ganhando tempo utilizando algo que eu já conhecia.Fazer os monstros terem um caminho único, em direção ao cookie, facilitou bastante a programação. Não precisei me preocupar em fazer o monstro perseguir o jogador, ele apenas vai em direção ao cookie. O spawn deles também foi bem simples e eu utilizei o mesmo monstro sempre, sem precisar instanciar novos monstros todo vez que for necessário fazer ele aparecer pela porta.Desta vez organizei melhor o projeto criando cenas diferentes para cada tela (início, jogo e game over) e criando classes para cada camada da tela. Tentei evitar utilizar singleton para acessar os objetos, mas não tive como fugir disso já que tinha pouco tempo e precisava de algo rápido.ArteNão sei explicar por que decidi fazer o jogo monocromático, mas acabei ganhando tempo não precisando pensar em cores para o jogo. O personagem tem apenas duas animações, uma parado e uma em ataque, e elas são trocadas de acordo com a ação do usuário. Na verdade nem posso chamar isso de animação, por que não utilizei uma classe de animação da cocos2d-x, são apenas dois sprites que ficam visíveis de acordo com o estado do input.As telas de início e game over são duas imagens que fiz no Photoshop, não são montadas no jogo, por isso na tela de game over não aparecer a pontuação do jogador.ConclusãoNão foi minha melhor participação, mas também não foi minha pior (eu acho). Além de não saber o que fazer eu estava desanimado para participar, e fiz um pouco obrigado. Tive o fim de semana todo livre, mas só comecei a fazer algo no meio dia do domingo. Provavelmente se eu estivesse motivado faria esse mesmo jogo na metade do tempo, ou usaria os dois dias para fazer um jogo maior e mais ambicioso.Terminei o jogo às 19h e não queria mais trabalhar nele, fiquei mais uma hora para montar a página no Ludum Dare e gerar as builds. O prazo terminaria meia noite, mas eu não estava com vontade de continuar e nem quis fazer música ou efeitos sonoros para o jogo. Infelizmente, isso acontece.O próximo Ludum Dare vai ser em comemoração aos 15 anos do game jam, e vou tentar me preparar melhor. Provavelmente usarei alguma engine que eu já conheço para tentar focar mais no game design, fazer algo mais divertido.",
         "url": "/1970/01/18/ludum-dare-37/"
+      }
+      ,
+    
+      "1970-01-18-mercado-de-games-2016": {
+        "title": "Mercado de games no Brasil em 2016",
+        "author": "",
+        "category": "",
+        "content": "Está curioso para saber como foi o desempenho do mercado de games em 2016? O Rafael Querido do site Segredo dos Games reuniu algumas informações a respeito e montou o infográfico abaixo, as referências estão no final da imagem.Este ano foi um bom para jogos em VR e continuou muito bom para jogos mobile. Eu acredito que no próximo ano jogos em VR serão mais fortes e acessíveis com mais opções de hardware, e que o Nintendo Switch vai trazer a Nintendo de volta a briga.Esse infográfico sobre o mercado de Games foi desenvolvido pelo site Segredo dos Games.Imagem da capa: [Mercado de Games no Brasil](http://segredodosgames.com.br/mercado-de-jogos/) do Segredo dos Games.",
+        "url": "/1970/01/18/mercado-de-games-2016/"
       }
       ,
     
@@ -948,15 +948,6 @@
       }
       ,
     
-      "1970-01-17-vagas": {
-        "title": "Vagas",
-        "author": "",
-        "category": "",
-        "content": "Nesta página você encontra vagas abertas em empresas de jogos, clique nos links para ver os detalhes e como entrar em contato para enviar seu currículo. Vale lembrar que algumas podem já estar preenchidas e estão desatualizadas aqui, mas mesmo assim vale a pena entrar em contato.2Mundos (São Paulo / SP)  Programador (Unity)Sinergia Studios (São Paulo / SP)  Programadores (Unity e back-end)",
-        "url": "/1970/01/17/vagas/"
-      }
-      ,
-    
       "1970-01-17-site-para-baixar-sprites": {
         "title": "Site para baixar sprites de vários jogos",
         "author": "",
@@ -1146,21 +1137,21 @@
       }
       ,
     
-      "1970-01-17-tdc-florianopolis-gamedev": {
-        "title": "Evento TDC 2014 em Florianópolis com palestras sobre desenvolvimento de games",
-        "author": "",
-        "category": "",
-        "content": "No dia 15 de maio serão apresentadas algumas palestras na trilha de games do evento TDC (The Developers Conference) 2014 em Florianópolis, que vão falar desde business até game engines.Uma das palestras será sobre Introdução a Game Engines, apresentada pelo desenvolvedor Julio Trasferetti Nicolucci, que é um desenvolvedor independente da Torch Games, e está utilizando a Unreal Engine 4 para criar um jogo. Não deixem de conferir as demais palestras da trilha de games.Clique aqui para ver todas as palestras da trilha de games.",
-        "url": "/1970/01/17/tdc-florianopolis-gamedev/"
-      }
-      ,
-    
       "1970-01-17-por-onde-comecar-programar": {
         "title": "Como ser um programador de jogos: Por onde começar a programar um jogo",
         "author": "",
         "category": "",
         "content": "Muita gente se perde na hora de começar a programar um jogo, e independente do tamanho do projeto pode ser realmente uma tarefa difícil saber por onde começar.A melhor alternativa é sempre começar pela mecânica principal do jogo, quebrando ela em tarefas menores. Por exemplo, em um jogo onde um personagem movimenta-se pela tela, a primeira coisa que deve ser programada é este personagem. Antes mesmo de pensar em atacar, sistema de níveis, inimigos, e qualquer outra coisa, o jogador deve poder movimentar o personagem.A partir disso, você pode criar um nível de playground para poder testar o comportamento do personagem com diversas opções no cenário do jogo. Isso é apenas um exemplo, pois esta abordagem pode variar de acordo com o tipo do jogo, mas no geral é sempre bom começar pela mecânica principal, e trabalhar nela até ficar bem polida.Em jogos de puzzle, por exemplo, a primeira coisa a ser programada são os movimentos que o jogador pode fazer para resolver um puzzle, antes mesmo de programar o puzzle. Com os movimentos bem definidos e testados, programar os diferentes puzzles ficará mais fácil.Algumas coisas que escrevi neste post já foram apresentadas nesta série Como ser um programador de jogos, vale a pena conferir os posts anteriores por que tem muita coisa legal e útil para começar.",
         "url": "/1970/01/17/por-onde-comecar-programar/"
+      }
+      ,
+    
+      "1970-01-17-tdc-florianopolis-gamedev": {
+        "title": "Evento TDC 2014 em Florianópolis com palestras sobre desenvolvimento de games",
+        "author": "",
+        "category": "",
+        "content": "No dia 15 de maio serão apresentadas algumas palestras na trilha de games do evento TDC (The Developers Conference) 2014 em Florianópolis, que vão falar desde business até game engines.Uma das palestras será sobre Introdução a Game Engines, apresentada pelo desenvolvedor Julio Trasferetti Nicolucci, que é um desenvolvedor independente da Torch Games, e está utilizando a Unreal Engine 4 para criar um jogo. Não deixem de conferir as demais palestras da trilha de games.Clique aqui para ver todas as palestras da trilha de games.",
+        "url": "/1970/01/17/tdc-florianopolis-gamedev/"
       }
       ,
     
@@ -1614,12 +1605,12 @@
       }
       ,
     
-      "1970-01-16-brasil-game-show": {
+      "1970-01-16-brasil-game-show-2013": {
         "title": "Brasil Game Show começa neste fim de semana",
         "author": "",
         "category": "",
         "content": "O maior evento de games da América Latina, o Brasil Game Show, começa neste fim de semana em São Paulo! Além de muitas atrações para os jogadores, o evento também contará com um espaço de business para os desenvolvedores conhecerem empresas que oferecem serviços, além de outros desenvolvedores com stand para divulgar seus jogos.Abaixo está o press release do evento, que começa no dia 25 (apenas para imprensa e business nesse dia) e vai até dia 29. Confira os horários e não deixe de ir! Só lembrando que os ingressos para sábado e domingo estão esgotados, e que não será permitido entrar com mochilas e bolsas.Eu estarei lá no sábado participando como imprensa e representando o blog. Irei conversar com pessoas da indústria do Brasil e de fora, e postarei tudo depois aqui!  **Brasil Game Show apresenta novidades do Mercado de Games de 25 a 29 de outubro em São Paulo**  *A Maior Feira de Games da América Latina será um grande parque de diversões eletrônicas para milhares de crianças, adolescentes e adultos*  A Brasil Game Show (BGS) promete muita diversão aos visitantes de sua sexta edição. Após o sucesso da edição de 2012, em que recebeu mais de cem mil visitantes, a Feira garante ainda mais novidades para 2013, com o dobro do tamanho da edição anterior. Em cinco dias de Evento, a BGS reunirá 150 empresas e mais de 150 mil visitantes, além de Lançamentos, Campeonatos, Celebridades e muitas Atrações Especiais.  Os gamers já provaram que são muito solidários. Em sua última edição, a Brasil Game Show, Maior Feira de Games da América Latina, arrecadou mais de 40 toneladas de alimentos, doados pelos visitantes do Evento. Em sua sexta edição, que será realizada entre os dias 25 e 29 de outubro, no Expo Center Norte, em São Paulo, a Brasil Game Show espera receber cerca de 150 mil visitantes. A doação de 1 kg de alimento não perecível garante ao visitante o benefício da meia-entrada, em uma ação para ajudar milhares de crianças atendidas pela Associação Prato Cheio. A entidade, fundada há mais de 10 anos, arrecada e distribui alimentos à instituições assistenciais.  Para participar desta ação solidária, após garantir o ingresso de meia-entrada no site www.brasilgameshow.com.br/visitantes/ingressos&lt;/wbr&gt; , o visitante deve entregar o quilo de alimento não perecível na entrada do Evento.  Além disso, a BGS também estimula a inclusão social. Desde 2011, o Evento conta com cerca de metade de seu staff composto por cadeirantes e outros portadores de necessidades especiais.  Fique por dentro do que vai rolar na BGS 2013:  Lançamentos: A BGS 2013 reunirá as mais recentes novidades, com uma prévia dos sucessos previstos para o final do ano, e até mesmo alguns títulos que chegarão ao mercado somente em 2014.      – XBOX ONE – O novo console da Microsoft será apresentado na Brasil Game Show antes de seu lançamento mundial;      – NVIDIA Shield – O portátil da NVIDIA será apresentado pela primeira vez no Brasil durante o Evento;      – RetroN 5 – Também inédito, este console é o sonho dos fãs de consoles do passado e é considerado um aparelho 10 em 1, pois aceita fitas de NES, Famicom, Super Nintendo, Super Famicom, Mega Drive, Genesis, Game Boy, Game Boy Color, Game Boy Advance e Master System;      – PlayStation 4 – O grande lançamento da Sony será apresentado ao público brasileiro antes do seu lançamento mundial;      – Assassin’s Creed 4: Black Flag – Uma das maiores séries de sucesso da atualidade terá a sua sequência apresentada no stand da NC Games e Ubisoft;      – Battlefield 4 – O game de Guerra será destaque no stand da Warner/EA com 32 estações simultâneas disponíveis para os visitantes;      – Call of Duty: Ghosts – O novo título da Activision será apresentado pela primeira vez no país;      – Diablo III – Os fãs da Blizzard poderão jogar este título em sua versão console no stand da empresa;      – FIFA 14 – O melhor game de futebol da atualidade e que conta com estádios, atletas e performances reais estará presente no stand da Warner/EA;      – Just Dance 2014 – O game preferido do público feminino traz os hits da nova temporada para o stand da NC Games e Ubisoft;      – Batman: Arkham Origins – Haverá 16 estações do novo Batman para jogar no stand da Warner, já com a dublagem em português;      – The Witcher 3 – O novo título da CD Projekt Red, que chegará ao mercado somente em 2014, estará disponível em apresentações para a imprensa no stand de sua produtora;      – Hearthstone: Heroes of Warcraft – O ainda não lançado e divertido jogo de estratégia de cards estará no stand da Blizzard;      – Assault Fire – FPS que traz toda sua ação e adrenalina para a Brasil Game Show. Durante a Feira, a Level Up! anunciará diversas novidades do jogo;      – Razer Edge – o novo tablet super poderoso ideal para games;      – Razer Blade Pro e Blade 14″– Os laptops gamers mais finos do mundo;      – Periféricos Razer Battlefield 4 – Teclado, mouse, mousepad e outros acessórios para o gamer que quer jogar como profissional;      – Destaques da Hoplon – A empresa brasileira de Santa Catarina apresenta os games: Heavy Metal Machines, Minhokarts, Fallen Earth, Bount Hounds Online, APB: Reloaded e Seer;  Produtores Internacionais: Os visitantes da Brasil Game Show 2013 terão a oportunidade de conhecer os Produtores de alguns dos jogos mais aclamados do momento.  – Gilliard Lopes (FIFA 14 – EA/Warner); – Hector Sanchez (Injustice  –  EA/Warner); – Eric Holmes (Batman Arkham Origins – EA/Warner); – Tyman Smekata (Dying Light – EA/Warner); – Designers do League of Legends (Riot Games); – Desenvolvedores do Heavy Metal Machines (Hoplon);  Atrações: Celebridades, Shows, Arcades e muita Música para quem curte Games.      – Helder Moreira (Escultor Oficial da Marvel – Seven); – Marcelo D2 (Cantor e rapper – Warner); – Banda Mega Driver (Seven); – Banda GameBoys (Seven); – Banda Pentakill (Riot Games); – Gil Brother “Away Nilzer” (Humorista – Seven); – Mundo Canibal (Humoristas – Seven);    – Arcade Center – Nesta área será possível testar todos os jogos que que a WB Games está lançando para o quarto trimestre do ano, como Need For Speed Rivals, Dying Light, Disney Infinity, LEGO Marvel Super Heroes, Hot Wheels e Mad Max;    – Autógrafos – Os visitantes poderão levar seus jogos e produtos licenciados da Blizzard para que sejam autografados por membros da equipe no stand da empresa;  Campeonatos: Torneios com os melhores jogadores do Brasil e do mundo serão destaque na BGS.      – Desafio Internacional de League of Legends – As melhores equipes do Brasil e da América Latina se enfrentarão neste torneio do game que conta com mais de 32 milhões de jogadores ativos por mês, que marca o primeiro encontro das duas regiões no cenário competitivo;    – FIFA 14 – O principal simulador de futebol do mundo, contará com estações que vão possibilitar testes e torneios de até 32 jogadores. Os torneios acontecerão nos períodos da manhã e noite e serão abertos ao público;    – Elsword – O MMORPG, que traz diversas opções de combos e magias, com várias missões e também a opção de PVP, contará com torneios no stand da Level Up! As inscrições acontecem no local;  Compras: Centenas de Jogos, Consoles, Acessórios e Produtos Oficiais estarão à venda.      – Pré-venda – No stand da Saraiva, alguns lançamentos estarão disponíveis para venda ou pré-venda. Haverá também colecionáveis, action figures e camisetas voltadas ao universo geek;    – Loja de produtos oficiais licenciados da franquia Street Fighter – Bonés, camisetas e outros produtos personalizados com a marca de um dos maiores jogos de luta de todos os tempos;    – Loja Oficial da BGS – Cases para celular, mousepads, bolsas, canecas, camisas e bonés da Maior Feira de Games da América Latina;    – Lojas Americanas – Um dos maiores varejistas do país contará com centenas de produtos disponíveis para os visitantes da BGS.  A lista de expositores inclui: XBOX, BoaCompra, Seven, Riot Games, PlayStation, Saraiva, Lojas Americanas, Warner, EA, Activision, Blizzard, NVIDIA, Razer, Level Up!, Hoplon, NC Games, Ubisoft, Nurigo Games, Live TIM, CD Projekt Red, Disney, Kingston, Corsair, Game Insight,  InnoGames, ClickJogos, Roccat, Philips, Mad Catz, Hyperkin, Loja de Roupas e Acessórios Oficiais Licenciados da franquia Street Fighter, Grupo Editorial Record, G4BOX, Ratto Games, Aiyra, Playphone, Square Enix, Positivo, Pingo no i, Furfle, Epay, Flux Game Studio, Galápagos Jogos, Atrativa Game House, E-prepag, Insignia Games, Boxware, Insane, InstallCore, Ecogames, CMD, TIMWE, SoMemórias, Music Brokers, Devolver Digital, UBV, Inconm, Rixty, Global Collect, Min!inimo, Tíbia BR, Pixel Federation, EVGA, Qualcomm, Movile, SENAC, Z8 Games, The Game Station, SEBRAE, BC Lanches, Bob’s, Spoleto, Pizza al Taglio, Texas Grill, Casa do Pão de Queijo, Di Nardi Fast-Food, Jhonny Café, Fast Snack,  EuQueroAçaí, Joysteak, Minas in Sampa, entre outras.  SERVIÇO BRASIL GAME SHOWData: 25 a 29 de OutubroLocal: Expo Center Norte – Rua José Bernardo Pinto, 333 – Vila Guilherme – SPHorários: 25 de Outubro (exclusivo para Imprensa e Business) – 11h às 20h 26 e 27 de Outubro (público geral) – 11h às 20h 28 e 29 de Outubro (público geral) – 13 às 22hInformações: www.brasilgameshow.com.br  Sobre a Brasil Game Show  A Brasil Game Show (BGS) é a Maior Feira de Games da América Latina. Realizada em seis edições consecutivas, a BGS é uma empresa 100% focada no crescimento do Mercado de Jogos Eletrônicos e a Feira de games que mais cresce no mundo. Sucesso e recorde de público, o Evento reúne os principais nomes da Indústria de Games. Confira todos os detalhes da última Edição no site oficial www.brasilgameshow.com.br ou acompanhe as últimas novidades do Evento no Facebook emwww.facebook.com/BrasilGameShow&lt;/wbr&gt; .",
-        "url": "/1970/01/16/brasil-game-show/"
+        "url": "/1970/01/16/brasil-game-show-2013/"
       }
       ,
     
@@ -2280,12 +2271,12 @@
       }
       ,
     
-      "1970-01-16-level-design": {
+      "1970-01-16-world-of-level-design": {
         "title": "Level Design com quem entende do assunto",
         "author": "",
         "category": "",
         "content": "World of Level Design é um site que reúne diversos tutoriais sobre desenvolvimento de níveis, para estudantes e artistas. No site estão disponíveis tutoriais para criar níveis para jogos como Left 4 Dead 1 e Left 4 Dead 2, níveis em game engines como CryEngine 3 SDK e Unreal Development Kit (UDK), modelagem 3D utilizando Maya, e muitos tutoriais sobre como começar a criar níveis, técnicas e até desafios.Este é um site bem legal para que tem interesse em aprender Level Design (criação de níveis), que é algo diferente de Game Design (criação de mecânicas de jogo). Muitas vezes um Game Designer faz o papel de um Level Designer, e vice-versa, porém são carreiras distintas.Ah, se você se inscrever no newsletter do site ainda ganha 2 ebooks sobre Level Design de graça! Os ebooks, Ultimate Level Design Guide e 11 Day Level Design: How I Created a Map in 11 Days, foram escritos pelo autor do site, Alex Galuzin. Eu me inscrevi e baixei os livros para dar uma olhada, são mais de 200 páginas bem legais. É um material de qualidade e disponibilizado gratuitamente pelo autor.Alex também possui um outro site, sobre arte 3D para ambientes, que é mais utilizado em projetos de arquitetura e decoração de interiores.  Se você quer aprender sobre Level Design, veja os tutoriais no site! Tem muita informação legal lá que você não encontra em cursos ou livros.",
-        "url": "/1970/01/16/level-design/"
+        "url": "/1970/01/16/world-of-level-design/"
       }
       ,
     
@@ -2304,15 +2295,6 @@
         "category": "",
         "content": "A Turma do Chico Bento trás os personagens de Mauricio de Sousa em um jogo para as redes sociais Facebook e Orkut. Em desenvolvimento pela Insólita, e publicado pela Level Up! Games, este jogo está sendo produzido por brasileiros e para um público brasileiro.O Game Design do jogo está sendo desenvolvido pelo produtor Winston Petty, e pela Game Designer Mariana Boucault, que fez uma entrevista para o blog contanto como se tornou uma Game Designer.Turma do Chico Bento tem características presentes em jogos como FarmVille e CityVille, ambos da Zynga. O jogo está em desenvolvimento desde o final de 2011 e atualmente está em teste fechado. Logo deverá ser lançado, e estamos torcendo para este jogo brasileiro fazer sucesso nas redes sociais.[Chico Bento ganha jogo para redes sociais desenvolvido no Brasil, via G1]![](http://www.google.com/uds/css/small-logo.png)",
         "url": "/1970/01/16/turma-do-chico-bento/"
-      }
-      ,
-    
-      "1970-01-16-contato": {
-        "title": "Contato",
-        "author": "",
-        "category": "",
-        "content": "Gostou do conteúdo do meu blog? Quer sugerir um post? Gostaria de divulgar produtos, serviços, vagas, eventos relacionados a jogos? Entre em contato através do e-mail abaixo ou pelo formuário!E-mail: bruno@gamedeveloper.com.br",
-        "url": "/1970/01/16/contato/"
       }
       ,
     
@@ -2586,15 +2568,6 @@
       }
       ,
     
-      "1970-01-15-parceiros": {
-        "title": "Parceiros",
-        "author": "",
-        "category": "",
-        "content": "Para ser parceiro e ter seu banner adicionado na lateral basta incluir o banner abaixo no seu site/blog e depois enviar um e-mail para bruno@gamedeveloper.com.br com o seu banner.Não serão aceitas parcerias com blogs e sites de conteúdo ilegal, erótico, pedofilia, racismo e relacionados.Imagem 120×60:Código HTML:&lt;a href=”http://gamedeveloper.com.br/” target=”_blank”&gt;&lt;img border=”0″ src=”https://s3-sa-east-1.amazonaws.com/blog-gd/image/bannergamedev.gif” /&gt;&lt;/a&gt;Imagem 150×150:Código HTML:&lt;a href=”http://gamedeveloper.com.br/” target=”_blank”&gt;&lt;img border=”0″ src=”https://s3-sa-east-1.amazonaws.com/blog-gd/image/bannergamedev150.gif” /&gt;&lt;/a&gt;Parceiros do blog&nbsp;&nbsp;",
-        "url": "/1970/01/15/parceiros/"
-      }
-      ,
-    
       "1970-01-15-evolucao-da-computacao-grafica": {
         "title": "Evolução da computação gráfica",
         "author": "",
@@ -2700,15 +2673,6 @@
         "category": "",
         "content": "Em muitos jogos, a Inteligência Artificial é a principal responsável pela diversão que um game proporciona. Por exemplo, você consegue imaginar jogos como CALL OF DUTY ou GTA sem a inteligência que os NPCs possuem? Segundo este artigo do David Wong, a aprimoração da I.A. nos jogos é uma das coisas que os jogadores hardcore desejam. Quanto mais real, melhor para a experiência do usuário.A I.A. é muito importante, mas alguns jogos ficam perfeitos com uma** I.A. simples** e limitada, ao contrário de jogos como SPORE que deve ter uma implementação absurda de** Redes Neurais**. O desenvolvedor de jogos deve conhecer os principais algoritmos de I.A., mas não é necessário sempre usá-los em todos os projetos. Na pós-graduação, tivemos uma matéria dedicada a I.A. nos jogos digitais, onde o professor Murilo Garcia apresentou as principais técnicas e quais problemas elas ajudam a resolver.Como trabalho para avaliação, tivemos que implementar técnicas de I.A. que serão úteis em nossos TCCs. Abaixo está uma descrição do techdemo que fiz:![Techdemo de Inteligência Artificial](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/04/ia_techdemo2.jpg \"Techdemo de Inteligência Artificial\")Imagem do Techdemo de Inteligência Artificial  Neste techdemo o quadrado verde fica patrulhando o canto superior esquerdo da tela, enquanto o usuário/jogador controla o quadrado azul com as teclas direcionais do teclado.  O quadrado verde fica no estado de patrulha enquanto o quadrado azul estiver a certa distância dele. Quando o quadrado azul se aproximar, o quadrado verde ficará vermelho e mudará o seu comportamento para perseguição do quadrado azul.  No estado de perseguição, o quadrado azul deverá fugir, até ficar um pouco distante do quadrado vermelho. Quando estive longe do quadrado azul, o quadrado vermelho volta para o estado de patrulho no canto superior esquerdo e ficará novamente verde.  Para a troca do comportamento do quadrado verde/vermelho foi feita uma máquina de estado, que varia entre Patrulha e Perseguição. Quando o quadrado está verde, a patrulha é fixa no canto superior esquerdo, sendo que esquete quadrado sempre voltará para patrulhar o seu canto quando o estado de Perseguição se tornar Patrulha.  No estado de perseguição, com o quadrado tornando-se vermelho, o quadrado azul é perseguido em uma velocidade constante, pouco inferior à velocidade do jogador, e só muda de estado quando a distância entre os dois quadrados se tornar grande o bastante para o quadrado verde voltar a patrulhar seu canto.  Este techdemo foi desenvolvido com C++ e SDL, utilizando o Visual Studio 2008.A implementação das técnicas citadas pode não ser a mais perfeita do mundo, mas se você quiser ver como foi feita,** o código fonte está neste link**. Qualquer dúvida é só comentar aqui!Vou aproveitar este post sobre I.A. e indicar mais um livro, este é um dos que foi utilizado pelo professor como bibliografia desta matéria, o Programming Game AI by Example de MatBuckland, que ensina vários conceitos e algoritmos de I.A. com exemplos de implementação. Este livro trata I.A. no geral, não exclusivamente para games, mas praticamente tudo que está nele é aplicável em um jogo digital:[![Programming Game AI by Example](../content/images/2010/04/programming-game-ai-by-example.jpg \"Programming Game AI by Example\")](http://www.amazon.com/Programming-Game-Example-Mat-Buckland/dp/1556220782/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1270260740&amp;sr=8-2)Programming Game AI by Example",
         "url": "/1970/01/15/inteligencia-artificial-nos-jogos-digitais/"
-      }
-      ,
-    
-      "1970-01-15-politica-de-privacidade": {
-        "title": "Política de Privacidade",
-        "author": "",
-        "category": "",
-        "content": "O Game Developer pode utilizar cookies e/ou web beacons quando um usuário tem acesso às páginas. Os cookies que podem ser utilizados associam-se (se for o caso) unicamente com o navegador de um determinado computador.Os cookies que são utilizados neste site podem ser instalados pelo mesmo, os quais são originados dos distintos servidores operados por este, ou a partir dos servidores de terceiros que prestam serviços e instalam cookies e/ou web beacons (por exemplo, os cookies que são empregados para prover serviços de publicidade ou certos conteúdos através dos quais o usuário visualiza a publicidade ou conteúdos em tempo pré-determinados).Usamos empresas de publicidade de terceiros para veicular anúncios durante a sua visita ao nosso website. Essas empresas podem usar informações (que não incluem o seu nome, endereço, endereço de e-mail ou número de telefone) sobre suas visitas a este e a outros websites a fim de exibir anúncios relacionados a produtos e serviços de seu interesse.      O Google, como fornecedor de terceiros, utiliza cookies para exibir anúncios neste site.        Com o cookie DART, o Google pode exibir anúncios para o usuário com base nas visitas feitas à este ou à outros sites na Internet.        O usuário pode desativar o cookie DART visitando a Política de privacidade da rede de conteúdo e dos anúncios do Google.  O usuário têm a possibilidade de configurar seu navegador para ser avisado, na tela do computador, sobre a recepção dos cookies e para impedir a sua instalação no disco rígido. As informações pertinentes a esta configuração estão disponíveis em instruções e manuais do próprio navegador.",
-        "url": "/1970/01/15/politica-de-privacidade/"
       }
       ,
     
@@ -2899,15 +2863,6 @@
         "content": "Ano passado terminei o meu curso de graduação em Ciência da Computação na Universidade São Judas Tadeu, e atualmente trabalho como Analista de Sistemas. Este ano queria estudar algo diferente, e como sempre gostei de games, comecei a pesquisar quais cursos exitem hoje para esta área, sendo que quando comecei a graduação (2005) acho que só tinha o curso de Designer de Games na Anhembi Morumbi.Encontrei um curso perfeito, que abrange todo o desenvolvimendo de um game, a pós-graduação Games: Produção e Programação no Senac de São Paulo. Não sabia ao certo o que esperar quando fui na entrevista, mas saí de lá muito empolgado pelo que foi apresentado pelo Prof. Claudio Bueno, que é coordenador e professor deste curso.O curso começou em março, e hoje, quase dois meses depois, estou vendo a minha concepção de gamer se tornar mais crítica, e estou começando a entender a indústria de games. Por enquanto tivemos aulas de Modelagem 3D (conceitos básicos) com o software Softimage XSI, Técnicas de Programação de Games e Produção de Games (está última começou agora, depois que terminou a matéria de Modelagem 3D).Estou gostando muito deste curso, e meu interesse em entrar na indústria de games está crescendo a cada dia. Estou com algumas idéias de games, e pretendo desenvolver vários projetos este ano, para estudar o desenvolvimento de games no geral, os vários tipos de jogos, programação em C++ (que é novo pra mim, pois só tive Java na faculdade) e compartilhar neste blog tudo que estou aprendendo.",
         "url": "/1970/01/15/um-novo-desenvolvedor-de-games/"
       }
-      ,
-    
-      "1970-01-15-sobre": {
-        "title": "Sobre",
-        "author": "",
-        "category": "",
-        "content": "Iniciei minha carreira na computação em 2005, quando comecei o curso de graduação em Ciência da Computação na Universidade São Judas Tadeu em São Paulo. Comecei a me interessar muito pela área de jogos quando fiz um estágio em Web Design na Level Up! Games, porém depois que saí desta empresa comecei a trabalhar com análise de sistemas e fiquei quase 4 anos desenvolvendo sistemas corporativos.Meu TCC da gradução é aquele tipo de coisa que você só tem uma chance de estudar e fazer algo relacionado. Eu fiz  um Simulador de Circuitos Lógicos Quânticos, o Qubit Online, e realmente estudei Computação Quântica por mais de um ano, mas parei quando percebi que eu queria mesmo trabalhar com jogos.Decidi entrar na área de games quando terminei minha graduação em 2008, e em 2009 iniciei um curso de pós-graduação em Games: Produção e Programação no SENAC São Paulo. No final do curso, em 2010, comecei a trabalhar em uma empresa de jogos, a Glu Mobile (que fechou em 2011), como Engenheiro de Software da equipe que faz porting de jogos de celular para a América do Norte e embeds para EMEA. No início de 2011 entrei na Electronic Arts em São Paulo, também como Engenheiro de Software até o fechamento do estúdio em 2013. Depois de trabalhar como freelancer com projetos de jogos, trabalhei na RevMob desenvolvendo SDKs para exibir publicidade em jogos e aplicativos. Depois disso trabalhei na 2Mundos como desenvolvedor de jogos até 2015. Atualmente trabalho na Aquiris Game Studios em Porto Alegre.O TCC da minha pós-graduação é um jogo de aventura em plataforma em 2D desenvolvido com XNA, o Oniro. No meu portfolio tem o link para download do jogo e mais informações sobre este projeto, além dos projetos que desenvolvi nas empresas acima.Neste blog estão diversos textos relacionados à matérias da pós-graduação, meus projetos pessoais para portfolio e informações sobre a indústria de games. Com o final da minha pós-graduação, devo escrever mais aqui, principalmente tutoriais e informações sobre tecnologias para desenvolvimento de jogos. Participação em concursos e eventos:– Equipe vencedora do Google Developer Bus com o aplicativo PowerUp em 2013. – Finalista no concurso de jogos da SBGames nas categorias “Melhor Jogo Completo” e “Melhor Jogo Mobile” com o Combo Nuts em 2013. – Finalista no e-Games do SENAC em 2010 com o jogo Oniro (meu TCC da pós-graduação). – Finalista no e-Games do SENAC em 2009 com o jogo SpaceShip 4042 (versão para Windows). – 2º Lugar na Maratona de Programação da USJT em 2008.Entre em contato:E-mail: bruno@gamedeveloper.com.brTwitter: cicanci",
-        "url": "/1970/01/15/sobre/"
-      }
       
     
   };
@@ -2928,13 +2883,13 @@
   <h4 class="sidebar-module-title">Recent Posts</h4>
   <ol class="list-unstyled">
     
-      <li class="sidebar-module-posts"><a href="/1970/01/18/postmortem-2016/">Postmortem de 2016</a></li>
+      <li class="sidebar-module-posts"><a href="/2017/01/02/postmortem-2016/">Postmortem de 2016</a></li>
     
       <li class="sidebar-module-posts"><a href="/1970/01/18/final-frontier-algumas-mudancas-no-projeto/">Final Frontier: Algumas mudanças no projeto</a></li>
     
-      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
-    
       <li class="sidebar-module-posts"><a href="/1970/01/18/ludum-dare-37/">Minha participação no Ludum Dare #37</a></li>
+    
+      <li class="sidebar-module-posts"><a href="/1970/01/18/mercado-de-games-2016/">Mercado de games no Brasil em 2016</a></li>
     
       <li class="sidebar-module-posts"><a href="/1970/01/18/esta-semana-comeca-o-ludum-dare-37/">Esta semana começa o Ludum Dare #37</a></li>
     
