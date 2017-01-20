@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Várias ferramentas úteis para desenvolver jogos
-date: 1970-01-17 03:28:26.000000000 -03:00
 ---
 
 Há um tempo me enviaram este post do Reddit chamado “[Pocketknives for Game Developers](http://www.reddit.com/r/gamedev/comments/18e38t/pocketknives_for_game_developers/ "Reddit")“, que é um conjunto de ferramentas gratuitas úteis em várias partes do processo de desenvolver um jogo.
@@ -78,5 +77,3 @@ Eu copiar a lista de lá colei aqui para facilitar, mas não deixem de acessar o
 - Fonts #2: [http://www.dafont.com/](http://www.dafont.com/) (Licenses vary, mostly free for personal use)
 - 3D Textures: [http://www.cgtextures.com/](http://www.cgtextures.com/) (Thanks [/u/Brother_Clovis](http://www.reddit.com/u/Brother_Clovis)!)
 - Sound effects: [http://www.freesound.org/](http://www.freesound.org/) (Thanks [/u/Connerses](http://www.reddit.com/u/Connerses)!)
-
-

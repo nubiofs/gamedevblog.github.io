@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Esta semana começa o Ludum Dare #35'
-date: 1970-01-17 18:44:18.000000000 -03:00
 ---
+
 Sexta-feira às 22h (horário de Brasilia) começa o [Ludum Dare #35](http://ludumdare.com/compo/), e eu admito que depois de participar das 3 [últimas edições](http://ludumdare.com/compo/author/cicanci/) acabei ficando "viciado" em no LD, e sempre fico ansioso quando uma nova edição se aproxima.
 
 Neste post sobre o [Ludum Dare #33](http://gamedeveloper.com.br/hoje-comeca-o-ludum-dare-33/) eu dei algumas dicas, e eu mesmo segui elas nas 3 últimas edições. Desta vez eu vou fazer algumas coisas bem diferentes, e espero que eu consiga terminar o jogo em 48 horas.
@@ -15,9 +15,9 @@ Neste post sobre o [Ludum Dare #33](http://gamedeveloper.com.br/hoje-comeca-o-lu
 
 * Mais tempo: já avisei minha família e minha [namorada](https://www.youtube.com/channel/UCTk3xkOSzWzf8Ba-wJN8jDA) que vou ficar isolado nessas 48 horas participando do LD, antes eu não avisava com antecedência e acabei tendo pouco tempo por causa de compromissos.
 
-* Mais pressão: como quero fazer algo maior e com uma game engine que praticamente não tenho experiência, esta pressão de fazer tudo em 48 horas vai ser maior, e espero que me motive mais. 
+* Mais pressão: como quero fazer algo maior e com uma game engine que praticamente não tenho experiência, esta pressão de fazer tudo em 48 horas vai ser maior, e espero que me motive mais.
 
-* Vou tentar não dormir: escolher jogos que eram possíveis me deram tempo até pra dormir, desta vez acho que não vou ter este luxo ou se tiver será bem curto. 
+* Vou tentar não dormir: escolher jogos que eram possíveis me deram tempo até pra dormir, desta vez acho que não vou ter este luxo ou se tiver será bem curto.
 
 ### Dicas importantes
 

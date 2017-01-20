@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Postmortem do Dragon Age: Inquisition no PodQuest'
-date: 1970-01-17 08:04:33.000000000 -03:00
 ---
 
 O [PodQuest](http://www.podquest.com.br/ "PodQuest") é um podcast onde 3 profissionais da indústria internacional de games falam sobre suas experiências na área. Recentemente eles fizeram um postmortem do novo jogo Dragon Age: Inquisition, e além de um programador da BioWare que faz parte do PodQuest, eles também receberam um produtor e outro programador, todos brasileiros.
@@ -21,5 +20,3 @@ O postmortem do Dragon Age: Inquisition foi bem legal, principalmente por ser um
 [![PodQuest](../content/images/2015/01/dragonage3.jpg)](../content/images/2015/01/dragonage3.jpg)
 
 As [equipe do PodQuest](http://www.podquest.com.br/p/equipe.html "Equipe") é formada por: Gilliard Lopes, Produtor da Electronic Arts e responsável pela série FIFA (publiquei uma entrevista com ele [aqui](http://gamedeveloper.com.br/?s=gilliard+lopes "Entrevista") em duas partes); Rafael Kuhnen, Game Designer na Gameloft; e Fernando Secco, Programador na BioWare. Só pelo cargo atual deles da pra ver que possuem muita experiência na área, eu sempre aprendo algo novo apenas ouvindo suas discussões nos podcasts.
-
-

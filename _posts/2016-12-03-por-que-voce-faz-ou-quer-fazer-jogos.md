@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Por que você faz ou quer fazer jogos?
-date: 1970-01-18 00:20:15.000000000 -03:00
 ---
+
 Acredito que se você está lendo este texto existem grandes chances de você querer desenvolver jogos ou já trabalhar na área. É muito provável que alto te motivou a querer isso, algo mais sério do que "escolhi por que eu gosto de jogar", já que exige muita dedicação para fazer carreira na indústria de jogos.
 
 Pra mim o interesse surgiu por que eu gostava de jogar, mas quando comecei a estudar Ciência da Computação percebi que era algo muito desafiador de criar e compensador de ver alguém jogando o que você criou. Já escrevi alguns posts sobre este assunto, e recomendo dar uma lida no [O dia em que vi uma pessoa jogando um jogo que fiz na Electronic Arts](http://gamedeveloper.com.br/vi-uma-pessoa-jogando-um-jogo-que-fiz-na-ea/) e no [É por isso que faço jogos!](http://gamedeveloper.com.br/por-isso-que-faco-jogos/), ambos são exemplos de recompensa que um desenvolvedor de jogos por ter. Algo tão simples, mas que faz todo trabalho valer a pena (pelo menos pra mim).

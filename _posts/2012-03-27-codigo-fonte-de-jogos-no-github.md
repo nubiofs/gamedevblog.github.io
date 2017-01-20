@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Código-fonte de jogos no github
-date: 1970-01-16 07:15:03.000000000 -03:00
 ---
 
 O [GitHub](https://github.com/ "GitHub") é um website de “social coding” – uma rede social de projetos open source, com perfis de programadores e empresas que compartilham seus códigos. Empresas grandes como [Facebook](https://github.com/facebook "Facebook"), [Twitter](https://github.com/twitter "Twitter"), [Microsoft](https://github.com/WindowsAzure "Windows") e [Mozilla](https://github.com/mozilla "Mozilla") tem seus repositórios de código público no GitHub, e qualquer pessoal pode baixar ou clonar o repositório para ver o código. Projetos famosos, como o framework [Cocos2D](https://github.com/cocos2d "Cocos2D") também estão no GitHub.

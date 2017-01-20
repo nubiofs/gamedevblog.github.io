@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Blender 3D: Jogos e Animações Interativas'
-date: 1970-01-16 19:19:59.000000000 -03:00
 ---
 
 O [Blender 3D](http://www.blender.org/ "Blender") é muito conhecido como um software gratuito e opensource para modelagem e animação em três dimensões, mas não é apenas isso. Allan Brito mostra em seu livro, [Blender 3D: Jogos e animações interativas](http://novatec.com.br/livros/blender_3d/ "Blender") publicado pela [Novatec](http://novatec.com.br "Novatec"), que podemos desenvolver jogos com sua engine própria.
@@ -25,5 +24,3 @@ O Allan fez um excelente trabalho neste livro explicando desde o básico até co
 O autor também possui outro livro sobre Blender para animações, já que o foco deste livro é o uso do software para criar jogos. É interessante, e até relaxante, brincar com a engine de jogos do Blender, é como criar algo unindo bloquinhos de Lego.
 
 De uma chance ao [Blender](http://www.blender.org/ "Blender"), é gratuito e muito completo. Muito obrigado a Novatec por me enviar o livro! Você pode comprar Este livro pelo site da Novatec [clicando aqui](http://novatec.com.br/livros/blender_3d/ "Novatec").
-
-

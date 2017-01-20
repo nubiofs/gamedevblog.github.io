@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Concurso de desenvolvimento de jogos: Games For Change'
-date: 1970-01-16 02:20:07.000000000 -03:00
 ---
 
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2011/09/gamesforchange.gif "gamesforchange")](http://gamesforchange.org.br/)A [Games For Change](http://www.gamesforchange.org.br "Games For Change") é uma rede que promove  a pesquisa, criação e aplicação de jogos na sociedade, educação, economia e cultura. Ela está organizando seu primeiro concurso de desenvolvimento de jogos aberto a todos, o **Games For Change América Latina 2011**, que é divido em três categorias: Playground, Engenho e Brincriação.

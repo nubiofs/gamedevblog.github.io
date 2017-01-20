@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Sinergia Studios abre vagas para programadores
-date: 1970-01-17 05:56:41.000000000 -03:00
 ---
 
 A Sinergia Studios é um novo estúdio de games que irá adaptar um jogo de tabuleiro para smartphones e tablets e estão procurando programadores **com experiência** para formar um seu time e desenvolver o jogo com Unity. O escritório fica em São Paulo, próximo ao metrô Paraíso.
@@ -13,5 +12,3 @@ A Sinergia Studios é um novo estúdio de games que irá adaptar um jogo de tab
 – **02 Programadores Júnior: **vão ser responsáveis pela implementação de boa parte do jogo. Não é necessário ter experiência profissional, mas conhecer Unity/C# e já ter feito algum jogo no tempo livre ou na faculdade são diferenciais.
 
 Interessados devem enviar seu currículo e portfolio para [sandro.morishita@sinergiastudios.com](mailto:sandro.morishita@sinergiastudios.com "Sandro").
-
-

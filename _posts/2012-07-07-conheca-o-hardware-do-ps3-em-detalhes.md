@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Conheça o hardware do PS3 em detalhes
-date: 1970-01-16 09:41:48.000000000 -03:00
 ---
 
 Eu estava fuçando em alguns links antigos e achei uma apresentação bem legal sobre o hardware do Playstation 3. São vários slides com vários detalhes técnicos sobre desenvolvimento, arquitetura e programação no PS3.
@@ -13,5 +12,3 @@ Detalhes sobre o gerenciamento de memória, processamento, renderização, entre
 Confira abaixo a apresentação, ou faça [download do PDF aqui](http://research.scee.net/files/presentations/acgirussia/Hardware_Overview_ACGI_09.pdf "Arquitetura do PS3").
 
 http://research.scee.net/files/presentations/acgirussia/Hardware_Overview_ACGI_09.pdf
-
-

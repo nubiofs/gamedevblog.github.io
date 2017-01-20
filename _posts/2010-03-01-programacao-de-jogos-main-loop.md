@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Programação de jogos: main loop'
-date: 1970-01-15 13:04:46.000000000 -03:00
 ---
 
 Antes de começar a estudar desenvolvimentos de games ano passado eu não imaginava o que realmente era um jogo, do ponto de vista da programação. Quem está acostumado com a estrutura de um sistema, não consegue imaginar muito bem que tipo de programa é um jogo sem estudar sua estrutura básica.
@@ -17,5 +16,3 @@ O Frame Rate pode ser definido com um número que o programa deve esperar até e
 Uma solução para este problema é descontar do Frame Rate o tempo em o Main Loop gastou em sua execução, assim, o jogo rodará sempre no mesmo frame. Por exemplo: se o Frame Rate é 30, e o Main Loop gastou 3, o programa deve aguardar 27 (30 – 3) para executar novamente o Main Loop. Sem este controle, o programa iria aguardar 33 (30 + 3) para ser executado novamente, lembrando que o tempo do Main Loop pode variar sempre e o Frame Rate é uma constante. O diagrama abaixo ilustra o funcionamento do Main Loop Fixed Rate:
 
 <figure class="wp-caption aligncenter" id="attachment_416" style="width: 506px">![Main Loop Fixed Rate](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/03/main_loop_fixed_rate.gif "Main Loop Fixed Rate")<figcaption class="wp-caption-text">Fixed Rate - Fonte: NAKAMURA, Ricardo. Técnicas de Programação de Games.</figcaption></figure>O que escrevi neste post é algo que considero bem básico para a programação de um game, e acho que pode ser **muito útil para iniciantes**. Apesar de ser básico, a partir disso é possível procurar mais informações na internet, ou perguntar aqui mesmo qualquer dúvida sobre o assunto.
-
-

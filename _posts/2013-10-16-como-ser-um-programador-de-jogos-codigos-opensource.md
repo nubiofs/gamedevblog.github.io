@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Códigos opensource'
-date: 1970-01-16 20:52:35.000000000 -03:00
 ---
 
 Muita gente tem mais facilidade em aprender vendo como se faz do que através de livros, por exemplo. Ver um código ou um projeto inteiro de exemplo ajuda bastante em alguns casos, e neste post vou mostrar alguns jogos famosos que tem seu código aberto (opensource).
@@ -49,5 +48,3 @@ Eu também tenho alguns jogos que [coloquei no GitHub](https://github.com/GameDe
 [PONG (HTML5)](https://github.com/GameDevBlog/game-html5-pong "GitHub")
 
 Espero que tenha gostado desta lista, agora não tem desculpa para não aprender com tantos exemplos feitos por profissionais da área! Se tiver sugestões de código aberto para colocar nesta lista, deixe um comentário. Lembrando que é sempre bom procurar no [GitHub](https://github.com/ "GitHub") por código de exemplo entre os vários projetos públicos que existem lá.
-
-

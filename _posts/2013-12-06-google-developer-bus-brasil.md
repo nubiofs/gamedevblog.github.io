@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Califórnia, aí vou eu: Como minha equipe ganhou o Google Developer Bus'
-date: 1970-01-16 22:06:03.000000000 -03:00
 ---
 
 Fiquei alguns dias sem postar no blog, mas foi por um bom motivo. Aliás, um excelente motivo! Participei do [Google Developer Bus](http://developerbus.withgoogle.com/#!/map "GDB"), um hackathon de 3 dias, e minha equipe ganhou a competição com um app para fidelização de clientes em academias com conceitos de gameficação, o [PowerUp](http://www.powerupapp.com.br/ "PowerUp"), e vamos conhecer o escritório do Google na Califórnia!
@@ -116,5 +115,3 @@ Obrigado a vocês meus leitores pelo apoio e incentivo que me dão para continua
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/Asiyu-wnYOo?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 Não deixe de acessar o site do [PowerUp](http://www.powerupapp.com.br/ "PowerUp"), e curtir a página no [Facebook](https://www.facebook.com/PowerUpApps "Facebook") e [Google+](https://plus.google.com/108231744085268814242 "Google+"), isso vai nos ajudar muito! ![:)](http://gamedeveloper.com.br/wp-includes/images/smilies/simple-smile.png)
-
-

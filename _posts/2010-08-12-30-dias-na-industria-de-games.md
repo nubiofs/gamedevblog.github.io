@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 30 dias na indústria de games
-date: 1970-01-15 17:01:10.000000000 -03:00
 ---
 
 O blog está meio parado por que estou enrolado com o meu TCC da pós-graduação e também por uma grande mudança na minha vida: Há 30 dias atrás deixei de ser um Analista de Sistemas e consegui um emprego como Engenheiro de Software na [Glu Mobile](http://www.glu.com/ "Glu"), uma empresa que faz jogos e porting de jogos para celulares e smartphones. Depois de 1 ano e meio desde que comecei a estudar desenvolvimento de jogos mais a sério, consegui entrar na indústria de games. Estou trabalhado no departamento de engenharia responsável por porting de jogos para a região da América do Norte.
@@ -15,5 +14,3 @@ No geral, trabalhar com porting de jogos é bem desafiador. Existem diversas coi
 Ah, sempre tem alguma vaga aberta na Glu, em diversas áreas como arte, programação e QA. Acesse o site para ver as vagas: [http://www.glu.com/jobs](http://www.glu.com/jobs)
 
 Existem diversas coisas que quero postar aqui, mas está difícil de arrumar tempo para escrever. Vou tentar postar com mais frequência, mesmo que seja algo mais curto e direto, principalmente por que tenho muitas coisas sobre o desenvolvimento do meu TCC para contar aqui.
-
-

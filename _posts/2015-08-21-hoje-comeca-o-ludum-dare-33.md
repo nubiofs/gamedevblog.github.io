@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Hoje começa o Ludum Dare #33'
-date: 1970-01-17 13:03:11.000000000 -03:00
 ---
 
 Logo desenvolvedores do mundo todo começarão a incrível tarefa de desenvolver um jogo sozinhos em 48 horas (ou em grupo com prazo de 72 horas), aproveite esta oportunidade para participar de um dos maiores game jams do mundo, o [Ludum Dare](http://ludumdare.com/compo/)!
@@ -22,5 +21,3 @@ Um lembrete sobre os dois modos de participar:
 - Jam: você pode fazer um jogo sozinho ou em grupo em 72 horas, a arte e o som podem ser reaproveitados
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/XVrgCgtKobI?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

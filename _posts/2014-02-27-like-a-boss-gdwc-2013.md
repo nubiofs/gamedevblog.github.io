@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Jogo brasileiro "Like a Boss" ganhou o concurso GDWC 2013
-date: 1970-01-17 00:05:41.000000000 -03:00
 ---
 
 Game desenvolvido pelo estúdio brasileiro Fire Horse ganhou o concurso internacional, e como prêmio vai viajar para a Finlândia e conhecer a sede de alguns estúdios como a Rovio, os criadores de Angry Birds.
@@ -15,5 +14,3 @@ O concurso internacional [Game Development World Championship 2013](http://viop
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/TXyKxVOvzZY?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/lVCgll7_KGQ?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Vamos fazer um jogo juntos?
-date: 1970-01-17 17:04:12.000000000 -03:00
 ---
+
 **ESTE PROJETO FOI CANCELADO**
 
 Leia [este post](http://gamedeveloper.com.br/nao-vamos-fazer-um-jogo-juntos/).

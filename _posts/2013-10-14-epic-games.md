@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Por dentro dos grandes estúdios: Epic Games'
-date: 1970-01-16 20:49:24.000000000 -03:00
 ---
 
 Vou começar mais uma série de posts aqui no blog para apresentar como é por dentro dos grandes estúdios de desenvolvimento de jogos espalhados pelo mundo, e o primeiro será a Epic Games!
@@ -15,5 +14,3 @@ A tour pelo estúdio é apresentada pelo famoso [Cliff Bleszinski](http://en.wik
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/2DvC3hpOhKI?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 Vale a pena comentar que o Cliff não está mais na Epic Games, [ele saiu ano passado](http://epicgames.com/community/2012/10/cliff-bleszinski-departs-epic/ "Cliff") para trabalhar em seus próprios projetos.
-
-

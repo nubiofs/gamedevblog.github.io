@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Transformando jogo em produto'
-date: 1970-01-17 01:24:21.000000000 -03:00
 ---
 
 Um game nasce de uma idéia ou um conceito, que então é validado com um protótipo, para depois tornar-se em algo jogável. Porém, esse “algo jogável” pode ser tecnicamente perfeito e, mesmo assim, não agradar aos jogadores. Nesse caso, a culpa não é da equipe de desenvolvimento, e sim de quem pensou na sua idéia sem tratá-la como um produto.
@@ -23,5 +22,3 @@ Dica do leitor Lucas Oliveira:
 [Modelo Canvas para plano de negócio](https://en.wikipedia.org/wiki/Business_Model_Canvas)
 
 [Site para montar um Canvas](https://canvanizer.com)
-
-

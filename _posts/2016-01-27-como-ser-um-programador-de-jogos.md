@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como ser um programador de jogos
-date: 1970-01-17 16:51:04.000000000 -03:00
 ---
 
 Há pouco mais de 2 anos comecei uma série de posts sobre como ser um programador de jogos, e cada semana tratei um assunto relacionado a como começar uma carreira como programador na indústria de games. Fiz 32 posts nesta série e acabei não escrevendo mais posts há quase 1 ano nesta categoria por que os assuntos para iniciantes foram diminuindo e eu acabei ficando sem tempo para posts semanais.
@@ -79,5 +78,3 @@ Olhando os 32 posts aqui até parecem capítulos de um livro, e a ideia inicial 
 Esta semana finalmente assisti uma série de ficção científica incrível chamada [Firefly](http://www.imdb.com/title/tt0303461/). Nesta série a civilização humana desenvolveu uma tecnologia que transforma outros planetas e luas em lugares similares a Terra, permitindo a expansão pelo espaço. O interessante desta série é que não existem máquinas com inteligência artificial avançada e muito menos alienígenas, apenas humanos e naves.  É possível aplicar essa mesma ideia em games, usando jogabilidades comuns porém com diferentes abordagens.
 
  
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Eidos-Montreal usa Autodesk em Deus Ex
-date: 1970-01-17 04:13:19.000000000 -03:00
 ---
 
 Eidos-Montreal usa o software da Autodesk para ajudar a reviver e revitalizar o vídeo game Deus Ex como o predecessor do Human Revolution.
@@ -25,5 +24,3 @@ Para o animador Jonathan Simard, o projeto abriu um mundo inteiramente novo com 
 **Os Resultados**
 
 De acordo com todos os envolvidos, trazer Deus Ex: Human Revolution à vida tem sido um processo longo, complexo e desafiador. Também tem sido bem-sucedido e gratificante, graças em parte à consultoria e suporte da Autodesk. “O apoio da Autodesk tem sido fantástico”, diz Chappart. “Entre muitas outras coisas, precisávamos desenvolver um oleoduto complexo para cenas, o que estava longe de ser uma tarefa fácil. Tivemos inúmeros desafios, e o software da Autodesk nos ajudou a superar todos eles. “.
-
-

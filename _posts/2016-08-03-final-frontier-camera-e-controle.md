@@ -1,15 +1,15 @@
 ---
 layout: post
 title: 'Final Frontier: Câmera e controle'
-date: 1970-01-17 21:24:02.000000000 -03:00
 ---
+
 No último [post](http://gamedeveloper.com.br/final-frontier-skybox-e-mais-destruicao/) deste série sobre o desenvolvimento do meu jogo [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/) falei sobre o novo skybox e melhorei a destruição da caixa que representa um asteroide. Desta vez trabalhei em melhorias para a câmera e o controle da nave, além de alterar novamente o skybox e adicionar um planeta.
 
 **Um planeta na galáxia**
 
-Um skybox adiciona detalhes incríveis ao jogo, e muitas vezes o jogador não repara na arte que está acima de suas cabeças. O mapa da Lua no jogo [Destiny](https://www.destinythegame.com/) tem um skybox incrível, com a Terra e a ISS destruída em destaque no céu. 
+Um skybox adiciona detalhes incríveis ao jogo, e muitas vezes o jogador não repara na arte que está acima de suas cabeças. O mapa da Lua no jogo [Destiny](https://www.destinythegame.com/) tem um skybox incrível, com a Terra e a ISS destruída em destaque no céu.
 
-Eu decidi mudar o skybox para outra opção do mesmo asset pack, desta vez com uma névoa verde que adiciona mais detalhes. Também adicionei um novo asset pack gratuito chamado [Vast Outer Space](https://www.assetstore.unity3d.com/en/#!/content/38913), que contém modelos de planetas, asteroides e algumas partículas. Adicionei o planeta abaixo, ele parece próximo mas está bem longe e aumentei o modelo 1000 vezes. Também alterei o `Clipping Planes` da câmera, aumentando o `Far` para 10000, assim o planeta aparece ao fundo mesmo estando bem longe. 
+Eu decidi mudar o skybox para outra opção do mesmo asset pack, desta vez com uma névoa verde que adiciona mais detalhes. Também adicionei um novo asset pack gratuito chamado [Vast Outer Space](https://www.assetstore.unity3d.com/en/#!/content/38913), que contém modelos de planetas, asteroides e algumas partículas. Adicionei o planeta abaixo, ele parece próximo mas está bem longe e aumentei o modelo 1000 vezes. Também alterei o `Clipping Planes` da câmera, aumentando o `Far` para 10000, assim o planeta aparece ao fundo mesmo estando bem longe.
 
 ![](/content/images/2016/08/planeta-novo.jpg)
 

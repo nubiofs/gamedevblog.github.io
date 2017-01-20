@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Aprenda a Programar com Minecraft
-date: 1970-01-17 20:34:17.000000000 -03:00
 ---
+
 [Minecraft](https://minecraft.net/) conseguiu criar uma cultura e se tornou muito mais do que apenas um jogo, hoje é usado até na educação de crianças, como pode ser visto no documentário [Minecraft: The Story of Mojang](http://gamedeveloper.com.br/documentario-sobre-minecraft/). Hoje é possível até aprender a programar usando o jogo, e é isso que o livro [Aprenda a Programar com Minecraft](http://novatec.com.br/livros/aprenda-programar-minecraft/) do [Craig Richardson](https://www.nostarch.com/programwithminecraft) faz de uma maneira incrivelmente didática.
 
-Este livro, lançado no Brasil pela editora [Novatec](http://novatec.com.br/livros/aprenda-programar-minecraft/), ensina lógica de programação utilizando a linguagem Python e usado o jogo Minecraft como ferramenta para exibir os resultados. Ou seja, após cada lição, é possível modificar e testar o que foi ensinado no jogo Minecraft para criar estruturas, blocos, itens, entre outras coisas. 
+Este livro, lançado no Brasil pela editora [Novatec](http://novatec.com.br/livros/aprenda-programar-minecraft/), ensina lógica de programação utilizando a linguagem Python e usado o jogo Minecraft como ferramenta para exibir os resultados. Ou seja, após cada lição, é possível modificar e testar o que foi ensinado no jogo Minecraft para criar estruturas, blocos, itens, entre outras coisas.
 
 ![](/content/images/2016/07/livro-minecraft-1.jpg)
 
-Todas as lições no livro possuem imagens do jogo para mostrar como é o resultado esperado, o que ajuda bastante. Ao invés de aprender a programar em Python utilizando o terminal ou prompt de comando, tudo que é programado pode ser visto no jogo, seja em formato visual (blocos, por exemplo) ou em mensagens de texto na tela do jogo. 
+Todas as lições no livro possuem imagens do jogo para mostrar como é o resultado esperado, o que ajuda bastante. Ao invés de aprender a programar em Python utilizando o terminal ou prompt de comando, tudo que é programado pode ser visto no jogo, seja em formato visual (blocos, por exemplo) ou em mensagens de texto na tela do jogo.
 
 O autor já trabalhou na [Fundação Raspberry Pi](https://www.raspberrypi.org/), por isso além de Windows e Mac também é possível seguir o livro utilizando Raspberry Pi. O capítulo inicial do livro ensina a configurar o ambiente de desenvolvimento, inclusive com o Minecraft API e Minecraft Server.
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: CryENGINE 3 SDK - game engine gratuita dos criadores de Crysis
-date: 1970-01-16 01:56:54.000000000 -03:00
 ---
 
 [![](../content/images/2011/08/newspic_cgdc.jpg "cryengine")](http://mycryengine.com)

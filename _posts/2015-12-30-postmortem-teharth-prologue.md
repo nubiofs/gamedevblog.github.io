@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Postmortem: Teharth Prologue - The Resources Dissolution'
-date: 1970-01-17 16:11:10.000000000 -03:00
 ---
 
 Este é o primeiro postmortem de um jogo de RPG publicado aqui no blog. [Teharth Prologue – The Resources Dissolution](http://www.souking.com.br/teharth-resources-dissolution) é o terceiro jogo do [Maurílio Eudes Okamoto](http://okamotoprojects.wix.com/site "Okamoto"), que já publicou os jogos [Sou Sustentável](http://gamedeveloper.com.br/postmortem-sou-sustentavel/) e [Manual do Skate](http://gamedeveloper.com.br/postmortem-manual-do-skate/), e o primeiro do [Teharth Studios](http://teharthstudios.wix.com/home). Confira aqui um resumo de como foi o desenvolvimento deste projeto as dificuldades que a equipe encontrou para terminar e publicar o jogo e [clique aqui](http://www.souking.com.br/teharth-resources-dissolution) para fazer o download do jogo.

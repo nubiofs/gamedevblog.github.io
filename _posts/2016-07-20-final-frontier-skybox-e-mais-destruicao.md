@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Final Frontier: Skybox e mais destruição'
-date: 1970-01-17 21:03:11.000000000 -03:00
 ---
+
 No [post anterior](http://gamedeveloper.com.br/final-frontier-playground-e-destruicao/) sobre o meu projeto Final Frontier eu escrevi sobre como estava utilizando o playground para testar o gameplay e como fiz um modelo 3D feito no Blender ser destruído na Unity. Nest post vou falar sobre skybox e algumas melhorias que fiz para a destruição ser maior, além de outros detalhes sobre a organização do projeto na Unity.
 
 **Ao infinito e além**
@@ -27,7 +27,7 @@ No post anterior eu tinha colocado apenas uma caixa que, quando o tiro colide co
 
 ![](/content/images/2016/07/ff-capa-3.jpg)
 
-Muitos modelos 3D voando pelo cenário com física para colisão podem fazer o jogo ficar pesado. Não é o caso para o meu jogo ainda, mas quando mais objetos estiverem no cenário, mais modelos serão desenhados na tela, o que pode ser um problema para alguns aparelhos com hardware limitado. É muito cedo para se preocupar em otimizar isso, pois ainda nem sei como o jogo será, mas fiz algumas alterações para minimizar este problema. 
+Muitos modelos 3D voando pelo cenário com física para colisão podem fazer o jogo ficar pesado. Não é o caso para o meu jogo ainda, mas quando mais objetos estiverem no cenário, mais modelos serão desenhados na tela, o que pode ser um problema para alguns aparelhos com hardware limitado. É muito cedo para se preocupar em otimizar isso, pois ainda nem sei como o jogo será, mas fiz algumas alterações para minimizar este problema.
 
 O modelo do tiro e dos da caixa destruída são removidos da cena pelo método da [Unity](https://docs.unity3d.com/ScriptReference/Object.Destroy.html) chamado `Destroy(gameObject, timer)`, onde o `timer` é o tempo para que o objeto seja destruído após sua criação. Nada demais, mas já ajuda a manter a memória livre de objetos desnecessários.
 
@@ -41,6 +41,6 @@ Outra alteração que fiz foi criar um novo prefab chamado `TestAsteroidGroup`, 
 
 **Próximos passos**
 
-Eu mencionei no post passado mas acabei não tendo tempo de trabalhar na movimentação da nave, pelo menos não na implementação. Pesquisei algumas opções de controle e câmera, e no próximo post vou falar mais sobre isto. Se eu tiver tempo também quero começar a fazer um sistema simples de spawn para os meteoros (e talvez até achar assets para substituir as caixas). 
+Eu mencionei no post passado mas acabei não tendo tempo de trabalhar na movimentação da nave, pelo menos não na implementação. Pesquisei algumas opções de controle e câmera, e no próximo post vou falar mais sobre isto. Se eu tiver tempo também quero começar a fazer um sistema simples de spawn para os meteoros (e talvez até achar assets para substituir as caixas).
 
 O andamento do projeto pode ser conferido no [GitHub](https://github.com/cicanci/game-unity-ff), e [neste link](https://github.com/cicanci/game-unity-ff/tree/8cd709c9bea93b397767636e421b7d2a4c1afce8) você pode ver as alterações no projeto até este post (também sugestão do leitor Felipe). Todos posts desta série sobre meu projeto podem ser vistos na tag [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/), e como sempre qualquer sugestão ou opinião é bem vinda!

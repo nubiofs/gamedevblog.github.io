@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Aprenda a Programar: A Arte de Ensinar o Computador'
-date: 1970-01-16 22:21:24.000000000 -03:00
 ---
 
 Conheça o livro de Cesar Brod, publicado pela editora Novatec, que pode ensinar qualquer pessoa os conceitos básicos de programação com exemplos de jogos.
@@ -25,5 +24,3 @@ Este livro não vai te ensinar a ser o melhor programador do mundo, e muito meno
 Mesmo trabalhando há alguns anos com programação, este livro foi interessante para rever coisas muito básicas que geralmente esquecemos com o tempo, e também para aprender mais sobre Python. Muito obrigado a editora Novatec por me enviar este livro!
 
 Vocês podem adquirir este livro no [site da Novatec](http://novatec.com.br/livros/aprenda-programar/ "Novatec"), e com o código **GAMEDEVELOPER** ao finalizar a compra você ganha **20% de desconto** (válido até 31/12/1014)!
-
-

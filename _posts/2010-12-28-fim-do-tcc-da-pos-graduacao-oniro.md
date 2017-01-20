@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Fim do TCC da pós-graduação: Oniro'
-date: 1970-01-15 20:20:45.000000000 -03:00
 ---
 
 ![Oniro](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/12/oniro_logo.png "Oniro")Depois de 4 meses de desenvolvimento (game design, programação e arte), e algumas noites sem dormir, consegui terminar o meu  TCC da pós-graduação em Games: Produção e Programação no SENAC. Meu projeto foi a versão de demonstração do Oniro, um jogo de aventura com plataformas em 2D, desenvolvido utilizando XNA e [FlatRedBall](http://www.flatredball.com/ "FlatRedBall").
@@ -21,9 +20,9 @@ Com a tecnologia e a mecânica do jogo definidas, faltou uma parte importante: o
 Neste contexto, encontrei o que diferenciaria meu jogo de Sandman, sem deixar de ter isto como uma forte referência: o mundo dos sonhos de Morfeu foi dominado por Pesadelos, e ele precisará da ajuda de um garoto para salvar o mundo dos sonhos e recuperar relíquias roubadas pelos Pesadelos de outros deuses gregos. Ai encontrei outro problema: como seria o mundo dos sonhos? Então tive a idéia de que o mundo dos sonhos é formado pelas lembranças de onde o garoto que irá ajudar Morfeu vive, porém suas lembranças foram distorcidas pelos Pesadelos. E o local escolhido foi também uma homenagem minha para o locar onde vivo, portanto escolhi a cidade de São Paulo como referência para o mundo dos sonhos pela visão do garoto. Assim, os níveis tem detalhes que são de alguns locais na cidade de São Paulo, porém em nenhum momento isto é revelado para o jogador. Esta é a sinopse do jogo:
 
 <div id="_mcePaste" style="position: absolute; left: -10000px; top: 114px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: justify;">Jogo de aventura onde um garoto, Paulo, é escolhido pelo Deus Grego dos Sonhos Morfeu para ajudá-lo a recuperar as 12 relíquias quer permitem o acesso dos doze dos Deuses do Olímpio ao Mundo dos Sonhos. As relíquias foram roubadas pelos Pesadelos, seres sombrios que querem dominar o Mundo dos Sonhos, lar e reino de Morfeu e seus irmãos, local onde todas as criaturas que sonham vão ao cair no sono.</div><div id="_mcePaste" style="position: absolute; left: -10000px; top: 114px; width: 1px; height: 1px; overflow-x: hidden; overflow-y: hidden; text-align: justify;">Oniro significa Sonho em grego. Este nome foi escolhido por que o jogo será baseado na mitologia grega e será ambientado no Mundo dos Sonhos do deus grego Morfeu.</div>> Jogo de aventura onde um garoto, Paulo, é escolhido pelo Deus Grego dos Sonhos Morfeu para ajudá-lo a recuperar as 12 relíquias quer permitem o acesso dos doze dos Deuses do Olímpio ao Mundo dos Sonhos. As relíquias foram roubadas pelos Pesadelos, seres sombrios que querem dominar o Mundo dos Sonhos, lar e reino de Morfeu e seus irmãos, local onde todas as criaturas que sonham vão ao cair no sono.
-> 
+>
 > Oniro significa Sonho em grego. Este nome foi escolhido por que o jogo será baseado na mitologia grega e será ambientado no Mundo dos Sonhos do deus grego Morfeu.
-> 
+>
 > O público-alvo do Oniro são jogadores casuais com idade entre 15 e 20 anos, porém este produto também deve atingir outras faixas etárias e jogadores hardcore. O jogo apresentará um nível de dificuldade crescente em seus desafios além de diversas conquistas que o jogador não precisará conseguir para finalizar o jogo, mas são objetivos secundários que podem chamar atenção do público hardcore.
 
 Com o conceito definido, iniciei o Game Design Document (GDD). Ainda não encontrei um modelo de GDD que me agradou, o que utilizei é uma mistura de diversos outros modelos que encontrei na internet e em livros de Game Design. No documento, separei as características do jogo nestas categorias: Visão Geral; Produto; Game Design; Level Design; Personagens; História; Especificações Técnicas; Versão DEMO. Como eu não sou Game Designer, achei que ficou bem fraco este documento, talvez se tivesse o foco apenas nisso o documento e o jogo teriam ficado mais legais, mas como tive que pensar muito em programação, isto acabou me limitando e forçando a pensar em coisas simples.
@@ -89,5 +88,3 @@ Espero que você goste, e por favor deixe comentários sobre o que achou do jogo
 Adicionei um vídeo que mostra as fases do jogo, infelizmente não tem som:
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/R7JdGcBFQt8?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

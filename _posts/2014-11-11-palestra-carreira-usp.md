@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Minha palestra sobre carreira na USP
-date: 1970-01-17 06:15:33.000000000 -03:00
 ---
 
 Ontem fiz uma palestra sobre a carreira de um desenvolvedor de jogos na USP, no campus da zona leste em São Paulo. Além de falar sobre carreira, também adicionei alguns links interessante de sites, recomendações de livros, código fonte de jogos, principais tecnologias, entre outras coisas.
@@ -13,5 +12,3 @@ Ontem fiz uma palestra sobre a carreira de um desenvolvedor de jogos na USP, no 
 **UPDATE: **
 
 Dica do [Gilliard Lopes](http://www.podquest.com.br/ "Podquest"), outro site para procurar empregos fora: [CreativeHeads.net](http://creativeheads.net/)
-
-

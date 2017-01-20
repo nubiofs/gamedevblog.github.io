@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Animação 3D com softimage XSI
-date: 1970-01-15 09:33:50.000000000 -03:00
 ---
 
 Eu pensava que animar um objeto 3D era tão complicado quando modelar, mas fiquei surpreso ao descobrir que o processo de animação no Softimage XSI é muito parecido com o do Adobe Flash. Embora sejam softwares diferentes, com finalidades distintas, a idéia básica de animar por Frames está presente em ambos.
@@ -43,5 +42,3 @@ Eu exportei todas as <span style="text-decoration: line-through;">coisas toscas<
 Estas animações não ficaram perfeitas, e nem eram para ficar. Aprendi as técnicas mencionadas e alguns truques novos no XSI que eu não conhecia. Mesmo não sendo artista ou animador, sei que estas aulas vão ser muito úteis para programação 3D, como foi a aula de modelagem 3D. Todas estas técnicas estão no livro **The Animator’s Survival Kit do Richard Williams**, comentado por mim [neste post](http://gamedeveloper.com.br/blog/2009/08/21/livros-de-desenvolvimento-de-jogos/ "Livros").
 
 Assim como modelagem 3D, a animação exige paciência e um pouco de perfeccionismo. Além de conhecer as técnicas e como aplicá-las nos softwares 3D, também é necessário ser observador para traduzir um movimento orgânico em digital. Como meu professor disse, vale até pedir para alguém ficar andando ou pulando para entender o movimento que o corpo faz e saber como reproduzi-lo em uma animação.
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introdução ao desenvolvimento de games, volume 3
-date: 1970-01-16 23:41:55.000000000 -03:00
 ---
 
 O terceiro livro da série americana Introdução ao Desenvolvimento de Games, publicado em português no Brasil pela editora Cengage Learning, trata a criação e produção audiovisual em jogos.
@@ -25,5 +24,3 @@ Alguns conceitos básicos de design de áudio e até mesmo dublagem em jogos sã
 Está tem se tornado a minha série de livros favorita lançada no Brasil, principalmente por ter sido desenvolvida por um tipo de profissionais da indústria que trabalham com jogos AAA. Muito obrigado novamente a editora Cengage Learning por tem enviado o livro! Este volume, assim como toda coleção, esta disponível em várias livrarias e no [site da editora](http://www.cengage.com.br/ls/introducao-ao-desenvolvimento-de-games-vol-3-traducao-da-2a-edicao-norte-americana/ "Cengage").
 
 Siga a Cengage Learning no [Facebook](https://www.facebook.com/cengagebrasil "Facebook") e no [Twitter](https://twitter.com/cengagebrasil "Twitter") para ficar por dentro dos lançamentos da editora.
-
-

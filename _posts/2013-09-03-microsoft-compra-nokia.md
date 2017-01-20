@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Microsoft compra Nokia por $7.2 bilhões de dólares
-date: 1970-01-16 19:50:14.000000000 -03:00
 ---
 
 Apesar da grande parceria entre Microsoft e Nokia, eu não imaginava que isto iria acontecer, ainda mais agora que a Nokia estava praticamente fora de risco de falir graças ao grande investimento em pesquisa e desenvolvimento na plataforma Windows Phone. Agora, a [Microsoft comprou a Nokia.](http://mashable.com/2013/09/03/microsoft-nokia-acquisition/ "Microsoft compra Nokia")
@@ -17,5 +16,3 @@ E essa briga vai ficar ainda melhor quando anunciarem o novo CEO da Microsoft, q
 Embora tudo isso que eu escrevi seja relacionado a business, está claro que esta competição vai afetar diretamente os desenvolvedores de jogos. A Unity com seu suporte a iOS, Android, BlackBerry e Windows Phone é a primeira de muitas outras engines e frameworks que suportarão a plataforma da Microsoft.
 
 Se antes já era essencial lançar seu jogo para iOS e Android, agora comece a pensar com mais carinho no Windows Phone!
-
-

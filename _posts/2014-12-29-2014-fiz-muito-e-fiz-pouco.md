@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 2014, o ano em que fiz muito e fiz pouco
-date: 1970-01-17 07:27:24.000000000 -03:00
 ---
 
 Este ano fiz muitas coisas, tive muitas conquistas em relação a minha vida profissional, pessoal e ao blog. Mas, ao mesmo tempo, hoje no último dia do ano sinto que fiz poucas coisas, e umas delas foi postar aqui no blog.
@@ -17,5 +16,3 @@ Por conta disso tudo, este ano escrevi bem menos no blog. Ao todo foram 50 posts
 Espero fazer em 2015 tudo que não consegui fazer neste segundo semestre de 2014, e muito mais! Um Feliz Ano Novo para você leitor, e aguarde novidades! =)
 
 **UPDATE**: Outra coisa bem legal sobre o blog que esqueci de comentar é que este mês passei dos [2.100 likes na página do Facebook](https://www.facebook.com/GameDeveloperBlog "Facebook")!
-
-

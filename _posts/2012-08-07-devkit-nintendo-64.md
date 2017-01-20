@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Manual de desenvolvimento para Nintendo 64!
-date: 1970-01-16 10:26:36.000000000 -03:00
 ---
 
 Eu não lembro como encontrei isso, mas [neste link](http://n64.icequake.net/doc/n64intro/kantan/step1/index.html "Manual N64") está publicado o manual de desenvolvimento para o [Nintendo 64](http://n64.icequake.net/doc/n64intro/kantan/step1/index.html "Manual N64"), com vários detalhes de sua arquitetura e hardware!
@@ -15,5 +14,3 @@ Naquela época nem imaginava que hoje eu trabalharia com jogos. Como programador
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/08/1-2-1-1.gif "Nintendo 64")](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/08/1-2-1-1.gif)
 
 Tudo que você precisa saber sobre a arquitetura, programação, pipeline gráfica, e várias outros detalhes do hardware do Nintendo 64 está [nesse manual](http://n64.icequake.net/doc/n64intro/kantan/step1/index.html "Manual N64") de março de 1999, e a parte mais legal dele são as palavras “Nintendo® Confidential” no rodapé das páginas.
-
-

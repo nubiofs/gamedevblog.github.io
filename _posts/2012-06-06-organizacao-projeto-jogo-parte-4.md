@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Organização de um projeto de jogo (parte 4)
-date: 1970-01-16 08:57:18.000000000 -03:00
 ---
 
 Esta é a quarta parte da série de posts sobre como organizar o seu projeto de jogo, e terá como foco o gerenciamento do projeto e divisão de tarefas. Vejam também a [parte 1](http://gamedeveloper.com.br/blog/2012/06/04/organizacao-projeto-jogo-parte-1/ "Parte 1"), [parte 2](http://gamedeveloper.com.br/blog/2012/06/05/organizacao-projeto-jogo-parte-2/ "Parte 2") e [parte 3](http://gamedeveloper.com.br/blog/2012/06/06/organizacao-projeto-jogo-parte-3/ "Parte 3").
@@ -21,5 +20,3 @@ Existe também um web app para reuniões bem legal, chamado [YAM (Yet Another Me
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/biAl_nnwf6U?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 Na hora de conversar sobre o andamento do projeto, podemos utilizar as sugestões dadas em comunicação da equipe, porém é muito interessante que sejam feitas reuniões presenciais ou por [Skype](http://skype.com/ "Skype"), pelo menos uma vez por semana. Este tipo de relacionamento com a equipe torna o projeto mais “humano”, além de descontrair um pouco.
-
-

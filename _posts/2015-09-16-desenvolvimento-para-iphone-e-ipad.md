@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Desenvolvimento para iPhone e iPad
-date: 1970-01-17 13:40:58.000000000 -03:00
 ---
 
 Há alguns meses atrás tive a oportunidade de fazer a [review](http://gamedeveloper.com.br/dominando-o-android-do-basico-ao-avancado/) de um livro muito bom de desenvolvimento para Android. Muitos me perguntaram qual seria o livro equivalente de desenvolvimento para iOS, e a resposta está neste post.
@@ -25,5 +24,3 @@ Muito obrigado a [Editora Novatec](http://novatec.com.br/ "Novatec") por me envi
  
 
  
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como foi o Workshop de Business para Jogos Online
-date: 1970-01-16 15:20:21.000000000 -03:00
 ---
 
 [No post anterior](http://gamedeveloper.com.br/blog/2013/02/21/workshop-de-business-para-desenvolvedores-de-jogos-online/ "Post anterior") falei sobre um evento que iria acontecer na Universidade Mackenzie em São Paulo, sobre a parte de negócios relacionada ao desenvolvimento e publicação de jogos online. Neste post vou contar um pouco de como foi o evento, e qual a sua importância para os desenvolvedores brasileiros.
@@ -17,5 +16,3 @@ No evento eles apresentaram um case de um jogo que já foi publicado em alguns p
 Os três palestrantes demonstraram ser bem receptivos para analisar um jogo, seja uma idéia definida ou um produto praticamente finalizado, e calcular a viabilidade do projeto e o retorno do investimento. Portante, se você tem um jogo envie para eles analisarem.  O [contato pode ser realizado pelo site](http://www.gamesgroup.com.br/ "EGG"), e o Tim fala português!
 
 <figure class="wp-caption aligncenter" id="attachment_1558" style="width: 600px">![](../content/images/2013/02/tim.jpg "Tim Fabian Besser")<figcaption class="wp-caption-text">Tim Fabian Besser</figcaption></figure>Lembrando que a [SBGames](http://www.sbgames.org/sbgames2013/ "SBGames") desse ano também será realizada na Mackenzie em São Paulo, com organização da Profª. Dr.ª Pollyana Mustaro (Mackenzie) e do [Profº. Drº. Ricardo Nakamura](http://ricardonakamura.org "Ricardo Nakamura") (Poli-USP).
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 1 ano na indústria de games
-date: 1970-01-16 01:01:44.000000000 -03:00
 ---
 
 Há 11 meses escrevi um post aqui sobre meus primeiros [30 dias trabalhando em uma empresa de games](http://gamedeveloper.com.br/blog/2010/08/13/30-dias-na-industria-de-games/ "30 dias na indústria de games"). Hoje faz exatamente **1 ano** que comecei a trabalhar com jogos e muita coisa mudou, inclusive a empresa que eu trabalhava. Comecei como Engenheiro de Software na [Glu Mobile](http://www.glu.com/ "Glu Mobile") e hoje tenho o mesmo cargo na [Electronic Arts](http://www.ea.com/ "EA"), na divisão [EA Mobile](http://www.eamobile.com/home/ "EA Mobile"). Estou tendo uma oportunidade única de expandir meu conhecimento trabalhando em uma das maiores empresas do mundo, principalmente relacionado a jogos mobile.
@@ -29,5 +28,3 @@ Para terminar, algumas dicas importantes que aprendi nesse 1 ano na indústria d
 - **Visite meu blog constantemente! **Tá bom, pode soar propaganda, mas aqui você encontrará muitas informações legais e úteis sobre desenvolvimento de jogos. =)
 
 Neste semestre pretendo atualizar o blog com mais frequência. Espero que tenham gostado das informações que compartilhei, qualquer dúvida ou sugestão é só deixar um comentário!
-
-

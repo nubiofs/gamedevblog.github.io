@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como programar jogos independentes, por Jonathan Blow
-date: 1970-01-17 02:58:18.000000000 -03:00
 ---
 
 Jonathan Blow, criador de um dos jogos independentes de maior sucesso, o [Braid](http://braid-game.com/ "Braid"), fez uma palestra sobre como programar jogos independentes na [CSUA](http://csua.berkeley.edu/ "CSUA") (Computer Science Undergraduate Association) de Berkeley.
@@ -17,5 +16,3 @@ Este conteúdo foi postado pelo próprio Jonathan Blow [em seu blog](http://the-
 [Download do áudio da palestra (MP3)](https://s3-sa-east-1.amazonaws.com/blog-gd/download/CSUA_talk.mp3 "Audio")
 
 [Download da apresentação (PDF)](https://s3-sa-east-1.amazonaws.com/blog-gd/download/CSUA_talk.pdf)
-
-

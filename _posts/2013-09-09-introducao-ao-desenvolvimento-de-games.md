@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introdução ao desenvolvimento de games, volume 1
-date: 1970-01-16 19:59:34.000000000 -03:00
 ---
 
 A editora [Cengage Learning](http://www.cengage.com.br/ "Cengage") lançou a tradução da segunda edição do livro [Introdução ao desenvolvimento de games](http://www.cengage.com.br/ls/introducao-ao-desenvolvimento-de-games-traducao-da-2a-edicao-norte-americana/ "Livro"), e eu recebi o Volume 1: Entendendo o universo dos jogos, e fiquei bem impressionado com o conteúdo.
@@ -25,5 +24,3 @@ Novamente, este livro é uma introdução sobre design de jogos, e existem outro
 Eu gostei bastante deste livro, e como introdução esta praticamente perfeito para quem quer começar a desenvolver jogos. A tradução esta muito boa e reflete a qualidade do livro. Muito obrigado a Cengage Learning por me enviar este livro, e parabéns pelo excelente trabalho.
 
 Siga a Cengage Learning no [Facebook](https://www.facebook.com/cengagebrasil "Facebook") e no [Twitter](https://twitter.com/cengagebrasil "Twitter") para ficar por dentro dos lançamentos da editora.
-
-

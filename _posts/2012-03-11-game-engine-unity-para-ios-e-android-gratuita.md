@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Game Engine Unity para iOS e Android gratuita até 8 de abril
-date: 1970-01-16 06:52:08.000000000 -03:00
 ---
 
 A [game engine Unity](http://unity3d.com/ "Unity") mudou muita coisa no desenvolvimento de jogos independentes quando, em 2009, lançou uma versão gratuita ilimitada para desenvolvimento de jogos para PC, Mac e Web (com plugin próprio). Até então não existia uma opção gratuita (ilimitada) para estudantes, entusiastas e pequenos desenvolvedores independentes que queria desenvolver jogos com qualidade em 3D, porém utilizando uma game engine profissional.
@@ -9,7 +8,7 @@ A [game engine Unity](http://unity3d.com/ "Unity") mudou muita coisa no desenvol
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/03/unity1.jpg "Unity")](http://www.unity3d.com)
 
 Agora a Unity está chamando a atenção dos desenvolvedores novamente, **oferecendo gratuitamente as licenças para desenvolvimento para iOS e Android para qualquer pessoa até 8 de abril**. Para se ter uma idéia, cada licença custava $400 dólares, e você pode pegar ambas de graça até o dia 8 de Abril.  
-  
+
  Tudo que precisa fazer é [acessar o site da Unity](https://store.unity3d.com "Unity"), clicar em “Store”, selecionar “Unity Free”, e depois em “Add Features” basta selecionar “Android” e “iOS”, ambos estão com um aviso escrito “Free Until 8th April”. Depois disso é só clicar em “Add to Cart”, criar uma conta (se não tiver), e se divertir com a possibilidade de criar jogos incríveis em 3D para iOS e Android. Não é necessário realizar pagamento algum, após criar a conta o site pula a etapa de pagamento e já te envia um e-mail com a sua key única.
 
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/03/feature_3_more.jpg "Unity iOS")](http://unity3d.com/)

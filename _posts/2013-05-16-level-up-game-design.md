@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Level Up: Um guia para o design de grandes jogos'
-date: 1970-01-16 17:12:25.000000000 -03:00
 ---
 
 Apesar de eu ser programador, sempre gostei de ler sobre game design. Já li alguns livros, mas este é realmente o mais prático e direto de todos. [Level Up: Um guia para o design de grandes jogos](http://www.blucher.com.br/produto/07009/level-up "Level Up"), de [Scott Rogers](http://mrbossdesign.blogspot.com.br/ "Scott Rogers"), é uma obra essencial para estudantes e profissionais da indústria de games.
@@ -23,5 +22,3 @@ Sabe por que esse livro é tão bom? O autor, Scott Rogers, trabalha na indústr
 Este livro é muito bom por que foi escrito por alguém que realmente trabalha com game design, e entende muito do assunto. A própria linguagem do livro é mais fácil, pois você sente como se o autor estivesse do seu lado te explicando como fazer um bom game design. Esse livro é obrigatório para estudantes e game designers, e essencial para programadores e artistas que querem conhecer mais sobre game design.
 
 Quero agradecer a editora Blucher por ter me enviado uma cópia desse livro, muito obrigado!
-
-

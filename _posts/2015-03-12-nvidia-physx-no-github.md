@@ -1,7 +1,6 @@
 ---
 layout: post
 title: NVIDIA disponibiliza código da PhysX no GitHub
-date: 1970-01-17 09:11:13.000000000 -03:00
 ---
 
 O framework de física da NVIDIA, usado em diversos jogos e engines, agora está com o [código publicado](https://developer.nvidia.com/content/latest-physx-source-code-now-available-free-github "PhysX") no GitHub para que os desenvolvedores possam estudá-lo e até melhorá-lo.
@@ -11,5 +10,3 @@ Você pode não saber, mas este framework está implementado em muitas engines, 
 Para acessar o código da PhysX no GitHub siga os procedimentos [deste link](https://developer.nvidia.com/physx-source-github "PhysX"). São bem parecidos com os procedimentos para acessar o código da Unreal Engine.
 
 Obrigado ao [Mestre Kishimoto](http://kishimoto.com.br/ "Kishimoto") pela dica!
-
-

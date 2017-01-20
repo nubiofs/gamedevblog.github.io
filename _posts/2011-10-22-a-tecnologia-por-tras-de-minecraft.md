@@ -1,7 +1,6 @@
 ---
 layout: post
 title: A tecnologia por trás de Minecraft
-date: 1970-01-16 04:12:18.000000000 -03:00
 ---
 
 Eu conheci o jogo indie [Minecraft](http://www.minecraft.net "Minecraft") em dezembro de 2010. Na época, seu desenvolvimento tinha passado da fase alpha para a fase beta. Duas coisas me deixaram muito curioso: (1) era um jogo que dependia da criatividade do jogador, lembrava [Lego](http://www.lego.com "Lego"), e também tinha monstros que apareciam a noite e em cavernas que o jogador poderia explorar; e (2) o seu modelo de comercialização, onde o jogo era vendido inacabado durante sua fase de produção.

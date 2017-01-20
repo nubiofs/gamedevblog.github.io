@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como foi a palestra sobre Corona SDK na Unicsul
-date: 1970-01-16 18:02:13.000000000 -03:00
 ---
 
 Esta foi a segunda palestra que apresentei este ano sobre desenvolvimento de jogos para dispositivos móveis, e desta vez a tecnologia escolhida foi o Corona SDK, um framework bem completo para desenvolver jogos com linguagem script Lua.
@@ -17,5 +16,3 @@ Abaixo está a apresentação completa, não deixem de ver também os últimos s
 <div style="margin-bottom:5px">**[Desenvolvimento de Jogos com Corona SDK](https://www.slideshare.net/cicanci/desenvolvimento-de-jogos-com-corona-sdk "Desenvolvimento de Jogos com Corona SDK")** from **[Bruno Cicanci](http://www.slideshare.net/cicanci)**</div>Além de alguns códigos com exemplos da utilização do Corona SDK, existem também slides com informações sobre desenvolvimento de jogos, protótipos, dicas, e outras coisas legais.
 
 Muito obrigado ao pessoal da Unicsul que organizou o evento e por me convidarem para participar!
-
-

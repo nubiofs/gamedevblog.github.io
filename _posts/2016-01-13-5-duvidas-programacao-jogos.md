@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 5 dúvidas sobre programação de jogos
-date: 1970-01-17 16:32:03.000000000 -03:00
 ---
 
 Recebi um email de um leitor do blog chamado Alexandre que, como muita gente que está começando, estava com dúvida em relação a indústria de games. Suas 5 perguntas foram tão bem formuladas que eu pedi sua permissão para postá-las aqui no blog, confira abaixo!
@@ -29,5 +28,3 @@ Aproveite que você está começando na faculdade e tente encontrar na sua sala
 Muito obrigado ao Alexandre e a todos os outros leitores que acompanham o meu blog e me enviam emails. Tenho atualizado pouco aqui nos últimos meses, e até os emails estou demorando para responder. Mas (como já disse muitas vezes antes) vou tentar me organizar melhor para sempre postar um conteúdo legal aqui e responder emails o mais breve possível.
 
 Imagem da capa: [Computer programming source code](http://www.shutterstock.com/pic-321090596/stock-photo-computer-programming-source-code-abstract-screen-of-software-developer-digital-technology-modern.html?src=csl_recent_image-1) do Shutterstock.
-
-

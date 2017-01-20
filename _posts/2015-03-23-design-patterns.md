@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Design Patterns'
-date: 1970-01-17 09:25:50.000000000 -03:00
 ---
 
 Este é um assunto complicado até para quem decorou todos [design patterns](http://en.wikipedia.org/wiki/Software_design_pattern "Design Patterns") possíveis e imagináveis em programação. Por mais que existem muitos por ai, poucos são utilizados no dia-a-dia, e muitas vezes por falta de conhecimento.
@@ -27,5 +26,3 @@ Não adianta implementar todos design patterns só para falar que utilizou todo
 - [Site Universidade da Pennsylvania](http://www.cse.lehigh.edu/~munoz/CSE348/classes/)
 
 **UPDATE 2:** Reescrevi algumas partes do texto para tentar expressar melhor minha opinião.
-
-

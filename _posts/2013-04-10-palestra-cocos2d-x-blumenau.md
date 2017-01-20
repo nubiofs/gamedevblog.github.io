@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como foi a palestra sobre Cocos2d-x em Blumenau
-date: 1970-01-16 16:20:34.000000000 -03:00
 ---
 
 Voltamos hoje para São Paulo após uma experiência muito legal em Blumenau. A [palestra sobre desenvolvimento de jogos com Cocos2d-x](http://gamedeveloper.com.br/blog/2013/04/08/palestra-furb-cocos2d-x/ "Palestra") foi muito boa, e ficamos contentes com a recepção e perguntas do público!
@@ -17,5 +16,3 @@ A palestra foi apresentada em 5 partes, sendo as 3 primeiras apresentadas pela L
 <div style="margin-bottom:5px">**[Desenvolvimento de jogos com Cocos2d-x](https://www.slideshare.net/cicanci/desenvolvimento-de-jogos-com-cocos2dx "Desenvolvimento de jogos com Cocos2d-x")** from **[Bruno Cicanci](http://www.slideshare.net/cicanci)**</div>Muito obrigado ao pessoal da FURB pela oportunidade de ir até lá falar sobre desenvolvimento de jogos, especialmente o professor Everaldo e o Júlio. Obrigado!
 
 ![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/04/achievement.gif "Achievement Unlocked!")
-
-

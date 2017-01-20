@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Modelo de desenvolvimento com GIT usando branches
-date: 1970-01-17 05:54:04.000000000 -03:00
 ---
 
 Durante minha carreira já usei muitos controles de versão, mas nos últimos anos o que mais tenho usado é o GIT. Além das suas features que vou comentar neste post, a possibilidade de ter seu repositório na nuvem em sites como Github e Bitbucket sem pagar nada está fazendo cada vez mais programadores escolherem o GIT.
@@ -27,5 +26,3 @@ O código do projeto fica muito bem organizado, e fica mais fácil de associar u
 E você, usa o qual repositório em seus projetos? Lembrando que dropbox não conta! rs
 
 Fonte: [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/ "Fonte")
-
-

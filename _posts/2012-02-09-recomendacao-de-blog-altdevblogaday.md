@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Recomendação de blog: #AltDevBlogADay'
-date: 1970-01-16 06:06:00.000000000 -03:00
 ---
 
 Em primeiro lugar peço desculpas pela falta de posts novos no blog, logo irei postar mais coisas com frequência por aqui. Enquanto isso, decidi começar a fazer post menores para recomendar coisas legais, assim o blog fica sempre atualizado e eu divulgo mais coisas legais sobre desenvolvimento de jogos.

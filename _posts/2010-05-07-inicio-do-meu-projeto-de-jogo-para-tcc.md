@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Início do meu projeto de jogo para TCC
-date: 1970-01-15 14:41:16.000000000 -03:00
 ---
 
 Este ano irei terminar a minha pós-graduação em Games: Produção e Programação no SENAC, e tenho que fazer o meu *Trabalho de Conclusão de Curso* (TCC), quer será uma versão demo de um jogo. O projeto do TCC começou ano passado, quando fiz um* Game Design Document *(GDD) sobre uma idéia de jogo que tive, porém descartei esta idéia e este ano comecei a trabalhar em outra mais simples.
@@ -23,5 +22,3 @@ Todo este processo de decisão de qual tecnologia eu iria adotar para o meu proj
 No início eu queria fazer um jogo para meu portfólio, por isso escolhi tecnologias que eu não conheço e acho importantes para eu aprender, porém agora estou com outra visão: **não quero apenas mais um trabalho no meu portfólio**, eu quero criar um produto que tenha chances reais de ser publicado e comercializado, e que talvez isto seja o início para eu abrir uma empresa.
 
 Embora eu tenha escolhido uma tecnologia simples, e um modelo de jogo simples, vou **focar no que realmente importa: divertir e entreter os jogadores** com um jogo muito bom! Portanto, neste projeto o Game Design vai ser muito importante. Devido a esta importância eu ainda não finalizei muitas definições, pois quero fazer o melhor que puder. O que começou como uma idéia para um simples projeto de TCC, hoje se tornou o prelúdio de um sonho.
-
-

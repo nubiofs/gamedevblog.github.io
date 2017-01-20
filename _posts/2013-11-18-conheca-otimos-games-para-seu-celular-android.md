@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Conheça ótimos games para seu celular Android
-date: 1970-01-16 21:40:02.000000000 -03:00
 ---
 
 Os aplicativos de games para smartphones vieram para alegrar a minha vida a vida de quem já era fissurado em jogos antes da popularização dos celulares. A cada dia, surgem novos apps para divertir os que amam passar o tempo jogando.
@@ -42,5 +41,3 @@ Um grupo de seres gigantescos e esfomeados da Adult Swim quer destruir uma séri
 **[![](http://gamedeveloper.com.br/blog/wp-content/uploads/2013/11/Imagem-5.jpg "Android")](https://play.google.com/store/apps/details?id=com.ea.game.simpsons4_row "Simpsons Tapped Out")**
 
 Em **The Simpsons: Tapped Out**, game de construção muito bem-humorado, Springfield foi destruída por uma bomba nuclear. Seu objetivo é ajudar Homer e os demais personagens da série a reconstruir a cidade.
-
-

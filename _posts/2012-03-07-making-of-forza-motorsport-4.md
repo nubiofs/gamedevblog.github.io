@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Making of Forza Motorsport 4
-date: 1970-01-16 06:47:41.000000000 -03:00
 ---
 
 [Forza Motorsport 4](http://forzamotorsport.net "Forza 4") é um dos melhores e mais completos simuladores de corrida já feitos, e eu considero seu maior defeito ser exclusivo para Xbox 360, pois existem volantes e placas de vídeo incríveis para PC que seriam perfeitos para tornar a experiência de jogá-lo ainda melhor. Infelizmente, o Xbox 360 tem poucos volantes disponíveis, e apenas um “profissional” criado pela [Fanatec](http://fanatec.de/ "Fanatec"). Eu sou um grande fã de jogos de corrida e simuladores, inclusive [já escrevi um post aqui](http://gamedeveloper.com.br/blog/2011/12/13/jogo-de-corrida-vs-vida-real/ "Jogo de corrida VS vida real") sobre alguns jogos bem legais.

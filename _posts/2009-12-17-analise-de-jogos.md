@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Análise de jogos
-date: 1970-01-15 11:18:04.000000000 -03:00
 ---
 
 Existem algumas maneiras de se analisar um jogo através de um olhar crítico. Na matéria de Game Design, na pós-graduação, uma das formas que utilizamos para analisar um jogo são as 6 características de jogos identificadas por **Jasper Juul**, em seu livro [Half-Real: Video games between Real Rules and Fictional Worlds](http://www.amazon.com/Half-Real-Video-between-Fictional-Worlds/dp/0262101106/ref=sr_1_1?ie=UTF8&s=books&qid=1261075735&sr=8-1 "Half-real"). Este livro, assim como o [Game Design Workshop](http://www.amazon.com/Game-Design-Workshop-Second-Playcentric/dp/0240809742/ref=sr_1_5?ie=UTF8&s=books&qid=1261075766&sr=1-5 "Game Design Workshop"), são essenciais para game designers.
@@ -19,5 +18,3 @@ Complementar à estas características, podemos analisar também o tipo de **des
 O que mais um jogo deve ter? Além do que foi definido por Juul e dos desafios, um jogo também possui **peças e arenas**. O jogador utiliza as peças de um jogo para interagir em sua arena, de acordo com a jogabilidade e o objetivo do jogo.
 
 <figure class="wp-caption aligncenter" id="attachment_304" style="width: 300px">[![Team Fortress 2](http://gamedeveloper.com.br/blog/wp-content/uploads/2009/12/team-fortress-2.jpg?w=300 "team-fortress-2")](http://store.steampowered.com/app/440/)<figcaption class="wp-caption-text">Team Fortress 2</figcaption></figure>Utilizando todas essas características que um jogo deve ter, **fiz uma análise do jogo Team Fortress 2**, da Valve, e escrevi um artigo sobre isso. Na época que escrevi esse artigo, eu tinha jogado pouco do Team Fortress 2, mas já estava bem impressionado com a qualidade e diversão deste FPS. [**O arquivo está disponível para download aqui**](https://s3-sa-east-1.amazonaws.com/blog-gd/download/Analise_TeamFortress2_BrunoCicanci.pdf "Análise Team Fortress 2").
-
-

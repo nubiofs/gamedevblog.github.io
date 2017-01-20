@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Dez livros de games que você precisa ler'
-date: 1970-01-16 23:53:57.000000000 -03:00
 ---
 
 Existem muitos livros técnicos sobre desenvolvimento de jogos, mas também existem alguns não técnicos que valem a pena ler para entender outros aspéctos dos jogos.
@@ -11,5 +10,3 @@ O site especializado em games do portal IG, o [Arena](http://arena.ig.com.br/ "A
 São excelentes livros para todos que trabalham ou querem trabalhar com jogos, e também para quem apenas joga e se interesse pela cultura da maior indústria de entretenimento do mundo: Games!
 
 [Clique aqui para ler o post](http://arena.ig.com.br/2012-06-28/dez-livros-de-games-que-voce-precisa-ler.html "Arena IG"). Estes livros não são muito técnicos, e fazem você pensar profundamente sobre o que é um “jogo” e qual seu impacto na vida das pessoas.
-
-

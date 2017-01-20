@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Dados analíticos do jogo'
-date: 1970-01-16 21:32:41.000000000 -03:00
 ---
 
 Hoje em dia existem ferramentas para sabermos exatamente quais partes do jogo que os jogadores estão interagindo mais, como o Game Analytics, que permite que os desenvolvedores corrijam falhas de game design que eles não sabiam que estavam lá.
@@ -21,5 +20,3 @@ Se você usa Unity, vai gostar muito de uma funcionalidade do Game Analytics cha
 Além do Game Analytics existem outras empresas que fazem isso, como o [Flurry](http://www.flurry.com/ "Flurry"), e ambas são gratuitas. Isto não é algo de outro mundo, todas as empresas grandes fazem isso há anos, e agora existem tecnologias que qualquer pessoa pode adicionar em seu jogo. Porém, algumas empresas incluem em seus jogos alertas informando que estes dados são coletados com objetivo de análise para melhorar o jogo, e que nada pessoal é armazenado. Algumas empresas colocam até uma opção em seus jogos para que o jogador possa desligar o envio de dados estatísticos para a empresa.
 
 Este é um grande de exemplo do uso da tecnologia para melhorar os jogos, vale a pena usar! Lembre-se: não é preciso uma grande empresa para fazer grandes jogos, você só precisa aprender a usar técnicas e ferramentas mais profissionais.
-
-

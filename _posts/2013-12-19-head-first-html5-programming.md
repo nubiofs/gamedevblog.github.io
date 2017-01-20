@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Head First HTML5 Programming
-date: 1970-01-16 22:24:33.000000000 -03:00
 ---
 
 Assim como a maioria dos livros da série Head First (Use a Cabeça, no Brasil), o HTML5 Programming mostra tudo que é preciso saber sobre o assunto com excelentes metáforas e associações com casos do dia-a-dia, melhorando a aprendizagem.
@@ -17,5 +16,3 @@ O principal item do HTML5 apresentado no livro é o canvas, e tudo que pode ser 
 Este livro pode ajudar muito se você está desenvolvendo um jogo com HTML5, ou pretende apenas aprender sobre o assunto. Existem frameworks para desenvolvimento de jogos mobile como o [PhoneGap](http://phonegap.com/ "PhoneGap") e o [Titianium](http://www.appcelerator.com/ "Titanium") que usam HTML5 por dentro, e você pode programar em Javascript como faria no browser.
 
 O ebook que li foi enviado pela editora americana [O’Reilly](http://oreilly.com/ "OReilly"), pois ainda não existe versão em português no Brasil. Você pode comprar este e outros livros da série em sites como a [Amazon](http://www.amazon.com/ "Amazon"), que envia livros sobre problemas para o Brasil (comprei muitos livros lá já), ou também comprar a versão digital e ler em qualquer lugar (smartphone, tablet, desktop, laptop e leitores de ebook).
-
-

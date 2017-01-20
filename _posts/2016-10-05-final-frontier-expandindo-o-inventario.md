@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 'Final Frontier: Expandindo o Inventário'
-date: 1970-01-17 22:55:03.000000000 -03:00
 ---
-No [post anterior](http://gamedeveloper.com.br/final-frontier-interface-da-nave/) demonstrei como iniciei o desenvolvimento da interface do inventário da nave, baseado na interface do jogo Destiny. O inventário ainda não, e desta vez comecei a adicionar mais funções na interface. 
+
+No [post anterior](http://gamedeveloper.com.br/final-frontier-interface-da-nave/) demonstrei como iniciei o desenvolvimento da interface do inventário da nave, baseado na interface do jogo Destiny. O inventário ainda não, e desta vez comecei a adicionar mais funções na interface.
 
 **Melhorias no inventário**
 
@@ -21,7 +21,7 @@ Uma das features mais legais da interface do jogo Destiny é a expansão de cada
 
 ![](/content/images/2016/10/ff-ui-expand-right.jpg)
 
-Utilizei os mesmos botões das colunas de slots, porém tive que reduzir seu tamanho para caber na tela. Criei um `Panel` como `Horizontal Layout Group` e adicionei três outros panels como `Vertical Layout Group`, contendo três botões em cada. O resultado é um conjunto com nove items em cada slot. 
+Utilizei os mesmos botões das colunas de slots, porém tive que reduzir seu tamanho para caber na tela. Criei um `Panel` como `Horizontal Layout Group` e adicionei três outros panels como `Vertical Layout Group`, contendo três botões em cada. O resultado é um conjunto com nove items em cada slot.
 
 ![](/content/images/2016/10/ff-ui-expand-left.jpg)
 
@@ -29,7 +29,7 @@ Esconder e exibir este panel no momento correto foi um pouco demorado, tive prob
 
 **Algumas tools para o editor**
 
-Esta semana no [Live Training](http://www.unity3d.com/learn/tutorials/topics/scripting/creating-basic-editor-tools) da Unity (que acontece a cada duas semanas) o tema foi como criar ferramentas básicas para o editor da Unity. O video abaixo mostra como fazer algumas coisas básicas como converter `Texture2D` para `Sprite` dependendo do diretório que o arquivo for importado, selecionar objetos por `Tag` e criar objetos de maneira mais fácil e customizável. Recomendo assistir, adicionei as tools do vídeo no projeto para ajudar no desenvolvimento. 
+Esta semana no [Live Training](http://www.unity3d.com/learn/tutorials/topics/scripting/creating-basic-editor-tools) da Unity (que acontece a cada duas semanas) o tema foi como criar ferramentas básicas para o editor da Unity. O video abaixo mostra como fazer algumas coisas básicas como converter `Texture2D` para `Sprite` dependendo do diretório que o arquivo for importado, selecionar objetos por `Tag` e criar objetos de maneira mais fácil e customizável. Recomendo assistir, adicionei as tools do vídeo no projeto para ajudar no desenvolvimento.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/L24GKk1qQD4" frameborder="0" allowfullscreen></iframe>
 

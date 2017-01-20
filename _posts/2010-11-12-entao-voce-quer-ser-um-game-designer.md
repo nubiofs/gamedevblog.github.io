@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Então, você quer ser um game designer?
-date: 1970-01-15 19:13:25.000000000 -03:00
 ---
 
 Deixei o blog desatualizado por um tempo por causa do meu TCC da pós-graduação, que finalmente terminei e logo postarei aqui as informações sobre ele o a versão demo do jogo que fiz. Agora pretendo atualizar este blog com mais frequência, já que estou livre do TCC e com muito conteúdo para postar.

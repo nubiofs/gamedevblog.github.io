@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Primeiro projeto de game com SDL e C++
-date: 1970-01-15 06:56:17.000000000 -03:00
 ---
 
 Como havia comentado em outro post, vou falar sobre a matéria de Técnicas de Programação de Games que tive na pós, onde o foco era apresentar as principais técnicas de programação, muitas aplicáveis não somente a games, e fazer um primeiro contato com uma biblioteca específica para games, que neste caso foi a [SDL](http://www.libsdl.org/ "SDL").
@@ -46,5 +45,3 @@ Imagens do desenvolvimento do game, do início ao fim:
  – Incluir música e efeitos sonoros no jogo
 
 Espero um dia terminar este game. Estou pensando em adaptá-la para o DS, já que estou estudando desenvolvimento para esta plataforma (preciso escrever sobre isso também!).
-
-

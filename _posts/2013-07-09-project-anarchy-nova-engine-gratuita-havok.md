@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Project Anarchy, a nova engine gratuita da Havok
-date: 1970-01-16 18:29:40.000000000 -03:00
 ---
 
 A [Havok](http://www.havok.com "Havok") é um conjunto de tecnologias para desenvolvimento de jogos, que conta com softwares para animação, física, inteligência artificial, simulação de destruição, entre outros. A [Havok](http://www.havok.com/about-havok "Havok") é uma das tecnologias mais utilizadas hoje no mercado de jogos pra consoles e PC,  como por exemplo: Assassin’s Creed, Halo, Skyrim, Call of Duty, Guild Wars, Uncharted, The Last of Us, Injustice, e muitos outros, além de diversos prêmios. E, além de tudo isso, agora eles lançaram uma engine gratuita para desenvolvimento de jogos mobile, o [Project Anarchy](http://www.projectanarchy.com/ "Project Anarchy")!
@@ -19,5 +18,3 @@ O [Project Anarchy](http://www.projectanarchy.com/ "Project Anarchy") é um conj
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/019bXJtNjWc?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 Outra coisa legal do Project Anarchy é o foco da Havok em criar uma comunidade para dar suporte a tecnologia, com [Fórum](http://forum.projectanarchy.com/forum.php "Forum"), [Q&A](http://qni.projectanarchy.com/questions/index.html "Q&A") e [blog](http://www.projectanarchy.com/blogs "Blog"). Esta engine está disponível para Windows e MacOSX, faça o [download aqui](http://www.projectanarchy.com/download "Project Anarchy").
-
-

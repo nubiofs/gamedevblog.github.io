@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Palestra sobre Desenvolvimento de Jogos Mobile na TDC 2012 São Paulo
-date: 1970-01-16 09:43:13.000000000 -03:00
 ---
 
 Hoje fiz minha apresentação na trilha de games da TDC 2012 em São Paulo, sobre desenvolvimento de jogos mobile. Mesmo com frio, chuva e véspera de feriado, muita gente foi ao evento e a sala estava cheia durante minha apresentação!

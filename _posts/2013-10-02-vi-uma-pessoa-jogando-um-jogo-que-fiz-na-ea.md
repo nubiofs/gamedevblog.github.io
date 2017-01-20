@@ -1,7 +1,6 @@
 ---
 layout: post
 title: O dia em que vi uma pessoa jogando um jogo que fiz na Electronic Arts
-date: 1970-01-16 20:32:28.000000000 -03:00
 ---
 
 Hoje aconteceu algo que até então eu não tinha presenciado: vi uma pessoa no metro jogando um jogo que programei quando trabalhei na Electronic Arts, o [FIFA 12 para Android](https://play.google.com/store/apps/details?id=com.ea.game.fifa12_row "FIFA 12"). Isso foi tão diferente que tive vontade de compartilhar aqui esta experiência.
@@ -25,5 +24,3 @@ O [FIFA 12](https://play.google.com/store/apps/details?id=com.ea.game.fifa12_row
 [Quando a EA fechou as portas por aqui](http://gamedeveloper.com.br/blog/2013/04/11/electronic-arts-fecha-estudio-de-sao-paulo/ "EA"), me senti como se o [Zangief](http://lh3.ggpht.com/-6npN4wsd_7E/Tl5__hzmsjI/AAAAAAAAC9Y/cLpjRzrYxPA/s1024/ssf4-zangief.jpg "Zangief") tivesse dado um soco no meu estômago, esperado eu melhorar, e então feito isso de novo por horas. Em 3 anos deixei de ser apenas um estudando de jogos, passei pela Glu Mobile, e me tornei Lead Programmer na Electronic Arts. Participei de projetos incríveis como [Tetris](https://play.google.com/store/apps/details?id=com.ea.game.tetris2011_row "Tetris"), [FIFA 12](https://play.google.com/store/apps/details?id=com.ea.game.fifa12_row "FIFA 12") e [Scrabble](https://play.google.com/store/apps/details?id=com.ea.game.scrabblemattel_bv "Scrabble"), todos para Android e com meu nome nos créditos. Sinto um vazio, como se tivesse voltado alguns degraus para trás na minha carreira em jogos, mas sei que logo voltarei a criar jogos tão incríveis quando os que fiz na EA.
 
 Como ouvi uma vez, só existe uma coisa que te impede de fazer qualquer coisa: você mesmo.
-
-

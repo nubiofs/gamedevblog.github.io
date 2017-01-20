@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Empreendedorismo na indústria de games
-date: 1970-01-15 13:48:42.000000000 -03:00
 ---
 
 Um dos objetivos da pós-graduação que estou fazendo é preparar o aluno para abrir uma empresa de games e procurar um publisher para publicar nossos jogos. No final do ano os TCCs, que são demos de jogos, serão apresentados a um publisher, e se tudo der certo, pode ser o que jogo seja desenvolvido e publicado. Esta é uma iniciativa muito legal do SENAC, pois faz nossos trabalhos terem mais sentido ao final do curso.
@@ -22,5 +21,3 @@ Vou finalizar este post com duas dicas sobre empreendedorismo que o [Augusto Cam
 Eu pretendo escrever mais posts sobre a indústria de games e também sobre como começar uma empresa de games no Brasil (startup), qual tipo de jogo é mais lucrativo aqui, onde e como exportar um game produzido aqui, entre outros assuntos que eu acho interessantes e não é algo muito claro para quem quer começar uma empresa de games. Eu não sei muitas dessas coisas, mas irei pesquisar e postar aqui os resultados, já que uma das possibilidades que estudo é abrir minha própria empresa de games.
 
 O Plano de Negócios, como praticamente qualquer tipo de documento, é bem chato de fazer, mas é muito útil também. Principalmente por que quando se escreve as idéias, fica mais fácil de ver as falhas e mudar coisas. Eu mudei boa parte do GDD (Game Design Document) do meu TCC após escrever o Plano de Negócios, pois na descrição de produto e estratégia de marketing encontrei problemas para a produção do jogo.
-
-

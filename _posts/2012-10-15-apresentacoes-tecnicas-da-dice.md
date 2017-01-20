@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Apresentações técnicas da DICE
-date: 1970-01-16 12:06:02.000000000 -03:00
 ---
 
 A [DICE](http://dice.se "DICE"), empresa sueca que [desenvolveu os jogos](http://dice.se/games "Jogos") da franquia Battlefield e Mirror’s Edge, possui [uma página](http://dice.se/publications "DICE") (e uma conta no [SlideShare](http://www.slideshare.net/DICEStudio "SlideShare")) onde são divulgados diversas [apresentações técnicas](http://dice.se/publications "Apresentações") de áreas como programação, arte, design, áudio, entre outras relacionadas a desenvolvimento de jogos.

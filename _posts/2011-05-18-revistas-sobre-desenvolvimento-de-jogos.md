@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Revistas sobre desenvolvimento de jogos
-date: 1970-01-15 23:42:55.000000000 -03:00
 ---
 
 Existem muitas revistas sobre games por ai, porém quase nenhuma fala sobre desenvolvimento de jogos. A revista **[EDGE](http://www.next-gen.biz/ "EDGE")**, que durou pouco tempo no Brasil, ainda tinha algumas matérias interessantes sobre a indústria de games (inclusive no Brasil), mas era bem superficial para uma pequena parte do público que se interessa em ler sobre como grandes jogos são produzidos, qual técnica/software os estúdios usam para o desenvolvimento de um game, por que um jogo faz mais sucesso do que outro, por que um produto foi desenvolvido para determinado público (e se atingiu esse público), entre outras coisas.

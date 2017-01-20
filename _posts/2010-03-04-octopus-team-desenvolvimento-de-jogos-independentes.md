@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Octopus Team – desenvolvimento de jogos independentes
-date: 1970-01-15 13:09:12.000000000 -03:00
 ---
 
 Você quer começar a **trabalhar com desenvolvimento de games**, mas em um mercado brasileiro em crescimento e com muita concorrência, você não consegue experiência nesta área. O que fazer então?

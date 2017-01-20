@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introdução ao desenvolvimento de games, volume 4
-date: 1970-01-17 01:02:37.000000000 -03:00
 ---
 
 O quarto e último livro da série americana Introdução ao Desenvolvimento de Games, publicado em português no Brasil pela editora Cengage Learning, trata a parte final da produção de um jogo, que envolve marketing, comercialização e direitos autorais.
@@ -27,5 +26,3 @@ Novamente, lembre-se de que todo o conteúdo do livro foi escrito para o mercado
 Fechando com chave de ouro a série, este volume 4 é quase tão essencial quanto a parte técnica de se desenvolver um jogo. Por mais que você desenvolva por paixão, se o jogo virar um negócio lucrativo é bom estar preparado e informado sobre o que fazer para ter sua propriedade intelectual protegida, como fazer o marketing do jogo e também como funcionam as fases da produção de um game.
 
 Muito obrigado novamente a editora Cengage Learning por tem enviado o livro! Este volume, assim como toda coleção, esta disponível em várias livrarias e no [site da editora](http://www.cengage.com.br/ls/introducao-ao-desenvolvimento-de-games-vol-4-traducao-da-2a-edicao-norte-americana/ "Cengage"). Siga a Cengage Learning no [Facebook](https://www.facebook.com/cengagebrasil "Facebook") e no [Twitter](https://twitter.com/cengagebrasil "Twitter") para ficar por dentro dos lançamentos da editora.
-
-

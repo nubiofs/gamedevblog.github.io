@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Primeiro jogo'
-date: 1970-01-16 19:51:39.000000000 -03:00
 ---
 
 Pode não parecer, mas seu primeiro projeto de jogo pode definir sua carreira. Não estou falando no sentido de que seu primeiro game vai ser um Angry Birds, pelo contrário. Não tente fazer um jogo parecido com Angry Birds, nem um joguinho tipo Super Mario, ou um RPG simples. Nada disso. Seu primeiro jogo precisa ser algo tão simples quanto um PONG.
@@ -15,5 +14,3 @@ Depois que você estudou alguns tutoriais e quer fazer um jogo do zero comece co
 E isso não vale só para fazer jogos sozinhos, se você conseguir montar uma equipe, mesmo que todos tenha experiência com jogos, o primeiro jogo de vocês têm que ser simples, pois o primeiro projeto irá criar diversos padrões para o grupo seguir, e vai ajudar a equipe ficar mais entrosada. Quando mais jogos simples a equipe fizer, cada vez mais sua experiência irá aumentar, e em pouco tempo estarão fazendo jogos mais complicados, mas com a facilidade de fazer um PONG.
 
 Esse é um dos motivos que me fez criar [esta outra série de posts](http://gamedeveloper.com.br/pong-html5-javascript/ "PONG"), que irá ensinar a programar o PONG em diversas engines e frameworks, começando por HTML5.
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Noções introdutórias de matemática nos First Person Shooters
-date: 1970-01-17 01:02:31.000000000 -03:00
 ---
 
 A matemática está presente em vários momentos de nossas  vidas. Desde o momento que acordamos e temos que pensar quantos minutos faltam para as 8 da manhã, passando por quanto podemos gastar no mercado e até mesmo nas [teorias números da loteria](http://www.mega-sena.org/estatisticas-da-mega-sena).
@@ -17,5 +16,3 @@ Quais seriam esses três? FPS, que trataremos neste artigo, Estratégia e Simula
 Lógico, essa é apenas a noção introdutória. É importante lembrar, também, que existem os chamados jogos em “terceira pessoa”. Exemplo clássico do gênero – e paradigma – é Super Mario 64. Nele, a [nuvem *Lakitu*](http://www.mariowiki.com/lakitu) filma Mario durante sua caça às 120 estrelas para salvar a Princesa Peach. Ou seja: o ponto de referência principal é Mario. O ponto de referência secundário – o *cameraman* – era *Lakitu*. O que tínhamos aqui? Simples, é só adotar a teoria exposta acima. Mario interage com o meio e *Lakitu *interage com o jogador quando é necessário adotar um outro ponto de referência no eixo x/y/z para acompanhar a interação de Mario com o meio.
 
 O bojo é, então, simples: tudo é ponto de referência, planos e geometria espacial. Jogar [*Goldeneye*](http://pt.wikipedia.org/wiki/GoldenEye_007_%28jogo_eletr%C3%B4nico_de_1997%29) parece simples em 1997 – mas você, quando criança, nunca imaginou que mesmo em linguagem simples, a matemática estaria tão presente.
-
-

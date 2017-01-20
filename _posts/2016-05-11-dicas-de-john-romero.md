@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Dicas de John Romero para desenvolver jogos
-date: 1970-01-17 19:42:26.000000000 -03:00
 ---
+
 [John Romero](https://twitter.com/romero), co-fundador da [Id Software](http://www.idsoftware.com/) e criador dos jogos DOOM e Quake, entre muitos [outros](https://en.wikipedia.org/wiki/John_Romero#Games), deu uma palestra em um evento da revista britânica [Develop](http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747) e falou sobre algumas técnicas para desenvolvimento que ele sempre usou, muitas indo contra ao que encontramos nos livros. Abaixo estão algumas frases que retirei do texto, a notícia completa pode ser lida aqui.
 
 > “No prototypes,” he said. “Just make the game. Polish as you go. Don’t depend on polish happening later. Always maintain constantly shippable code.
@@ -33,7 +33,6 @@ Tradução:
 
 Muitos programadores, não só da área de games, se preocupam em fazer um código que poderá ser utilizado por vários projetos depois. Isto é uma preocupação válida, mas quando não se tem muito tempo não devemos nos preocupar em criar um framework antes de criar o jogo em si. E a segunda parte que ele disse é verdade, provavelmente você irá escrever um código melhor na segunda vez.
 
-Em empresas grandes existem até equipes desenvolve ferramentas e frameworks para que as equipes que desenvolvem os jogos consigam focar em fazer o jogo. 
+Em empresas grandes existem até equipes desenvolve ferramentas e frameworks para que as equipes que desenvolvem os jogos consigam focar em fazer o jogo.
 
 O [texto](http://www.develop-online.net/news/john-romero-s-secrets-of-success-no-prototypes-great-tools-default-bagels/0219747) contém mais detalhes e dicas, e vale muito a pena ler. John Romero é um grande game designer, e sempre podemos aprender muito com desenvolvedores experientes como ele.
- 

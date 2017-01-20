@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Hoje começa o Ludum Dare #34'
-date: 1970-01-17 15:43:19.000000000 -03:00
 ---
 
 Meia noite, no horário de Brasilia, começa mais uma edição do Ludum Dare, uma game jam internacional online onde desenvolvedores de jogos profissionais e amadores tem 48 horas para criar um jogo baseado em um tema (ou 72 horas no caso de equipes).
@@ -14,5 +13,3 @@ Links interessantes:
 
 - [Minha participação no Ludum Dare #32](http://gamedeveloper.com.br/ludum-dare-32/)
 - [Minha participação no Ludum Dare #33](http://gamedeveloper.com.br/ludum-dare-33/)
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Turma do Chico Bento - um jogo social desenvolvido no Brasil!
-date: 1970-01-16 08:03:35.000000000 -03:00
 ---
 
 A Turma do Chico Bento trás os personagens de [Mauricio de Sousa](http://www.monica.com.br/mauricio-site/ "Mauricio de Sousa") em um jogo para as redes sociais Facebook e Orkut. Em desenvolvimento pela [Insólita](http://www.insolitastudios.com/pt/ "Insólita"), e publicado pela [Level Up! Games](http://levelupgames.uol.com.br/ "Level Up! Games"), este jogo está sendo produzido por brasileiros e para um público brasileiro.

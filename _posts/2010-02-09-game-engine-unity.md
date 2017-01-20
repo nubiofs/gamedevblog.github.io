@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Game Engine Unity
-date: 1970-01-15 12:35:50.000000000 -03:00
 ---
 
 [![Unity](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/02/unitylogo2.jpg "Unity")](http://unity3d.com/)
@@ -52,5 +51,3 @@ Eu comecei a estudar a Unity há pouco tempo, então não fiz muita coisa além 
 **UPDATE:**
 
 Mais um link de tutoriais, Unity3D Student: [http://www.unity3dstudent.com/](http://www.unity3dstudent.com/ "link5")
-
-

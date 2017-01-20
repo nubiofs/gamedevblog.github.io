@@ -1,7 +1,6 @@
 ---
 layout: post
 title: HTML5 não serve para fazer jogos mobile
-date: 1970-01-17 03:02:18.000000000 -03:00
 ---
 
 Desde o seu surgimento, muita gente diz que o HTML5 seria o substituto do Flash para jogos, principalmente por ter um canvas 2D. Antes eu apoiava esta ideia, mas hoje já não acredito mais nisso em plataformas móveis.

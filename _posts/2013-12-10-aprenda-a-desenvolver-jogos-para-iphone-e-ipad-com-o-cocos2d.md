@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Aprenda a desenvolver jogos para iPhone e iPad com o cocos2d
-date: 1970-01-16 22:11:24.000000000 -03:00
 ---
 
 O cocos2d é um framework *open source* para desenvolvimento de jogos 2D usando Objective-C, que permite a publicação para a plataforma iOS da Apple. Conheça o livro que vai te ensinar tudo sobre este assunto, e veja como ter 40% de desconto na compra de livros físicos no site da editora Ciência Moderna.
@@ -25,5 +24,3 @@ Mesmo não estando atualizado, este livro é bom para ensinar conceitos básicos
 O [cocos2d](http://www.cocos2d-iphone.org/ "cocos2d") é um framework muito usado, e há pouco tempo saiu a preview da versão 3 que permite publicar jogos para Android também. Ainda não olhei isso para ver como funciona, mas é uma boa notícia para quem usa, pois até então a cocos2d-x, que é multiplataforma, estava sendo a principal escolha dos desenvolvedores. Hoje não faz sentido lançar um produto em apenas uma plataforma, principalmente pela facilidade de usar do mesmo código com poucas alterações. Embora o iOS seja mais rentável, o Android não pode ser ignorado, é necessário apenas entender qual é o melhor modelo de negócios para cada plataforma e lançar o projeto da melhor maneira em cada mercado.
 
 Muito obrigado ao pessoal da editora [Ciência Moderna](http://www.lcm.com.br/ "CM") que me enviou este ebook! Eles também tem um presente para o pessoal do blog: **40% de desconto na compra de livros físicos pelo site da editora!** Após finalizar a compra, você deve se cadastrar como **CONVENIADO** e informar a senha **V00028**, então o desconto será aplicado na sua compra atual e nas futuras pelo [site da Ciência Moderna](http://www.lcm.com.br/ "CM"). Só um detalhe, eu não ganho nada com isso, é apenas uma promoção muito legal da editora que consegui para os leitores do blog.
-
-

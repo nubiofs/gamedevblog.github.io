@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Electronic Arts fecha estúdio de São Paulo
-date: 1970-01-16 16:21:39.000000000 -03:00
 ---
 
 Pouca gente sabe, mas a [Electronic Arts](http://www.ea.com "EA") tinha um estúdio de desenvolvimento de jogos aqui no Brasil até hoje, em São Paulo, no qual trabalhei por 2 anos. Esse estúdio, que começou com projetos de porting J2ME, chegou a participar de desenvolvimento de jogos para Android em conjunto com o estúdio da Electronic Arts de Montreal.
@@ -22,5 +21,3 @@ Uma das coisas que tenho pendente para colocar no blog é o meu portfólio atual
 **UPDATE: **
 
 Segundo post no Gamasutra, houve demissões na EA Montreal também: [http://migre.me/e4QF7](http://migre.me/e4QF7 "Gamastrua")
-
-

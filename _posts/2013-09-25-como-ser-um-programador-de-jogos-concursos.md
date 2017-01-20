@@ -1,14 +1,13 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Concursos'
-date: 1970-01-16 20:21:50.000000000 -03:00
 ---
 
 Muitas vezes temos a vontade de fazer algo, mas não temos uma motivação forte o bastante para levamos nosso projeto a diante. Concursos de desenvolvimento de jogos são motivadores incríveis para começar projetos, e ainda pode te ajudar a entrar na área.
 
 Tem muita gente que não se acha criativa para ter ideias de jogos, ou até tem várias ideias diferentes e não sabe qual fazer. As vezes você tem um grupo de amigos que não consegue decidir qual jogo fazer por te varias ideias disponíveis, e ninguém querer abrir mão da sua própria ideia.
 
-Bom, tudo isso pode ser resolvido participando de concursos! Na verdade, participar de concursos pode te dar mais do que isso, pois além de você aprender a fazer um jogo, este jogo pode se tornar um produto para ser publicado em sua própria empresa indie ou até usar como um portfólio para entrar em uma empresa de games. Eu acredito que concursos de desenvolvimento de jogos são um parte importante na formação do profissional que quer trabalhar com jogos. 
+Bom, tudo isso pode ser resolvido participando de concursos! Na verdade, participar de concursos pode te dar mais do que isso, pois além de você aprender a fazer um jogo, este jogo pode se tornar um produto para ser publicado em sua própria empresa indie ou até usar como um portfólio para entrar em uma empresa de games. Eu acredito que concursos de desenvolvimento de jogos são um parte importante na formação do profissional que quer trabalhar com jogos.
 
 Concursos geralmente tem um tema revelado pouco antes de seu início, o que da uma condição justa para todas equipes. Com um tema ficam mais fácil pensar na ideia do jogo. Você pode se basear em outros jogos semelhantes ou tentar usar uma mecânica completamente diferente e adaptar ao seu jogo. Acredite, com um tema fica muito mais fácil de começar.
 
@@ -29,5 +28,3 @@ Existem também jams virtuais, que podem ser feitos sozinhos, como o [Ludum Dare
 Existem diversos outros concursos anuais, como a [Imagine Cup](http://www.imaginecup.com/ "Imagine Cup") da Microsoft (para estudantes) e o [e-Games](http:///www.sp.senac.br/egames "e-Games") do SENAC (fui finalista duas vezes neste). Há também o site [GameJolt](http://gamejolt.com/ "GameJolt"), que é uma comunidade de desenvolvedores independentes que publicam seus jogos lá. Eles organizam vários concursos durante o ano, [principalmente jams](http://gamejolt.com/community/jams/ "Jams"). Participei uma vez e recomendo.
 
 Não faltam opções de concursos para você participar com seu jogo, ou game jams para você criar algo em um fim de semana, sozinho ou com uma equipe. Se você não tem ideias ou não sabe por onde começar a fazer um jogo, participar de concursos é uma boa opção para ter um primeiro contato.
-
-

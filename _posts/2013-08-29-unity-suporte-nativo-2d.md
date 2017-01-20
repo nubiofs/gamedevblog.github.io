@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Nova versão da Unity terá suporte nativa a 2D
-date: 1970-01-16 19:43:06.000000000 -03:00
 ---
 
 Ontem no evento [Unite 13](http://unity3d.com/unite/unite2013/ "Unite 13") foi anunciado que a próxima versão da [Unity](http://unity3d.com/ "Unity"), a 4.3, terá suporte nativo a desenvolvimento de jogos 2D, além de tools internas para criar spritesheets, animações e física com Box2D.
@@ -15,5 +14,3 @@ Mas agora a Unity fez algo incrível, que vai trazer muitos desenvolvedores que 
 Com esse passo a Unity está cada vez mais perto de se tornar a melhor e mais usada engine para estudantes e desenvolvedores independentes. Se você não conhece ainda esta engine, [entre no site e baixe a versão gratuita](http://unity3d.com/unity/download/ "Download"), que permite exportar seu jogo para PC, Mac, Android, Web, iOS e Windows Phone.
 
 [[Unity Native 2D Tools](http://blogs.unity3d.com/2013/08/28/unity-native-2d-tools/ "Unity Native 2D Tools"), via [Unity Technologies Blog](http://blogs.unity3d.com/ "Blog"), em inglês]
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Vida de QA (Game Tester)
-date: 1970-01-17 00:35:27.000000000 -03:00
 ---
 
 Este vídeo mostra a vida de um QA (Quality Assurance, também chamado de Game Tester), o cara responsável por testar o jogo e garantir sua qualidade durante a produção do game.
@@ -15,5 +14,3 @@ Muita gente não dá valor ao trabalho de um QA, pois alguns pensam que eles só
 QAs também sempre devem documentar da melhor maneira possível os passos para reproduzir um bug. No vídeo aparece isso também, e em alguns casos exagerados, mas em outros não. Desenvolvedores não devem subestimar o trabalho de um QA, e um QA não deve pensar que vai ficar o dia inteiro só jogando.
 
 Em muitas empresas o cargo de QA é a porta de entrada para começar a trabalhar na área, por isso contratam gente sem experiência mas que tem interesse em fazer carreira na área de games. O importante é sempre ter um foco e saber para onde direcionar a carreira, mesmo que seja se tornar um QA Lead Badass. Caso tenha uma oportunidade como esta, aproveite pare aprender o máximo que puder com os desenvolvedores e logo você será um deles.
-
-

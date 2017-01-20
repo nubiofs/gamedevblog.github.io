@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introdução ao desenvolvimento de games, volume 2
-date: 1970-01-16 23:01:41.000000000 -03:00
 ---
 
 A série Introdução ao desenvolvimento de games da editora [Cengage Learning](http://www.cengage.com.br/ "Cengage") possui 4 volumes traduzidos e publicados no Brasil, e neste post vou falar sobre o [Volume 2: Programação: técnica, linguagem e arquitetura](http://www.cengage.com.br/ls/introducao-ao-desenvolvimento-de-games-vol-2-traducao-da-2a-edicao-norte-americana/ "Volume 2").
@@ -29,5 +28,3 @@ O capítulo final é algo que muitos programadores fogem, pois temem até mais d
 Se você leu o post inteiro vai perceber que este é um livro essencial para qualquer programador que quer desenvolver jogos. Ele é básico como o primeiro livro da série, mas para começar a entender como é programar jogos é perfeito, e este é o foco do livro. Mesmo quem já trabalha na área pode aproveitar muito do livro, pois todo conteúdo foi produzido por pessoas que trabalham na indústria de jogos lá fora, que é bem diferente daqui. Muito obrigado a editora [Cengage Learning](http://www.cengage.com.br/ "Cengage") por me enviar este volume!
 
 Siga a Cengage Learning no [Facebook](https://www.facebook.com/cengagebrasil "Facebook") e no [Twitter](https://twitter.com/cengagebrasil "Twitter") para ficar por dentro dos lançamentos da editora.
-
-

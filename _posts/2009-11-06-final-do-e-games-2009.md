@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Final do e-games 2009
-date: 1970-01-15 10:18:22.000000000 -03:00
 ---
 
 Ontem foi a final da primeira edição do concurso de jogos digitais organizado pelo SENAC São Paulo, o e-Games. Eu e mais 4 equipes finalistas apresentamos nossos jogos para um banca que os avaliou e decidiram os 3 melhores. Infelizmente não fiquei entre os 3 melhores jogos, **fiquei em 5º lugar**. No fundo eu esperava isso, já que fiquei bem surpreso por ser um finalista, sendo que fiz o jogo em apenas uma semana. Segundo a organização do evento, pouco mais de 60 equipes se inscreveram para este concurso, e apenas 20 e poucas equipes enviaram tudo que era necessário para participar.
@@ -19,5 +18,3 @@ Existem vários outros concursos como este que pretendo participar, com a Imagin
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/5RfoyJuz0Qw?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/UYcqzWXYkaM?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

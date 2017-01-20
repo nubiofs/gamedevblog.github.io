@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Concurso de desenvolvimento de jogos: SENAC e-games 2011'
-date: 1970-01-16 01:10:38.000000000 -03:00
 ---
 
 ![e-Games 2011](http://gamedeveloper.com.br/blog/wp-content/uploads/2011/07/egames2011.jpg "e-Games 2011")
@@ -13,5 +12,3 @@ Por isso, recomendo a todos que gostam de desenvolver jogos a participar. Vale m
 Nesta edição dividiram o concurso em três categorias: jogos para console/PC; jogos para celular (mobile); e jogos na nuvem. Esta última categoria ficou meio confusa pra mim, pois nada mais é do que um jogo que pode participar das duas outras categorias, mas que deve ter algo relacionado ao conceito de computação na nuvem, além de ser é obrigatório o uso da tecnologia [Microsoft Azure](http://www.microsoft.com/windowsazure/ "Azure"). Na segunda edição, os projetos tiveram um nível de qualidade muito maior, se comparados com a primeira edição do concurso. Com certeza o nível da competição deverá estar maior este ano, e isso tende a aumentar a cada edição. Porém, acho que este ano existe a vantagem de ser a primeira vez em que os projetos participam em categorias diferentes, assim terão 15 finalistas (5 em cada categoria) e mais chances para os particpantes.
 
 Ano passado o concurso recebeu destaque no site de games [Kotaku Brasil](http://www.kotaku.com.br/tags/egames-2010/ "Kotaku"). Tomara que este concurso continue crescendo e ganhando mais destaque e patrocínios, assim continuará a incentivar estudantes e entusiastas que gostam de desenvolver jogos. Eu pretendo continuar participando!
-
-

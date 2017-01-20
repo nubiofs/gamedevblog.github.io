@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Postmortem de Diablo II é publicado 15 anos depois
-date: 1970-01-17 11:49:31.000000000 -03:00
 ---
 
 Dependendo do que você usar como exemplo, 15 anos pode não parecer muito. Mas, quando levamos em consideração qualquer coisa relacionada a tecnologia, este tempo parece ser muito maior.
@@ -23,5 +22,3 @@ Não vou dar mais spoilers, recomendo você ler o [artigo inteiro](http://www.ga
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/F87GeOJoWz8?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 Ah, uma dica de jogo para quem gosta de Diablo II, dá uma olhada no [Torchlight](http://www.torchlightgame.com/). Ele foi desenvolvido por um pessoal que trabalhou no Diablo II e saiu da Blizzard durante o projeto do Diablo III por não gostar da direção do projeto, então fizeram seu próprio jogo com tudo que o Diablo II tinha de bom.
-
-

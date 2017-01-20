@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Para que serve um Maker'
-date: 1970-01-16 21:12:14.000000000 -03:00
 ---
 
 Existem muitas ferramentas para desenvolver jogos, como engines e frameworks, mas também existem outras que tem o objetivo de facilitar muito o desenvolvimento, que são os makers.
@@ -15,5 +14,3 @@ Eu lembro que o RPG Maker tinha um projeto exemplo baseado nos Cavaleiros do Zod
 Embora as empresa divulguem seus makers como software para desenvolver jogos, não se engane. Se você quer realmente aprender a fazer jogos com o mínimo de profissionalismo, utilize frameworks ou engines, e não tenha medo de programar!
 
  
-
-

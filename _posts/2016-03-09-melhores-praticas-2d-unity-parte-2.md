@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Melhores práticas para 2D na Unity - Parte 2
-date: 1970-01-17 11:41:13.000000000 -03:00
 ---
+
 Não esperava demorar praticamente 9 meses para escrever esta segunda parte, mas acabou ficando de lado por ser um conteúdo mais longo que o normal para o blog. Eu até prefiro escrever mais posts assim, e acredito que deve ajudar bastante, por isso vou tentar fazer algo assim pelo menos uma vez por mês (não só sobre a Unity). Se você ainda não viu, recomendo ler a [parte 1](http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1/) antes de continuar neste post.
 
 **Boas práticas usando NGUI**
@@ -15,15 +15,15 @@ Um dos grandes recursos da NGUI é fazer toda UI ter apenas um draw call, ou sej
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/aWZaq1eLqyE" frameborder="0" allowfullscreen></iframe></span>
 
-Eu tive um grande problema com este plugin: era praticamente impossível migrar o projeto da Unity 4 para Unity 5 sem ter que refazer boa parte da interface. Por este motivo decidimos continuar utilizando a Unity 4. Eu sei que outros desenvolvedores passaram pela mesma situação, e muitos utilizam Unity 4 até hoje por que não tiveram tempo de migrar a NGUI. Mas, ao mesmo tempo, conheço gente que não teve problemas em migrar para Unity 5. Mesmo com estes problemas eu acho que vale a pena utilizar NGUI, pois é um plugin incrível com muito conteúdo disponível. 
+Eu tive um grande problema com este plugin: era praticamente impossível migrar o projeto da Unity 4 para Unity 5 sem ter que refazer boa parte da interface. Por este motivo decidimos continuar utilizando a Unity 4. Eu sei que outros desenvolvedores passaram pela mesma situação, e muitos utilizam Unity 4 até hoje por que não tiveram tempo de migrar a NGUI. Mas, ao mesmo tempo, conheço gente que não teve problemas em migrar para Unity 5. Mesmo com estes problemas eu acho que vale a pena utilizar NGUI, pois é um plugin incrível com muito conteúdo disponível.
 
-Se você está se perguntando se deveria comprar o plugin NGUI por $95 dólares ou utilizar os recursos da Unity minha sugestão é a seguinte: se você já comprou a NGUI, e tem experiência com ela, continue utilizando mas não deixe de estudar os recursos da Unity. Se você ainda não comprou, primeiro estude os recursos da Unity antes de tomar a decisão de comprar, pois isso pode te economizar $95 dólares. 
+Se você está se perguntando se deveria comprar o plugin NGUI por $95 dólares ou utilizar os recursos da Unity minha sugestão é a seguinte: se você já comprou a NGUI, e tem experiência com ela, continue utilizando mas não deixe de estudar os recursos da Unity. Se você ainda não comprou, primeiro estude os recursos da Unity antes de tomar a decisão de comprar, pois isso pode te economizar $95 dólares.
 
 **Seu melhor amigo, o sprite sheet**
 
-Um sprite é image imagem solitária, e seu jogo pode ter várias imagens assim. Quando você combina vários sprites em uma única imagem, isto é chamado sprite sheet. Existem tantos benefícios por utilizar isto que é praticamente uma boa prática obrigatória para jogos 2D. 
+Um sprite é image imagem solitária, e seu jogo pode ter várias imagens assim. Quando você combina vários sprites em uma única imagem, isto é chamado sprite sheet. Existem tantos benefícios por utilizar isto que é praticamente uma boa prática obrigatória para jogos 2D.
 
-No primeiro video abaixo (em Inglês) podemos ver as vantagens relacionadas ao tamanho e redução de cores para deixar seus assets mais leves e reduzir o consumo de memória. O segundo video explica a importância de usar sprite sheets para otimizar o tempo do OpenGL para carregar e desenhar imagens na tela. 
+No primeiro video abaixo (em Inglês) podemos ver as vantagens relacionadas ao tamanho e redução de cores para deixar seus assets mais leves e reduzir o consumo de memória. O segundo video explica a importância de usar sprite sheets para otimizar o tempo do OpenGL para carregar e desenhar imagens na tela.
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe width="560" height="315" src="https://www.youtube.com/embed/crrFUYabm6E" frameborder="0" allowfullscreen></iframe></span>
 

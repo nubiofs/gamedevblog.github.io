@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Livro gratuito sobre programação em C com ênfase em multimídia
-date: 1970-01-16 06:57:48.000000000 -03:00
 ---
 
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/03/capa-thumbnail.jpg "Programação Windows")](https://github.com/akishimoto/progw32api) [André Kishimoto](http://br.linkedin.com/in/andrekishimoto "Kishimoto"), professor do curso de [Jogos Digitais na Unicsul](http://www.cruzeirodosul.edu.br/content/graduacao_detalhe.aspx?curso=30 "Unicsul") e engenheiro de software na [Electronic Arts](http://www.ea.com "Electronic Arts"), escreveu o livro **Programação Windows: C e Win32 API com ênfase em multimídia**, que agora está sendo disponibilizado gratuitamente para download.

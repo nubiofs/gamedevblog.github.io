@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Introdução ao GitHub: um guia que não é técnico'
-date: 1970-01-17 09:05:10.000000000 -03:00
 ---
 
 A editora Novatec lançou trouxe para o Brasil o livro Introdução ao GitHub: um guia que não é técnico. Os autores Peter Bell e Brent Beer, ambos instrutores da equipe de treinamento do GitHub, dão uma introdução ao serviço e mostram todas as suas features.
@@ -21,5 +20,3 @@ O capítulo 4 explica como funciona a colaboração no GitHub, e sem dúvidas fo
 Outra característica bem legal do GitHub, que não está no livro mas eu sou fã, é a facilidade de achar código-fonte de projetos para estudar. [Neste post](http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-codigos-opensource/ "Open-source") você pode ver alguns links de projetos de jogos open-source para estudar.
 
 Muito obrigado a [Editora Novatec](http://novatec.com.br/ "Novatec") por me enviar este livro para fazer esta review. Você pode comprar [este livro](http://www.novatec.com.br/livros/introgithub/ "GitHub") e outros no site da Novatec, e utilize o código **GAMEDEVELOPER** para ter desconto na compra!
-
-

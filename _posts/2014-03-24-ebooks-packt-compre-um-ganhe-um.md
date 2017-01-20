@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Promoção de ebooks da editora Packt - compre um, ganhe um
-date: 1970-01-17 00:41:30.000000000 -03:00
 ---
 
 A editora americana [Packt](http://bit.ly/1j26nPN "Packt") está com uma promoção até o dia 26 de março, onde você compra um ebook no site deles e o segundo é de graça!
@@ -14,5 +13,3 @@ Esta promoção comemora o lançamento do livro de número 2000 deles, ou seja, 
 - [Big Data & Cloud](http://bit.ly/1iBWSUw)
 - [Game Development](http://bit.ly/Nt9tgH)
 - [App Development](http://bit.ly/OvJRAW)
-
-

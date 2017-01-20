@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Esta semana começa o Ludum Dare #36'
-date: 1970-01-17 21:52:52.000000000 -03:00
 ---
+
 Sexta-feira às 22h (horário de Brasilia) começa o [Ludum Dare #36](http://ludumdare.com/compo/), e será minha [quinta participação](http://gamedeveloper.com.br/tag/ludum-dare/) nesta game jam.
 
 Semana passada realizei uma palestra na USP sobre game jams e dei muitas dicas importantes para participar deste tipo de competição, principalmente no Ludum Dare que tempo mais experiência. Confira os slides da [apresentação aqui](http://gamedeveloper.com.br/game-jams-como-fazer-um-jogo-em-48h/), tem muito conteúdo útil se você também pretende participar.
@@ -31,7 +31,7 @@ Abaixo estão algumas coisas que vou fazer nesta edição do Ludum Dare, separan
 
 * Se você tem dificuldade em se concentrar, não deixe a TV ligada e evite YouTube, tente ouvir trilha sonoras ou músicas que você gosta.
 
-* Parece bobo mas planeja como serão suas refeições, e tente não sair pra comer pois isso pode te custar um tempo precioso. 
+* Parece bobo mas planeja como serão suas refeições, e tente não sair pra comer pois isso pode te custar um tempo precioso.
 
 * Planeje o que fazer em caso de falta de internet e/ou falta de energia elétrica, é sempre bom ter um plano B e um lugar pra ir (algo tipo Starbucks, por exemplo).
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Agni's Philosophy - a impressionante tech demo da Square Enix
-date: 1970-01-16 09:00:10.000000000 -03:00
 ---
 
 Pensando na próxima geração de consoles, a Square Enix desenvolveu uma nova game engine. E, para demonstrar todo o poder do seu novo motor gráfico, foi apresentado uma tech demo chamada [Agni’s Philosophy](http://www.agnisphilosophy.com/en/index.html "Agnis Philosophy"), baseado no universo de sua famosa franquia Final Fantasy.
@@ -21,5 +20,3 @@ Eu nem consigo imaginar o tamanho dos arquivos desse projeto, e as técnicas gr�
 ![](../content/images/2012/06/original_l.jpg "Agni’s Philosophy – FINAL FANTASY REALTIME TECH DEMO")
 
 Dica do Diego Dedize! [Não esqueçam de curtir a página do blog no Facebook!](https://www.facebook.com/GameDeveloperBlog "Facebook")
-
-

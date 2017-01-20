@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Delta Time'
-date: 1970-01-16 21:22:19.000000000 -03:00
 ---
 
 Muitas engines e frameworks possuem um controle do tempo de cada game loop internamente, mas expõem esta informação caso você precise. E, acredite, você precisa!
@@ -29,5 +28,3 @@ private float mDelay; void Update () { // se passou 10 segundos... if (mDelay > 
 Controlar o game loop e fazer contagem de tempo são duas das principais utilizações do Delta Time em um jogo, e é claro que existem outros. O importante é sempre utilizar este tipo de recurso para estas tarefas, e lembre-se sempre de verificar na tecnologia que você está usando como este controle pode ser feito.
 
 **UPDATE**: Tinha esquecido de adicionar o video, obrigado por avisar Thales!
-
-

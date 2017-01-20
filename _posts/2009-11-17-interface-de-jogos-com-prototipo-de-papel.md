@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Interface de jogos com protótipo de papel
-date: 1970-01-15 10:34:52.000000000 -03:00
 ---
 
 A usabilidade de um jogo digital é tão importante quanto a interface de um web site ou software, e em alguns aspectos as interfaces são semelhantes. Assim, podemos usar os mesmos métodos de análise de interface e usuabilidade em todos estes produtos citados.
@@ -23,9 +22,7 @@ O teste de interface funciona da seguinte maneira: nossa equipe era compostar po
 <figure class="wp-caption aligncenter" id="attachment_282" style="width: 500px">[![Teste de usabilidade de interface com protótipo de papel](../content/images/2009/11/photo0017.jpg "Photo0017")](../content/images/2009/11/photo0017.jpg)<figcaption class="wp-caption-text">Teste de usabilidade de interface com protótipo de papel</figcaption></figure>O protótipo feito com papel serve apenas para validar a interface e, se o jogo não for complexo, é possível validar um pouco da jogabilidade, que foi o que fizemos também. Esta é a conclusão do relatório da análise de interface que fizemos:
 
 > O método de protótipo de papel é muito útil para avaliar a interface e a jogabilidade em jogos. Dependendo da complexidade do jogo, a jogabilidade fica difícil de ser testada devido à limitação do uso de papel e caneta, mas na validação de interface é perfeita e poupa re-trabalho.
-> 
+>
 > De maneira bem rápida e prática podemos alterar a interface e deixá-la pronta para testes sem ter que mexer com imagens ou linhas de código. Este tipo de prototipagem deve ser simples para que funcione corretamente, e é muito importante observar as ações do usuário e não induzí-lo a realizar uma ação que desejamos e consideramos a mais correta.
 
 Este método de teste de interface é muito rápido, dinâmico e economiza muito tempo de programação e re-trabalho. É muito simples fazer um protótipo de papel – muito mais fácil do que criar uma demo para validar a interface. Acho bem legal também utilizar isto para validar a jogabilidade antes de pensar em programar, se a complexidade do jogo permitir isto.
-
-

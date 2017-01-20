@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 5 filmes que você precisa assistir
-date: 1970-01-17 12:03:57.000000000 -03:00
 ---
 
 Este post é um pouco diferente do normal, pois eu quero recomendar alguns filmes e documentários sobre a indústria de games que vale muito a pena assistir!
@@ -67,5 +66,3 @@ Sugestão do leitor João Paulo Santos Carvalho, pode ser comprado pelo [site](
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/nw7pt6hC23w?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
  
-
-

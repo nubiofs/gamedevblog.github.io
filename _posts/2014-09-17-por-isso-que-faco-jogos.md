@@ -1,7 +1,6 @@
 ---
 layout: post
 title: É por isso que faço jogos!
-date: 1970-01-17 04:56:48.000000000 -03:00
 ---
 
 Não tenho palavras para descrever como fiquei feliz por uma coisa tão simples como esta: um cara fez um video do gameplay de um jogo que fiz usando Unity 2009, e ele gostou!
@@ -15,5 +14,3 @@ Hoje recebi um email avisando sobre um comentário na página do jogo, e quando 
 É um jogo simples, meu primeiro após fazer apenas um tutorial da Unity em 2009. Só coloquei no Gamejolt por que precisava ter ele hospedado em algum lugar para mostrar para as pessoas, e depois de 3 anos um comentário falando que gostou do jogo e um video mostrando o gameplay me deixou muito feliz. É como ter um objetivo concluído: uma pessoa jogou e gostou do meu jogo, isso é o suficiente.
 
 Este é o tipo de coisa que me faz lembrar por que comecei a fazer jogos, me motiva a não desistir não importa as dificuldades do caminho, me faz querer virar noites programando algo para que pelo menos uma pessoa goste. É por isso que faço jogos! =D
-
-

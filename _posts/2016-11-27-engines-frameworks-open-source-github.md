@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Engines e frameworks open source no GitHub
-date: 1970-01-18 00:15:54.000000000 -03:00
 ---
+
 O [GitHub](https://github.com) é uma ótima plataforma para versionamento de projetos com código aberto usando git, mas ele não é apenas isso. Existem muitas features no GitHub que as vezes parecem escondidas mas valem muito a pena ver. Uma parte que eu descobri recentemente foi a página [Showcases](https://github.com/showcases), que agrupa listas de projetos por categorias. Não todos, mas os mais populares.
 
 [Neste link](https://github.com/showcases/game-engines) está a lista de game engines e frameworks que são open source, populares e ativos no GitHub. Abaixo vou comentar sobre algumas engines e frameworks que eu conheço e já usei, mas recomendo você a conhecer todas as 24 que estão no link (assim como eu também vou fazer!).
 
 ###[cocos2d-x](https://github.com/cocos2d/cocos2d-x)
 
-Esta é um dos meus frameworks preferidos para fazer jogos em C++. Conheci há uns 4 anos quando estava trabalhando na Electronic Arts, e desde então sempre usei para fazer protótipos e até um jogo na última edição do [Ludum Dare](http://gamedeveloper.com.br/ludum-dare-36/). 
+Esta é um dos meus frameworks preferidos para fazer jogos em C++. Conheci há uns 4 anos quando estava trabalhando na Electronic Arts, e desde então sempre usei para fazer protótipos e até um jogo na última edição do [Ludum Dare](http://gamedeveloper.com.br/ludum-dare-36/).
 
-Nesses 4 anos este framework cresceu muito, ganhou ótimas tools e suporte de muitos desenvolvedores. Mudou tanto que quando fui utilizar no Ludum Dare tive que dar uma estudada novamente na documentação por que mudaram praticamente todas as classes e a maneira de usar algumas coisas, principalmente se adaptando ao C++11. 
+Nesses 4 anos este framework cresceu muito, ganhou ótimas tools e suporte de muitos desenvolvedores. Mudou tanto que quando fui utilizar no Ludum Dare tive que dar uma estudada novamente na documentação por que mudaram praticamente todas as classes e a maneira de usar algumas coisas, principalmente se adaptando ao C++11.
 
 ###[CRYENGINE](https://github.com/CRYTEK-CRYENGINE/CRYENGINE)
 
@@ -27,9 +27,9 @@ O XNA foi um framework muito especial pra mim, fiz vários projetos nele quando 
 
 ###[Torque2D](https://github.com/GarageGames/Torque2D) e [Torque3D](https://github.com/GarageGames/Torque3D)
 
-A Torque foi a primeira engine que eu ouvi falar por que um amigo estava fazendo seu TCC com ela quando eu trabalhei na Level Up! Games. Naquela época ela era a opção com melhor custo/benefício, e acho que existia apenas a versão 3D. 
+A Torque foi a primeira engine que eu ouvi falar por que um amigo estava fazendo seu TCC com ela quando eu trabalhei na Level Up! Games. Naquela época ela era a opção com melhor custo/benefício, e acho que existia apenas a versão 3D.
 
-Há algum tempo a GarageGames abriu o código das suas duas engines para poder continuar atraindo desenvolvedores, já que hoje existem muitas opções gratuitas. 
+Há algum tempo a GarageGames abriu o código das suas duas engines para poder continuar atraindo desenvolvedores, já que hoje existem muitas opções gratuitas.
 
 ###Outras engines e frameworks
 

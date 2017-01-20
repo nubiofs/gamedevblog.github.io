@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Project C.A.R.S. - o projeto ambicioso da Slightly Mad Studios
-date: 1970-01-16 07:23:41.000000000 -03:00
 ---
 
 [![](../content/images/2012/04/cars_banner1.png "Project C.A.R.S")](../content/images/2012/04/cars_banner1.png)

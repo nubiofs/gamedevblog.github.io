@@ -1,7 +1,6 @@
 ---
 layout: post
 title: GDC está chegando! Você sabe o que é a GDC?
-date: 1970-01-17 08:44:00.000000000 -03:00
 ---
 
 Como praticamente toda indústria, a de games também tem um evento voltado para quem trabalha nela. Eventos como a E3 e Tokyo Game Show tem o foco de mostrar novos jogos, novos consoles, o que está por vir, entre outras coisas. Mas a GDC é algo diferente, lá você conhece quem fez esses jogos e consoles, e muitas vezes aprende como foram feitos.
@@ -23,5 +22,3 @@ Abaixo vou colocar alguns videos que achei no YouTube, com eles é possível ver
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/5fkSUQEMwV4?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/EKg85-TXY5w?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

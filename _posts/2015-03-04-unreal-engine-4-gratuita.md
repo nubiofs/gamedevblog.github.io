@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Unreal Engine 4 agora está gratuita
-date: 1970-01-17 08:57:55.000000000 -03:00
 ---
 
 O anúncio foi feito esta semana na GDC, e a [Unreal Engine 4](https://www.unrealengine.com/what-is-unreal-engine-4 "Unreal Engine 4") já está disponível. Além da UE4, seu código-fonte e do Unreal Tournament também foram disponibilizados gratuitamente no [GitHub](http://github.com/EpicGames "GitHub") da Epic Games. Antes este acesso custava $19 dólares por mês, agora está tudo gratuito.
@@ -21,5 +20,3 @@ Você pode estar se perguntando “pra que usar a UE4 sendo que a Unity possui u
 Recomendo a todos pelo menos baixar, testar e ver com seus próprios olhos por que esta engine é usada em tantos jogos AAA. Confira abaixo o video do fundador da Epic Games falando sobre a Unreal Engine 4 se tornar gratuita.
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/Pt86Ab4_TnA?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

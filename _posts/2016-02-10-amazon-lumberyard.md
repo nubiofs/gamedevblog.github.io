@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Amazon entra na briga com Lumberyard
-date: 1970-01-17 17:27:11.000000000 -03:00
 ---
+
 A Amazon Web Services (AWS) foi algo ao mesmo tempo inesperado e brilhante. Ninguém esperava que uma empresa que tinha "apenas" uma site para vender livros poderia oferecer um serviço para desenvolvedores e empresas. E foi brilhante por que além de ser muito bom, é muito barato, e fez com que praticamente todo mundo migrasse para a cloud da Amazon.
- 
+
 Eu trabalho com [AWS](http://aws.amazon.com/pt/) há algum tempo, tanto para meus projetos pessoais quanto para os profissionais. Este blog mesmo já ficou um tempo hospedado no AWS, e eu utilizo muitos dos seus serviços em meus projetos de jogos, apps e até backend. Se você não conheço os serviços e produtos do AWS, recomendo dar uma olhada logo!
 
 Há algum tempo a Amazon criou um estúdio para desenvolvimento de jogos, o [Amazon Game Studios](https://games.amazon.com/), e inclusive contratou a game designer responsável pelo jogo [Portal](http://www.polygon.com/2014/4/2/5575354/amazon-game-studios-portal-kim-swift-splinter-cell-clint-hocking). Até agora lançaram 5 jogos para dispositivos móveis, porém nenhum conseguiu fazer um grande barulho na indústria. Ainda.

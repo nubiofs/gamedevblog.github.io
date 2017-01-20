@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Jogue bastante, mas jogos diferentes'
-date: 1970-01-16 23:43:57.000000000 -03:00
 ---
 
 Muita gente acha quem trabalha com games fica jogando o dia inteiro. Isto é verdade, jogamos muito o projeto em que trabalhamos, mas também precisamos jogar outras coisas para ter novas ideias.
@@ -17,5 +16,3 @@ Se você quer aprender mesmo observando outros jogos, tente fazer isto: pegue um
 Não esqueça também de aprender com os famosos glitches, como no vídeo abaixo. Tentar entender uma mecânica para aproveitar em uma ideia é algo simples comparado com tentar entender como um determinado glitch acontece e por que.
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/sotqQFRUeHE?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Arte 2D para programadores
-date: 1970-01-16 05:27:03.000000000 -03:00
 ---
 
 O maior problema que um programador de jogos sempre enfrenta não está relacionado a algoritmos, problemas de hardware ou falta de café. Seu maior problema é a arte para seu jogo.

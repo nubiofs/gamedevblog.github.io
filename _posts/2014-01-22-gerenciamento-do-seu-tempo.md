@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Gerenciamento do seu tempo'
-date: 1970-01-16 23:13:12.000000000 -03:00
 ---
 
 Sem dúvidas um dos principais problemas que a maioria dos desenvolvedores enfrentam é a falta de tempo para se dedicar em um projeto, mas isso o pode ser amenizado com umas dicas para otimizar seu tempo.
@@ -31,5 +30,3 @@ Por mim, nada disso funciona sem um elemento primordial: Música! Eu só consigo
 Outra coisa que faço para otimizar meu tempo é tentar fazer coisas em qualquer lugar. Por exemplo, eu leio e respondo emails no caminho para o trabalho. Quando estou em algum lugar esperando uso meu tablet para escrever algum post ou organizar minhas terafas. Quando preciso me concentrar, mas não aguento ficar em casa ou no escritório, vou para um café e levo meu tablet. Também leio bastante notícias da indústria e livros de fantasia para relaxar, quando não estou jogando no celular ou no tablet.
 
 Existem muitas outras ferramentas para organizar seu tempo, e muitas técnicas para te manter focado. O que escrevi aqui é o que funciona comigo, mas para você pode ser diferente. Se tiver alguma recomendação fique a vontade para postar nos comentários. É importante focar, mas também saiba aproveitar os momentos para relaxar e não deixe de fazer as coisas que você tem vontade.
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: O que o jogador quer?
-date: 1970-01-15 12:12:54.000000000 -03:00
 ---
 
 *O que o jogador quer? *Este foi um tema de uma discussão em uma das aulas de Game Design, e rendeu uma boa discussão devido ao ponto de vista dos alunos, do professor e de alguns artigos que haviamos lido. Discutimos, principalmente, três públicos diferentes: jogadores hardcore, pais que jogam com seus filhos pequenos, e ex-jogadores. Cada público possui suas características e necessidades.
@@ -56,5 +55,3 @@ Com todas estas informações, a discussão que tivemos na aula e minha análise
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/01/gamerkitty.jpg "gamerKitty")](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/01/gamerkitty.jpg)
 
 Compreender cada tipo de jogador e o que ele quer é muito importante para a elaboração do Game Design de um jogo. Entender o seu público alvo é um dos principais fatores para que um jogo seja um sucesso ou um fracasso, e é parte fundamental do processo de produção.
-
-

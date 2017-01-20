@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Não faça clones
-date: 1970-01-17 11:13:29.000000000 -03:00
 ---
 
 Esta semana li um post em um grupo de desenvolvedores de jogos no Facebook que deixou muitas pessoas revoltadas, inclusive eu: um “desenvolvedor” clonou totalmente um jogo famoso e disse que era inovador copiar formulas de sucesso. Isso esta muito errado.
@@ -15,7 +14,7 @@ Um dos motivos que fazem a App Store da Apple ter mais credibilidade do que a Pl
 O [Notch](https://twitter.com/notch), criador do Minecraft, escreveu o tweet abaixo sobre o novo jogo LEGO. Porém, neste caso, a única cópia foi a mecânica de criar coisas com blocos, pois a história e a arte são diferentes. Inclusive a maneira de criar é um pouco diferente, mas o que você espera de um jogo LEGO?
 
 > The Lego Infiniminer clone looks neat!
-> 
+>
 > — Markus Persson (@notch) [June 1, 2015](https://twitter.com/notch/status/605437106996056064)
 
 Agora quero comentar o aspecto moral e ético disso. Copiar totalmente um jogo, desde seu gameplay até sua arte, é a mesma coisa que copiar um livro e lançar com a mesma capa e mudar um pouco o nome, mas não muito para deixar clara a referência ao original. Jogos não são “terra de ninguém”, pelo contrário, é uma indústria bilionária e ao mesmo tempo pequena onde muita gente conhece muita gente. E pode ter certeza: se você tem orgulho e cara-de-pau de fazer clones, muita gente não vai querer te contratar.
@@ -31,5 +30,3 @@ Eu não vou mencionar neste texto o caso me inspirou em escrevê-lo, mas se voc�
 Imagem da capa: [Cloning machine of businessmen](http://www.shutterstock.com/pic-113775148/stock-vector-cloning-machine-of-businessmen.html "Shutterstock") do Shutterstock.
 
 <script async="" charset="utf-8" src="//platform.twitter.com/widgets.js"></script>
-
-

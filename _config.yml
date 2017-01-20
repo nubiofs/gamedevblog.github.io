@@ -16,7 +16,7 @@ linkInstagram: https://www.instagram.com/cicanci
 title: Game Developer
 description: Blog
 email: bruno@gamedeveloper.com.br
-paginate: 20
+paginate: 500
 permalink: pretty
 
 # Build Settings

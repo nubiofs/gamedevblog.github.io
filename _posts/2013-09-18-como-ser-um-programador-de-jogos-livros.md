@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Livros'
-date: 1970-01-16 20:11:49.000000000 -03:00
 ---
 
 Livros sobre desenvolvimento de jogos são, na minha opinião, uma das melhores fontes de aprendizado disponíveis para iniciantes. Neste post vou falar onde encontrar livros importados em inglês e também vou dar algumas dicas de livros brasileiros.
@@ -21,5 +20,3 @@ Falando de livros brasileiros, vou listar aqui os melhores que li até agora, se
  – [Introdução ao Desenvolvimento de Games](http://gamedeveloper.com.br/introducao-ao-desenvolvimento-de-games/ "Livro") (4 volumes), da editora [Cengage Learning](http://www.cengage.com.br/ "Cengage Learning")
 
 Este post foi uma visão bem geral de onde comprar livros para estudar e algumas dicas de livros em português, em breve farei posts sobre livros mais específicos para cada área.
-
-

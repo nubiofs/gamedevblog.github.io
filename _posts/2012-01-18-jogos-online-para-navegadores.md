@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Jogos online para navegadores
-date: 1970-01-16 05:34:21.000000000 -03:00
 ---
 
 Jogos online para navegadores em redes sociais atraem novos jogadores todos os dias. Com sua simplicidade, capacidade de socialização e alguns modelos de negócio bem estabelecidos, estes jogos estão crescendo cada vez mais. Um dos principais fatores que contribuiram para o crescimento das redes sociais foram os jogos, mas eles nem sempre estiveram lá. No início, as redes sociais eram apenas sites de relacionamento, e jogos online de navegadores ficavam em sites específicos ou agregadores.

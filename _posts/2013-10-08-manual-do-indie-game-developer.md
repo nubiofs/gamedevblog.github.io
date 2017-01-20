@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Manual do Indie Game Developer - Versão Android e iOS
-date: 1970-01-16 20:40:37.000000000 -03:00
 ---
 
 O livro Manual do Indie Game Developer – Versão Android e iOS foi lançado este ano pela editora Ciência Moderna e trás muitos conceitos de desenvolvimento de jogos explicados pelo autor Cleuton Sampaio.
@@ -21,5 +20,3 @@ Este é um livro brasileiro muito bom, porém curto por ter apenas 300 e poucas 
 Muito obrigado a editora Ciência Moderna pela versão digital deste livro! Você pode o comprar ambas versões, impressa ou digital, no [site da editora](http://www.lcm.com.br/site/#/livros/detalhesLivro/manual-do-indie-game-developer---versao-android-e-ios.html "Editora").
 
  
-
-

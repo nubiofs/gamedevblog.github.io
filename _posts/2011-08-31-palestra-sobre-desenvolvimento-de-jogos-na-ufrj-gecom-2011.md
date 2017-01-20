@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Palestra sobre desenvolvimento de jogos na UFRJ - GECOM 2011
-date: 1970-01-16 02:14:06.000000000 -03:00
 ---
 
 Ontem apresentei uma palestra sobre **Desenvolvimento de Jogos para Dispositivos Móveis** na **Universidade Federal do Rio de Janeiro (UFRJ)**, á convite do **Grupo de Eletrônica e Computação (GECOM)** no **Ciclo de Palestras 2011** que apresentou o tema **“Computação e Informação, uma nova abordagem”**. Fiquei muito feliz e honrado com o convite, e foi uma experiência incrível e única falar sobre a área que eu estudo e trabalho para pessoas interessadas em ouvir o que eu tinha para falar sobre o assunto.
@@ -17,5 +16,3 @@ Tentei resumir muita coisa que aprendi desde que comecei a estudar desenvolvimen
 <iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" scrolling="no" src="https://www.slideshare.net/slideshow/embed_code/key/poWk6OB5OF5UP5" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" width="427"></iframe>
 
 <div style="margin-bottom:5px">**[Desenvolvimento de Jogos Para Dispositivos Móveis – UFRJ – GECOM2011](https://www.slideshare.net/cicanci/desenvolvimento-de-jogos-para-dispositivos-mveis-ufrj-gecom2011 "Desenvolvimento de Jogos Para Dispositivos Móveis - UFRJ - GECOM2011")** from **[Bruno Cicanci](http://www.slideshare.net/cicanci)**</div>Agradeço muito a organização do evento pelo convite e pela espaço que me deram para minha apresentação. Espero que os alunos tenham gostado da apresentação tanto quando eu gostei de apresentar para eles!
-
-

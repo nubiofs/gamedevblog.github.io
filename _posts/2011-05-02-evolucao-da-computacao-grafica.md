@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Evolução da computação gráfica
-date: 1970-01-15 23:19:47.000000000 -03:00
 ---
 
 Hoje, a animação com Computação Gráfica é algo comum em filmes e games, mas como isso começou? O vídeo abaixo mostra desde as primeiras animações para filmes com *stop motion* até a impressionante tecnologia utilizada em Avatar. É incrível como a tecnologia utilizada nos filmes evoluiu nos últimos anos.
@@ -19,5 +18,3 @@ L.A. Noire, o novo jogo da Rockstar que sai este mês possui uma tecnologia dese
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/vAW6cps9ssc?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>Eu jamais terminaria de escrever este post se ficasse colocando vídeos de outros jogos com tecnologias incríveis utilizadas no seu desenvolvimento. Inclusive acho uma injustiça não adicionar aqui outras obras de arte como Assassin’s Creed, Forza, Halo, Killzone, Alan Wake, Gears of War, Mass Effect, e muitos outros jogos que vão muito além de uma simples animação, eles transportam o jogador além do jogo, proporcionando uma imersão completa na história. Quem jogou Gears of War 2 e viu a cena do que acontece com a esposa do Dominic sabe o que eu quero dizer.
 
 Quando mais estudamos desenvolvimento de jogos, mais prestamos atenção aos mínimos detalhes e passamos a admirar cada parte de um jogo bem feito, emocionalmente e tecnicamente. As técnicas de computação gráfica estão evoluindo bastante na indústria de games, e a indústria de filmes pode começar a aprender algumas coisas com os jogos,[ como mencionado por Seth Hall](http://www.kotaku.com.br/conteudo/agradeca-a-seth-hall-pela-inesquecivel-cirurgia-de-olho-em-dead-space-2/) que trabalhou no Dead Space 2.
-
-

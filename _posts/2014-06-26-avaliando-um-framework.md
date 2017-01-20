@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Avaliando um framework'
-date: 1970-01-17 02:57:02.000000000 -03:00
 ---
 
 Existem muitos frameworks para jogos na internet, e cada vez mais estão sendo lançados para diversas plataformas. Por isso, é importante saber o que um framework deve ter e o que deve ser testado, antes de escolher a tecnologia errada e descobrir isso tarde demais para mudar.
@@ -26,5 +25,3 @@ Por isso, vale a pena perder um tempo no começo do projeto avaliando se o frame
 - É fácil de debugar e entender os problemas?
 
 Isso tudo é bem genérico, e é claro que depende do tipo de jogo que você está desenvolvendo. Mas, mesmo se não usar algo no início do projeto, é bom saber se o framework tem suporte a uma determinada funcionalidade, ou seu jogo não será flexível. Existe mais algum ponto que vale a pena ser verificado antes de escolher um framework? Comente abaixo!
-
-

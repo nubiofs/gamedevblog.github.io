@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Tutorial de física 2D para jogos
-date: 1970-01-16 08:40:03.000000000 -03:00
 ---
 
 [![](http://gamedeveloper.com.br/blog/wp-content/uploads/2012/05/tutorialfisica.jpg "Game Physics 101")](http://www.rodedev.com/tutorials/gamephysics/)
@@ -13,5 +12,3 @@ São conceitos bem básicos, mas que da pra fazer muita coisa legal! Um jogo com
 Por falar em Angry Birds e física, eu vi essa imagem sendo compartilhada no Facebook e decidi colocar aqui. Infelizmente não sei quem criou para dar os créditos, mas ficou bem legal. Se alguém souber da onde é me fala nos comentários que eu atualizo aqui.
 
 ![](../content/images/2012/05/552770_371447076224255_277541792281451_77564275_1160289120_n.jpg "Angry Birds")
-
-

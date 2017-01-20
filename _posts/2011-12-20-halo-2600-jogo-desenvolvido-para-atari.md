@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Halo 2600 - jogo desenvolvido para Atari
-date: 1970-01-16 04:53:59.000000000 -03:00
 ---
 
 [Ed Fries](http://en.wikipedia.org/wiki/Ed_Fries "Ed Fries"), um veterano da indústria de jogos, criou uma versão do [Halo](http://halo.xbox.com/en-us/ "Halo") para [Atari 2600](http://pt.wikipedia.org/wiki/Atari_2600 "Atari 2600") e apresentou seu jogo na [Classic Gaming Expo](http://www.cgexpo.com/ "CGExpo"), em 2010. No evento, Ed vendeu alguns cartuchos limitados com seu jogo e depois [publicou gratuitamente](http://www.atariage.com/forums/topic/166916-halo-for-the-2600-released-at-cge-download-the-game-here/ "Halo 2600") na internet para ser rodado em emuladores de atari ou gravado em curtuchos, como o [Harmony Cartridge](http://harmony.atariage.com/ "Harmony").

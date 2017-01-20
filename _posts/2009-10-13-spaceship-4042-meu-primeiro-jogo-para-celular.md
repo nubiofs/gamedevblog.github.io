@@ -1,7 +1,6 @@
 ---
 layout: post
 title: SpaceShip 4042 - meu primeiro jogo para celular!
-date: 1970-01-15 09:44:40.000000000 -03:00
 ---
 
 ![SpaceShip 4042](http://gamedeveloper.com.br/blog/wp-content/uploads/2009/10/splash01.png "SpaceShip 4042")Este é o primeiro jogo que fiz para celulares, e também foi o primeiro projeto que terminei tudo o que eu planejava fazer. Fiz este jogo para a matéria de Jogos para Celular na pós-graduação utilizando **Java Mobile** (JME com CLDC 1.1/MIDP 2.0) e o [Netbeans 6.7.1](http://www.netbeans.org/downloads/index.html "Netbeans").
@@ -44,5 +43,3 @@ Existem alguns bugs que estou corrigindo e muitas coisas para polir, mas o jogo 
 Desenvolver este jogo foi muito interessante, pois aprendi bastante sobre a arquitetura de um celular, programação com JME, algumas técnicas para diminuir o consumo do processamento, aplicação de design patterns no Java, gravar e ler informações no celular, e, principalmente, alguns dos vários problemas que podem acontecer ao testar o jogo fora do simulador.
 
 Espero que gostem do jogo, este é o primeiro de muitos que pretendo fazer! Comentários são bem-vindos, principalmente se forem sobre bugs! Até mais!
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Pixel Perfect'
-date: 1970-01-17 00:03:39.000000000 -03:00
 ---
 
 Uma das dúvidas mais comuns no desenvolvimento de jogos para dispositivos móveis é qual a melhor maneira para que o jogo se adapte em várias resoluções, e uma das técnicas mais usadas é a chamada Pixel Perfect, que consiste em utilizar a PPI do aparelho como base para isto.
@@ -24,12 +23,10 @@ Porém, para imagens que não ocupam a tela inteira como botões ou sprites, a m
 
 > Para imagens com o tamanho da tela:  
 >  – Resize só funciona sem perder a qualidade se os aparelhos tiverem a PPI/DPI e o tamanho da tela proporcionais.
-> 
+>
 > Para imagens menores:  
 >  – Resize funciona baseado apenas na PPI/DPI, o tamanho da tela pode influenciar apenas o posicionamento dos itens na tela.
 
 Já utilizei esta técnica algumas vezes quando trabalhei na [Glu Mobile](http://glu.com "Glu") e na [Electronic Arts](http://ea.com "EA"). O jogo que mais usei isto foi o [Scrabble](http://www.ea.com/scrabble-paid-ipad?intcmp=EACom_scrabbleipad_update_0313 "Scrabble"), para [Android](https://play.google.com/store/apps/details?id=com.ea.game.scrabblemattel_bv "Android") e [iOS](https://itunes.apple.com/br/app/scrabble/id311691366?mt=8 "iOS"). Todo seu layout é baseado na PPI/DPI do aparelho, e as imagens são usadas de acordo com esta classificação. Neste jogo o layout do tablet é diferente do smartphone, então não tivemos problemas com a PPI/DPI e resolução destes aparelhos, o que ajudou bastante no resultado final.
 
 Espero ter conseguido explicar direito esta técnica, ela é bem simples de usar e um pouco complicada de explicar. Lembre-se que este exemplo foi feito para os modelos de iPhone, que é o mais simples de todos. Aparelhos Android geralmente dão mais problemas por causa da fragmentação e falta de padrões por parte dos fabricantes, mas não é impossível fazer uso do Pixel Perfect da mesma maneira. Qualquer dúvida, fique a vontade para perguntar nos comentários abaixo!
-
-

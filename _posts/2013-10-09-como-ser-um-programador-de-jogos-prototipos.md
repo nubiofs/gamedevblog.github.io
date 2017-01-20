@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Protótipos'
-date: 1970-01-16 20:42:00.000000000 -03:00
 ---
 
 No último post desta série falei sobre a técnica de usar um [Playground](http://gamedeveloper.com.br/blog/2013/10/02/como-ser-um-programador-de-jogos-playground/ "Playground") para testar o jogo durante o desenvolvimento. Desta vez, o assunto será protótipos.
@@ -23,5 +22,3 @@ Por tanto, no protótipo o programador está liberado para fazer qualquer coisa,
 O protótipo não necessáriamente precisa ser programado, podemos usar protótipos de papel ou qualquer outra coisa, como peças de Lego e objetos de jogos de tabuleiro. A foto abaixo é de um protótipo de papel de um jogo de explorar calabouços que desenvolvi com um grupo durante a pós-graduação. Fizemos apenas o protótipo para aprender e demonstrar a técnica com papel.
 
 [![](../content/images/2009/11/photo0017-1024x768.jpg "Protótipo")](../content/images/2009/11/photo0017.jpg)
-
-

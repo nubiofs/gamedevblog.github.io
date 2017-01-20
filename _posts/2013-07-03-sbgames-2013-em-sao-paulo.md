@@ -1,7 +1,6 @@
 ---
 layout: post
 title: SBGames 2013 em São Paulo
-date: 1970-01-16 18:20:56.000000000 -03:00
 ---
 
 Em outubro, entre os dias 16 e 18, a Universidade Presbiteriana Mackenzie em São Paulo recebe o XII Simpósio Brasileiro de Jogos e Entretenimento Digital, também conhecido como [SBGames](http://www.sbgames.org/sbgames2013/).
@@ -17,5 +16,3 @@ Cada trilha possui alguns tópicos que podem ser usados como tema para o artigo,
 Além dos artigos, você também pode participar desenvolvimento jogos no Festival de Jogos Independentes. [Confira aqui o regulamento](http://www.sbgames.org/sbgames2013/festival_sbgames13.pdf) para saber mais detalhes.
 
 [Fique atento as datas](http://www.sbgames.org/sbgames2013/) e participe! Não sei se é oficial, mas também existe esta [pagina no Facebook](https://www.facebook.com/sbgames2013).
-
-

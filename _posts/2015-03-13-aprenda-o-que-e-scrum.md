@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Aprenda o que é SCRUM e como usar em projetos de games
-date: 1970-01-17 09:11:30.000000000 -03:00
 ---
 
 Eu poderia escrever um texto cheio de figuras para explicar o que é SCRUM e como funciona, mas ao invés disso encontrei um video que ensina em 15 minutos todos os conceitos desta metodologia de desenvolvimento ágil.
@@ -17,5 +16,3 @@ O livro abaixo, [Agile Game Development with SCRUM](http://www.amazon.com/Agile-
 Neste livro ele conta sua experiência em adaptar a metodologia em projetos de jogos. Deu tão certo que ele saiu da indústria e hoje é instrutor e consultar de SCRUM. O livro pode ser comprado na Amazon através [deste link](http://www.amazon.com/Agile-Development-Scrum-Addison-Wesley-Signature/dp/0321618521/ref=sr_1_fkmr1_1?ie=UTF8&qid=1426290177&sr=8-1-fkmr1&keywords=scrum+game+dev "Amazon").
 
 Imagem da capa: [Marseille France-September 30, 2007](http://www.shutterstock.com/pic-199338284/stock-photo-marseille-france-september-french-players-scrum-during-the-match-france-vsgeorgia-of.html?src=hZmV2HEDvEyJaoSLd6YF0A-1-10 "Shutterstock") do Shutterstock.
-
-

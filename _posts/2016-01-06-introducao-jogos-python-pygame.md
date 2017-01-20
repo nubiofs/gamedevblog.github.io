@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Introdução ao Desenvolvimento de Jogos em Python com PyGame
-date: 1970-01-17 16:31:41.000000000 -03:00
 ---
 
 A [Editora Novatec](http://www.novatec.com.br/livros/intropygame/) trouxe para o Brasil um excelente livro de [Harrison Kinsley](https://pythonprogramming.net/) e [Will McGugan](https://www.willmcgugan.com/): Introdução ao Desenvolvimento de Jogos em Python com PyGame. Este é um livro recheado de surpresas até mesmo para desenvolvedores que já conhecem Python.
@@ -19,5 +18,3 @@ Por fim os autores ensinam como empacotar o seu jogo para publicá-lo ou pelo me
 Até antes de ler este livro meu único contato com Python foi criar scripts para automatizar build de jogos, porém o PyGame abriu minha mente para tentar fazer mais coisas com Python. É uma linguagem de programação incrível e que vale a pena estudar.
 
 Muito obrigado a [Editora Novatec](http://novatec.com.br/ "Novatec") por me enviar este livro para fazer esta review. Você pode comprar [este livro](http://www.novatec.com.br/livros/intropygame/ "Livro Android") e outros no site da Novatec, e utilize o código **GAMEDEVELOPER** para ter desconto na compra!
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Concurso de desenvolvimento de jogos: indiePub Games'
-date: 1970-01-15 20:29:15.000000000 -03:00
 ---
 
 ![Independent Propeller Awards at SXSW ScreenBurn](../content/images/2011/01/indiepubcontest.jpg "Independent Propeller Awards at SXSW ScreenBurn")
@@ -17,5 +16,3 @@ Como o prazo é curto, decidi inscrever o Oniro neste concurso. Fiz uma versão 
 Esta é a página do Oniro no indiePub: [http://www.indiepubgames.com/game/Oniro](http://www.indiepubgames.com/game/Oniro)
 
 Agora que terminei minha pós-graduação, vou me dedicar a participar de concursos de desenvolvimento de jogos independentes, sempre que puder participar. E sempre que encontrar algum concurso assim vou postar aqui no blog informações sobre ele.
-
-

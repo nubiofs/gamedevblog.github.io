@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Programando PONG com HTML5 e Javascript
-date: 1970-01-16 19:31:31.000000000 -03:00
 ---
 
 Esta é mais uma série de posts nova no blog para ser um complemento da “Como ser um programador de jogos”. Lá eu escrevo sobre vários aspectos, muitos teóricos, sobre a formação e aprendizagem para se tornar um programador de jogos. Aqui vou mostrar programação de jogos, mas sempre com o jogo PONG.
@@ -46,11 +45,11 @@ if ((bolaPosX - 10) jogadorPosY) && (bolaPosY - 10 < jogadorPosY + barraHeight))
 
 A lógica do PONG é bem simples, e será sempre parecida em todos os posts desta série, sendo a única diferença a tecnologia utilizada. Outro detalhe importante neste post é que não existem imagens para os jogadores e a bolinha, tudo foi desenhado no próprio código Javascript utilizando recursos do canvas do HTML5, como demonstrado abaixo.
 
-`// Jogador e Oponente 
-context.fillRect(jogadorPosX, jogadorPosY, barraWidth, barraHeight); context.fillRect(oponentePosX, oponentePosY, barraWidth, barraHeight); 
-// Bola 
-context.beginPath(); 
-context.arc(bolaPosX, bolaPosY, bolaDiametro, 0, Math.PI * 2, true); context.closePath(); 
+`// Jogador e Oponente
+context.fillRect(jogadorPosX, jogadorPosY, barraWidth, barraHeight); context.fillRect(oponentePosX, oponentePosY, barraWidth, barraHeight);
+// Bola
+context.beginPath();
+context.arc(bolaPosX, bolaPosY, bolaDiametro, 0, Math.PI * 2, true); context.closePath();
 context.fill();`
 
 Por fim, temos mais pedaços de código responsáveis por exibir o placar, desenhar as linhas e os jogadores, contar a pontuação (basicamente é só verificar se a posição da bolinha está fora do canvas), entre outros detalhes que estão comentados no código completo no link abaixo.
@@ -66,5 +65,3 @@ A vantagem de fazer exemplos e testes com os recursos do HTML5 é que você acab
 Outra vantagem é que, por ser HTML, você pode rodar isso em qualquer coisa que tenha um navegador (PC, celulares, tablets, video games, etc). Existem muitos aplicativos mobile que são, na verdade, uma “casca” com um código que executa um HTML dentro do aplicativo.
 
 Espero que tenham gostado! Estou ansioso para o próximo post desta série!
-
-

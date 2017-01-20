@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 2014, um ano de oportunidades para os desenvolvedores de jogos
-date: 1970-01-16 22:44:39.000000000 -03:00
 ---
 
 Enfim chegamos a 2014, um ano com eleições, copa do mundo no Brasil, novos consoles e muitas oportunidades para desenvolvedores de jogos!
@@ -21,5 +20,3 @@ A copa do mundo também é uma ótima oportunidade de explorar com jogos e aplic
 Dois novos consoles chegaram ao mercado ano passado, o Xbox One e o Playstation 4, e com eles os desenvolvedores tem duas novas plataformas e os jogadores dois novos objetos de desejo. Ter um código cross-platform já era muito importante, e está cada vez mais indispensável! Hoje uma empresa tem que pensar em dois conjuntos de plataformas: móvel (iOS, Android, Nintendo 3DS, PSVita, Windows Phone) e desktop (Windows, Mac, Linux, Xbox 360, Xbox One, Playstation 3, Playstation 4, Nintendo Wii U, Steam Machine). Com excessão de algumas licenças que não podemos ter no Brasil diretamente ou que exigem uma empresa por trás, temos mais de 10 plataformas distintas para explorar!
 
 Não faltam oportunidades, tecnologias e plataformas para criar jogos, mas não se esqueça de sempre estudar sobre o assunto, principalmente conteúdo de fora como livros e palestras, geralmente gravadas e colocadas no youtube. Fique atento também aos eventos que acontecerão pelo mundo, pois mesmo que não seja possível ir, muito conteúdo dos eventos são divulgados pela internet, e alguns deles são possíveis acompanhar online.
-
-

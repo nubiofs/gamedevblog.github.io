@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Sprite sheets em múltiplas resoluções com TexturePacker e Corona SDK
-date: 1970-01-16 20:10:22.000000000 -03:00
 ---
 
 O TexturePack é um software utilizado para gerar sprite sheets compatíveis com diversos frameworks, como Cocos2d e Corona SDK. Ele possui diversas opções de otimização, e um recurso bem interessante é o de gerar sprite sheets para varias resoluções.
@@ -43,5 +42,3 @@ Espero que tenham gostando deste tutorial do uso do TexturePacker com Corona SDK
 Você pode baixar a versão [trial do TexturePacker aqui](http://www.codeandweb.com/texturepacker "TexturePacker"), que possui versões para Windows, Mac e Linux. Eu recomendo comprar, pois é uma ferramenta incrível para desenvolver jogos, principalmente mobile. Muito obrigado ao Andreas Leow, da [CodeAndWeb](http://www.codeandweb.com/ "CodeAndWeb"), que me enviou a licença para testar o TexturePacker. Em breve postarei outro sobre outro produto deles, o [PhysicsEditor](http://www.codeandweb.com/physicseditor "Physics Editor").
 
 As imagens utilizadas aqui são do jogo open source [BrowserQuest](http://browserquest.mozilla.org/ "BrowserQuest"), disponível no [GitHub do Mozilla](https://github.com/mozilla/BrowserQuest "BrowserQuest").
-
-

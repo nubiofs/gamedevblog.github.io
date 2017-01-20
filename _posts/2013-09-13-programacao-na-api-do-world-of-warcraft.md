@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Programação na API do World of Warcraft
-date: 1970-01-16 20:04:36.000000000 -03:00
 ---
 
- O MMORPG [Word of Warcraft](http://worldofwarcraft.com "WoW") da Blizzard não é só um jogo muito bom e um sucesso comercial que fez a empresa e o mercado de MMOs crescer muito, ele também tem uma API impressionante para programar addons.
+O MMORPG [Word of Warcraft](http://worldofwarcraft.com "WoW") da Blizzard não é só um jogo muito bom e um sucesso comercial que fez a empresa e o mercado de MMOs crescer muito, ele também tem uma API impressionante para programar addons.
 
 Antes de falar sobre a programação no WoW, vou explicar algumas definições. API, ou Application Programming Interface, é uma especificação de funções que podem ser executadas para a comunicação entre dois softwares, neste caso o jogo e o seu add-on. O addon é um módulo ou plugin para um programa que complementa ou expande suas funcionalidades.
 
@@ -21,5 +20,3 @@ Este site é do autor do livro [WoW Programming](http://www.amazon.com/World-War
 Acesse o site do [WoW Programming](http://wowprogramming.com "WoW") para saber mais!
 
  
-
-

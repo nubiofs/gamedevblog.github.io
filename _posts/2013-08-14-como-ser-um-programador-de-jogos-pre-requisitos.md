@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Pré-requisitos'
-date: 1970-01-16 19:21:21.000000000 -03:00
 ---
 
 Essa é uma dúvida bem comum que vejo nos comentários do blog, e até recebo por email, então resolvi escrever esse post sobre o assunto. A minha ideia inicial era fazer apenas um texto falando sobre isso, mas durante o texto percebi que seria legal criar um mini guia com os passos para se tornar um programador de jogos.
@@ -19,5 +18,3 @@ Se você realmente quer trabalhar com jogos, vai precisar conversar em inglês. 
 Meu inglês não é dos melhores, eu aprendi jogando, ouvindo música, estudando na faculdade, e também fiz um curso de inglês. Isso ajudou demais na hora em que precisei conversar com as pessoas de fora. É claro que nas primeiras vezes eu travei muito, mas com o tempo e prática você ganha mais confiança em falar.
 
 Outro item importante é jogar com olhar crítico. Não para falar quem um jogo é ruim ou bom, mas para saber analisar como aquele jogo foi feito. Um bom exercício é pegar um jogo e pensar em como você faria a lógica da sua jogabilidade, sem se importar com código, apenas pense e tente entender como o programador do jogo fez aquilo funcionar. Tente também sair da zona de conforto e jogar jogos que você normalmente não jogaria, isso também ajuda aprender a programar jogos.
-
-

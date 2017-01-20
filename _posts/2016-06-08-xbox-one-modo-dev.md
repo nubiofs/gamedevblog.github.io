@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Como desbloquear o Xbox One para o modo desenvolvedor
-date: 1970-01-17 20:03:43.000000000 -03:00
 ---
-Eu não tenho um Xbox One (ainda), mas após a Microsoft [anunciar](http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit) uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos. 
+
+Eu não tenho um Xbox One (ainda), mas após a Microsoft [anunciar](http://www.polygon.com/2016/3/30/11318568/xbox-one-dev-kit) uma atualização que transformou qualquer Xbox One em um kit de desenvolvimento eu comecei achar interessante a ideia de ter o console para jogar e desenvolver jogos.
 
 Estes são os pré-requisitos para transformar seu console em uma ferramenta para desenvolvimento de jogos:
 

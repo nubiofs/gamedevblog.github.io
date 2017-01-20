@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Conheça o Marmalade SDK
-date: 1970-01-17 10:37:38.000000000 -03:00
 ---
 
 A última vez que usei o [Marmalade SDK](https://www.madewithmarmalade.com/) ele nem tinha este nome, era chamado de Airplay SDK até ter o nome alterado devido a uma tecnologia da Apple também chamada AirPlay. Muitos jogos na EA até 2011~2012 eram desenvolvidos utilizando este framework, e hoje ele está bem diferente.
@@ -27,5 +26,3 @@ O Marmalade possui [5 tipos de licença](https://www.madewithmarmalade.com/shop/
 [Confira aqui](https://www.madewithmarmalade.com/showroom) alguns jogos desenvolvidos utilizando este framework e baixe a versão gratuita para testar! O video abaixo mostra como começar o desenvolvimento no Marmalade SDK, e muitos outros estão disponíveis no [canal do YouTube](https://www.youtube.com/user/madewithmarmaladecom) da empresa.
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/hVZ5WNVYm-k?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

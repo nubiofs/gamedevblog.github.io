@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Teste com jogadores'
-date: 1970-01-16 22:04:33.000000000 -03:00
 ---
 
 Testar um jogo é algo fácil, não é? Só jogar? Não! Existem maneiras de testar e, o mais importante, coletar dados destes testes para realmente melhorar o jogo. Alguns tipos de testes podem e devem ser feitos com um jogador, mas também existe o momento certo para cada tipo de teste.
@@ -54,5 +53,3 @@ Por ser aberto, nesta fase fica difícil de receber jogadores para testar, por i
 Cada fase possui um foco diferente, mas em todas a figura do QA é muito importante para garantir a qualidade do jogo. Nos testes em que deve-se observar o jogador, faça anotações das reações deles em cada parte, se demoraram muito para concluir uma missão, se estão com cara de desanimo ou empolgados. A expressão deles é a mesma que você pode ter quando seu jogo for lançado, por isso é importante entender se o jogo está agradando ou não, e cabe ao game designer mudar isso caso seja necessário.
 
 Embora pareça que tudo que eu escrevi aqui serve apenas para empresas grandes, isto não é verdade. O público-alvo pode ser seus amigos que tem os mesmos gostos e os testes podem ser feitos até em um encontro para tomar café, o importante é que estes testes sejam feitos e as informações coletadas. Você não precisar ser uma empresa grande para fazer grande jogos, mas pode e precisar ter o mesmo nível de profissionalismo.
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Organização de um projeto de jogo (parte 1)
-date: 1970-01-16 08:52:58.000000000 -03:00
 ---
 
 Durante um projeto de jogo muitas informações são criadas, e podem ser pedidas se não forem organizadas. Por ser multidisciplinar, um projeto de jogo terá arquivos de arte, música, documentos de design, diagramas, código-fonte, e é muito importante que tudo isso seja bem guardado, pois são os recursos utilizados para fazer seu jogo.
@@ -23,5 +22,3 @@ A maior vantagem do uso do DropBox em um projeto é a possibilidade de compartil
 Eu recomendo utilizar o DropBox para arquivos como documentos, apresentações, planilhas, músicas, artes, e versões estáveis do código-fonte. Porém, não eu não recomendo utilizar o DropBox para armazenar o código-fonte durante o desenvolvimento, para isso existem outros recursos mais legais no próximo tópico.
 
 Além do DropBox, eu já utilizei também o [Google Drive](http://drive.google.com "Google Drive"), que está em Beta fechado, por isso acho melhor o DropBox. Se você precisar de mais de 18GB (lembre-se que esse é o espaço máximo gratuito por usuário), você ainda pode contratar planos maiores através do site deles.
-
-

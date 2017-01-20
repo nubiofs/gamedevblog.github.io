@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Código do Prince of Persia de 1989 encontrado e compartilhado!
-date: 1970-01-16 07:49:39.000000000 -03:00
 ---
 
 Você consegue imaginar como era programar um jogo em 1989? Naquela época o Apple II era um muito popular entre os desenvolvedores de jogos, e muitos deles programavam sozinhos seus projetos. E foi assim que [Jordan Mechner](http://jordanmechner.com/ "Jordan Mechner") desenvolveu o primeiro Prince of Persia.

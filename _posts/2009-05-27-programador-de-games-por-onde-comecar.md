@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Programador de games: por onde começar?'
-date: 1970-01-15 06:23:53.000000000 -03:00
 ---
 
 Já me questionei muito isso, pensando em como poderia começar uma carreira de desenvolvedor de games, mesmo que seja indie. Encontrei algumas respostas e muitas dúvidas, que foram exclarecidas pela minha professora de Produção de Games da pós-graduação. Depois de pensar sobre todas as informações que tinha, e levando em conta a indústria de games no Brasil, encontrei três perfis distintos de programadores de games iniciantes, e também indie:
@@ -17,5 +16,3 @@ Eu, particularmente, estou optando por estudar o desenvolvimento de Homebrew par
 E com tudo isso, acabei esbarrando em uma dificuldade que deve ser a principal que irei enfrentar: não sou artista, sou programador! Ou seja, mesmo que eu faço algum jogo divertido, não vai ficar muito bonito, preciso encontrar algum artista que goste de pixel art para fazer jogos comigo, já que quero começar fazendo games 2D. Minha meta é montar um portifólio com demos de games diferentes em algumas plataformas, como as que citei acima.
 
 No próximo post irei falar sobre o primeiro game em C++ com a biblioteca SDL que desenvolvi com meu grupo na pós-graduação e mostrar o game, até mais!
-
-

@@ -1,19 +1,19 @@
 ---
 layout: post
 title: 'Final Frontier: Raycast, Spawn e MoSCoW'
-date: 1970-01-17 22:15:58.000000000 -03:00
 ---
+
 Faz um mês desde o [último post](http://gamedeveloper.com.br/final-frontier-camera-e-controle/) sobre o andamento deste projeto, mas ele não está parado. Mês passado teve o [Ludum Dare #36](http://gamedeveloper.com.br/ludum-dare-36/) e realizei uma [palestra na USP sobre Game Jams](http://gamedeveloper.com.br/game-jams-como-fazer-um-jogo-em-48h/), então meu tempo livre (e os posts do blog) foram voltados a estes eventos. Agora que tudo passou, vamos voltar ao [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/).
 
 Desta vez vou falar sobre a substituição da colisão de objetos do tiro por Raycast, uma classe para fazer Spawn de objetos usando o design pattern Prototype e o início da organização das tarefas do projeto usando o método MoSCoW.
 
 **Substituindo colisão do tiro por Raycast**
 
-No último post sobre o andamento do jogo eu mencionei que iria adicionar uma mira no centro da tela para o jogador ter uma noção melhor de onde está atirando. Eu adicionei, porém o tiro ficou estranho. Como a nave está em constante movimento, o tiro (que é uma bola) estava indo bem fora da mira se a nave estivesse virando. Geralmente no início do projeto do protótipo não devemos perder tempo em melhorias, mas neste caso faria toda diferença ter um tiro mais consistente. 
+No último post sobre o andamento do jogo eu mencionei que iria adicionar uma mira no centro da tela para o jogador ter uma noção melhor de onde está atirando. Eu adicionei, porém o tiro ficou estranho. Como a nave está em constante movimento, o tiro (que é uma bola) estava indo bem fora da mira se a nave estivesse virando. Geralmente no início do projeto do protótipo não devemos perder tempo em melhorias, mas neste caso faria toda diferença ter um tiro mais consistente.
 
 ![](/content/images/2016/09/ff-shoot-1-1.jpg)
 
-Por isso decidi implementar a técnica de [Raycast](https://unity3d.com/pt/learn/tutorials/topics/physics/raycasting) para determinar se hoje a colisão com o objeto (então explodi-lo). A Unity tem bastante coisa implementada para auxiliar no uso do Raycast, então não é algo complicado de implementar, apenas leva um tempo para ajustar. Para desenhar a linha do tiro, que seria como um laser, pesquisei como fazer e encontrei [este excelente tutorial da Unity](https://unity3d.com/pt/learn/tutorials/lets-try/shooting-with-raycasts) (video abaixo) que cobre também como fazer o Raycast. 
+Por isso decidi implementar a técnica de [Raycast](https://unity3d.com/pt/learn/tutorials/topics/physics/raycasting) para determinar se hoje a colisão com o objeto (então explodi-lo). A Unity tem bastante coisa implementada para auxiliar no uso do Raycast, então não é algo complicado de implementar, apenas leva um tempo para ajustar. Para desenhar a linha do tiro, que seria como um laser, pesquisei como fazer e encontrei [este excelente tutorial da Unity](https://unity3d.com/pt/learn/tutorials/lets-try/shooting-with-raycasts) (video abaixo) que cobre também como fazer o Raycast.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/AGd16aspnPA" frameborder="0" allowfullscreen></iframe>
 
@@ -27,7 +27,7 @@ Agora que o tiro está bem melhor, decidi adicionar mais objetos para o jogador 
 
 ![](/content/images/2016/09/ff-shoot-2-1.jpg)
 
-O spawn de objetos é algo muito simples de fazer utilizando o design pattern [Prototype](http://gameprogrammingpatterns.com/prototype.html), principalmente na Unity onde o protótipo é um prefab. Utilizei o mesmo conceito em alguns jogos que fiz usando Unity em dois [Ludum Dare](http://gamedeveloper.com.br/tag/ludum-dare/), então copiei o código de lá e adicionei ao projeto. 
+O spawn de objetos é algo muito simples de fazer utilizando o design pattern [Prototype](http://gameprogrammingpatterns.com/prototype.html), principalmente na Unity onde o protótipo é um prefab. Utilizei o mesmo conceito em alguns jogos que fiz usando Unity em dois [Ludum Dare](http://gamedeveloper.com.br/tag/ludum-dare/), então copiei o código de lá e adicionei ao projeto.
 
 Reaproveitar código de outros projetos, mesmo classes pequenas como esta que utilizei, ajudam a ganhar tempo por dois motivos: não perder tempo escrevendo o código e não perder tempo testando o código. É sempre bom ter alguns códigos prontos e, de preferência, escritos para serem reaproveitados em diferentes projetos. Algo ainda mais sofisticado seria criar módulos ou plugins (no caso da Unity), muitas empresas fazem isto para reaproveitar códigos que podem estar em qualquer projeto. Por isso, sempre é bom seguir o princípio [K.I.S.S.](http://gamedeveloper.com.br/mantenha-tudo-simples/)
 
@@ -48,7 +48,7 @@ Abaixo está a lista que montei para esta primeira parte do projeto desde seu in
 
 ![](/content/images/2016/09/ff-tasks-01.jpg)
 
-No verso desta folha adicionei uma lista chamada "Backlog" para listar ideias que tive durante o desenvolvimento das tarefas, assim posso planejar a próxima lista considerando estas ideas como possíveis tarefas. 
+No verso desta folha adicionei uma lista chamada "Backlog" para listar ideias que tive durante o desenvolvimento das tarefas, assim posso planejar a próxima lista considerando estas ideas como possíveis tarefas.
 
 **Próximos Passos**
 

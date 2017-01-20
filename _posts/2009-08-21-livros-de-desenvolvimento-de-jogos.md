@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Livros de desenvolvimento de jogos
-date: 1970-01-15 08:28:07.000000000 -03:00
 ---
 
 Em outros países, existem diversos cursos para todas as áreas do desenvolvimento de jogos, inclusive universidades com cursos expecializados nisso, como a [DigiPen](https://www.digipen.edu/ "DigiPen"). Aqui, temos poucos cursos voltados para o desenvolvimento de games, como a pós-graduação que estou cursando no SENAC.
@@ -43,5 +42,3 @@ The Animator’s Survival Kit</figcaption></figure>Pra quem gosta de Engenharia 
 Software Engineering for Game Developers</figcaption></figure>Estes livros são muitos bons, a maioria foi indicada para mim por professores da pós-graduação. Muitos links são da [Amazon](http://www.amazon.com "Amazon"), que envia para o Brasil **apenas Livros, CDs, e DVDs**. Já comprei alguns livros neste site, inclusive livros usados por um preço muito baixo (o de J2ME comprei por $1,00 + frete), e também é mais barato importar do que comprar nas lojas por aqui, que são muito mais caros. O único problema é que demora um pouco para chegar, os usados demoram ainda mais, mas chegam!
 
 Você já leu algum livro de desenvolvimento de jogos? Comente sobre eles! Até mais!
-
-

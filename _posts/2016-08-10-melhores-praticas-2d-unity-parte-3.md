@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Melhores práticas para 2D na Unity - Parte 3
-date: 1970-01-17 21:34:49.000000000 -03:00
 ---
+
 Na [parte 1](http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-1) falei sobre dicas para reduzir o tamanho das imagens e melhores resoluções para dispositivos móveis, e na [parte 2](http://gamedeveloper.com.br/melhores-praticas-2d-unity-parte-2) o foco foi o plugin [NGUI](https://www.assetstore.unity3d.com/en/#!/content/2413) (mas as dicas também se aplicam ao UI da Unity) e ao uso de sprite sheets. Desta vez o foco serão melhores práticas de programação para jogos 2D na Unity.
 
-Apesar de ter o foco em 2D, boa parte do conteúdo deste post abrange jogos em 3D na Unity também. No site da Unity existe uma categoria de [Melhores Práticas](http://unity3d.com/pt/learn/tutorials/topics/best-practices) excelente, falando de física, assets e UI. 
+Apesar de ter o foco em 2D, boa parte do conteúdo deste post abrange jogos em 3D na Unity também. No site da Unity existe uma categoria de [Melhores Práticas](http://unity3d.com/pt/learn/tutorials/topics/best-practices) excelente, falando de física, assets e UI.
 
 **O Update**
 
@@ -19,7 +19,7 @@ Imagens e sprite sheets de jogos 2D podem ocupar mais espaço em disco e memóri
 
 A Unity possui uma versão 2D para praticamente todo componente disponível no 3D, e mesmo sendo otimizado pode exigir bastante processamento do hardware se existirem muitos objetos na cena. Se eu não me engano, mesmo que o objeto não esteja sendo desenhado na tela, sua física continua ativa para verificações de colisão fora da tela. Se no seu jogo existem muitos objetos colidindo ao mesmo tempo em uma cena podemos desabilitar a física (ou mesmo o objeto inteiro) quando ele estiver fora da tela.
 
-Por exemplo, em um jogo de estratégia como StarCraft podemos "ligar" a física dos objetos quando as unidades do jogador estiverem em uma área próxima das unidades do imigo. Para evitar verificações em cada update (e poder ter o problema do tópico anterior), você pode deixar a física habilitada no líder do grupo, e fazer ele habilitar a física nos depois com um callback quando chegar na área do inimigo. É apenas uma ideia, provavelmente existe maneiras ainda melhores pra isso, mas o ponto é que muitos objetos com física ativada podem causar problemas de desempenho. 
+Por exemplo, em um jogo de estratégia como StarCraft podemos "ligar" a física dos objetos quando as unidades do jogador estiverem em uma área próxima das unidades do imigo. Para evitar verificações em cada update (e poder ter o problema do tópico anterior), você pode deixar a física habilitada no líder do grupo, e fazer ele habilitar a física nos depois com um callback quando chegar na área do inimigo. É apenas uma ideia, provavelmente existe maneiras ainda melhores pra isso, mas o ponto é que muitos objetos com física ativada podem causar problemas de desempenho.
 
 A [Defold](http://www.defold.com), uma game engine desenvolvida pela King para jogos 2D, limita o número de objetos com colisão por nível. Tive este problema quando estava desenvolvendo o jogo [Metaforce](http://gamejolt.com/games/metaforce/141821) para o [Ludum Dare #35](http://gamedeveloper.com.br/ludum-dare-35/), montei o mapa inteiro com colisão para o personagem não atravessar as paredes, mas o limite da engine (que eu não sabia) me fez mudar a maneira de verificar a colisão com o cenário.
 
@@ -31,4 +31,4 @@ Carregar aos poucos, ou [Lazy Loading](https://en.wikipedia.org/wiki/Lazy_loadin
 
 Ah, e não se esqueça de ter uma tela de loading ou um feedback para que o jogar saiba o que está acontecendo. Isto é mais Game Design do que Programação, mas vale a pena sempre pensar neste detalhes durante o desenvolvimento.
 
-Esta foi a terceira e última parte sobre melhores práticas para fazer um jogo em 2D na Unity. A ideia inicial era ter publicar estes posts em sequencia, porém demorei mais de 1 ano para publicá-los. Se você quiser saber mais sobre desenvolvimento de jogos com Unity acompanhe o desenvolvimento do meu jogo [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/), estou escrevendo um post sobre o progresso do jogo a cada 2 semanas. 
+Esta foi a terceira e última parte sobre melhores práticas para fazer um jogo em 2D na Unity. A ideia inicial era ter publicar estes posts em sequencia, porém demorei mais de 1 ano para publicá-los. Se você quiser saber mais sobre desenvolvimento de jogos com Unity acompanhe o desenvolvimento do meu jogo [Final Frontier](http://gamedeveloper.com.br/tag/final-frontier/), estou escrevendo um post sobre o progresso do jogo a cada 2 semanas.

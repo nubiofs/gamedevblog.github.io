@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 1º Congresso Online de Desenvolvimento Mobile
-date: 1970-01-17 17:49:34.000000000 -03:00
 ---
+
 O 1º Congresso Online de Desenvolvimento Mobile é um evento totalmente GRATUITO e 100% online no qual os desenvolvedores mobile do Brasil e do Mundo poderão ter acesso as novidades do mercado, as boas práticas que estão sendo adotas ultimamente e a possibilidade de networking com os principais desenvolvedores mobile do Brasil.
 
 **Quando?**

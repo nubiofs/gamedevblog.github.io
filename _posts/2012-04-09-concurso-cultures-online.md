@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Cultures Online da Global Games - concorra a keys para o closed beta!
-date: 1970-01-16 07:33:43.000000000 -03:00
 ---
 
 A [Global Games](http://www.globalgames.com.br/ "Global Games"), uma publisher brasileira de jogos online, trás para o Brasil o MMORPG [Cultures Online](http://cultures.globalgames.com.br/ "Cultures Online"), desenvolvido pela alemã Funatics. Cultures Online é um jogo de navegador gratuito que permite o jogador gerenciar seu vilarejo Viking em aventuras pelas terras nórdicas da Europa.
@@ -25,5 +24,3 @@ Dia 11 de abril começa o closed beta, e os jogadores poderão testar todos os r
 > **8477364075 8377720843 7634421120 9499867017 0784531129 4678966096 1994682406 7238476988 5033980290 0137977140**
 
 Para finalizar, quero agradecer ao pessoal da Global Games pelo contato e por fornecer essas keys para distribuir entre os leitores do meu blog.
-
-

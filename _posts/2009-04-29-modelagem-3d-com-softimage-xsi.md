@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Modelagem 3D com softimage XSI
-date: 1970-01-15 05:43:50.000000000 -03:00
 ---
 
 Geralmente, um programador tem dificuldades quando precisa fazer algum tipo de design, e vice-versa, principalmente na área de games onde um programador de games é muito mais que um programador web, e um artista é muito mais que um web designer, por exemplo. Eu sou programador, mas meus primeiros estágios foram em web design, então pelo menos sei que #FFFFFF é branco (rs), mas fazer algo como modelagem 3D é bem mais complicado.
@@ -29,5 +28,3 @@ Além das técnicas acima, para a modelagem de personagens existem duas metodolo
 No próximo post irei escrever sobre as aulas de Técnicas de Programação de Games.
 
 Até mais!
-
-

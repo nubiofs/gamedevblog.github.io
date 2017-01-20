@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Minha palestra sobre Design Patterns no GameDays 2015
-date: 1970-01-17 14:33:20.000000000 -03:00
 ---
 
 Ontem apresentei minha palestra sobre uso de design patterns na programação de jogos no evento [GameDays 2015](http://gamedeveloper.com.br/gamedays-2015/) na Universidade Cruzeiro do Sul em São Paulo. Confira aqui os slides apresentados.
@@ -11,5 +10,3 @@ Ontem apresentei minha palestra sobre uso de design patterns na programação de
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/fiGIdyHLwLc?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
  
-
-

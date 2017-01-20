@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Apple adicionou a categoria de jogos na App Store brasileira
-date: 1970-01-16 07:27:50.000000000 -03:00
 ---
 
 Demorou, mas chegou! Agora temos a categoria de jogos na App Store brasileira, a loja de aplicativos da Apple para seus aparelhos com iOS. Isso é uma ótima notícia para os jogadores, que agora poderão comprar seus jogos com uma conta e cartão de crédito brasileiro, mas também é uma ótima notícia para nós desenvolvedores de jogos!

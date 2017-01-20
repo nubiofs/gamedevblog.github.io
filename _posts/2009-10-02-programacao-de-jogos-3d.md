@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Programação de jogos 3D
-date: 1970-01-15 09:28:46.000000000 -03:00
 ---
 
 Programar um jogo 2D não é algo muito complexo, pois trabalhar com objetos em duas dimensões não exige muitos cálculos. Claro que existem exceções, mas, na maioria dos casos, a programação em um ambiente 2D é bem simples de fazer.
@@ -31,5 +30,3 @@ A maior dificuldade que tive foi exibir os dois modelos na tela no tamanho corre
 Conhecendo a teoria, tendo uma noção de modelagem 3D e programação no XNA com C#, **não é muito difícil de programar 3D, é necessário apenas muita paciência** para deixar tudo certo. Ainda não fiz um jogo em 3D, apenas essas brincadeiras, mas pretendo logo criar algo bem simples para aprender mais sobre isso. A programação 3D é bem complexa, mas pelo menos no XNA isso fica mais simples. Acho que não tive uma boa experiência com Direct3D e C++, mas este é mais motivo para continuar aprendendo C++.
 
 Para os iniciantes em programação 3D, como eu, **recomendo aprender as técnicas e aplicá-las no XNA**, que é mais simples, e depois partir para o C++. E, embora eu seja programador, as aulas de modelagem 3D ajudaram muito! Por isso é sempre bom ter uma noção, pelo menos básica, de tudo que envolve o desenvolvimento de um game.
-
-

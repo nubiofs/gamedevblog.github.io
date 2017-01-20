@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Jogo de corrida VS vida real
-date: 1970-01-16 04:42:30.000000000 -03:00
 ---
 
 Jogos e simuladores de corrida são um dos meus tipos de jogos favoritos, provavelmente o que eu mais joguei depois de FPS. Comparar jogos de corrida é tão polêmico quando comparar os jogos de futebol FIFA e PES, porém existem mais do que dois grandes de corrida. Primeiro vou falar um pouco de alguns jogos de corrida bem legais, e depois comentar um vídeo que compara um jogo de corrida com a vida real, utilizando o mesmo carro e o mesmo circuito.

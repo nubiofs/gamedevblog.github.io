@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Hello World no Nintendo DS
-date: 1970-01-15 08:45:23.000000000 -03:00
 ---
 
 Há pouco tempo comecei a pesquisar e estudar o **desenvolvimento de jogos para o Nintendo DS**. Poucos estúdios de games têm a licença e o kit oficial para desenvolver jogos comerciais para o Nintendo DS, mas existe uma outra maneira para desenvolver jogos não comerciais, apenas para estudo, também conhecido como **homebrew**.
@@ -37,5 +36,3 @@ Para começar a brincadeira, fiz uma programa onde na tela superior do DS aparec
 <figure class="wp-caption aligncenter" id="attachment_122" style="width: 265px">![Executando no emulador DeSmuMe](http://gamedeveloper.com.br/blog/wp-content/uploads/2009/09/ds_emulador1.jpg "DS_emulador")<figcaption class="wp-caption-text">Executando no emulador DeSmuMe</figcaption></figure><figure class="wp-caption aligncenter" id="attachment_123" style="width: 495px">![Executando no Nintendo DS com R4](../content/images/2009/09/photo0021.jpg "Photo0021")<figcaption class="wp-caption-text">Executando no Nintendo DS com R4</figcaption></figure>[**Clique aqui para baixar o .NDS do meu “Hello World”.**](http://www.gamedeveloper.com.br/cicanci/games/testnds.zip "TestNDS")
 
 No momento estou estudando JME por causa de uma matéria na pós-graduação de Jogos para Celular, e preciso terminar um jogo (que irei postar aqui logo). Quando terminar este projeto pretendo me dedicar um pouco mais à “brincar” com o Nintendo DS. Qualquer dúvida sobre a configuração do ambiente ou sobre a programação para o Nintendo DS é só postar que eu tentarei ajudar!
-
-

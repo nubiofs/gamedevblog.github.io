@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Flash web games
-date: 1970-01-15 07:56:45.000000000 -03:00
 ---
 
 Hoje assisti uma palestra na Alpha Channel sobre Web Games, que me incentivou a escrever este post, e também me lembrou de um web game em flash que fiz em 2005, seguindo um tutorial que achei no Google. Foi o primeiro jogo que fiz, quando estava aprendendo Flash no meu primeiro estágio de web designer.
@@ -15,5 +14,3 @@ Como já escrevi neste [post](http://gamedeveloper.com.br/blog/2009/05/27/progra
 As empresas brasileiras que desenvolvem este tipo de jogo vendem isto como uma opção de solução de publicidade e marketing, também conhecido como Advert games. Esta deve ser a melhor forma de gerar lucro, pois jogos puramente de entretenimento não dão retorno financeiro, embora possa ser explorada a venda de publicidade no site em que o jogo está hospedado, tudo depende do modelo de negócio da empresa ou do desenvolvedor.
 
 Espero que gostem do jogo que fiz, comentários serão muito bem vindos!
-
-

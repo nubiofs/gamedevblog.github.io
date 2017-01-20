@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Game Design Document'
-date: 1970-01-16 22:13:06.000000000 -03:00
 ---
 
 O Game Design Document (GDD), é um documento escrito pelo Game Designer para os programadores e artistas entenderem sua visão da mecânica do jogo. Este documento é muito importante, mas infelizmente é tão ignorado quanto o próprio Game Designer.
@@ -21,5 +20,3 @@ Existem diversos modelos de GDD espalhados por ai, porém vale lembrar que nada 
 A partir do GDD, também, o produtor ou o próprio Game Designer pode criar a lista de tarefas de cada área, o que facilita muito o processo de desenvolvimento. Em muitas empresas é comum programadores e artistas ajudarem o Game Designer no começo do documento, principalmente apontando as limitações técnicas da ideia antes de começar a fazer ou durante o desenvolvimento do protótipo.
 
 Como em qualquer equipe, para qualquer projeto, a chave do sucesso é uma boa comunicação entre todos os membros de forma clara e transparente. Não tenha medo de compartilhar o GDD com a equipe, ele não deve ser um segredo guardo apenas para o Game Designer.
-
-

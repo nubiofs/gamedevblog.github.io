@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Design para casinos online
-date: 1970-01-17 01:51:54.000000000 -03:00
 ---
 
 Com a variedade e diversidade de casinos online que os jogadores têm hoje em dia á sua disposição cada detalhe conta quando é para atrair jogadores.
@@ -56,5 +55,3 @@ Algumas vantagens deste casino online:
 - etc…
 
 Por ultimo referir que alguns casinos online têm vindo a ter a preocupação de tentar trazer para os jogos online a verdadeira experiência de estar a jogar num casino real.
-
-

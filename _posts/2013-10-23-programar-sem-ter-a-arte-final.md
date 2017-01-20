@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Programar sem ter a arte final'
-date: 1970-01-16 21:02:19.000000000 -03:00
 ---
 
 As vezes aguardamos uma arte para programar uma parte do jogo. O grande problema é que o artista pode demorar, ou você pode nem ter um artista ainda. Nesse caso, vale a pena utilizar imagens provisórias para programar o jogo, mas é importante levar e consideração o tamanho da imagem.
@@ -19,5 +18,3 @@ Não perca tempo esperando encontrar um artista para começar o projeto, se voc�
 **UPDATE**
 
 Sugestão do leitor Francisco Padro, o site [Blendswap](http://blendswap.com/) com modelos 3D gratuitos.
-
-

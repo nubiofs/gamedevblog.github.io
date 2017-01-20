@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Resultado do sorteio do livro Game Design
-date: 1970-01-17 12:39:01.000000000 -03:00
 ---
 
 Depois de pouco mais de duas semanas, hoje é o dia de anunciar o vencedor do [sorteio](http://gamedeveloper.com.br/game-design-modelos-de-negocio-e-processos-criativos-sorteio-do-livro/) do livro Game Design: Modelos de Negócio e Processos Criativos da editora Cengage Learning.
@@ -21,5 +20,3 @@ Para fechar o post, vou colocar algumas estatísticas sobre o sorteio que achei 
 Muito obrigado a todos que participaram do sorteio, logo vou responder cada um dos 127 e-mails (vocês merecem!).
 
 Imagem da capa: [Dice Icon With Long Shadow](http://www.shutterstock.com/pic-238921480/stock-vector-dice-icon-with-long-shadow-flat-style-vector-illustration.html) do Shutterstock.
-
-

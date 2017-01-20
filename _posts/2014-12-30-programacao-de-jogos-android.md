@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Programação de Jogos Android
-date: 1970-01-17 07:27:43.000000000 -03:00
 ---
 
 Este livro do Edgard Damiani, com quase 700 páginas, é provavelmente o maior já escrito por um autor brasileiro sobre desenvolvimento de jogos. Ele explica conceitos fundamentais de programação de games ensinando, ao mesmo tempo, a criar sua própria game engine (na verdade um framework) para Android. Porém, usando a linguagem Java.
@@ -19,5 +18,3 @@ Porém, existem alguns problemas no livro. Na minha opinião, o maior erro do au
 Outro ponto incorreto é que o livro não ensina a criar sua própria game engine (por isso adicionei o parênteses no texto), mas sim um framework. O framework que o autor ensina a construir usa como base recursos do Android, o que torna extremamente inflexível. No geral é um livro muito bom para aprender conceitos, porém é uma pena ser limitado a ensinar tudo com Java.
 
 Muito obrigado a [Editora Novatec](http://novatec.com.br/ "Novatec") por me enviar este livro para fazer esta review. Você pode comprar [este livro](http://novatec.com.br/livros/programacaojogosandroid/ "Livro Android") e outros no site da Novatec, utilize o código **GAMEDEVELOPER** para ter desconto na compra!
-
-

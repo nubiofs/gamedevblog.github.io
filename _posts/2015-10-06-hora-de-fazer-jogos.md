@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Chega, é hora de fazer jogos!
-date: 1970-01-17 14:09:15.000000000 -03:00
 ---
 
 Fazem pouco mais de 5 anos que trabalho profissionalmente na indústria de jogos e, com cada vez mais tecnologias disponíveis para se fazer jogos, ainda é comum encontrar pessoas que ficam no “quero fazer jogos” e não fazem nem um PONG no tempo livre.
@@ -21,5 +20,3 @@ Esta foi a minha maneira de me forçar a criar jogos para meu portfólio, e espe
 Por isso, chega! É hora de fazer jogos! Não fique meses escolhendo a ferramenta perfeita para desenvolver seu jogo (isso não existe), não espere encontrar um artista (use arte temporária ou compre), não espere encontrar um programador (aprenda a programar ou use uma engine mais visual). Simplesmente faça um jogo.
 
 Imagem da capa: [Programming Concept](http://www.shutterstock.com/pic-283524236/stock-photo-programming-concept-different-machine-code-languages-colorful-boxes-on-the-laptop-computer-keyboard.html?src=lMpWI-2yUIA67B6GDbmtrQ-1-34) do Shutterstock.
-
-

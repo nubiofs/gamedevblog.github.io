@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'E-games: meu jogo com XNA'
-date: 1970-01-15 10:01:58.000000000 -03:00
 ---
 
 O **SENAC São Paulo** organizou sua primeira competição de jogos digitais, o [e-Games](http://www3.sp.senac.br/hotsites/gd2/egames/ "e-games"), onde os concorrentes deveriam criar um jogo utilizando [XNA](http://creators.xna.com/ "XNA"). Além do jogo feito com XNA, foi necessário entregar um vídeo, documento de game design, apresentação, resumo e guia de instalação. [**O Download do jogo pode ser feito clicando aqui**](http://www.gamedeveloper.com.br/cicanci/games/SpaceShip4042_Windows_20091025.zip "SpaceShip 4042 com XNA"), ele necessita do [.Net Framework 3.5](http://www.microsoft.com/downloads/details.aspx?FamilyId=333325FD-AE52-4E35-B531-508D977D32A6&displaylang=en ".Net 3.5") e [Microsoft XNA Framework Redistributable 3.1](http://www.microsoft.com/downloads/details.aspx?FamilyID=53867a2a-e249-4560-8011-98eb3e799ef2&displaylang=en "XNA Framework 3.1") instalados para rodar, não é necessário instalar o jogo, apenas executar o **SpaceShip4042.exe**.
@@ -27,5 +26,3 @@ Outro problema que tive, mas que foi simples de resolver, foi a animação, pois
 Assim como no JME, que tive dificuldades no começo, **tive dificuldades** com o XNA também, mas meus próximos jogos 2D nessas plataformas ficarão muito melhores, e provavelmente levarei menos tempo para programar, pois **aprendi muitas coisas desenvolvendo para plataformas diferentes com tecnologias distintas.** Praticamente tudo que utilizei aprendi fuçando nos exemplos do [XNA Creators Club](http://creators.xna.com/ "Creators Club") e nas dúvidas no forum, são ótimas fontes de informações.
 
 Meu próximo passo agora é começar a estudar programação de jogos em 3D com C++. Este estudo é o primeiro passo para o meu **TCC ano que vem**, que provavelmente será um jogo em 3D com C++. Tenho algumas idéias para o jogo, mas nada decidido ainda, porém preciso aprender este tipo de programação, que eu tive contanto apenas no XNA para movimentação de modelos 3D simples na tela.
-
-

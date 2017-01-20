@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como são alguns dos maiores estúdios de jogos do mundo
-date: 1970-01-16 08:05:30.000000000 -03:00
 ---
 
 Muitos se perguntam como é trabalhar em uma empresa de jogos, e é algo realmente legal. No Brasil, os estúdios são pequenos, com poucas personalizações, mas lá fora existem empresas com estúdios realmente grandes. Tão grandes que possuem complexos com prédios, quadras esportivas, academia, biblioteca de jogos, sala de jogos, restaurantes, cafeterias, entre várias outras coisas para fazer seus funcionários felizes e deixar todo mundo com vontade de trabalhar em um ambiente assim.

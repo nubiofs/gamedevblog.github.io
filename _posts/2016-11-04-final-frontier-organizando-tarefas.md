@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 'Final Frontier: Organizando tarefas'
-date: 1970-01-17 23:38:30.000000000 -03:00
 ---
+
 No [post anterior](http://gamedeveloper.com.br/final-frontier-detalhes-do-inventario/) sobre o projeto houve pouco progresso por que meus dias estavam corridos, porém estas duas últimas semana foram ainda mais corridas e não conseguir trabalhar projeto na Unity, porém conseguir pelo menos organizar as tarefas do projeto.
 
 **Organizando a casa**

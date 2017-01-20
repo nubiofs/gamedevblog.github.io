@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como montar um grid 3D com XNA
-date: 1970-01-15 12:53:30.000000000 -03:00
 ---
 
 Uma das coisas que tenho estudando bastante ultimamente, além da Unity e de C++, é o XNA. Por ser algo gratuito e bem difundido pela Microsoft, é bem fácil de encontrar ajuda na internet sobre qualquer coisa que você quer fazer ou algum erro estranho, principalmente no fórum oficial do [XNA Creators Club](http://forums.xna.com/forums/ "XNA Creators Club"), além dos exemplos e tutoriais que podem ser encontrados neste site. Mesmo assim, sempre existe aquele detalhe que você não consegue encontrar ou que simplesmente não funciona do jeito que deveria.
@@ -13,5 +12,3 @@ Primeiro eu tinha pensando em desenhar uma célula, e depois utilizar um conjunt
 <figure class="wp-caption aligncenter" id="attachment_391" style="width: 521px">![Código do Grid no XNA](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/02/codigo_grid01.gif "Código do Grid no XNA")<figcaption class="wp-caption-text">Código do Grid no XNA</figcaption></figure>Após montar o Grid em uma variável VertexPositionColor, basta utilizar o método DrawUserPrimitives() desenhando uma LineList. Para visualizar o Grid é necessário outras coisas além disso, como definir uma matrix de View e uma de Projeção, que são coisas bem mais básicas do que a lógica de desenhar um Grid. Além do XNA Creators Club, existe o [XNA MSDN Library](http://msdn.microsoft.com/en-us/library/bb200104.aspx "MSDN") da Microsoft, que também é muito útil para aprender.
 
 <figure class="wp-caption aligncenter" id="attachment_392" style="width: 564px">![Desenho do Grid em 3D](../content/images/2010/02/grid_01.jpg "Desenho do Grid em 3D")<figcaption class="wp-caption-text">Desenho do Grid em 3D</figcaption></figure><figure class="wp-caption aligncenter" id="attachment_393" style="width: 564px">![Desenho do Grid em 3D](http://gamedeveloper.com.br/blog/wp-content/uploads/2010/02/grid_02.jpg "Desenho do Grid em 3D")<figcaption class="wp-caption-text">Desenho do Grid em 3D</figcaption></figure>Espero que isto seja útil para quem está aprendendo XNA. Qualquer dúvida é só perguntar nos comentários!
-
-

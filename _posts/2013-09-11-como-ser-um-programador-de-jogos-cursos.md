@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Cursos'
-date: 1970-01-16 20:01:44.000000000 -03:00
 ---
 
 Essa parte é bem polêmica, pois profissionais da área tem uma opinião diferente dos acadêmicos. Poucos profissionais da área dão aula em cursos de desenvolvimento de jogos, e muitos acadêmicos que dão aula nunca fizeram um jogo e publicaram. Eu acreditava que muitos profissionais não davam aula por falta de tempo, mas quando dei aula no final do ano passado de XNA comecei a perceber o real motivo.
@@ -17,5 +16,3 @@ Você quer programar jogos? Então faça Ciência da Computação ou Engenharia 
 O que eu quero deixar claro aqui é que você precisa aprender a programar antes de aprender a programar games, e que um curso de programação de games vai te mostrar uma base bem básica, e que continuar depende apenas de você. Uma coisa que eu não consigo concordar é ver professores que nunca fizeram um jogo ensinando como desenvolver games, isso não faz o menor sentido. O que você acha de um médico que teve aula de cirurgia específica com um professor que nunca fez uma esta cirurgia, apenas leu sobre o assunto?
 
 Tudo que falei neste tópico foi focado para programadores, e falei apenas em relação à cursos no Brasil. Porém, muitas dessas coisas são verdade para outras áreas também, pense bem antes de começar um curso de games, muitas vezes  você aprenderá mais com [livros](http://gamedeveloper.com.br/category/livro/ "Livros"). Porém algumas pessoas precisam ver esta base em um curso, mesmo que seja básico.
-
-

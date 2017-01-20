@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como foi a SBGames
-date: 1970-01-16 21:05:50.000000000 -03:00
 ---
 
 Este ano, o Simpósio Brasileiro de Desenvolvedores de Games foi realizado na Universidade Presbiteriana Mackenzie em São Paulo, e mostrou, principalmente, as pesquisas que os acadêmicos estão realizando na área de games no Brasil.
@@ -23,5 +22,3 @@ Abaixo estão alguns vídeos gravados pelo [André Kishimoto](http://kishimoto.c
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/U1Dtn0jY8Bg?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
 
  
-
-

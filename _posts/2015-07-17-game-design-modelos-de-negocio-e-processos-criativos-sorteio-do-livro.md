@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Game Design: Modelos de Negócio e Processos Criativos - sorteio do livro!'
-date: 1970-01-17 12:12:57.000000000 -03:00
 ---
 
 Escrito pelo brasileiro [Vicente Martin Mastrocola](https://twitter.com/vincevader) e público pela editora [Cengage Learning](http://www.cengage.com.br/ls/game-design-modelos-de-negocio-e-processos-criativos/), este livro aborda de forma resumida como funciona o processo criativo para se criar um jogo, passando por modelos de negócio e com alguns cases e entrevistas de desenvolvedores brasileiros. Confira no final do post como participar do sorteio deste livro!
@@ -19,5 +18,3 @@ Por ser curto é uma leitura bem rápida, e vale a pena para relembrar alguns co
 **A editora em enviou este livro para fazer esta review e me pediu para sorteá-lo para os leitores do blog, e para participar basta me enviar um e-mail (bruno@gamedeveloper.com.br) com o assunto “<span style="text-decoration: underline;">SORTEIO GAME DESIGN</span>” e qualquer coisa engraçada nele (na verdade só preciso do título do e-mail para poder fazer o sorteio, mas uma imagem engraçada é sempre bem vinda!). **
 
 Você tem até o dia** 3 de Agosto de 2015** para enviar seu e-mail, e o ganhador será anunciado após o término do sorteio. Lembrando que para participar do sorteio basta me enviar um e-mail com aquele assunto, o conteúdo engraçado é opcional :). Participe!
-
-

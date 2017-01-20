@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Game engine: FlatRedBall (XNA)'
-date: 1970-01-16 01:25:10.000000000 -03:00
 ---
 
 [![FlatRedBall](http://gamedeveloper.com.br/blog/wp-content/uploads/2011/07/Frblogo_white512.png "FlatRedBall")](http://www.flatredball.com/)
@@ -19,5 +18,3 @@ Há um ano atrás, quando usei a FlatRedBall, a sua [documentação](http://www.
 É importante entender que a FlatRedBall utiliza os recursos do XNA como base, então é como seu seu framework complementasse o framework do XNA, **tornando a vida do programador mais fácil**. Existem outros frameworks que podem ser utilizados com o XNA, e também há a possibilidade de fazer o jogo inteiro apenas com o XNA, você apenas terá mais trabalho para programar coisas básicas, como efeitos relacionados à Física ou Animações, por exemplo.
 
 A FlatRedBall é um framework bem fácil de utilizar, mesmo para quem nunca programou em C# e usou XNA. Sua arquitetura e conceitos são bem fáceis de entender e usar. Outro ponto legal é que se você fizer um jogo com a FlatRedBall, ele pode ser [incluído no site oficial da engine](http://www.flatredball.com/frb/docs/?title=Category:Official_FRB_Games "Jogos"), o único requisto é ter uma splas no início do jogo com o logo da FlatRedBall. O [**Oniro** está lá no site](http://www.flatredball.com/frb/docs/index.php?title=Games:Oniro "Oniro") deles, entre os jogos para PC.
-
-

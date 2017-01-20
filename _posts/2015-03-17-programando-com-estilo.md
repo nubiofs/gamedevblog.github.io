@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Programando com estilo'
-date: 1970-01-17 09:17:04.000000000 -03:00
 ---
 
 Faz um bom tempo desde que escrevi o último post desta série, mas agora pretendo voltar com a frequência de 1 post por semana sobre como como ser um programador de jogos. Por mais que o título seja sobre programação, muitas dicas já apresentadas são úteis para todas as áreas.
@@ -20,5 +19,3 @@ Muitas empresas de tecnologia tem este tipo de documento, porém poucas publicam
 Vale a pela ler antes de programar, e se for o caso procure algo voltado para a linguagem de programação que você está utilizando no momento. E você, conhece algum guia que faltou aqui?
 
 Veja todos os posts desta série [clicando aqui](http://gamedeveloper.com.br/category/como-programar-jogos/ "Como ser um programador de jogos")!
-
-

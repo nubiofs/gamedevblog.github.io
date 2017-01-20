@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Dominando o Android: do básico ao avançado'
-date: 1970-01-17 11:05:00.000000000 -03:00
 ---
 
 Este livro escrito pelo [Nelson Glauber](http://www.nglauber.com.br/) tem praticamente tudo que você precisa para desenvolver jogos e apps para [Android](http://developer.android.com). Em quase 800 páginas divididas em 26 capítulos, o autor descreve desde conceitos básicos até como desenvolver para  Android Wear.
@@ -25,5 +24,3 @@ Para terminar o livro com chave de ouro, o autor dedica um capítulo inteiro ao 
 O Android é um sistema operacional que nunca para de evoluir. Eu lembro de quando comecei a trabalhar com o Android 1.6 na Glu em 2010, e como hoje é praticamente outro sistema. Sem dúvidas foi muito importante na minha carreira aprender mais sobre o Android (assim como sobre o iOS e Windows Phone). Mesmo que meu foco sempre foi jogos, conhecer esses detalhes geralmente mais utilizados em aplicativos fez toda diferença.
 
 Muito obrigado a [Editora Novatec](http://novatec.com.br/ "Novatec") por me enviar este livro para fazer esta review. Você pode comprar [este livro](http://www.novateceditora.com.br/livros/dominandoandroid/ "Livro Android") e outros no site da Novatec, utilize o código **GAMEDEVELOPER** para ter desconto na compra!
-
-

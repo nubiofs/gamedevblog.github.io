@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Como será 2013 para os desenvolvedores independentes
-date: 1970-01-16 14:53:39.000000000 -03:00
 ---
 
 Tenho que começar esse post pedindo desculpas pela falta de novos posts aqui no blog, fiquei sem tempo pra escrever aqui nos últimos meses, mas agora vou voltar a manter este blog atualizado! Pra começar o ano, decidi escrever sobre as novidades e tendências este ano para os desenvolvedores de jogos independentes.
@@ -71,5 +70,3 @@ Não conheço muitos detalhes de como funciona para publicar um jogo, mas existe
 **O blog**
 
 Infelizmente, o blog ficou alguns meses parados. Porém, nesse tempo, eu fiquei organizando muita coisa que quero postar aqui, então logo os posts serão mais frequentes. Além disso, em breve o blog ganhará um novo layout que já está em desenvolvimento, e muitas novidades virão! Aguardem! =)
-
-

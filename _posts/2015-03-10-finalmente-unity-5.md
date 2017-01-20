@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Finalmente, Unity 5
-date: 1970-01-17 09:05:13.000000000 -03:00
 ---
 
 Depois de pelo menos 2 anos após seu anúncio, finalmente a [Unity 5 foi lançada](http://blogs.unity3d.com/2015/03/03/unity-5-launch/ "Unity 5") durante a GDC e algumas mudanças na licença da engine vieram junto: Agora ela é free para todas as plataformas (com suas devidas limitações).
@@ -19,5 +18,3 @@ Vale lembrar que se você utiliza muitos plugins no seu projeto, pense bem e tes
 Outra dica: utilize o [Unity Cloud Build](https://build.cloud.unity3d.com "Cloud"), é uma ferramente incrível e que salva muito tempo do desenvolvedor na hora de gerar builds. É também uma boa alternativa para QAs, após o fim do [TestFlight](https://developer.apple.com/testflight/update/ "TestFlight").
 
  
-
-

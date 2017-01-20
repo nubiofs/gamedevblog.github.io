@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Manual de Produção de Jogos Digitais
-date: 1970-01-17 16:10:15.000000000 -03:00
 ---
 
 Existem alguns livros que são tão únicos na abordagem de seus assuntos que se tornam referência e sempre são recomendados para quem tem interesse de estudar seu assunto específico. Isto acontece com este livro que, como o próprio título diz, é um [manual para produção de jogos digitais](http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830).
@@ -21,5 +20,3 @@ O restante do livro tem um foco maior no papel do produtor e são apresentados e
 Em resumo, este é um livro obrigatório para qualquer pessoa que quer trabalhar com jogos, não importante se é um desenvolvedor independente ou não. Este livro serve para programadores, artistas, designers, músicos e, é claro, produtores.
 
 Muito obrigado a editora [Bookman](http://www.grupoa.com.br/livros/gerenciamento-de-projetos/manual-de-producao-de-jogos-digitais/9788540701830) por me enviar está cópia para fazer esta review! Você pode comprar este livro no site da editora ou em outras livrarias virtuais.
-
-

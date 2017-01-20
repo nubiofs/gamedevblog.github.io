@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Uma retrospectiva dos 3 anos do blog e da minha carreira na indústria de jogos
-date: 1970-01-16 07:23:46.000000000 -03:00
 ---
 
 Nem parece, mas este blog já está há 3 anos no ar. Em abril de 2009, eu era um recém formado Bacharel em Ciência da Computação, trabalhava como Analista de Sistemas, estava no primeiro semestre da minha pós-graduação em Produção e Programação de Jogos, e estava começando minha a estudar desenvolvimento de jogos.

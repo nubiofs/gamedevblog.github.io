@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Imagens de botões para usar em jogos
-date: 1970-01-17 02:13:46.000000000 -03:00
 ---
 
 As vezes queremos usar imagens de botões de controles nos jogos para algum tutorial ou mesmo em interfaces touch como botões de ação, e este pack com vários botões de controles de consoles pode ajudar bastante.
@@ -13,5 +12,3 @@ Você pode baixar todos os botões em imagens individuais [clicando aqui](http:/
 [![](../content/images/2014/05/FREE-Keyboard-Controller-Prompts-Pack-928x1024.jpg "FREE Keyboard & Controller Prompts Pack")](../content/images/2014/05/FREE-Keyboard-Controller-Prompts-Pack.jpg)
 
 Fonte: [http://puu.sh/7bBk0](http://puu.sh/7bBk0 "http://puu.sh/7bBk0")
-
-

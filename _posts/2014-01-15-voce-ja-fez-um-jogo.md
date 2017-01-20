@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Você já fez um jogo?'
-date: 1970-01-16 23:03:28.000000000 -03:00
 ---
 
 Em primeiro lugar, peço desculpas por não ter postado nesta série nas últimas semanas. Mas agora eu voltarei a publicar semanalmente, toda quarta-feira, e no primeiro post deste ano começo com a pergunta: você já fez um jogo?
@@ -15,5 +14,3 @@ Não faz sentido fazer um jogo e não divulgar para todos jogarem. Você pode fa
 Portanto, se você desenvolveu jogos e não publicou nenhum deles, você **NÃO** fez um jogo. E isso vale para toda forma de arte, se você não divulgar o que você faz para as pessoas verem e darem seu feedback, você não pode se considerar um artista. Não seja tímido e não tenha vergonha, mostre para o mundo seu trabalho, e então você poderá falar que faz jogos.
 
 O meu portfólio está desatualizado desde que terminei a minha pós-graduação em 2010, então lá não estão os jogos que desenvolvi na [Glu Mobile](http://glu.com "Glu"), [Electronic Arts](http://ea.com "EA") e freelances. Em breve vou montar uma página nova para mostrar todos os jogos que participei do desenvolvimento, mas por enquanto vocês podem ver o meu [portfólio aqui](http://cicanci.com "Portfolio").
-
-

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Primeiro volume da série Vida de Programador
-date: 1970-01-17 04:36:22.000000000 -03:00
 ---
 
 O blog [Vida de Programador](http://vidadeprogramador.com.br/ "Vida de Programador") está lançando o seu primeiro livro com uma coletânea das suas melhores tirinhas que mostram o dia-a-dia do profissional de T.I.
@@ -45,5 +44,3 @@ Título: Vida de Programador
  ISBN: 978-85-7522-320-8  
  Número de páginas: 136  
  Preço: R$ 29,00
-
-

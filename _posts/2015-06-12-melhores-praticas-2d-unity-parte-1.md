@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Melhores práticas para 2D na Unity - Parte 1
-date: 1970-01-17 11:22:02.000000000 -03:00
 ---
 
 Trabalhei em um projeto grande utilizando a [Unity](http://unity3d.com/), e aprendi tanta coisa útil sobre otimização para jogos 2D durante o desenvolvimento que vale a pena compartilhar por aqui.
@@ -37,5 +36,3 @@ Toda imagem carregada na memória é convertida em um tamanho POT (Power Of Two,
 Eu pesquisei bastante sobre qual seria a melhor resolução para fazer um jogo mobile na Unity, e embora muitos digam que o melhor é partir da maior resolução, eu acho que aqui está um item chave para melhorar o jogo. A maior resolução recomendada é do iPad com retina 2048×1536. Porém, quando convertida para POT esta imagem vai ter o tamanho de aproximadamente 2048×2048 e muitos bytes transparentes.
 
 Na parte 2 vou abordar as melhores práticas usando NGUI (que também servem para o 2D da Unity) e como utilizar sprite sheets no jogo. Na parte 3 vou dar algumas dicas para otimização de código. Se você tem alguma dúvida ou dica relacionada ao assunto é só comentar abaixo!
-
-

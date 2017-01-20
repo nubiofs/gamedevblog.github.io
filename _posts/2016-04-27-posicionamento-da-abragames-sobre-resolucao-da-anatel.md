@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Posicionamento da Abragames sobre resolução da Anatel
-date: 1970-01-17 19:03:41.000000000 -03:00
 ---
+
 Acredito que a maioria dos usuários de internet no Brasil já está sabendo da ideia ridícula de algumas empresas de [limitar a internet](http://gizmodo.uol.com.br/usuarios-criticam-limite-internet-fixa/) e cobrar para que o usuário continue navegando, transformando o modelo de cobrança da internet fixa no modelo de cobrança de internet móvel.
 
-E, é claro, sempre da pra deixar uma situação pior ou mais ridícula. O presidente da Anatel, a agência reguladora de serviços de telecomunicação, deu uma declaração infeliz em uma coletiva de imprensa onde ele demonstrou ser desinformado, segregador e preconceituoso em relação aos video games. A Abragames fez uma carta com seu posicionamento sobre o assunto, e eu achei tão esclarecedora e importante para nossa pequena indústria que decidi publicar aqui na integra. 
+E, é claro, sempre da pra deixar uma situação pior ou mais ridícula. O presidente da Anatel, a agência reguladora de serviços de telecomunicação, deu uma declaração infeliz em uma coletiva de imprensa onde ele demonstrou ser desinformado, segregador e preconceituoso em relação aos video games. A Abragames fez uma carta com seu posicionamento sobre o assunto, e eu achei tão esclarecedora e importante para nossa pequena indústria que decidi publicar aqui na integra.
 
 > A [Abragames](http://www.abragames.org), Associação Brasileira das Desenvolvedoras de Jogos Eletrônicos, vem, por meio desta, manifestar seu posicionamento contrário ao movimento feito pela Anatel para permitir que operadoras limitem e cortem o uso de dados em conexões de banda larga no Brasil e, mais ainda, vem tornar público sua condenação às declarações do Presidente da Anatel, Sr. João Rezende, de culpar os games e seus jogadores pela medida.
 
@@ -16,7 +16,7 @@ E, é claro, sempre da pra deixar uma situação pior ou mais ridícula. O presi
 
 > Em **primeiro lugar**, a limitação e o corte prejudicarão diretamente todos os pequenos estúdios de desenvolvimento de games, maioria no Brasil e na Abragames. Uso de internet e transferência de grande volume de dados é parte corriqueira do trabalho com desenvolvimento de jogos. Limitar isso trará, na melhor das hipóteses, aumento nos custos fixos diretos das desenvolvedoras. E, no pior dos casos, impossibilidade de desenvolver seus projeto com a infra-estrutura adequada - especialmente para competir no mercado global. A Abragames condena veementemente uma medida que prejudique o trabalho de suas associadas.
 
-> Em **segundo lugar**, não é o papel da Anatel julgar quem faz o quê com sua banda contratada. Segundo seu próprio site, “A missão da Anatel é promover o desenvolvimento das telecomunicações do País de modo a dotá-lo de uma moderna e eficiente infraestrutura de telecomunicações, capaz de oferecer à sociedade serviços adequados, diversificados e a preços justos, em todo o território nacional”. Não existe qualquer menção sobre mensurar e avaliar o que os cidadãos fazem com seus dados contratados. Fica claro que o posicionamento com relação a jogar é inadequado e fora da alçada da Agência reguladora. Entendemos que qualquer um pode fazer o uso que bem entender de seu acesso à internet, desde que dentro da lei. 
+> Em **segundo lugar**, não é o papel da Anatel julgar quem faz o quê com sua banda contratada. Segundo seu próprio site, “A missão da Anatel é promover o desenvolvimento das telecomunicações do País de modo a dotá-lo de uma moderna e eficiente infraestrutura de telecomunicações, capaz de oferecer à sociedade serviços adequados, diversificados e a preços justos, em todo o território nacional”. Não existe qualquer menção sobre mensurar e avaliar o que os cidadãos fazem com seus dados contratados. Fica claro que o posicionamento com relação a jogar é inadequado e fora da alçada da Agência reguladora. Entendemos que qualquer um pode fazer o uso que bem entender de seu acesso à internet, desde que dentro da lei.
 
 > Em **terceiro lugar**, o conteúdo da fala e o tom utilizado levantam preocupações com uma série de conceitos que condenamos: **preconceito**, **segregação** e **desinformação**.
 

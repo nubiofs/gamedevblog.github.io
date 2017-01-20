@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Estatísticas de hardware desktop e mobile
-date: 1970-01-17 11:39:47.000000000 -03:00
 ---
 
 Uma das principais preocupações de um programador de games é a performance do seu jogo e qual é o hardware mínimo que ele pode rodar, seja mobile ou desktop. Mas pra isso, primeiro você precisa saber quais são os hardwares mais usados para jogar.
@@ -27,5 +26,3 @@ Nem preciso dizer o quanto isto é valioso para desenvolvedores indie, pois comb
 Mesmo se você não estiver desenvolvendo algo neste momento que precise destas informações, é bem interessante ver quais são os hardwares mais utilizados por jogadores (eu geralmente olho as estatísticas da Steam para ver se meu desktop vai precisar de um upgrade ou não).
 
 Imagem da capa: [Flat Design Vector Illustration Concept of Game Environemnt](http://www.shutterstock.com/pic-180754775/stock-vector-flat-design-vector-illustration-concept-of-game-environment-tools-and-essentials-various-devices.html?src=csl_recent_image-1) do Shutterstock.
-
-

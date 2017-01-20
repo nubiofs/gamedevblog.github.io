@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Usar ou não usar game engines ou frameworks?
-date: 1970-01-17 10:00:19.000000000 -03:00
 ---
 
 Quando começamos a desenvolver jogos é mais fácil e prático utilizar soluções prontas para desenvolver jogos, porém grandes empresas da indústria de games criam seus próprios frameworks e engines. Mas, hoje em dia, não são apenas as empresas grandes que estão optando por criar suas próprias soluções.
@@ -17,5 +16,3 @@ Eu acho isto algo incrível, pois muitas vezes não é necessário mais do que j
 Se você está começando um jogo com muito tempo disponível ou sem pressa para lançar, eu recomendo a abordagem de criar o próprio framework para fins de estudo. É claro que não é só juntar frameworks como peças de LEGO e esperar que tudo funcione, mas existem livros muito bons sobre este assunto, com o [Game Engine Architecture](http://www.amazon.com/Engine-Architecture-Second-Jason-Gregory-ebook/dp/B00MMOJ076/ref=sr_1_1?s=books&ie=UTF8&qid=1429219288&sr=1-1&keywords=game+engine "Amazon"). Só lembrando que engines e frameworks prontos possuem diversas pessoas trabalhando para que eles sejam bons e estáveis, mas que esta abordagem de criar sua própria tecnologia ensina muito mais do que apenas utiliza-los.
 
 Imagem da capa: [Flat Modern Design](http://www.shutterstock.com/pic-211247059/stock-vector-flat-modern-design-vector-illustration-concept-of-creative-office-room-interior-workspace.html?src=0vXV1I7QZT1OQ65QVUoYfg-1-3 "Shutterstock") do Shutterstock.
-
-

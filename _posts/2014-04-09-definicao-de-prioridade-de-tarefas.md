@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Como ser um programador de jogos: Definição de prioridade de tarefas'
-date: 1970-01-17 01:04:44.000000000 -03:00
 ---
 
 Assim como em qualquer projeto, existem tarefas e elas necessitam de prioridade para você saber quais são mais importantes e urgentes. No desenvolvimento de um jogo, muitas vezes as tarefas podem ter dependência com outras áreas, como arte ou som, porém mesmo com dependências podemos definir prioridades nas tarefas.
@@ -22,5 +21,3 @@ A seguir está um exemplo de uma tarefa quebrada em outras menores, e (ordenado 
 - Testar a jogabilidade e refinar até ficar boa e constante
 
 </td></tr></tbody></table>Uma boa dica é utilizar ferramentas como o [Trello](http://trello.com "Trello") para organizar as tarefas. [Este post](http://gamedeveloper.com.br/blog/2014/01/22/gerenciamento-do-seu-tempo/ "Gerenciamento de Tempo") é legal para saber mais sobre o Trello e outras ferramentas e técnicas para organização do tempo, que podem ser úteis na organização das tarefas do projeto.
-
-

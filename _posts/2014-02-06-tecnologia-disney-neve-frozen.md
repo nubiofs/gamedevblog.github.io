@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Tecnologia da Disney usada para fazer neve em Frozen
-date: 1970-01-16 23:35:12.000000000 -03:00
 ---
 
 O novo filme Frozen, da Disney, utiliza uma nova tecnologia criada pela Disney para simulação de neve, e o resultado é impressionante! Agora, imagine este tipo de tecnologia em jogos da nova geração?
@@ -19,5 +18,3 @@ Imagine só um jogo como Lost Planet ou Dead Space usando esta tecnologia da Dis
 Alias, o filme é muito bom, vale a pena assistir! =)
 
 <span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" frameborder="0" height="402" src="http://www.youtube.com/embed/TbQm5doF_Uc?version=3&rel=1&fs=1&autohide=2&showsearch=0&showinfo=1&iv_load_policy=1&wmode=transparent" type="text/html" width="660"></iframe></span>
-
-

@@ -1,21 +1,21 @@
 ---
 layout: post
 title: 'Final Frontier: Playground e destruição'
-date: 1970-01-17 20:45:17.000000000 -03:00
 ---
-Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o [Final Frontier](http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/). Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído. 
 
-O jogo está em desenvolvimento publicamente no [GitHub](https://github.com/cicanci/game-unity-ff), então dependendo de quando você ler este post pode ser que muita coisa tenha mudado. Mesmo assim, as dicas aqui podem ser aplicadas em seu projeto. 
+Este é o segundo post sobre o jogo que estou desenvolvendo no meu tempo livre, o [Final Frontier](http://gamedeveloper.com.br/inicio-do-projeto-final-frontier/). Neste post vou falar sobre como estou usando o playground para descobrir a mecânica do jogo e também como fiz um modelo 3D ser destruído.
+
+O jogo está em desenvolvimento publicamente no [GitHub](https://github.com/cicanci/game-unity-ff), então dependendo de quando você ler este post pode ser que muita coisa tenha mudado. Mesmo assim, as dicas aqui podem ser aplicadas em seu projeto.
 
 **Como brincar no playground**
 
 Como disse no post anterior, o [playground](http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-playground/) não é um [protótipo](http://gamedeveloper.com.br/como-ser-um-programador-de-jogos-prototipos/). O playground é usado para experimentar ideias, enquanto o protótipo é usado para validar o gameplay. Por isso, existem algumas boas práticas que eu gosto de seguir aqui.
 
-A primeira dica é deixar bem claro o que pertence ao playground no projeto. Como o playground pode fazer parte do projeto de um protótipo ou da versão final, é comum utilizar scripts e assets de test ou finais no playground. No meu caso eu estou usando este playground antes de iniciar o desenvolvimento do protótipo, então decidi separar prefabs e scripts em uma pasta "Playground". 
+A primeira dica é deixar bem claro o que pertence ao playground no projeto. Como o playground pode fazer parte do projeto de um protótipo ou da versão final, é comum utilizar scripts e assets de test ou finais no playground. No meu caso eu estou usando este playground antes de iniciar o desenvolvimento do protótipo, então decidi separar prefabs e scripts em uma pasta "Playground".
 
 ![](/content/images/2016/07/project-organization.png)
 
-Os scripts estão dentro de um namespace chamado "Playground", e quando usados exibem o log de warning abaixo. Este é uma dica que aprendi recentemente lendo a [entrevista do John Romero](http://gamedeveloper.com.br/dicas-de-john-romero/), onde ele fala que é sempre bom exibir na tela o que está acontecendo, principalmente o que não é esperado. Como este projeto deve crescer e ter muitos scripts e prefabs, eu quero ter certeza de que algum prefab com script de playground será esquecido no jogo. 
+Os scripts estão dentro de um namespace chamado "Playground", e quando usados exibem o log de warning abaixo. Este é uma dica que aprendi recentemente lendo a [entrevista do John Romero](http://gamedeveloper.com.br/dicas-de-john-romero/), onde ele fala que é sempre bom exibir na tela o que está acontecendo, principalmente o que não é esperado. Como este projeto deve crescer e ter muitos scripts e prefabs, eu quero ter certeza de que algum prefab com script de playground será esquecido no jogo.
 
 ![](/content/images/2016/07/playground-warnings.png)
 

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Jogos de tabuleiro e sua relação com jogos digitais
-date: 1970-01-17 13:20:23.000000000 -03:00
 ---
 
 Acredito que muitos desenvolvedores de jogos (e jogadores) têm uma paixão especial por jogos de tabuleiro, principalmente jogos diferentes e desafiadores. Neste post quero falar sobre a relação deles com jogos digitais, e como funciona a conversão de um para o outro.
@@ -38,5 +37,3 @@ Pensando nisso, a versão digital só permite multiplayer local se cada jogador 
 Outros jogos podem ser um pouco mais complicados de se adaptar, e exigir muitas regras e itens, como é o caso do [XCOM: Enemy Unknown](http://store.steampowered.com/app/200510) e o [XCOM: Board game](http://www.galapagosjogos.com.br/jogos/xcom-board-game). Outros exemplos são card games famosos como [Magic: The Gathering](https://itunes.apple.com/us/app/magic-2015/id672924134?mt=8) e [Pokémon Trading Card Game](https://itunes.apple.com/us/app/pokemon-tcg-online/id841098932?mt=8) que também tiveram suas versões digitais lançadas.
 
 Comecei a jogar card games com Pokemon há muito tempo, depois conheci Magic e muitos outros. Recentemente comecei a me interessar mais por board games, e provavelmente vou fazer mais posts sobre este assunto no futuro.
-
-

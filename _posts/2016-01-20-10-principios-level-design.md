@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 10 princípios para um bom level design
-date: 1970-01-17 16:41:05.000000000 -03:00
 ---
 
 Há quase 3 anos atrás li um post muito bom do game designer [Dan Taylor](http://www.gamasutra.com/blogs/author/DanTaylor/543613/) no [gamasutra](http://www.gamasutra.com) sobre dez princípios para um bom level design. Salvei o link para publicar aqui e acabei esquecendo, mas aqui está uma tradução/interpretação minha do resumo feito pelo autor.
@@ -37,5 +36,3 @@ Imagem da capa: [Game world computer game screen](http://www.shutterstock.com/pi
 Como estou tentando fazer um post por semana, quero aproveitar para começar algo novo e deixar no final do texto uma sugestão de algo que me chamou a atenção durante a semana, sempre tentando relacionar isto com desenvolvimento de jogos.
 
 Esta semana quero apresentar um card game chamado [Star Realms](http://www.starrealms.com/), que possui versão [física](http://www.starrealms.com/about-star-realms/) e [digital](http://www.starrealms.com/digital-game/) (gratuita) para várias plataformas. A versão digital veio depois e é incrivelmente fiel a versão física do jogo, e acredito que tenha sido desenvolvido utilizando [Unity](http://unity3d.com/). Apesar da mecânica do jogo ter sido muito bem implementada, a interface fica um pouco pequena em dispositivos móveis. O que me chamou mais a atenção neste jogo é a sua mecânica chamada *[deck building](https://en.wikipedia.org/wiki/Deck-building_game)*, que dá uma dinâmica incrível ao jogo.
-
-

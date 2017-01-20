@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Monetização de jogos e aplicativos com RevMob
-date: 1970-01-16 22:19:55.000000000 -03:00
 ---
 
 A RevMob é uma empresa brasileira que trabalha com publicidade de jogos, aplicativos e sites em dispositivos móveis. Conheça os tipos de anúncios que você pode colocar em seu jogo e quais são as boas práticas para monetizar sem irritar o jogador.
@@ -54,5 +53,3 @@ Os melhores locais para exibir este anúncio são bem parecidos com os indicados
 É muito fácil irritar um jogador com anúncios, por isso devem ser usados sempre com cautela. Outro coisa que deve ser evitada é usar todos os tipos de anúncios ao mesmo tempo, isso pode ser visto como spam pelo jogador. Um dos principais motivos que faz um jogador ficar irritado e até desinstalar um jogo é quando eles percebem a ganância do desenvolvedor em colocar muitos anúncios. Por isso, use o bom senso quando for adicionar anúncios. Quando colocados nos lugares corretos, e em uma frequência adequada, o resultado é melhor do que exibir o tempo todo.
 
 Lembre-se também de fazer uma versão do jogo paga sem anúncios, ou dar uma opção para o jogador comprar algum item e remover os anúncios do jogo, isso funciona na maioria das vezes quando o jogador gosta do jogo. Existem outras empresas que fazem este mesmo trabalho que a [RevMob](http://www.revmobmobileadnetwork.com/ "RevMob"), oferecer SDKs para integração do seu serviço em jogos mobile, como a [Admob](http://www.google.com/ads/admob/ "Admob") e a [Chartboost](https://www.chartboost.com/ "Chartboost").
-
-
