@@ -17,9 +17,15 @@ title: Home
     {{ post.date | date: "%B" }}
     {{ post.date | date: "%Y" }}
 
+    {% if post.tags != nil %}
     {% for tag in post.tags %}
-        : <a class="blog-post-tag" href="{{ site.baseUrl }}/category/{{ tag }}">{{ tag }}</a>
+        : <a class="blog-post-tag" href="{{ site.baseUrl }}/category/{{ tag }}">{{ tag | replace:'-',' ' }}</a>
     {% endfor %}
+    {% endif %}
+
+    {% if post.category != nil %}
+        : <a class="blog-post-tag" href="{{ site.baseUrl }}/category/{{ post.category }}">{{ post.category | replace:'-',' ' }}</a>
+    {% endif %}
   </p>
   {% if post.cover != nil %}
   <p class="blog-post-cover">

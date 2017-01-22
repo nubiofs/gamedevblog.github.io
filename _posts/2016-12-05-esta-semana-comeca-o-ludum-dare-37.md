@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 'Esta semana começa o Ludum Dare #37'
+tags:
+- gamedev
+cover: content/images/2016/12/LD2009-HighresNoShadow.jpg
 ---
 
 Na sexta-feira às 23h (horário de Brasilia) começa o [Ludum Dare #37](https://ldjam.com/), e desta vez será realizado pelo [novo site](https://ldjam.com/) (que ainda está em desenvolvimento). Ano que vem o Ludum Dare completa 15 anos e esta próxima edição irá testar este novo sistema que será utilizado para expandir esta game jam nas próximas edições.

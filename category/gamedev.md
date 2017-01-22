@@ -1,7 +1,7 @@
 ---
 layout: page_no_comments
-title: Away
-tag: away
+title: Game Dev
+tag: gamedev
 ---
 
 {% include category.html %}

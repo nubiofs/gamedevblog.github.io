@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Por que você faz ou quer fazer jogos?
+tags:
+- gamedev
+cover: content/images/2016/12/porque-gamedev-capa.jpg
 ---
 
 Acredito que se você está lendo este texto existem grandes chances de você querer desenvolver jogos ou já trabalhar na área. É muito provável que alto te motivou a querer isso, algo mais sério do que "escolhi por que eu gosto de jogar", já que exige muita dedicação para fazer carreira na indústria de jogos.

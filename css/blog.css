@@ -90,8 +90,8 @@ a:hover {
  */
 
 ul.nav a:hover {
- background-color: #ffdccd !important;
- color: #5c5160 !important;
+ background-color: #999 !important;
+ color: #eee !important;
  font-weight: bolder;
 }
 
@@ -105,7 +105,7 @@ ul.nav a:hover {
   margin: auto;
   overflow: auto;
   padding-top: 10px;
-  background-color: #ffdccd;
+  background-color: #999;
 }
 
 /* Active state gets a caret at the bottom */

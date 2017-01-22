@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ANCINE lança edital inédito para produção de jogos eletrônicos
+tags:
+- gamedev
+cover: content/images/2016/12/ancine-capa.jpg
 ---
 
 Recebi o e-mail abaixo e achei que seria interessante de postar aqui, embora seja um pouco em cima da hora.
