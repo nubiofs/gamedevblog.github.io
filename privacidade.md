@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: page_no_comments
 title: Política de Privacidade
-date: 1970-01-15 13:48:42.000000000 -03:00
 ---
 
 O [Game Developer](http://gamedeveloper.com.br "Game Developer") pode utilizar cookies e/ou web beacons quando um usuário tem acesso às páginas. Os cookies que podem ser utilizados associam-se (se for o caso) unicamente com o navegador de um determinado computador.
@@ -17,5 +16,3 @@ Usamos empresas de publicidade de terceiros para veicular anúncios durante a su
 - O usuário pode desativar o cookie DART visitando a [Política de privacidade da rede de conteúdo e dos anúncios do Google](http://www.google.com/privacy_ads.html "google").
 
 O usuário têm a possibilidade de configurar seu navegador para ser avisado, na tela do computador, sobre a recepção dos cookies e para impedir a sua instalação no disco rígido. As informações pertinentes a esta configuração estão disponíveis em instruções e manuais do próprio navegador.
-
-

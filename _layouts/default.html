@@ -40,13 +40,19 @@
 
     <div class="container">
 
+      <div class="blog-header">
+        <h1 class="blog-title">{{ site.title }}</h1>
+        <p class="lead blog-description">{{ site.description }}</p>
+      </div>
+
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-9 blog-main">
         {{ content }}
         </div><!-- /.blog-main -->
 
-        <div class="col-sm-4 blog-sidebar">
+        <!-- <div class="col-sm-2 col-sm-offset-1 blog-sidebar"> -->
+        <div class="col-sm-3 blog-sidebar">
         {% include sidebar.html %}
         </div><!-- /.blog-sidebar -->
 
@@ -63,6 +69,9 @@
     <script src="{{ site.baseUrl }}/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="{{ site.baseUrl }}/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Search engine -->
+    <script src="{{ site.baseUrl }}/js/lunr.min.js"></script>
+    <script src="{{ site.baseUrl }}/js/search.js"></script>
 
   </body>
 </html>

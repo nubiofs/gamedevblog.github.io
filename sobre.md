@@ -1,24 +1,27 @@
 ---
-layout: page
-title: About Me
+layout: page_no_comments
+title: Sobre
 ---
 
-<img class="blog-post-image" src="{{ site.baseUrl }}/uploads/sobre.jpg" alt="hey, Lika"/>
+Iniciei minha carreira na computação em 2005, quando comecei o curso de graduação em **Ciência da Computação** na Universidade São Judas Tadeu em São Paulo. Comecei a me interessar muito pela área de jogos quando fiz um estágio em Web Design na **Level Up! Games**, porém depois que saí desta empresa comecei a trabalhar com análise de sistemas e fiquei quase 4 anos desenvolvendo sistemas corporativos.
 
-Meu nome é **Letícia**, mas pode me chamar de **Lika**. Sou cristã, tenho 25 anos. Quero que meu blog pareça com um diário, ou seja, escrever sobre minhas experiências, opinões e ideias. Me faz feliz? Já faço um post.
+Meu TCC da gradução é aquele tipo de coisa que você só tem uma chance de estudar e fazer algo relacionado. Eu fiz  um Simulador de Circuitos Lógicos Quânticos, o **Qubit Online**, e realmente estudei Computação Quântica por mais de um ano, mas parei quando percebi que eu queria mesmo trabalhar com jogos.
 
-Para entender melhor o porque do nome que escolhi para o blog, quero contar à você algo que guardei a sete chaves e é a primeira vez que vou compartilhar sobre isso. Não é muito fácil e, talvez, para você possa parecer besteira, mas para mim era um peso enorme de se carregar sozinha.
+Decidi entrar na área de games quando terminei minha graduação em 2008, e em 2009 iniciei um curso de pós-graduação em **Games: Produção e Programação** no SENAC São Paulo. No final do curso, em 2010, comecei a trabalhar em uma empresa de jogos, a **Glu Mobile** (que fechou em 2011), como Engenheiro de Software da equipe que faz porting de jogos de celular para a América do Norte e embeds para EMEA. No início de 2011 entrei na **Electronic Arts** em São Paulo, também como Engenheiro de Software até o fechamento do estúdio em 2013. Depois de trabalhar como freelancer com projetos de jogos, trabalhei na **RevMob** desenvolvendo SDKs para exibir publicidade em jogos e aplicativos. Depois disso trabalhei na **2Mundos** como desenvolvedor de jogos até 2015. Atualmente trabalho na **Aquiris Game Studios** em Porto Alegre.
 
-Eu tenho depressão e nunca aceitei. Não aceitava ouvir sobre isso, pesquisar e nem que me fizessem alguma referência sobre o assunto. Até pronunciar a palavra era algo impossível. Sentia vergonha de sofrer desse mal do século e me sentia perdida porque não admitia ajuda alguma e nem que tinha essa doença. A pergunta que nunca saia da minha cabeça era: Por que eu?
+O TCC da minha pós-graduação é um jogo de aventura em plataforma em 2D desenvolvido com XNA, o **Oniro**. No meu [portfolio](http://cicanci.com) tem o link para download do jogo e mais informações sobre este projeto, além dos projetos que desenvolvi nas empresas acima.
 
-Convivo com isso desde meus 15 anos e apenas esse ano comecei a aceitar. Não é um processo fácil, ainda mais quando estamos na fase, do que os psicólogos chamam, de: “Negação” e “Barganha”. É um processo longo ir para a fase da “Aceitação” e admitir que precisa de ajuda.
+Neste blog estão diversos textos relacionados à matérias da pós-graduação, meus projetos pessoais para portfolio e informações sobre a indústria de games. Com o final da minha pós-graduação, devo escrever mais aqui, principalmente tutoriais e informações sobre tecnologias para desenvolvimento de jogos.
 
-**Feliz Assim** é o nome que eu escolhi para mostrar à você (que sofre ou não disso) e a mim mesma que são os detalhes que devemos prestar atenção, ser gratos por aquilo que temos no presente e notar que a felicidade se encontra em tudo o que nos dispomos a experimentar, sentir e viver. Se permitir, é o meu lema.
+**Participação em concursos e eventos:**
 
-Nas fases mais difíceis, são nas pessoas e em Deus que encontramos mais forças. Quando admitimos que precisamos de ajuda, ela não é negada. Pra mim, esse assunto ainda é difícil de compartilhar. Já tenho planos para criar um conteúdo sobre a minha vida com a depressão e com a depressão sendo cristã. Acredito que conseguirei ajudar os dois públicos.
+– Equipe vencedora do [Google Developer Bus com o aplicativo PowerUp](http://gamedeveloper.com.br/blog/2013/12/06/google-developer-bus-brasil/ "PowerUp") em 2013.  
+ – Finalista no concurso de jogos da [SBGames](http://gamedeveloper.com.br/blog/2013/10/25/como-foi-a-sbgames/ "SBGames") nas categorias “Melhor Jogo Completo” e “Melhor Jogo Mobile” com o [Combo Nuts](http://gamedeveloper.com.br/blog/2013/09/24/postmortem-combo-nuts/ "Combo Nuts") em 2013.  
+ – Finalista no e-Games do SENAC em 2010 com o jogo [Oniro](http://gamedeveloper.com.br/blog/2010/12/29/fim-do-tcc-da-pos-graduacao-oniro/ "Oniro") (meu TCC da pós-graduação).  
+ – Finalista no e-Games do SENAC em 2009 com o jogo [SpaceShip 4042](http://gamedeveloper.com.br/blog/2009/10/25/e-games-meu-jogo-com-xna/ "SpaceShip 4042") (versão para Windows).  
+ – 2º Lugar na Maratona de Programação da USJT em 2008.
 
-Com quase um ano de blog e muito apoio de amigos e familiares, eu criei o meu canal no YouTube. O meu apelido Lika, me inspirou e, como nome do canal, escolhi **Pocket Lika**. O mais interessante de tudo é que eu sei que meu nome Letícia significa **“alegria”**, **“felicidade”**. Então, venha ser feliz assim, com ou sem depressão. Nunca desista de buscar nos detalhes e no presente, o sentido de tudo que te faz querer viver!
+**Entre em contato:**
 
-Espero que você se divirta conforme leia sobre minha vida e isso nos torne mais próximos. Sinta-se à vontade para compartilhar algo comigo. Será incrível.
-
-<center>♥</center>
+E-mail: **bruno@gamedeveloper.com.br**
+Twitter: [cicanci](http://twitter.com)

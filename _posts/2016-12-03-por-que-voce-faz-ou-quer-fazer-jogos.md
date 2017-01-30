@@ -2,7 +2,7 @@
 layout: post
 title: Por que você faz ou quer fazer jogos?
 tags:
-- gamedev
+- game-dev
 cover: content/images/2016/12/porque-gamedev-capa.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page_no_comments
-title: Game Dev
-tag: gamedev
+title: Final Frontier
+tag: final-frontier
 ---
 
 {% include category.html %}

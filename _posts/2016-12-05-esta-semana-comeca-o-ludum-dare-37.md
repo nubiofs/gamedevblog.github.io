@@ -2,7 +2,7 @@
 layout: post
 title: 'Esta semana começa o Ludum Dare #37'
 tags:
-- gamedev
+- game-dev
 cover: content/images/2016/12/LD2009-HighresNoShadow.jpg
 ---
 

@@ -14,9 +14,9 @@ linkInstagram: https://www.instagram.com/cicanci
 
 # Blog Settings
 title: Game Developer
-description: Blog
+description: Desenvolvimento de jogos por Bruno Cicanci
 email: bruno@gamedeveloper.com.br
-paginate: 500
+paginate: 20
 permalink: pretty
 
 # Build Settings

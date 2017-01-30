@@ -1,4 +1,45 @@
+<!-- <div class="sidebar-module sidebar-module-inset">
+  <h4>Sobre</h4>
+  <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+</div> -->
+<div class="sidebar-module sidebar-module-inset">
+  <h4>Busca</h4>
+  <p>
+    <form class="navbar-form navbar-right" role="search" action="{{ site.baseUrl }}/busca" method="get">
+      <div class="input-group">
+        <input class="blog-nav-input form-control" type="search" id="search-box" name="query" placeholder="">
+        <div class="input-group-btn">
+          <button class="btn btn-link" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+        </div>
+      </div>
+    </form>
+  </p>
+  &nbsp;
+</div>
 <div class="sidebar-module">
+  <h4>Categorias</h4>
+  <ol class="list-unstyled">
+    <li><a href="{{ site.baseUrl }}/tag/como-programar-jogos">Como Começar</a></li>
+    <li><a href="{{ site.baseUrl }}/tag/game-dev">Game Dev</a></li>
+    <li><a href="{{ site.baseUrl }}/tag/livros">Livros</a></li>
+    <li><a href="{{ site.baseUrl }}/tag/meus-projetos">Projetos</a></li>
+    <li><a href="{{ site.baseUrl }}/tag/final-frontier">Final Frontier</a></li>
+    <li><a href="{{ site.baseUrl }}/tag/ludum-dare">Ludum Dare</a></li>
+  </ol>
+</div>
+<div class="sidebar-module">
+  <h4>Redes Sociais</h4>
+  <ol class="list-unstyled">
+    <li><a href="{{ site.linkFacebook }}" target="_blank">Facebook</a></li>
+    <li><a href="{{ site.linkTwitter }}" target="_blank">Twitter</a></li>
+    <li><a href="{{ site.linkBloglovin }}" target="_blank">Bloglovin</a></li>
+    <li><a href="{{ site.linkYoutube }}" target="_blank">YouTube</a></li>
+    <li><a href="{{ site.linkPinterest }}" target="_blank">Pinterest</a></li>
+    <li><a href="{{ site.linkInstagram }}" target="_blank">Instagram</a></li>
+  </ol>
+</div>
+
+<!-- <div class="sidebar-module">
   <h4 class="sidebar-module-title">Recent Posts</h4>
   <ol class="list-unstyled">
     {% for post in site.posts limit:5 %}
@@ -16,4 +57,4 @@
   <div class="sidebar-youtube">
     <iframe class="sidebar-youtube-video" src="https://www.youtube.com/embed/fiGIdyHLwLc" frameborder="0" allowfullscreen></iframe>
   </div>
-</div>
+</div> -->
