@@ -12,16 +12,3 @@ Decidi entrar na área de games quando terminei minha graduação em 2008, e em 
 O TCC da minha pós-graduação é um jogo de aventura em plataforma em 2D desenvolvido com XNA, o **Oniro**. No meu [portfolio](http://cicanci.com) tem o link para download do jogo e mais informações sobre este projeto, além dos projetos que desenvolvi nas empresas acima.
 
 Neste blog estão diversos textos relacionados à matérias da pós-graduação, meus projetos pessoais para portfolio e informações sobre a indústria de games. Com o final da minha pós-graduação, devo escrever mais aqui, principalmente tutoriais e informações sobre tecnologias para desenvolvimento de jogos.
-
-**Participação em concursos e eventos:**
-
-– Equipe vencedora do [Google Developer Bus com o aplicativo PowerUp](http://gamedeveloper.com.br/blog/2013/12/06/google-developer-bus-brasil/ "PowerUp") em 2013.  
- – Finalista no concurso de jogos da [SBGames](http://gamedeveloper.com.br/blog/2013/10/25/como-foi-a-sbgames/ "SBGames") nas categorias “Melhor Jogo Completo” e “Melhor Jogo Mobile” com o [Combo Nuts](http://gamedeveloper.com.br/blog/2013/09/24/postmortem-combo-nuts/ "Combo Nuts") em 2013.  
- – Finalista no e-Games do SENAC em 2010 com o jogo [Oniro](http://gamedeveloper.com.br/blog/2010/12/29/fim-do-tcc-da-pos-graduacao-oniro/ "Oniro") (meu TCC da pós-graduação).  
- – Finalista no e-Games do SENAC em 2009 com o jogo [SpaceShip 4042](http://gamedeveloper.com.br/blog/2009/10/25/e-games-meu-jogo-com-xna/ "SpaceShip 4042") (versão para Windows).  
- – 2º Lugar na Maratona de Programação da USJT em 2008.
-
-**Entre em contato:**
-
-E-mail: **bruno@gamedeveloper.com.br**
-Twitter: [cicanci](http://twitter.com)
