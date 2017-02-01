@@ -17,7 +17,7 @@ title: Game Developer
 description: Desenvolvimento de jogos por Bruno Cicanci
 email: bruno@gamedeveloper.com.br
 paginate: 20
-permalink: pretty
+permalink: none
 
 # Build Settings
 gems:

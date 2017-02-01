@@ -1,29 +1,47 @@
 ---
 layout: page_no_comments
-title: Archive
+title: Arquivo
 ---
 
-{% for post in site.posts %}
-  <p class="blog-post-title"><a href="{{ post.url }}">{{ post.title }}</a></p>
-  <p class="blog-post-info">
-    {% assign d = post.date | date: "%-d"  %}
-    {% case d %}
-      {% when '1' or '21' or '31' %}{{ d }}st
-      {% when '2' or '22' %}{{ d }}nd
-      {% when '3' or '23' %}{{ d }}rd
-      {% else %}{{ d }}th
-      {% endcase %}
-    {{ post.date | date: "%B" }}
-    {{ post.date | date: "%Y" }}
+<!-- Get the tag name for every tag on the site and set them
+to the `site_tags` variable. -->
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 
-    {% for tag in post.tags %}
-        : <a class="blog-post-tag" href="{{ site.baseUrl }}/category/{{ tag }}">{{ tag }}</a>
-    {% endfor %}
-  </p>
-  <div class="blog-post-excerpt">
-    {{ post.excerpt }}
-  </div>
-  <p class="blog-post-readmore">
-    <a href="{{ post.url }}">Read More</a>
-  </p>
-{% endfor %}
+<!-- `tag_words` is a sorted array of the tag names. -->
+{% assign tag_words = site_tags | split:',' | sort %}
+
+<!-- Build the Page -->
+
+<!-- List of all tags -->
+<ul class="search-result-title">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+    <li>
+      <a href="{{ site.baseUrl }}/tag/{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
+        <span>({{ site.tags[this_word].size }})</span>
+      </a>
+    </li>
+  {% endunless %}{% endfor %}
+</ul>
+
+<hr>
+
+<!-- Posts by Tag -->
+<div class="search-result-title">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
+    <br/>
+    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+    {% for post in site.tags[this_word] %}{% if post.title != null %}
+      <div>
+        <span style="float: left;">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </span>
+        <span style="float: right;">
+          {{ post.date | date_to_string }}
+        </span>
+      </div>
+      <div style="clear: both;"></div>
+    {% endif %}{% endfor %}
+  {% endunless %}{% endfor %}
+</div>
