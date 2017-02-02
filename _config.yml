@@ -6,11 +6,10 @@ baseUrl: http://localhost:4000
 
 # Social Media
 linkFacebook: https://www.facebook.com/GameDeveloperBlog
-linkTwitter: http://twitter.com/cicanci
-linkBloglovin: https://www.bloglovin.com/blogs/gamedeveloper-14224145
-linkYoutube: https://www.youtube.com/channel/UC2vCGD4eJkNwTMXMvFLT_nQ
-linkPinterest: https://br.pinterest.com/cicanci
-linkInstagram: https://www.instagram.com/cicanci
+linkTwitter: http://www.twitter.com/cicanci
+linkTwitterBlog: http://www.twitter.com/BlogGameDev
+linkYoutube: https://www.youtube.com/c/BrunoCicanci
+linkGithub: https://www.github.com/cicanci
 
 # Blog Settings
 title: gamedeveloper
