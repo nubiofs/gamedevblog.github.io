@@ -27,6 +27,11 @@ a:hover {
   color: #333;
 }
 
+img {
+    max-width: 700px;
+    height: auto;
+}
+
 /*
  * Override Bootstrap's default container.
  */
@@ -166,10 +171,6 @@ a:hover {
   color: #999;
 }
 
-.blog-post-cover img {
-  width: 700px;
-  height: auto;
-}
 
 /*
  * Footer
