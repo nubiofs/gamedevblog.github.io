@@ -198,3 +198,15 @@ img {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+
+/*
+ * Responsive stuff
+ */
+
+@media (max-width: 1000px) {
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+}
