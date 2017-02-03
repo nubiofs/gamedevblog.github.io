@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="blog-nav">
       <a class="blog-nav-item {% if page.url == '/' %}active{% endif %}" href="{{ site.baseUrl }}">Home</a>
-      <a class="blog-nav-item" href="http://cicanci.com" target="_blank">Portfolio</a>
+      <a class="blog-nav-item" href="{{ site.linkPortfolio }}" target="_blank">Portfolio</a>
       <a class="blog-nav-item {% if page.url contains '/contato' %}active{% endif %}" href="{{ site.baseUrl }}/contato">Contato</a>
       <a class="blog-nav-item {% if page.url contains '/sobre' %}active{% endif %}" href="{{ site.baseUrl }}/sobre">Sobre</a>
     </nav>

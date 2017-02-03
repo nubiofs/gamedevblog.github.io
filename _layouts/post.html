@@ -3,7 +3,7 @@ layout: default
 ---
 
 <p class="blog-post-title">{{ page.title }}</p>
-<p class="blog-post-info">
+<p class="blog-post-meta">
   {% for tag in page.tags %}
     <a href="{{ site.baseUrl }}/tag/{{ tag }}">{{ tag | replace:'-',' ' }}</a> |
   {% endfor %}
@@ -25,7 +25,9 @@ layout: default
 </p>
 {% endif %}
 
-{{ content }}
+<div class="blog-post-content">
+  {{ content }}
+</div>
 
 {% include related.html %}
 

@@ -24,7 +24,7 @@ a {
 }
 
 a:hover {
-  color: #333;
+  color: #555;
 }
 
 img {
@@ -59,12 +59,11 @@ img {
   display: inline-block;
   padding: 10px;
   font-weight: 500;
-  color: #eee;
+  color: #fff;
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
   color: #fff;
-  text-decoration: none;
 }
 
 .blog-nav-input {
@@ -169,6 +168,19 @@ img {
 .blog-post-meta {
   margin-bottom: 20px;
   color: #999;
+}
+.blog-post-meta a {
+  color: #999;
+}
+.blog-post-meta a:hover {
+  color: #999;
+}
+
+.blog-post-content a {
+  text-decoration: underline;
+}
+.blog-post-content a:hover {
+  text-decoration: none;
 }
 
 
