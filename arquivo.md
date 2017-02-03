@@ -17,7 +17,7 @@ to the `site_tags` variable. -->
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <li>
-      <a href="{{ site.baseUrl }}/tag/{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
+      <a href="{{ site.baseUrl }}/tag/{{ this_word | cgi_escape }}" class="tag">{{ this_word | replace:'-',' ' }}
         <span>({{ site.tags[this_word].size }})</span>
       </a>
     </li>
@@ -31,7 +31,7 @@ to the `site_tags` variable. -->
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <br/>
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+    <h2 id="{{ this_word | cgi_escape }}">{{ this_word | replace:'-',' ' }}</h2>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div>
         <span style="float: left;">
