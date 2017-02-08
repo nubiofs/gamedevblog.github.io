@@ -23,8 +23,11 @@ post_dirs: false
 # Build Settings
 gems:
   - jekyll-paginate
+  - jekyll-feed
 exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
   - README.md
+feed:
+  path: rss.xml
