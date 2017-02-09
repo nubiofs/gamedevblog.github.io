@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>Prototype - HTML5</title>
+		
+		<style type="text/css">
+			body {
+			  margin:0;
+			  padding:0;
+              font-family: Helvetica, Verdana, Arial;
+			}
+			canvas {
+			  display:block;
+			  /*margin:20px auto 0;*/
+			  /*border:1px dashed #ccc;*/
+			  border:1px solid #FF0000;
+			  background-color: #FFFFFF;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+    
+        <script type="text/javascript">
+            var width = window.innerWidth - 2;
+            var height = window.innerHeight - 32;
+            var framerate = 30;
+			var debug = true;
+        </script>
+	
+		<canvas id="canvas">
+			Browser not compatible with HTML5 canvas
+		</canvas>
+	
+		<button type="button" onclick="jump()">Marie Galante</button> 
+        Speed: <input type="text" name="txtSpeed" id="txtSpeed" value="30" style="width:40px;" />
+        Angle: <input type="text" name="txtAngle" id="txtAngle" value="45" style="width:40px;" />
+	
+		<script type="text/javascript">
+        
+			//game gobal variables
+			var canvas, context2D, ball, spacebarKey, rightKey, leftKey, upKey, downKey;
+            
+            //ball variables
+            var ball_angle = document.getElementById('txtAngle').value, ball_speed = document.getElementById('txtSpeed').value;
+            var ball_x = 0, ball_y = 0, ball_scale_x = 0, ball_scale_y = 0, ball_velocity_x = 0, ball_velocity_y = 0;
+			
+			function clearCanvas()
+			{
+                if ((window.innerWidth - 2) != width) {
+                    canvas.width = width = window.innerWidth - 2;
+                    ball_x = (width / 2) - 32; 
+                }
+                if ((window.innerHeight - 32) != height) {
+                    canvas.height = height = window.innerHeight - 32;
+                    ball_y = (height  - 64);
+                }
+				context2D.clearRect(0, 0, width, height);
+			}
+			
+			function input()
+			{
+				if(leftKey) {
+				}
+				else if(rightKey) {
+				}
+				else if(leftKey) {
+				}
+				else if(rightKey) {
+				}
+				else if(spacebarKey) {
+				}
+			}
+			
+			function jump()
+			{
+                ball_angle = document.getElementById('txtAngle').value;
+                ball_speed = document.getElementById('txtSpeed').value;
+            
+                ball_scale_x = Math.cos(ball_angle * (Math.PI / 180));
+                ball_scale_y = Math.sin(ball_angle * (Math.PI / 180));
+                
+                ball_velocity_x = (ball_speed * ball_scale_x);
+                ball_velocity_y = (ball_speed * ball_scale_y);
+			}
+			
+			function draw() 
+			{
+                if ((ball_x > width) || (ball_x < 0) || (ball_y < -height) || (ball_y > height)) {
+                    ball_scale_x = ball_scale_y = ball_velocity_x = ball_velocity_y = 0;
+                    ball_x = (width / 2) - 32;   
+                    ball_y = (height  - 64);
+                }
+                
+                ball_x =  ball_x + ball_velocity_x;
+                ball_y =  ball_y + -ball_velocity_y;
+                
+                context2D.drawImage(ball, ball_x + ball_velocity_x, ball_y + ball_velocity_y);
+			}
+			
+			function printLog(text, height)
+			{
+				context2D.font = "10pt Helvetica";
+			    context2D.fillStyle = "#000000";
+			    context2D.fillText(text, 5, height); 
+			}
+			
+			function debugInfo()
+			{
+				if (debug) {
+                    var position = 0;
+					//printLog("FPS = " + framerate, position+=15);
+                    printLog("width = " + width, position+=15);
+                    printLog("height = " + height, position+=15);
+                    printLog("ball_x = " + ball_x, position+=15);
+                    printLog("ball_y = " + ball_y, position+=15);
+                    //printLog("ball_scale_x = " + ball_scale_x, position+=15);
+                    //printLog("ball_scale_y = " + ball_scale_y, position+=15);
+                    //printLog("ball_velocity_x = " + ball_velocity_x, position+=15);
+                    //printLog("ball_velocity_y = " + ball_velocity_y, position+=15);
+                    //printLog("ball_angle = " + ball_angle, position+=15);
+                    //printLog("ball_speed = " + ball_speed, position+=15);
+				}
+			}
+			
+			function update()
+			{
+				clearCanvas();
+				input();
+				draw();
+				debugInfo();
+			}
+			
+			function keyAction(code, value)
+			{
+				if (code == 32) spacebarKey = value;
+				else if (code == 37) leftKey = value;
+				else if (code == 38) upKey = value;
+				else if (code == 39) rightKey = value;
+				else if (code == 40) downKey = value;
+			}
+			
+			function keyDown(e) 
+			{
+				keyAction(e.keyCode, true);//pressed
+			}
+			
+			function keyUp(e) 
+			{
+				keyAction(e.keyCode, false);//released
+			}
+			
+			(function init() 
+			{
+				//init game stuff
+                canvas = document.getElementById('canvas');
+                canvas.width = width;
+                canvas.height = height;
+				context2D = canvas.getContext('2d');
+				spacebarKey = rightKey = leftKey = upKey = downKey = false;
+				
+				//load images
+				ball = new Image();
+				ball.src = "ball.png";
+                ball_x = (width / 2) - 32;
+                ball_y = (height  - 64);
+						
+				//game events handle
+				setInterval(update, framerate);
+				document.addEventListener('keyup', keyUp, false);
+				document.addEventListener('keydown', keyDown, false);
+			})();
+			//init();
+
+		</script>
+		
+	</body>
+
+</html>
